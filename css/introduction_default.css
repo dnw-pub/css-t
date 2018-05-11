@@ -1,0 +1,51 @@
+@charset "euc-kr";
+
+/*
+ 
+최종작업일자 : 2011년 02월 14일
+작업자 : P05
+작업내용 : 회사소개 default.css
+
+최종작업일자 : 2011년 03월 26일
+작업자 : P03
+작업내용 : body, input, select, button / a:link, a:visited / a:hover / a:active 수정
+
+*/
+
+*{margin:0; padding:0;}
+body, input, select, button{font-family:'돋움',dotum, Sans-serif; font-size:0.75em; color:#4d4d4d;}
+
+table{border-collapse:collapse; border-spacing:0;}
+table caption{text-indent:-5000em; width:0; height:0; font-size:0; line-height:0;}
+
+h1, h2, h3, h4, h5, h6, h7, h8{margin:0; padding:0;font-family:'돋움',dotum, Sans-serif;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img, h7 img, h8 img{display:block;}
+
+img, fieldset, button{border:0 solid transparent;}
+button img{display:none;}
+
+ol, ul{list-style: none;}
+blockquote, q{quotes: none;}
+
+a:link, a:visited{color:#4d4d4d; text-decoration:none;}
+a:hover{color:#4d4d4d; text-decoration:none;}
+a:active{color:#4d4d4d; text-decoration:none;}
+
+textarea{overflow:auto;}
+legend{position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; font-size:0; line-height:0;} /* For Screen Reader */ 
+.clear{display:block; float:none; clear:both; height:0; width:100%; font-size:0 !important; line-height:0 !important; overflow:hidden; margin:0 !important; padding:0 !important;}
+.blind{position: absolute;top: -999em;letter-spacing: -999em;overflow: hidden;}
+
+/* margin - padding */
+.paddingB25 {padding-bottom:25px;}
+.paddingB15 {padding-bottom:15px;}
+
+
+a.accessibility01{position:absolute; display:block; width:100%; left:0; text-align:center; top:-10000px; z-index:500; font-size:1.3em}
+a.accessibility01:hover, a.accessibility01:focus, a.accessibility01:active{position: absolute; top: 0; padding: 15px 0; font-weight:bold; color:#fff; background:#1d60a7; z-index:500}
+
+/* skip navi */
+.accessibility02 { position:absolute; display:block; width:100%; left:0; text-align:center; top:-10000px; z-index:500; font-size:1.3em}
+ .accessibility02 a:hover, .accessibility02 a:focus, .accessibility02 a:active{position: absolute; top: 0; padding: 15px 0; font-weight:bold; color:#fff; background:#1d60a7; z-index:500}
+.hidden {display:none;text-indent:-9999em;}
+

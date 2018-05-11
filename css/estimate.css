@@ -1,0 +1,164 @@
+/*
+
+최종작업일자 : 2010년 9월 28일 Am 10:40
+작성자 : P06
+내용 : 가상온라인견적서 프리셋 수정
+
+최종작업일자 : 2010년 10월 13일
+작성자 :  
+내용 : 가상온라인견적서 프리셋 _ 코딩신규 
+
+최종작업일자 : 2010년 5월 13일 오전 9시
+작성자 : P04
+내용 : .estimBtn 버튼영역 수정  /  .safebuy추가
+
+
+
+*/	
+
+
+.catagory_tag {  color: #666666; padding:3px 3px 2px 3px; line-height:22px;}
+a.catagory_tag:link, a.catagory_tag:visited, a.catagory_tag:active {   font-size: 12px; font-weight: normal; color: #666666; padding:3px 3px 2px 3px; text-decoration: none; line-height:22px;}
+a.catagory_tag:hover {   font-size: 12px; font-weight: normal; color: #666666; padding:3px 3px 2px 3px; background-color: #ececec; text-decoration: none; line-height:22px;}
+
+.catagory_click {  font-size: 12px; font-weight: normal; color: #fff200; padding:3px 3px 2px 3px; background-color: #5779d2; text-decoration: none; line-height:22px;}
+a.catagory_click:link, a.catagory_click:visited, a.catagory_click:active {font-size: 12px; font-weight: normal; color: #fff200; padding:3px 3px 2px 3px; background-color: #5779d2; text-decoration: none; line-height:22px;}
+a.catagory_click:hover { font-size: 12px; font-weight: normal; color: #fff200; padding:3px 3px 2px 3px; background-color: #5779d2; text-decoration: none; line-height:22px;}
+
+table#estimBtn {width:925px; border-collapse:collapse;}
+table#estimBtn td{padding:10px 0 30px;}
+table#estimateList {width:925px; border-collapse:collapse; margin-top:5px; background: url('http://img.danawa.com/new/estimate_new/img/bg_estimateList.gif') no-repeat; border-bottom:2px solid #cfd2d7;}
+table#estimateList th{height:32px; text-align:center; font-weight:bold; color:#4e6694;}
+table#estimateList td{height:21px; padding:3px; text-align:center; border-bottom:1px solid #cfd2d7;}
+table#estimateList td.RegiDate{width:130px;}
+table#estimateList td.RegiMen{width:90px;}
+table#estimateList td.RegiTitle{width:310px; text-align:left;}
+table#estimateList td.RegidPrice{width:95px; color:#4169cb;}
+table#estimateList td.RegiCom{width:85px;}
+table#estimateList td.RegiPrice{width:110px; color:#ff6d00;}
+table#estimateList td.RegiIng{width:105px;}
+
+/* 안전거래 구매 신청 버튼영역추가 _ P04_110513 */
+.safebuy{ margin:15px 0 0 0;}
+
+
+/* 가상온라인견적서 프리셋 추가 */
+.freeset_top_menu_on {width:122px; height:32px; background: url('http://img.danawa.com/new/estimate_new/img/freeset_top_menu_bg_on.gif') repeat; text-align:center; font-family:돋움; font-size:12px; color:#4358b8; font-weight:bold}
+
+.freeset_top_menu_off {width:122px; height:32px; background: url('http://img.danawa.com/new/estimate_new/img/freeset_top_menu_bg_off.gif') repeat; text-align:center; font-family:돋움; font-size:12px; color:#ccd4f8; font-weight:bold;}
+.freeset_top_menu_off a {font-family:돋움; font-size:12px; color:#ccd4f8; font-weight:bold;}
+.freeset_top_menu_offf a:hover {font-family:돋움; font-size:12px; color:#ccd4f8; font-weight:bold;}
+
+.freesetList {width:925px; height:172px; border-bottom:2px solid #4358b8; border-left:2px solid #4358b8; border-right:2px solid #4358b8;}
+.freeset_txt12_b {font-family:돋움; font-size:12px; color:#666; text-decoration:none; line-height:130%; font-weight:bold;}
+.freeset_txt12_b a {font-family:돋움; font-size:12px; color:#666; text-decoration:none; line-height:130%; font-weight:bold;}
+.freeset_txt12_b a:hover {font-family:돋움; font-size:12px; color:#666; text-decoration:underline; line-height:130%; font-weight:bold;}
+
+.freeset_txt11_99 {font-family:돋움; font-size:11px; color:#999; text-decoration:none; line-height:130%; word-break:break-all;}
+.freeset_txt11_99 a {font-family:돋움; font-size:11px; color:#999; text-decoration:none; line-height:130%;}
+.freeset_txt11_99 a:hover {font-family:돋움; font-size:11px; color:#999; text-decoration:underline; line-height:130%;}
+
+/* 가상온라인 견적서 101013 _ 신규 스타일입니다. 기존 스타일과 관련이 없고, 서비스 적용시 기존 css 삭제해도 됩니다. */
+/* 가상온라인 견적서 */
+.est_Container {border:2px solid #4358b8; border-top:0;}
+
+/* 네비게이션 */
+.est_navigation {background:url(http://img.danawa.com/new/estimate_new/img/freeset_top_menu_bg_off.gif) repeat-x; position:relative; zoom:1;}
+.est_navWrapper {width:840px; overflow:hidden; height:32px; margin:0 35px; position:relative; zoom:1;}
+.est_navigation ul {zoom:1; padding-top:2px; white-space:nowrap; position:absolute; margin:0; padding:2px 0 0 0;}
+.est_navigation ul:after {clear:both; content:","; height:0; display:block; visibility:hidden;}
+.est_navigation li {display:inline-block;*display:inline; *zoom:1; height:30px; line-height:30px;  width:140px; text-align:center;}
+.est_navigation li a {font-size:12px; color:#ccd4f8; font-weight:bold;}
+.est_navigation li a:hover {color:#fff;}
+.est_navigation li.active {background:#fff;}
+.est_navigation li.active a, .est_navigation li.active a:hover {color:#4358b8;}
+
+/* 상단 이동 버튼 */
+.est_navigation .prevButton {position:absolute; left:0; top:0;}
+.est_navigation .prevButton button, .est_navigation .nextButton button {width:35px; height:32px; background:url(http://img.danawa.com/new/estimate_new/img/freeset_left_btn_off.gif) no-repeat; display:inline-block; zoom:1; overflow:hidden;}
+.est_navigation .prevButton button.active {background-image:url(http://img.danawa.com/new/estimate_new/img/freeset_left_btn_on.gif)}
+.est_navigation .nextButton {position:absolute; right:0; top:0;}
+.est_navigation .nextButton button {background-image:url(http://img.danawa.com/new/estimate_new/img/freeset_right_btn_off.gif)}
+.est_navigation .nextButton button.active {background-image:url(http://img.danawa.com/new/estimate_new/img/freeset_right_btn_on.gif)}
+
+/* 표준PC 안내레이어 */
+.est_header {background:url(http://img.danawa.com/new/estimate_new/img/freeset_ex_bg.gif) repeat-x; height:45px; position:relative; zoom:1;}
+.est_dnwpc {width:455px; height:29px; background:url(http://img.danawa.com/new/estimate_new/img/freeset_pc_explan.gif) no-repeat; overflow:hidden; position:relative; left:17px; top:8px;}
+.est_dnwpc dt, .est_dnwpc dd {visibility:hidden;}
+.est_dnwpcLink {position:absolute; right:10px; top:10px;}
+
+/* 견적 상품 리스트 */
+.est_list {position:relative; zoom:1;}
+.est_listWrapper {width:855px; height:125px; margin:0 auto; overflow:hidden; position:relative; zoom:1; font-size:0;}
+.est_list ul {white-space:nowrap; position:absolute; left:0; top:23px; font-size:0; margin:0; padding:0;}
+.est_list li {display:inline-block; zoom:1; *display:inline; height:90px; width:270px;  word-break:break-all; margin-right:15px; overflow:hidden; clear:both; font-size:0;}
+.est_list li a img {float:left; margin-right:10px;}
+.est_list li a strong {display:inline-block; width:180px; white-space:normal; float:left; color:#333; overflow:hidden; font-size:12px;}
+.est_list li .desc {margin:5px 0; width:180px; white-space:normal; float:left; color:#999; font-size:11px; overflow:hidden;}
+.est_list li .price {display:block; font-size:14px; color:#f60; font-family:Tahoma; font-weight:bold;}
+
+/* 리스트 이동 버튼 */
+.est_list .prevButton {position:absolute; left:0; top:0;}
+.est_list .prevButton button, .est_list .nextButton button {width:33px; height:125px; background:url(http://img.danawa.com/new/estimate_new/img/freeset_pro_btn_left_off.gif) no-repeat; display:inline-block; zoom:1; overflow:hidden;}
+.est_list .prevButton button.active {background-image:url(http://img.danawa.com/new/estimate_new/img/freeset_pro_btn_left_on.gif)}
+.est_list .nextButton {position:absolute; right:0; top:0;}
+.est_list .nextButton button {background-image:url(http://img.danawa.com/new/estimate_new/img/freeset_pro_btn_right_off.gif);}
+.est_list .nextButton button.active {background-image:url(http://img.danawa.com/new/estimate_new/img/freeset_pro_btn_right_on.gif)}
+
+#LAY_WishFolderManager
+{
+	position:absolute;
+	left : -500px;
+	top: -500px;
+	
+	/*width: 200px;height: 190px;*/
+	width: 350px;
+	height: 200px;
+	
+	/*
+	border: 1px solid #BBB;
+	background-color: white;
+	*/
+	z-index:5;
+	visibility: hidden;
+	display: none;
+	background-color: white;
+
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#AAAAAA,direction=135,strength=4); /*Add Shadow in IE. Remove if desired*/
+}
+
+DIV.myWishFolderMenu {
+	position:absolute;
+	z-index:5;
+
+	left: -100px;
+	top: -100px;
+
+	min-width:90px;
+	_width:90px;
+
+	padding: 8px 0px 3px 0px;
+
+	visibility: hidden;
+	display: none;
+
+	border:1px solid #a0a0a0;
+
+	background-color: white;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#AAAAAA,direction=135,strength=4);
+}
+
+DIV DIV.myWishFolderMenuList {
+	height: 18px;
+	line-height: 18px;
+	padding: 0px 5px 0px 5px;
+}
+
+.likeText {
+	font-family: 돋움;
+	font-size: 9pt;
+	border: solid 0px #FFFFFF;
+	height: 18px;
+	color: #333333;
+	width:100%;
+}

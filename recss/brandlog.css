@@ -1,0 +1,141 @@
+@charset "euc-kr";
+/*
+CSS Document
+
+최종작업일자 : 2011년 4월 27일 09:35
+작업자 : P03
+작업내용 : .brandList / .listContainer .listTypeBrand / .event .listTypeBrand strong 수정
+
+최종작업일자 : 2012년 8월 09일 15:30
+작업자 : P10
+작업내용 : 브랜드 기사 깨짐 수정
+ 
+2015-01-20 / edit .brandTop  / hsy
+*/
+.ir {background:url(http://img.danawa.com/new/brandlog_new/img/bblog_deco_set.gif) no-repeat 0 0;}
+button {margin:0; padding:0; cursor:pointer; overflow:visible;}
+a:hover {text-decoration:underline;}
+
+.brandTop {background:url(http://img.danawa.com/new/brandlog_new/img/bg_roundbox_03.gif) no-repeat 1px 1px; width:100%; padding:4px 0 3px 0; position:relative; zoom:1; margin-bottom:10px;}
+.brandList {float:left; display:inline; width:644px; margin-right:20px; overflow:hidden; padding-bottom:30px;}
+.rside {position:relative; zoom:1; width:260px; float:left; display:inline; margin:25px 0 0 0;}
+#brandlog {margin:10px auto 0; position:relative; zoom:1;}
+.subContainer {border:1px solid #e1e1e1; padding:19px; overflow:hidden;}
+/* 오늘의 브랜드 */
+.brandTop .title { background-position:0 0; width:134px; height:95px; position:absolute; left:0; top:0;}
+.displayad {width:660px; height:230px; margin:0px 0 0 4px; float:left; display:inline;}
+.displayad img {vertical-align:top;}
+.idxCtrl {display:inline; position:absolute; overflow:hidden; zoom:1;}
+.idxCtrl button {width:16px; height:15px; overflow:visible; _margin-left:3px; margin-left:3px;}
+.idxCtrl button img {display:block;}
+.displayad .idxCtrl {left:494px; top:15px; width:150px; text-align:right;}
+
+/* 브랜드로그 새소식 */
+.brandNews {float:right; width:223px; margin:18px 16px 0 0; position:relative; zoom:1; display:inline;}
+.brandNews .title { background-position:0 -110px; width:104px; height:14px; position:static;}
+.brandNews .idxCtrl {top:0px;right:0px; }
+
+/* 카테고리 및 검색 */
+.searchBars {clear:both; height:44px; background:#f3f3f3; margin:0 3px 0 4px; border-top:1px solid #0b1a4b; position:relative; zoom:1; overflow:hidden;}
+.searchBars .title_category { background-position:0 -130px; width:68px; height:11px; }
+.searchBars .title_search { background-position:0 -150px; width:68px; height:11px; }
+.searchBars h3 {float:left; margin:3px 10px 0 15px;}
+.searchBars .posRight {right:10px; top:12px; overflow:hidden; zoom:1;}
+.searchButton {background-position:0 -220px; width:35px; height:20px; border:0; overflow:hidden; font-size:0; text-indent:-1000px; vertical-align:top; cursor:pointer; float:left;}
+.searchBars .inputStyle { border:1px solid #0b1a4b; width:205px; height:16px; float: left; padding:2px 0 0 4px;}
+
+/* 브랜드 리스트 */
+.sortOption {border-bottom:1px solid #bfbfbf; padding-bottom:5px;}
+.listContainer  {overflow:hidden; zoom:1; padding:14px 0 0 0;}
+.listContainer .listTypeBrand {width:310px; height:83px; float:left; margin:0 10px 0 0; padding-bottom:15px; *padding-bottom:14px;}
+
+/* 이벤트 */
+.event {background:url(http://img.danawa.com/new/brandlog_new/img/bg_outLine.gif) no-repeat -300px 100%; position:relative; zoom:1; margin:0 0 15px 0; height:147px;}
+.event .header {height:23px; padding-top:11px; background:url(http://img.danawa.com/new/brandlog_new/img/bg_outLine.gif) no-repeat -300px 0;}
+.event .title{ background-position:0 -170px; width:37px; height:14px; position:static; margin:0px 0 0 15px;}
+.event .idxCtrl {left:60px; top:10px;}
+.event .posRight {top:15px; right:10px; position:absolute; zoom:1; }
+.event .listTypeBrand {margin:15px 0 0 13px; width:230px;}
+.event .listTypeBrand dd {margin-top:0; color:#757575; font-size:11px;}
+.event .listTypeBrand strong {color:#0f3ac8; font-size:11px; width:140px; *width:135px;}
+.event .listTypeBrand a {color:#000; font-size:12px; line-height:140%;}
+
+/* 핫클릭 브랜드로그 */
+.hotClick {background:url(http://img.danawa.com/new/brandlog_new/img/bg_outLine.gif) no-repeat 0px 100%; position:relative; zoom:1; margin:0 0 15px 0; padding-bottom:15px;}
+.hotClick .header {background:url(http://img.danawa.com/new/brandlog_new/img/bg_outLine.gif) no-repeat 0 0; padding-top:9px; height:23px; }
+.hotClick .title{ background-position:0 -190px; width:105px; height:14px; position:static; margin:0 0 0px 15px;}
+.hotClick .listTypeBrand {margin:15px 0 0px 15px; *margin-top:14px; width:230px;}
+.hotClick .listTypeBrand strong {font-size:12px;}
+
+
+/* 리스트 스타일 */
+.listTypeThumnail {margin:10px 0 0 0; line-height:140%;}
+.listTypeThumnail li {overflow:hidden; clear:both; padding:7px 0 0 60px; margin:0 0 10px 0; zoom:1;}
+.listTypeThumnail .image {float:left; margin:-7px 0 0 -60px;}
+.listTypeThumnail a {font-size:12px; color:#666;}
+
+/* 리스트 - 섬네일 */
+.listTypeBrand { min-height:80px; _height:80px; font-size:12px; line-height:130%;}
+.listTypeBrand dt .image {float:left; display:inline-block; margin:0 10px 0 0; zoom:1; overflow:hidden;}
+.listTypeBrand dt .image img {vertical-align:top;}
+.listTypeBrand dt a:hover .image {background:#fff; opacity:0.9; filter:alpha(opacity=10);}
+.listTypeBrand dt a:hover .image img {position:relative; z-index:-1;}
+.listTypeBrand dt strong {font-size:14px; color:#000; margin:5px 0 0 0; display:inline-block; /*line-height:120%;*/line-height: 18px;}
+.listTypeBrand dt {font-size:11px; color:#888; line-height:130%;}
+.listTypeBrand dt a {font-size:11px; color:#888;}
+.listTypeBrand dt a:hover {text-decoration:none;}
+.listTypeBrand dd {margin:7px 0 0 90px;}
+.listTypeBrand dd a {font-size:11px; color:#757575; }
+.listTypeBrand dd li {background:url("http://img.danawa.com/new/section_m/baby/img/bg_deco_bullet.gif") no-repeat scroll 0px -54px transparent; padding-left:5px; margin-bottom:3px; zoom:1; font-size:11px; line-height:135%; white-space:nowrap;}
+button.prev { background-position:-60px -220px; width:13px; height:14px; float:left; margin:0;}
+button.next { background-position:-73px -220px; width:12px; height:14px; float:left; margin:0;}
+.numberStyle02 {border-top:1px solid #bfbfbf; padding-top:8px;}
+/*
+.listTypeBrand { min-height:80px; _height:80px; font-size:12px; line-height:130%;}
+.listTypeBrand dt .image {float:left; display:inline-block; margin:0 10px 0 0;}
+.listTypeBrand dt .image img {vertical-align:top;}
+.listTypeBrand dt strong {font-size:14px; color:#000; margin:7px 0 0 0; display:inline-block;}
+.listTypeBrand dt {font-size:11px; color:#888; line-height:130%;}
+.listTypeBrand dt a {font-size:11px; color:#888;}
+.listTypeBrand dt a:hover {text-decoration:none;}
+.listTypeBrand dd {margin:7px 0 0 90px;}
+.listTypeBrand dd a {font-size:11px; color:#999; }
+.listTypeBrand dd li {background:url("http://img.danawa.com/new/section_m/baby/img/bg_deco_bullet.gif") no-repeat scroll 0px -54px transparent; padding-left:5px; margin-bottom:3px; zoom:1; font-size:11px; line-height:135%; white-space:nowrap;}
+button.prev { background-position:-60px -220px; width:13px; height:14px; float:left; margin:0;}
+button.next { background-position:-73px -220px; width:12px; height:14px; float:left; margin:0;}
+.numberStyle02 {border-top:1px solid #bfbfbf; padding-top:8px;}
+*/
+/* sub - event */
+.sub_title {background:url(http://img.danawa.com/new/brandlog_new/img/bg_deco_eventTop.gif) repeat-x; height:24px; padding:12px 0 0 11px; margin-bottom:20px;}
+.listTypePlan {width:100%; margin-bottom:30px; overflow:hidden; zoom:1; border-bottom:1px solid #f1f1f1; padding-bottom:30px}
+.listTypePlan li {float:left; width:180px; margin:0 0px 15px 23px; display:inline;}
+.listTypePlan li.best {width:380px; margin:0;}
+.listTypePlan a {color:#666;}
+.listTypePlan .title {font-size:12px; color:#666; display:block; text-align:left; margin:5px 0;}
+.listTypePlan .specify {font-size:11px; color:#757575; margin-bottom:10px;}
+.listTypePlan .specify a {font-size:11px; color:#757575;}
+.listTypePlan .minprice {font-size:12px; color:#ff6600; font-weight:bold;}
+.listTypePlan .minprice em {font-style:normal;}
+.listTypePlan .firstChild {margin-left:0;}
+
+/* commons */
+.btnSet {background:url(http://img.danawa.com/new/brandlog_new/img/btn_bl_top.gif) no-repeat; height:18px; display:inline-block; line-height:18px; overflow:visible; zoom:1; vertical-align:top; }
+.btnSet * {background:url(http://img.danawa.com/new/brandlog_new/img/btn_bl_top.gif) no-repeat; height:16px; display:inline-block; line-height:18px; font-size:11px; color:#5a5a5a; padding-top:2px; vertical-align:top;}
+
+.numberStyle02 * {vertical-align:middle;}
+.viewMore {background:url("http://img.danawa.com/new/brandlog_new/img/btn_more.gif") no-repeat 0 0px; width:38px; height:10px; display:inline-block; color:#fff;}
+
+
+/* 클리어 */
+.contents:after,
+.listContainer:after,
+.brandTop:after,
+null{display:block; content:"."; height:0; visibility:hidden; clear:both;}
+
+/* 브랜드 리스트 깨짐 수정 */
+.listTypeBrand dt .image {display:block;}
+.listTypeBrand dt strong {display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;_width:120px;}
+.listTypeBrand dd li {overflow:hidden;text-overflow:ellipsis;line-height:16px;}
+
+.danawa_top_search {margin-bottom:10px;}
+

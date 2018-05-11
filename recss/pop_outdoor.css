@@ -1,0 +1,55 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2013년 6월 26일
+작성자 : P05
+내용 : 아웃도어 팝업
+*/
+
+
+/* default Selector */
+body,input,button,select,input,txtArea,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,ul,ol,li,legend,hr,em,addres,div,p,strong,fieldset,form{margin:0; padding:0;font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;}
+html,body{width:100%;height:100%;}
+html{overflow-y:scroll}
+body {text-align:left;background-color:#fff;*word-break:break-all;-ms-word-break:break-all;}
+
+/* link */
+a{color:#666;text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+/* Type Selector */
+img, fieldset, button,iframe {border:0 none}
+em,address{font-style:normal}
+hr{display:none}
+legend{*width:0}
+:root legend{margin-top:-1px;font-size:0;line-height:0}
+
+/* layout */
+#pop_outdoor_coupon {width:575px;height:416px;}
+.counpon_img {position:absolute;z-index:-1}
+
+.outdoor_coupon_layer {background:url(http://img.danawa.com/new/newmain/img/bg_outdoor_coupon.png) no-repeat left top;width:575px;height:416px;position:absolute;z-index:99;left:175px;}
+.outdoor_coupon_area {width:575px;height:416px;position:relative;}
+
+
+.outdoor_address {color:#707070;font-size:11px;line-height:16px;position:absolute;left:220px;top:369px;text-align:left;width:330px;height:35px;letter-spacing:-1px;}
+.outdoor_address a {font-size:11px;color:#707070;letter-spacing:0px;}
+.outdoor_address .tnumber {font-size:11px;color:#707070;letter-spacing:0px;display:inline-block;margin-right:7px;}
+
+
+.outdoor_coupon_layer .layer_close_x {position:absolute;right:14px;top:11px;width:20px;height:20px;display:block;text-indent:-9999em;overflow:hidden;}
+.outdoor_coupon_layer .btn_map_location {position:absolute;left:20px;;top:368px;width:90px;height:30px;display:block;text-indent:-9999em;overflow:hidden;z-index:998;}
+.outdoor_coupon_layer .btn_outdoot_layer_print {position:absolute;left:115px;top:368px;width:90px;height:30px;display:block;text-indent:-9999em;overflow:hidden;z-index:998;}
+.outdoor_coupon_layer .txt_clist {position:absolute;left:112px;top:307px;clear:both;*zoom:1;overflow:hidden;width:430px;}
+.outdoor_coupon_layer .txt_clist ul {float:left;width:205px;}
+.outdoor_coupon_layer .txt_clist li {color:#727272;font-size:11px;line-height:16px;background:url(http://img.danawa.com/new/newmain/img/bul_outdoor.gif) no-repeat left 6px;padding-left:5px;letter-spacing:-1px;}
+.outdoor_coupon_layer .leader_hidden {width:20px;height:20px;text-indent:-9999em;}
+
+
+
+.outdoor_coupon_area .layer_close_x {position:absolute;right:14px;top:11px;width:20px;height:20px;display:block;text-indent:-9999em;overflow:hidden;}
+.outdoor_coupon_area .btn_map_location {position:absolute;left:20px;;top:368px;width:90px;height:30px;display:block;text-indent:-9999em;overflow:hidden;}
+.outdoor_coupon_area .btn_outdoot_layer_print {position:absolute;left:115px;top:368px;width:90px;height:30px;display:block;text-indent:-9999em;overflow:hidden;}
+.outdoor_coupon_area .txt_clist {position:absolute;left:112px;top:307px;clear:both;*zoom:1;overflow:hidden;width:430px;}
+.outdoor_coupon_area .txt_clist ul {float:left;width:205px;}
+.outdoor_coupon_area .txt_clist li {color:#727272;font-size:11px;line-height:16px;background:url(http://img.danawa.com/new/newmain/img/bul_outdoor.gif) no-repeat left 6px;padding-left:5px;letter-spacing:-1px;}
+.outdoor_coupon_area .leader_hidden {width:20px;height:20px;text-indent:-9999em;}

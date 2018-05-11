@@ -1,0 +1,84 @@
+
+/*
+최종작업일자 : 2010년 6월 14일
+작업자 : P04
+*/
+@import 'http://www.danawa.com/new/css/init.css';
+
+body {
+	font-family: "돋움", "Arial", "Verdana";
+	font-size: 12px; color:#666666;
+	text-align:left;
+	background-color:#ffffff;
+ }
+
+a:hover {text-decoration:underline;}
+h2{font-size:0; text-indent:-1000px; color:#fff;}
+.floatR {float:right;}
+.gtxt{ color:#999999;}
+.txt_wh {float:left; color:#fff; font-size:22px; font-weight:bold; display:block; padding:10px 0 0 40px;}
+.txt_blue{ color:#5661e4; font-size:12px;}
+
+/* 지난로또번호 / 내 로또번호보기*/
+.toparea {position:relative; width:730px; height:364px; background:url(http://img.danawa.com/contents/event/100614_newlotto/img/lotto1006_topback.jpg) no-repeat;}
+
+.prenumber{float:right; width:125px; margin:7px 15px 0 0; color:#003399; font-weight:bold;}
+.prenumber ul{}
+.prenumber li{ padding-bottom:3px;}
+.inp_pre{border:1px solid #888; background-color:#f8f8f8; width:24px; height:24px; padding:2px 2px 2px 5px; margin-right:2px; font-weight:bold; color:#333; font-size:20px;}
+
+/* 신청자수 */
+.lotto_pp {position:absolute; top:266px; left:138px; width:55px; color:#003399; font-weight:bold; text-align:center;}
+.lotto_pp .org{color:#ea4f4b; font-size:18px; display:block; margin-top:3px; letter-spacing:-1px;}
+/* 로또 번호 */
+.lotto_num{position:absolute; top:263px; left:223px;}
+.lotto_num .inp1{border:1px solid #274cbe; background-color:#0520d3; width:34px; height:40px; padding:-4px 0 0 3px; font-weight:bold; margin-right:42px; color:#fff; font-size:41px;}
+.lotto_num .inp2{border:1px solid #3a9418; background-color:#227b0f; width:34px; height:40px; padding:-4px 0 0 3px; font-weight:bold; margin-right:40px; color:#fff; font-size:41px;}
+.lotto_num .inp3{border:1px solid #e86940; background-color:#da4c00; width:34px; height:40px; padding:-4px 0 0 3px; font-weight:bold; margin-right:39px; color:#fff; font-size:41px;}
+.lotto_num .inp4{border:1px solid #e66840; background-color:#c32023; width:34px; height:40px; padding:-4px 0 0 3px; font-weight:bold; margin:0; color:#fff; font-size:41px;}
+/* 자동번호/등록버튼 */
+.lotto_btn {position:absolute; top:258px; left:520px; width:77px;}
+.lotto_btn img{ margin-bottom:3px;}
+
+/* 업체대표상품 */
+.lot_company {clear:both; width:710px; margin-left:10px;}
+.lot_company .gbox{float:left; border:10px solid #dfdfdf; padding:15px;}
+.lot_company .compnpro{text-align:center; width:100%; padding-bottom:15px; margin-bottom:20px; background:url(http://img.danawa.com/contents/event/100614_newlotto/img/lotte1006_dotline.gif) repeat-x bottom;}
+.lot_company .gbox ul {list-style:none; width:660px; }
+.lot_company .gbox li {float:left; margin-right:15px; _margin-right:10px;}
+
+.img_list {clear:both; float:left; width:300px;}
+.img_list dt {padding:10px 0 6px 0; width:220px; overflow:hidden;}
+.img_list dt.tit {margin-left:95px;}
+.img_list dd.photo {display:inline; float:left; text-align:center; margin:-45px 10px 0 0;_margin:-30px 10px 0 0;}
+.img_list dd {line-height:16px;}
+.img_list dd img { border:1px solid #dfdfdf; }
+.img_list a {color:#2D2C2D; text-decoration:none; font-size:14px; font-weight:bold; letter-spacing:-1px;}
+.img_list a:hover {text-decoration:underline;}
+.img_list .org{font-weight:bold; color:#ea4f4b; font-size:14px;} 
+.img_list .red{font-weight:bold; color:#783000; font-size:14px;} 
+
+/* 금주 로또 경품 */
+.lotto_now {clear:both; width:710px; margin-left:10px; padding-top:5px;}
+.lotto_now .bbox{border:10px solid #5661e4; padding:10px;}
+.lotto_now .bgtit{margin-top:20px; width:710px; height:36px; margin-top:20px; background:url(http://img.danawa.com/contents/event/100614_newlotto/img/lotte1006_tit_now.gif) no-repeat;}
+.lotto_now .day {font-weight:bold; display:block; padding:15px 0 0 215px;}
+
+.proimg_list {width:660px; padding:0 0 10px 10px; overflow:hidden;}
+.proimg_list li {position:relative; display:inline; list-style:none; float:left; width:136px; margin:10px 35px 0 0;   font:12px 돋움, Dotum; text-align:center;}
+.proimg_list li span{margin-top:3px; display:block;}
+.proimg_list li a {text-decoration:none;color:#333; display:block; }
+.proimg_list li a:hover {text-decoration:underline;}
+.proimg_list .protxt {display:block; height:40px; overflow:hidden; margin-bottom:10px;}
+.proimg_list .imgbox {display:block; margin-bottom:7px; border:1px #dfdfdf solid; padding:3px;}
+.proimg_list .lastbox{margin-right:0;}
+
+.band {position:absolute; top:-3px; left:0; border:0;}
+.plus {position:absolute; top:65px; left:145px; border:0;}
+
+/* 이월 로또 경품 */
+.lotto_pre{clear:both; width:710px; margin-left:10px;}
+.lotto_pre .bgtit{ margin-top:20px; width:710px; height:36px; background:url(http://img.danawa.com/contents/event/100614_newlotto/img/lotte1006_tit_pre2.gif) no-repeat;}
+.lotto_pre .prebox{border:10px solid #86c3ab; padding:10px;}
+
+.lastChild {border:0; margin-right:0;}

@@ -1,0 +1,117 @@
+/**
+ * 	생성 날짜 : 2013년 4월 18일
+ * 	작업자 : P11
+ * 	내용 : 판매순위 css 생성
+ */
+
+
+
+a:hover {text-decoration:underline;}
+.sellrankging_contents {width:925px;position:relative;height:auto;margin-bottom:50px;}
+
+/* tab */
+.tab_title {position:absolute;background:url("//img.danawa.com/new/section_m/sell_ranking/img/sell_ranking_tab.png") no-repeat scroll transparent;text-indent:-999em;z-index:0;top:0;}
+.danawa_best_area .tab_1 {background-position:0 -98px;}
+.danawa_best_area .tab_1 a {width:184px;height:45px;display:block;}
+.selected .tab_1 {background-position:0 0;width:185px;top:2px;}
+.partner_best_area .tab_2 {background-position:-200px 2px;left:185px;height:45px;width:185px;}
+.partner_best_area .tab_2 a {height:45px;width:185px;display:block;}
+.selected .tab_2 {background-position:-200px -100px;left:183px;top:2px;}
+
+.danawa_best_content {display:none;_width:920px;}
+.danawa_cate_area {float:left;margin-right:10px;margin-top:20px;}
+.bor_line {border-bottom:1px solid #D9D9D9;}
+.danawa_cate_area li.bor_non {border-bottom:none;}
+.partner_cate_area li.bor_non {border-bottom:none;}
+.partner_cate_area li.first_line {border-top:1px solid #D9D9D9;}
+.danawa_cate_area li.first_line {border-top:1px solid #D9D9D9;}
+.danawa_cate_area li {height:25px;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #f1f1f1;width:183px;position:relative;line-height:25px;}
+.depth2_icon {background:url("//img.danawa.com/new/section_m/sell_ranking/img/icon_sell_ranking.gif") no-repeat scroll 0 0 transparent;height:9px;width:9px;text-indent:-999em;display:inline-block;position:absolute;top:7px;left:10px;}
+.cate_txt {font-weight:bold;margin-left:30px;color:#333333;}
+.sellrankging_contents li.over {background:url("//img.danawa.com/new/section_m/sell_ranking/img/bg_gray_arrow.gif") repeat-x scroll transparent;border-top:1px solid #D9D9D9;}
+.sellrankging_contents li.over .depth2_icon {background:url("//img.danawa.com/new/section_m/sell_ranking/img/icon_sell_ranking.gif") no-repeat scroll -10px 0;}
+.sellrankging_contents .over span {display:block;position:absolute;background:url("//img.danawa.com/new/section_m/sell_ranking/img/bg_gray_arrow2.gif") no-repeat scroll 0px 0 transparent;height:25px;width:11px;right:-11px;*top:0px;}
+.danawa_cate_area .depth2_area {width:183px;height:auto;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;}
+.sellrankging_contents .on {display:block;}
+.sellrankging_contents .off {display:none;}
+.depth2_area li {border:none;font-size:11px;color:#666666;padding-left:30px;width:auto;background:url("//img.danawa.com/new/section_m/sell_ranking/img/icon_dotted.gif") no-repeat scroll 20px 10px transparent;height:23px;line-height:23px;}
+.danawa_cate_area .depth3_area {width:auto;height:auto;background:none;}
+.danawa_cate_area .depth3_area ul {background:url("//img.danawa.com/new/section_m/sell_ranking/img/icon_depth3_arrow.gif") no-repeat scroll 5px 2px transparent;*margin-top:-15px;}
+.danawa_cate_area .depth3_area li {background:none;height:21px;line-height:21px;padding-left:20px;}
+.click {color:#4266db;text-decoration:underline;font-weight:bold;}
+
+.partner_best_content {display:none;border-top:2px solid #333333;_width:920px;}
+.selected .danawa_best_content {display:block;overflow:hidden;}
+.selected .partner_best_content {display:block;}
+.danawa_right_area {float:left;margin-top:20px;width:730px;_overflow:hidden;_width:720px;}
+.recom_prod_area {margin-left:10px;margin-bottom:30px;overflow:hidden;margin-top:5px;}
+.recom_prod_area h4 {background:url("//img.danawa.com/new/section_m/sell_ranking/img/recommend_title.gif") no-repeat scroll 0 0 transparent;text-indent:-999em;height:16px;}
+.recom_prod_area .rank_prod_area {padding-left:0;}
+.danawa_prod_area {float:left;overflow:hidden;}
+.danawa_prod_area .rank_prod_area .rank span {height:50px;}
+.danawa_prod_area .rank_prod_area .rank .rank_1 {background-position:0px -40px;}
+.danawa_prod_area .rank_prod_area .rank .rank_2 {background-position:-40px -40px;}
+.danawa_prod_area .rank_prod_area .rank .rank_3 {background-position:-80px -40px;}
+.danawa_prod_area .rank_prod_area .rank .rank_4 {background-position:-120px -40px;}
+.danawa_prod_area .rank_prod_area .rank .rank_5 {background-position:-160px -40px;}
+.sellrankging_contents .danawa_prod_area .rank_prod_area .rank_up .ranking_view {background:url("//img.danawa.com/new/section_m/sell_ranking/img/bg_rank_area.png") no-repeat scroll 0 0 transparent;height:14px;position:absolute;top:20px;left:3px;width:24px;z-index:98;}
+.rank_up .rank_num {z-index:99;position:absolute;top:20px;right:115px;color:#e31e10;}
+.sellrankging_contents .danawa_prod_area .rank_prod_area .rank_down .ranking_view {background:url("//img.danawa.com/new/section_m/sell_ranking/img/bg_rank_area.png") no-repeat scroll 0 -20px transparent;height:14px;position:absolute;top:20px;left:3px;width:24px;z-index:98;}
+.rank_down .rank_num {z-index:99;position:absolute;top:20px;right:115px;color:#4266db;}
+.sellrankging_contents .danawa_prod_area .rank_prod_area .rank_same .ranking_view {background:url("//img.danawa.com/new/section_m/sell_ranking/img/bg_rank_area.png") no-repeat scroll 0 -40px transparent;height:14px;position:absolute;top:20px;left:3px;width:24px;z-index:98;}
+
+.danawa_prod_area .more_view_list .rank_prod_area {margin-bottom:20px;zoom:1;}
+.more_view_list .bar_title {float:left;background:url("//img.danawa.com/new/section_m/sell_ranking/img/bg_tab_cate.gif") no-repeat scroll right 0 transparent;padding:10px 20px 8px 10px;font-weight:normal;height:14px;}
+.more_view_list .last_title {background:none;font-weight:bold;}
+
+.partner_right_area {float:left;margin-top:20px;width:730px;_overflow:hidden;_width:720px;}
+.partner_cate_area {float:left;margin-right:10px;margin-top:20px;}
+.partner_cate_area li {height:25px;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #f1f1f1;width:183px;position:relative;line-height:25px;}
+.partner_cate_area a {font-size:12px;font-weight:bold;color:#333333;margin-left:14px;}
+.sellrankging_contents .prod_wrap {width:728px;padding-bottom:45px;float:left;}
+.top_area {background:url("//img.danawa.com/new/section_m/sell_ranking/img/bg_title_bar.gif") repeat-x scroll 0 0 transparent;border:1px solid #dedede;position:relative;height:32px;}
+.bar_title {font-weight:bold;color:#333333;padding-top:10px;padding-left:10px;}
+.sellrankging_contents .more_view {background:url("//img.danawa.com/new/section_m/sell_ranking/img/icon_sell_ranking.gif") no-repeat 0 -60px;width:37px;height:10px;text-indent:-999em;position:absolute;right:10px;top:10px;}
+.rank_prod_area {height:auto;padding-top:20px;padding-left:15px;_width:728px;}
+.rank_prod_area:after {clear:both;content:"";display:block;}
+.rank_prod_area li.rank {width:130px;float:left;position:relative;margin-right:12px;}
+.rank_prod_area img {border:1px solid #f1f1f1;width:130px;height:130px;}
+.rank span {background:url("//img.danawa.com/new/section_m/sell_ranking/img/icon_ranking_num2.png");height:34px;width:32px;position:absolute;top:-1px;left:-1px;}
+.rank_prod_area .rank .rank_1 {background-position:0px 0;}
+.rank_prod_area .rank .rank_2 {background-position:-40px 0;}
+.rank_prod_area .rank .num_txt {color:#FFFFFF;display:block;font-size:14px;margin-top:4px;text-align:center;margin-left:-4px;}
+.rank_prod_area .rank .num_txt2 {color:#FFFFFF;display:block;font-size:14px;margin-top:2px;text-align:center;margin-left:-4px;*margin-top:4px;}
+.prod_title {color:#333333;font-size:12px;margin-top:11px;text-align:center;width:130px;word-wrap:break-word;}
+.prod_price {color:#4266db;text-align:center;margin-top:11px;}
+.prod_price strong {font-family:Tahoma;color:#4266DB;}
+
+.why_pop {background:url("http://img.danawa.com/new/section_m/sell_ranking/img/button_why.gif") no-repeat scroll 0 0 transparent;height:20px;position:absolute;right:-2px;text-indent:-999em;top:112px;width:39px;}
+.why_pop_area {background-color:#FFFFFF;border:1px solid #E31E10;height:auto;left:93px;position:absolute;top:131px;width:311px;z-index:9999;}
+.top_close {padding:10px 0 0 295px;}
+.top_close a {background:url("//img.danawa.com/new/section_m/sell_ranking/img/button_pop_close.gif") no-repeat scroll 0 0 transparent;display:block;height:7px;text-indent:-999em;width:8px;}
+.pop_contents {padding-left:19px;padding-right:19px;max-height:200px;overflow-y:auto;overflow-x:hidden;margin-bottom:15px;}
+.pop_contents .pop_txt {margin-top:10px;margin-bottom:10px;font-size:11px;color:#666666;}
+.rank4 .why_pop_area {left:auto;right:-2px;}
+.rank5 .why_pop_area {left:auto;right:-2px;}
+.rank_prod_area .pop_contents .white_line {border:none;top:-1px;position:absolute;left:0;width:37px;height:1px;}
+.last_list_pop .why_pop_area {bottom:86px;*bottom:91px;top:auto;}
+.last_list_pop .pop_contents .white_line {border:none;bottom:-1px;position:absolute;left:0;top:auto;}
+.last_list_pop .rank4 .pop_contents .white_line {border:none;bottom:-1px;position:absolute;right:0;left:auto;}
+.last_list_pop .rank5 .pop_contents .white_line {border:none;bottom:-1px;position:absolute;right:0;left:auto;}
+.rank_prod_area img.pop_img {height:auto;width:auto;}
+
+.date_area {position:absolute;right:0;top:20px;}
+.date_area a {margin-right:10px;}
+.date_area a.left_more {background:url("//img.danawa.com/new/section_m/sell_ranking/img/btn_date.gif") no-repeat 0 0 ;height:15px;width:15px;display:inline-block;}
+.date_area a.right_more {background:url("//img.danawa.com/new/section_m/sell_ranking/img/btn_date.gif") no-repeat 0 -20px ;height:15px;width:15px;display:inline-block;}
+.date_area a.left_finish {background:url("//img.danawa.com/new/section_m/sell_ranking/img/btn_date.gif") no-repeat -20px 0;height:15px;width:15px;display:inline-block;}
+.date_area a.right_finish {background:url("//img.danawa.com/new/section_m/sell_ranking/img/btn_date.gif") no-repeat -20px -20px ;height:15px;width:15px;display:inline-block;}
+.date_area .date_txt {color:#5c5c5c;margin-right:10px;font-size:15px;font-weight:bold;display:inline-block;vertical-align:bottom;*vertical-align:middle;}
+.date_area .size {font-size:18px;font-weight:bold;margin-left:5px;font-family:Tahoma;}
+
+.rank_copy {background:url("//img.danawa.com/new/section_m/sell_ranking/img/rank_copy.gif") no-repeat scroll 0 0 transparent;height:18px;position:absolute;right:10px;text-indent:-999em;top:7px;width:56px;}
+
+.danawa_cate_area li a:hover {text-decoration:underline;}
+.rank_prod_area .prod_title a {color:#333333;}
+.rank_prod_area .prod_title a:hover {text-decoration:underline;}
+

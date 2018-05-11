@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/*
+2017-08-18 / Create tour_list / yjk
+2018-01-08 / row:11 i background 버전교체 v170824 > v180108, inactive 추가 / yjk
+2018-01-19 / .tab_interface .tit 추가 v180119  / yjk
+2018-01-23 / .on_search_map 추가 / yjk
+*/
+
+/* common */
+legend, .blind {position:absolute; overflow:hidden; clip:rect(0 0 0 0); margin:-1px; width:1px; height: 1px;}
+i {display:inline-block;background:url(//img.danawa.com/new/tour/img/ico_listblog_v180108.png) no-repeat;}
+.unvisual {display:none}
+
+/* clear */
+.clear:after, .lowest_comparison:after, .lowest_comparison .list_wrap:after, .header_option:after, .tab_list:after, .tag_badge:after, .head_bloglist_table:after {clear:both; content: ""; display:block;}
+
+/* Layout */
+
+/* font */
+.txt_date, .link_more, .link_total_view, .body_bloglist_table  {font-family: dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,Sans-serif;}
+.lowest_comparison, .search_input, .search_input[type="text"]::-webkit-input-placeholder {font-family:'Malgun Gothic','맑은 고딕',dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,Sans-serif; letter-spacing: -.5px;}
+.num, .cal_month a, .list_month .month, .nation .en, .infomation .post_info {font-family:'Century Gothic',Sans-serif,arial,'돋움',Dotum,'굴림',gulim;}
+
+/* color */
+.color_01{color:#008287;} /* 가격비교 */
+.color_02{color:#e325c6;} /* 여행기간 */
+.color_03{color:#6b4fbb;} /* 여행사 */
+.color_04{color:#69970f;} /* 항공사 */
+.color_05{color:#009627;} /* 테마 */
+.color_06{color:#ab3901;} /* 출발시간 */
+.color_07{color:#ff5400;} /* 출발지 */
+.color_08{color:#ab742d;} /* 방문도시 */
+.color_09{color:#e72b2c;} /* 쇼핑횟수 */
+.color_10{color:#0375e0;} /* 숙소 */
+.color_11{color:#2f3eff;} /* 국가 */
+
+/* lowest_comparison */
+.lowest_comparison .content {width:1020px; margin-bottom:40px;}
+.lowest_comparison .tit_wrap {position:relative;}
+.lowest_comparison .tit {font-size:24px; font-weight: normal; padding-top:30px; letter-spacing: -1.5px; border-bottom:1px solid #000; line-height: 40px }
+.lowest_comparison .txt_date {position:absolute; right:70px; bottom:8px; font-size:12px; color:#666;}
+.lowest_comparison .link_more {position:absolute; right:0;bottom:8px;}
+.lowest_comparison .txt_more{float:left;}
+.lowest_comparison .arr_r{float:left;width:6px;height: 11px; margin:1px 0 0 6px; background-position:-4px -237px;}
+.lowest_comparison .list_wrap {margin-top:20px;}
+.lowest_comparison .item {float:left; width:320px; text-align: center; margin-left:30px}
+.lowest_comparison .item:first-child {margin-left:0;}
+.lowest_comparison .link_price{color:#008287; display: block; margin:10px 0 8px;font-size:14px; line-height: 24px;text-decoration: none;}
+.lowest_comparison .price .num{font-size:22px; letter-spacing: 0px; position:relative; top:1px;}
+.lowest_comparison .link_goods {text-decoration: none;}
+.list_wrap .thumb{display:block; font-size:0;}
+.list_wrap .title{font-size:16px; font-weight: normal; letter-spacing: -1.2px}
+.link_goods .txt {border-bottom:1px solid #b3b3b3;}
+.link_goods i {width:22px; height:17px; margin:0 2px 0 0; background-position:0 -48px; vertical-align: top;}
+.link_goods .count {color:#000; font-style:normal;}
+.tag_badge span{border:1px solid #ddd; display:inline-block; padding:0 10px; font-size:12px; border-radius:10px; margin:5px 0 0 0; height: 16px; line-height: 15px;}
+
+.link_thumb_tit .title {margin:10px 0; display: block;}
+
+.tab_interface {position:relative;margin-top:40px;}
+.tab_list {height: 48px; line-height: 48px; border-bottom:1px solid #000; text-align: center;}
+.tab_item {float:left;height:48px;font-size:16px; width:190px; background:#EDEDED; letter-spacing: -1px; cursor: pointer;border-right:1px solid #fff;color:#333;}
+.tab_item .num {margin-left:3px;}
+.tab_item.on {border:1px solid #000; border-bottom-color:#fff; margin-top:-1px;font-weight: bold; width:188px; background:#fff;}
+.tab_item.on .num{font-weight:normal;font-size:16px;}
+.tab_item.on {margin-left:-1px;}
+.tab_item:first-child.on {margin-left:0;}
+.tab_item:first-child.on .num {color:#008287;}
+.search_input{position:absolute;right:12px;top:8px;width:195px;height: 23px;line-height:23px;text-indent: 5px;font-size:12px;color:#666;}
+.search_input[type="text"]::-webkit-input-placeholder{color:#666;}
+.search_input::-webkit-input-placeholder{color:#666;}
+.search_input::-moz-placeholder{color:#666;}
+.search_input:-moz-placeholder{color:#666;}
+.search_input:-ms-input-placeholder{color:#666;}
+.search_button{position:absolute;right:12px;top:8px;background-position:0 -565px;height: 26px;width:25px;}
+.header_option {border-top:0; margin-top:0;}
+
+strong.total_departure {margin:0 44px 0 44px; font-size:22px;}
+.price_comp .visual_goods_inner{height: 116px;}
+.price_comp .tab_interface{top:-89px;}
+.cal_wrap.layer {z-index: 8}
+.h3_departure_tit {padding-top:13px;}
+/* cont_travel_goods */
+.cont_travel_goods {position:relative;}
+.cont_travel_goods .desc_wrap{margin-left:0; float:none;}
+.main_view .thumb_big_wrap, .main_view .txt_info_wrap, .main_view .price_wrap{ display:table-cell; vertical-align: middle;}
+.thumb_big_wrap {position:relative; font-size:0;}
+.thumb_big_wrap .source{position:absolute;bottom:12px;left:0;right:0;text-align: center;color:#666;letter-spacing: -.5px;font-size:11px;}
+.list_goods li:first-child .main_view {margin-top:6px;}
+.main_view .txt_info_wrap {width:510px;padding-left:24px; }
+.main_view .txt_info_wrap .tit {font-size:26px; padding-top:0;}
+.main_view .tag_badge {margin-top:5px;}
+.main_view .tag_badge span{border:1px solid #ddd; float:left; padding:0 10px; font-size:12px; line-height:16px; border-radius:10px; margin:5px 5px 0 0;}
+.main_view .desc_wrap {margin-top:10px;}
+.main_view .desc_wrap .desc{color:#666;}
+.main_view .tag_hash {margin-top:5px;}
+.main_view .tag_hash .link{margin:0 15px 4px 0;}
+.main_view .tag_hash .color_01 {font-size:13px;  word-break: keep-all;}
+
+.main_view .price_wrap {text-align: right; width:220px;}
+.main_view .price_wrap .lowest, .main_view .price_wrap .price{display:block; color:#008287; text-align: center;}
+.main_view .price_wrap .lowest {margin-left:60px; font-size:14px;}
+.main_view .price_wrap .price{font-size:16px; text-align: right; }
+.main_view .price_wrap .num{font-size:28px; position:relative; top:1px;}
+.main_view .link_price:hover, .link_price:focus {text-decoration: none;}
+.main_view .link_goods:hover {text-decoration:none;}
+.main_view .link_goods { display:block; padding-top:8px; padding-right: 20px; }
+.main_view .link_goods i {width:22px; height:17px; margin:0 2px 0 0; background-position:0 -48px; vertical-align: top;}
+.main_view .link_goods .txt {border-bottom:1px solid #B3B3B3; letter-spacing: 0;}
+.main_view .link_goods .count {color:#000; font-style: normal;}
+
+.item_goods {padding:22px 20px 0; position:relative;}
+.main_view .txt_info_wrap .tit{font-size:16px;}
+
+.form_bloglist .inp_price{float:left; width:88px; height: 22px; border:1px solid #A9A9A9;}
+.form_bloglist .lab_price{position:absolute;left:72px; top:3px; color:#999;}
+.form_bloglist .lab_price.max{left:178px;}
+.form_bloglist .txt_swung{float:left; margin:5px 5px 0;}
+.form_bloglist .btn_search {float:left; background:#666; color:#fff; font-weight: bold; margin-left:5px; height: 24px; padding:0 10px;}
+.form_bloglist .search_input {float:left; margin-left:10px; width:200px; height: 22px; border:1px solid #a9a9a9;}
+.form_bloglist .search_button {position:absolute; right:0; top:-1px; width:25px; height: 25px; background-position:0 -565px;}
+.lab_insearch {position:absolute; right:115px; top:3px; color:#666;}
+.price_lowest {padding:20px 0 0;position:relative; border-bottom:1px solid #f0f0f0;}
+.price_lowest.on {padding-bottom:35px;}
+.price_lowest.on .btn_area{border-bottom:1px solid #C8C8C8;}
+.price_lowest .btn{position:absolute;right:0;top:-10px; background:#e7e7e7; width:145px; height: 30px;}
+.price_lowest .txt{font-size:14px; letter-spacing: -.5px}
+.price_lowest .btn i{width:11px; height: 6px; background-position:-38px -145px; margin: 0 0 2px 2px;}
+.price_lowest .table_bloglist{display:none;}
+.price_lowest.on .table_bloglist{display:block;}
+.price_lowest.on .btn{background:#6A6A6A;}
+.price_lowest.on .txt{color:#fff;}
+.price_lowest.on .btn i{background-position:-38px -118px;}
+/* head_bloglist_table */
+.head_bloglist_table {border:1px solid #c8c8c8; border-top:none;}
+.head_bloglist_table .btn_range {display:block; color:#000; font-size:13px; background:#f4f4f4;}
+.head_bloglist_table .arrow_d { width:9px;height: 6px; background-position:-39px -167px; margin: 0 2px 2px}
+.head_bloglist_table .arrow_d.on {background-position:-39px -187px;}
+.head_bloglist_table .th{float:left; border-left:1px solid #dadada; line-height: 28px; text-align: center; background:#119994; color:#fff;}
+.head_bloglist_table .th:first-child{border-left-width: 0;}
+.table_bloglist .agency{width:93px;}
+.table_bloglist .name{width:290px;}
+.table_bloglist .period{width:69px;}
+.table_bloglist .time{width:108px}
+.table_bloglist .airline{width:100px;}
+.table_bloglist .departure{width:64px;}
+.table_bloglist .shopping{width:64px;}
+.table_bloglist .price{width:183px;}
+.link_total_view {position:absolute; bottom:5px; right: 0; width:90px; height: 20px; }
+.link_total_view .link_txt{float:left;}
+.link_total_view i{width:6px; height: 11px; margin: 2px 0 0 6px; background-position:-4px -237px; float:left;}
+/* body_bloglist_table */
+.body_bloglist_table .list {border:1px solid #c8c8c8; border-top:none; border-bottom:0;}
+.body_bloglist_table .item{border-bottom:1px solid #c8c8c8;}
+/*.body_bloglist_table .item:nth-child(2n){background:#fafafa;}*/
+.body_bloglist_table .item:hover {background:#E8F2F2;}
+.body_bloglist_table .td{ border-left:1px solid #c8c8c8; text-align: center; display: table-cell; vertical-align: middle; height: 50px;}
+.body_bloglist_table .td:first-child{border-left-width: 0;}
+.body_bloglist_table .item:last-child{border-bottom-color:#b2b2b2;}
+.body_bloglist_table .link_txt{display:block; max-height: 28px; overflow: hidden; padding:0 10px; text-align: left;}
+.body_bloglist_table .txt_grey {color:#666; font-size:11px; margin:4px 0; letter-spacing: -.5px;}
+.body_bloglist_table .txt_focus {color:#00878c; font-size:11px; margin:4px 0; letter-spacing: -.5px;}
+.airline .txt_grey {line-height: 20px;}
+.airline .img_wrap {display: inline-block; padding-left:5px;}
+.airline .txt_wrap {max-width:66px; display: inline-block; color:#666; padding-right:5px; font-size:11px; vertical-align: middle;}
+.airline .img_wrap img { width:18px; height:18px; border-radius: 18px; border:1px solid #ddd; margin-right:3px; vertical-align: middle;}
+.price .link_txt{text-align: right; font-size:14px; height: 20px; margin-right:20px; padding:0; float:right;}
+.price .num {font-size:16px; position:relative; top:1px;}
+.price .btn_booking {height: 18px; line-height: 18px; float:right; font-size:11px; color:#00878c; border:1px solid #d4d4d4; padding:0 5px; margin-left:5px; background:#fff;}
+.price .btn_booking:hover, .price .btn_booking:focus, .price .link_txt:focus .btn_booking {background:#00878c; border-color:#00878c; color:#fff;}
+.nav_num_prod {margin:20px 0 50px;}
+.tab_interface .new{background:url(//img.danawa.com/new/danawa_main/v2/img/icon_tr_new.png) no-repeat 0 0; width:32px; height: 20px; margin-left:6px}
+
+/* 18-01-08 */
+.inactive {background: #777 url(//img.danawa.com/new/tour/img/ico_listblog_v180108.png) no-repeat; background-position:-32px -191px; color:#dcdcdc; border-color:#dcdcdc;}
+.dpt_arr_area .airline .img_wrap {padding-left:0;margin-right:2px;}
+
+/* v180119 */
+.no_tab h3.tit {padding:14px 0 15px 17px; font-size:16px; color:#000; border-bottom:1px solid #000;}
+.no_tab .search_input {top:10px;}
+.no_tab .search_button {top:10px;}
+.no_tab .tab_list {display:none;}
+
+/* .on_search_map 추가 */
+.tab_interface.on_search_map {top:30px;}

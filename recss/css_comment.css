@@ -1,0 +1,70 @@
+#BlockWrite{
+	padding-top:5px;
+}
+
+#BoxDPByte{
+	padding-top:5px;
+}
+
+.loginInput{
+	height:18px;
+}
+
+.ClassTotalWidth{
+	width:495px;
+	padding:0px 0px 0px 5px;
+}
+
+.ClassCharecter{
+	width:45px;
+	height:45px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	float:left;
+}
+
+.ClassTextView{
+	width:375px;
+	float:left;
+	padding:0px 5px 0px 5px;
+	word-break:break-all;
+}
+
+.ClassTextSubView{
+	width:335px;
+	float:left;
+	padding:0px 5px 0px 5px;
+	word-break:break-all;
+}
+
+.ClassButton{
+	width:65px;
+	float:right;
+	padding:0px 5px 0px 0px;
+}
+
+.ClassDotteLine{
+	width:485px;
+	height:1px;
+	margin:5px 0px 5px 5px;
+	background-image:url('http://img.danawa.com/new/community/common_img/line_dot.gif');
+}
+
+.ClassDotteLine2{
+	width:438px;
+	height:1px;
+	margin:5px 0px 5px 52px;
+	background-image:url('http://img.danawa.com/new/community/common_img/line_dot.gif');
+}
+
+.ClassWriteForm
+{
+	 width:405px;
+	 height:47px;
+}
+
+.ClassWriteForm2
+{
+	 width:360px;
+	 height:47px;
+}

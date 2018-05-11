@@ -1,0 +1,48 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2009년 7월 9일 AM 10시 50분
+작업자 : P03
+내역 : 서비스도움말 인쇄팝업에 들어가는 css 뺌
+*/
+
+/* css initialize */
+html { overflow-x:auto; overflow-y:scroll;}
+* {margin:0; padding:0px; font-family:'돋움',Dotum,Verdana,Tahoma; font-size:12px; }
+img {border:0;}
+ul,li,ol {list-style:none;}
+caption {display:none;}
+
+/* 서비스도움말 인쇄팝업 */
+.cs_printfaq { width:760px; line-height:160%; margin-left:10px; height:100%;}
+.cs_printfaq dl {margin:10px 10px;}
+.cs_printfaq dt {background:url(http://img.danawa.com/new/help/img/cs_qnaheader_q.gif) no-repeat 0 1px; padding-left:24px; font-weight:bold; color:#000; }
+.cs_printfaq dd {background:url(http://img.danawa.com/new/help/img/cs_qnaheader_a.gif) no-repeat 0 1px; padding-left:24px; margin-top:5px;}
+
+
+/* 오픈Q&A 인쇄팝업 */
+#cs_print {width:770px; height:100%; margin:0;}
+#cs_print h1 { margin-bottom:15px;}
+.cs_printarea {width:770px; height:28px; margin-top:15px; background:#f3f3f3; text-align:center; padding-top:10px; display:none;}
+.cs_viewprint {width:760px; height:100%; background:url(http://img.danawa.com/new/help/img/cs_viewVertical_bg.gif) repeat-y; overflow:auto; margin-left:10px;}
+.cs_viewprint hr {margin:10px 10px; border:none; border-top:1px solid #ebebeb; height:0px; font-size:0px; line-height:0; clear:both;}
+
+
+.cs_viewQuestionPart {width:735px; background:url(http://img.danawa.com/new/help/img/cs_viewTop_bg.gif) no-repeat left top ; overflow:hidden; }
+.cs_viewQuestionPart:after {content:" "; display:block; clear:both; visibility:hidden; height:0;}
+.cs_viewQuestionPart p {margin:0 20px; line-height:160%; height:100% }
+
+.cs_questionInfo { float:right; margin:15px 20px 0 0; line-height:120%;}
+.cs_questionInfo:after {content:" "; display:block; visibility:hidden; height:0; }
+.cs_questionInfo dt {color:#666; font-weight:bold; font-size:11px; float:left; clear:left; width:40px;}
+.cs_questionInfo dd {color:#999; font-size:11px; margin-left:40px; }
+
+.cs_questionCategory {margin:20px 0 0 20px;}
+.cs_questionCategory dt {color:#21399b; font-size:12px;}
+.cs_questionCategory dd {color:#000; font-size:14px; font-weight:bold; margin-top:5px;}
+
+.cs_viewAnswerPart {width:735px; background:url(http://img.danawa.com/new/help/img/cs_viewBottom_bg.gif) no-repeat left bottom ; overflow:hidden; margin-top:10px;}
+.cs_viewAnswerBox {margin:10px; background:#f2f5fc url(http://img.danawa.com/new/help/img/cs_answer_ribon.gif) no-repeat left top;}
+.cs_viewAnswerInfo {display:block; margin-left:45px; padding-top:20px; }
+.cs_viewAnswerContents {margin:15px 20px; line-height:160%; overflow:hidden; color:#333;}
+.cs_viewAnswerContents p{margin-bottom:10px;}
+	

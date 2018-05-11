@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/*  2016-11-04 / hot deal css / bhj */ 
+/* 2018-03-30 / add .hd_cont_cover / lhk */
+
+/* openmarket Initialize */
+body,div,form,fieldset,legend,input,textarea,button{margin:0;padding:0}
+body{text-align:left;background:#fff;font-size:12px;font-family:Dotum,"돋움",gulim,"굴림",AppleGothic,Helvetica,Sans-serif;*word-break:break-all;-ms-word-break:break-all;}
+h1,h2,h3,h4,h5,h6,ul,li,p {margin:0;padding:0;list-style:none;}
+input,select,textarea,button{font-size:12px;font-family:Dotum,"돋움",gulim,"굴림",AppleGothic,Helvetica,Sans-serif;}
+button{font-family:inherit;cursor:pointer;}
+button::-moz-focus-inner{padding:0;}
+
+/*  layout */
+#danawa_container.hotdeal_container {width:100%;}
+.danawa_hotdeal .footer_danawa_address, 
+.danawa_hotdeal .danawa_gnb_center, 
+.danawa_hotdeal .danawa_search_center,
+.danawa_hotdeal .footer_top_content {width:1100px;}
+.hd_cont_area {width:1100px;margin:0 auto;position:relative;}
+
+/* common */
+.blind{overflow:hidden;position:relative;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+.clearfix:after,.clearfix:before {display:block;overflow:hidden;clear:both;content:""}
+.num ,.font_century, .user_level, .rank_o_num, .o_num_bg{font-family:"Century Gothic", Sans-serif, arial, "돋움", Dotum, "굴림", gulim;}
+
+/* top_down_position */
+.top_down_position{position:relative;z-index:1;width:1100px;margin:0 auto;}
+.top_down_area{position:absolute;right:-51px;top:617px;width:41px;height:69px;}
+.top_down_fixed{width:41px;height:69px;z-index:999;overflow:visible;position:fixed;}
+.top_down_area a{background:url(http://img.danawa.com/new/shopping_clip/v1/img/bg_up_down.png) no-repeat;width:41px;height:34px;position:absolute;display:block;text-indent:-9999em;}
+.top_down_area .btn_layer_up{background-position:0 0;overflow:hidden;}
+.top_down_area .btn_layer_down{background-position:0 -35px;position:absolute;top:35px;overflow:hidden;}
+.top_down_area .btn_layer_up:hover{background-position:0 -80px;}
+.top_down_area .btn_layer_down:hover{background-position:0 -115px;}
+
+/* navigation */
+.btn_opacity_arrow2{position:absolute;top:50%;z-index:990;margin:-25px 0 0 0;padding:0;cursor:pointer;overflow:hidden;}
+.btn_opacity_arrow2 button{border:0 none;background:url(http://img.danawa.com/new/danawa_main/v2/img/bg_hover_paging.png) no-repeat;display:block;text-indent:0em;width:93px;height:50px;margin:0;padding:0;overflow:hidden;cursor:pointer;}
+.btn_opacity_arrow2 a{border:0 none;background:url(http://img.danawa.com/new/danawa_main/v1/img/bg_hover_paging.png) no-repeat;display:block;text-indent:-999em;width:43px;height:50px;margin:0;padding:0;overflow:hidden;cursor:pointer;}
+.btn_layer_prev2{left:-1px;}
+.btn_layer_prev2 button{background-position:0 -130px;}
+.btn_layer_prev2 button:hover{background-position:0 -200px;}
+.btn_layer_prev2 button.hover{background-position:0 -200px;}
+.btn_layer_next2{right:-1px;}
+.btn_layer_next2 button{background-position:-32px -270px;}
+.btn_layer_next2 button:hover{background-position:-32px -340px;}
+.btn_layer_next2 button.hover{background-position:-32px -340px;}
+
+/* hd_top_banner */
+.hd_top_banner {width:100%;overflow:hidden;background:#fff;height:436px;position:relative;}
+.hd_top_banner .now_page_arrow {position:absolute;top:20px;left:50%;margin-left:490px;background:url(//img.danawa.com/new/danawa_main/v2/img/bg_hover_paging.png) no-repeat;background-position:0 -550px ;width:67px;height:37px;z-index:10;}
+.hd_top_banner .now_page_arrow .num {margin-top:6px;}
+.now_page_arrow .num,.paging_menu .num  {text-align:center;display:block;font-size:16px;color:#fff;font-family:"Malgun Gothic","맑은 고딕";}
+.paging_menu .btn_layer_prev2 {left:50%;margin-left:-550px;}
+.paging_menu .btn_layer_next2 {left:50%;margin-left:464px;}
+.top_img_item {float:left;width:100%;position:absolute;}
+.top_img_item a {display:block;height:436px;overflow:hidden;}
+.top_img_item img {position:absolute;left:50%;margin-left:-951px;}
+.btn_paging_arw button {display:block;position:absolute;top:50%;left:50%;margin-top:-42px;z-index:100;width:29px;height:56px; padding:0;cursor:pointer;overflow:hidden;background:url(//img.danawa.com/new/danawa_main/v2/img/bg_hover_paging.png) no-repeat;text-indent:-9999px;border:0;}
+.btn_prev_arw button {margin-left:-550px;background-position: 0 -600px;}
+.btn_next_arw button {margin-left:514px;background-position: 100% -600px;}
+
+/* view_opt_tabs */
+.hd_cate_area {margin-top:-60px;z-index:100}
+.view_opt_tabs {position:relative;margin:0;height:61px;background:url(//img.danawa.com/new/hotdeal/img/bg_tabs_line.gif) repeat-x left bottom;font-family:"Malgun Gothic", "맑은 고딕";}
+.opt_tabs {width:1100px;margin:0 auto;padding-left:1px;}
+.opt_tabs .tabs_item {float:left;width:549px;height:21px;padding:16px 0 21px 0;margin-left:-1px;border:1px solid #e6e6e6;border-bottom-width:0;text-align:center;font-size:20px;background:#e7e9ed;}
+.opt_tabs .tabs_item a {display:inline-block;width:100%;color:#666;letter-spacing:-0.02em;font-family:"Malgun Gothic", "맑은 고딕";}
+.opt_tabs .tabs_item a:hover {text-decoration:none;}
+.tabs_item.select {position:relative;border-color:#313d57;background:#fff;height:22px;}
+.tabs_item.select + .tabs_item {margin-left:-1px;}
+.tabs_item.select a {color:#000;font-weight:bold;position:relative;}
+
+/* section_nav */
+.section_nav {width:1100px;text-align:center;margin:20px auto 18px auto;}
+.hca_list {clear:both}
+.hca_list:after,.hca_list:before {display:block;overflow:hidden;clear:both;content:""}
+.section_nav .hca_list {display:inline-block;}
+.hcl {float:left;width:106px;margin-left:20px;background:url(//img.danawa.com/new/hotdeal/img/bg_hotdeal_cate.png) no-repeat;}
+.hcl:first-child {margin-left:0;}
+.hcl .link_1depth {display:block;width:106px;height:106px;position:relative;}
+.hcl .link_text {position:absolute;top:77px;left:50%;margin-left:-53px;text-align:center;width:106px;font-size:11px;color:#000;letter-spacing:-0.075em;}
+.hcl:hover .link_text, .hcl.select .link_text {color:#fff;font-weight:bold;}
+.hca_best .link_text {text-indent:-9999px;top:-9999px;left:-9999px;}
+.hca_best {background-position: 0 0;}
+.hca_01 {background-position:-110px 0;}
+.hca_02 {background-position:-220px 0;}
+.hca_03 {background-position:-330px 0;}
+.hca_04 {background-position:-440px 0;}
+.hca_05 {background-position:-550px 0;}
+.hca_06 {background-position:-660px 0;}
+.hca_best:hover, .hca_best.select {background-position:0 -110px;}
+.hca_01:hover, .hca_01.select {background-position:-110px -110px;}
+.hca_02:hover, .hca_02.select {background-position:-220px -110px;}
+.hca_03:hover, .hca_03.select {background-position:-330px -110px;}
+.hca_04:hover, .hca_04.select {background-position:-440px -110px;}
+.hca_05:hover, .hca_05.select {background-position:-550px -110px;}
+.hca_06:hover, .hca_06.select {background-position:-660px -110px;}
+
+/* view_brand_bar */
+.view_brand_bar {position:relative;z-index:100;width:1100px;overflow:hidden;margin:0 auto;}
+.view_brand_bar .hbr_list {display:table;width:100%;margin-left:10px;}
+.hbr_list .hcl {display:table-cell;background:url(//img.danawa.com/new/hotdeal/img/bg_brand_cate.png) no-repeat;margin-left:10px;}
+.hbr_list .link_text {text-indent:-9999px;}
+.hbr_list .hbr_TH201 {background-position: 0 0;}             /* TH201 : 11번가 쇼킹딜 */
+.hbr_list .hbr_TN729 {background-position:-110px 0;}         /* TN729 : 위메프 */
+.hbr_list .hbr_TN920 {background-position:-220px 0;}         /* TN920 : 티몬 */
+.hbr_list .hbr_ED910 {background-position:-330px 0;}         /* ED910 : 인터파크 쎈딜 */
+.hbr_list .hbr_ED909 {background-position:-440px 0;}         /* ED909 : CJ몰 오클락 */
+.hbr_list .hbr_ED908 {background-position:-550px 0;}          /* ED908 : GS샵 오늘의딜 */
+.hbr_list .hbr_ED901 {background-position:-660px 0;}          /* ED901 : 신세계몰 해피바이러스 */
+.hbr_list .hbr_TLB17 {background-position:-770px 0;}          /* TLB17 : 홈&쇼핑 핫킬 */
+.hbr_list .hbr_ED907 {background-position:-880px 0;}          /* ED907 : 현대H몰 굿럭템 */
+.hbr_list .hbr_ED903 {background-position:-990px 0;}          /* ED903 : 롯데홈쇼핑 땡큐딜 */
+.hbr_list .hbr_EE311 {background-position:-1100px 0;}         /* EE311 : 이마트몰 오반장 */
+.hbr_list .hbr_ED905 {background-position:-1210px 0;}          /* ED905: AK몰 파워딜 */
+.hbr_list .hbr_TP90D {background-position:-1320px 0;}          /* TP90D : 현대 더드림딜 */
+.hbr_list .hbr_TP402 {background-position:-1430px 0;}          /* TP90D : 큐텍 */
+.hbr_list .hbr_ED904 {background-position:-1540px 0;} 				/* hbr_ED904 : 해피딜 */
+
+.hbr_TH201:hover,.hbr_TH201.select {background-position: 0 -110px;}
+.hbr_TN729:hover,.hbr_TN729.select {background-position:-110px -110px;}
+.hbr_TN920:hover,.hbr_TN920.select {background-position:-220px -110px;}
+.hbr_ED910:hover,.hbr_ED910.select {background-position:-330px -110px;}
+.hbr_ED909:hover,.hbr_ED909.select {background-position:-440px -110px;}
+.hbr_ED908:hover,.hbr_ED908.select {background-position:-550px -110px;}
+.hbr_ED901:hover,.hbr_ED901.select {background-position:-660px -110px;}
+.hbr_TLB17:hover,.hbr_TLB17.select {background-position:-770px -110px;}
+.hbr_ED907:hover,.hbr_ED907.select {background-position:-880px -110px;}
+.hbr_ED903:hover,.hbr_ED903.select {background-position:-990px -110px;}
+.hbr_EE311:hover,.hbr_EE311.select {background-position:-1100px -110px;}
+.hbr_ED905:hover,.hbr_ED905.select {background-position:-1210px -110px;}
+.hbr_TP90D:hover,.hbr_TP90D.select {background-position:-1320px -110px;}
+.hbr_TP402:hover,.hbr_TP402.select {background-position:-1430px -110px;}
+.hbr_ED904:hover,.hbr_ED904.select {background-position:-1540px -110px;}
+
+
+.cate_2depth {width:1096px;margin:0 auto;position:relative;border:2px solid #d6d8db;background:#f3f3f3;font-size:14px;color:#333;letter-spacing:-0.05em;font-family:"Malgun Gothic","맑은 고딕";}
+.arw_top {position:absolute;top:-9px;width:15px;height:9px;background:url(//img.danawa.com/new/hotdeal/img/arw_cate_top.png) no-repeat;}
+.cate_01_2depth .arw_top {left:290px;}
+.cate_02_2depth .arw_top {left:420px;}
+.cate_03_2depth .arw_top {left:543px;}
+.cate_04_2depth .arw_top {left:669px;}
+.cate_05_2depth .arw_top {left:796px;}
+.cate_06_2depth .arw_top {left:920px;}
+.mid_list {clear:both;position:relative;text-align:left;}
+.mid_list:after,.mid_list:before {display:block;overflow:hidden;clear:both;content:""}
+.cate_2depth .mid_list + .mid_list {border-top:1px solid #d6d8db;}
+.mid_item {float:left;width:182px;}
+.mid_item:before {content:"";display:block;position:absolute;width:1px;height:16px;top:11px;background: #d6d8db;}
+.mid_item:first-child:before {background:none;}
+.mid_item .link_2depth {display:inline-block;width:100%;text-align:center;height:39px;line-height:39px;color:#333;}
+.mid_item.select .link_2depth {color:#0375e0;font-weight:bold;font-size:16px;}
+
+/* sort_opt_wrap */
+.sort_opt_wrap {position:absolute;bottom:10px;right:-8px;height:14px;}
+.sort_opt_wrap .s_opt {float:left;background:url(//img.danawa.com/new/hotdeal/img/info_bar.gif) left center no-repeat;}
+.sort_opt_wrap .s_opt:first-child {background:none;}
+.sort_opt_wrap .s_opt a {font-size:12px;color:#666;padding:0 15px;}
+.sort_opt_wrap .s_opt.on a {color:#000;font-weight:bold;background:url(//img.danawa.com/new/hotdeal/img/bg_opt_on.png) left center no-repeat;padding-left:17px;margin-left:15px;}
+
+/* hd_prod_wrap */
+.hd_prod_wrap {margin-bottom:40px;}
+.hd_prod_list {clear:both;zoom:1;}
+.hd_prod_list:after,.hd_prod_list:before {display:block;overflow:hidden;clear:both;content:""}
+.hd_prod_list .hover_line {float:left;margin-right:-1px;width:276px;min-height:414px;list-style:none;}
+.hd_prod_list .wrap_line {display:block;min-height:414px;border:1px solid #e1e1e1;margin-bottom:-1px;cursor:pointer;}
+.hd_prod_list .wrap_line:hover {border:1px solid #0375e0;z-index:1;position:relative;}
+.hd_prod_item {width:250px;margin:0 auto;}
+.link_deal {display:inline-block;} 
+.link_deal:hover {text-decoration:none;}
+.link_deal:hover .title_info {text-decoration:underline;}
+.link_deal .thumb {margin:12px auto;width:250px;height:250px;}
+.link_deal .thumb img {width:250px;height:250px;}
+.mall_info {overflow:hidden;margin:0 0 4px 8px;}
+.mall_info .s_logo {display:inline-block;float:left;}
+.s_logo {width:auto;height:24px;background:url(//img.danawa.com/new/hotdeal/img/logo_s.png) no-repeat;text-indent:-9999px;}
+.sl_TH201 {background-position: 0 0;width:52px}            /* TH201 : 11번가 쇼킹딜 */
+.sl_ED909 {background-position:0 -25px;width:58px;}        /* ED909 : CJ몰 오클락 */
+.sl_ED907 {background-position:0 -50px;width:57px;}        /* ED907 : 현대H몰 굿럭템 */
+.sl_TN920 {background-position:0 -75px;width:44px;}        /* TN920 : 티몬 */
+.sl_TN729 {background-position:0 -100px;width:38px;}       /* TN729 : 위메프 */
+.sl_TLB17 {background-position:0 -125px;width:65px;}       /* TLB17 : 홈&쇼핑 핫킬 */
+.sl_ED908 {background-position:0 -150px;width:65px;}       /* ED908 : GS샵 오늘의딜 */
+.sl_ED910 {background-position:0 -175px;width:40px;}       /* ED910 : 인터파크 쎈딜 */
+.sl_EE311 {background-position:0 -200px;width:62px;}       /* EE311 : 이마트몰 오반장 */
+.sl_ED903 {background-position:0 -225px;width:37px;}       /* ED903 : 롯데홈쇼핑 땡큐딜 */
+.sl_ED901 {background-position:0 -250px;width:71px;}       /* ED901 : 신세계몰 해피바이러스 */
+.sl_TP90D {background-position:0 -275px;width:92px;}      /* TP90D : 현대 더드림딜 */
+.sl_ED905 {background-position:0 -300px;width:100px}       /* ED905: AK몰 파워딜 */
+.sl_TP402 {background-position:0 -338px;width:44px}       /* TH201: 큐텐 */
+.sl_ED904 {background-position:0 -374px;width:48px}  	 /* ED904: 해피딜 */
+
+.mall_info .m_option {display:inline-block;float:left;height:24px;line-height:28px;font-size:12px;color:#666;background:url(//img.danawa.com/new/hotdeal/img/info_bar.gif) left center no-repeat;padding:0 11px;;margin-left:11px;}
+.title_info {overflow:hidden;margin:0 0 2px 8px;height:38px;color:#000;font-size:14px;font-family:"Malgun Gothic","맑은 고딕";}
+.title_info .text {font-family:"Malgun Gothic","맑은 고딕";font-size:14px;}
+.price_info {margin-left:8px;height:50px;overflow:hidden;font-family:"Malgun Gothic","맑은 고딕";}
+.price_info .percent {display:inline-block;float:left;margin-right:10px;color:#f84e51;font-size:20px;letter-spacing:-0.025em;}
+.percent .num {font-size:40px;font-weight:bold;font-style:normal;}
+.price_info .price {display:inline-block;float:left;position:relative;}
+.price_info .price .before {display:inline-block;position:absolute;color:#666;font-size:14px;text-decoration:line-through;width:150px;}
+.price_info .price .before .num {font-style:normal;}
+.price_info .price .after {display:inline-block;margin-top:16px;font-size:18px;color:#000;}
+.price_info .price .after .num {font-size:22px;font-weight:bold;font-style:normal;vertical-align:-2px;}
+.order_info {margin-left:10px;font-size:11px;color:#666;}
+.order_info span {font-size:12px;color:#000;}
+
+/* m_cont_area */
+.top_title_wrap {position:relative;height:51px;}
+.m_cont_area .top_title_wrap {height:64px;margin:10px 0 20px 0;}
+.m_tit_area {display:table;width:100%;vertical-align:middle;text-align:center;height:64px;}
+.blogo_wrap {display:table-cell;width:100%;vertical-align:bottom;}
+.mall_cont_area .sort_opt_wrap {position:absolute;right:0;margin-right:-9px;}
+
+.hd_cont_area .no_prod {margin-top:50px;padding:110px 0 70px 0;background:url(//img.danawa.com/new/hotdeal/img/bg_no_prod.png) top center no-repeat;}
+.no_prod .txt_noti {margin-top:10px;font-size:18px;color:#333;font-family:"Malgun Gothic","맑은 고딕";text-align:center;}
+.hd_cont_area .tit_best {margin-bottom:10px;font-size:20px;color:#000;font-weight:bold;font-family:"Malgun Gothic","맑은 고딕";}
+.hd_cont_cover{position:absolute;top:0;left:0;z-index:10;display:none;width:100%;height:100%;background:url(//img.danawa.com/new/goods_list/v1/img/bg_load_cover.png) repeat;background:rgba(255,255,255,.5)}
+.hd_cont_cover div{top:100px;text-align:center;position:relative;}
+
+.scroll_loader{position:relative;height:70px}
+.scroll_loader .hd_cont_cover div{top:50%;margin-top:-16px}

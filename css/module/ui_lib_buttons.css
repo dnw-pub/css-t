@@ -1,0 +1,21 @@
+/* 혼수다나와 */
+.dui-lib-button-set01, .dui-lib-button-set01 * {background-image:url(//img.danawa.com/ui_lib/assets/btn_deco_buttonSet1.gif); background-repeat:no-repeat; display:inline-block; letter-spacing:-1px; white-space:nowrap; vertical-align:top; margin-right:2px;} 
+	.duiBtnType1 {line-height:20px; background-position:right 0; overflow:visible;}
+	.duiBtnType1 * {line-height:20px; background-position:left 0; height:20px; margin-right:2px; padding:0 3px 0 15px; color:#fff;}
+	.duiBtnType2 {line-height:20px; background-position:right -30px; overflow:visible;}
+	.duiBtnType2 * {line-height:20px; background-position:left -30px; height:20px; margin-right:2px; padding:0 3px 0 5px; color:#333;}
+	.duiBtnType3 {line-height:24px; background-position:right -60px; overflow:visible;}
+	.duiBtnType3 * {line-height:24px; background-position:left -60px; height:24px; margin-right:2px; padding:0 3px 0 5px; color:#333; overflow:visible;}
+:root .dui-lib-button-set01 button {letter-spacing:-2px;}
+
+.dui-lib-button-set02, .dui-lib-button-set02 * {background-image:url(//img.danawa.com/ui_lib/assets/btn_deco_buttonSet2.gif); background-repeat:no-repeat; display:inline-block; letter-spacing:-1px; white-space:nowrap; vertical-align:top; margin-right:2px;line-height:23px;height:23px;} 
+	.duiBtnType4 {background-position:right 0; overflow:visible;}
+	.duiBtnType4 * {background-position:left 0; margin-right:2px; padding:0 3px 0 5px; color:#333; font-weight:bold;}
+	.duiBtnType5 {background-position:right -30px; overflow:visible;}
+	.duiBtnType5 * {background-position:left -30px; margin-right:2px; padding:0 3px 0 5px; color:#333;}
+	
+/* 아이콘 */
+.checkIcon {background:url(//img.danawa.com/ui_lib/assets/icon_deco_check.gif) no-repeat 0 0; display:inline-block; width:11px; height:8px; vertical-align:middle; margin:0 4px 0 0; padding:0;}
+.iconSet_01, .iconSet_02, .iconSet_03 {background:url(//img.danawa.com/new/section_m/wedding/img/icon_deco_files.gif) no-repeat 0 0; display:inline-block; width:20px; height:13px; vertical-align:middle; margin:0 3px 0 0; padding:0;}
+.iconSet_02 {background-position:0 -18px;}
+.iconSet_03 {background-position:0 -36px;}

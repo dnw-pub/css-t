@@ -1,0 +1,98 @@
+/*
+최종작업일자 : 2009년 3월 9일 AM 10시 00분
+작업자 : P03
+작업내용 : css_www로 옮김
+*/
+
+
+td   { font-family: "돋움", "Arial", "Verdana";	font-size: 12px; color:#4B4B4B; }
+
+body { 
+	font-family: "돋움", "Arial", "Verdana";	
+	font-size: 12px; color:#666666; 
+	margin: 0px 0px 0px 5px;
+ }
+
+A:link {COLOR: #333333;	TEXT-DECORATION: none;}
+A:visited {COLOR:#999999; TEXT-DECORATION: none;}
+A:active {COLOR: #333333; TEXT-DECORATION: none;}
+A:hover {color : #027A12; TEXT-DECORATION: underline;}
+
+.input
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #333333;
+ height				: 18px;
+ BACKGROUND-COLOR	: #ffffff;
+ border-right		: #cecec7 1px solid;
+ border-top			: #cecec7 1px solid;
+ border-left		: #cecec7 1px solid;
+ border-bottom		: #cecec7 1px solid;
+}
+
+.inputSearch
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #000000;
+ height				: 18px;
+ BACKGROUND-COLOR	: #EBF5DE;
+ border-right		: #8CCC34 1px solid;
+ border-top			: #8CCC34 1px solid;
+ border-left		: #8CCC34 1px solid;
+ border-bottom		: #8CCC34 1px solid;
+}
+
+.menu_icon1
+{
+	margin			: -7 6 0 0;
+}
+
+/* 게임on */
+.game_m_on
+{
+	color			: #1578B4;
+	font-weight		: bold;
+}
+
+/* 게임off */
+.game_m_off
+{
+	color			: #151839;
+	font-weight		: bold;
+}
+
+/* 메뉴 클릭시 */
+.menu_click { color:#ffffff; font-family:돋움; font-size:12px; background-color: #7ABA22;padding:2 0 0 0}
+
+
+
+.hot01 { font-size: 12px; font-weight: normal; color: #000000}
+a.hot01:link {   font-size: 12px; font-weight: normal; color: #000000; text-decoration: none}
+a.hot01:visited {   font-size: 12px; font-weight: normal; color: #000000; text-decoration: none}
+a.hot01:active {   font-size: 12px; font-weight: normal; color: #000000; text-decoration: none}
+a.hot01:hover {   font-size: 12px; font-weight: normal; color: #000000; text-decoration: underline}
+
+.topic01 { font-size: 12px; font-weight: normal; color: #FEFB1D}
+a.topic01:link {   font-size: 12px; font-weight: normal; color: #FEFB1D; text-decoration: none}
+a.topic01:visited {   font-size: 12px; font-weight: normal; color: #FEFB1D; text-decoration: none}
+a.topic01:active {   font-size: 12px; font-weight: normal; color: #FEFB1D; text-decoration: none}
+a.topic01:hover {   font-size: 12px; font-weight: normal; color: #FEFB1D; text-decoration: underline}
+
+.p_word { color:#ffffff; font-family:돋움; font-size:12px; line-height:18px;background-color: #959595;padding:2 4 0 4}
+.p_blue {  font-family:돋움; font-size: 12px; font-weight: bold; color: #185894}
+.list_price {color: #f96120; font-weight: bold;}
+.txt_00{ color: #000000; line-height:16px;}
+a.txt_00:link {   font-size: 12px; line-height:16px; color: #000000; text-decoration: none}
+a.txt_00:visited {   font-size: 12px; line-height:16px; color: #000000; text-decoration: none}
+a.txt_00:active {   font-size: 12px; line-height:16px; color: #000000; text-decoration: none}
+a.txt_00:hover {   font-size: 12px; line-height:16px; color: #005BA8; text-decoration: none}
+
+/* Google 광고 관련 소스 06.07.26*/
+.google { font-size: 12px; font-weight: normal; color: #057ac5}
+a.google:link {   font-size: 12px; font-weight: normal; color: #057ac5; text-decoration: none}
+a.google:visited {   font-size: 12px; font-weight: normal; color: #057ac5; text-decoration: none}
+a.google:active {   font-size: 12px; font-weight: normal; color: #057ac5; text-decoration: none}
+a.google:hover {   font-size: 12px; font-weight: normal; color: #f97e05; text-decoration: none}
+

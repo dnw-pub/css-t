@@ -1,0 +1,22 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2009년 8월 19일 PM 3시 40분
+작업자 :  
+내역 :  독립몰 관리페이지 도움말  css 작성
+
+#include 위치 => http://office.danawa.com/include/eldanawa.css
+
+*/
+.cmpny_container {position:relative; margin:30px 0 0 42px; padding-bottom:30px;}
+.cmpny_container ul, .cmpny_container li {list-style:none; margin:0; padding:0;}
+.cmpny_container li {margin-bottom:8px;}
+.cmpny_navigation {width:145px; position:absolute; }
+.cmpny_navigation h2 {margin:0 0 15px 0; padding:0;}
+.cmpny_navigation img {border:0; vertical-align:top;}
+.cmpny_contents {padding-left:165px; width:750px; *width:915px;}
+.cmpny_contents img {vertical-align:top;}
+.cmpny_container dl, .cmpny_container dt, .cmpny_container dd {margin:0; padding:0;}
+.cmpny_container dl {margin-left:10px;}
+.cmpny_container dt {text-align:center;}
+.cmpny_container dd {margin-top:15px; text-align:center;}
+.contents_division {height:1px; line-height:0px; background:url(http://img.danawa.com/help/img/cmpny_contents_hr.gif) repeat-x; border:none; display:block; text-indent:0px; overflow:hidden; margin:25px 0;}

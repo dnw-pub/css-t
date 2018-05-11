@@ -1,0 +1,444 @@
+/*
+ÃÖÁ¾ÀÛ¾÷ÀÏÀÚ : 2009³â 1¿ù 6ÀÏ PM 12½Ã 15ºÐ
+ÀÛ¾÷ÀÚ : P03
+³»¿ª : /danawa/img/new/css/ µð·ºÅä¸®·Î ¿Å±è
+*/
+
+
+.show { border-width: 0px; display: inline; }
+.hide { border-width: 0px; display: none; }
+
+.rollover:hover { position: relative; }
+.rollover:hover .show { display: none; }
+.rollover:hover .hide { display: inline; }
+
+
+/* ±âº» ½ºÅ¸ÀÏ */
+body { font-family: "µ¸¿ò", "Arial", "Verdana";	font-size: 12px; color:#4B4B4B;       margin: 0px 0px 0px 5px; }
+img { border-width: 0px; }
+td   { font-family: "µ¸¿ò", "Arial", "Verdana";	font-size: 12px; color:#4B4B4B;}
+
+A:link {COLOR: #4B4B4B;	TEXT-DECORATION: none;}
+A:visited {COLOR:#4B4B4B; TEXT-DECORATION: none;}
+A:active {COLOR: #4B4B4B; TEXT-DECORATION: none;}
+A:hover {color : #005BA8; TEXT-DECORATION: none;}
+
+/* form¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+
+.input	{ Background-color:#FAFAFA; Border:1px Solid #A7A7A7; COLOR:#4C4C4C; FONT-FAMILY: gulim; FONT-SIZE:12px; height:22px; line-height:18px; }
+.input1	{ Background-color:#FFFFFF; Border:1px Solid #999999; COLOR:#4C4C4C; FONT-FAMILY: gulim; FONT-SIZE:12px; }
+.input2	{ Background-color:#FAFAFA; Border:1px Solid #A7A7A7; COLOR:#4C4C4C; FONT-FAMILY: gulim; FONT-SIZE:12px; height:16; }
+.input3	{ Background-color:#FFFFFF; Border:1px Solid #7F9DB9; COLOR:#606060; FONT-FAMILY: µ¸¿ò; FONT-SIZE:12px; height:16; }
+.area	{ Background-color:#FFFFFF; Border:1px Solid #CCCCCC; COLOR:#666666; FONT-FAMILY: gulim; FONT-SIZE: 12px; line-height: 17px; }
+.select	{ Background-color:#F6F6F6; Border:1px Solid #999999; COLOR:#666666; FONT-FAMILY: gulim; FONT-SIZE:12px; line-height: 17px; }
+.select1{ Background-color:#FFFFFF; Border:1px Solid #999999; COLOR:#666666; FONT-FAMILY: gulim; FONT-SIZE:12px; line-height: 17px; }
+.select2{ Background-color:#FFFFFF; Border:0px Solid #FFFFFF; COLOR:#666666; FONT-FAMILY: gulim; FONT-SIZE:12px; line-height: 17px; }
+
+
+/* °¢ ¼½¼Çleft ¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+	.menu_pc { font-size: 12px; font-weight: normal; color: #4864A0}
+	a.menu_pc:link {   font-size: 12px; font-weight: normal; color: #4864A0; text-decoration: none}
+   	a.menu_pc:visited {   font-size: 12px; font-weight: normal; color: #4864A0; text-decoration: none}
+   	a.menu_pc:active {   font-size: 12px; font-weight: normal; color: #4864A0; text-decoration: none}
+	a.menu_pc:hover {   font-size: 12px; font-weight: normal; color: blue; text-decoration: underline}
+
+/* top Ä«Å×°í¸®¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+
+
+	.top_cate { font-size: 12px; font-weight: normal; color: #4B4B4B}
+	a.top_cate:link {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+   	a.top_cate:visited {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+   	a.top_cate:active {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+	a.top_cate:hover {   font-size: 12px; font-weight: normal; color: #0233FF; text-decoration: underline}
+
+/* main¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+	.main01 { font-size: 12px; font-weight: normal; color: #4B4B4B}
+	a.main01:link {   font-size: 12px; font-weight: normal; color: #727C86; text-decoration: none}
+   	a.main01:visited {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+   	a.main01:active {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+	a.main01:hover {   font-size: 12px; font-weight: normal; color: #1253B5; text-decoration: underline}
+
+	.main02 { font-size: 12px; font-weight: bold; color: #4650C1}
+	a.main02:link {   font-size: 12px; font-weight: bold; color: #4650C1; text-decoration: none}
+   	a.main02:visited {   font-size: 12px; font-weight: bold; color: #4650C1; text-decoration: none}
+   	a.main02:active {   font-size: 12px; font-weight: bold; color: #4650C1; text-decoration: none}
+	a.main02:hover {   font-size: 12px; font-weight: bold; color: #4650C1; text-decoration: underline}
+
+	.main03 { font-size: 12px; font-weight: normal; color: #4956B5}
+	a.main03:link {   font-size: 12px; font-weight: normal; color: #4956B5; text-decoration: none}
+   	a.main03:visited {   font-size: 12px; font-weight: normal; color: #4956B5; text-decoration: none}
+   	a.main03:active {   font-size: 12px; font-weight: normal; color: #4956B5; text-decoration: none}
+	a.main03:hover {   font-size: 12px; font-weight: normal; color: #4956B5; text-decoration: underline}
+
+	.box1 { font-size: 12px; font-weight: normal; color: #0083D4}
+	a.box1:link {   font-size: 12px; font-weight: normal; color: #0083D4; text-decoration: none}
+   	a.box1:visited {   font-size: 12px; font-weight: normal; color: #0083D4; text-decoration: none}
+   	a.box1:active {   font-size: 12px; font-weight: normal; color: #0083D4; text-decoration: none}
+	a.box1:hover {   font-size: 12px; font-weight: normal; color: #0083D4; text-decoration: underline}
+
+	.box2 { font-size: 12px; font-weight: normal; color: #A255C9}
+	a.box2:link {   font-size: 12px; font-weight: normal; color: #A255C9; text-decoration: none}
+   	a.box2:visited {   font-size: 12px; font-weight: normal; color: #A255C9; text-decoration: none}
+   	a.box2:active {   font-size: 12px; font-weight: normal; color: #A255C9; text-decoration: none}
+	a.box2:hover {   font-size: 12px; font-weight: normal; color: #A255C9; text-decoration: underline}
+
+	.right01 { font-size: 12px; font-weight: normal; color: #4B4B4B}
+	a.right01:link {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+   	a.right01:visited {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+   	a.right01:active {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+	a.right01:hover {   font-size: 12px; font-weight: normal; color: #1C5AE3; text-decoration: underline}
+
+	.right02 { font-size: 12px; font-weight: normal; color: #5D3636}
+	a.right02:link {   font-size: 12px; font-weight: normal; color: #5D3636; text-decoration: none}
+   	a.right02:visited {   font-size: 12px; font-weight: normal; color: #5D3636; text-decoration: none}
+   	a.right02:active {   font-size: 12px; font-weight: normal; color: #5D3636; text-decoration: none}
+	a.right02:hover {   font-size: 12px; font-weight: normal; color: #5D3636; text-decoration: underline}
+
+	.right03 { font-size: 12px; font-weight: normal; color: #4B4B4B}
+	a.right03:link {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+   	a.right03:visited {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+   	a.right03:active {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+	a.right03:hover {   font-size: 12px; font-weight: normal; color: #7A00AD; text-decoration: none}
+
+	.right04 { font-size: 12px; font-weight: bold; color: #23459C; line-height:14px;}
+	a.right04:link {   font-size: 12px; font-weight: bold; color: #23459C; line-height:14px; text-decoration: none}
+   	a.right04:visited {   font-size: 12px; font-weight: bold; color: #23459C; line-height:14px; text-decoration: none}
+   	a.right04:active {   font-size: 12px; font-weight: bold; color: #23459C; line-height:14px; text-decoration: none}
+	a.right04:hover {   font-size: 12px; font-weight: bold; color: #3285D8; line-height:14px; text-decoration: none}
+
+	.price01 { font-size: 12px; font-weight: normal; color: #00A6B6}
+	.price02 { font-size: 12px; font-weight: normal; color: #0189C3}
+
+
+/* °¡Àü¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+
+	.elec01 { font-size: 12px; font-weight: normal; color: #23459C}
+	a.elec01:link {   font-size: 12px; font-weight: normal; color: #23459C; text-decoration: none}
+   	a.elec01:visited {   font-size: 12px; font-weight: normal; color: #23459C; text-decoration: none}
+   	a.elec01:active {   font-size: 12px; font-weight: normal; color: #23459C; text-decoration: none}
+	a.elec01:hover {   font-size: 12px; font-weight: normal; color: #3285D8; text-decoration: none}
+
+
+/* ÈÞ´ëÆù¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+
+	.mob01 { font-size: 12px; font-weight: bold; color: #3965A6}
+	a.mob01:link {   font-size: 12px; font-weight: bold; color: #3965A6; text-decoration: none}
+   	a.mob01:visited {   font-size: 12px; font-weight: bold; color: #3965A6; text-decoration: none}
+   	a.mob01:active {   font-size: 12px; font-weight: bold; color: #3965A6; text-decoration: none}
+	a.mob01:hover {   font-size: 12px; font-weight: bold; color: #1253B5; text-decoration: underline}
+
+	.mob02 { font-size: 16px; font-weight: bold; color: #3965A6}
+	a.mob02:link {   font-size: 16px; font-weight: bold; color: #3965A6; text-decoration: none}
+   	a.mob02:visited {   font-size: 16px; font-weight: bold; color: #3965A6; text-decoration: none}
+   	a.mob02:active {   font-size: 16px; font-weight: bold; color: #3965A6; text-decoration: none}
+	a.mob02:hover {   font-size: 16px; font-weight: bold; color: #1253B5; text-decoration: underline}
+
+	.mob03 { font-size: 12px; font-weight: normal; color: #028DC6}
+
+/* 2006.02.10 P06 Ãß°¡ */
+	.center_subject {
+   font-family:µ¸¿ò; color:#333333; font-size:14px; padding-top:6px; font-weight:bold
+}
+.center_contents {
+   font-family:µ¸¿ò; color:#888888; font-size:12px; line-height:16px
+}
+.center_smallsub {
+   font-family:µ¸¿ò; color:#333333; font-size:12px; padding-top:1px
+}
+.right_contents {
+   font-family:µ¸¿ò; color:#333333; font-size:12px; line-height:16px; padding-left:6px
+}
+.cen_ic {
+   padding-top:7px
+}
+
+/* 2006.03.02 P06 Ãß°¡*/
+.center_dica_subject {
+   font-family:µ¸¿ò; color:#333333; font-size:12px; padding-top:6px; font-weight:bold
+}
+.center_dica_subject2 {
+   font-family:µ¸¿ò; color:#333333; font-size:12px; font-weight:bold
+}
+.center_dica_subject3 {
+   font-family:µ¸¿ò; color:#666666; font-size:12px; font-weight:bold
+}
+.hit_name3 {
+	color : #F73F0E;
+	font-size : 12px;
+	font-family : µ¸¿ò;
+}
+.center_dica_days {
+   font-family:µ¸¿ò; color:#666666; font-size:12px; line-height:16px
+}
+.center_dica_sub {
+   font-family:µ¸¿ò; color:#005CCE; font-size:12px; line-height:16px
+}
+
+/* µðÄ«¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+
+	.dica01 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #23459C}
+	a.dica01:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #23459C; text-decoration: none}
+   	a.dica01:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #23459C; text-decoration: none}
+   	a.dica01:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #23459C; text-decoration: none}
+	a.dica01:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #3285D8; text-decoration: none}
+
+	.dica02 { font-size: 12px; font-weight: normal; color: #4B4B4B}
+	a.dica02:link {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+   	a.dica02:visited {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+   	a.dica02:active {   font-size: 12px; font-weight: normal; color: #4B4B4B; text-decoration: none}
+	a.dica02:hover {   font-size: 12px; font-weight: bold; color: #009194; text-decoration: none}
+
+	.dica03 { color: #21439D; font-weight: bold; }
+
+
+
+/* goods ¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+	.goods { font-size: 11px; font-weight: normal;line-height: 12px; color: #666666 }
+	a.goods:link {   font-size: 11px; font-weight: normal; color: #666666;line-height: 12px; text-decoration: none}
+   	a.goods:visited {   font-size: 11px; font-weight: normal; color: #666666;line-height: 12px; text-decoration: none}
+   	a.goods:active {   font-size: 11px; font-weight: normal; color: #666666;line-height: 12px; text-decoration: none}
+	a.goods:hover {   font-size: 11px; font-weight: normal; color: blue; line-height: 12px;text-decoration: underline}
+
+	.goods2 { font-size: 12px; font-weight: normal;line-height: 12px; color: #666666 }
+	a.goods2:link {   font-size: 12px; font-weight: normal; color: #666666;line-height: 12px; text-decoration: none}
+   	a.goods2:visited {   font-size: 12px; font-weight: normal; color: #666666;line-height: 12px; text-decoration: none}
+   	a.goods2:active {   font-size: 12px; font-weight: normal; color: #666666;line-height: 12px; text-decoration: none}
+	a.goods2:hover {   font-size: 12px; font-weight: normal; color: blue; line-height: 12px;text-decoration: underline}
+
+		.goods3 { font-size: 12px; font-weight: normal;line-height: 31px; color: #666666 }
+	a.goods3:link {   font-size: 12px; font-weight: normal; color: #666666;line-height: 31px; text-decoration: none}
+   	a.goods3:visited {   font-size: 12px; font-weight: normal; color: #666666;line-height: 31px; text-decoration: none}
+   	a.goods3:active {   font-size: 12px; font-weight: normal; color: #666666;line-height: 31px; text-decoration: none}
+	a.goods3:hover {   font-size: 12px; font-weight: normal; color: blue; line-height: 31px;text-decoration: underline}
+
+	a.goods4:link {   font-size: 12px; font-weight: normal; color: #004389; text-decoration: none}
+   	a.goods4:visited {   font-size: 12px; font-weight: normal; color: #004389; text-decoration: none}
+   	a.goods4:active {   font-size: 12px; font-weight: normal; color: #004389; text-decoration: none}
+	a.goods4:hover {   font-size: 12px; font-weight: normal; color: blue; text-decoration: underline}
+
+	.goods_style1 {	color: #016599;	font-weight: bold;}
+        .goods_style2 {	color: #6B51B2;	font-weight: bold;}
+	.goods_tit { color: #004389; font-weight: bold; }
+
+
+	.g_cate01 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #23459C}
+	a.g_cate01:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #23459C; text-decoration: none}
+   	a.g_cate01:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #23459C; text-decoration: none}
+   	a.g_cate01:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #23459C; text-decoration: none}
+	a.g_cate01:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #3285D8; text-decoration: none}
+
+	.g_cate02 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #309400}
+	a.g_cate02:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #309400; text-decoration: none}
+   	a.g_cate02:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #309400; text-decoration: none}
+   	a.g_cate02:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #309400; text-decoration: none}
+	a.g_cate02:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #3FC300; text-decoration: none}
+
+	.g_cate03 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #A54699}
+	a.g_cate03:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #A54699; text-decoration: none}
+   	a.g_cate03:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #A54699; text-decoration: none}
+   	a.g_cate03:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #A54699; text-decoration: none}
+	a.g_cate03:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #EE5CDC; text-decoration: none}
+
+	.g_cate04 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #7C52BC}
+	a.g_cate04:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #7C52BC; text-decoration: none}
+   	a.g_cate04:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #7C52BC; text-decoration: none}
+   	a.g_cate04:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #7C52BC; text-decoration: none}
+	a.g_cate04:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #AB6CE6; text-decoration: none}
+
+	.g_cate05 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #5D8215}
+	a.g_cate05:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #5D8215; text-decoration: none}
+   	a.g_cate05:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #5D8215; text-decoration: none}
+   	a.g_cate05:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #5D8215; text-decoration: none}
+	a.g_cate05:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #8DBF00; text-decoration: none}
+
+	.g_cate06 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #9D7E24}
+	a.g_cate06:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #9D7E24; text-decoration: none}
+   	a.g_cate06:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #9D7E24; text-decoration: none}
+   	a.g_cate06:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #9D7E24; text-decoration: none}
+	a.g_cate06:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #DAA100; text-decoration: none}
+
+	.g_cate07 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #6472B8}
+	a.g_cate07:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #6472B8; text-decoration: none}
+   	a.g_cate07:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #6472B8; text-decoration: none}
+   	a.g_cate07:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #6472B8; text-decoration: none}
+	a.g_cate07:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #7589EA; text-decoration: none}
+
+	.g_cate08 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #C37900}
+	a.g_cate08:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #C37900; text-decoration: none}
+   	a.g_cate08:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #C37900; text-decoration: none}
+   	a.g_cate08:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #C37900; text-decoration: none}
+	a.g_cate08:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #F79900; text-decoration: none}
+
+	.g_cate09 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #0084AC}
+	a.g_cate09:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #0084AC; text-decoration: none}
+   	a.g_cate09:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #0084AC; text-decoration: none}
+   	a.g_cate09:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #0084AC; text-decoration: none}
+	a.g_cate09:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #14B7EB; text-decoration: none}
+
+
+	.g_cate10 { font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #13857B}
+	a.g_cate10:link {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #13857B; text-decoration: none}
+   	a.g_cate10:visited {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #13857B; text-decoration: none}
+   	a.g_cate10:active {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #13857B; text-decoration: none}
+	a.g_cate10:hover {   font-family: "µ¸¿ò", "Arial", "Verdana"; font-size: 12px; font-weight: bold; color: #2BA297; text-decoration: none}
+
+.cate_table {
+	background: url("//img.danawa.com/goods/category/box_bg01.gif") repeat;
+	width: 149px;
+	height: 26px;
+	border: 0px solid #FF0000;
+	padding:0px;
+	margin:0px;
+	margin-bottom:4px;
+	border-spacing: 0px;
+	border-width:0px;
+}
+
+.cate_10 {
+	background: url("//img.danawa.com/goods/category/10_box01.gif") no-repeat;
+	height: 26px;
+}
+
+.cate_gap {
+	height: 5px;
+}
+
+.cate_bottom {
+	background: url("//img.danawa.com/goods/category/box_bottom.gif") no-repeat;
+	height: 3px;
+}
+
+/* Member¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+	.member01 { font-size: 12px; font-weight: normal; color: #838383}
+	a.member01:link {   font-size: 12px; font-weight: normal; color: #838383; text-decoration: none}
+   	a.member01:visited {   font-size: 12px; font-weight: normal; color: #838383; text-decoration: none}
+   	a.member01:active {   font-size: 12px; font-weight: normal; color: #838383; text-decoration: none}
+	a.member01:hover {   font-size: 12px; font-weight: normal; color: #838383; text-decoration: underline}
+
+	.member02 { font-size: 12px; font-weight: normal; color: #0077AF}
+	a.member02:link {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: none}
+   	a.member02:visited {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: none}
+   	a.member02:active {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: none}
+	a.member02:hover {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: underline}
+
+	.member03 { font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: underline}
+	a.member03:link {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: underline}
+   	a.member03:visited {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: underline}
+   	a.member03:active {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: underline}
+	a.member03:hover {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: underline}
+
+	.member04 { font-size: 12px; font-weight: normal; color: #80ACB9}
+
+	.member_body { font-family: "µ¸¿ò", "Arial", "Verdana";	font-size: 12px; color:#4B4B4B;       margin: 0px 0px 0px 0px; }
+
+	.textarea { border:#c2c2c2 solid 1px; color:#6a6a6a; font-size:12px; padding:10px}
+
+
+/* bottom¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+	.bottom01 { font-size: 12px; font-weight: normal; color: #395884}
+	a.bottom01:link {   font-size: 12px; font-weight: bold; color: #395884; text-decoration: none}
+   	a.bottom01:visited {   font-size: 12px; font-weight: bold; color: #395884; text-decoration: none}
+   	a.bottom01:active {   font-size: 12px; font-weight: bold; color: #395884; text-decoration: none}
+	a.bottom01:hover {   font-size: 12px; font-weight: bold; color: #395884; text-decoration: underline}
+
+/* dealer¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+
+	.dealer01 { font-size: 16px; font-weight: bold; color: #FFFFFF}
+	a.dealer01:link {   font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none}
+   	a.dealer01:visited {   font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none}
+   	a.dealer01:active {   font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none}
+	a.dealer01:hover {   font-size: 16px; font-weight: normal; color: #FFFFFF; text-decoration: none}
+
+/* ºí·Î±×¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+	a.s_new:link {font-family: "µ¸¿ò"; font-size: 8pt; color: #1194AD; text-decoration: none}
+	a.s_new:visited {font-family: "µ¸¿ò"; font-size: 8pt; color: #1194AD; text-decoration: none}
+	a.s_new:hover {font-family: "µ¸¿ò"; font-size: 8pt; color: #575033; text-decoration: none}
+
+	a.content:link {font-family: "µ¸¿ò"; font-size: 8pt; color: #373737; text-decoration: none}
+	a.content:visited {font-family: "µ¸¿ò"; font-size: 8pt; color: #373737;  text-decoration: none}
+	a.content:hover {font-family: "µ¸¿ò"; font-size: 8pt; color: #1194AD;  text-decoration: none}
+
+/* »çÀÌÆ®¸Ê¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+	.site01 { font-size: 12px; font-weight: bold; color: #4968A0}
+	.site02 { font-size: 12px; font-weight: normal; color: #0C8AED}
+
+	.site03 { font-size: 12px; font-weight: bold; color: #7B7B7B}
+	a.site03:link {   font-size: 12px; font-weight: bold; color: #7B7B7B; text-decoration: none}
+   	a.site03:visited {   font-size: 12px; font-weight: bold; color: #7B7B7B; text-decoration: none}
+   	a.site03:active {   font-size: 12px; font-weight: bold; color: #7B7B7B; text-decoration: none}
+	a.site03:hover {   font-size: 12px; font-weight: bold; color: #C53397; text-decoration: underline}
+
+	.site04 { font-size: 12px; font-weight: normal; color: #9A482F}
+	a.site04:link {   font-size: 12px; font-weight: normal; color: #9A482F; text-decoration: none}
+   	a.site04:visited {   font-size: 12px; font-weight: normal; color: #9A482F; text-decoration: none}
+   	a.site04:active {   font-size: 12px; font-weight: normal; color: #9A482F; text-decoration: none}
+	a.site04:hover {   font-size: 12px; font-weight: normal; color: #9A482F; text-decoration: underline}
+
+	.event01 { font-size: 16px; font-weight: normal; color: #DC0404}
+
+
+
+/* µð½ºÇÃ·¹ÀÌ ¼½¼Ç¿¡ »ç¿ëµÇ´Â ½ºÅ¸ÀÏ */
+
+/* ÀÌ¹ÌÁö+ÅØ½ºÆ® */
+.font_01 {	color 		: #333333;	font-weight : bold; }
+
+.font_02  {	color 		: #005CCE;}
+
+.font_03  {	color 		: #666666;}
+
+.font_04  {	color 		: #888888; line-height		: 16px;}
+
+.line_01  { line-height : 18px;}
+
+/* ÅØ½ºÆ® */
+.text_01
+{ color : #333333;	font-weight	: bold;}
+
+.text_02
+{color : #888888; line-height		: 16px;}
+
+.text_03
+{color : #333333; line-height		: 18px; }
+
+
+/* ¸ð´ÏÅÍÆ÷À¯ */
+.monitor_01
+{ color : #0083D4;	font-weight	: bold;}
+
+.monitor_02
+{ color : #0083D4;}
+
+.monitor_03
+{ color : #333333;}
+
+.monitor_4
+{line-height		: 23px;}
+
+
+/* ÂÊÁö ÅØ½ºÅÍ */
+
+.page_66
+{color: #666666; font-family:µ¸¿ò; font-size:11px;}
+
+.page_blue
+{color: #0A4AEC; font-family:µ¸¿ò; font-size:11px;}
+
+
+.hot_price
+{font-size: 14px; font-weight: bold;	color: #663300;}
+.best3_tilte
+{font-size: 15px; font-weight: bold; color:#FF0000;}
+.best3_text
+{font-size: 11px; }
+
+.adtext_01
+{font-size: 16px; font-weight: bold; color: #242673;}
+.adtext_02
+{font-size: 16px; font-weight: bold;	color: #ED135A;}
+.adtext_03
+{font-size: 16px; font-weight: bold; color:#666666;}
+
+.cool_title
+{color: #000000;	font-weight: bold;}
+

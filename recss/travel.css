@@ -1,0 +1,194 @@
+@charset "euc-kr";
+/*
+작업일:2012-02-26
+작업자:P10
+내용: travel.css제작 
+
+작업일:2013-06-19
+작업자:P06
+내용: 웹접근성 색상 변경
+ 
+*/
+.ln9000{display:inline-block;font-size:0;text-indent:-9999em;}
+.price_text{display: inline-block;}
+.comma{background:url("//img.danawa.com/new/newmain/img/icon_price.png") no-repeat scroll 0 -330px transparent;display:block;float:left;height:24px;text-indent:-9999em;width:8px;}
+.won{background:url("//img.danawa.com/new/newmain/img/icon_price.png") no-repeat scroll 0 -363px transparent;display:block;float:left;height:22px;text-indent:-9999em;width:15px;}
+#dnw_footer{margin-top: 40px;}
+.hidden,#contents .hidden{background:none repeat scroll 0 0 transparent;font-size:0;height:0;line-height:0;margin:0;padding:0;position:absolute;visibility:hidden;width:0;}
+a.skip_link{display:block;font-size:1.3em;left:0;position:absolute;text-align:center;top:-10000px;width:100%;z-index:999;}
+a.skip_link:hover,a.skip_link:focus,a.skip_link:active{background:none repeat scroll 0 0 #1D60A7;color:#FFFFFF;font-weight:bold;padding:15px 0;position:absolute;top:0;z-index:999;}
+
+/* Travel Main */
+.travel_wrap{}
+.travel_wrap .intro_img{background:url('//img.danawa.com/new/travel/img/intro_travel.jpg') no-repeat 0 0;height:185px;}
+.travel_wrap .intro_img .copywrite,.travel_wrap h2{color:#444;position:relative;z-index:-1;*display:none;font-size:14px;}
+.travel_wrap .intro_img h2 strong{color:#165bfe;font-size:14px;}
+.travel_wrap .bottom_nav{margin-top:30px;*margin-top:40px;}
+.travel_wrap .bottom_nav .btn_link{display:inline-block;border:1px solid #a7a7a7;height:58px;background:url('//img.danawa.com/new/travel/img/bg_btn_link.png') repeat-x 0 0;background:linear-gradient(to bottom,#fff,#ececec);box-shadow:inset 0 0 1px #fff;width:456px;text-align:center;*zoom:1;}
+.travel_wrap .bottom_nav .btn_link span{display:block;background:url('//img.danawa.com/new/travel/img/btn_link.png') no-repeat transparent;margin:auto;height:20px;text-align:left;text-indent:-999em;margin-top:19px;}
+.travel_wrap .bottom_nav .to_main{margin-right:5px;}
+.travel_wrap .bottom_nav .to_main span{width:231px;background-position:0 0;}
+.travel_wrap .bottom_nav .to_top span{width:110px;background-position:0 -30px;}
+.travel_wrap .bottom_nav .to_tourcabin span{width: 213px;background-position: 0 -60px;}
+.travel_wrap .bottom_nav .to_072 span{width: 230px;background-position: 0 -90px;}
+.travel_wrap .origin_comment{text-align: right;font-size: 11px;color: #767676;line-height: 14px;margin-top: 5px;}
+
+/* Main Hot Items */
+.hot_travel{height:440px;background:url('//img.danawa.com/new/travel/img/bg_hot_travel.jpg') no-repeat 0 0;overflow:hidden;padding-left:10px;margin-bottom:30px;}
+.hot_travel .hot_sect{float:left;width:447px;margin-right:10px;}
+.hot_travel .hot_sect .header{position:relative;padding:12px 0 0 9px;height:33px;}
+.hot_travel .hot_sect h3{background:url('//img.danawa.com/new/travel/img/title_travel.png') no-repeat 0 0;height:23px;text-indent:-999em;}
+.hot_travel .urgent_item h3{width:73px;background-position:0 0;}
+.hot_travel .lowest_item h3{width:92px;background-position:0 -30px;}
+.hot_travel .hot_sect .view_more{position:absolute;color:#e6ebf8;width:35px;height:10px;display:block;top:19px;right:12px;background:url('//img.danawa.com/new/travel/img/title_travel.png') no-repeat 0 -70px;}
+.hot_travel .hot_sect .view_more span{visibility:hidden;font-size:0;}
+.hot_travel .item_list{width:100%;table-layout:fixed;border-collapse:collapse;}
+.hot_travel .item_list caption{visibility:hidden;height:0;overflow:hidden;font-size:0;line-height:0;position: static;}
+.hot_travel .item_list thead tr{height:26px;}
+.hot_travel .item_list th{font-size:11px;color:#666;font-weight:normal;text-align:center;vertical-align:middle;padding:2px 0 0;*height:24px;}
+.hot_travel .item_list tbody tr{height:36px;}
+.hot_travel .item_list td{font-size:12px;color:#666;text-align:center;padding:3px 0 0;vertical-align:middle;line-height:16px;word-break:break-all;*height:33px;}
+.hot_travel .item_list td a{color:#666;}
+.hot_travel .item_list td a:hover{text-decoration: underline;}
+.hot_travel .item_list td.price{color:#4266db;font-weight:bold;text-align: center;/*padding-right:9px;text-align:right;*/}
+.hot_travel .item_list td.price a{color:#4266db;}
+.hot_travel .urgent_list col.date{width:65px;}
+.hot_travel .urgent_list col.region{width:73px;}
+.hot_travel .urgent_list col.price{width:88px;}
+.hot_travel .urgent_list td.date{text-align:left;padding-left:13px;}
+.hot_travel .urgent_list td.name{text-align:left;padding-left:5px;}
+.hot_travel .urgent_list td.name a{font-weight: bold;}
+.hot_travel .lowest_list col.region{width:85px;}
+.hot_travel .lowest_list col.company{width:90px;}
+.hot_travel .lowest_list col.price{width:90px;}
+.hot_travel .lowest_list td.date{text-align:left;padding-left:17px;}
+.hot_travel .lowest_list td.date a{font-weight: bold;}
+
+/* Travel List Common */
+.travel_list_wrap{}
+.travel_list_wrap .header{position:relative;padding-left:11px;margin-bottom:11px;zoom:1;}
+.travel_list_wrap .header:after{content:"";display: block;clear: both;height: 0;}
+.travel_list_wrap .header h3{background:url('//img.danawa.com/new/travel/img/title_travel.png') no-repeat 0 0;height:20px;text-indent:-999em;}
+.travel_list_wrap .header .view_more{position:absolute;display:block;width:35px;height:10px;background:url('//img.danawa.com/new/travel/img/title_travel.png') no-repeat -60px -70px;top:4px;right:10px;}
+.travel_list_wrap .header .view_more span{visibility:hidden;font-size:0;}
+.travel_list_wrap .header .location{float:none;height:auto;margin:0;line-height:18px;background-position:0 7px;position:absolute;top:0;right:9px;}
+.travel_list_wrap .header .intro_comment{height:12px;background:url('//img.danawa.com/new/travel/img/title_travel.png') no-repeat 0 0;font-size:11px;letter-spacing:-1px;text-indent:-999em;}
+
+/* Social Travel */
+.social_travel{margin-top:30px;}
+.social_travel .header .title_social_inter{background-position:0 -100px;width:113px;}
+.social_travel_list{margin-bottom:20px;}
+.social_travel_list ul{overflow:hidden;width:933px;}
+.social_travel_list li{float:left;margin:0 8px 7px 0;}
+.social_travel_list li{display:block;border:1px solid #d9d9d9;width:273px;padding:12px 14px 8px;}
+.social_travel_list li a{display: block;}
+.social_travel_list li a:hover{text-decoration: none;}
+.social_travel_list .thumb{display:block;height:158px;overflow:hidden;text-align:center;margin-bottom:13px;}
+.social_travel_list .thumb img{}
+.social_travel_list .title{font-weight:bold;line-height:18px;color:#333;display:block;height:36px;font-size:14px;margin-bottom:5px;overflow:hidden;}
+.social_travel_list .description{display:block;font-size:11px;color:#666;line-height:16px;height:30px;margin-bottom:10px;}
+.social_travel_list .price{display:block;margin-bottom:1px;}
+.social_travel_list .price_text{color:#4266db;vertical-align:baseline;margin-right:5px;}
+.social_travel_list .price_text .num{font-size:25px;font-family:Arial;line-height:30px;vertical-align:baseline;}
+.social_travel_list .price del{color:#bcbcbc;font-size:14px;font-weight:bold;}
+.social_travel_list .price del span{font-size:15px;font-family:Tahoma,Geneva,sans-serif;font-weight:normal;}
+.social_travel_list .count{display:block;text-align:right;font-weight:bold;font-size:14px;color:#333;line-height:16px;}
+.social_travel_list li:hover{border:6px solid #4266db;padding:7px 9px 3px;}
+.social_travel_list li:hover{background:#4071de;color:#fff;border:1px solid #4071de;padding:12px 14px 8px;}
+.social_travel_list li:hover .title{color:#fff;}
+.social_travel_list li:hover .description{color:#bbcbef;}
+.social_travel_list li:hover .price_text{color:#fcff00;}
+.social_travel_list li:hover .price del{color:#b2c2f1;}
+.social_travel_list li:hover .count{color:#fff;}
+
+
+/* National Travel */
+.national_travel{margin-top: 28px;}
+.national_travel .header{margin-bottom: 0;}
+.national_travel .header .title_national{width:75px;background-position:0 -130px;}
+.national_travel .jejumong_frame{width:100%;height:511px;}
+
+/* Travel Searcher */
+.travel_searcher{border:2px solid #8badf5;margin-bottom: 22px;}
+.travel_searcher .nav_tabs{}
+.travel_searcher .nav_tabs ul{background:#8badf5;overflow:hidden;zoom:1;}
+.travel_searcher .nav_tabs li{float:left;margin-right:2px;}
+.travel_searcher .nav_tabs li a{display:block;background:#b1c9f9;font-weight:bold;color:#1a42d3;font-size:12px;line-height:16px;height:21px;/*padding-top:6px;width:70px;*/padding: 6px 10px 0;text-align:center;}
+.travel_searcher .nav_tabs li a:hover{text-decoration:none;}
+.travel_searcher .nav_tabs li.selected a{background:#fff;cursor:default;}
+.travel_searcher .steps_wrap{overflow:hidden;zoom:1;}
+.travel_searcher .select_step{float:left;width:254px;}
+.travel_searcher .select_step dt{height:27px;border-bottom:1px solid #dadada;font-size:14px;color:#666;line-height:18px;font-weight:bold;padding:13px 0 0 36px;background:url('//img.danawa.com/new/travel/img/bg_searcher_dt.png') repeat-x 0 0;background:linear-gradient(to bottom,#fff 50%,#f1f1f1);position:relative;}
+.travel_searcher .select_step .bg_sub{float:left;width:23px;height:41px;background:url('//img.danawa.com/new/travel/img/title_travel.png') no-repeat -150px 0;position:absolute;top:0;left:0;}
+.travel_searcher .select_step dd{border-right:1px solid #dadada;height:205px;overflow-y:auto;scrollbar-highlight-color: #b4b4b4; scrollbar-shadow-color: #b4b4b4; scrollbar-arrow-color: #aeaeae; scrollbar-face-color: #FFFFFF; scrollbar-3dlight-color: #FFFFFF; scrollbar-darkshadow-color: #FFFFFF; scrollbar-track-color: #ffffff;}
+.travel_searcher .select_step dd::-webkit-scrollbar{width:16px}
+.travel_searcher .select_step dd::-webkit-scrollbar-button:start:decrement{background:url('//img.miclub.com/newmiclub/event/election/img/election_pack.png') -200px 0 no-repeat ;border:1px solid #b3b3b3;}
+.travel_searcher .select_step dd::-webkit-scrollbar-button:end:increment{background:url('//img.miclub.com/newmiclub/event/election/img/election_pack.png') -200px -20px no-repeat ;border:1px solid #b3b3b3;}
+.travel_searcher .select_step dd::-webkit-scrollbar-track{background:#f6f6f6}
+.travel_searcher .select_step dd::-webkit-scrollbar-thumb{background:#fff;border:1px solid #b3b3b3;}
+.travel_searcher .select_step dd::-webkit-scrollbar-corner{background:#fff}
+.travel_searcher .search_confirm{width:159px;_width:156px;}
+.travel_searcher .search_confirm dd{border-right:none;}
+.travel_searcher .select_result{width:120px;margin:11px auto 2px;overflow:hidden;}
+.travel_searcher .select_result dt{background:none;height:auto;font-size:11px;font-weight:bold;color:#4a74cb;line-height:15px;border:0;padding:0;position:static;margin-bottom:3px;}
+.travel_searcher .select_result dd{height:auto;border-bottom:1px solid #e6e6e6;height:15px;padding:1px 4px 0;line-height:15px;font-size:12px;color:#333;overflow:hidden;margin-bottom:14px;}
+.travel_searcher .btn_search_travel{display:block;width:120px;height:30px;background:url('//img.danawa.com/new/travel/img/title_travel.png') no-repeat 0 -220px #4f4f4f;color:#fff;text-indent:-999em;margin:0 auto;zoom:1;}
+.travel_searcher .sel_list ul{padding:9px 0;}
+.travel_searcher .sel_list li{margin-bottom:1px;}
+.travel_searcher .sel_list a{display:block;color:#666;font-size:12px;line-height:16px;padding:4px 3px 3px 36px;}
+.travel_searcher .sel_list a:hover,.travel_searcher .sel_list a:focus,.travel_searcher .sel_list .selected a{background:#eff3f9;font-weight:bold;text-decoration:none;}
+
+/* Travel Board */
+.travel_board{table-layout:fixed;width:100%;border-collapse:collapse;}
+.travel_board caption{visibility:hidden;height:0;overflow:hidden;font-size:0;line-height:0;position: static;}
+.travel_board th{background:#f6f6f6;text-align:center;font-size:12px;color:#333;font-weight:bold;border-top:2px solid #989898;border-bottom:1px solid #bcbcbc;}
+.travel_board .sort_sel{border: 1px solid #abadb3;border-color:#abadb3 #dbdfe6 #e3e9ef;font-weight: bold;}
+.travel_board td{border-bottom: 1px solid  #e6e6e6;line-height: 16px;text-align: center;color: #666;/*padding-top:2px;*/}
+.travel_board td a{color: #666;}
+.travel_board td.price{color: #4266db;font-weight: bold;text-align: right;padding-right: 10px;}
+.travel_board td.price a{color: #4266db}
+
+/* 페이징[기존] */
+.indexBorder{text-align:center;position:relative;zoom:1;padding:10px 0;background:#f8f8f8;}
+.indexBorder a,.indexBorder span{display:inline-block;height:20px;margin-right:2px;vertical-align:bottom;line-height:20px;vertical-align:middle;}
+.indexBorder a.next{background:url('//img.danawa.com/new/prod_list/img/ico_next.gif') no-repeat 50% 1px;width:20px;}
+.indexBorder a.prev{background:url('//img.danawa.com/new/prod_list/img/ico_prev.gif') no-repeat 50% 1px;width:20px;margin-right:4px;}
+.indexBorder a.active{}
+.indexBorder .active{background:#5d5d5d;color:#fff;}
+.gray a,.gray span{color:#6b6b6b;border:1px solid #fafafa;font-family:Verdana;font-size:11px;text-decoration:none;width:20px;}
+.gray a:hover,.gray .next,.gray .prev{border:#c5c5c5 1px solid;}
+.gray .page_on,.gray .page_on:hover{background:#969696;color:#fff;border:1px solid #969696;}
+
+/* Urgent Travel */
+.urgent_travel{margin-top:30px;}
+.urgent_travel .header .title_urgent_travel{float:left;width:67px;background-position:0 -160px;}
+.urgent_travel .header .intro_comment{float:left;width:202px;background-position:0 -190px;margin:6px 0 0 8px;}
+
+.urgent_travel_board col.region{width:160px;}
+.urgent_travel_board col.date{width:80px;}
+.urgent_travel_board col.price{width:100px;}
+.urgent_travel_board col.tour{width:110px;}
+.urgent_travel_board thead tr{height:36px;}
+.urgent_travel_board th{padding-top: 3px;*height: 31px;}
+.urgent_travel_board tbody tr{height:54px;}
+.urgent_travel_board td.region{padding-left: 20px;text-align: left;}
+.urgent_travel_board td.name{text-align: left;padding-left: 10px;}
+.urgent_travel_board td.name a{font-weight: bold;}
+.urgent_travel_board .thumb{vertical-align: middle;width: 58px;height: 49px;margin-right: 10px;}
+
+/* Lowest Travel */
+.lowest_travel{margin-top: 30px;}
+.lowest_travel .header .title_lowest_travel{float:left;width:86px;background-position:0 -260px;}
+.lowest_travel .header .intro_comment{float:left;width:270px;background-position:0 -290px;margin:6px 0 0 8px;}
+.lowest_travel td.date a{font-weight: bold;}
+.lowest_travel_board col.start{width: 115px;}
+.lowest_travel_board col.goal{width: 145px;}
+.lowest_travel_board col.tour{width: 145px;}
+.lowest_travel_board col.price{width: 135px;}
+.lowest_travel_board col.period{width: 135px;}
+.lowest_travel_board thead tr{height:36px;}
+.lowest_travel_board th{padding-top: 3px;*height: 33px;}
+.lowest_travel_board tbody tr{height:36px;}
+.lowest_travel_board td{padding-top: 3px;*height:33px;}
+.lowest_travel_board td.price{padding-right: 25px;}
+

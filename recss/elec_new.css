@@ -1,0 +1,210 @@
+/*
+
+적용페이지 : av 섹션 메인
+최종작업일자 : 2011년 04월 19일
+작업자 : P03
+작업내용 : 금주의인기상품 #weekBest 추가
+
+최종작업일자 : 2011년 05월 27일
+작업자 : P03
+작업내용 :#navigation .bnrarea 전체추가
+
+
+핵설명 FX: 아무것도 없음
+       ie7 : 속성앞에 *
+	   ie6 : 속성앞에 _
+*/
+
+
+/*메인에 들어가는 css*/
+
+/* 금주의 인기상품 */
+/*#navigation .weekBest {width:186px; height:381px; border:1px solid #e6e6e6; margin-top:2px;  margin:0; padding:0;}
+#navigation .tit_weekbest {margin:15px 0 2px 10px; width:150px; height:18px; background:url(http://img.danawa.com/new/elec_new/main_img/title_weekbest.gif) no-repeat;}
+#navigation ul {width:166px; height:335px; margin:0 0 0 10px; padding:0; }
+#navigation li {padding:8px 0; *padding:7px 0; _padding:7px 0; margin:0;  clear:both; border-bottom:1px solid #e6e6e6; list-style:none; height:50px;}
+#navigation .nounderline {border-bottom:0px;}
+#navigation .proimg{width:50px; height:50px; float:left; margin:0 10px 0 0; padding:0;}
+#navigation .proname{width:100px;float:left; font-size:11px; color:#666; margin:0 0 3px 0; padding:0; }
+#navigation .proname a{ font-size:11px; color:#666; text-decoration:normal;}
+#navigation .proname a:hover{ font-size:11px; color:#666; text-decoration:underline;}
+#navigation .proprice{width:80px;float:left; color:#ff6600; font-weight:bold; margin:0; padding:0;}
+#navigation img {border:0px;}*/
+
+/* 카테고리 */
+#navigation .newcategory {width:189px; height:381px; border:1px solid #d9d9d9; margin:2px 0 0 0; padding:0;}
+#navigation .newcategory ul {width:166px; height:335px; margin:5px 0 0 10px; padding:0; }
+#navigation .newcategory li {padding:7px 0; *padding:6px 0; _padding:6px 0; margin:0;  border-bottom:1px solid #e5e5e5; list-style:none; height:14px; font-size:12px; color:#333;}
+#navigation .newcategory li a{ font-size:12px; color:#333; text-decoration:normal;}
+#navigation .newcategory li a:hover{ font-size:12px; color:#333; text-decoration:underline;}
+#navigation .nounderline {border-bottom:0px;}
+
+#navigation .bnrarea {width:189px; height:381px; border:1px solid #d9d9d9; margin:2px 0 0 0; padding:0;}
+#navigation .bnrarea ul{width:165px; height:335px; margin:1px 0 0 10px; padding:0; }
+#navigation .bnrarea li{padding:0; margin:0;  border-bottom:1px solid #e5e5e5; list-style:none; width:165px; height:75px; font-size:0px;}
+#navigation .bnrarea .nounderline {border-bottom:0px;}
+
+/*쇼핑뉴스*/
+.shopnews { font-family:돋움; font-size: 12px; font-weight:normal;color: #FFFFFF;line-height:17px}
+a.shopnews:link {   font-size: 12px; font-weight: normal; color: #FFFFFF; text-decoration: none;line-height:17px}
+a.shopnews:visited {   font-size: 12px; font-weight: normal; color: #FFFFFF; text-decoration: none;line-height:17px}
+a.shopnews:active {   font-size: 12px; font-weight: normal; color: #FFFFFF; text-decoration: none;line-height:17px}
+a.shopnews:hover {   font-size: 12px; font-weight: normal; color: #FFFFFF; text-decoration: underline;line-height:17px}
+
+/*초특가상품/인기상품*/
+.right_small { color: #666666; font-size:11px; letter-spacing:-1;}
+.right_pro { font-family:돋움; font-size: 12px; font-weight:bold;color: #B53A0A;}
+a.right_pro:link {   font-size: 12px; font-weight: bold; color: #B53A0A; text-decoration: none;}
+a.right_pro:visited {   font-size: 12px; font-weight: bold; color: #B53A0A; text-decoration: none;}
+a.right_pro:active {   font-size: 12px; font-weight: bold; color: #B53A0A; text-decoration: none;}
+a.right_pro:hover {   font-size: 12px; font-weight: bold; color: #B53A0A; text-decoration: underline;}
+
+/*쇼핑뉴스쪽의 png이미지 투명하게 하는 것
+.png24 {
+  tmp:expression(setPng24(this));*/
+
+/*가전의 링크*/
+.elec_txt { font-family:돋움; font-size: 12px; font-weight:normal;color: #333333;}
+a.elec_txt:link {   font-size: 12px; font-weight: normal; color: #333333; text-decoration: none;}
+a.elec_txt:visited {   font-size: 12px; font-weight: normal; color: #333333; text-decoration: none;}
+a.elec_txt:active {   font-size: 12px; font-weight: normal; color: #333333; text-decoration: none;}
+a.elec_txt:hover {   font-size: 12px; font-weight: normal; color: #333333; text-decoration: underline;}
+
+.elec_txt2 { font-family:돋움; font-size: 12px; font-weight:normal;color: #666666;}
+a.elec_txt2:link {   font-size: 12px; font-weight: normal; color: #666666; text-decoration: none;}
+a.elec_txt2:visited {   font-size: 12px; font-weight: normal; color: #666666; text-decoration: none;}
+a.elec_txt2:active {   font-size: 12px; font-weight: normal; color: #666666; text-decoration: none;}
+a.elec_txt2:hover {   font-size: 12px; font-weight: normal; color: #666666; text-decoration: underline;}
+
+.elec_news { font-family:돋움; font-size: 12px; font-weight:normal;color: #666666; letter-spacing:-1;}
+a.elec_news:link {   font-size: 12px; font-weight: normal; color: #666666; letter-spacing:-1; text-decoration: none;}
+a.elec_news:visited {   font-size: 12px; font-weight: normal; color: #666666; letter-spacing:-1; text-decoration: none;}
+a.elec_news:active {   font-size: 12px; font-weight: normal; color: #666666; letter-spacing:-1; text-decoration: none;}
+a.elec_news:hover {   font-size: 12px; font-weight: normal; color: #666666; letter-spacing:-1; text-decoration: underline;}
+
+/*맞짱*/
+.vstext { font-family:돋움; font-size: 12px; font-weight:bold;color: #543C22;line-height:17px;}
+
+/*기획전에 들어가는 css*/
+.listimg_gray1
+{
+	border: 1px solid E8E8E8;
+}
+
+.listimg_gray2
+{
+	border: 5px solid F2F2F2;
+}
+
+.listimg_gray3
+{
+	border: 1px solid D9D9D9;
+}
+
+/*best01 상품 타이틀*/
+.best_tit01 { font-family:돋움; font-size: 12px; font-weight:bold;color: #666666;line-height:21px}
+a.best_tit01:link {   font-size: 12px; font-weight: bold; color: #666666; text-decoration: none;line-height:21px}
+a.best_tit01:visited {   font-size: 12px; font-weight: bold; color: #666666; text-decoration: none;line-height:21px}
+a.best_tit01:active {   font-size: 12px; font-weight: bold; color: #666666; text-decoration: none;line-height:21px}
+a.best_tit01:hover {   font-size: 12px; font-weight: bold; color: #666666; text-decoration: underline;line-height:21px}
+
+/*best02 상품 타이틀*/
+.best_tit02 { font-family:돋움; font-size: 14px; font-weight:bold;color: #333333;line-height:21px}
+a.best_tit02:link {   font-size: 14px; font-weight: bold; color: #333333; text-decoration: none;line-height:21px}
+a.best_tit02:visited {   font-size: 14px; font-weight: bold; color: #333333; text-decoration: none;line-height:21px}
+a.best_tit02:active {   font-size: 14px; font-weight: bold; color: #333333; text-decoration: none;line-height:21px}
+a.best_tit02:hover {   font-size: 14px; font-weight: bold; color: #333333; text-decoration: underline;line-height:21px}
+
+/*best03 상품 타이틀*/
+.best_tit03 { font-family:돋움; font-size: 14px; font-weight:bold;color: #412A5F;line-height:21px}
+a.best_tit03:link {   font-size: 14px; font-weight: bold; color: #412A5F; text-decoration: none;line-height:21px}
+a.best_tit03:visited {   font-size: 14px; font-weight: bold; color: #412A5F; text-decoration: none;line-height:21px}
+a.best_tit03:active {   font-size: 14px; font-weight: bold; color: #412A5F; text-decoration: none;line-height:21px}
+a.best_tit03:hover {   font-size: 14px; font-weight: bold; color: #412A5F; text-decoration: underline;line-height:21px}
+
+/*상품 리스트 타이틀*/
+.list_tit01 { font-family:돋움; font-size: 12px; font-weight:bold;color: #02335E;line-height:16px}
+a.list_tit01:link {   font-size: 12px; font-weight: bold; color: #02335E; text-decoration: none;line-height:16px}
+a.list_tit01:visited {   font-size: 12px; font-weight: bold; color: #02335E; text-decoration: none;line-height:16px}
+a.list_tit01:active {   font-size: 12px; font-weight: bold; color: #02335E; text-decoration: none;line-height:16px}
+a.list_tit01:hover {   font-size: 12px; font-weight: bold; color: #02335E; text-decoration: underline;line-height:16px}
+
+/*상품 리스트 타이틀*/
+.list_tit02 { font-family:돋움; font-size: 12px; font-weight:bold;color: #333333;line-height:16px}
+a.list_tit02:link {   font-size: 12px; font-weight: bold; color: #333333; text-decoration: none;line-height:16px}
+a.list_tit02:visited {   font-size: 12px; font-weight: bold; color: #333333; text-decoration: none;line-height:16px}
+a.list_tit02:active {   font-size: 12px; font-weight: bold; color: #333333; text-decoration: none;line-height:16px}
+a.list_tit02:hover {   font-size: 12px; font-weight: bold; color: #333333; text-decoration: underline;line-height:16px}
+
+
+/*평균가*/
+.default_m {
+	font-size: 12px;
+	font-weight: bold;
+	color:#959595;
+	text-decoration: line-through;
+}
+
+/*최저가*/
+.down_m {
+	font-size: 14px;
+	font-weight: bold;
+	color:#FF6600
+}
+
+/*최저가*/
+.down_m2 {
+	font-size: 12px;
+	font-weight: bold;
+	color:#FF6600
+}
+
+/*특가*/
+.special_m {
+	font-size: 14px;
+	font-weight: bold;
+	color:#F12256
+}
+
+/*기획전 텍스트*/
+.plan_txt01 { font-family:돋움; font-size: 11px; font-weight:bold;}
+a.plan_txt01:link {   font-size: 11px; font-weight: bold; text-decoration: none;}
+a.plan_txt01:visited {   font-size: 11px; font-weight: bold; text-decoration: none;}
+a.plan_txt01:active {   font-size: 11px; font-weight: bold; text-decoration: none;}
+a.plan_txt01:hover {   font-size: 11px; font-weight: bold; text-decoration: underline;}
+
+.plan_txt02 { font-family:돋움; font-size: 11px; font-weight:normal;color:999999; }
+a.plan_txt02:link {   font-size: 11px; font-weight: normal; color:999999; text-decoration: none;}
+a.plan_txt02:visited {   font-size: 11px; font-weight: normal; color:999999; text-decoration: none;}
+a.plan_txt02:active {   font-size: 11px; font-weight: normal; color:999999; text-decoration: none;}
+a.plan_txt02:hover {   font-size: 11px; font-weight: normal; color:999999; text-decoration: underline;}
+
+.aundis_ar {
+	SCROLLBAR-FACE-COLOR: #FFFFFF;
+	SCROLLBAR-HIGHLIGHT-COLOR: #88D25A;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #88D25A;
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-TRACK-COLOR:#E7F6DC;
+	SCROLLBAR-ARROW-COLOR: #4DAC27;
+}
+
+.livnkit_ar {
+	SCROLLBAR-FACE-COLOR: #FFFFFF;
+	SCROLLBAR-HIGHLIGHT-COLOR: #77B3CD;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #77B3CD;
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-TRACK-COLOR:#E0EFF6;
+	SCROLLBAR-ARROW-COLOR: #2488AB;
+}
+
+.seanheal_ar {
+	SCROLLBAR-FACE-COLOR: #FFFFFF;
+	SCROLLBAR-HIGHLIGHT-COLOR: #D588B9;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #D588B9;
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-TRACK-COLOR:#F9E6F2;
+	SCROLLBAR-ARROW-COLOR: #B72557;
+}

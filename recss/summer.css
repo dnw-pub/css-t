@@ -1,0 +1,187 @@
+@charset "euc-kr";
+/*
+날짜 :2013-06-05
+작업자 :P10
+작업내용 :summer_promo.css 제작
+
+*/
+
+/* Base Style */
+.summer_event a:hover{text-decoration:underline;color:inherit;}
+
+/* Common Module */
+.for_blind{position:absolute;overflow:hidden;text-indent:-999em;display:inline;width:1px;background:none !important;}
+
+.section_nav{position:relative;}
+.section_nav ul{overflow:hidden;background:url(//img.danawa.com/new/section_m/summer/img/line_sect_nav.png) repeat-x 0 bottom;padding-top:1px;zoom:1;}
+.section_nav li{float:left;}
+.section_nav li a{display:block;text-align:center;height:27px;border:1px solid #d9d9d9;border-bottom:none;background:#f7f7f7;color:#666;font-weight:bold;font-size:14px;line-height:18px;padding:11px 5px 0;position: relative;}
+.section_nav li a:hover{text-decoration:none;}
+.section_nav a .acc_event{display: block;float: left;background:url(//img.danawa.com/new/section_m/summer/img/ribbon_event.png) no-repeat;width: 46px;height: 39px;position: absolute;top: -1px;left: -1px;}
+.section_nav .selected a{background:#fff;height:28px;border-color:#000;color:#4162d6;cursor:default;}
+.section_nav .selected a span{padding-right:15px;background:url(//img.danawa.com/new/blog_product/img/tab_selected.png) no-repeat right 5px;}
+
+.comment_input_box{border:1px solid #d9d9d9;padding:20px 30px 14px;margin-bottom:8px;}
+.comment_input_box h5{height:20px;color:#000;font-size:16px;line-height:20px;margin-bottom:30px;}
+.comment_input_box .head_ask_cm{background:url(//img.danawa.com/new/section_m/summer/img/pack_summer.png) no-repeat -100px -30px;width:144px;text-indent:-999em;}
+.comment_input_box .comment_option{zoom:1;}
+.comment_input_box .comment_option:after{content:"";display:block;height:0;clear:both;overflow:hidden;}
+.comment_input_box .comment_option .select_cate{float:left;}
+.comment_input_box .select_cate label{margin-right:5px;}
+.comment_input_box .comment_option .loginBox{float:right;width:auto;padding-right:175px;}
+.comment_input_box .loginBox .posRight{right:0;top:3px;}
+.comment_input_box .txtareaWrapWrite{position:relative;display:block;}
+.comment_input_box .txtareaWrapWrite textarea{font-family:"돋움",Dotum;resize:none;margin-right:0;display:block;}
+.comment_input_box .txtareaWrapWrite .Que_Btn{background:url(//img.danawa.com/new/blog_product/img/air_comment_ask.png) no-repeat;top:0;*top:1px;}
+.comment_input_box .txtareaWrapWrite .apply_btn{background-image:url(//img.danawa.com/new/blog_product/img/air_comment_apply.png);}
+.comment_input_box .info_txt{float:none;position:static;right:auto;text-align:right;}
+
+.search_cm_area{zoom:1;}
+.search_cm_area:after{content:"";display:block;height:0;clear:both;overflow:hidden;}
+.search_cm_area .select_cate{float:left;line-height:16px;margin-left:16px;}
+.search_cm_area .select_cate label{margin-right:5px;margin-top:5px;}
+.search_cm_area .select_cate input[type=checkbox]{vertical-align:baseline;}
+
+.page_index{background:#fafafa;border-top:1px solid #bcbcbc;border-bottom:2px solid #989898;text-align:center;padding:15px;}
+.page_index a{font-family:Verdana;}
+.page_index .btn_nav{display:inline-block;vertical-align:top;width:20px;height:20px;border:1px solid #c5c5c5;*display:inline;zoom:1;}
+.page_index .btn_nav span{display:block;text-indent:-999em;overflow:hidden;}
+.page_index .btn_prev{background:url(//img.danawa.com/new/prod_list/img/ico_prev.gif) 50% 0 no-repeat;}
+.page_index .btn_next{background:url(//img.danawa.com/new/prod_list/img/ico_next.gif) 51% 0 no-repeat;}
+.page_index .nums{display:inline-block;margin:0 4px;*display:inline;*margin-right:6px;zoom:1;}
+.page_index .nums a{display:inline-block;border:1px solid transparent;font-size:12px;line-height:16px;padding:2px 2px 2px;min-width:16px;height:16px;text-align:center;}
+.page_index .nums .page_on,.page_index .nums a:hover{text-decoration:none;border-color:#c5c5c5;}
+
+.user_opinion_bbs{}
+.user_opinion_bbs .optIco{float:left;margin:0 5px 2px 0;}
+.user_opinion_bbs tfoot td{padding:0;}
+.user_opinion_bbs .thum{padding-top:20px;vertical-align:top;width:80px;}
+.user_opinion_bbs tbody .title{padding:20px 8px;line-height:16px;text-align:left;}
+.user_opinion_bbs tbody .title a{padding-left:0;}
+.user_opinion_bbs .title .conTit2 dt{margin-bottom:9px;}
+.user_opinion_bbs .title .conTit2 dt a{font-weight:bold;color:#333;}
+.user_opinion_bbs .conTit2 dd{color:#757575;}
+.user_opinion_bbs .conTit2 .nick{margin-right:5px;}
+.user_opinion_bbs .spaceLine{color:#ccc;margin:0 5px;}
+.user_opinion_bbs .sBtn{display:inline;margin-left:5px;}
+.user_opinion_bbs .sBtn img{vertical-align:text-bottom;}
+.user_opinion_bbs .dashline{padding:10px 0;word-break:break-all;word-wrap:break-word;margin-top:2px;color:#757575;}
+
+.cool_nav{}
+.cool_nav ul{overflow:hidden;padding:1px 0;}
+.cool_nav li{float:left;width:25%;}
+.cool_nav li a{display:block;background:#b7afe8;text-align:center;height:30px;padding-top:10px;border-left:1px solid #a9a0de;}
+.cool_nav .first a{border-left:none;}
+.cool_nav li span{display:block;height:19px;background:url(//img.danawa.com/new/section_m/summer/img/pack_summer.png) no-repeat;text-indent:-999em;overflow:hidden;margin:0 auto;text-align:left;}
+.cool_nav .go_lowest span{background-position:0 -350px;width:67px;}
+.cool_nav .go_ppompu span{background-position:-100px -350px;width:57px;}
+.cool_nav .go_popular span{background-position:-200px -350px;width:55px;}
+.cool_nav .go_cm span{background-position:-300px -350px;width:51px;}
+.cool_nav .selected a{background:#7166b4;border:none;cursor:default;}
+.cool_nav .selected .go_lowest span{background-position:0 -390px;width:97px;}
+.cool_nav .selected .go_ppompu span{background-position:-100px -390px;width:84px;}
+.cool_nav .selected .go_popular span{background-position:-200px -390px;width:88px;}
+.cool_nav .selected .go_cm span{background-position:-300px -390px;width:80px;}
+
+/* Summer Promotion */
+.promo_intro{margin-bottom:10px;}
+.promo_intro img{display:block;}
+.summer_section{margin-bottom:20px;}
+.summer_section .cool_nav{margin-bottom:20px;}
+.summer_section .header{padding:0 17px 0 16px;margin:0 0 21px;zoom:1;}
+.summer_section .header:after{content:"";display:block;height:0;clear:both;overflow:hidden;}
+.summer_section h4,.summer_section .intro_comment{background:url(//img.danawa.com/new/section_m/summer/img/pack_summer.png) no-repeat;text-indent:-999em;overflow:hidden;float:left;}
+.summer_section h4{height:15px;margin-right:7px;}
+.summer_section .link_more{float:right;display:block;width:37px;margin-top:5px;height:12px;background:url(//img.danawa.com/new/section_m/summer/img/link_more.png) no-repeat;text-indent:-999em;overflow:hidden;}
+.summer_section .intro_comment{height:12px;margin-top:2px;}
+.summer_section .update{float:right;font-size:12px;color:#767676;font-weight:bold;line-height:16px;}
+.summer_section .sub_sect{margin-bottom:19px;}
+.summer_section .sub_sect .header{margin-bottom:15px;}
+
+/* Summer Lowest */
+#acool_lowest h4{width:76px;background-position:0 -60px;}
+#acool_lowest .intro_comment{width:227px;background-position:0 -170px;}
+.lowest_cool{border:1px solid #b7afe8;overflow:hidden;clear:both;}
+.lowest_cool a:hover{color:#333;}
+.lowest_cool .cool_box{border-top:1px solid #f2f2f2;padding:17px 15px 13px;overflow:hidden;zoom:1;}
+.lowest_cool .cool_box:first-child{border-top:none;}
+.lowest_cool h5{height:15px;background:url(//img.danawa.com/new/section_m/summer/img/pack_summer.png) no-repeat;text-indent:-999em;overflow:hidden;margin-bottom:2px;zoom:1;}
+.lowest_cool .box_multi h5{width:77px;background-position:0 0;}
+.lowest_cool .box_stand h5{width:77px;background-position:-100px 0;}
+.lowest_cool .box_wall h5{width:77px;background-position:-200px 0;}
+.lowest_cool .box_wind h5{width:36px;background-position:0 -30px;}
+.lowest_cool .box_moisture h5{width:36px;background-position:-50px -30px;}
+.lowest_cool .pd_thumb{float:left;display:block;}
+.lowest_cool .pd_info{float:left;padding-left:12px;}
+.lowest_cool .pd_name{font-weight:bold;display:block;color:#333;}
+.lowest_cool .price dl{clear:both;overflow:hidden;font-size:12px;line-height:16px;margin-bottom:4px;zoom:1;}
+.lowest_cool .price dt{float:left;color:#767676;}
+.lowest_cool .price dd{text-align:right;color:#333;}
+.lowest_cool .price .num{font-family:Tahoma;}
+.lowest_cool .danawa_price dd{font-weight:bold;color:#4266db;}
+.lowest_cool .spot_prod{float:left;width:350px;padding-top:25px;}
+.lowest_cool .spot_prod .pd_thumb{margin-right:12px;}
+.lowest_cool .spot_prod .pd_info{padding-top:5px;width:160px;}
+.lowest_cool .spot_prod .pd_name{font-size:14px;line-height:20px;height:60px;margin-bottom:39px;}
+.lowest_cool .spot_prod .pd_desc{/*display:block;*/display: none;font-size:11px;color:#767676;line-height:15px;height:30px;margin-bottom:22px;}
+.lowest_cool .spot_prod .price{padding-right:5px;}
+.lowest_cool .else_prod{float:left;overflow:hidden;width:536px;zoom:1;}
+.lowest_cool .else_prod li{overflow:hidden;float:left;width:235px;margin-right:15px;zoom:1;padding:10px 5px 7px 12px;}
+.lowest_cool .else_prod .pd_info{width:135px;padding-top:6px;}
+.lowest_cool .else_prod .pd_info .price{font-weight: normal;}
+.lowest_cool .else_prod .pd_name{line-height:16px;height:32px;margin-bottom:3px;}
+
+/* Summer Ppompu */
+.sect_ppompu h4{width:61px;background-position:-100px -60px;}
+.sect_ppompu .intro_comment{width:128px;background-position:0 -200px;}
+.ppompu_cool{border:1px solid #e6e6e6;padding:15px 15px 19px;}
+.ppompu_cool .article_list{overflow:hidden;font-size:12px;line-height:16px;margin-bottom:13px;zoom:1;min-height: 237px;}
+.ppompu_cool .article_list li{float:left;width:50%;margin-bottom:9px;*width:49.8%;}
+.ppompu_cool .article_list a{display:block;overflow:hidden;margin-right:15px;zoom:1;position: relative;}
+.ppompu_cool .article_list a:hover{color:#767676;}
+.ppompu_cool .article_list .thumb{float:left;margin-right:12px;}
+.ppompu_cool .article_list .title{display:block;color:#333;font-weight:bold;padding-top:10px;margin-left: 80px;height: 32px;line-height: 16px;/*white-space:nowrap;*/}
+.ppompu_cool .article_list .date{display:block;color:#767676;margin-bottom:4px;position: absolute;bottom: 0;right: 0;}
+.ppompu_cool .article_list .desc{display:block;color:#767676;}
+.sect_guide h4{width:75px;background-position:-180px -60px;}
+.sect_guide .intro_comment{width:152px;background-position:0 -230px;}
+.guide_cool{border:1px solid #e6e6e6;padding:18px 0 3px;}
+.guide_cool .guide_list{overflow:hidden;zoom:1;padding-left: 5px;}
+.guide_cool li{float:left;width:33.3%;overflow:hidden;padding-bottom:12px;zoom:1;}
+.guide_cool a{display:block;margin:0 8px;}
+.guide_cool a:hover{color:#333;}
+.guide_cool .thumb{float:left;margin-right:10px;width:75px;height:75px;}
+.guide_cool .title{display:block;color:#333;font-weight:bold;line-height:16px;height:32px;padding-top:4px;margin-bottom:5px;}
+.guide_cool .desc{display:block;font-size:11px;color:#767676;line-height:15px;font-weight: normal;}
+.sect_event h4{width:75px;background-position:0 -90px;}
+.sect_event .intro_comment{width:195px;background-position:0 -260px;}
+.sect_event .popularity_plan{margin-bottom:0;}
+
+/* Summer Popular */
+#acool_popular h4{width:61px;background-position:-100px -90px;}
+#acool_popular .intro_comment{width:174px;background-position:0 -290px;}
+.popular_cool .section_nav li{width:20%;}
+
+/* Summer CM */
+#acool_cm{margin-bottom:50px;}
+#acool_cm h4{width:55px;background-position:-180px -90px;}
+#acool_cm .intro_comment{width:180px;background-position:0 -140px;}
+.opinion_cool .section_nav{margin-bottom:20px;}
+.opinion_cool .section_nav li{width:210px;}
+.opinion_cool .cmt_list{margin-bottom:0;}
+.opinion_cool .cmt_list .cate{color:#333;}
+.opinion_cool .cmt_list .last{margin-bottom:0;border-bottom:none;}
+.opinion_cool .user_opinion_bbs{border-top:none;margin-top:-10px;*margin-top:-30px;}
+.opinion_cool .opinion_user .filter_opt{text-align:right;margin-right:14px;line-height:16px;}
+.opinion_cool .opinion_user .filter_opt label{margin-left:6px;}
+.opinion_cool .opinion_user .filter_opt input{vertical-align:baseline;}
+
+/* Bene Event */
+.bene_event{margin-top:10px;}
+.bene_event .event_img{margin-bottom:7px;position:relative;background:url(//img.danawa.com/new/section_m/summer/img/bene_event.jpg) no-repeat;height:370px;}
+.bene_event .sns_wrap{position:absolute;top:279px;left:533px;}
+.bene_event .sns_wrap a{display:block;float:left;width:24px;height:23px;overflow:hidden;text-indent:-999em;margin-right:5px;}
+.bene_event .apply_event{position:absolute;top:310px;left:533px;}
+.bene_event .apply_event a{display:block;float:left;width:173px;height:40px;margin-right:10px;overflow:hidden;text-indent:-999em;}
+.bene_event .event_tip{font-size:11px;color:#767676;line-height:16px;padding-left:5px;}
+.bene_event .event_tip strong{color:#484848;font-weight:bold;}

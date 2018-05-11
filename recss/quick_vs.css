@@ -1,0 +1,48 @@
+/*
+2013-11-21 / create quick_vs.css / yhm
+*/
+/* Introduce Guide Page */
+.quickvs_guide{margin-bottom:50px;}
+.quickvs_guide .blind{position:absolute;display:inline;overflow:hidden;background:none !important;text-indent:-999em;width:1px;height:1px;}
+.quickvs_guide .intro_head{height:281px;background:url(//img.danawa.com/new/quick_vs/img/intro_guide.jpg) no-repeat;}
+.quickvs_guide .guide_list{border:1px solid #b2b2b2;border-width:1px 0 1px;}
+.quickvs_guide .guide_list li{background:url(//img.danawa.com/new/quick_vs/img/bg_step.png) repeat-x 0 100% #f5f5f5;padding:35px 0 1px 50px;display:block;vertical-align:top;zoom:1;}
+.quickvs_guide .guide_text{background:url(//img.danawa.com/new/quick_vs/img/step_text.png) no-repeat;margin-bottom:10px;}
+.quickvs_guide .guide_img{display:block;margin:0 0 53px 80px;}
+.quickvs_guide .step_1 .guide_text{height:100px;background-position:0 0;}
+.quickvs_guide .step_2 .guide_text{height:80px;background-position:0 -150px;}
+.quickvs_guide .step_3 .guide_text{height:88px;background-position:0 -300px;}
+.quickvs_guide .step_2 .guide_img{position:relative;width:720px;}
+.quickvs_guide .step_2 .link_bookmark{position:absolute;display:block;top:386px;left:78px;}
+.quickvs_guide .step_2 .link_bookmark img{display:block;}
+.quickvs_guide .guide_list .step_3{background:#f6f6f6;}
+.quickvs_guide .step_3 .guide_img{background:url(//img.danawa.com/new/quick_vs/img/step_video_bg.jpg) no-repeat;width:640px;height:390px;padding:13px 25px 24px 10px;margin-bottom:32px;}
+.quickvs_guide .bookmark_ch{background:url(//img.danawa.com/new/quick_vs/img/step_img_2_ch.jpg) no-repeat;height:565px;}
+.quickvs_guide .bookmark_ie8{background:url(//img.danawa.com/new/quick_vs/img/step_img_2_ie8.jpg) no-repeat;height:844px;}
+.quickvs_guide .bookmark_ie9{background:url(//img.danawa.com/new/quick_vs/img/step_img_2_ie9.jpg) no-repeat;height:565px;}
+
+/* Compare Popup */
+.popup_body{margin:0;padding:0;font-family:'µ¸¿ò',dotum,Arial,Helvetica,sans-serif;font-size:12px;}
+.vspop_frame{border:1px solid #1b3f8d;background:#fff;width:483px;}
+.vspop_frame .pop_header{position:relative;background:#3b64be;padding:9px 10px 7px;}
+.vspop_frame .pop_header h1{margin:0;color:#fff;font-size:12px;width:80px;height:13px;overflow:hidden;background:url(//img.danawa.com/new/quick_vs/img/pop_frame.png) no-repeat 0 -30px;text-indent:-200px;}
+.vspop_frame .pop_header .close_frame{position:absolute;width:13px;height:13px;text-indent:-100px;overflow:hidden;color:#fff;background:url(//img.danawa.com/new/quick_vs/img/pop_frame.png) no-repeat 2px 2px;top:7px;right:8px;}
+.vspop_frame .found_no{text-align:center;padding:62px 0 0;height:108px;}
+.vspop_frame .found_no .main_comment{font-size:14px;font-weight:bold;margin:0 0 6px;line-height:18px;color:#333;}
+.vspop_frame .found_no .main_comment strong{color:#d61568;}
+.vspop_frame .found_no .sub_comment{font-size:12px;color:#666;margin:0;}
+.vspop_frame .found_goods{padding:20px 15px 17px 20px;overflow:hidden;min-height:133px;}
+.vspop_frame .found_goods .thumb{float:left;display:block;}
+.vspop_frame .found_goods .thumb img{display:block;width:130px;height:130px;}
+.vspop_frame .found_goods .goods_info{margin-left:145px;padding-top:12px;}
+.vspop_frame .found_goods .goods_name{display:block;font-size:14px;color:#333;font-weight:bold;line-height:19px;word-break:keep-all;max-height:57px;overflow:hidden;}
+.vspop_frame .found_goods .price_info{overflow:hidden;margin-bottom:7px;}
+.vspop_frame .found_goods .price_head{color:#e2186e;font-weight:bold;float:left;width:45px;line-height:16px;margin:7px 2px 0 0;}
+.vspop_frame .found_goods .price_num{overflow:hidden;float:left;margin:0 10px 0 0;}
+.vspop_frame .found_goods .price_num .num{font-size:32px;line-height:39px;color:#4265db;font-weight:bold;font-family:"Century Gothic";}
+.vspop_frame .found_goods .price_num .won{display:inline-block;background:url(//img.danawa.com/new/newblog/img/bg_won.gif) no-repeat;height:24px;width:22px;text-indent:100px;overflow:hidden;vertical-align:top;margin-top:8px;}
+.vspop_frame .found_goods .opt_info{margin:6px 0 0;float:left;}
+.vspop_frame .found_goods .opt_list{margin:0;padding:0;font-size:12px;color:#666;line-height:16px;}
+.vspop_frame .found_goods li{list-style:none;margin:0;}
+.vspop_frame .price_info .link_opt{float:left;padding-top:8px;}
+.vspop_frame .go_blog{display:inline-block;font-size:12px;line-height:17px;color:#fff;background:#4366dc;text-decoration:none;font-weight:bold;margin:0;padding:6px 8px 3px;}

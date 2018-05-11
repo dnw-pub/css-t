@@ -1,0 +1,25 @@
+@charset "euc-kr";
+/* CSS Document */
+
+* {padding:0px; margin:0px; line-height:140%; font-size:13px; font-family:'µ¸¿ò', Verdana, Tahoma; vertical-align:middle; color:#888;}
+ul,li {list-style:none;}
+#research_GNB {background:url(http://img.danawa.com/research/img/GNB_bg.gif) no-repeat center top; width:1200px; height:115px; margin:0 auto; position:relative;}
+#research_GNB img {border:0; vertical-align:middle}
+#userLogout {position:absolute; right:0px; top:11px;}
+#userLogout a {color:#333; text-decoration:none;}
+#userLogout a:hover {text-decoration:underline;}
+#navigation {position:absolute; right:0px; top:47px; float:left;}
+#navigation li {float:left; background:url(http://img.danawa.com/research/img/menuBG.gif) no-repeat; width:98px; height:46px; text-align:center; padding-top:8px; vertical-align:middle; margin-left:8px;}
+#navigation a {color:#FFFFFF; font-weight:bold; font-size:12px; text-decoration:none;}
+#navigation a:hover {text-decoration:underline;}
+#researchCategory {width:1200px; margin:0 auto; clear:both;}
+#researchCategory h2 {height:40px; background:#747fd1; text-align:center; font-size:24px; color:#fff; padding-top:6px;}
+#researchContents {margin:10px auto; width:1200px; overflow:visible;}
+#research_Footer {background:url(http://img.danawa.com/research/img/research_footerBG.gif) no-repeat center top; width:1200px; height:100px; margin:20px auto 0; position:relative;}
+#research_Footer dl {position:absolute; top:28px; left:186px; float:left;}
+#research_Footer dt {float:left;}
+#research_Footer dd {margin:10px 0 0 250px;}
+#research_Footer p {font-weight:bold; color:#777;}
+#research_Footer a {text-decoration:none; color:#00f;}
+#research_Footer a:hover {text-decoration:underline;}
+

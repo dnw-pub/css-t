@@ -1,0 +1,72 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2012년 2월 14일
+작업자 : P05
+작업내용 : 미니샵 신규페이지 추가
+
+15-06-11 / sya / add .snb_banner_area 
+15-08-04 / bhj / add .top_sell_banner
+16-04-29 / bhj / add .logo_shopdnw, .sns_login_area 
+17-01-25 / bhj / edit .wing_contents 
+*/
+
+#top_area {height:64px;width:925px;margin:0 auto;position:relative;}
+#top_area h1 {position:absolute;top:21px;left:15px;}
+#top_area h2 {position:absolute;top:21px;left:117px;background:none;padding:0;}
+#top_area .btn_right {position:absolute;top:24px;right:0px;}
+
+.snb_minishop {width:180px;float:left;}
+.snb_box {background:url(//img.danawa.com/new/minishop/img/bg_snb.gif) repeat-y left top;width:180px;border-bottom:3px solid #9a9a9a;margin-bottom:10px;}
+.snb_box h2 {background:none;padding:0;margin:0;}
+.snb_box h3 {background:url(//img.danawa.com/new/baropc/img/bu_blackarrow.gif) no-repeat 4px 2px;color:#333;font-size:12px;font-weight:bold;height:24px;padding-left:12px;margin:18px 0 0
+8px;}
+
+.snb_banner_area a {display:block}
+.snb_banner_area a img {width:180px;height:180px;overflow:hidden;}
+.snb_box .depth_2 {background:url(//img.danawa.com/new/minishop/img/bg_depth1_gradation.gif) repeat-x left top;padding-top:17px;margin:0 10px;padding-bottom:10px;}
+.snb_box .depth_2 li {vertical-align:top;line-height:20px;height:20px;overflow:hidden;padding-left:10px;}
+.snb_box .bline {border-bottom:1px solid #d9d9d9;}
+
+.top_sell_info {border:2px solid #7384b8;height:88px;position:relative;padding-top:18px;margin-bottom:15px;}
+.top_sell_info .thumb {display:inline;}
+.top_sell_info .thumb img {float:left;margin-left:20px;margin-right:23px;}
+.top_sell_info .text_mall {color:#333;font-weight:bold;line-height:20px;margin-top:2px;margin-right:110px;height:60px;overflow:hidden;}
+.top_sell_info .btn_sell_info {position:absolute;top:41px;right:25px;width:79px;height:23px;}
+
+/* top 배너에 이미지 들어갈 경우 */
+.top_sell_banner {padding-top:0; height: auto;}
+.top_sell_banner div {height: auto;}
+.top_sell_banner div p {margin:0!important;*zoom:1}
+.top_sell_banner p {margin:0!important;*zoom:1}
+.top_sell_banner img {width: 726px;}
+.top_sell_banner br {display: none}
+
+.tbl_type1 th {background:#314687;color:#fff;font-size:12px;width:92px;text-align:center;height:58px;border-bottom:1px solid #7384b8;}
+
+.tbl_type1 td {border-bottom:1px solid #314687;padding:0 16px;padding-top:8px;color:#757575;line-height:22px;}
+.tbl_type1 td span {display:inline-block;margin:0  5px;}
+
+#minishop_right {float:right;margin:0;padding-bottom:30px;width:730px;}
+.btn_minishop_go {margin:7px 0 10px 0;}
+.box_information {border:3px solid #d9d9d9;height:282px;text-align:center;margin-bottom:86px;}
+.box_information img {margin-top:104px;}
+
+.btn_bottom {position:relative;}
+.btn_bottom .mark {background:url(//img.danawa.com/new/minishop/img/ico_mark.gif) no-repeat left top;padding-left:14px;color:#528ffe;margin:10px 0 0 11px;line-height:13px;height:13px;font-size:11px;}
+.btn_bottom .btn_r {position:absolute;right:10px;top:0px;}
+
+.bbsBtnstyle1 {position:relative;top:-2px;}
+.special_popup{margin-top:-250px;top:50%;position:fixed !important}
+
+/* sns_login_area */
+#top_area .logo_shopdnw {left:1px;}
+#top_area .txt_minishop {left:147px;}
+.sns_login_area {float:left;height:16px;margin:2px 8px 0 0;}
+.btn_right .gnb_fb_ico, .btn_right .gnb_navr_ico, .btn_right .gnb_daum_ico,.btn_right .gnb_katalk_ico {padding:0;position:static;top:0;left:0;}
+.id_link {color:#0375e0;font-size:11px;font-weight:bold;letter-spacing:-0.03em;vertical-align:3px;margin:0 4px 0 4px;*line-height:24px;}
+.id_link:hover {color:#0375e0;cursor:default !important;}
+.id_nim {color:#666;font-size:11px;vertical-align:3px;}
+/*.log {display:inline-block;}*/
+
+.main_left_wing {left:-20px;top:0;}
+.main_right_wing {right:-20px;top:0;}

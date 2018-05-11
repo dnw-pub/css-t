@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* 2016-01-27 / add shop_danawa_usedmarket.css / bhj
+	2016-04-19 / edit gnb_sns_link / bhj
+    2016-08-23 / add prod_num_nav / bhj 
+*/
+
+/* layout */
+#danawa_container {width:925px;margin:0 auto;}
+#dnw_content {margin-bottom:40px;}
+/*#contents_main {width:925px;margin:0 auto;}*/
+#wrap {*margin-top:-40px;}
+.pc_topbanner_area {text-align:center;}
+.pc_top_banner {display:block;height:70px;}
+.mid_banner_area {margin-bottom:6px;}
+.footer_danawa_policy {width:360px;}
+.estimate_main_wrap {width:925px !important;margin:0 auto;}
+.danawapc_locaBar,.list_container {width:925px;margin:0 auto;*zoom:1;}
+.headCopy {width:925px;margin:0 auto 15px auto !important;}
+.pcmall_selector {width:925px;margin:0 auto 20px auto;}
+.mall_review_wrap {width:925px;margin:0 auto;}
+.usedmarket_navi {width:925px;margin:0 auto;*margin-top:-40px;}
+
+/* pc_lnb_wrap */
+.pc_navi_bg {width:100%;height:40px;background:#333;position:absolute;z-index:-1;*position:relative;}
+.pc_lnb_wrap {background:#333;height:40px;width:100%;}
+.pc_lnb_list li {display:inline-block;*display:inline;*float:left;*zoom:1;}
+.pc_lnb_wrap .pc_lnb_item {float:left;color:#fff;font-size:13px;font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,sans-serif;font-weight:bold;vertical-align:middle;line-height:38px;text-align:center;}
+.pc_lnb_wrap .current {color:#f9ff47;}
+.pc_lnb_item:hover {color:#f9ff47;}
+.pc_lnb_item {padding:0 18px}
+
+/* usedmarket_lnb_wrap */
+.usedmarket_lnb_wrap .pc_lnb_item {padding:0 51px}
+.usedmarket_lnb_wrap .pc_lnb_item01 {padding-left:40px;}
+.usedmarket_lnb_wrap .pc_lnb_item06 {padding-right:40px;}
+
+.icon_hot a {background:url(//img.danawa.com/new/section_m/baby/img/icon_hot.gif) no-repeat right center; padding-right:26px; color:#cd3252; display:inline-block;*background-position:right 1px;}
+.icon_new a {background:url(//img.danawa.com/new/section_m/baby/img/icon_new.gif) no-repeat right center; padding-right:26px; display:inline-block;*background-position:right 1px;}
+.usedmarket_snb a {color:#333;font-size:12px;}
+.left_wing_pc a {display:block;width:80px;height:125px;}
+.left_wing_wrap {z-index:1;}
+.pc_wing_blank {margin-top:50px;}
+
+/* 기존 마켓 수정 */
+.usedbest ul.produnit_list li strong,
+.unit_widget .ranked_list .price,
+.unit_widget .ranked_list .first .price {color:#553de8;}
+.paging_fix {position:absolute;bottom:0;width:100%;*width:465px;*left:0;}
+#container_main ul.produnit_list li{text-align:center;}
+.section_danawapc .price {color:#553de8;}
+.section_danawapc .com_list_img .price {color:#000;}
+.listTypeImage .price em {font-family:"Century Gothic",Sans-serif,arial,dotum,'돋움',gulim,'굴림';}
+
+.ico_game2 {background: url("//img.danawa.com/new/section_m/danawapc/img/ico_all.gif") no-repeat 0 0 ; display:block; width:49px; height:14px; overflow: hidden; font-size:0; line-height: 0; margin-right:3px;} 
+.vip_delivery {background-position:0 -200px;width:48px;cursor:pointer;z-index:9;margin:0;margin-right:3px;}
+.safe_delivery {background-position:0 -220px;width:48px;cursor:pointer;z-index:9;margin:0;margin-right:3px;}
+.show .over_layer {display:block !important;}
+
+.gnb_sns_ico .gnb_sns_link {padding:0 4px 0 0px;margin-left:2px;line-height:20px;font-size:11px;}
+.gnb_sns_ico .id_nim {line-height:20px;font-size:11px;}
+.top_gnb_list2 li a {line-height:20px;}
+
+/* prod_num_nav */
+.prod_num_nav{border:1px solid #e6e6e6;text-align:center;}
+.prod_num_nav div{font-size:inherit;}
+.prod_num_nav .num_nav_wrap{display:inline-block;vertical-align:top;line-height:34px;font-size:14px;color:#666;*display:inline;*zoom:1;}
+.prod_num_nav .edge_nav{float:left;width:34px;height:36px;background:url(//img.danawa.com/new/goods_list/v1/img/icon_list_pack.png) no-repeat scroll;text-align:left;text-indent:-200px;overflow:hidden;}
+.prod_num_nav .nav_prev{background-position:-50px -50px;}
+.prod_num_nav .nav_next{background-position:-100px -50px;}
+.prod_num_nav .number_wrap{float:left;}
+.prod_num_nav .num{float:left;color:#666;font-weight:bold;width:38px;font-size:14px;border:solid #e6e6e6;border-width:0 1px;height:34px;padding-top:2px;}
+.prod_num_nav .num + .num{border-left-width:0;}
+.prod_num_nav .now_on{background:#fafafa;color:#000;}

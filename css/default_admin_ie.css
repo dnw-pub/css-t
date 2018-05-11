@@ -1,0 +1,22 @@
+@charset "euc-kr";
+/*
+CSS Document 
+
+최종작업일자 : 2010년 2월 1일 PM 2시 10분
+작업자 :  
+작업내용 : CPA관리자 ie7이하버전 디자인 CSS 설정
+
+*/
+
+
+.btnType1 * {padding:3px 4px 0 5px; height:13px;}
+.btnType2 * {padding:6px 10px 0 19px; height:18px;}
+.btnType2 button {padding:0 4px 0 12px; height:24px;}
+.btnType3 * {padding:5px 10px 0 19px; height:17px;}
+.btnType4 * {padding:3px 4px 0 5px; height:13px;}
+/*.btnType5 button {height:70px; padding:0 10px 0 19px; vertical-align:top;}*/
+.help span {height:15px; padding:8px 7px 0 7px;}
+.remove {margin-left:5px;}
+.handleBox .wrapper {padding-bottom:0;}
+
+.icon {_text-indent:0; }

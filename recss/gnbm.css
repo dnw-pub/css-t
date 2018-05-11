@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* 2014-01-08/mobile danawa css/pjy */
+
+/* skip types */
+.skip{display:inline-block;overflow:hidden;position:absolute;width:1px;height:1px;font-size:1px;line-height:1px;text-indent:4px;white-space:nowrap;left:-1px;}
+
+/* mobile_wrap */
+#newdnw_mobile_wrap {width:100%;height:100%;}
+#newdnw_mobile_wrap .newdnw_overlay {background:#000;opacity: 0.8; height: 1200px; width:100%; position: fixed; top: 0px; z-index:88;left:0px;}
+
+/* search_area */
+.newdnw_search_area{width:232px;min-height:100%;height:auto !important;overflow:hidden;position:absolute;top:0px;right:0px;z-index:999;background:#fff;float:right;}
+.hidden_layer .search_head {height:27px;background:#3d414d;padding:8px 10px;position:relative;}
+.search_head .rtitle {color:#fff;font-size:16px;line-height:31px;font-weight:bold;}
+.input_search_warp {background:#cecfd5;padding:1px 38px 1px 1px;}
+.input_search_warp input {width:100%;border:0 none; background:#fff;height:26px;padding-left:10px;}
+
+
+.hidden_layer h3 {height:33px;width:116px;position:absolute;top:43px;letter-spacing:-1px;text-align:center;line-height:35px;color:#666;font-size:15px;font-weight:normal;}
+.hidden_layer h3 a {color:#666;font-size:15px;letter-spacing:-1px;background:#e3e3e3;display:block;height:33px;font-family:'Apple Gothic','Droid Sans',Arial,verdana,'돋움',dotum,'굴림',Gulim,Helvetica,Arial,verdana,Sans-serif;}
+.hidden_layer .search_tabs {height:35px;overflow:hidden;width:232px;background:#78c341;}
+.hidden_layer .search_tab2 .ico_star_on {margin-left:5px;}
+.hidden_layer .select {color:#fff;padding-bottom:0px;}
+.hidden_layer .select a {color:#fff;background:#78c341;font-weight:bold;}
+
+.newdnw_search_area.search_tab1 {right:116px;}
+.newdnw_search_area.search_tab2 {right:0px;width:115px;}
+
+/* category_area */
+.newdnw_category_area {width:232px;min-height:100%;height:auto !important;overflow:hidden;position:absolute;top:0px;left:0px;z-index:999;background:#fff;float:left;}
+.newdnw_category_area .search_tab1 {left:0px;}
+.newdnw_category_area .search_tab2 {left:116px;}
+.newdnw_category_area  .login_title {color:#fff;font-size:15px;height:23px;line-height:23px;padding-top:1px;}
+
+/* .app_list  */
+.app_list {clear:both;overflow:hidden;margin:17px 0 0 12px;}
+.app_list li {float:left;margin:0 8px 12px 0;text-align:center;width:64px;}
+.app_list li a {float:left;}
+.app_list li strong {font-size:12px;line-height:16px;font-weight:normal;color:#3d414d;display:block;text-align:cener;}
+.app_list li .icon {margin-bottom:3px;width:60px;height:60px;display:block;}
+
+
+/* service_list */
+.service_list h4 {color:#000;font-size:14px;letter-spacing:-1px;line-height:30px;font-weight:normal;margin-left:10px;}
+.service_list address {font-size:12px;color:#000;line-height:16px;padding:5px 0 0px 0;text-align:center;height:32px;}
+
+/* category_title */
+.category_title {background:#e3e3e3;height:28px;width:231px;border-top:1px solid #c7c7c7;}
+.category_title_list li {	background:#e3e3e3;border-top:1px solid #c7c7c7;height:34px;position:relative;width:231px;}
+.category_title_list li.last {border-bottom:none;}
+.category_title_list li h4 {line-height:34px;color:#000;font-size:14px;letter-spacing:-1px;font-weight:normal;margin-left:10px;}
+.category_title_list .ico_top {display:block;position:absolute;right:0px;top:10px;height:12px;width:12px;}
+
+.category_title_list2 .title_block {background:#e3e3e3;border-top:1px solid #c7c7c7;height:34px;position:relative;width:231px;}
+.category_title_list2 .title_block h4 {line-height:34px;color:#000;font-size:14px;letter-spacing:-1px;font-weight:normal;margin-left:10px;}
+.category_title_list2 .ico_top {display:block;position:absolute;right:0px;top:10px;height:12px;width:12px;}
+
+/* main_notice */
+.main_notice {padding:12px 10px 12px 10px;}
+.main_notice p {	color:#838383;font-size:12px;letter-spacing:-1px;line-height:15px;}
+
+/* search_word_list */
+.search_word_list {height:100%;}
+.search_word_list li {border-bottom:1px solid #ddd;clear:both;overflow:hidden;position:relative;padding-right:48px;border-left:1px solid #cecfd5;}
+.search_word_list li a {color:#333;font-size:15px;line-height:35px;display:block;width:100%;}
+.search_word_list .search_word {padding-left:8px;overflow:hidden;display:block;text-overflow:ellipsis;white-space:nowrap;}
+.search_word_list .add_star {width:38px;height:34px;position:absolute;right:0px;top:0px;text-indent:-9999em;}
+.search_word_list .add_star .ico_delete,
+.search_word_list .add_star .ico_star_off {position:absolute;right:8px;top:8px;text-indent:-9999em;display:block;} 
+
+/* icons */
+.icon {background-image:url(http://img.danawa.com/new/mdnw/img/icon_small.png);background-repeat:no-repeat;color:transparent;white-space:nowrap;}
+
+@media screen and (-webkit-min-device-pixel-ratio:1.5){
+	.icon {background-image:url(http://img.danawa.com/new/mdnw/img/icon_big.png);-webkit-background-size:320px 320px;background-size:320px 320px;}
+}
+
+.ico_login_big {background-position:-130px 0;width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:8px;}
+.ico_logout_big {background-position:-161px 0;width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:8px;}
+.ico_estimate {background-position:-130px -125px;}
+.ico_spc {background-position:-195px -125px;}
+
+.ico_compare {background-position:0 -190px;}
+.ico_pc_estimate {background-position:0 -190px;}
+.ico_camping {background-position:0 -190px;}
+.ico_baby_club {background-position:0 -190px;}
+.ico_mytv {background-position:0 -190px;}
+.ico_trend_it {background-position:0 -190px;}
+.ico_it {background-position:-65px -125px;}	
+
+
+.ico_star_on {background-position:-130px -35px;width:20px;height:24px;display:inline-block;vertical-align:middle;}
+.ico_star_off {background-position:-160px -35px;width:20px;height:24px;display:inline-block;vertical-align:middle;}
+.ico_delete {background-position:-130px -256px;width:20px;height:24px;display:inline-block;vertical-align:middle;}
+.btn_search_go {background-position:-86px 6px;width:28px;height:28px;display:block;position:absolute;right:10px;top:8px;text-indent:-9999em;}
+
+
+/* ico transform */
+.ico_tf90 {transform:rotate(90deg);-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);}
+.ico_tf180 {transform:rotate(180deg);-ms-transform:rotate(180deg);-webkit-transform:rotate(180deg);}
+.ico_tf270 {transform:rotate(270deg);-ms-transform:rotate(270deg);-webkit-transform:rotate(270deg);}

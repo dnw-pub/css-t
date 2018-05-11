@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+/*
+최종수정일자 : 2012-06-08
+작업자 : P10
+작업내용 : Media It Common CSS제작
+*/
+
+/* Style initialize */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquopte, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,button {margin: 0;	padding: 0;border: 0;outline: 0;font-family: inherit;vertical-align: baseline;line-height:1.4;}
+ol, ul {list-style:none;}
+
+/* Base style */
+body {font-size:12px; color:#333; font-family: "돋움",dotum, "Arial", "Verdana", san-serif;}
+table, td, th {vertical-align:middle;}
+a, a:link, a:visited {color:#333; text-decoration:none; cursor:pointer;}
+a:hover, a:active {color:#333; text-decoration:underline; cursor:pointer;}
+
+/* Common style */
+.hide {display:none;}
+
+/* footer style */
+.footer {width:100%; background:white; font-size:11px; color:#999;padding-bottom:20px;}
+.footer a {color:#999;}
+.footer p {clear:both;}
+.foot_links {height:23px; padding-top:10px; background:#f0f0f0;}
+.foot_links ul, .company_info {width:950px; margin:0 auto; clear:both;}
+.foot_links ul li {float:left; margin-right:24px;}
+.foot_links ul li a {display:block; background:url('http://img.danawa.com/new/mediait/img/footer_nav.png') no-repeat; height:12px; text-indent:-999em; width:38px;}
+.foot_links a.it_introduction {background-position:0 0;width:38px;}
+.foot_links a.ask_ad {background-position:0 -20px;width:37px;}
+.foot_links a.content_guide {background-position:0 -40px;width:68px;}
+.foot_links a.terms {background-position:0 -60px;width:38px;}
+.foot_links a.private_info {background-position:0 -80px;width:74px;}
+.foot_links a.contact_us {background-position:0 -100px;width:52px;}
+.foot_links a.site_map {background-position:0 -120px;width:37px;}
+.foot_links a.ask_news {background-position:0 -140px;width:40px;}
+.company_info {margin-top:8px;}
+.company_info p.caution {color:#333; margin-bottom:5px;word-spacing:-1px;}
+.company_info dl {clear:both; margin-bottom:4px;overflow:auto;}
+.company_info dt, .company_info dd {float:left;}
+.company_info dd {margin:0 8px 0 5px; background:url("http://img.danawa.com/new/mediait/img/div_dfdfdf.png") right 3px no-repeat ; padding-right:9px;}
+.company_info dd.last {border-right:none; padding-right:0; background:none;}
+p.copyright {font-family: Verdana,Arial,Helvetica,sans-serif;font-size:9px; margin-top:7px;}
+p.copyright strong {color:#666;}

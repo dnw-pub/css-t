@@ -1,0 +1,206 @@
+
+td   { font-family: "돋움", "Arial", "Verdana";	font-size: 12px; color:#666666; }
+
+A:link {COLOR: #4B4B4B;	TEXT-DECORATION: none;}
+A:visited {COLOR:#4B4B4B; TEXT-DECORATION: none;}
+A:active {COLOR: #4B4B4B; TEXT-DECORATION: none;}
+A:hover {color : #005BA8; TEXT-DECORATION: none;}
+
+
+/* form */
+.select01 /* location에 들어가는 다른 섹션으로 이동하는 select box  */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #ffffff;
+ height				: 18px;
+ BACKGROUND-COLOR	: #178EB0;
+ margin:0 0 -1 0;
+}
+
+.select02  /* 상단 게시판 sorting select box */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #666666;
+ height				: 18px;
+ BACKGROUND-COLOR	: #ACE7EB;
+ margin:0 0 -1 0;
+}
+
+select  /* 검색의 select box */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #222222;
+ margin:0 0 -1 0;
+}
+
+.input_text  /* 기본 텍스트필드 */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #333333;
+ height				: 14px;
+ BACKGROUND-COLOR	: #ffffff;
+ border-right		: #bcbcbc 1px solid;
+ border-top			: #bcbcbc 1px solid;
+ border-left		: #bcbcbc 1px solid;
+ border-bottom		: #bcbcbc 1px solid;
+}
+
+.input  /* 검색의 텍스트필드 */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #333333;
+ height				: 18px;
+ BACKGROUND-COLOR	: #ffffff;
+ border-right		: #cecec7 1px solid;
+ border-top			: #cecec7 1px solid;
+ border-left		: #cecec7 1px solid;
+ border-bottom		: #cecec7 1px solid;
+ width:150px;height:19px;
+}
+
+.textarea  /* 댓글달기 */
+{color: #444444; background-color:#ffffff; border:1px solid #bcbcbc;overflow:auto ;
+SCROLLBAR-FACE-COLOR: #f3f3f3;
+SCROLLBAR-HIGHLIGHT-COLOR: #cccccc;
+SCROLLBAR-SHADOW-COLOR: #cccccc;
+SCROLLBAR-3DLIGHT-COLOR: #f3f3f3;
+SCROLLBAR-ARROW-COLOR: #cccccc;
+SCROLLBAR-TRACK-COLOR: #f3f3f3;
+SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+SCROLLBAR-BASE-COLOR: #f3f3f3;
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #666666;
+ height				: 18px;
+}
+
+/* text */
+.text   { font-family: "돋움", "Arial", "Verdana";	font-size: 12px; color:#666666; line-height:18px; }
+
+.text00   { font-family: "돋움", "Arial", "Verdana";	font-size: 12px; color:#666666; line-height:18px; }
+A.text00:link {COLOR: #666666;	TEXT-DECORATION: none;}
+A.text00:visited {COLOR:#666666; TEXT-DECORATION: none;}
+A.text00:active {COLOR: #666666; TEXT-DECORATION: none;}
+A.text00:hover {color : #005BA8; TEXT-DECORATION: none;}
+
+.location {color: #ffffff;}
+
+.list_title {color: #222222; line-height:18px; font-weight: bold;}
+a.list_title:link {   font-size: 12px; font-weight: bold; color: #222222; text-decoration: none}
+a.list_title:visited {   font-size: 12px; font-weight: bold; color: #222222; text-decoration: none}
+a.list_title:active {   font-size: 12px; font-weight: bold; color: #222222; text-decoration: none}
+a.list_title:hover {   font-size: 12px; font-weight: bold; color: #005BA8; text-decoration: none}
+
+.list_title02 {color: #ffffff; line-height:18px;}
+a.list_title02:link {color: #ffffff; text-decoration: none}
+a.list_title02:visited {color: #ffffff; text-decoration: none}
+a.list_title02:active {color: #ffffff; text-decoration: none}
+a.list_title02:hover {color: #ffffff; text-decoration: underline}
+
+.list_title03 {color: #222222; line-height:18px;font-weight: bold;}
+
+.list_title04 {color: #222222; line-height:18px;}
+a.list_title04:link {   font-size: 12px; color: #222222; text-decoration: none}
+a.list_title04:visited {   font-size: 12px;color: #222222; text-decoration: none}
+a.list_title04:active {   font-size: 12px; color: #222222; text-decoration: none}
+a.list_title04:hover {   font-size: 12px; color: #005BA8; text-decoration: none}
+
+.list_title05 { color: #222222; font-size: 14px; line-height:18px; font-weight: bold;}
+
+.list_option01 {color: #9b9b9b; line-height:18px;}
+.list_option02 {color: #ff9000; line-height:18px;}
+.list_option03 {color: #71AA03; line-height:18px;}
+.list_option04 {color: #eeff79; line-height:18px;}
+.list_num { font-size: 11px;color: #7ec312; line-height:18px; font-weight: bold;}
+.list_text {color: #666666; line-height:18px; }
+
+.list_adver {color: #e86301; line-height:18px;}
+a.list_adver:link {   font-size: 12px; color: #e86301; text-decoration: none}
+a.list_adver:visited {   font-size: 12px; color: #e86301; text-decoration: none}
+a.list_adver:active {   font-size: 12px; color: #e86301; text-decoration: none}
+a.list_adver:hover {   font-size: 12px; color: #005BA8; text-decoration: none}
+
+.page_on {color: #000000; line-height:18px; font-weight: bold;} 
+.page_num {color: #4b4b4b; line-height:18px;}
+a.page_num:link, a.page_num:visited, a.page_num:active	{color:#4b4b4b; line-height:18px;}
+a.page_num:hover	{color:#000000; line-height:18px;}
+
+.price {color: #ff5511; line-height:18px; font-weight: bold;}
+.pname {color: #0066e6; line-height:18px;}
+
+.view_sub_title {color: #222222; }
+a.view_sub_title:link {   font-size: 12px; color: #222222; text-decoration: none}
+a.view_sub_title:visited {   font-size: 12px; color: #222222; text-decoration: none}
+a.view_sub_title:active {   font-size: 12px; color: #222222; text-decoration: none}
+a.view_sub_title:hover {   font-size: 12px; color: #005BA8; text-decoration: none}
+
+.reple_title {color: #222222; line-height:18px;}
+a.reple_title:link {color: #222222; text-decoration: none}
+a.reple_title:visited {color: #222222; text-decoration: none}
+a.reple_title:active {color: #222222; text-decoration: none}
+a.reple_title:hover {color: #222222; text-decoration: underline}
+
+.board {color: #222222;} /* 리스트 상단 구분내용 */
+
+
+/* 댓글달기관련 text */
+.text_11px /* 댓글 아이디 옆에 아이피, 날짜 */
+{ color: #999999; font-size: 11px;}
+.con_66_16 /* 댓글 내용 */
+{ color: #666666; line-height:16px;}
+
+.add_text /* 댓글달기 텍스트 버튼 */
+{ color: #388ddc; font-size: 11px; text-decoration: underline}
+a.add_text:link {   font-size: 11px; font-weight: normal; color: #388ddc; text-decoration: underline}
+a.add_text:visited {   font-size: 11px; font-weight: normal; color: #388ddc; text-decoration: underline}
+a.add_text:active {   font-size: 11px; font-weight: normal; color: #388ddc; text-decoration: underline}
+a.add_text:hover {   font-size: 11px; font-weight: normal; color: #f68f09; text-decoration: underline}
+
+
+
+/* table bgcolor */
+.bgcolor01 { BACKGROUND-COLOR	: #c7e2e3;}  /* list화면에서 이슈의 배경색 */
+.bgcolor02 { BACKGROUND-COLOR	: #F5FCED;}   /* list화면에서 추천수 많은 리스트 배경색 */
+.bgcolor03 { BACKGROUND-COLOR	: #E0F5F7;}   /* view화면에서 상단 컨텐츠 이동 버튼의 배경색 */
+.bgcolor04 { BACKGROUND-COLOR	: #b6b6b6;}   /* 컨텐츠 단락 구분시 들어가는 회색 라인컬러 */
+.bgcolor05 { BACKGROUND-COLOR	: #9FD1D5;}   /* view화면 하단의 가격비교, 관련기사, 관련상품의 타이틀 라인 */
+.bgcolor06 { BACKGROUND-COLOR	: #EDF9FA;}   /* view화면 하단의 가격비교 테이블 배경 컬러 */
+.bgcolor07 { BACKGROUND-COLOR	: #d5d5d5;}   /* view화면 하단의 가격비교 테이블 라인 컬러 */
+.bgcolor08 { BACKGROUND-COLOR	: #99DCE1;}   /* view화면 하단의 목록보기 버튼 bar 컬러 */
+.bgcolor09 { BACKGROUND-COLOR	: #FFFFFF;}   /* list bg color */
+.bgcolor10 { BACKGROUND-COLOR	: #53B7BE;}   /* 제일 진한색 */
+.bgcolor12 { BACKGROUND-COLOR	: #219bbc;}   /* 좌측 메뉴 bgcolor */
+.bgcolor13 { BACKGROUND-COLOR	: #80d4d7;}   /* 용어설명 */
+.bgcolor14 { BACKGROUND-COLOR	: #eefafa;}   /* 용어설명 */
+
+/* image border-color */
+.pic_big { border-color:b2b2b2 }  /* 상단의 이슈영역 이미지 */
+.pic_small { border-color:dddddd } /* 리스트에 들어가는 이미지 */
+
+
+/* image 간격조절 */
+.btn_page { margin:0 0 -2 0; } /* 하단 페이지 이동 버튼 세로 위치조정 */
+.page_dot { margin:0 0 3 0; } /* 하단 페이지 이동 숫자 사이에 들어가는 dot 이미지 세로 위치조정 */
+
+/* 게시판 라인 */
+.line_height { height : 29px; }
+
+/*커뮤니티에 들어갈 텍스트 댓글 */
+.footer {margin:0; height:24px; border-top:#D9D9D9 solid 1px; border-left:#D9D9D9 solid 1px; border-right:#D9D9D9 solid 1px; border-bottom:#D9D9D9 solid 1px; background:#FFFFFF;padding:7px 4px 0 0;}
+
+.p_word { color:#ffffff; font-family:돋움; font-size:12px; line-height:18px;background-color: #959595;padding:2 4 0 4}
+.p_blue {  font-family:돋움; font-size: 12px; font-weight: bold; color: #185894}
+.list_price {color: #f96120; font-weight: bold;}
+.txt_00{ color: #000000; line-height:16px;}
+a.txt_00:link {   font-size: 12px; line-height:16px; color: #000000; text-decoration: none}
+a.txt_00:visited {   font-size: 12px; line-height:16px; color: #000000; text-decoration: none}
+a.txt_00:active {   font-size: 12px; line-height:16px; color: #000000; text-decoration: none}
+a.txt_00:hover {   font-size: 12px; line-height:16px; color: #005BA8; text-decoration: none}
+
+.img_5 
+{ border-color:E6E6E6 }

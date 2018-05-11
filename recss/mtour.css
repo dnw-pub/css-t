@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* 
+2018-04-20 / make mtour.css / bhj 
+*/ 
+
+/* common */
+.clr {clear:both}
+.clr:after,.clr:before {display:block;overflow:hidden;clear:both;content:""}
+.lft_a {float:left;}
+.rgt_a {float:right;}
+.ico {display:inline-block;background:url(//img.danawa.com/new/mdnw/tour/img/icon.png) no-repeat;text-indent:-9999px;background-size:50px 100px;vertical-align:top;}
+.ico.search {width:17px;height:17px;background-position:0 -50px;margin-right:12px;}
+.ico.view_go {width:8px;height:13px;background-position:-20px 0;margin:2px 0 0 3px}
+
+.shadow {-webkit-box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    0px 5px 6px 2px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
+	box-shadow:         0px 5px 6px 2px rgba(0, 0, 0, 0.2);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+/* layout */
+.right_fix_area {bottom:73px;}
+.btn_top_go {border-radius:4px;color:#505050;font-weight:normal;}
+.icon_top_go {width:12px;height:7px;background-position:-237px -290px;margin:11px auto 2px;}
+.footer_v2 .btn_footer {padding-bottom:12px;}
+
+.recom_area,.pack_area,.mall_area {margin:10px 0;padding:20px 0 22px 15px;background:#fff;}
+.head_tit {padding-bottom:15px;}
+.h_tit {display:inline-block;font-size:17px;color:#0f0f0f;letter-spacing:-0.02em;}
+.cont {position:relative;}
+.slide_lst {overflow:hidden;}
+.slide_lst:after {content:"";display:block;clear:both;}
+
+/* main_top */
+.main_top {position:relative;max-width:768px;height:390px;margin:0 auto;box-sizing:border-box;background-repeat:repeat;background-position:center;background-size:cover;}
+.main_title {position:absolute;top:8.5%;left:5%;}
+.main_title p {margin:0;color:#fff;letter-spacing:-0.05em;line-height:1.1;font-family:'Apple SD Gothic NEO'}
+.main_title .tit_type1 {font-size:35px;font-weight:bold;}
+.main_title .tit_type2 {margin-top:10px;font-size:15px;}
+.search_bar {position:absolute;right:7%;bottom:8%;display:inline-block;}
+.search_bar .btn_srch {display:block;line-height:17px;padding:13px 23px;background:#fff;border-radius:20px;font-size:15px;color:#0f0f0f;letter-spacing:-0.05em;vertical-align:top;font-weight:bold;}
+
+/* tour_menu */
+.tour_menu {height:90px;background:#fff;}
+.menu_lst {margin:0 4px;}
+.menu_lst:after {content:"";display:block;clear:both;}
+.menu_itm {float:left;text-align:center;}
+.itm_01 {width:24%;}
+.itm_02 {width:28%;}
+.itm_03 {width:24%;}
+.itm_04 {width:24%;}
+.menu_itm a {display:block;width:100%;padding:14px 0 12px 0;text-align:center;}
+.menu_itm .txt {display:block;margin-top:5px;text-align:center;font-size:12px;color:#333;letter-spacing:-0.02em;}
+.ico_menu {display:block;margin:0 auto;height:40px;background:url(//img.danawa.com/new/mdnw/tour/img/ico_menu.png) no-repeat;background-size:160px 40px;} 
+.ico_menu.compare {width:26px;background-position:0 0}
+.ico_menu.pack {width:20px;background-position:-40px 0}
+.ico_menu.flight {width:29px;background-position:-80px 0}
+.ico_menu.hotel {width:33px;background-position:-120px 0}
+
+/* recom_area */
+.recom_cont {height:115px;}
+.recom_itm {float:left;width:115px;height:115px;margin-right:12px;}
+.recom_itm a {position:relative;display:block;width:100%;height:100%;font-size:0;border-radius:5px;overflow:hidden;}
+.recom_itm .txt {position:absolute;top:50%;width:100%;text-align:center;margin-top:-8px;vertical-align:middle;font-size:16px;font-weight:bold;color:#fff;z-index:20;}
+.recom_itm .mask {display:block;position:absolute;width:100%;height:100%;background:rgba(0,0,0, 0.25);z-index:10;}
+.recom_itm .img img {display:block;width:100%;height:100%;vertical-align:top;}
+
+/* pack_area */
+.slide_tab {position:relative;height:30px;padding-bottom:19px;}
+.slide_vw {position:absolute;z-index:1;left:0;top:0;width:1270px;height:100%;}
+.pak_itm {float:left;margin-right:10px;}
+.pak_itm a {display:block;height:28px;line-height:28px;padding:0 12px;background:#fff;border:1px solid #7dbed6;color:#0090c5;font-size:13px;letter-spacing:-0.02em;border-radius:20px;font-weight:500;}
+.pak_itm.on a {background:#0090c5;border-color:#0090c5;color:#fff;}
+.pack_prc {position:relative;height:210px;}
+.card_itm {float:left;width:180px;height:210px;margin-right:12px;border-radius:5px;overflow:hidden;background:#fbf8f2;}
+.card_itm .img {display:block;width:180px;height:122px}
+.card_itm .img img {width:100%;vertical-align:top;}
+.card_itm .dsc {height:67px;padding:10px;letter-spacing:-0.02em;}
+.card_itm:nth-child(2n-1) .dsc {background:#faf3f3;}
+.card_itm .dsc .title {display:block;overflow:hidden;height:36px;margin:0;font-size:14px;line-height:18px;color:#333;letter-spacing:-0.02em;}
+.card_itm .low_prc {margin:8px 0 0 0;}
+.low_prc {text-align:right;margin:8px 0 0 0;}
+.low_prc .head {font-size:12px;color:#333;font-style:normal;margin-right:4px;}
+.low_prc .num {font-size:17px;font-weight:bold;color:#0f0f0f;vertical-align:-1px;letter-spacing:-0.03em;}
+.low_prc .txt {font-size:12px;font-weight:bold;color:#0f0f0f;}
+
+/* tourist_area */
+.tourist_area {margin:0;padding:10px 15px 20px 15px;}
+.tr_wrap {position:relative;}
+.tr_paging_wrap {background:none;}
+.bnr_arw2{width:50px;height:28px;background:url(//img.danawa.com/new/mdnw/v2/img/bg_paging_arw2.png) no-repeat;background-position:10px 0;background-size:30px auto;display:block;text-indent:-999em;}
+.bnr_arw2.bnr_arw_right{background-position:10px -30px;}
+.btn_bnr_lp {left:-22px;}
+.btn_bnr_rp {right:-22px;}
+.tr_itm + .tr_itm {margin-top:10px;}
+.tr_box {position:relative;border-radius:5px;overflow:hidden;}
+.tr_box:after {content:"";display:block;clear:both;}
+.tr_box .thmb_a {position:absolute;top:0;left:0;width:90px;height:90px;}
+.tr_box .thmb_a .img {display:block;width:90px;height:90px;}
+.tr_box .thmb_a img {width:100%;height:100%;}
+.tr_box .thmb_a .date {position:absolute;top:50%;left:50%;width:55px;height:55px;margin:-27.5px 0 0 -27.5px;border-radius:50%;background:rgba(0, 0, 0, 0.65);color:#fff;text-align:center;}
+.tr_box .thmb_a .txt_d {margin:14px 0 -1px 0;font-size:16px;font-weight:bold;font-style:normal;}
+.tr_box .thmb_a .txt_s {font-size:11px;}
+.tr_box .info_a {padding:10px 10px 10px 100px;height:70px;background:#fff;}
+.tr_box .tit_info {overflow:hidden;height:36px;color:#333;font-size:14px;letter-spacing:-0.02em;line-height:18px;}
+.tr_paging {height:10px;padding:15px 0 0 0;}
+.test_smp {width:100%;}
+
+/* mall_area */
+.mall_area {padding:20px 0 12px 0;}
+.mall_area .h_tit {padding-left:15px;}
+.alliance_area{padding:3px 0 6px 0;}
+.alliance_mall_list{clear:both;overflow:hidden;margin:0 7px;}
+.logo_size{width:100%;border-radius:30px;border:1px solid #d6d6d6;}
+.col_ca{float:left;width:33.3%;text-align:center;margin-bottom:10px;}
+.col_ca a{padding:0 7px;display:block;}
+
+/* sub_page */
+.sub_page * {font-family:'Apple SD Gothic NEO';}
+.sub_cont {padding:0 20px;}
+
+/* sub_top */
+.sub_top {padding:0 15px;height:44px;zoom:1;}
+.sub_top:after {content:"";display:block;clear:both;}
+.sub_top .lft_a {margin-top:4px;}
+.sub_top .rgt_a {margin:4px 2px 0 0;}
+.sub_top .lft_a .btn_prev {display:inline-block;padding:10px;margin-left:-5px;}
+.sub_top .btn_srch {display:inline-block;padding:10px;margin-right:-5px;}
+.sub_top .ico.prev {width:10px;height:16px;background-position:0 0;}
+.sub_top .ico.t_menu {width:18px;height:16px;background-position:-20px -74px;}
+
+/* intro_area */
+.intro_area {clear:both;padding:6px 0 0 0;color:#0f0f0f;letter-spacing:-0.05em;font-weight:bold;}
+.int_tit {position:relative;margin:3px 0 15px;zoom:1;}
+.int_tit:after {content:"";display:block;clear:both;}
+.big_tit {float:left;margin:0;font-size:24px;line-height:30px;font-weight:900;}
+.intro_area .rgt_a {position:relative;}
+.intro_area .btn_view {display:block;position:absolute;right:0;bottom:5px;font-size:14px;}
+.ico.menu_s {width:12px;height:11px;background-position:0 -75px;margin:2px 4px 0 0;}
+.srch_bar {position:relative;margin:0;border-bottom:1px solid #999;letter-spacing:-0.05em;}
+.srch_bar .bar_t {display:block;width:100%;padding:8px 0;line-height:20px;height:20px;font-size:19px;}
+.srch_bar .btn_inpt {color:#c7c7c7;cursor:pointer;}
+.srch_bar .inpt_srch {border:0;font-weight:bold;color:#0f0f0f;}
+.ico.srch_b {position:absolute;right:3px;bottom:9px;width:19px;height:19px;background-position:-20px -50px;}
+
+/* searching_area */
+.sub_tab {margin:27px 0 0;}
+.sub_lst:after {content:"";display:block;clear:both;}
+.sub_lst > li {float:left;width:31%;height:33px;line-height:33px;}
+.sub_lst > li + li {margin-left:3%}
+.sub_lst > li a {display:block;height:31px;text-align:center;color:#0090c5;border:1px solid #7dbed6;border-radius:15px;}
+.sub_lst .on a {background:#0090c5;border-color:#0090c5;color:#fff;}
+
+.city_lst {margin:9px 0 0 0;}
+.city_lst li {position:relative;box-sizing:border-box;height:48px;padding-top:16px;border-bottom:1px solid #ddd;line-height:17px;}
+.city_lst li a {display:block;color:#333;font-size:13px;}
+.city_lst .over {font-style:normal;color:#0090c5;}
+.ico.city {width:9px;height:13px;background-position:-30px 0;vertical-align:top;margin:1px 10px 0 3px;}

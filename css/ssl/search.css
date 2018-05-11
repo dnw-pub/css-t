@@ -1,0 +1,481 @@
+/*
+
+해당페이지 : 검색/인기검색어/상품목록
+최종작업일자 : 2009년 12월 29일
+작업자 : P01
+작업내용 : 신규등록상품 추가 / .newTop
+
+*/
+
+a:link {font-size:12px; color:#666666; text-decoration:none;}
+a:visited {font-size:12px; color:#666666; text-decoration:none;}
+a:active {font-size:12px; color:#666666; text-decoration:none;}
+a:hover {font-size:12px; text-decoration:none;}
+
+.point_txt {color:#ff3300;}
+.point_txt h1{color:#ff3300; font-size:12px; display:inline;}
+.point_txt02 { color:#095EDF; font-weight:bold;}
+
+.price_11 { font-size: 11px; color:#4b4b4b; letter-spacing:-1px;}
+
+.tit_22_b{ color: #222222; font-weight : bold; }
+a.tit_22_b{  font-size: 12px; font-weight: bold; color: #222222; text-decoration: none;}
+a.tit_22_b:hover {   font-size: 12px; font-weight: bold; color: #005BA8; text-decoration: none;}
+
+.tit_22 { color: #222222;}
+a.tit_22{   font-size: 12px; line-height:18px; color: #222222; text-decoration: none}
+a.tit_22:hover {   font-size: 12px; line-height:18px; color: #005BA8; text-decoration: none}
+
+
+/* 추천기획전 텍스트 */
+.hotplan { font-size: 12px; font-weight: normal;  color:#3366CC; }
+a.hotplan {   font-size: 12px; font-weight: normal;  text-decoration: underline; color:#3366CC;}
+a.hotplan:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#3366CC;}
+
+/* 스폰서타이틀 */
+.spon_bt { font-family:굴림; font-size: 13px; font-weight: bold;  color:#000000; }
+
+/* 스폰서링크 1 */
+.spon_tit { font-family:굴림; font-size: 13px; font-weight: normal;  color:#095EDF; line-height:20px; text-decoration: underline;}
+a.spon_tit  {  font-family:굴림;  font-size: 13px; font-weight: normal; color:#095EDF;line-height:20px; text-decoration: underline;}
+a.spon_tit:hover { font-family:굴림;  font-size: 13px; font-weight: normal;  text-decoration: underline; color:#095EDF; line-height:20px;}
+
+/* 스폰서링크 2 */
+.s_txt { font-size: 12px; font-weight: normal;  color:#000000; }
+a.s_txt {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#000000;}
+a.s_txt:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#000000;}
+
+/* 스폰서링크 3 */
+.spon_url { font-size: 12px; font-weight: normal;  color:#5CC00B; }
+a.spon_url {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#5CC00B;}
+a.spon_url:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#5CC00B;}
+
+/*카테고리01*/
+.cate01 { font-size: 12px; font-weight: bold; letter-spacing:-1px; }
+a.cate01 {   font-size: 12px; font-weight: bold;  text-decoration: none; letter-spacing:-1px;}
+a.cate01:hover {  font-size: 12px; font-weight: bold;  text-decoration: underline; letter-spacing:-1px; color:#3366CC;}
+
+/* 카테고리02 */
+.cate02 { font-size: 12px; letter-spacing:-1px; }
+a.cate02 {   font-size: 12px;   text-decoration: none; letter-spacing:-1px;}
+a.cate02:hover {  font-size: 12px;   text-decoration: underline; letter-spacing:-1px; color:#666666;}
+
+/* 카테고리02 */
+.cate03 { font-size: 11px; letter-spacing:-1px; }
+a.cate03 {   font-size: 11px;   text-decoration: none; letter-spacing:-1px;}
+a.cate03:hover {  font-size: 11px;   text-decoration: underline; letter-spacing:-1px; color:#666666;}
+
+/* 관련검색어 */
+.uni_txt { font-size: 12px; font-weight: normal;  color:#333333; }
+a.uni_txt { font-size: 12px; font-weight: normal;  text-decoration: none; color:#333333;}
+a.uni_txt:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#333333;}
+
+.uni_txt02 { font-size: 12px; font-weight: normal;  color:#3366cc; margin-right:15px;}
+a.uni_txt02 { font-size: 12px; font-weight: normal;  text-decoration: underline; color:#3366cc; margin-right:15px;}
+a.uni_txt02:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#3366cc; margin-right:15px;}
+
+.plan_list01 { font-size: 12px; font-weight: bold;  color:#ce4900;}
+/* a.plan_list01 { font-size: 12px; font-weight: bold;  text-decoration: underline; color:#ce4900;}
+a.plan_list01:hover {  font-size: 12px; font-weight: bold;  text-decoration: underline; color:#ce4900;} */
+
+.plan_list02 { font-size: 12px; font-weight: normal;  color:#10569b; margin:0 5px 0 5px;}
+a.plan_list02 { font-size: 12px; font-weight: normal;  text-decoration: none; color:#10569b; margin:0 5px 0 5px;}
+a.plan_list02:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#10569b; margin:0 5px 0 5px;}
+
+.plan_txts { font-size: 12px; font-weight: normal;  color:#b2b2b2;}
+
+/* 상품리스트에 선택된 탭 */
+.ontab_txt { font-size: 12px; font-weight: bold;  color:#333333; letter-spacing:-1px; padding:3px 0 0 5px;}
+a.ontab_txt {font-size: 12px; font-weight: bold;  text-decoration: none; color:#333333;letter-spacing:-1px; padding:3px 0 0 5px;}
+a.ontab_txt:hover {  font-size: 12px; font-weight: bold;  text-decoration: underline; color:#333333;letter-spacing:-1px; padding:3px 0 0 5px;}
+
+
+/* 상품리스트에 선택되지 않은 탭 */
+.distab_txt { font-size: 12px; font-weight: normal;  color:#929293; letter-spacing:-1px; padding:3px 0 0 5px;}
+a.distab_txt {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#929293;letter-spacing:-1px; padding:3px 0 0 5px;}
+a.distab_txt:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#929293;letter-spacing:-1px; padding:3px 0 0 5px;}
+
+
+/* 검색입력 */
+.search_input
+{
+	 font-size			: 12px;
+	 font-family		: "돋움","Arial","Verdana";
+	 color				: #333333;
+	 width              : 210px;
+	 height				: 18px;
+	 line-height		: 18px;
+	 background-color	: #ffffff;
+	 border-right		: #CBCBCB 1px solid;
+	 border-top			: #999999 1px solid;
+	 border-left		: #999999 1px solid;
+	 border-bottom		: #CBCBCB 1px solid;
+}
+
+/* 대분류 탭 숫자01 */
+.on_num { color:#6F8DDA; font-weight: bold;}
+
+/*대분류 탭 숫자02*/
+.dis_num { color:#C2D1EF;}
+
+/*상품목록의 보기 리스트박스*/
+.option_sel { font-size: 12px; font-weight: normal;  letter-spacing:-1px;}
+
+/* 이미지보더 */
+.infoimg {border:1px solid #e0e0e0;}
+
+/*리스트 상품명*/
+.list_prot {font-family:"굴림"; font-size: 13px; font-weight: normal;  color:#3366CC; }
+a.list_prot {font-family:"굴림";  font-size: 13px; font-weight: normal;  text-decoration: underline; color:#3366CC;}
+a.list_prot:hover {font-family:"굴림";   font-size: 13px; font-weight: normal;  text-decoration: underline; color:#3366CC;}
+
+/* 줌버튼 */
+.zoombtn {padding-bottom:15px;}
+
+/*리스트 상품설명*/
+.list_pro { font-size: 12px; font-weight: normal;  color:#333333; }
+a.list_pro {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#333333;}
+a.list_pro:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#3366CC;}
+
+.list_txt { font-size: 12px; font-weight: normal;  color:#333333; line-height:15px;}
+a.list_txt {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#333333;line-height:15px;}
+a.list_txt:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#333333;line-height:15px;}
+
+
+.infotits {font-family:"굴림"; font-size: 13px; font-weight: bold;  color:#000000; }
+.drag_link {font-size: 12px; font-weight: bold;  color:#3366CC; }
+a.drag_link {font-size: 12px; font-weight: bold;  color:#3366CC;  text-decoration: underline; color:#3366CC;}
+a.drag_link:hover {font-size: 12px; font-weight: bold;  color:#3366CC;  text-decoration: underline; color:#3366CC;}
+
+/*리스트 등록날짜*/
+.list_day { font-size: 11px; color:#999999;}
+
+/*뉴스/출처*/
+.list_stxt { font-size: 11px; color:#7C7C7C;}
+a.list_stxt {   font-size: 11px; font-weight: normal;  text-decoration: none; color:#7C7C7C;}
+a.list_stxt:hover {  font-size: 11px; font-weight: normal;  text-decoration: underline; color:#7C7C7C;}
+
+/*검색옵션 상자*/
+.option_box
+{
+	background-color	: #ffffff;
+	border-right		: #ffffff 1px solid;
+	border-top			: #C9C9C9 1px solid;
+	border-left		: #C9C9C9 1px solid;
+	border-bottom		: #ffffff 1px solid;
+}
+
+/*정보검색 메뉴*/
+.info_menu { font-size: 12px; font-weight: normal;  color:#333333; letter-spacing:-1px;}
+a.info_menu {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#333333; letter-spacing:-1px;}
+a.info_menu:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#3366CC; letter-spacing:-1px;}
+
+/*정보검색 탭 활성화*/
+.info_on { font-size: 12px; font-weight: normal;  color:#FFFFFF; }
+a.info_on {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#FFFFFF;}
+a.info_on:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#FFFFFF;}
+
+/*정보검색 탭 비활성화*/
+.info_dis { font-size: 12px; font-weight: normal;  color:#818181; }
+a.info_dis {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#818181;}
+a.info_dis:hover {  font-size: 12px; font-weight: normal;  text-decoration: underline; color:#818181;}
+
+.scrollstyle {
+	SCROLLBAR-FACE-COLOR: #F5F5F5;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFF;
+	SCROLLBAR-3DLIGHT-COLOR: #CBCBCB;
+	SCROLLBAR-SHADOW-COLOR: #F5F5F5;
+	SCROLLBAR-DARKSHADOW-COLOR: #CBCBCB;
+	SCROLLBAR-TRACK-COLOR:#E9E9E9;
+	SCROLLBAR-ARROW-COLOR: #C0C0C0;
+}
+
+/* 가격대검색 박스 */
+.price_box
+{
+	background-color	: #F1F5FF;
+	border		: #668AD8 1px solid;
+	width :90px;
+	height:20px;
+	font-weight:bold;
+}
+
+/* 각 카테고리 목록 관련 스타일 */
+.dispBlack {display:block;}
+
+.option_tab {
+	background:url('//img.danawa.com/new/search/img/list_op_topt.gif') no-repeat;
+}
+
+.option_tab2 {
+	background:url('//img.danawa.com/new/search/img/list2_op_topt.gif') no-repeat;
+}
+
+div#option_tab3 {width:463px; height:33px; margin:0px; padding:0px; background:url('//img.danawa.com/new/search/img/list3_op_topt.gif') no-repeat;}
+div#option_tab3 ul#list_tab {float:left; margin:0px; padding:0px; height:33px; }
+div#option_tab3 ul#list_tab li {float:left; list-style:none; margin:0px; padding:0px; height:33px;}
+div#option_tab3 p {float:right; margin:0px; padding:0px; padding-top:6px;}
+
+div#option_mid {width:463px; height:343px; background:url('//img.danawa.com/new/search/img/list3_op_midbg.gif') no-repeat; margin:0px; padding:3px 0 0 8px;}
+div#option_mid .flashPrice {width:453px; height:48px; margin:8px 0 0 0; padding:0px; }
+
+.adOver {background-color:#999999; font-weight:bold; color:#FFFFFF;}
+.adOver{font-weight:bold; color:#FFFFFF; text-decoration:none;}
+.adOver:hover {font-weight:bold; color:#FFFFFF; text-decoration:underline;}
+
+.adOut {background-color:#FFFFFF; color:#000000;}
+.adOut{color:#000000; text-decoration:none;}
+.adOut:hover {color:#000000; text-decoration:underline;}
+
+/* 가격대검색 박스 */
+.price_box2
+{
+	background-color	: #FFFFFF;
+	border:none;
+	line-height:19px;
+	padding-left:3px;
+	width :100px;
+	height:20px;
+	font-size:12px;
+	font-weight:bold;
+	color:#3366CC;
+}
+
+.conlist {
+	font-size :11px;
+	color:#333333;
+	font-weight:bold;
+	line-height:19px;
+}
+
+.conlistnum {
+	font-size :11px;
+	color:#3366CC;
+	font-weight:normal;
+	line-height:19px
+}	
+
+.option_nor {
+	font-size :11px;
+	color:#666666;
+	font-weight:normal;
+}
+
+.option_hot {
+	font-size :11px;
+	color:#6389E3;
+	font-weight:bold;
+}
+
+.contable {
+	border-bottom:1px solid #E9E9E9;
+}
+
+.check{margin:-3px 1px -2px 0px;}
+
+.optionscroll {
+	SCROLLBAR-FACE-COLOR: #FFFFFF;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFF;
+	SCROLLBAR-3DLIGHT-COLOR: #C5C5C5;
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-DARKSHADOW-COLOR: #C5C5C5;
+	SCROLLBAR-TRACK-COLOR:#EBEBEB;
+	SCROLLBAR-ARROW-COLOR: #7AA5FF;
+}
+
+.optionscroll2 {
+	width:445px;
+	SCROLLBAR-FACE-COLOR: #FFFFFF;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFF;
+	SCROLLBAR-3DLIGHT-COLOR: #C5C5C5;
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-DARKSHADOW-COLOR: #C5C5C5;
+	SCROLLBAR-TRACK-COLOR:#EBEBEB;
+	SCROLLBAR-ARROW-COLOR: #7AA5FF;
+	OVERFLOW: auto;
+	HEIGHT: 280px;
+}
+
+
+/* 인기상품 아이콘 */
+span.icon_hit_rank {
+	width: 45px;
+	line-height: 13px;
+	padding: 0 5 0 0;
+	text-align: right;
+	background-image: url('//img.danawa.com/new/common/elec_hit.gif');
+	font-family: helvetica;
+	font-size: 11px;
+	font-weight: bold;
+	color: #F97327;
+}
+
+/* 묶음상품 관련 */
+.groupt_line {
+	border:1px solid #DDDDDD;
+	padding: 2px 0 0 0; 
+	margin-top:2px;
+	margin-bottom:2px;
+	
+}
+
+/* 관련기사 */
+.gisa_tit {font-size:11px; color:#333333;}
+a.gisa_url {font-size:11px; color:#3E6CCB; text-decoration:underline;}
+a.gisa_url:hover {font-size:11px; color:#3E6CCB; text-decoration:underline;}
+
+/* 제휴 사이트 관련 */
+.coopline {border-right:1px dashed #CDCDCD;}
+.coop_ptit {font-weight:bold; color:#CE4900;}
+
+.coop_info { font-size: 12px; font-weight: normal;  color:#969696; margin-right:4px;}
+a.coop_info { font-size: 12px; font-weight: normal;  text-decoration: none; color:#969696; margin-right:4px;}
+a.coop_info:hover { font-size: 12px; font-weight: normal;  text-decoration: underline; color:#666666; margin-right:4px;}
+
+.coop_plink { font-size: 12px; font-weight: normal;  color:#10569B;}
+a.coop_plink { font-size: 12px; font-weight: normal;  text-decoration: none; color:#10569B;}
+a.coop_plink:hover { font-size: 12px; font-weight: normal;  text-decoration: underline; color:#10569B;}
+
+/* 하단의 검색관련 */
+.all_search{
+	 font-size			: 14px;
+	 font-family		: "돋움","Arial","Verdana";
+	 color				: #000000;
+	 width              : 280px;
+	 height				: 22px;
+	 line-height		: 21px;
+	 font-weight        :bold;
+	 background-color	: #ffffff;
+	 border             : #2167F5 3px solid;
+	 padding-left       :5px;
+	 
+}
+.alls_img {}
+
+/* 휴대폰 아이콘 */
+.pico {vertical-align:middle; margin:0 8px 5px 0; height:19px;}
+
+/*오늘본상품&내가 찾은 검색어 */
+.sky { font-size: 12px; color:#FFF600;}
+
+.11_txt { font-size: 11px;text-decoration: none; color:#333333;letter-spacing:-1px;}
+a.11_txt {font-size:11px; text-decoration: underline; color:#333333;letter-spacing:-1px;}
+a.11_txt:hover {font-size:11px; text-decoration: underline; color:#333333;letter-spacing:-1px;}
+
+/* 인기검색어 페이지 스타일 시작 */
+
+.gnbranking {color: #041045; line-height:17px;}
+a.gnbranking {font-size: 12px; font-weight: normal; color: #041045; text-decoration: none;}
+a.gnbranking:hover {font-size: 12px; font-weight: bold; color: #041045; text-decoration: underline;}
+
+/* 키워드 링크 */
+.keyword_txt {color: #333333; line-height:17px;}
+a.keyword_txt {font-size: 12px; font-weight: bold; color: #333333; text-decoration: none;}
+a.keyword_txt:hover {font-size: 12px; font-weight: bold; color: #FE2B7F; text-decoration: underline;}
+
+.keyword_stxt {color: #333333; line-height:19px;}
+a.keyword_stxt {font-size: 12px; font-weight: normal; color: #333333; text-decoration: none;}
+a.keyword_stxt:hover {font-size: 12px; font-weight: normal; color: #FE2B7F; text-decoration: underline;}
+
+
+/* 오늘날짜 */
+.today_txt {font-family:Tahoma; font-size: 26px; font-weight:bold; color: #FFFFFF;}
+
+/* 이색검색어 */
+.esek {color: #FFFFFF; padding:3px 3px 2px 3px; line-height:18px;}
+a.esek { font-size: 12px; font-weight: normal; color: #FFFFFF; padding:3px 3px 2px 3px; text-decoration: none;}
+a.esek:hover {font-size: 12px; font-weight: normal; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #4636C1; text-decoration: none;}
+
+/* 12 기본 */
+.style01 {color: #FFFFFF; padding:3px 3px 2px 3px; line-height:25px;}
+a.style01 {font-size: 12px; font-weight: normal; color: #FFFFFF; padding:3px 3px 2px 3px; text-decoration: none;}
+a.style01:hover {font-size: 12px; font-weight: normal; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #A036C1; text-decoration: none;}
+
+/* 12 기본 바이올렛 */
+.style02 {color: #331EA7; padding:3px 3px 2px 3px; line-height:25px;}
+a.style02 { font-size: 12px; font-weight: normal; color: #331EA7; padding:3px 3px 2px 3px; text-decoration: none;}
+a.style02:hover {font-size: 12px; font-weight: normal; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #A036C1; text-decoration: none;}
+
+/* 12 볼드 옐로우 */
+.style03 {font-size: 12px; color: #FFFC00; padding:3px 3px 2px 3px; line-height:25px;}
+a.style03 {font-size: 12px; font-weight: bold; color: #FFFC00; padding:3px 3px 2px 3px; text-decoration: none}
+a.style03:hover {font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #A036C1; padding:3px 3px 2px 3px; text-decoration: none}
+
+/* 14 볼드 화이트 */
+.style04 {font-size: 14px; color: #FFFFFF; padding:3px 3px 2px 3px; line-height:25px;}
+a.style04 {font-size: 14px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; text-decoration: none}
+a.style04:hover {font-size: 14px; font-weight: bold; color: #FFFFFF; background-color: #A036C1; padding:3px 3px 2px 3px; text-decoration: none}
+
+/* 배경 14 볼드 */
+.style05 {font-size: 14px; font-weight: bold; color: #FFFFFF; background-color: #4636C1; padding:3px 3px 2px 3px; text-decoration: none; line-height:25px;}
+a.style05 {font-size: 14px; font-weight: bold; color: #FFFFFF; background-color: #4636C1; padding:3px 3px 2px 3px; text-decoration: none}
+a.style05:hover {font-size: 14px; font-weight: bold; color: #FFFFFF; background-color: #A036C1; padding:3px 3px 2px 3px; text-decoration: none}
+
+/* 인기검색어 페이지 스타일 끝 */
+
+/* 묶음형 목록 */
+table#groupTable {width:593px; border:1px solid #dddddd; border-collapse:collapse; }
+table#groupTable th{height:25px; background-color:#f4f4f4; font-weight:normal; text-align:center; padding-top:4px; color:#000000;}
+table#groupTable th.goption{width:320px;}
+table#groupTable th.gprice{width:83px;}
+table#groupTable th.gmall{width:50px;}
+table#groupTable th.gBtn{width:130px; text-align:right; padding-right:10px;}
+table#groupTable th.gBtn img{padding:1px 3px;}
+table#groupTable th.gBtn a{color:#000000; text-decoration:none;}
+table#groupTable th.gBtn a:hover{color:#000000; text-decoration:none;}
+table#groupTable th.gBtn span{color:#000000;}
+table#groupTable td{padding:0px;}
+table#groupTable td.groupTd{padding:5px;}
+
+table.groupTableIn {width:583px; border-collapse:collapse; padding:0;}
+table.groupTableIn td{padding:0; margin:0; height:15px; vertical-align:middle;}
+table.groupTableIn td.toption{width:300px;}
+table.groupTableIn td.tprice{width:93px; text-align:right; padding-right:5px; line-height:21px;}
+table.groupTableIn td.tmall{width:55px; text-align:center; line-height:21px;}
+table.groupTableIn td.tBtn{width:130px; text-align:right;}
+table.groupTableIn td.tBtn img{padding-top:2px;}
+
+table.groupTableIn td.tpriceplan{width:125px; font-size:11px; color:#666666; line-height:21px;}/* 가격비교예정 */
+
+.point_blue {color:#3366cc;}
+a.point_blue {color:#3366cc;}
+a.point_blue:hover {color:#3366cc;}
+
+.point_orangeb {color:#ff3300; font-weight:bold;}
+.priceBig{font-size:15px; font-family:Tahoma, Geneva, sans-serif; color:#ff3300;}
+
+/* 주간인기검색어 관련 추가 */
+.weekTop {background:url('//img.danawa.com/new/Ranking/img/bg_weektit.jpg') no-repeat; width:925px; height:110px; margin-bottom:10px;}
+.weekDay {width:530px; float:left; display:block; padding:45px 0 0 95px; *padding:65px 0 0 95px; _padding:65px 0 0 95px; font-family:Tahoma; font-size: 23px; font-weight:bold; color:#fff;}
+.cateBtn {width:300px; float:right; display:block; padding-top:30px; *padding-top:45px; _padding-top:45px;}
+
+dl.rankList {width:183px; margin:0; padding:0; float:left;}
+dl.rankList dt.Listdt{width:183px; height:42px; background:url('//img.danawa.com/new/Ranking/img/bg_topbg.gif') no-repeat; font-size:12px; font-weight:bold; color:#fff; text-align:center; padding-top:5px;}
+dl.rankList dd.Listkey{float:left; margin:0; padding:0; width:181px; border-right:1px solid #c5c4c5; border-bottom:1px solid #c5c4c5; border-left:1px solid #c5c4c5;} 
+
+table.ListTop {width:181px; border-collapse:collapse; margin-top:5px;}
+table.ListTop td.Number{width:31px; padding:5px 2px 2px 2px; text-align:center; font-size:11px; font-weight:bold; color:#333; vertical-align:top;}
+table.ListTop td.KeyWord{width:138px; padding:2px; }
+
+table.ListNormal {width:181px; border-collapse:collapse;}
+table.ListNormal td.Number{width:31px; padding:5px 2px 2px 2px; text-align:center; font-size:11px; font-weight:bold; color:#80807f; vertical-align:top;}
+table.ListNormal td.KeyWord{width:138px; padding:2px;}
+
+.tableSpaceline {width:177px; height:1px; padding-left:3px; font-size:0px; line-height:0px; background-color:#e2e1e2; margin:3px 0;}
+
+/* 신규등록상품 */
+.newTop {background:url('//img.danawa.com/new/Ranking/img/bg_newtit.jpg') no-repeat; width:925px; height:127px; margin-bottom:10px;}
+.cateBtn2 {width:300px; float:right; display:block; padding-top:45px; *padding-top:60px; _padding-top:60px;}
+
+.listAreaLeft {float:left; width:461px; border:1px solid #c5c4c5;}
+.listAreaRight {float:right; width:461px; border-top:1px solid #c5c4c5; border-right:1px solid #c5c4c5; border-bottom:1px solid #c5c4c5;}
+
+table.newListHead {width:100%; height:28px; border-collapse:collapse; background:url('//img.danawa.com/new/Ranking/img/bg_newList.gif') no-repeat;}
+table.newListHead th{font-size:12px; font-weight:bold; color:#fff; text-align:center;}
+table.newListHead th.NumTit{width:53px;}
+table.newListHead th.proTit{width:408px;}
+
+table.newList {width:100%; border-collapse:collapse;}
+table.newList td.Number{width:43px; padding:5px; text-align:center; color:#333; vertical-align:top;}
+table.newList td.product{width:398px; padding:5px;}
+table.newList td.Spaceline{height:1px; padding:0px; font-size:0px; line-height:0px; background-color:#e2e1e2; margin:3px 0;}

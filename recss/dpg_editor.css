@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* 
+2016-08-30 / create dpg editor css / pjy 
+
+ */
+
+
+/* Board */
+body{font-size:16px; color:#333; line-height:1.6;/*overflow-x:hidden;*/word-break:break-all;font-family:"Malgun Gothic","맑은 고딕","돋움",dotum,"굴림",gulim,Arial,sans-serif;}
+
+p {margin:0;padding:0;word-break:break-all;}
+table {max-width:730px;}
+.zoom_photo{text-align:center;/*margin:35px 0;*/}
+.zoom_link{max-width:700px;}
+
+hr{display:block;}
+a{text-decoration:underline;}
+

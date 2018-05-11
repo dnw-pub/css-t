@@ -1,0 +1,95 @@
+/*
+*	최종작업일자 : 2010년 9월 9일 18시 0분
+*	작업자 : 		P03
+*	내역 : 		신규추가
+*
+*	핵설명 FX: 	아무것도 없음
+*     ie7 : 		속성앞에 *
+*	ie6 : 		속성앞에 _ 
+*/
+
+/* 전체 적용 스타일 http://www.danawa.com/new/css/init.css 
+                    http://www.danawa.com/new/css/default.css*/
+
+
+.spcial_wrap {width:925px; margin:10px auto; }
+.imgborder {border:1px solid #d9d9d9;}
+
+/* 추천! 오늘의 특가 */
+.h1_special {height:160px; background: url(http://img.danawa.com/new/special/img/h1_special.jpg) no-repeat center bottom;}
+.todaylist_wrap {border:5px solid #729dec; margin-bottom:35px; *zoom:1; clear:both;}
+.todaylist_wrap:after { clear:both; content:""; display:block; visibility:hidden; height:0;}
+.today_area {width:410px; padding:20px 20px 25px 25px;  float:left;}
+.today_proimg {width:202px; float:left; margin-right:15px;}
+.today_spec {width:190px; float:left; height:178px;}
+.today_spec ul {margin-top:5px;}
+.today_spec .freedelivery {background:url(http://img.danawa.com/new/special/img/icon_free.gif) no-repeat left bottom; height:14px; margin-bottom:7px;}
+.today_spec .speicaltit {margin-bottom:6px; font-weight:bold; color:#000000; font-size:16px; line-height:130%;}
+.today_spec .speicaltit a {font-weight:bold; color:#000000; font-size:16px; line-height:130%; text-decoration:none;}
+.today_spec .speicaltit a:hover { font-weight:bold; color:#000000; font-size:16px; line-height:130%; text-decoration: underline;}
+.today_spec .speicalspec {margin-bottom:12px; color:#999; font-size:12px; line-height:130%;}
+.today_spec .speicalspec a {color:#999; font-size:12px; line-height:130%; text-decoration:none;}
+.today_spec .speicalspec a:hover { color:#999; font-size:12px; line-height:130%; text-decoration: underline;}
+.today_spec .averprice {margin-bottom:3px; font-weight:bold; color:#666; font-size:14px; line-height:130%; text-decoration:line-through;}
+.today_icon {width:140px; float:left; height:24px;}
+.today_icon  li {float:left; display:inline; margin-right:5px;}
+.timeterm {width:72px; height:24px; background:url(http://img.danawa.com/new/special/img/bg_time.gif) no-repeat; font-family:Arial black; color:#FFFFFF; font-weight:bold; text-align:center; font-size:16px; letter-spacing:1px;}
+.timehurry {width:72px; height:24px; background:url(http://img.danawa.com/new/special/img/bg_time_hurry.gif) no-repeat; font-family:Arial black; color:#FFFFFF; font-weight:bold; text-align:center; font-size:16px; letter-spacing:1px;}
+
+/* 제휴쇼핑몰 특가 서비스 바로가기 */
+.h2_specialshop {height:40px; background:url(http://img.danawa.com/new/special/img/h2_title.gif) no-repeat 0 0; margin-bottom:5px; margin-left:5px;}
+.specialshop {margin-bottom:35px;}
+.specialshop table {width:921px; border-collapse:collapse; border:2px solid #dedede;}
+.specialshop td {width:20%; height:108px; text-align:center; border:1px solid #dedede;}
+
+/* 특가 상품 리스트*/
+
+.h2_speciallist {height:40px; background:url(http://img.danawa.com/new/special/img/h2_title.gif) no-repeat 0 -40px; margin-bottom:5px; margin-left:5px;}
+.h2_speciallist ul {float:right; padding-top:10px;}
+.h2_speciallist li {margin:0 5px; color:#333; float:left; display: inline;}
+
+/* 텝 */
+.categorytab {background:url(http://img.danawa.com/new/special/img/bg_tab.gif) repeat-x; height:47px; border-left:1px solid #dedede; border-right:1px solid #dedede;}
+.categorytab ul { margin-left:15px;}
+.categorytab  li {float:left; display:inline; padding:0 15px; margin-top:17px; border-right: 1px solid #cecece; font-size:12px; font-weight:bold; color:#666;}
+.categorytab  li a {font-size:12px; font-weight:bold; color:#666; text-decoration:none;}
+.categorytab  li a:hover {font-size:12px; font-weight:bold; color:#666; text-decoration:underline;}
+.categorytab .active {background:#fff; height:29px; margin-top:7px; padding:10px 17px 0 17px; border:1px solid #cecece; border-bottom:none; color:#000;}
+.categorytab .active a {font-size:12px; font-weight:bold; color:#000; text-decoration:none;}
+.categorytab .active a:hover {font-size:12px; font-weight:bold; color:#000; text-decoration:underline;}
+
+.speciallist {margin-bottom:35px;}
+.nocategory {border-top:2px solid #dedede;}
+.speciallist tfoot td{ background:#f8f8f8; border-bottom:none;}
+.speciallist table { width:100%; border-collapse:collapse;}
+.speciallist td { padding:15px 0px 15px 15px; border-bottom:1px solid #dedede; text-align:center;}
+.speciallist .titalign {text-align:left;}
+.speciallist .listtit {color:#000; font-weight:bold; font-size:14px; margin-bottom:12px; line-height:120%;}
+.speciallist .listtit a {color:#000; font-weight:bold; font-size:14px; text-decoration:none; line-height:120%;}
+.speciallist .listtit a:hover {color:#000; font-weight:bold; font-size:14px; text-decoration:underline; line-height:120%;}
+.speciallist .listcon {color:#999; font-size:12px; margin-bottom:5px; line-height:130%;}
+.speciallist .listcon a {color:#999; font-size:12px; text-decoration:none; line-height:130%;}
+.speciallist .listcon a:hover {color:#999; font-size:12px; text-decoration:underline;line-height:130%;}
+.speciallist .averprice {color:#999; text-decoration:line-through; line-height:200%;}
+.speciallist .lowprice {font-size:16px; font-family:Tahoma; color:#ff5900; font-weight:bold; line-height:200%;}
+.speciallist .salepart {font-size:11px; color:#999; padding-bottom:5px;}
+.speciallist .salepart img { display:block; text-align:center; margin:0 auto 10px;}
+
+/* 페이징 */
+.indexBorder {text-align:center; position:relative; zoom:1;}
+.indexBorder a, .indexBorder span {display:inline-block; height:20px;  margin-right:2px;  vertical-align:bottom; line-height:20px; vertical-align:middle;}
+.indexBorder a.next {background:url(http://img.danawa.com/new/prod_list/img/ico_next.gif) no-repeat 50% 1px; width:20px;}
+.indexBorder a.prev {background:url(http://img.danawa.com/new/prod_list/img/ico_prev.gif) no-repeat 50% 1px; width:20px; margin-right:4px;}
+.indexBorder a.active {font-weight:bold;}
+
+.gray a, .gray span {color:#6b6b6b; border:1px solid #fafafa; font-family:Verdana; font-size:11px; text-decoration:none;width:20px;}
+.gray a:hover, .gray .next, .gray .prev {border:#c5c5c5 1px solid;}
+.gray .page_on, .gray .page_on:hover {background:#969696; color:#fff; border:1px solid #969696; }
+
+
+.specialcomment {color:#999; font-size:11px; line-height:130%;}
+
+
+
+
+

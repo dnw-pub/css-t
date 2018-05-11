@@ -1,0 +1,45 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2012-04-20
+작성자 : P10
+내용 : 신규 미디어잇 견적문의 팝업 제작
+*/
+
+/* 기본태그 스타일 */
+p {font-size:12px; ; line-height:1.6; word-break:keep-all;}
+option {font-family:돋움, 돋움체, Arial, Helvetica, sans-serif;}
+small {font-size:11px; color:#88454a; word-spacing:-2px;}
+/* 클래스 스타일 */
+input.input_text {border:1px solid #cfcfcf; height:20px;}
+input[type=radio] {position:relative; top:-2px;}
+b.symbol {font-weight:normal; font-size:12px;}
+.hide {display:none;}
+/* 내용전체 */
+#pop_content {padding:15px; color:#333; height:525px; overflow:hidden;}
+/* 테이블 폼 */
+table {height:370px; table-layout:auto; border-top:1px solid #a41919;border-bottom:1px solid #a41919; width:100%; border-collapse:collapse; margin:7px 0 10px;}
+table tr+tr {border-top:1px solid #ededed;}
+table th, form table td {*border-top:1px solid #ededed;}
+table th {background:#f9f9f9; width:115px; text-align:left; vertical-align:top; padding:10px 5px 7px 11px; word-spacing:-3px;height:12px;}
+table td {padding:5px 10px;}
+tr.request_name td label {margin-right:20px;}
+tr.request_name td input {width:125px;}
+tr.phone_num td input {width:30px;}
+tr.phone_num td small {margin-left:12px;}
+tr.email_address td input.input_text {width:125px;}
+tr.email_address td input.email_host {width:88px;}
+tr.email_address td select {width:90px;height:20px;}
+tr.email_address td label {margin-right:10px;}
+tr.email_address td label input {margin-left:5px; *margin-left:0;}
+tr.interest_option td, tr.use_term td {padding:6px 10px 4px;}
+tr.interest_option td label {margin-right:10px; *margin-right:5px;}
+tr.interest_option td select {position:relative; top:-1px; height:18px;}
+tr.interest_option td select.section_select {width:110px;}
+tr.interest_option td select.content_select {width:100px;}
+tr.use_term td label {margin-right:10px;}
+tr.site_url td input {width:400px;}
+tr.use_desc td textarea {width:100%;border:1px solid #cfcfcf; margin-bottom:5px; padding:1px; line-height:1.2; overflow:auto;}
+tr.use_desc td p {line-height:1.5;}
+tr.use_desc td p span {color:#666;}
+/* 하단 버튼 */
+.send_mail{text-align:center; margin-top:15px;}

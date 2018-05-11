@@ -1,0 +1,118 @@
+/*
+
+적용페이지 : 이벤트 메인
+최종작업일자 : 2009년 03월 26일 PM 4시 40분
+작업자 : P06
+작업내용 : 내 이벤트 정보 보기 추가
+
+핵설명 FX: 아무것도 없음
+       ie7 : 속성앞에 *
+	   ie6 : 속성앞에 _
+
+*/
+
+td   { font-family: "돋움", "Arial", "Verdana";	font-size: 12px; color:#666666; }
+
+A:link {color: #344756;	text-decoration: none; font-size:12px; }
+A:visited {color:#344756; text-decoration: none; font-size:12px; }
+A:active {color: #344756; text-decoration: none; font-size:12px; }
+A:hover {text-decoration: underline; color : #344756; font-size:}
+
+
+A.title:link    {font-family: "돋움";color:#344756;font-size:12px;text-decoration:none; line-height:15px; font-weight : bold;}
+A.title:visited {font-family: "돋움";color:#344756;font-size:12px;text-decoration:none; line-height:15px;font-weight : bold;}
+A.title:hover  {font-family: "돋움";color:#2300D6; text-decoration:none; line-height:15px; font-weight : bold;}
+
+A.title_white:link    {font-family: "돋움";color:#ffffff;font-size:12px;text-decoration:none; line-height:17px; }
+A.title_white:visited {font-family: "돋움";color:#ffffff;font-size:12px;text-decoration:none; line-height:17px;}
+A.title_white:hover  {font-family: "돋움";color:#C6D2FF; text-decoration:none; line-height:17px;}
+
+A.gray_s:link    {font-family: "돋움";color:#344756;font-size:11px;text-decoration:none; line-height:15px; }
+A.gray_s:visited {font-family: "돋움";color:#344756;font-size:11px;text-decoration:none; line-height:15px;}
+A.gray_s:hover  {font-family: "돋움";color:#344756; text-decoration:none; line-height:15px;}
+
+A.title:link    {font-family: "돋움";color:#344756;font-size:12px;text-decoration:none; line-height:15px; font-weight : bold;}
+A.title:visited {font-family: "돋움";color:#344756;font-size:12px;text-decoration:none; line-height:15px;font-weight : bold;}
+A.title:hover  {font-family: "돋움";color:#2300D6; text-decoration:none; line-height:15px; font-weight : bold;}
+
+.black
+{ color: #222222; line-height:17px; font-size:12px; font-family: 돋움; }
+.rignt_gray
+{ color: #344756; line-height:14px; font-size:12px; font-family: 돋움; }
+.gray
+{ color: #344756; line-height:14px; font-size:12px; font-family: 돋움; }
+.white
+{ color: #ffffff; line-height:17px; font-size:12px; font-family: 돋움; }
+.brand_date
+{ color: #6A88FC; line-height:14px; font-size:11px; font-family: 돋움; font-weight : bold; }
+.no_b
+{ color: #2300D6; line-height:14px; font-size:15px; font-family: Arial Black; }
+.no_g
+{ color: #344756; line-height:14px; font-size:15px; font-family: Arial Black; }
+.no_yel
+{ color: #fdff48; line-height:14px; font-size:15px; font-family: tahoma; }
+.no_gray
+{ color: #707070; line-height:14px; font-size:15px; font-family: tahoma; }
+
+
+/* 박스 */
+
+.textarea01 {
+	bfont-size: 11px;border: #afafaf 1px solid; font-family: 돋움; background-color: #ffffff;  }
+.textarea02 {
+	bfont-size: 12px;border: #afafaf 1px solid; color: #691900;  font-family: 돋움; background-color: #ffffff; }
+
+.input_lotto {margin-right:2px; border:solid 1px #717d87; height:23px; width:26px; font-size:23px; font-family:tahoma; text-align:center; color:#000000; vertical-align : middle ; padding-top : 10px;}
+
+
+/* 내 이벤트 정보 보기 */
+#search_box{width:728px; border:1px solid #c1b9a4; background-color:#f7f3e6; padding:10px 15px; margin-top:10px;}
+#state_select{float:left;}
+#search_b{float:right;}
+
+/* hotevent */
+#hotevent{width:760px; height:205px; background:url('http://img.danawa.com/new/event/common_img/hotevent_bg.gif') no-repeat; margin-top:20px;}
+#hotevent .tit_hot{padding:10px 0 0 13px;}
+#hot_pro{float:left; position:relative; width:230px; padding:5px 0 0 14px;}
+#hot_pro dt{float:left; padding:1px; border:1px solid #d5d5d5;}
+#hot_pro dd.d_day {position:absolute; left:67px; top:9px; height:14px; border-left:1px solid #67a801; border-right:1px solid #67a801; background-color:#67a801; color:#fff; font-size:11px; letter-spacing:-1px;}
+#hot_pro dd.d_day span {display:block; position:relative; margin:-1px 0; padding:3px 3px 0 3px; border-top:1px solid #67a801; border-bottom:1px solid #67a801; line-height:11px; text-align:center; white-space:nowrap;}
+#hot_pro dd.process {position:absolute; left:67px; top:9px; height:14px; border-left:1px solid #2d6ee6; border-right:1px solid #2d6ee6; background-color:#2d6ee6; color:#fff; font-size:11px; letter-spacing:-1px;}
+#hot_pro dd.process span {display:block; position:relative; margin:-1px 0; padding:3px 3px 0 3px; border-top:1px solid #2d6ee6; border-bottom:1px solid #2d6ee6; line-height:11px; text-align:center; white-space:nowrap;}
+#hot_pro dd.finish {position:absolute; left:67px; top:9px; height:14px; border-left:1px solid #f81717; border-right:1px solid #f81717; background-color:#f81717; color:#fff; font-size:11px; letter-spacing:-1px;}
+#hot_pro dd.finish span {display:block; position:relative; margin:-1px 0; padding:3px 3px 0 3px; border-top:1px solid #f81717; border-bottom:1px solid #f81717; line-height:11px; text-align:center; white-space:nowrap;}
+#hot_pro dd.hot_tx{position:absolute; left:67px; top:30px; width:140px; font-weight:bold; font-size:12px; color:#666; line-height:16px;}
+#hot_pro dd.hot_tx a {color:#666;}
+#hot_pro dd.hot_tx a:hover {text-decoration:underline;}
+#hot_pro ul{position:absolute; left:-25px; top:100px; line-height:16px; color:#959595;}
+.o_stx{font-size:11px; color:#d2a574;}
+#s_line{float:left; background:url('http://img.danawa.com/new/event/common_img/spot_line.gif') repeat-y; height:145px; width:1px; margin:0 0 0 8px;}
+
+/* 유형 탭 */
+#type_tab{width:760px; margin-top:20px;}
+#type_tab ul{margin:0; padding:0;}
+#type_tab li{float:left;}
+#type_tab .tab_on{background:url('http://img.danawa.com/new/event/common_img/tab_bg_on.gif') no-repeat; width:109px; height:21px; text-align:center; font-weight:bold; color:#333; padding:13px 0 0 0;}
+#type_tab .tab{background:url('http://img.danawa.com/new/event/common_img/tab_bg.gif') no-repeat; width:109px; height:21px; text-align:center; color:#8f8f8f; padding:13px 0 0 0;}
+#type_tab .tab a{color:#8f8f8f;}
+#type_tab .tab a:hover{text-decoration:underline;}
+#type_tab .tab_back{background:url('http://img.danawa.com/new/event/common_img/tab_bg_back.gif') no-repeat; width:106px; height:21px; text-align:center; color:#8f8f8f; padding:13px 0 0 0;}
+#type_tab .tab_back a{color:#8f8f8f;}
+#type_tab .tab_back a:hover{text-decoration:underline;}
+
+/* 이벤트 리스트 */
+#event_list{width:760px; margin-top:10px;}
+#box_list{float:left; position:relative; background:url('http://img.danawa.com/new/event/common_img/event_box_bg.gif') no-repeat; width:376px; height:130px; padding-bottom:10px;}
+#box_list dl{padding:12px 0 0 13px;}
+#box_list dt{float:left; padding:1px; border:1px solid #d5d5d5;}
+#box_list dd.d_day {position:absolute; left:65px; top:15px; height:14px; border-left:1px solid #67a801; border-right:1px solid #67a801; background-color:#67a801; color:#fff; font-size:11px; letter-spacing:-1px;}
+#box_list dd.d_day span {display:block; position:relative; margin:-1px 0; padding:3px 3px 0 3px; border-top:1px solid #67a801; border-bottom:1px solid #67a801; line-height:11px; text-align:center; white-space:nowrap;}
+#box_list dd.process {position:absolute; left:65px; top:15px; height:14px; border-left:1px solid #2d6ee6; border-right:1px solid #2d6ee6; background-color:#2d6ee6; color:#fff; font-size:11px; letter-spacing:-1px;}
+#box_list dd.process span {display:block; position:relative; margin:-1px 0; padding:3px 3px 0 3px; border-top:1px solid #2d6ee6; border-bottom:1px solid #2d6ee6; line-height:11px; text-align:center; white-space:nowrap;}
+#box_list dd.finish {position:absolute; left:65px; top:15px; height:14px; border-left:1px solid #f81717; border-right:1px solid #f81717; background-color:#f81717; color:#fff; font-size:11px; letter-spacing:-1px;}
+#box_list dd.finish span {display:block; position:relative; margin:-1px 0; padding:3px 3px 0 3px; border-top:1px solid #f81717; border-bottom:1px solid #f81717; line-height:11px; text-align:center; white-space:nowrap;}
+#box_list dd.event_tx{position:absolute; left:65px; top:37px; width:260px; font-weight:bold; font-size:12px; color:#666; line-height:16px;}
+#box_list dd.event_tx a {color:#666;}
+#box_list dd.event_tx a:hover {text-decoration:underline;}
+#box_list ul{position:absolute; left:65px; top:75px; line-height:16px; color:#959595;}
+.empty{float:left; padding-right:8px;}

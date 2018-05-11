@@ -1,0 +1,202 @@
+/*
+*	최종작업일자 : 2011년 4월 12일
+*	작업자 : 		P03
+*	내역 : 		mintmall_wrap 수정
+*
+*	핵설명 FX: 	아무것도 없음
+*     ie7 : 		속성앞에 *
+*	ie6 : 		속성앞에 _ 
+*/
+
+/* 전체 적용 스타일 http://www.danawa.com/new/css/init.css */
+
+
+.mintmall_wrap {width:925px; margin:0px auto; }
+
+/* 달력 */
+.mintmall_cld_top {width:785px; margin:0 auto; padding: 200px  70px 30px 70px; background:url(http://img.danawa.com/new/mintmall/img/mint_cld_top.jpg) no-repeat top left;}
+.mintmall_cld_bottom {width:925px; }
+
+.monthlist {width:200px; height:45px; margin:25px auto;}
+.monthlist .arrow {width:22px;  padding:5px 0 0 0; float:left;}
+.monthlist .month {width:156px;  text-align:center;float:left;}
+
+.mintmall_calendar {width:785px; }
+.mintmall_calendar table {width:785px; border-collapse:collapse; border:1px solid #d9d9d9;}
+.mintmall_calendar th { height:30px;  padding:0 10px; border:1px solid #d9d9d9; background:#f9f9f9; text-align:right;}
+.mintmall_calendar td { height:75px; padding:10px; border:1px solid #d9d9d9; vertical-align:top;}
+.mintmall_calendar ul {width:100%; padding:0px; margin:15px 0 0 0;}
+.mintmall_calendar li { width:90%; padding:0 0 0 7px; margin:5px 0 0 0; background:url(http://img.danawa.com/new/mintmall/img/bul_point.gif) no-repeat 0px 4px ; font-size:11px; line-height:130%; color:#333; letter-spacing:-1px;}
+.mintmall_calendar li a { font-size:11px; line-height:130%; color:#333; text-decoration:none; letter-spacing:-1px;}
+.mintmall_calendar li a:hover { font-size:11px; line-height:130%; color:#333; text-decoration:underline; letter-spacing:-1px;}
+.mintmall_calendar .sale { font-size:11px; line-height:130%; color:#ff3300; font-weight:bold; letter-spacing:-1px;}
+.mintmall_calendar .today {border:2px solid #ffa4b9;}
+.mintmall_calendar .finish { font-size:11px; line-height:130%; color:#999; font-weight:bold; letter-spacing:-1px;}
+.mintmall_calendar .finishtit a { font-size:11px; line-height:130%; color:#999; text-decoration:none; letter-spacing:-1px;}
+.mintmall_calendar .finishtit a:hover { font-size:11px; line-height:130%; color:#999; text-decoration:underline; letter-spacing:-1px;}
+
+.mintmall_calendar .day1 { background:url(http://img.danawa.com/new/mintmall/img/bgday1.gif) no-repeat top right;}
+.mintmall_calendar .day2 { background:url(http://img.danawa.com/new/mintmall/img/bgday2.gif) no-repeat top right;}
+.mintmall_calendar .day3 { background:url(http://img.danawa.com/new/mintmall/img/bgday3.gif) no-repeat top right;}
+.mintmall_calendar .day4 { background:url(http://img.danawa.com/new/mintmall/img/bgday4.gif) no-repeat top right;}
+.mintmall_calendar .day5 { background:url(http://img.danawa.com/new/mintmall/img/bgday5.gif) no-repeat top right;}
+.mintmall_calendar .day6 { background:url(http://img.danawa.com/new/mintmall/img/bgday6.gif) no-repeat top right;}
+.mintmall_calendar .day7 { background:url(http://img.danawa.com/new/mintmall/img/bgday7.gif) no-repeat top right;}
+.mintmall_calendar .day8 { background:url(http://img.danawa.com/new/mintmall/img/bgday8.gif) no-repeat top right;}
+.mintmall_calendar .day9 { background:url(http://img.danawa.com/new/mintmall/img/bgday9.gif) no-repeat top right;}
+.mintmall_calendar .day10 { background:url(http://img.danawa.com/new/mintmall/img/bgday10.gif) no-repeat top right;}
+.mintmall_calendar .day11 { background:url(http://img.danawa.com/new/mintmall/img/bgday11.gif) no-repeat top right;}
+.mintmall_calendar .day12 { background:url(http://img.danawa.com/new/mintmall/img/bgday12.gif) no-repeat top right;}
+.mintmall_calendar .day13 { background:url(http://img.danawa.com/new/mintmall/img/bgday13.gif) no-repeat top right;}
+.mintmall_calendar .day14 { background:url(http://img.danawa.com/new/mintmall/img/bgday14.gif) no-repeat top right;}
+.mintmall_calendar .day15 { background:url(http://img.danawa.com/new/mintmall/img/bgday15.gif) no-repeat top right;}
+.mintmall_calendar .day16 { background:url(http://img.danawa.com/new/mintmall/img/bgday16.gif) no-repeat top right;}
+.mintmall_calendar .day17 { background:url(http://img.danawa.com/new/mintmall/img/bgday17.gif) no-repeat top right;}
+.mintmall_calendar .day18 { background:url(http://img.danawa.com/new/mintmall/img/bgday18.gif) no-repeat top right;}
+.mintmall_calendar .day19 { background:url(http://img.danawa.com/new/mintmall/img/bgday19.gif) no-repeat top right;}
+.mintmall_calendar .day20 { background:url(http://img.danawa.com/new/mintmall/img/bgday20.gif) no-repeat top right;}
+.mintmall_calendar .day21 { background:url(http://img.danawa.com/new/mintmall/img/bgday21.gif) no-repeat top right;}
+.mintmall_calendar .day22 { background:url(http://img.danawa.com/new/mintmall/img/bgday22.gif) no-repeat top right;}
+.mintmall_calendar .day23 { background:url(http://img.danawa.com/new/mintmall/img/bgday23.gif) no-repeat top right;}
+.mintmall_calendar .day24 { background:url(http://img.danawa.com/new/mintmall/img/bgday24.gif) no-repeat top right;}
+.mintmall_calendar .day25 { background:url(http://img.danawa.com/new/mintmall/img/bgday25.gif) no-repeat top right;}
+.mintmall_calendar .day26 { background:url(http://img.danawa.com/new/mintmall/img/bgday26.gif) no-repeat top right;}
+.mintmall_calendar .day27 { background:url(http://img.danawa.com/new/mintmall/img/bgday27.gif) no-repeat top right;}
+.mintmall_calendar .day28 { background:url(http://img.danawa.com/new/mintmall/img/bgday28.gif) no-repeat top right;}
+.mintmall_calendar .day29 { background:url(http://img.danawa.com/new/mintmall/img/bgday29.gif) no-repeat top right;}
+.mintmall_calendar .day30 { background:url(http://img.danawa.com/new/mintmall/img/bgday30.gif) no-repeat top right;}
+.mintmall_calendar .day31 { background:url(http://img.danawa.com/new/mintmall/img/bgday31.gif) no-repeat top right;}
+
+
+/* 텝 */
+.mint_Tab_wrap {width:925px; height:30px; background:url(http://img.danawa.com/new/mintmall/img/tab_underline.gif) repeat-x 0 28px; margin-top:40px;}
+.mint_Tab {height:30px; overflow:hidden; float:left;}
+.mint_Tab *{vertical-align: middle;}
+.mint_Tab li {height:30px; display:inline-block; background:url(http://img.danawa.com/new/mintmall/img/tab_right.gif) no-repeat right top; padding:0 1px 0 0;  *display:inline; }
+.mint_Tab li a {background:url(http://img.danawa.com/new/mintmall/img/tab_left.gif) no-repeat left top; display:inline-block; padding:9px 10px 0 15px; height:21px; }
+.mint_Tab .tabOn {background:url(http://img.danawa.com/new/mintmall/img/tabon_right.gif) no-repeat right top; }
+.mint_Tab .tabOn a {background:url(http://img.danawa.com/new/mintmall/img/tabon_left.gif) no-repeat left top; font-weight:bold; color:#668be3; }
+.mint_menu { float:right; margin-left:15px; padding-top:5px;}
+
+/* sorting */
+.mint_sorting {width:915px; height:28px; background:url(http://img.danawa.com/new/mintmall/img/bg_sorting.gif) repeat-x; padding:7px 0 0 10px; clear:both;}
+.mint_sorting li { margin-right:10px; display:inline;}
+
+
+/* 민트몰 상품목록 */
+.mintlist_wrap {width:925px;}
+.mintlist_wrap table { width:925px; border:0; border-collapse:collapse;}
+.mintlist_wrap td { padding:15px; border-bottom:1px solid #dddddd;}
+.mintlist_wrap .notice {background:url(http://img.danawa.com/new/nCommunity/img/ico_notice.gif) no-repeat 15px 14px #f9f9f9; padding-left:40px; color:#000; font-weight:bold;}
+.mintlist_wrap .notice a {color:#000; font-weight:bold; text-decoration:none;}
+.mintlist_wrap .notice a:hover {color:#000; font-weight:bold; text-decoration:underline;}
+.mintlist_wrap .time {font-size:11px; color:#668be3; line-height:140%;}
+.mintlist_wrap .title {font-size:12px; color:#333; font-weight:bold; margin-bottom:8px; line-height:140%;}
+.mintlist_wrap .title a {font-size:12px; color:#333; font-weight:bold; text-decoration:none; line-height:140%;}
+.mintlist_wrap .title a:hover{font-size:12px; color:#333; font-weight:bold; text-decoration:underline; line-height:140%;}
+.mintlist_wrap .salepoint {font-size:12px; color:#ff3300; font-weight:bold; line-height:140%;}
+.mintlist_wrap .spec {font-size:12px; color:#666; margin-bottom:8px; line-height:140%;}
+.mintlist_wrap .spec a {font-size:12px; color:#666;  text-decoration:none; line-height:140%;}
+.mintlist_wrap .spec a:hover{font-size:12px; color:#666; text-decoration:underline; line-height:140%;}
+.mintlist_wrap .etc {font-size:11px; color:#999; line-height:140%; }
+.mintlist_wrap .price {font-size:16px; color:#ff3300; line-height:140%; font-family:tahoma; font-weight:bold;}
+.mintlist_wrap .today {background:#f3fafe;}
+
+
+
+/* 코멘트 */
+
+#comment {margin:50px 0 0 0; border-top:2px solid #8b8b8b; position:relative; zoom:1;}
+.cmt_header .title {background:url(http://img.danawa.com/new/section_m/baby/img/bg_deco_comment.gif) no-repeat; width:405px; height:17px; margin:10px;}
+.cmt_header .posRight {font-size:12px; top:15px;}
+.cmt_header .cnt { font-weight:bold; color:#ff781c;}
+#comment .boxSquare {background:#fafafa; border-bottom:2px solid #8b8b8b; border:1px solid #dcdcdc; border-bottom:2px solid #8b8b8b; margin:15px 0; min-height:108px; _height:108px;}
+.loginBox {position:relative; background:#fff; padding:20px 20px 10px 20px; font-size:12px; zoom:1; overflow:hidden;}
+.loginBox input {vertical-align:middle;}
+.loginBox label {margin-left:5px;}
+.loginBox .inputStyle {width:104px; padding:3px 5px; height:12px;}
+.loginBox .posRight a {font-size:11px; color:#333;}
+.loginBox .posRight  {font-size:10px; color:#666; right:20px;}
+.writeCmt {position:relative; border-bottom:1px solid #e0e0e0; background:#fff; padding:0 20px 10px 20px; zoom:1; overflow:hidden; }
+.writeCmt .txtareaWrap {margin-right:75px;}
+.writeCmt .txtareaWrap textarea {height:45px; border:1px solid #c5c5c5; background:#fafafa; font-size:12px; overflow-y:auto; overflow-x:hidden; width:100%; margin-right:-4px; zoom:1;}
+.writeCmt input {position:absolute; right:20px; top:0;}
+.writeCmt .counter {text-align:right; font-size:11px; color:#888; margin-top:5px; margin-right:75px;}
+.writeCmt .counter .cnt{color:#666; font-weight:bold;}
+#comment .indexBorder {padding:10px 0 20px 0;}
+
+/* 코멘트 리스트 */
+.cmt_list {padding:14px 19px 0 19px; word-wrap:break-word;}
+.cmt_noticelist {border-bottom:1px solid #dcdcdc; background:#f1f6f9;}
+.cmt_list img {vertical-align:top;}
+.cmt_list dt {visibility:hidden; height:0; line-height:0; font-size:0; width:0; position:absolute; margin:0; padding:0; text-indent:-1000px;}
+.cmt_list .image img {border:1px solid #a0a0a0;}
+.cmt_list .image {position:absolute; left:0; top:0;}
+.cmt_list .user {margin:0px 0 10px 55px; font-size:11px; color:#999; }
+.cmt_list .user .name a {font-size:12px; color:#333;}
+.cmt_list .user .mastername a {font-size:12px; color:#134993; font-weight:bold; }
+.cmt_list .comment {margin:0 0 0 55px; font-size:12px; word-wrap:break-word;}
+.cmt_list .noticecomment {margin:0 0 0 55px; font-size:12px; color:#000;}
+.cmt_list .writeCmt {margin:0px 0 0 55px; padding:0; border:0;}
+.cmt_list .writeCmt input {right:0; overflow:visible; vertical-align:top; margin:0; padding:0;}
+
+.cmt_list li {border-bottom:1px dashed #d6d6d6; margin-bottom:10px; padding-bottom:10px; zoom:1;position:relative; min-height:47px; _height:47px;}
+.cmt_list .nodashed {border-bottom:none; padding-bottom:0;}
+.cmt_list .button {position:absolute; top:0; right:0; font-size:11px; color:#474747; vertical-align:middle;}
+.cmt_list .button button {overflow:visible; margin:0 5px; vertical-align:middle; background:none; font-size:11px;}
+.cmt_list .replyType { background:url(http://img.danawa.com/new/d_news/img/bul_reply.gif) no-repeat left 5px; margin-left:55px; padding-left:15px;}
+.cmt_list .replyType .image {left:15px;}
+.cmt_read .writeCmt {display:none;}
+.cmt_write dd {display:none;}
+.cmt_write dd.writeCmt {display:block; margin:0 0 0 0px;}
+.cmt_write .user, .cmt_modify .user {margin-bottom:5px;}
+
+.cmt_modify dd.comment {display:none;}
+.btnWrapper {position:relative;}
+.btnWrapper .posRight {top:0;}
+
+
+/* 페이징 */
+.indexBorder {text-align:center; position:relative; zoom:1;}
+.indexBorder a, .indexBorder span {display:inline-block; height:20px;  margin-right:2px;  vertical-align:bottom; line-height:20px; vertical-align:middle;}
+.indexBorder a.next {background:url(http://img.danawa.com/new/prod_list/img/ico_next.gif) no-repeat 50% 1px; width:20px;}
+.indexBorder a.prev {background:url(http://img.danawa.com/new/prod_list/img/ico_prev.gif) no-repeat 50% 1px; width:20px; margin-right:4px;}
+.indexBorder a.active {font-weight:bold;}
+
+.gray a, .gray span {color:#6b6b6b; border:1px solid #fafafa; font-family:Verdana; font-size:11px; text-decoration:none;width:20px;}
+.gray a:hover, .gray .next, .gray .prev {border:#c5c5c5 1px solid;}
+.gray .page_on, .gray .page_on:hover {background:#969696; color:#fff; border:1px solid #969696; }
+
+
+/* 상세정보보기 */
+.mintmallview_wrap {margin:0 auto;}
+
+.mintmallviewtop_wrap {height:50px; background:#d5edfc;}
+.mintmallviewtop {width:700px; margin:0 auto;}
+.mintmallviewtop .danawaci {float:left; margin-top:7px;}
+.mintmallviewtop .mintmallgo {float:right; margin-top:10px;}
+
+.mintmallviewsummary_wrap {padding:25px 0; border-bottom:1px solid #e6e6e6; *zoom:1; clear:both;}
+.mintmallviewsummary_wrap:after { clear:both; content:""; display:block; visibility:hidden; height:0;}
+.mintmallviewsummary {width:700px; margin:0 auto;}
+.summaryimg {width:130px; float:left; margin-right:15px;}
+.summarycontent {width:555px; float:left; position:relative;}
+.summarybuybtn { position:absolute; right:0; bottom:0; width:107px; height:42px; }
+.summarycontent .protit {font-size:16px; font-weight:bold; color:#000000; margin-bottom:5px;}
+.summarycontent .protitorange {font-size:16px; font-weight:bold; color:#f55c00; }
+.summarycontent .prospec {font-size:12px;  color:#999; margin-bottom:15px;}
+.summarycontent .buyterm {font-size:12px; font-weight:bold; color:#668be3; margin-bottom:7px; background:url(http://img.danawa.com/new/mintmall/img/icon_view.gif) no-repeat 0 0; padding:1px 0 0 57px;}
+.summarycontent .buynum {font-size:12px; color:#666; margin-bottom:5px; background:url(http://img.danawa.com/new/mintmall/img/icon_view.gif) no-repeat 0 -25px; padding:1px 0 0 57px;}
+.summarycontent .ordernum {margin-bottom:15px; background:url(http://img.danawa.com/new/mintmall/img/icon_view.gif) no-repeat 0 -47px; padding:0 0 0 57px;}
+.ordernumTable td {padding-right:5px;}
+.ordernumTable .inputStyle {width:35px; height:16px; border:1px solid #999; }
+.summarycontent .proprice {font-size:16px; font-weight:bold; color:#999; text-decoration:line-through;}
+.summarycontent .proprice * { vertical-align:middle;}
+
+.mintmallviewinfo_wrap {width:700px; margin:0 auto; padding:25px 0;}
+
+
+
+
+
+

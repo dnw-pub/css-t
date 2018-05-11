@@ -1,0 +1,49 @@
+.dui-lib-box {border:1px solid #dcdcdc; position:relative;}
+.box-heading {text-indent:10px; font-size:12px;}
+.box-contents {padding:10px;}
+.box-more {position:absolute; right:10px; top:7px;color:#888; font-size:11px;}
+.dui-lib-box .gradientHeader {background:url(http://img.danawa.com/new/section_m/baby/img/bg_deco_sprite.gif) repeat-x 0 -449px; height:25px; line-height:25px; border-bottom:1px solid #dcdcdc; color:#333; margin:0;}
+
+/* 리스트 텍스트 */
+.dui-lib-list-text li {background: url(http://img.danawa.com/new/main_new/img/bu_point.gif) no-repeat 0px 7px; line-height:18px; padding-left: 7px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.dui-lib-list-text li a {color:#666;}
+.dui-lib-list-text li a:hover {text-decoration:underline;}
+
+/* 리스트 섬네일 */
+.dui-lib-list-thum {overflow:hidden;}
+.dui-lib-list-thum .title img {float:left; margin:0 10px 0 0;}
+.dui-lib-list-thum .title span {font-size:14px; font-weight:bold; color:#506ECE;}
+.dui-lib-list-thum .title a:hover {color:#506ECE;}
+.dui-lib-list-thum .description {margin:5px 0 0;}
+.dui-lib-list-thum .description a {font-size:12px; color:#666;}
+.dui-lib-list-thum a:hover {text-decoration:underline;}
+
+/* 혼합형 구분선 */
+.addContent {border-top:1px solid #ececec; padding-top:10px; margin-top:10px;}
+
+/* 갤러리형 */
+.dui-lib-list-image:after {content:" "; clear:both; height:0; display:block; visibility:hidden;}
+.dui-lib-list-image {zoom:1; overflow:hidden;}
+.dui-lib-list-image li {width:24.8%; text-align:center; overflow:hidden; float:left; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.dui-lib-list-image li a {overflow:hidden; display:block; _display:inline-block; padding:0 10%; text-align:center; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.dui-lib-list-image .image {display:inline-block; height:78px; width:78px; overflow:hidden; background-position:center; background-repeat:no-repeat; margin:0 0 5px; border:1px solid #dbdbdb;}
+.dui-lib-list-image .image img {display:none;}
+.dui-lib-list-image strong {white-space:nowrap; color:#333;}
+.dui-lib-list-image .userName {color:#666;}
+
+.dui-lib-list-photo {overflow:hidden; zoom:1;}
+.dui-lib-list-photo:after {content:" "; clear:both; height:0; display:block; visibility:hidden;}
+.dui-lib-list-photo li {width:33%; float:left; text-align:center;}
+.dui-lib-list-photo li p {padding:0 10px;}
+.dui-lib-list-photo .photo {line-height:80px; display:inline;}
+.dui-lib-list-photo .photo a img {vertical-align:middle; border:1px solid #e5e5e5;}
+.dui-lib-list-photo .title {text-align:center; margin-top:5px;}
+.dui-lib-list-photo .title em {font-style:normal; font-weight:bold;}
+.dui-lib-list-photo .title a {color:#333;} 
+
+/* 갤러리 - 사진만 */
+.section_baby_new .galleryBox {background-position:-300px -370px;}
+ul.photoOnlyList {padding-top:10px; margin:0 auto; overflow:hidden;}
+.photoOnlyList li {width:80px; height:80px; float:left;border:1px solid #dbdbdb; margin:0 0 10px 10px; display:inline; text-align:center;}
+.photoOnlyList li a { display:inline-block; width:72px; height:72px; overflow:hidden; border:4px solid #fff; background-position:center;}
+.photoOnlyList li img {display:none;}
