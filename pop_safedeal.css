@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*
+최종작업일자 : 2012-04-17
+작업자 : P10
+작업내용 : 기본 팝업 레이아웃 제작
+*/
+
+/* 장터팝업 기본 수정 */
+#wrap_pop h1 {background-color:#129b27; background-position:10px -75px; background-image:url("http://img.danawa.com/new/infra/img/icon_pop2.gif");}
+#content_pop {height:404px; overflow:hidden;}
+#content_pop ul {clear:both;}
+.sub_arrow {font-size:11px; color:#666;}
+.input_text {height:17px;}
+ul li {line-height:1.4;}
+
+/* input_info 휴대폰, 비밀번호 입력 */
+div.input_info {border-top:1px solid #d8d8d8; margin-top:8px; padding-top:10px;}
+div.input_info dl {overflow:auto;}
+div.input_info dl dt, div.input_info dl dd {float:left; display:block;}
+div.input_info dl dt {width:88px; font-weight:bold; padding-left:12px; padding-top:4px;*padding-top:6px; font-size:12px;}
+div.input_info dl.info_phone dt {background:url("http://img.danawa.com/new/infra/img/popup_icons.gif") no-repeat 0 -51px; *background-position:0 -49px;}
+div.input_info dl.info_phone dd {width:150px;}
+div.input_info dl.info_password {clear:both; margin-top:11px; *margin-top:9px;}
+div.input_info dl.info_password dd {padding-right:10px;}
+div.input_info dl.info_password dd input {width:80px;}
+div.input_info dl.info_password dd span {font-size:11px; color:#666; position:relative; top:-1px;}
+div.input_info ul {margin:10px 0 0 13px; *margin-top:7px;}
+
+/* pay_option 결제방식 */
+div.pay_option {margin-top:12px;}
+div.pay_option table {table-layout:auto; width:100%; border-collapse: collapse; margin-bottom:6px; *margin-bottom:8px;}
+div.pay_option table caption {text-align:left;background:url("http://img.danawa.com/new/infra/img/popup_icons.gif") no-repeat 0 -51px; font-size:12px; font-weight:bold; padding:3px 0 0 12px; margin-bottom:5px; *padding-bottom:3px;}
+div.pay_option table th, div.pay_option table td {border:1px solid #d8d8d8;}
+div.pay_option table th {background:#f3f3f3; padding:12px;}
+div.pay_option table td {color:#666; padding:6px 7px; *padding-bottom:4px;}
+div.pay_option table td ul li {line-height:1.2;}
+div.pay_option table td input {position:relative; top:2px; margin-top:-2px; *margin-top:-3px;}
+div.pay_option table td.safe_charge {width:40%;}
+div.pay_option table td.safe_charge ul {margin:0 auto; width:170px;}
+div.pay_option table td.safe_charge ul li {text-align:left; line-height:1.4; }
+div.pay_option table td.safe_charge b {color:#ff2a00;}
+div.pay_option ul li.sub_arrow {margin-left:13px;}
+div.pay_option ul li.sub_arrow img{ vertical-align:middle;}
+
+/* option_button 확인취소 버튼 */
+div.option_button {margin:30px 0; text-align:center;}

@@ -1,0 +1,67 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2012년 8월 23일
+작성자 : KSH,P05
+설문조사 팝업
+
+최종작업일자 : 2012년 8월 24일
+작성자 : P10
+내용 : strong.lines b 추가
+*/
+
+.vote_pop{width:100%; height:100%;}
+.vote_pop .pop_title{background:#ebf1ff; border-bottom:1px solid #6784c5; padding:23px 60px 15px 25px; height:36px; overflow:hidden;}
+.vote_pop .pop_title span, .vote_pop .pop_title strong{vertical-align:middle;}
+.vote_pop .pop_title span{float:left; width:29px; height:30px; padding:6px 2px 0 0; background:url(http://img.danawa.com/new/research/img/bg_vote_num.gif) no-repeat left top; color:#fff; font-size:18px; font-weight:bold; letter-spacing:-0.05em; text-align:center;}
+.vote_pop .pop_title strong{display:block; padding:1px 0 0 45px; line-height:140%;}
+.vote_pop .pop_title strong.lines{padding-top:7px;}
+.vote_pop .pop_title strong.lines b, .vote_pop .pop_title b.highlight{color:#557cce;}
+.vote_pop .pop_cts{padding:20px 37px;overflow:hidden;min-height:248px;height:auto !important;_height:248px;}
+.vote_pop .pop_cts .list{width:100%;clear:both; overflow:hidden; padding:25px 0 0 0; margin-left:13px;}
+.vote_pop .pop_cts .list li input, .vote_pop .pop_cts .list li label{vertical-align:middle;}
+.vote_pop .pop_cts .list li{padding-left:20px;}
+.vote_pop .pop_cts .list li input{*position:relative; *top:-2px;}
+.vote_pop .pop_cts .list li label{color:#393939; font-weight:bold; margin-left:-2px;}
+.vote_pop .pop_cts .horizontal li{float:left;}
+.vote_pop .pop_cts .vertical li{padding-bottom:5px;}
+.vote_pop .pop_cts .vertical2 li{margin-bottom:12px;line-height:150%;vertical-align:top;}
+.vote_pop .pop_cts .vertical2 li input {vertical-align:top;position:relative;top:10px;margin-right:10px;}
+.vote_pop .pop_cts .vertical2 li.last {margin-bottom:27px;}
+.vote_pop .pop_cts .img_area{padding:40px 0 0 0; text-align:right;}
+.vote_pop .pop_cts .img_area a{color:#999; font-weight:bold; font-size:11px; background:url(http://img.danawa.com/new/research/img/ico_link.gif) no-repeat right 2px; padding:0 8px 0 0;}
+.vote_pop .pop_cts .img_area p{text-align:left; padding:7px 0 0 0;}
+.vote_pop .pop_cts .img_area p a{padding:0; background:none;}
+.vote_pop .pop_cts .img_area p img{border:1px solid #b7b7b7;}
+.vote_pop .pop_btn{text-align:center; padding:0 0 30px 0; position:relative;}
+.vote_pop .pop_btn span{position:absolute; right:0; top:0;}
+
+.vote_pop .horizontal_cts .list{width:auto; float:left;}
+.vote_pop .horizontal_cts .img_area{float:right; padding:0;}
+.h270 {height:270px;}
+
+.vote_pop .pop_cts .aside_wrap{padding:0 0 0 32px;}
+.vote_pop .pop_cts .aside_wrap .vote_title{font-size:14px;}
+.vote_pop .pop_cts .aside_wrap fieldset{height:98px; border:none; padding:35px 0 0 20px;; margin:0; overflow:hidden;}
+.vote_pop .pop_cts .aside_wrap fieldset ul, .vote_pop .pop_cts .aside_wrap fieldset p{float:left;}
+.vote_pop .pop_cts .aside_wrap fieldset ul{width:256px;}
+.vote_pop .pop_cts .aside_wrap fieldset ul li{width:256px; height:49px; overflow:hidden;}
+.vote_pop .pop_cts .aside_wrap fieldset ul li strong, .vote_pop .pop_cts .aside_wrap fieldset ul li select, .vote_pop .pop_cts .aside_wrap fieldset ul li input{vertical-align:middle; float:left; height:21px; line-height:21px; margin:0 6px 0 0;}
+.vote_pop .pop_cts .aside_wrap fieldset ul li strong{margin:0; width:54px; padding:2px 0 0 0;}
+.vote_pop .pop_cts .aside_wrap fieldset ul li span{float:left; height:21px; line-height:21px; padding:2px; margin-left:-6px; font-weight:bold; font-size:14px;}
+.vote_pop .pop_cts .aside_wrap fieldset ul li select{height:23px; *margin-top:1px;}
+.vote_pop .pop_cts .aside_wrap fieldset ul li input{width:61px; border:1px solid #999;}
+.vote_pop .pop_cts .aside_wrap fieldset p{font-weight:bold; color:#1d50bb; margin-left:23px;}
+.vote_pop .pop_cts .aside_wrap .user_agree{height:80px;}
+.vote_pop .pop_cts .aside_wrap .user_agree p{height:52px; color:#727272; font-weight:bold; line-height:140%;}
+.vote_pop .pop_cts .aside_wrap .user_agree strong{color:#333;}
+
+.vote_pop .pop_cts .aside_wrap .user_agree strong label{position:relative; top:-2px;}
+.vote_pop .pop_cts .aside_wrap .pop_btn{text-align:right;}
+
+.vote_pop .pop_cts .aside_wrap .message{height:100px; padding:58px 0 0 0; font-weight:bold; color:#393939; font-size:14px; line-height:160%;}
+.vote_pop .pop_cts .aside_wrap .message strong{color:#4266db; font-size:14px;}
+.vote_pop .pop_cts .aside_wrap .event_alert{display:block; height:60px; font-weight:bold; color:#727272;}
+
+
+.txt_1 {color:#999 !important;margin-left:10px;}
+p.txt_1 {color:#999 !important;clear:both;margin-top:55px;margin-left:20px;}

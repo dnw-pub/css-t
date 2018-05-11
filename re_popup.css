@@ -1,0 +1,47 @@
+@charset "euc-kr";
+/*
+2012-04-05 / P10 / Create re_popup.css
+2016-09-20 / bhj / edit btn_close 
+*/
+
+/* common Initializing */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, button{margin:0; padding:0; font-family: "µ¸¿ò", Dotum, "Arial", "Verdana", Dotum,Sans-serif; font-size: 12px;}
+ul, li {list-style-type :none;}
+body {color:#333333;}
+img {border:0;}
+a {cursor:pointer;}
+a:link, a:visited, a:active {color: #333333; text-decoration: none;}
+a:hover {text-decoration:none;}
+table {border-collapse:collapse;}
+.sub_arrow {background: url("http://img.danawa.com/new/infra/img/popup_icons.gif") no-repeat scroll 0 -23px transparent;padding-left: 8px;}
+.input_text {background-color: #F3F3F3;border: 1px solid #B0B0B0;}
+
+/* common style class */
+.hide {display:none;}
+
+/* Popup Frame Layout */
+#wrap_pop {width:100%;background:none;margin:0;padding:0;}
+#wrap_pop h1 {background:url('http://img.danawa.com/new/infra/img/icon_pop2.gif') #5065a8 no-repeat;background-position:10px 12px;font-size:12px;padding:10px 0 10px 20px;color:#fff;}
+#content_pop {margin:15px;clear:both;}
+#footer_pop {background:#757575;clear:both;margin-top:12px;color:#fff;padding:7px 0;position:absolute;height:12px;width:100%;left:0;bottom:0;}
+#footer_pop address {font-style:normal;font-size:8pt;margin-left:12px; float:left;}
+#footer_pop address strong{font-size:8pt;}
+#footer_pop .copyright {font-style:normal;font-size:9px;margin-left:12px; float:left; font-family:Verdana, Geneva, sans-serif;}
+#footer_pop .copyright strong{font-size:8pt;}
+#footer_pop .btn_x_close {background:url("http://img.danawa.com/new/infra/img/popup_icons.gif") no-repeat 0 2px;padding-left:10px;display:block;color:#fff;font-size:11px;float:right;margin-right:10px;}
+#footer_pop .btn_x_close:hover {text-decoration:none;}
+.popup .pop_h1{background:url('http://img.danawa.com/new/infra/img/icon_pop2.gif') #5065a8 no-repeat;background-position:10px 12px;font-size:12px;padding:10px 0 10px 20px;color:#fff;}
+.popup .pop_footer{position:fixed;bottom:0;background-color:#939393;color:#fff;width:100%;font-size:8pt;line-height:1.4;padding:6px 0 5px;_position:absolute;}
+.popup .pop_footer .btn_close{background:url("http://img.danawa.com/new/brandlog/admin/img/admin_pop.png") 0 -67px no-repeat;float:right;padding-left:11px;cursor:pointer;margin-right:9px;color:#fff;}
+.popup .pop_cont{padding:15px;}
+.popup_frame{}
+.popup_frame .popup_header{background:#5065a8;font-size:12px;line-height:16px;color:#fff;padding:9px 9px 8px;}
+.popup_frame .popup_header h1{font-size:12px;line-height:16px;background:url('http://img.danawa.com/new/infra/img/icon_pop2.gif') no-repeat 0 2px;padding-left:7px;}
+.popup_blue .popup_header{background-color:#5065a8;}
+.popup_sky .popup_header{background-color:#4a75c8;}
+.popup_black .popup_header{background-color:#393939;}
+.popup_frame .popup_footer{clear:both;font-size:12px;line-height:16px;overflow:hidden;background-color:#939393;color:#fff;padding:5px 10px 4px;zoom:1;}
+.popup_frame .popup_footer a{color:#fff;}
+.popup_frame .popup_footer .copyright{float:left;font-family:Verdana;font-size:9px;}
+.popup_frame .popup_footer .copyright strong{font-size:8pt;}
+.popup_frame .popup_footer .btn_close{background:url("http://img.danawa.com/new/infra/img/popup_icons.gif") no-repeat 0 4px;padding:2px 2px 0 10px;font-size:11px;float:right;line-height:14px;position:static;bottom:0;right:0;}

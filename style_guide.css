@@ -1,0 +1,247 @@
+@charset "euc-kr";
+/*  subjeft : web style guide css
+    writer : pjy
+	date : 2011.07.08
+	
+	2011.8.5 P03
+	.summaryWrap 수정
+	
+	2011.8.9 P03
+	.indexList dt / .indexList dd / .indexList dd.text수정
+
+	2011.8.29 pjy
+	.btn_doc add
+	
+	2011.11.08 P01
+	.list_tbl2 추가
+	
+최종작업일자 : 2012년 1월 5일
+작성자 : P03
+내용 :#bg_design 추가
+
+2013-08-23/http://img.danawa.com/new/guide/ 를 http://guide.danawa.com/pcweb/로 전체 변경/hsy
+
+*/
+
+/* common */
+html,body{width:100%;height:100%}
+body{background-color:#fff;*word-break:break-all;-ms-word-break:break-all;font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;margin:0; padding:0;width:1200px;}
+input,button,select,input,txtArea,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,ul,ol,li,legend,hr,em,addres,div,p,strong,fieldset,form,iframe{margin:0; padding:0;}
+img,fieldset,iframe{border:0 none;}
+li{list-style:none}
+hr{display:none}
+button,label{cursor:pointer;_cursor /**/:hand}
+option{padding-right:6px}
+textarea{overflow:auto}
+em,address{font-style:normal}
+a{color:#2f3743;text-decoration:none}
+a:hover{color:#390;text-decoration:underline}
+
+.blind, legend {display:block;overflow:hidden;position:absolute;left:0;top:-5000px}
+legend{*width:0}
+.input_check, .input_radio{width:13px;height:13px}
+.input_text, textarea{*margin:-1px 0;padding-right:1px}
+
+.show{display:block}
+.hide{display:none}
+
+/* layout */
+#left_area {width:200px;min-height:100%;float:left;}
+#container {width:950px;top:0px;float:right;}
+#container_sub {width:950px;top:0px;float:left;}
+#bg_nav {background:url(http://guide.danawa.com/pcweb/com/bg_nav.gif) repeat-y left top;height:100%}
+#bg_design {background:url(http://guide.danawa.com/pcweb/com/bg_design.jpg) repeat-y left top;height:100%}
+
+/* #left_area */
+#left_area {background:#5b80d1;padding-bottom:30px;}
+#left_area h1 {background:#484f5f;}
+#left_area h1 img {margin:24px 0 32px 33px;}
+#left_area h1 img.mobile_m {margin:24px 0 32px 23px;}
+
+.guide_list {margin-left:24px;}
+.guide_list h2 {color:#fff;font-size:14px;}
+.guide_list dt {color:#fff;font-size:14px;font-weight:bold;margin:28px 0 4px 0;}
+.guide_list dt a {color:#fff;font-size:14px;font-weight:bold;}
+.guide_list dd {color:#d4e0fe;font-size:12px;line-height:20px;}
+.guide_list dd a {color:#d4e0fe;font-size:12px;}
+
+#container {background:url(../../03_%EC%84%9C%EB%B9%84%EC%8A%A4/00_recss/b1f.gif) no-repeat left 0px;padding-bottom:50px; padding-top:40px;}
+#container h2 {color:#1a1a1a;font-size:16px;background:url(http://guide.danawa.com/pcweb/com/icon_arw.gif) no-repeat 0 3px;margin:20px 0 40px 0;padding-left:12px;}
+#container .mb20 {margin-bottom:20px;}
+#container .mt100 {margin-top:100px;}
+#container .mt50 {margin-top:50px;}
+#container h3 {color:#000;font-size:14px;margin:26px 0 10px 0;}
+
+#container_sub {background:url(../../03_%EC%84%9C%EB%B9%84%EC%8A%A4/00_recss/b1f.gif) no-repeat left 0px;padding-bottom:20px;}
+#container_sub h2 {color:#1a1a1a;font-size:16px;background:url(http://guide.danawa.com/pcweb/com/icon_arw.gif) no-repeat 0 3px;margin:20px 0 49px 0;padding-left:12px;}
+#container_sub h3 {color:#000;font-size:12px;margin:26px 0 5px 0;}
+
+/* tab style */
+.tabs {background:url(http://guide.danawa.com/pcweb/com/bg_tabs.gif) repeat-x 0 bottom;height:30px;*zoom:1;overflow:hidden;*overflow:visible; }
+.tabs li {float:left;border-bottom:1px solid #d9d9d9;margin-right:4px;}
+.tabs li  a {padding:8px 14px 6px 10px;*padding:8px 14px 4px 10px;display:block;color:#999;font-weight:bold;border-top:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;}
+.tabs li  a:hover{text-decoration:none;}
+.tabs li.select a {color:#333;font-weight:bold;}
+.tabs li.select {background:#fff;padding-bottom:2px;height:30px;overflow:hidden;border-bottom:none;}
+
+.tabs_frame {background:url(http://guide.danawa.com/pcweb/com/bg_tabs.gif) repeat-x 0 bottom;height:30px;*zoom:1;overflow:hidden;*overflow:visible;margin:40px 0 40px 0;}
+.tabs_frame li {float:left;border-bottom:1px solid #d9d9d9;margin-right:4px;width:92px;text-align:center;}
+.tabs_frame li a {padding:9px 14px 5px 10px;display:block;color:#999;font-weight:bold;border-top:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;}
+.tabs_frame li a:hover{text-decoration:none;}
+.tabs_frame li.active a {color:#333;font-weight:bold;}
+.tabs_frame li.active {background:#fff;padding-bottom:2px;height:30px;overflow:hidden;border-bottom:none;}
+
+.tab_content {margin-top:40px;}
+
+.list_text {}
+.list_text li {color:#666;line-height:23px;}
+
+/* solo types */
+.green {color:#0fbe21;}
+.black {color:#1a1a1a;}
+.blue {color:#4266db;}
+.red {color:#d14b64;}
+.lightgrey {color:#999;}
+.pink {color:#fc6493;}
+.f11 {font-size:11px !important;}
+.f12 {font-size:12px !important;}
+.f14 {font-size:14px !important;}
+.f16 {font-size:16px !important;}
+.mt10 {margin-top:10px;}
+.mt20 {margin-top:20px;}
+.mt50 {margin-top:50px;}
+.mt80 {margin-top:80px;}
+.mb10 {margin-bottom:10px;}
+.mb20 {margin-bottom:20px;}
+.mr27 {margin-right:27px;}
+.mr20 {margin-right:20px;}
+.ml10 {margin-left:10px;}
+.ml20 {margin-left:20px;}
+.pt30 { padding-top:30px;}
+.pad20 {clear:both;padding:20px 0;}
+.pad60 {clear:both;padding:60px 0;}
+.posAbsl {position:absolute; left:0;}
+.posAbsr {position:absolute; right:0;}
+.posRel {position:relative;}
+.mr10 {margin:0 10px;}
+.alignc {text-align:center;}
+.float_left{float:left;}
+.cl {clear:both;}
+.disBlock {display:block;}
+.verAmid {vertical-align:middle;}
+.block {display:block !important;}
+
+.img_type1 {margin-bottom:20px;}
+.img_type2 {margin-bottom:20px;}
+.img_type3 {margin-top:40px;}
+
+/* table style */
+.list_tbl {width:100%;border-top:1px solid #e8e8e8;border-collapse:collapse;}
+.list_tbl.line { border:1px solid #d9d9d9;}
+.list_tbl th {background:#f4f4f4;border-bottom:1px solid #e8e8e8;padding:12px 0 12px 0;color:#000;text-align:center;}
+.list_tbl th.line { border:1px solid #d9d9d9;}
+.list_tbl th.text_left {text-align:left;vertical-align:middle; padding-left:30px;}
+.list_tbl td {border-bottom:1px solid #d9d9d9;padding:25px 30px;color:#666; line-height:130%;}
+.list_tbl td.line { border:1px solid #d9d9d9;}
+.list_tbl td.norightpd { padding-right:0;}
+.list_tbl td.subject {text-align:center;vertical-align:middle;font-weight:bold;}
+.list_tbl td.text_center {text-align:center;vertical-align:middle;}
+.list_tbl th.text_left {text-align:left;vertical-align:middle;}
+.list_tbl td.left_space {padding-left:90px !important;}
+.list_tbl td.bright{ border-right:1px solid #d9d9d9;}
+.list_tbl .title_bold {font-weight:bold;color:#000;line-height:1.6em;margin-bottom:5px;}
+.line_tbl {border-left:1px solid #d9d9d9;}
+.line_tbl td {border-right:1px solid #d9d9d9;}
+
+
+.list_tbl2 {width:100%;border-top:1px solid #e8e8e8;border-collapse:collapse;}
+.list_tbl2.line { border:1px solid #d9d9d9;}
+.list_tbl2 th {background:#f4f4f4;border-bottom:1px solid #e8e8e8;padding:12px 0 12px 0;color:#000;text-align:center;}
+.list_tbl2 th.line { border:1px solid #d9d9d9;}
+.list_tbl2 th.text_left {text-align:left;vertical-align:middle; padding-left:30px;}
+.list_tbl2 td {border-bottom:1px solid #d9d9d9;padding:5px 10px;color:#666; line-height:130%;}
+.list_tbl2 td.line { border:1px solid #d9d9d9;}
+.list_tbl2 td.norightpd { padding-right:0;}
+.list_tbl2 td.subject {text-align:center;vertical-align:middle;font-weight:bold;}
+.list_tbl2 td.text_center {text-align:center;vertical-align:middle;}
+.list_tbl2 th.text_left {text-align:left;vertical-align:middle;}
+.list_tbl2 td.left_space {padding-left:90px !important;}
+
+
+/* table style */
+.words_tbl {width:400px;border:1px solid #d9d9d9;border-collapse:collapse;}
+.words_tbl th {background:#f4f4f4;border:1px solid #d9d9d9;padding:12px 0 12px 0;color:#000;text-align:center;}
+.words_tbl td {border:1px solid #d9d9d9;padding:15px;color:#666; line-height:130%;}
+
+/* btn type */
+.btn_ai {background:url(http://guide.danawa.com/pcweb/com/btn_type.gif) no-repeat 0 0;width:123px;height:34px;display:inline-block;text-indent:-9999em;overflow:hidden;margin-right:10px;cursor:pointer;}
+.btn_ppt {background:url(http://guide.danawa.com/pcweb/com/btn_type.gif) no-repeat 0 -33px;width:123px;height:34px;display:inline-block;text-indent:-9999em;overflow:hidden;cursor:pointer;}
+.btn_psd {background:url(http://guide.danawa.com/pcweb/com/btn_type.gif) no-repeat 0 -67px;width:123px;height:34px;display:inline-block;text-indent:-9999em;overflow:hidden;cursor:pointer;}
+.btn_gif {background:url(http://guide.danawa.com/pcweb/com/btn_type.gif) no-repeat 0 -101px;width:123px;height:34px;display:inline-block;text-indent:-9999em;overflow:hidden;cursor:pointer;}
+.btn_doc {background:url(http://guide.danawa.com/pcweb/com/btn_type.gif) no-repeat 0 -170px;width:123px;height:34px;display:inline-block;text-indent:-9999em;overflow:hidden;cursor:pointer;}
+.btn_xls {background:url(http://guide.danawa.com/pcweb/com/btn_type.gif) no-repeat 0 -205px;width:123px;height:34px;display:inline-block;text-indent:-9999em;overflow:hidden;cursor:pointer;}
+.btn_pdf {background:url(http://guide.danawa.com/pcweb/com/btn_type.gif) no-repeat 0 -240px;width:123px;height:34px;display:inline-block;text-indent:-9999em;overflow:hidden;cursor:pointer;}
+
+/* text types p tags */
+.text_type1 {font-size:12px;color:#666;line-height:1.4em;}
+.text_type2 {font-size:12px;color:#666;line-height:1.6em;}
+.text_type3 {font-size:12px;color:#666;line-height:1.8em;}
+
+.summaryWrap {padding:30px; border:1px solid #d9d9d9; width:888px; margin-bottom:50px;}
+
+/* 1.brand */
+.boxstyle01 {border:1px solid #e6e6e6;padding:20px;text-align:center;}
+.boxstyle02 {padding:20px;text-align:center;}
+.underline {border-bottom:1px solid #d9d9d9;}
+
+/* 5.서비스UI */
+.indexList {float:left; margin-bottom:20px; width:220px;}
+.indexList dt{display:inline-block;border:1px solid #d9d9d9; width:218px; height:228px; margin:10px 0;}
+.indexList dd{display:inline-block;text-align:center;width:220px; height:15px; padding-bottom:10px;}
+.indexList dd.text{display:inline-block;text-align:left;font-size:11px;color:#999;line-height:16px;margin-bottom:30px;}
+
+/* 6.그래픽 */
+.color_content {padding-top:20px; clear:both;}
+.colorWrap {width:450px; margin-top:10px; float:left; }
+.colorWrap dt{width:90px; height:95px; float:left; display: block; clear:both;}
+.colorWrap dd{width:360px; height:83px;  padding-top:12px; float:left;display: block; line-height:150%; }
+.color1 {color:#5b80d1;}
+.color2 {color:#8badf5;}
+.color3 {color:#d14b64;}
+.color4 {color:#375ad7;}
+.color5 {color:#08b51c;}
+.color6 {color:#fc5888;}
+.color7 {color:#474747;}
+.color8 {color:#4266db;}
+.color9 {color:#13a029;}
+.color10 {color:#ff470f;}
+.color11 {color:#949ae8;}
+.color12 {color:#cf4d66;}
+.color13 {color:#cc0000;}
+.color14 {color:#ee9fa4;}
+.color15 {color:#855bed;}
+.color16 {color:#e82d39;}
+.color17 {color:#f20b4d;}
+
+.color18 {color:#cd0069;}
+.color19 {color:#ff5f78;}
+.color20 {color:#7bc7f9;}
+
+.colorEXWrap {width:475px; margin-top:15px; float:right; }
+
+.font1 { font-family:돋움; font-size:11px; font-weight:normal; color:#666;}
+.font2 { font-family:돋움; font-size:12px; font-weight:normal; color:#333;}
+.font3 { font-family:돋움; font-size:16px; font-weight:bold; color:#000;}
+.font4 { font-family:verdana; font-size:9px; font-weight:normal; color:#666;}
+.font5 { font-family:Arial; font-size:12px; font-weight:normal; color:#333;}
+.font6 { font-family:Tahoma; font-size:16px; font-weight:bold; color:#4266db;}
+
+.thumbWrap {padding:30px; border:1px solid #484f5f; width:888px; margin-top:20px;}
+.thumbWrap table{ border:0; border-collapse:collapse;}
+.thumbWrap td { padding-top:20px; line-height:170%;}
+
+.btnWrap { text-align:center;}
+.hidden {display:none;}
+
+
+#bg_nav_none {background:url(img/bg_top.gif) repeat-x left top;}

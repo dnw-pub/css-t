@@ -1,0 +1,97 @@
+@charset 'euc-kr';
+/* 
+2013-10-08 / create CSS / yhm
+*/
+
+.vs_vga_wrap{height:677px;overflow-y:scroll;overflow-x:hidden;position:relative;zoom:1;}
+.vs_vga_wrap h2{margin: 0;}
+.vs_vga_wrap ul{margin: 0;padding: 0;}
+.vs_vga_wrap li{margin: 0;padding: 0;list-style: none;}
+.vs_vga_wrap .blind{position:absolute;text-indent:-900px;overflow:hidden;height:1px;width:1px;}
+.vs_vga_wrap .intro{width:853px;margin:16px auto 13px;height:323px;background:url(//img.danawa.com/new/vs_vga/img/intro_vga.jpg) no-repeat 0 0;position:relative;}
+.vs_vga_wrap .intro .sel_vga{position:absolute;width:269px;top:240px;border:1px solid #fff;z-index:100;}
+.vs_vga_wrap .intro .chosen_item a{display:block;background:url(//img.danawa.com/new/vs_vga/img/bg_choice_vga.png) no-repeat right 15px white;height:20px;font-size:12px;font-weight:bold;color:#000;line-height:20px;padding:10px 33px 8px 15px;overflow:hidden;text-decoration:none;white-space:nowrap;text-overflow:ellipsis;}
+.vs_vga_wrap .intro .sel_1{left:29px;}
+.vs_vga_wrap .intro .sel_2{right:27px;}
+.vs_vga_wrap .intro .choice_box{display:none;border-top:1px solid #c1c1c1;background:#fff;max-height:265px;overflow-y:auto;overflow-x:hidden;}
+.vs_vga_wrap .intro .choice_list a{display:block;font-size:12px;line-height:16px;color:#000;padding:5px 8px 3px 13px;text-decoration: none;}
+.vs_vga_wrap .intro .choice_list a:hover{background:#13132d;color:#fff;font-weight:bold;}
+.vs_vga_wrap .intro .choice_list a:focus{background:#13132d;color:#fff;font-weight:bold;}
+.vs_vga_wrap .intro .selected{border-color:#333;}
+.vs_vga_wrap .intro .selected .choice_box{display:block;}
+.vs_vga_wrap .intro .selected .chosen_item a{padding:7px 33px 5px 13px;/*color:#757575;*/background-position:right -38px;}
+.vs_vga_wrap .intro .submit{position:absolute;top:228px;left:308px;}
+.vs_vga_wrap .no_result{width:853px;margin:0 auto 13px;height:317px;background:url(//img.danawa.com/new/vs_vga/img/no_result.png) no-repeat 0 0;}
+.vs_vga_wrap .spec_sect{width:859px;margin:0 auto 16px;}
+.vs_vga_wrap caption{line-height:0;overflow:hidden;text-indent:-999em;text-align:left;vertical-align:top;}
+.vs_vga_wrap .spec_table{width:100%;overflow:hidden;padding:0;border-collapse:separate;border-spacing:3px;table-layout:fixed;}
+.vs_vga_wrap .spec_table td,.pop_vs_vga .spec_table th{padding:8px 20px 7px;}
+.vs_vga_wrap .spec_table td{width:267px;background:#e7e7e7;font-size:12px;line-height:16px;color:#444;font-weight:bold;}
+.vs_vga_wrap .spec_table th{background:#c1c1c1;}
+.vs_vga_wrap .spec_table .vga1{text-align:right;}
+.vs_vga_wrap .spec_table .vga2{text-align:left;}
+.vs_vga_wrap .spec_table .top_tr td{font-size:14px;line-height:18px;color:#111;}
+.vs_vga_wrap .spec_table .spec_txt{display:block;background:url(//img.danawa.com/new/vs_vga/img/vga_spec.png) no-repeat;height:15px;text-align:left;text-indent:-200px;overflow:hidden;margin:0 auto;}
+.vs_vga_wrap .spec_table .txt_1{width:37px;background-position:0 0;}
+.vs_vga_wrap .spec_table .txt_2{width:38px;background-position:-50px 0;}
+.vs_vga_wrap .spec_table .txt_3{width:24px;background-position:-100px 0;}
+.vs_vga_wrap .spec_table .txt_4{width:26px;background-position:-150px 0;}
+.vs_vga_wrap .spec_table .txt_5{width:125px;background-position:0px -30px;}
+.vs_vga_wrap .spec_table .txt_6{width:49px;background-position:-150px -30px;}
+.vs_vga_wrap .spec_table .txt_7{width:64px;background-position:0px -60px;}
+.vs_vga_wrap .spec_table .txt_8{width:62px;background-position:-100px -60px;}
+.vs_vga_wrap .spec_table .txt_9{width:63px;background-position:0px -90px;}
+.vs_vga_wrap .spec_table .txt_10{width:63px;background-position:-100px -90px;}
+.vs_vga_wrap .spec_table .txt_11{width:63px;background-position:0px -120px;}
+.vs_vga_wrap .spec_table .txt_12{width:37px;background-position:-100px -120px;}
+.vs_vga_wrap .spec_table .txt_13{width:49px;background-position:-150px -120px;}
+.vs_vga_wrap .spec_table .txt_14{width:105px;background-position:0px -150px;}
+.vs_vga_wrap .bench_wrap{width:853px;margin:0 auto;}
+.vs_vga_wrap .bench_sect{border:2px solid #c0c0c0;margin-bottom:17px;}
+.vs_vga_wrap .bench_sect h3{margin:0;background:#c0c0c0;padding:0 0 1px;}
+.vs_vga_wrap .bench_sect .bench_title{display:block;background:url(//img.danawa.com/new/vs_vga/img/vga_spec.png) no-repeat;height:16px;overflow:hidden;text-indent:-200px;margin:0 auto;}
+.vs_vga_wrap .bench_sect .title_1{width:148px;background-position:0 -180px;}
+.vs_vga_wrap .bench_sect .title_2{width:155px;background-position:0 -210px;}
+.vs_vga_wrap .bench_sect .title_3{width:68px;background-position:0 -240px;}
+.vs_vga_wrap .bench_sect .title_4{width:142px;background-position:0 -270px;}
+.vs_vga_wrap .bench_sect .title_5{width:143px;background-position:0 -300px;}
+.vs_vga_wrap .bench_sect .graph_box{background:#f5f5f5;padding:18px 28px 14px 21px;}
+.vs_vga_wrap .bench_sect .vga_list li{overflow:hidden;padding:5px 0 4px;zoom:1;}
+.vs_vga_wrap .bench_sect .vga_name{float:left;width:205px;font-size:12px;line-height:16px;color:#3e454d;margin-right:10px;}
+.vs_vga_wrap .bench_sect .graph_bar{float:left;width:502px;background:#e1e1e1;height:13px;}
+.vs_vga_wrap .bench_sect .graph_bar .bar{height:100%;background:#9d9d9d;}
+.vs_vga_wrap .bench_sect .graph_green .bar{background-color:#74b60c;}
+.vs_vga_wrap .bench_sect .graph_red .bar{background-color:#fc5253;}
+.vs_vga_wrap .bench_sect .graph_grey .bar{background-color:#9d9d9d;}
+.vs_vga_wrap .bench_sect .score{float:right;font-size:12px;font-weight:bold;line-height:16px;color:#666;}
+.vs_vga_wrap .bench_sect .win_vga .score{color:#111;}
+.vs_vga_wrap .total_wrap{width:853px;height:145px;background:url(//img.danawa.com/new/vs_vga/img/bg_vga_total.jpg) no-repeat 0 0;margin:0 auto 10px;position:relative;}
+.vs_vga_wrap .total_wrap .total_graph{position:absolute;width:773px;height:40px;background:#ff5454;top:52px;left:38px;}
+.vs_vga_wrap .total_wrap .total_graph .bar{height:100%;background:#74b60c;}
+.vs_vga_wrap .total_wrap .vga_name{font-size:14px;line-height:18px;font-weight:bold;position:absolute;color:#fff;top:28px;}
+.vs_vga_wrap .total_wrap .score_em{position:absolute;font-family:Tahoma;font-size:18px;line-height:30px;color:#111;top:56px;font-weight:bold;}
+.vs_vga_wrap .total_wrap .score_em .num{font-size:24px;font-family:Tahoma;}
+.vs_vga_wrap .total_wrap .vga_1 .vga_name{color:#8dd617;left:37px;}
+.vs_vga_wrap .total_wrap .vga_1 .score_em{left:56px;}
+.vs_vga_wrap .total_wrap .vga_2 .vga_name{color:#ff6060;right:42px;}
+.vs_vga_wrap .total_wrap .vga_2 .score_em{right:53px;}
+.vs_vga_wrap .total_wrap .info_cite{position:absolute;bottom:11px;right:11px;}
+.vs_vga_wrap .total_wrap .info_cite img{vertical-align:middle;margin-left:5px;}
+.vs_vga_wrap .popular_wrap{width:853px;margin:0 auto 17px;}
+.vs_vga_wrap .popular_wrap .wrap_header{padding:9px 0;}
+.vs_vga_wrap .h2_popular{width:96px;height:14px;background:url(//img.danawa.com/new/vs_vga/img/vga_spec.png) no-repeat 0 -330px;overflow:hidden;text-indent:-200px;}
+.vs_vga_wrap .prod_wrap{overflow:hidden;zoom:1;}
+.vs_vga_wrap .prod_wrap .rel_box{float:left;width:50%;*width:49.9%;}
+.vs_vga_wrap .prod_wrap .rel_name{background:#f8f8f8;border:solid #e0e0e0;border-width:2px 0 2px 2px;font-size:12px;line-height:16px;color:#666;font-weight:bold;padding:9px 15px;}
+.vs_vga_wrap .pro_list{border-left:2px solid #e0e0e0;}
+.vs_vga_wrap .pro_list li{overflow:hidden;zoom:1;padding:9px 34px 9px 25px;border-bottom:2px solid #e0e0e0;vertical-align:top;}
+.vs_vga_wrap .pro_list .thumb{display:block;float:left;}
+.vs_vga_wrap .pro_list .pd_info{padding:9px 0 2px;position:relative;margin:0 0 0 111px;}
+.vs_vga_wrap .pro_list .pd_name{display:block;overflow:hidden;font-size:12px;line-height:18px;font-weight:bold;color:#333;height:36px;margin:0 0 5px 0;}
+.vs_vga_wrap .pro_list .pd_name:hover{text-decoration:underline;}
+.vs_vga_wrap .pro_list .price_box .price_type{font-size:11px;font-weight:bold;color:#757575;}
+.vs_vga_wrap .pro_list .price_box .price{color:#4266db;font-size:12px;font-weight:bold;}
+.vs_vga_wrap .pro_list .price_box .price_num{font-family:Tahoma;font-size:16px;}
+.vs_vga_wrap .pro_list .to_blog{display:block;position:absolute;bottom:0;right:0;background:url(//img.danawa.com/new/prod_list/img/btn_price01.gif);width:65px;height:23px;text-indent:-100px;overflow:hidden;}
+.vs_vga_wrap .rel_vga_1 .rel_name{border-left:none;}
+.vs_vga_wrap .rel_vga_1 .pro_list{border-left:none;}

@@ -1,0 +1,746 @@
+@charset "utf-8";
+
+/* 2015-12-21 / shop_danawa_pc.css  / bhj 
+	2016-01-25 / add .usedmarket_lnb_wrap / bhj
+	2016-02-25 / del .footer_sdanawa_pc / bhj
+	2016-06-14 / edit footer_bottom_contents / bhj
+    2016-11-04 / add .iconf_office / bhj 
+    2016-12-08 / add  .upcoming_games / bhj
+    2016-12-13 / add .shopdnw_notebook / bhj 
+    2017-01-02 / add wing_contents / bhj 
+	2017-03-29 / add comunity_box title cut / bhj 
+    2017-07-25 / Add comp_prod_selector / yjk
+    2017-09-14 / Edit comp_prod_selector / yjk
+    2017-10-19 / Edit .board_box .desc_area .txt_user / yjk
+    2017-11-09 / Add .ico_game2.ico_game_hot2 / yjk
+    2017-12-28 / Add .pc_shop_info / yjk
+	2018-01-05 / add ninety_help / bhj 
+	2018-01-11 / Edit .cate_link / lhk
+    2018-02-13 / Add .desc_area .txt_subject / yjk
+    2018-03-07 / Add .video_channel_box, .game_board_wrap / yjk
+*/
+
+/* common */
+#container_main {background:#111}
+.clear {clear:both}
+.clearfix {*zoom:1;}
+.clearfix:after,.clearfix:before{display:block;overflow:hidden;clear:both;content:"";height:0;}
+.hide_txt{display:block;text-indent:-2000px;direction:ltr;text-align:left;overflow:hidden;}
+.hide_caption{height:0;line-height:0;overflow:hidden;font-size:0;text-align:left;direction:ltr;text-indent:-2000px;}
+.d_inblock{display:inline-block;*display:inline;*zoom:1;}
+.float_l {float:left}
+.float_r {float:right}
+.fn_mg {font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,Sans-serif;}
+.pr_num {font-family:"Century Gothic",Sans-serif,arial,'돋움',Dotum,'굴림',gulim;}
+.pc_title_w {color:#fff;font-size:14px;font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,sans-serif;font-weight:bold;letter-spacing:-0.05em;}
+.pc_content_wrap .btn_style_01 {color:#fff;font-size:13px;font-weight:bold;font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,sans-serif;border:1px solid #666;line-height:23px;padding:0 8px 3px 8px;border-radius:2px;}
+.ico_game {background:url(//img.danawa.com/new/shop_danawa/img/ico_sdanawa_pc.png) top right no-repeat;text-indent:-9999px;display:inline-block;}
+.ico_game2 {display:inline-block;color:#fff;width:48px;line-height:20px;height:16px;font-size:11px;letter-spacing:-0.07em;text-align:center;cursor:pointer;}
+.icon_setpc {display:inline-block;background:url(//img.danawa.com/new/shop_danawa/img/ico_shop_sub.png) no-repeat;font-size:0;vertical-align:top;}
+.ico_game_new {background-position:6px 4px;width:24px;height:39px;}
+.ico_game_hot {background-position:-16px 4px;width:24px;height:39px;}
+.ico_game_new2 {background:#dd2c29;width:32px;color:#fff;}
+.ico_game_hot2 {background:#31a000;width:32px;color:#fff;}
+.ico_pwslr {background-position: 0 -100px;width:22px;height:13px;vertical-align:-3px;margin-left:5px;}
+.vip_delivery {background:#a67d00;}
+.safe_delivery {background:#85009d}
+.free_delivery {background:#0072ba;}
+.price_compare {background:#e288b3;}
+.icon_lock {display:inline-block;width:8px;height:11px;background-position:0 -130px;margin-right:4px;vertical-align:-1px;}
+
+.img_369_273 {width:369px;height:273px;vertical-align:top;}
+.img_164_102 {width:164px;height:102px;vertical-align:top;}
+.img_217{width:217px;height:217px;vertical-align:top;}
+
+/* layout */
+.main_left_wing, .main_right_wing {top:50px !important;}
+
+/* footer_shop_danawa */
+#footer_shop_danawa {background:#222;border-top:1px solid #333;padding-bottom:10px;height:290px;*height:auto;}
+#footer_shop_danawa {height:100%;}
+.footer_middle_box {background:#222;border-color:#444;}
+.footer_danawa_policy {width:360px;}
+.btn_box_type, .footer_box_address, .footer_box_cs {border-color:#444;}
+.footer_box_cs,.footer_box_address{border-left:1px dashed #444}
+.notice_squre_box {color:#aaa}
+.policy_link, .policy_link:hover {color:#999;}
+.dt_type {color:#fff;}
+.dt_type2,.footer_top_links,.footer_notice_text a,.dd_type2,.btn_box_type,.btn_tel_click {color:#999}
+.dt_type2:hover,.footer_top_links:hover,.footer_notice_text a:hover,.dd_type2:hover,.btn_box_type:hover,.btn_tel_click:hover {color:#999;}
+.btn_box_type, .notice_squre_box {border-color:#666;}
+
+	.iconf_footer_list {overflow:hidden;}
+	.iconf_at1{display:block;text-indent:-9999em;float:left;}
+	.iconf_leaderstech {background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_leaderstech_w.png) no-repeat 0 0;width:78px;height:25px;margin:8px 28px 0 0;}
+	.iconf_bareun {background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_bareun_w.png) no-repeat 0 0;width:95px;height:21px;margin:11px 32px 0 0;}
+	.iconf_escrow {background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_escrow_w.png) no-repeat 0 0;width:43px;height:41px;margin:0 28px 0 0;}
+	.iconf_ftc {background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_ftc_w.png) no-repeat 0 0;width:121px;height:21px;margin:9px 28px 0 0;}
+    .iconf_office{background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_officedepot_w.png) no-repeat 0 0;width:67px;height:29px;margin:6px 31px 0 0;}	
+	.iconf_cash {background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_cash_w.png) no-repeat 0 0;width:84px;height:30px;margin:6px 31px 0 0;}
+	.iconf_ecmc {background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_ecmc_w.png) no-repeat 0 0;width:93px;height:27px;margin:6px 33px 0 0;}
+	.iconf_sellpr{background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_sellpr_w.png) no-repeat 0 0;width:100px;height:26px;margin:8px 35px 0 0;}
+	.iconf_kolsa{background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_kolsa_w.png) no-repeat 0 0;width:72px;height:31px;margin:6px 33px 0 0;}
+	.iconf_kodb{background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_kodb_w.png) no-repeat 0 0;width:64px;height:39px;margin:0 32px 0 0;}
+	.iconf_inpay{background:url(//img.danawa.com/new/shop_danawa/img/footer_logo/iconf_inipay_w.png) no-repeat 0 0;width:42px;height:41px;margin:0;}
+
+/* layout */
+.pc_navi_bg {width:100%;height:40px;background:#333;position:absolute;z-index:-1;}
+.shop_danawa_pc,.shopdnw_notebook {background:#111;}
+.pc_topbanner_area {text-align:center;}
+.pc_top_banner {display:block;height:70px;}
+.mid_banner_area {margin-bottom:6px;}
+.mid_banner_area a {display:block;}
+
+/* pc_lnb_wrap */
+.pc_lnb_wrap {background:#333;height:40px;}
+.pc_lnb_wrap ul {width:1072px;margin:0 auto;}
+.pc_lnb_list li {display:inline-block;*display:inline;*float:left;}
+.pc_lnb_wrap .pc_lnb_item {float:left;color:#fff;font-size:13px;font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,sans-serif;font-weight:bold;vertical-align:middle;text-align:center;}
+.pc_lnb_wrap .current {color:#f9ff47;}
+.pc_lnb_item {padding:0 26px}
+
+/* pc_content_wrap */
+.pc_content_wrap {width:1072px;margin:20px auto 0 auto;padding-bottom:100px;}
+.pc_content_wrap h3.pc_title_w {height:30px;line-height:10px;font-size:20px;*margin:0 0 5px 0;*line-height:18px;}
+
+/* pc_cate_item */
+.pc_cate_list {padding-left:1px}
+.pc_cate_item {float:left;width:177px;height:39px;line-height:39px;border:1px solid #333;background:#000;margin-left:-1px;}
+.pc_cate_item.lastgame_pc,.pc_cate_item.lastgame_pc a {width:180px}
+.pc_cate_item a {display:block;height:39px;margin-top:-1px;color:#fff;text-align:center;font-size:13px;font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,sans-serif;font-weight:bold;}
+.pc_cate_item a:hover {color:#fff}
+.pc_cate_item.current {background:#dd2c29;border-color:#dd2c29}
+.pc_cate_item.current a {color:#fff}
+.pc_cate_item.last a {width:180px;}
+/* pc_cate5_list : 메뉴 5개일경우 */
+.highend_snb_wrap .pc_cate5_list .pc_cate_item {width:213px}
+.highend_snb_wrap .pc_cate5_list .pc_cate_item.last {width:213px}
+.highend_snb_wrap .pc_cate5_list .pc_cate_item.last a {width:213px}
+
+.game_detail_box {display:none;position:relative;background:#000;border:1px solid #dd2c29;top:-1px;margin-bottom:-1px;}
+.tit_new_popular {font-size:26px;line-height:26px;color:#fff;font-weight:bold;font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,sans-serif;margin:55px 0px 53px 24px;width:280px;letter-spacing:-1px;}
+.game_detail_list dt {float:left;}
+.game_detail_list dd {float:left;margin:18px 10px 0 0;width:120px;position:relative;}
+.game_detail_list img {margin-left:5px;width:110px;height:81px;} /* 이미지 비율 맞추기 위해 사이즈 조정 */
+.game_detail_list .txt_title {display:block;color:#ccc;text-align:center;margin:10px 0;}
+.game_detail_list .ico_game2 {position:absolute;top:0;left:5px;}
+.detail_box_btn {position:absolute;top:55px;right:30px;}
+.btn_box_close {position:absolute;background:url(//img.danawa.com/new/shop_danawa/img/ico_sdanawa_pc.png) 0 -50px no-repeat;width:22px;height:22px;bottom:-1px;right:-1px;text-indent:-9999px;}
+
+/* pc_main_banner */
+.pc_main_banner {position:relative;overflow:hidden;clear:both;margin-bottom:14px;}
+.big_banner_wrap {width:1072px;height:310px;overflow:hidden;}
+.big_banner_li {position:absolute;left:0px;top:0px;height:310px;}
+.big_banner_li img {width:1072px;height:310px;}
+.pc_main_banner .bn_t1{left:0px;}
+.pc_main_banner .bn_t2{left:100%;}
+.pc_main_banner .bn_t3{left:200%;}
+.pc_main_banner .bn_t4{left:300%;}
+.pc_main_banner .bn_t5{left:400%;} 
+.pc_main_banner .paging_fix_event {bottom:100px}
+.pc_main_banner .btn_layer_prev button {background-position:0 -450px}
+.pc_main_banner .btn_layer_next button {background-position:-80px -450px}
+.pc_main_banner .btn_opacity_arrow {margin:-80px 0 0 0}
+.pc_main_banner .paging_main .num_page {margin:0px 7px 0px 0}
+
+.mini_banner_li {float:left;display:block;width:215px;height:100px;padding-top:6px;margin-right:-1px;top:-6px;position:relative;}
+.mini_banner_li a {display:block;border:1px solid #444444;height:98px;width:213px;}
+.mini_banner_li img {width:213px;height:98px;}
+.mini_banner_li.bn_t5 a {margin-right:0;}
+.mini_banner_li.current {background:url(//img.danawa.com/new/shop_danawa/img/bg_mini_banner.gif) no-repeat;background-position:center top;margin-right:-1px;z-index:2}
+.mini_banner_li.current a {border-color:#e53c39;}
+
+/* board_wrap */
+.board_wrap {zoom:1;}
+.board_wrap:after {clear:both;}
+.board_wrap:before, .board_wrap:after {content:"";display:block;height:0;overflow:hidden;}
+.board_box {display:inline-block;float:left;background:#000;margin:0 10px 10px 0;padding:16px 20px 24px 20px;position:relative;*display:inline;*zoom:1}
+.board_wrap .editor_box {display:inline-block;float:left;overflow:hidden;background:#000;width:330px;height:260px;padding:0;margin:0 0 10px 0;position:relative;*display:inline;*zoom:1}
+.board_wrap .editor_box img {margin:0;padding:0;}
+.highend_board_wrap .editor_box {height:360px;}
+.highend_board_wrap .editor_box img {margin:0;padding:0;}
+.board_wrap .board_box .pc_title_w {margin-bottom:22px;}
+.board_wrap .mypc_box {width:290px;height:232px;}
+.board_wrap .review_box {width:352px;height:232px;}
+.board_wrap .pc_guide_box {width:290px;height:232px;}
+.board_wrap .community_box {width:692px;height:232px;margin-right:0;}
+.board_box .gallery_item {margin-bottom:20px;}
+.board_box .gallery_item.last {margin-bottom:0;}
+.gallery_item:hover .txt_subject,.gallery_item:hover .txt_detail {text-decoration:underline;}
+.board_box .gallery_img {float:left;margin-right:15px;}
+.board_box .desc_area {float:left;width:195px;line-height:18px;}
+.board_box .desc_area p {font-size:12px;color:#aaa;word-break:break-all;}
+.board_box .txt_detail {margin-bottom:6px}
+.board_box .desc_area .txt_user {color:#666; display:block; height: 54px; overflow: hidden; word-break: break-all; }
+.board_box .see_more {position:absolute;top:22px;right:22px;font-size:11px;color:#999;letter-spacing:-0.07em;}
+
+.txt_style_list li {background:url(//img.danawa.com/new/shop_danawa/img/bullet_list_dot.gif) left center no-repeat;padding-left:10px;margin-bottom:11px;}
+.txt_style_list li a {color:#aaa;}
+
+.pc_guide_box {width:296px;}
+.pc_guide_list {margin:39px 0 0 6px;}
+.pc_guide_list li {float:left;width:130px;margin-right:24px;}
+.pc_guide_list li.last {margin-right:0;}
+.pc_guide_list li span {display:inline-block;text-align:center;margin:0 auto;*display:inline;*zoom:1;}
+.pc_guide_list li.last span {margin-left:4px;padding:0 0 3px 0;width:114px;}
+.pc_guide_list li img {margin:0 0 25px 10px;}
+
+.community_box .thumb_big_item {float:left;width:164px;height:178px;border:1px solid #222;margin-right:20px;}
+.community_box .thumb_list {float:left;width:492px;}
+.thumb_big_item .img_area {height:102px;}
+.thumb_big_item .img_area img {width:164px;height:102px;}
+.thumb_big_item .desc_area {width:150px;height:56px;padding:10px 7px;background:#111;}
+.thumb_big_item .desc_area .date {display:inline-block;padding-top:5px;*display:inline;*zoom:1;}
+.thumb_big_item:hover .title {text-decoration:underline;}
+.thumb_list li {float:left;width:246px;margin-bottom:20px;}
+.thumb_list li:after {clear:both;}
+.thumb_list li:before, .thumb_list li:after {content:"";display: block;height:0;overflow:hidden;}
+.thumb_list li .thumb_img_80 {float:left;width:80px;height:80px;}
+.thumb_list .thumb_desc_area {display:inline-block;width:144px;margin:6px 0 0 10px;color:#aaa;*display:inline;*zoom:1;}
+.thumb_list .thumb_desc_area .title {line-height:18px;height:36px;max-height:38px;overflow:hidden;}
+.thumb_list .thumb_desc_area .date {display:inline-block;padding-top:15px;font-size:12px;color:#666;*display:inline;*zoom:1;}
+
+/* mainprod_list_wrap */
+.mainprod_list_wrap {background:#000;padding:0 20px 30px 20px;}
+.mainprod_list_wrap .pc_title_w {height:30px;line-height:50px;}
+.mainprod_item {padding:30px 0;border-bottom:1px solid #333;zoom:1;}
+.mainprod_item:after {clear:both;}
+.mainprod_item:before, .mainprod_item:after {content:"";display: block;height:0;overflow:hidden;}
+.mainprod_item .big_img {display:inline-block;float:left;*display:inline;*zoom:1;}
+.mainprod_item ul {width:660px;float:left;}
+.mainprod_detail_item {width:200px;float:left;margin-left:20px;}
+.bg_prod_img {background:url(//img.danawa.com/new/shop_danawa/img/bg_prod_192.png) no-repeat;width:200px;height:200px;display:inline-block;}
+.bg_prod_img .img_192 {margin:4px;width:192px;height:192px;}
+.desc_prod {color:#ccc;margin:6px 5px;line-height:18px;height:36px;text-align:left;cursor:pointer;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;}
+.price_prod {text-align:center;color:#fff;font-family:dotum,'돋움';font-size:13px;}
+.price_prod strong {font-size:18px;font-weight:bold;font-family :"Century Gothic",sans-serif,dotum,"돋움";margin-right:3px;}
+.mainprod_item_even .mainprod_detail_item {margin:0 20px 0 0;}
+.mainprod_item_last {border-bottom:none;padding-bottom:0;}
+
+/* game_section */
+.dir_info {color:#fff;font-weight:normal;height:50px;line-height:50px;}
+.dir_info .pc_title_w {font-size:12px;}
+.dir_info .pc_title_w:hover {color:#fff;}
+
+.new_best_box {border:none;height:175px;width:1072px;display:table;position:relative;background:#000;top:-1px;margin-bottom:-1px;}
+.new_best_box .tit_new_best{display:table-cell;width:193px;height:70px;font-size:22px;font-weight:bold;color:#ff1c18;font-family:"Malgun Gothic","맑은 고딕","돋움",dotum;letter-spacing:-1px;vertical-align:middle;padding-left:25px;}
+.tit_new_best2 {font-family:"Malgun Gothic","맑은 고딕","돋움",dotum;color:#fff;letter-spacing:-1px;vertical-align:middle;}
+.new_best_box .game_detail_list {padding:36px 0 30px 0;float:left;width:855px;}
+.new_best_box .game_detail_list li {float:left;margin:0 20px 15px 0;width:120px;height:122px;display:table-cell;position:relative;}
+.pc_htmlarea {width:1072px;margin-bottom:20px;background:#000;}
+.pc_htmlarea table {text-align:center;margin:0 auto;}
+.highend_content_wrap .pc_htmlarea {margin-bottom:5px;}
+
+.pc_detail_content {padding:20px 20px 28px 20px;background:#000;}
+.cont_top_area {position:relative;}
+
+.prod_list_opts {position:relative;zoom:1;border-bottom:1px solid #bbb;height:34px;text-align:right;}
+.prod_list_opts:after{content:"";display:block;clear:both;}
+.prod_list_opts select{-webkit-border-radius:0;border-radius:0;border:1px solid #666;height:23px;}
+.prod_list_opts li{list-style:none;}
+.prod_list_opts .order_opt {float:left;}
+.prod_list_opts .order_list {float:left;padding-left:1px;}
+.prod_list_opts .order_item {float:left;width:98px;text-align:center;height:33px;border:1px solid #666;border-bottom:1px solid #bbb;margin-left:-1px;}
+.prod_list_opts .order_item a {display:block;width:100%;padding:7px 0 9px;height:17px;line-height:17px;font-size:13px;letter-spacing:-0.05em;color:#767676;text-align:center;font-family:"Malgun Gothic","맑은 고딕";}
+.prod_list_opts .order_item.selected {border:1px solid #bbb;border-bottom:1px solid #000;position:relative;}
+.prod_list_opts .order_item.selected a {color:#fff;font-weight:bold;}
+.cont_top_area .detail_box_btn {top:0px;right:0;}
+.big_title_area {clear:both;margin-top:20px;margin-bottom:-10px;}
+
+/* pcprod_list */
+.pcprod_list {padding:30px 0 10px 0;border-bottom:1px solid #666;zoom:1;}
+.pcprod_list:after {clear:both;}
+.pcprod_list:before, .pcprod_list:after {content:"";display:block;height:0;overflow:hidden;}
+.pcprod_list.last {border-bottom:0;padding-bottom:0;}
+.pcprod_list.line {border-top:1px solid #666;}
+
+.pcprod_item {float:left;width:227px;padding:0 20px;border-left:1px solid #333;margin-bottom:20px;}
+/*#container_main .pcprod_item {text-align:center;}*/
+.pcprod_item.first{padding-left:0;border-left:none;clear:both;}
+.pcprod_item:first-child{padding-left:0;border-left:none;clear:both;}
+.pcprod_item.last {padding-right:0;}
+.pcprod_item .bg_prod_img {width:227px;height:227px;background:url(//img.danawa.com/new/shop_danawa/img/bg_prod_227.jpg) no-repeat}
+.pcprod_item .bg_prod_img .img_217 {margin:4px;}
+.vip_wrap,.safe_wrap,.free_delivery {text-align:center;margin:13px 0 0 0;*z-index:999;}
+.delivery_opt_wrap {height:28px;/*display:inline-block;*display:inline;*zoom:1;*margin-bottom:5px;*/position:relative;margin-bottom:8px;}
+.delivery_opt_wrap .vip_wrap, .delivery_opt_wrap .safe_wrap {float:left;position:relative;margin-right:5px;cursor:pointer;*z-index:999;}
+.delivery_opt_wrap .free_delivery {cursor:default;}
+.over_layer {border:1px solid #888;display:none;width:137px;position:absolute;top:23px;left:0px;z-index:100;margin:0;padding:0;}
+.tit_deli_noti {background:#f4f4f4;color:#333;display:block;font-size:11px;font-weight:normal;text-align:center;padding:8px 0px;line-height:18px;}
+.txt_deli_noti {background:#fff;color:#333;font-size:11px;padding:12px;text-align:left;line-height:16px;}
+.over_layer .arrw {background:url(//img.danawa.com/new/section_m/danawapc/img/icon_layer_arrw.png) no-repeat scroll 0 0 transparent;display:inline-block;width:9px;height:6px;position:absolute;top:-6px;right:105px;}
+.vip_clr {color:#765310;}
+.safe_clr {color:#B92929;}
+.show .over_layer {display:block !important}
+.vip_wrap.show {display:block;}
+.safe_wrap.show {display:block;}
+.pcprod_item .title_area {width:227px;text-align:center;}
+.pcprod_item .price_area {width:227px;text-align:center;height:25px;margin-top:6px;}
+.price_area .price_prod {display:inline-block;height:25px;vertical-align:middle;margin-right:9px;*display:inline;*zoom:1;}
+.price_area .btn_buy {display:inline-block;height:25px;line-height:26px;padding:0 10px;background:#553de8;color:#fff;font-size:13px;font-family:dotum,'돋움';font-weight:bold;cursor:pointer;*zoom:1;}
+.spec_box {width:225px;border:1px solid #333;margin-top:15px;}
+.spec_box dt {height:29px;line-height:33px;background:#222;border-bottom:1px solid #333;color:#ccc;font-size:11px;font-family:dotum,'돋움';text-align:center;font-weight:bold;}
+.spec_box dd {height:80px;margin:10px 14px 0 15px;line-height:18px;color:#777;font-size:11px;font-family:dotum,'돋움';text-align:left;overflow:hidden;}
+
+.pc_desc_info {display:block;margin-top:6px;}
+.pc_title {overflow:hidden;line-height:22px;font-size:16px;font-weight:bold;color:#fff;letter-spacing:-0.05em;font-family:"Malgun Gothic","맑은 고딕";text-align:left;}
+.pc_title a {display:inline-block;height:44px;overflow:hidden;color:#fff;word-break:break-all;text-align:left;}
+
+.pc_spec_box {margin:9px 0 16px 0;padding:7px 10px 0 11px;height:39px;position:relative;background:#333;font-size:11px;color:#bbb;line-height:16px;letter-spacing:-0.03em;text-align:left;z-index:10;}
+.spec_txt {display:inline-block;text-align:left;word-break:break-all;word-wrap:break-word;height:32px;overflow:hidden;}
+.btn_spec_more {display:block;width:64px;height:18px;position:absolute;bottom:0;right:0;color:#f4f4f4;border:1px solid #999;background:#717171;text-align:center;line-height:22px;}
+.btn_spec_close {z-index:10;border-color:#858585;}
+.ico_spec_arw {width:5px;height:3px;background-position: -10px -120px;vertical-align:2px;margin-left:4px;}
+.btn_spec_close .ico_spec_arw {background-position:0px -120px;}
+.btn_spec_more:hover {color:#f4f4f4;}
+.spec_detail {display:block;position:absolute;width:225px;top:45px;left:0;border:1px solid #999;background:#717171;}
+.spec_detail:before {content:"";width:64px;height:1px;background:#717171;position:absolute;top:-1px;right:0;z-index:10;}
+.spec_detail ul {width:208px;padding:10px;}
+.spec_detail .spec_list {padding-left:7px;font-size:11px;color:#f4f3f3;letter-spacing:-0.04em;word-break:break-all;}
+.spec_list:before {content:"";width:2px;height:2px;background:#999;display:inline-block;position:absolute;margin:6px 0 0 0;left:10px;}
+.spec_detail.hide {display:none;}
+.pc_price {text-align:center;overflow:hidden;}
+.btn_pc_buy {display:inline-block;width:82px;height:31px;line-height:29px;font-size:13px;text-align:center;background:#553de8;color:#fff;font-weight:bold;font-family:"Malgun Gothic","맑은 고딕";}
+.pc_price .prod_price {float:left;height:31px;line-height:31px;font-weight:bold;color:#fff;}
+.pc_price .pr_num {font-size:20px;font-family:"Century Gothic",Sans-serif,arial,'돋움',Dotum,'굴림',gulim;}
+.pc_price .btn_pc_buy {float:right;}
+.btn_pc_buy:hover {color:#fff;text-decoration:none;}
+
+
+/* highend_content_wrap */
+.highend_snb_wrap .pc_cate_item {width:267px;}
+.highend_snb_wrap .pc_cate_item.last {width:266px}
+.highend_snb_wrap .pc_cate_item.last a {width:266px}
+.highend_board_wrap {*margin-bottom:10px;}
+.highend_board_wrap .board_box {height:320px;}
+.mypc_box .txt_style_list {margin-top:25px;}
+.review_box .thumb_style_list {margin-bottom:25px;}
+.txt_style_list a {display:block;width:340px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.mypc_box .txt_style_list a {width:290px;cursor:pointer;}
+.thumb_style_list li {float:left;width:164px;border:1px solid #222;margin-right:18px;}
+.thumb_style_list li.last {margin-right:0;}
+.thumb_style_list .title {height:36px;overflow:hidden;}
+.highend_board_wrap .editor_360_box {width:330px;height:360px;margin:0;padding:0;}
+.board_wrap .drow_icon_arw {*top:1px;*left:4px;}
+
+.pc_brand_section {margin-top:20px;padding:24px 0 23px 25px;background:#000;display:table;width:1047px;}
+.tit_pc_brand {width:200px;margin-right:29px;display:table-cell;vertical-align:middle;}
+.img_tit_pcbrand {margin-right:31px}
+.pc_brand_wrap {display:table-cell;}
+.pc_brand_list {margin-bottom:10px;}
+.pc_brand_list li {float:left;background:#555;margin:3px 20px 0 0;width:176px;height:40px;padding:4px;color:#fff;font-size:12px;font-family:dotum,'돋움';font-weight:bold;}
+.brand_shop_logo {display:table;table-layout:fixed;text-align:center;*zoom:1;*display:block;}
+.brand_shop_name {display:table-cell;text-align:center;vertical-align:middle;width:90px;line-height:16px;color:#fff;padding:4px 0 0 4px;*display:block;*float:left;*width:auto;*margin-left:5px;}
+.img_90_40 {display:table-cell;width:90px;height:40px;vertical-align:top;*display:block;*float:left;}
+
+/* usedmarket_lnb_wrap */
+.usedmarket_lnb_wrap .pc_lnb_list  {width:925px;}
+.usedmarket_lnb_wrap .pc_lnb_item {padding:0;text-align:center;}
+.usedmarket_lnb_wrap .pc_lnb_item01 {width:164px;}
+.usedmarket_lnb_wrap .pc_lnb_item02 {width:153px;}
+.usedmarket_lnb_wrap .pc_lnb_item03 {width:162px;}
+.usedmarket_lnb_wrap .pc_lnb_item04 {width:149px;}
+.usedmarket_lnb_wrap .pc_lnb_item05 {width:142px;}
+.usedmarket_lnb_wrap .pc_lnb_item06 {width:155px;}
+
+.section_danawapc {width:925px;margin:0 auto;}
+.usedmarket_navi {padding:0 0 10px 0;}
+.usedmarket_main .icon_hot a {background:url(//img.danawa.com/new/section_m/baby/img/icon_hot.gif) no-repeat right center; padding-right:26px; color:#cd3252; display:inline-block;*background-position:right 1px;}
+.usedmarket_main .icon_new a {background:url(//img.danawa.com/new/section_m/baby/img/icon_new.gif) no-repeat right center; padding-right:26px; display:inline-block;*background-position:right 1px;}
+.usedmarket_main .usedmarket_snb a {color:#333;font-size:12px;}
+
+/* 기존 게시판 변경 */
+.bg_mpgreyline_top {border-top:1px solid #979a92;background:none;}
+
+/* setpc_snb_area */
+.setpc_snb_area {width:1072px;margin:0 auto;zoom:1;}
+.setpc_snb_area:after {clear:both;}
+.setpc_snb_area:before, .setpc_snb_area:after {content:"";display:block;height:0;overflow:hidden;}
+.cate_list_wrap ul:after,.cate_list_wrap ul:before {display:block;overflow:hidden;clear:both;content:""}
+
+.snb_tit {display:block;height:34px;text-align:center;font-size:13px;line-height:34px;border-bottom:1px solid #444;font-weight:bold;color:#fff;font-family:"Malgun Gothic","맑은 고딕";}
+.snb_cate_area {float:left;}
+.setpc_snb_area .cate_item {width:82px;}
+.snb_cate_02 .cate_item {width:85px;}
+.snb_cate_01 .snb_tit {border-left:1px solid #252525;background:url(//img.danawa.com/new/shop_danawa/setpc/img/snb_dot_mid2.gif) #444 repeat-y 100% 0;}
+.snb_cate_02 .snb_tit {background:url(//img.danawa.com/new/shop_danawa/setpc/img/snb_dot_mid2.gif) #3d3d3d repeat-y 100% 0;}
+.snb_cate_03 .snb_tit {background:url(//img.danawa.com/new/shop_danawa/setpc/img/snb_dot_rgt2.gif) #444 repeat-y 100% 0;}
+.snb_cate_01 .cate_item:first-child a {border-left:1px solid #252525;}
+.line_2nd .cate_item {border-bottom-color:#252525}
+.cate_item {float:left;height:37px;background:#555;font-size:11px;box-sizing:border-box;*margin-left:-1px;position:relative;border-right:1px solid #444;border-bottom:1px solid #444;}
+.cate_link {display:block;height:36px;line-height:35px;color:#ccc;text-align:center;letter-spacing:-0.05em;overflow:hidden}
+.snb_cate_02 .cate_item {background:#4b4b4b;}
+.cate_link:hover {color:#f1f65d;}
+.setpc_wrap .snb_cate_02 .cate_link:hover {color:#beb4ff;}
+.snb_cate_01 .cate_item.last {border-right-color:#222;}
+.snb_cate_02 .cate_item.last {border-right-color:#222;}
+.snb_cate_03 .cate_item.last {border-right-color:#252525;}
+
+/* upcoming_games */
+.upcoming_games {width:290px;}
+.board_wrap .upcoming_games {margin-right:0;padding-bottom:20px;height:236px;}
+.board_wrap .upcoming_games p {font-size:0;}
+.upcoming_list {margin-top:7px;height:40px;}
+.upcoming_list:first-child {margin-top:0;}
+.upcoming_list a {zoom:1;} 
+.upcoming_list a:after {clear:both;}
+.upcoming_list a:before, .upcoming_list a:after {content:"";display:block;height:0;overflow:hidden;}
+.upcoming_list a:hover .text_sec {text-decoration:underline;}
+.upcoming_list .img_sec {float:left;margin-right:15px;}
+.upcoming_list .img_sec img {width:100px;height:40px;vertical-align:top;}
+.upcoming_list .text_sec {float:left;width:175px;font-family:gulim,"굴림";}
+.upcoming_list .title {color:#fff;font-weight:bold;display:block;height:25px;line-height:25px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;-o-text-overflow:ellipsis;display:block;overflow:hidden;word-wrap:break-word;word-break:break-all;}
+.upcoming_list .desc {display:inline-block;color:#aaa;font-size:12px;height:15px;overflow:hidden;}
+
+
+/* shopdnw_notebook */
+.shopdnw_notebook .pc_lnb_item {padding:0 41px;}
+.ntbook_snb_area .cate_item {width:89px;height:37px;}
+.ntbook_snb_area .snb_cate_02 .cate_item {background:#555;}
+.ntbook_snb_area .snb_cate_02 .snb_tit {background:url(//img.danawa.com/new/shop_danawa/setpc/img/snb_dot_mid2.gif) #444 repeat-y 100% 0;}
+.ntbook_snb_area .snb_cate_03 .cate_item {width:90px;}
+.ntbook_snb_area .cate_link {line-height:14px;vertical-align:middle;display:table-cell;width:89px;height:36px;}
+.ntbook_snb_area .current .cate_link {height:34px;color:#f1f65d;border:1px solid #f1f65d;border-left:none;background:url(//img.danawa.com/new/shop_danawa/setpc/img/snb_dot_y.gif) repeat-y 0 0;font-weight:bold;text-decoration:none;}
+/*.snb_cate_02 .current .cate_link {color:#beb4ff;border-color:#beb4ff;background:url(//img.danawa.com/new/shop_danawa/setpc/img/snb_dot_pp2.gif) #555 repeat-y 0 0;}*/
+
+.special_banner_area {width:1072px;margin:10px auto;}
+.special_banner_area ul {overflow:hidden;}
+.spc_banner {float:left;width:268px;height:90px;position:relative;}
+.spc_banner:before {content:"";background:#111;height:90px;width:1px;position:absolute;left:-1px;}
+.spc_268_90 {width:268px;height:90px;}
+
+/* setpc_main_banner */
+.setpc_main_banner {position:relative;overflow:hidden;clear:both;}
+.setpc_main_banner .big_banner_wrap {width:1072px;height:310px;overflow:hidden;}
+.setpc_main_banner .big_banner_li {position:absolute;left:0px;top:0px;height:310px;}
+.setpc_main_banner .big_banner_li img {width:1072px;height:310px;}
+.setpc_main_banner .bn_t1{left:0px;}
+.setpc_main_banner .bn_t2{left:100%;}
+.setpc_main_banner .bn_t3{left:200%;}
+.setpc_main_banner .bn_t4{left:300%;}
+.setpc_main_banner .bn_t5{left:400%;} 
+.setpc_main_banner .bn_t6{left:500%;} 
+.setpc_main_banner .btn_layer_prev button {background-position:0 -450px}
+.setpc_main_banner .btn_layer_next button {background-position:-80px -450px}
+.setpc_main_banner .btn_opacity_arrow {margin:-35px 0 0 0}
+.setpc_main_banner .paging_main .num_page {margin:0px 7px 0px 0}
+
+/* special_list_area */
+.special_list_area {width:100%;height:43px;position:relative;overflow:hidden;}
+.special_list_area:after {clear:both;}
+.special_list_area:before, .special_list_area:after {content:"";display:block;height:0;overflow:hidden;}
+.spli_tit_wrap {width:130px;float:left;background:#e53b38;color:#fff;height:43px;text-align:center;}
+.spli_tit_wrap:after {content:"";width:7px;height:15px;background:url(//img.danawa.com/new/shop_danawa/setpc/img/arw_special.png) no-repeat;position:absolute;left:130px;top:15px;z-index:1;}
+.spli_tit {line-height:40px;font-size:14px;font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,Sans-serif;}
+.spli_cont_wrap {float:left;position:relative;width:942px;height:43px;background:#313131;}
+.spli_cont_wrap ul {margin-left:27px;overflow:hidden;height:43px;}
+.spli_item {float:left;width:270px;color:#a3a3a3;margin-left:20px;height:43px;}
+.spli_item:first-child {margin-left:0;}
+.spli_item a {position:relative;display:block;text-align:center;margin:11px 0 0 0;color:#fff;font-size:13px;font-weight:bold;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;-o-text-overflow:ellipsis;overflow:hidden;}
+.icon_dot {display:inline-block;width:2px;height:2px;margin-right:7px;background:url(//img.danawa.com/new/shop_danawa/setpc/img/dot_setpc_list.png) center no-repeat;vertical-align:3px;}
+.spli_item a:hover {color:#f9ff47;}
+.spli_btn_wrap {position:absolute;right:20px;top:7px;width:17px;}
+.btn_spli {width:17px;height:15px;text-indent:-9999px;}
+.btn_spli_up {width:17px;height:15px;background-position: -130px 0;cursor:pointer;}
+.btn_spli_down {width:17px;height:14px;background-position: -130px -15px;cursor:pointer;}
+.btn_spli_up:hover {background-position: -130px -40px;}
+.btn_spli_down:hover {background-position: -130px -55px;}
+
+/* ntbook_main_content */
+.main_cont_wrap {zoom:1;background:#000;padding:20px;margin:20px 0 10px 0;} 
+.main_cont_wrap:after {clear:both;}
+.main_cont_wrap:before, .main_cont_wrap:after {content:"";display:block;height:0;overflow:hidden;}
+.ntbook_main_content .board_box .pc_title_w {margin-bottom:18px;}
+
+/* ntbook_guide_area */
+.ntbook_guide_area {float:left;width:246px;height:304px;background:#333;}
+.guide_title {font-size:14px;font-weight:bold;color:#fff;height:62px;text-align:center;line-height:62px;letter-spacing:-0.04em;font-family:"Malgun Gothic","맑은 고딕","돋움",dotum;}
+.guide_title h4 {font-size:14px;font-family:"Malgun Gothic","맑은 고딕","돋움",dotum;}
+.ntbook_guide_area ul {zoom:1;} 
+.ntbook_guide_area ul:after {clear:both;}
+.ntbook_guide_area ul:before, .ntbook_guide_area ul:after {content:"";display:block;height:0;overflow:hidden;}
+
+/* 
+.guide_link {display:inline-block;float:left;width:123px;font-size:12px;text-align:center;font-family:"Malgun Gothic","맑은 고딕","돋움",dotum;}
+.guide_link a {display:block;width:122px;height:47px;padding-top:72px;text-align:center;color:#fff;border:1px solid #000;}
+.guide_link a:hover {font-weight:bold;color:#fff;text-decoration:none;border-color:#b72f2d;}
+.guide_link_01 a, .guide_link_03 a {width:121px;}
+.guide_link_01 + .guide_link_02 a {border-left-width:0;}
+.guide_link_03 + .guide_link_04 a {border-left-width:0;}
+.guide_link_01 a {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_01.gif) 37px 26px no-repeat;border-left-color:#000;}
+.guide_link_01 a:hover {background:#000 url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_01_on.gif) 37px 26px no-repeat;}
+.guide_link_02 a {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_02.gif) 42px 27px no-repeat;border-right-color:#000;}
+.guide_link_02 a:hover {background:#000 url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_02_on.gif) 41px 27px no-repeat;width:121px;border-left:1px solid #b72f2d;}
+.guide_link_03 a {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_03.gif) 44px 20px no-repeat;border-left-color:#000;border-top-color:#333;border-bottom-color:#000;}
+.guide_link_03 a:hover {background:#000 url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_03_on.gif) 44px 20px no-repeat;}
+.guide_link_04 a {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_04.gif) 44px 23px no-repeat;border-right-color:#000;border-top-color:#000;border-bottom-color:#000;}
+.guide_link_04 a:hover {background:#000 url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_04_on.gif) 43px 23px no-repeat;width:121px;border-left:1px solid #b72f2d;} */
+
+.hover_list {clear:both;zoom:1;}
+.hover_list:after,.hover_list:before {display:block;overflow:hidden;clear:both;content:""}
+.hover_link {float:left;margin-right:-1px;width:124px;min-height:120px;}
+.hover_link:hover {background:#000;}
+.wrap_line {display:block;min-height:120px;border:1px solid #000;margin-bottom:-1px;cursor:pointer;}
+.wrap_line:hover {border:1px solid #dc3936;z-index:1;position:relative;}
+.bg_sec {display:block;height:75px;}
+.wrap_line .text_sec {width:100%;display:inline-block;color:#fff;font-size:12px;text-align:center;font-family:"Malgun Gothic","맑은 고딕","돋움",dotum;}
+.guide_01 .bg_sec {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_01.gif) 37px 26px no-repeat;}
+.guide_01:hover .bg_sec {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_01_on.gif) 37px 26px no-repeat;}
+.guide_02 .bg_sec{background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_02.gif) 42px 27px no-repeat;}
+.guide_02:hover .bg_sec{background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_02_on.gif) 42px 27px no-repeat;}
+.guide_03 .bg_sec {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_03.gif) 44px 20px no-repeat;}
+.guide_03:hover .bg_sec {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_03_on.gif) 44px 20px no-repeat;}
+.guide_04 .bg_sec {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_04.gif) 40px 19px no-repeat;}
+.guide_04:hover .bg_sec {background:url(//img.danawa.com/new/shop_danawa/img/ntbook_guide_04_on.gif) 40px 19px no-repeat;}
+
+.recomd_pc_area {float:left;width:765px;margin-left:20px;}
+.recomd_tab ul {zoom:1;position:relative;} 
+.recomd_tab ul:after {clear:both;}
+.recomd_tab ul:before, .recomd_tab ul:after {content:"";display:block;height:0;overflow:hidden;}
+.recomd_tab_list {float:left;width:33.33%;}
+.recomd_tab_list a {display:block;float:left;width:100%;height:42px;padding-top:10px;border:1px solid #444;border-bottom:2px solid #e53b38;font-size:14px;color:#999;box-sizing:border-box;font-weight:bold;text-align:center;font-family:"Malgun Gothic","맑은 고딕","돋움",dotum;*height:30px;}
+.recomd_tab_list + .recomd_tab_list a {border-left-width:0;}
+.recomd_tab_list.current a {height:42px;color:#fff;border:2px solid #e53b38;border-bottom:0;padding-top:9px;*height:30px;}
+.recomd_tab_list + .recomd_tab_list.current:before {content:"";width:1px;background:#000;height:38px;display:inline-block;position:absolute;margin-left:-1px;top:1px;}
+.recomd_cont {height:261px;overflow:hidden;}
+.recomd_tab .list_num2 .recomd_tab_list {width:50%;}
+
+.recomd_cont ul {overflow:hidden;padding:20px 0;}
+.reco_prod_list {float:left;width:170px;margin-left:28px;text-align:center !important;}
+.reco_prod_list:first-child {margin-left:0;}
+.reco_link {display:block;width:100%;}
+a.reco_link {text-decoration:none;}
+.reco_link:hover .prod_tit {text-decoration:underline;}
+.reco_link:hover .prod_price {text-decoration:none;}
+.reco_img {width:170px;height:170px;vertical-align:top;}
+.prod_tit {display:block;height:30px;overflow:hidden;font-size:12px;line-height:16px;color:#ccc;margin:13px 5px 9px 5px;}
+.prod_price {color:#fff;}
+.reco_prod_list .pr_num,.hit_premonition .pr_num {font-size:16px;margin-right:3px;vertical-align:-1px;}
+
+.consult_area {height:231px;width:470px;}
+.consult_area .cslt_ul {margin-top:5px;height:116px;overflow:hidden;}
+.btn_go_estimate {height:78px;display:block;}
+.btn_go_estimate img {vertical-align:top;}
+.consult_list {border-top:1px solid #333;height:38px;line-height:38px;*height:34px;}
+.consult_list:first-child {border-top-width:0;}
+.consult_list a:hover {text-decoration:none;}
+.consult_list a:hover .cnst_title {text-decoration:underline;}
+.cnst_date {display:inline-block;float:left;width:60px;padding:0 10px;font-size:11px;color:#767676;}
+.cnst_title {width:270px;max-width:270px;margin:0 0 0 10px;float:left;font-size:12px;color:#ccc;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;-o-text-overflow:ellipsis;display:block;overflow:hidden;}
+.cnst_title .text {max-width:270px;}
+.cnst_name {display:inline-block;float:left;width:110px;height:39px;overflow:hidden;color:#999;font-size:11px;text-align:center;}
+
+.board_wrap .review_area {padding-bottom:0;height:255px;width:290px;}
+.review_area .purchase_postscript_right {width:290px;}
+.review_area .purchase_postscript_list {margin-bottom:16px;}
+.review_area .star_mark_wrap {background:url(//img.danawa.com/new/shop_danawa/img/bg_starpoint_off_b.png) no-repeat 0 0}
+.review_area .star_mark_wrap span {background:url(//img.danawa.com/new/shop_danawa/img/bg_starpoint_on_b.png) no-repeat 0 0}
+.review_area .goods_opinion_summary {color:#ccc;}
+.review_area .goods_boder_box2 {border:0;width:86px;height:86px;}
+.review_area .shop_star_nicname {color:#999;}
+
+.board_wrap .rank_area {width:172px;height:231px;margin-right:0;}
+.s_rank_list {margin-top:9px;}
+.s_rank_item {margin-top:28px;}
+.s_rank_item:first-child {margin-top:0;}
+.s_rank_wrap {overflow:hidden;height:42px;}
+.rank_num {float:left;line-height:42px;margin-right:25px;color:#e53b38;font-weight:bold;font-family:"Malgun Gothic","맑은 고딕";font-size:12px;} 
+.rank_num .pr_num {font-size:15px;}
+.rank_seller {float:left;display:table;width:126px;height:40px;padding:1px 0;background:#fff;text-align:center;}
+.rank_seller a {display:table-cell;background:#fff;text-align:center;vertical-align:middle;width:100%;height:42px;}
+.rank_seller img {width:90px;height:40px;vertical-align:top;}
+
+.ntg_board_wrap .paging_fix_event {top:23px;right:20px;width:auto;bottom:auto;}
+.ntg_board_wrap .paging_main .num_page {margin-right:5px;}
+
+.hit_premonition {width:290px;height:220px;}
+.hit_premonition .desc_area {margin-top:10px;}
+.hit_premonition .txt_detail {height:36px;overflow:hidden;}
+.ntg_board_wrap .review_box  {height:220px;}
+.ntg_board_wrap .review_box .txt_style_list {height:189px;overflow:hidden;}
+.ntg_board_wrap .upcoming_games {padding-bottom:17px;height:227px;min-height:227px;}
+.board_box .btn_layer_prev button {background-position:0 -450px;}
+.board_box .btn_layer_next button {background-position:-80px -450px}
+
+.bench_mark {width:692px;height:232px;margin-right:0;zoom:1;}
+.bench_mark:after {clear:both;}
+.bench_mark:before, .bench_mark:after {content:"";display:block;height:0;overflow:hidden;}
+.bench_item {float:left;margin-left:20px;}
+.bench_item:first-child {margin-left:0;}
+.bench_wrap {width:306px;height:174px;padding:11px 14px 0 14px;border:1px solid #222;background:#111;}
+.b_tit {font-size:12px;color:#eee;font-weight:bold;line-height:20px;height:40px;overflow:hidden;}
+.b_cont {zoom:1;margin-top:14px;}
+.b_cont:after {clear:both;}
+.b_cont:before, .b_cont:after {content:"";display:block;height:0;overflow:hidden;}
+.b_img {float:left;margin-right:15px;}
+.b_arti {float:left;width:190px;margin-top:3px;}
+.b_arti .text {font-size:11px;color:#aaa;line-height:18px;height:72px;overflow:hidden;margin-bottom:9px;}
+.b_arti .date {font-size:12px;color:#666;}
+
+.ntbook_sec_wrap {width:1072px;margin:0 auto;padding-bottom:100px;}
+.ntbook_sec_wrap .title_area {height:53px;}
+.ntbook_sec_wrap .sec_title {line-height:53px;}
+.sec_title {font-size:14px;color:#fff;font-weight:bold;font-family:"Malgun Gothic","맑은 고딕";}
+.editor_wrap {width:1072px;margin:0 auto 20px auto;}
+.editor_wrap img {max-width:1072px;text-align:center;vertical-align:top;}
+.ntbook_prod_wrap {background:#000;padding:20px;}
+.bg_prod_w {display:block;background:url(//img.danawa.com/new/shop_danawa/img/bg_prod_227.jpg) no-repeat;width:227px;height:227px;}
+.bg_prod_w .img_217 {margin:4px;}
+
+/* prod_num_nav */
+.prod_num_nav{border:1px solid #444;text-align:center;}
+.prod_num_nav div{font-size:inherit;}
+.prod_num_nav .num_nav_wrap{display:inline-block;vertical-align:top;line-height:34px;font-size:14px;color:#999;*display:inline;*zoom:1;}
+.prod_num_nav .edge_nav{float:left;width:34px;height:36px;background:url(//img.danawa.com/new/goods_list/v1/img/icon_list_pack.png) no-repeat scroll;text-align:left;text-indent:-200px;overflow:hidden;}
+.prod_num_nav .nav_prev{background-position:-50px -50px;}
+.prod_num_nav .nav_next{background-position:-100px -50px;}
+.prod_num_nav .number_wrap{float:left;}
+.prod_num_nav .num{float:left;color:#999;font-weight:bold;width:38px;font-size:14px;border:solid #444;border-width:0 1px;height:34px;padding-top:2px;}
+.prod_num_nav .num + .num{border-left-width:0;}
+.prod_num_nav .now_on{background:#444;color:#fff;}
+.ntbook_prod_wrap .prod_num_nav {margin:20px 0;}
+
+.planshop_wrap {width:1072px;margin:0 auto;padding-bottom:100px;}
+.planshop_wrap .editor_wrap {margin-top:20px;}
+.ntb_lnb_wrap {width:1072px;margin:0 auto;}
+
+/* highend_board_wrap .review_area 소비자 구매후기 */
+.highend_board_wrap .review_area {height:344px;}
+.highend_board_wrap .purchase_postscript_right {width:292px;float:left;}
+.goods_80_80 {width:80px;height:80px;vertical-align:top;}
+.highend_board_wrap .goods_opinion_area {height:55px;}
+.highend_board_wrap .purchase_postscript_list {margin-left:2px;margin-bottom:20px;}
+.highend_board_wrap .good_op_tit {margin:2px 0 6px 0;color:#d4d4d4;font-size:12px;letter-spacing:-0.04em;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;-o-text-overflow:ellipsis;display:block;overflow:hidden;word-wrap:break-word;word-break:break-all;} 
+.highend_board_wrap .goods_opinion_summary {line-height:18px;color:#aaa;}
+.highend_board_wrap .star_niname_area {padding:8px 0 0 0;}
+.highend_board_wrap .shop_star_nicname {color:#666;}
+.highend_board_wrap .goods_boder_box2 {width:80px;height:80px;}
+
+
+/* 기존소스 중복방지  상속정리 */
+.community_box .thumb_big_item .desc_area p.title{max-height:36px;overflow:hidden;}
+
+/* comp_prod_selector */
+.comp_prod_selector {position:absolute;position:fixed;bottom:0;width:1072px;z-index:100;left:50%;margin-left:-536px;_margin-left:0;}
+.comp_prod_selector .compsel_head{background:#393c4b;color:#fff;overflow:hidden;padding:9px 16px 6px 15px;zoom:1;}
+.comp_prod_selector .compsel_title{font-size:14px;font-weight:bold;line-height:18px;margin:0;float:left;border-bottom:none;}
+.comp_prod_selector .head_opt{float:right;}
+.comp_prod_selector .btn_layer_toggle{height:18px;border:none;background:url(//img.danawa.com/new/goods_list/v1/img/icon_list_dot.png) no-repeat scroll 100% -1144px;color:#fff;font-size:11px;overflow:visible;padding:0 16px 0 0;cursor:pointer;}
+.comp_prod_selector .compsel_show .btn_layer_toggle{background-position:100% -1094px;}
+.comp_prod_selector .compsel_body{background:#fff;border:solid #b3b3b3;border-width:0 1px;position:relative;zoom:1;}
+.setpc_layer_wrap .compsel_body{display:none;}
+.setpc_layer_wrap .compsel_body.on{display:block;}
+.comp_prod_selector .compsel_body:before,
+.comp_prod_selector .compsel_body:after {content:"";display:block;height:0;overflow:hidden;}
+.comp_prod_selector .compsel_prods{width:921px;overflow:auto;}
+.comp_prod_selector .compsel_opt_area{position:absolute;right:0;top:0;bottom:0;background:#f4f4f4;float:right;width:100px;padding:15px 25px 50px;}
+.comp_prod_selector .prod_list{margin:0;padding:13px 14px 13px 9px;overflow:hidden;zoom:1;}
+.comp_prod_selector .prod_item{list-style:none;float:left;width:130px;}
+.comp_prod_selector .prod_link{display:block;}
+a.prod_link:hover {text-decoration:underline;}
+.comp_prod_selector .prod_thumb{text-align:center;margin-bottom:7px;}
+.comp_prod_selector .prod_thumb img{vertical-align:top;}
+.comp_prod_selector .prod_name{font-size:11px;color:#000;line-height:15px;height:30px;overflow:hidden;margin-bottom:10px;margin-left:14px;width:98px;font-weight:normal;}
+.comp_prod_selector .prod_name:hover {text-decoration:underline;}
+.comp_prod_selector .low_price{text-align:right;}
+.comp_prod_selector .prod_link:hover {color:#333;}
+.comp_prod_selector .prod_price_set{font-size:12px;line-height:16px;font-weight:normal;margin:0 16px 18px 0;}
+.comp_prod_selector .prod_price_set .num{font-weight:bold;font-family:'Century Gothic';color:#0c0c0c;margin-right:3px;}
+.comp_prod_selector .prod_price_set .card_price dd{background-position:0 -998px;width:97px;}
+.comp_prod_selector .prod_opt{text-align:center;margin-top:6px;}
+.comp_prod_selector .check_prod{vertical-align:top;margin:2px 5px 0 0;*margin:0 5px 0 0;}
+.comp_prod_selector .btn_compsel_tiny{height:18px;line-height:18px;border:1px solid #d4d4d4;background:#fff;font-size:11px;color:#666;overflow:visible;cursor:pointer;padding:0 3px;vertical-align:top;*vertical-align:-6px;}
+.comp_prod_selector .btn_compsel{background:#fff;-webkit-border-radius:0;border-radius:0;font-size:12px;font-weight:bold;color:#333;height:27px;width:99px;border:1px solid #d4d4d4;cursor:pointer;box-sizing:border-box;*padding:0;line-height:29px;}
+.comp_prod_selector .sel_prod_comp{background:#563df1;color:#fff;border:1px solid #563df1;*border-color:#563df1}
+.comp_prod_selector .opt_select .btn_compsel{margin-bottom:10px;}
+.comp_prod_selector .opt_delete .btn_compsel{margin-bottom:10px;}
+.comp_prod_selector .opt_delete{position:absolute;bottom:15px;left:24px;right:15px;}
+.aside_show .comp_prod_selector{margin-left:-440px;_margin-left:0;}
+
+/* common */
+.blind {position:absolute;overflow:hidden;clip:rect(0 0 0 0);margin:-1px;width:1px;height: 1px;}
+.setpc_layer_wrap .prod_link:after {content:"";display:block;clear:both;}
+i, .ico_sdnw, .btn_layer_toggle.close, .btn_layer_toggle.on, .btn_layer_toggle.off {background:url(//img.danawa.com/new/goods_list/v1/img/ico_shopdnw_v170724.png) no-repeat;}
+
+/* btn_compare */
+.btn_compare_wrap {position:absolute;right:0;top:10px;width:48px;height: 22px;}
+.btn_compare_black {display:block;width:48px;height: 22px;color:#fff;background:#656C88;cursor:pointer;border:0;line-height: 24px;}
+.btn_compare_black strong {font-size:11px;float:left;}
+.ico_check {background-position:-1px 4px;width:10px;height: 15px;float:left;margin:0 2px 0 7px;}
+
+/* setpc_layer_wrap PC 공통 */
+.clear:after, .setpc_layer_wrap .pc_shop_info:after{clear:both; content: ""; display:block;}
+.setpc_layer_wrap {display:none}
+.setpc_layer_wrap .compsel_prods{width:1072px;}
+.setpc_layer_wrap .prod_list {width:1300px; padding:0;}
+.setpc_layer_wrap .prod_item_wrap {width:220px; height: 205px; position:relative;padding:20px 18px 0;float:left; border-right:1px solid #e2e2e2;}
+.setpc_layer_wrap .prod_thumb  {text-align: left;float:left;outline:1px solid #e2e2e2;}
+.prod_desc_wrap {background:#F5F5F7;position:relative;height: 44px;}
+.prod_desc_wrap .txt {color:#767676;position:absolute;top:8px;left:10px;font-size:11px;width:202px;line-height: 16px;letter-spacing: -.5px;}
+.prod_item_wrap .btn_del {position:absolute;right:7px;top:7px;width:15px;height:15px;background:none;cursor: pointer;}
+.prod_item_wrap .ico_del {background-position:1px -24px;display:block;width:12px; height: 12px;}
+.setpc_layer_wrap .prod_name  {float:left;font-size:13px;font-family: dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,Sans-serif;font-weight: bold; color:#333;width:150px;margin:12px 0 0 10px;line-height: 19px;height: 40px; word-break: break-all;}
+
+.setpc_layer_wrap .pc_spec_box{margin:0 0 10px 0; height: 35px; }
+.setpc_layer_wrap .img_box{text-align: center;margin:10px 0 0;}
+.setpc_layer_wrap .pc_shop_info{margin:0;}
+.pc_shop_info .img_wrap {float:left; height: 40px;}
+.pc_shop_info .link {float:right; margin-top:8px;}
+.btn_layer_toggle.close{background-position:24px -44px;margin-left:10px;}
+.btn_layer_toggle.on{background-position:24px -87px;}
+.btn_layer_toggle.off{background-position:24px -68px;}
+
+/* 추가 */
+.setpc_layer_wrap .pc_spec_box{background-color:#f5f5f7;}
+.setpc_layer_wrap .pc_price .prod_price{color:#111;}
+.setpc_layer_wrap .pc_price .pr_num{color:#111;}
+.setpc_layer_wrap .spec_txt{color:#767676;}
+.setpc_layer_wrap .btn_shop_go {display:inline-block;float:left;font-size:11px;color:#767676;border:1px solid #e2e2e2;width:43px;line-height:18px;height:16px;text-align:center;}
+.setpc_layer_wrap .txt_shop_info {display:inline-block;;font-size:11px;color:#767676;line-height:20px;margin-left:5px;}
+.setpc_layer_wrap .txt_shop_info .point_cl_02 {font-size:11px;color:#553de8}
+
+/* .ico_game2.ico_game_hot2 */
+.ico_game2.ico_game_hot2 {background:#DD2C29}
+.ico_game2.ico_game_new2 {background:#31A000}
+
+/* .pc_shop_info */
+.pc_shop_info {margin-top:5px;position:relative;}
+.pc_shop_info a {overflow:hidden;}
+.pc_shop_info a:hover .txt_shop_info {text-decoration:underline;}
+.btn_shop_go {display:inline-block;float:left;font-size:11px;color:#999;border:1px solid #999;width:43px;line-height:21px;height:16px;text-align:center; position:relative; bottom:2px;}
+.txt_shop_info {display:inline-block;;font-size:11px;color:#999;line-height:20px;margin-left:0;margin-right:10px;letter-spacing:-0.05em;}
+.txt_shop_info .point_cl_02 {font-size:11px; color:#fff;}
+
+/* ninety_help */
+.ninety_help {display:inline-block;position:relative;float:right;}
+.ninety_help:hover .over_layer {display:block;}
+.ninety_help .icon_ninety {display:inline-block;width:59px;height:14px;text-align:center;color:#45b7ff;font-size:11px;letter-spacing:-0.07em;border:1px solid #45b7ff;cursor:pointer;line-height:17px;}
+.ninety_help .over_layer {display:none;position:absolute;top:25px;left:-121px;border:1px solid #999;width:180px;z-index:20;margin:0;padding:0;}
+.ninety_help .over_layer.show {display:block;}
+.ninety_help .over_layer .arrw {background:url(//img.danawa.com/new/shop_danawa/img/icon_layer_arrwb.png) no-repeat scroll 0 0 transparent;display:inline-block;width:9px;height:6px;position:absolute;top:-6px;right:20px;}
+.ninety_help .over_layer .tit_deli_noti {text-align:left;background:#333;font-size:11px;color:#fff;line-height:22px;padding:8px 0 5px 9px;}
+.ninety_help .over_layer .help_cont {width:160px;margin:0;padding:11px 10px 6px 10px;background:#666;}
+.ninety_help .over_layer .help_cont li {margin-bottom:5px;padding-left:6px;font-size:11px;color:#fff;letter-spacing:-0.03em;line-height:14px;}
+.ninety_help .over_layer .help_cont li:before {content:"";width:2px;height:2px;background:#ddd;display:inline-block;position:absolute;margin:5px 0 0 0;left:10px;}
+.ninety_help .ninety_help {position:absolute;right:0;top:1px;}
+
+/* .txt_subject */
+.desc_area .txt_detail {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+/* section_vc */
+.section_vc {width:692px; height:232px; margin-right:0;}
+.section_vc:after, .thumb_list:after, .thumb_big_item:after {content:""; display:block; clear:both;}
+.section_vc .thumb_list li {width:150px;}
+.section_vc .txt_box {height: 28px; overflow: hidden; word-break:break-all; color:#aaa; margin-top:8px;}
+.section_vc .thumb_item:first-child {margin-left:0;}
+.section_vc .thumb_item {margin-left:30px;}
+
+/* game_board_wrap */
+.game_board_wrap .txt_style_list a {width:280px;}
+.game_board_wrap .thumb_big_item {float:left;width:164px;height:178px;border:1px solid #222;margin-right:20px;}
+.game_board_wrap .review_box {width:290px;height:232px;}
+.game_board_wrap .community_box {width:352px;height:232px; margin-right:10px;}
+.game_board_wrap .txt_style_list li {background:url(//img.danawa.com/new/shop_danawa/img/bullet_list_dot.gif) left center no-repeat;padding-left:10px;margin-bottom:13px;}
+.game_board_wrap .pc_guide_list {margin:39px 0 0 8px;}
+.game_board_wrap .pc_guide_list li {float:left;width:130px;margin-right:22px;}
+.game_board_wrap .pc_guide_list .last {margin-right:0;}
