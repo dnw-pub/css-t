@@ -1,0 +1,37 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2011년 10월 10일
+작성자 : P07
+내용 : 소셜댓글 미디어잇로고스타일 .btn_logo_m / .big_logo_m / .big_logo_m_off  추가
+
+*/
+
+.outdoor_top {overflow:hidden;clear:both;margin:10px 0 30px 0px;}
+.big_sale {clear:both;overflow:hidden;margin:0 0 10px 0px;}
+.box_out {border:1px solid #ccc;width:455px;height:380px;position:relative;float:left;}
+.box_out  .thumb {width:455px;height:314px;vertical-align:top;overflow:hidden;}
+.box_out:hover .select_line {border:4px solid #6e8cf3;cursor:pointer;}
+.left_txt {padding-left:13px;}
+.left_txt strong {color:#fff;font-size:12px;display:block;padding-top:15px;width:303px;overflow:hidden;height:15px;}
+.btm_box {background:url(http://img.danawa.com/new/outdoor/img/bg_btm.gif) #333 no-repeat right top;height:81px;position:relative;margin-top:-15px;vertical-align:top;z-index:1;}
+.btn_buy_outdoor {overflow:hidden; position:absolute; right:6px; top:20px; width:129px; height:47px; color:#fff; font-size:0; text-indent:-9999em; text-align:center; background:url("http://img.danawa.com/new/outdoor/img/btn_buy.png") no-repeat scroll 0 0; _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/outdoor/img/btn_buy.png', sizingMethod='crop');cursor:pointer;}
+.bg_percent {overflow:hidden; position:absolute; right:27px; top:-72px; width:86px; height:94px;  text-align:center; background:url("http://img.danawa.com/new/outdoor/img/bg_percent.png") no-repeat scroll 0 0; _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/outdoor/img/bg_percent.png', sizingMethod='crop');cursor:pointer;font:bold 30px 'arial';color:#fff;letter-spacing:-0.03em;text-align:center;padding-top:28px;}
+.bg_grad {overflow:hidden; width:456px; height:16px; background:url("http://img.danawa.com/new/outdoor/img/bg_grad.png") no-repeat scroll 0 0; _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/outdoor/img/bg_grad.png', sizingMethod='crop');position:absolute;bottom:-16px;}
+.bg_percent em {font-style:normal;color: #FFFFFF;font: bold 16px 'arial';}
+.price_o {padding-left:1px;margin-top:11px;}
+.price_o .num1 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 0px;display:inline-block;width:16px;}
+.price_o .num2 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -30px;display:inline-block;width:16px;}
+.price_o .num3 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -60px;display:inline-block;width:16px;}
+.price_o .num4 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -90px;display:inline-block;width:16px;}
+.price_o .num5 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -120px;display:inline-block;width:16px;}
+.price_o .num6 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -150px;display:inline-block;width:16px;}
+.price_o .num7 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -180px;display:inline-block;width:16px;}
+.price_o .num8 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -210px;display:inline-block;width:16px;}
+.price_o .num9 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -240px;display:inline-block;width:16px;}
+.price_o .num0 {height:23px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -270px;display:inline-block;width:16px;}
+.price_o .comma {height:27px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -300px;display:inline-block;width:9px;}
+.price_o .won {_display:inline; height:27px;background:url(http://img.danawa.com/new/outdoor/img/bg_nums.gif) no-repeat;background-position:0 -330px;display:inline-block;width:16px;margin-right:5px;}
+.select_line {width:449px;height:374px;display:block;position:absolute;left:-1px;top:-1px;z-index:10;cursor:pointer;_background:url(http://img.danawa.com/new/outdoor/img/bg_ie16.gif) no-repeat left top;}
+.select_line:hover {border:4px solid #6e8cf3;}
+
+.mr {float:right }

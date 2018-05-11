@@ -1,0 +1,8 @@
+/* list_type1 */
+.list_type1 {margin:0 10px;padding:0;}
+.c0 {color:#000;padding-left:10px;}
+.list_type1 li b {color:#000;}
+.list_type1 li {background:url(http://img.danawa.com/new/sellertool/img/li_dot.gif) repeat-x left bottom;padding:7px 0 7px 0px ;list-style:none;}
+.list_type1 li p {background:url(http://img.danawa.com/new/sellertool/img/bg_arw.gif) no-repeat left 1px;font-size:11px;margin:0;padding:0 0 0 12px;color:#666;}
+.list_type1 li p strong {font-size:11px;}
+.list_type1 li.last {background:none;}
