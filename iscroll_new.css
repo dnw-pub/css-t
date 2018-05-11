@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*
+2015-05-06 / iscroll area make / pjy
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-ms-touch-action: none;
+}
+
+body,ul,li {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	overflow: hidden; /* this is important to prevent the whole page to bounce */
+
+}
+
+.touch_scroll {
+	position: absolute;
+	z-index: 1;
+	top: 46px;
+	bottom: 0px;
+	left: 0;
+	float:left;
+	overflow:hidden;
+
+}
+/*			 2015-05-06 변경 */
+.touch_scroll2{top:97px;}
+
+
+ /*  border-right:1px solid #bbbdbf; */
+.scroller  {
+	position: absolute;
+	z-index: 1;	  width: 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 	
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+	border-right:1px solid #424242;
+	min-height:100%;
+}
+
+
+#wrapper{width:32%;}
+#wrapper2 {left: 32%;width:68%;}		 /* top:138px;*/
+#wrapper2 .scroller{border-right:none;border-left:1px solid #d3d3d3;}
+
+
+/*
+.scroller li a {color:#999;min-height:20px;font-size:14px;font-weight:bold;display:block;line-height:16px;word-break:break-all;word-wrap:break-word;padding: 10px 10px;}
+.scroller li.first	{padding:10px 0 0 0;}
+.scroller li.select {color:#27aeee;border:1px solid #27aeee;background:#fff;}
+.scroller li.select a {color:#28afef}
+.scroller li.scr_all_view a {color:#28afef;}
+.last_wrapper li a {color:#333;}
+.last_wrapper {background:#fff;}
+.last_wrapper .arrow2 {background-position:0 -40px}	*/
+
+.scroll_area {clear:both;width:100%;}
+.scroll_area:after{content:'';display:block;clear:both;}
+
+
+
+
+.option_left_area{}
+.option_left_list li{height:39px;background-color:#fff;padding:2px;}
+.option_right_list{width:100%;clear:both;overflow:hidden;}
+.option_right_list li{width:50%;float:left;border-bottom:1px solid #ced0d6;}
+.rline{border-left:1px solid #ced0d6;}
+.a2{color:#424242;font-size:14px;height:40px;display:block;padding:0 2px 0 9px;line-height:40px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+.active_option a{color:#fff779;font-weight:bold;background-color:#5c8ddf;}
+.option_left_list li .circle_num{display:block;position:absolute;top:8px;right:5px;text-align:center;}
+.a1{color:#000;height:37px;line-height:37px;display:block;background-color:#e3e3e3;text-align:center;letter-spacing:-1px;text-align:left;padding-left:2px;position:relative;}
+.now_select a{background-color:#78b0e9;color:#fff;}
+
+
+.scroll_top_text{position:absolute;left:32%;background:#eee;min-height:46px;z-index:98;width:68%;border-bottom:1px solid #424242;border-left:1px solid #d3d3d3;} /* top:-92px;position:absolute; */
+.scroll_top_text .text_t3{line-height:14px;margin:12px 12px 12px 12px;}
+
+
+  /*
+.scroll_top_text .text_t3 {display:block\0;	max-height:28px\0;} ie hack 2015-05-06 삭제요청 */
+
+

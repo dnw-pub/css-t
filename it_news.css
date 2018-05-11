@@ -1,0 +1,472 @@
+@charset "euc-kr";
+
+/* Common */
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, form, fieldset, legend, input, textarea, button {margin:0; padding:0;}
+body { margin:0;padding:0; background:#ffffff;font-family:굴림; }
+select		 { font-size:12px;font-family:굴림;color:#757575; height:18px; padding-top:1px; vertical-align:middle; }
+input	{ margin:0; font-size:12px;font-family:굴림;color:#696969; background:#ffffff;vertical-align:middle; }
+    .input01    { border:1px solid #E1DDDC; height:22px; padding-top:5px; }
+    .input03    { border:1px solid #ABAAAA; height:20px; padding-top:5px; }
+	.input04    { border:1px solid #D5D3D3; height:20px; padding-top:5px; }
+form,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,p {list-style-type:none;margin:0px;padding:0px;}
+table { border-collapse:collapse; border-spacing:0px; border:0;font-size:12px;color:#555555; }
+div 	{ font-size:12px; color:#555555;}
+
+li {list-style:none;}
+
+img {border:none;}
+
+a {	selector-dummy: expression(this.hideFocus=true);cursor:pointer; }
+a:link 		{ color:#565656;text-decoration:none; }
+a:visited 	{ color:#565656;text-decoration:none; }
+a:hover 	{ color:#565656;text-decoration:underline;}
+a:actived { color:#565656;text-decoration:none; }
+
+/** 기본 스타일  **/
+.hand 	{ cursor:pointer; }
+.aC 	{ text-align:center; }
+.aL 	{ text-align:left; }
+.aR 	{ text-align:right; }
+.aT 	{ vertical-align:top; }
+.aM 	{ vertical-align:middle; }
+.L 	{ float:left; }
+.R 	{ float:right; }
+.clear 	{ clear:both; }
+
+
+/**  폰트설정  **/
+.f8 	{ font-size:11px;font-family:돋움; }
+.f9 	{ font-size:12px;font-family:굴림; }
+.l18 	{ line-height:18px; }
+
+.b { font-weight:bold; }
+.u 	{ text-decoration:underline; }
+.n 	{ font-weight:normal; }
+
+.space01 	{ letter-spacing:-1px; }
+
+.gray1f		{ color:#1f1f1f; }
+.brown01	{ color:#e07348; }
+
+
+
+/**  여백설정  **/
+.m_l5		{ margin-left:5px; }
+.m_l12		{ margin-left:12px; }
+.m_t16		{ margin-top:16px; }
+.m_b10 		{ margin-bottom:10px; }
+.m_b20 		{ margin-bottom:20px; }
+.m_b35 		{ margin-bottom:35px; }
+.m_b50 		{ margin-bottom:50px; }
+.m_b100 	{ margin-bottom:100px; }
+.m_b185 	{ margin-bottom:185px; }
+.m_t12		{ margin-top:12px; }
+
+
+.t_hidden {display:none;}
+
+/** 미디어 화면 상단 공통영역  **/
+ #SceneSubTop    { width:100%; height:35px; position:relative; border-bottom:1px solid #eeeff4;}     /** 전체 상단 (로그인외) **/
+	#SceneSubTop h1	{ position:absolute; top:0; left:50%; width:200px; margin-left:-470px; text-align:left; }
+		#SceneTop h1 dl	{float:left;}
+		#SceneTop h1 dd	{float:left;}
+	#SceneSubTop h2	{ position:absolute; top:0; left:50%; width:480px; margin-left:-5px; text-align:right; }
+	#SceneSubTop h2 dl	{ float:right; }
+		#SceneSubTop h2 dd	{ float:left; }
+		#SceneSubTop h2 dt	{ float:left; width:150px; height:20px; border:1px solid #d6d6d6; font-size:12px; margin-top:7px; margin-left:1px; padding-left:5px; }
+			#SceneSubTop h2 dt .search01	{width:116px; border:0; float:left; margin-top:3px; }
+
+ #CamSubTop		{ width:950px; height:129px; position:relative; left:50%; text-align:left; margin-left:-475px; margin-top:0px; padding-top:30px; }
+  #CamSubTopIn { width:950px; height:129px; position:relative; left:50%; text-align:left; margin-left:-475px; margin-top:0px; padding-top:30px; }
+ /** 미디어 메뉴바 **/
+	#CamSubTop h1	{ position:absolute; top:28px; left:0; }
+	#CamSubTop h2	{ position:absolute; top:-15px; left:450px;}
+		#CamSubTop h2 img	{ border:0px solid #cccccc; }
+	#CamSubTop dl	{ position:absolute; top:81px;left:0; width:950px; background:url(http://img.danawa.com/new/campuslife/img/bg_navi.gif) repeat-x left top;}
+		#CamSubTop dl dd	{ float:left; padding-top:0px; }
+		#CamSubTop dl dt	{ float:right; }
+
+#CamSubBtm		{ position:relative; bottom:0; width:950px;height:128px; border-top:2px solid #d6d6d6; left:50%; text-align:left; margin-left:-475px;}
+	#CamSubBtm h1	{ border-bottom:1px solid #d6d6d6; height:35px; font-size:12px; padding-left:213px; }
+		#CamSubBtm h1 dd 	{ float:left; }
+			#CamSubBtm h1 dd img	{ vertical-align:middle; }
+	#CamSubBtm h2	{ float:left; width:223px; }
+	#CamSubBtm h3	{ float:left; width:422px; font-size:11px;font-weight:normal;line-height:14px;color:#929292; padding-top:16px;}
+		 #CampusBtm a:link { color:#929292; }
+		 #CamSubBtm a:hover { color:#929292; }
+		 #CamSubBtm a:visited { color:#929292;}
+		 #CamSubBtm a:actived { color:#929292; }
+	#CamSubBtm h4	{ float:right; width:300px; text-align:right;font-size:7px;font-weight:normal; padding-top:10px; }
+
+/* 미디어 메뉴바 수정 적용 */
+#CamSubTop {height:40px; padding-top:0;}
+#CamSubTopIn {height:40px; padding-top:0;}
+#CamSubTop dl {top:0;}
+
+/* layout */
+#wrap_it {width:100%;}
+
+#content_it {clear:both;*zoom:1;overflow:hidden;width:950px;margin:0 auto;margin-top:15px;_margin-top:-15px;}
+	.content_left {float:left;width:730px;}
+		.in_left {width:448px;float:left;}
+		.in_right {width:266px;float:right;background:#f2f4f8;margin-top:15px;*margin-top:11px;margin-right:2px;}
+	.content_right {float:right;width:208px;}
+	.content_right_box {border:1px solid #dbdbdb;background:#f7f7f7;padding-bottom:20px;}
+
+.footer_it {clear:both;*zoom:1;border-top:1px solid #d6d6d6;width:950px;margin:0 auto;margin-top:120px;padding:16px 0;}
+.footer_it p {color:#a6a6a6;font-size:11px;line-height:16px;text-align:center;font-family:dotum,gulim,sans-serif;}
+
+
+/* top_it_news */
+.top_it_news {clear:both;zoom:1;overflow:hidden;padding:15px 0px 0px 15px;position:relative;height:203px;width:710px;border:1px solid #dbdbdb;}
+.top_it_news .left_thumb {float:left;width:261px;margin-right:18px;}
+.top_it_news .right_text {float:left;width:424px;color:#333;font-size:18px;}
+.top_it_news .right_text h4 {font-size:18px;color:#333;margin-top:3px;margin-bottom:8px;}
+.top_it_news .right_text h4 a {color:#333;font-size:18px;}
+.top_it_news .right_text .text_h3 {line-height:18px;width:400px;font-size:12px;}
+.top_it_news .right_text .text_h3 a {color:#666;}
+.top_it_news .text_list {margin-top:0px;}
+.top_it_news .text_list li {vertical-align:top;background:url(http://img.danawa.com/new/campuslife/img/ico_dot.gif) no-repeat 2px 6px;padding-left:10px;font-size:12px;}
+.top_it_news .text_list li a {color:#333;font-weight:bold;line-height:20px;height:20px;overflow:hidden;}
+.top_it_news .text_list li a img {position:relative;top:2px;}
+
+
+/* hot_it_news */
+.hot_it_news {clear:both;overflow:hidden;zoom:1;background:#dddddd;width:728px;height:32px;}
+.hot_it_news .icon_hot {float:left;margin:9px 9px 0 11px;}
+.hot_text {float:left;}
+.hot_text p {width:320px;background:url(http://img.danawa.com/new/mediait/img/bul_li_dot.gif) no-repeat 0 4px;padding-left:7px;float:left;margin:10px 0 0 0;overflow:hidden;}
+.hot_text p a {color:#333;}
+
+/* btn */
+.btn_prev {background:url(http://img.danawa.com/new/campuslife/img/btn_arw.gif) no-repeat 0 0;width:16px;height:16px;position:absolute;display:block;cursor:pointer;}
+.btn_next {background:url(http://img.danawa.com/new/campuslife/img/btn_arw.gif) no-repeat -15px 0;width:16px;height:16px;position:absolute;display:block;cursor:pointer;}
+
+.p1 {right:29px;bottom:15px;}
+.n1 {right:14px;bottom:15px;}
+.p2 {right:18px;top:16px;}
+.n2 {right:3px;top:16px;}
+
+/* review */
+.review {clear:both;zoom:1;overflow:hidden;margin:20px 0px 0 0;padding-bottom:27px;}
+.review ul {margin-left:16px;}
+.review li {float:left;margin-right:45px;overflow:hidden;width:140px;}
+.review li .thumb {border:1px solid #f3f3f5;width:140px;height:140px;}
+.review li .img_title {overflow:hidden;line-height:17px;height:30px;margin-top:10px;}
+.review li .img_title a {font-size:12px;color:#292929;font-weight:bold;}
+.review li .img_text {overflow:hidden;line-height:16px;height:46px;margin-top:11px;}
+.review li .img_text a {font-size:12px;letter-spacing:-1px;color:#666;}
+.review li.last {margin-right:0px;}
+
+
+/* top_photo_text */
+.top_photo_text {clear:both;zoom:1;}
+.top_photo_text .thumb {display:inline;overflow:hidden;width:80px;}
+.top_photo_text .thumb img {width:80px;height:80px;margin-right:9px;_margin-right:7px;float:left;border:1px solid #d9d9d9;}
+.top_photo_text a strong{display:inline-block;margin:7px 0 2px 0px;_margin:6px 0 2px 0px;color:#505050;line-height:18px;width:242px;overflow:hidden;cursor:pointer; height:37px;}
+.top_photo_text a strong:hover {text-decoration:underline;}
+.top_photo_text .text {line-height:1.3;height:2.5em;overflow:hidden;width:242px;}
+.top_photo_text .text a {font-size:12px;color:#737373;letter-spacing:-1px;}
+.bottom_photo_text {margin:20px 0 0 0;*margin:8px 0 0 0;zoom:1;}
+.bottom_photo_text li {background:url(http://img.danawa.com/new/campuslife/img/ico_dot.gif) no-repeat;background-position:0 7px;padding-left:9px;vertical-align:top;line-height:20px;height:20px;}
+.bottom_photo_text a {color:#333;display:block;line-height:20px;height:20px;overflow:hidden;font-size:12px;letter-spacing:-1px;font-weight:bold;}
+.bottom_photo_text2 {margin:14px 0 0 0px;*margin:8px 0 0 0px;zoom:1;}
+.bottom_photo_text2 li {background:url(http://img.danawa.com/new/campuslife/img/ico_dot2.gif) no-repeat;background-position:0 7px;padding-left:10px;vertical-align:top;line-height:20px;height:20px;}
+.bottom_photo_text2 a {color:#737373;display:block;line-height:20px;height:20px;overflow:hidden;font-size:12px;letter-spacing:-1px;}
+.bottom_photo_text3 {zoom:1;}
+.bottom_photo_text3 li {background:url(http://img.danawa.com/new/campuslife/img/ico_dot2.gif) no-repeat;background-position:0 7px;padding-left:10px;vertical-align:top;line-height:20px;height:20px;}
+.bottom_photo_text3 a {color:#737373;display:block;line-height:20px;height:20px;overflow:hidden;font-size:11px;letter-spacing:-1px;}
+
+/* section_list */
+.section_list {clear:both;zoom:1;overflow:hidden;}
+.section_list .l_box {width:349px;min-height:224px;height:auto !important;_height:224px;float:left;border-top:1px solid #e6e6e6;border-right:1px solid #e6e6e6;padding:16px 0 0 15px;}
+.section_list .r_box {width:350px;height:224px;float:left;border-top:1px solid #e6e6e6;padding:16px 0 0 15px;;}
+.section_list .top_photo_text a strong {line-height:17px;color:#333;}
+.section_list .top_photo_text .text  {line-height:17px;}
+.section_list .bottom_photo_text {margin-left:5px;}
+.section_list .bottom_photo_text  li {line-height:22px;height:22px;}
+.list_last {border-bottom:1px solid #e6e6e6;}
+
+
+/* title */
+#content_it h3 {background:url(http://img.danawa.com/new/campuslife/img/bg_title.gif) no-repeat;background-position:0px 0px;text-indent:-9999em;height:25px;}
+#content_it .title_1 {background-position:0px 0px;width:70px;height:23px;text-indent:-9999em;}
+#content_it .title_2 {background-position:16px -30px;width:70px;height:24px;text-indent:-9999em;}
+#content_it .title_3 {background-position:0px -60px;width:70px;margin-bottom:2px;}
+#content_it .title_4 {background-position:0px -90px;width:70px;}
+#content_it .title_5 {background-position:0px -120px;width:70px;}
+#content_it .title_6 {background-position:0px -150px;width:70px;}
+#content_it .title_7 {background-position:0px -180px;width:70px;}
+#content_it .title_8 {background-position:0px -210px;width:70px;}
+#content_it .title_9 {background-position:0px -240px;width:80px;height:28px;}
+#content_it .title_10 {background-position:0px -270px;width:80px;height:29px;}
+#content_it .title_11 {background-position:0px -300px;width:110px;}
+
+
+/* text_area  */
+.text_area {padding:18px 0 0 14px;margin-left:-1px;}
+.text_area li {clear:both;zoom:1;overflow:hidden;margin-bottom:9px;font-size:12px;}
+.text_area li a {font-size:12px;}
+.text_area .top_photo_text .thumb {display:inline;overflow:hidden;width:75px;}
+.text_area .top_photo_text .thumb img {width:75px;height:75px;margin-right:9px;_margin-right:7px;float:left;border:1px solid #d9d9d9;}
+.text_area .top_photo_text a strong{display:inline-block;margin:6px 0 5px 0px;_margin:6px 0 2px 0px;color:#505050;line-height:18px;width:100px;overflow:hidden;cursor:pointer; height:33px;}
+.text_area .top_photo_text .text {line-height:15px;height:29px;overflow:hidden;width:100px;font-size:11px;}
+.text_area .top_photo_text .text a {color:#abaaab;font-size:11px;}
+
+.text_area2 {padding:0 0 0 14px; margin:19px 0 0 0;clear:both;zoom:1;overflow:hidden;}
+.text_area2 .top_photo_text a strong {width:97px;}
+.text_area2 .top_photo_text .text {width:97px;color:#abaaab;font-size:11px;}
+.text_area2 .top_photo_text .text a {color:#abaaab;font-size:11px;}
+.text_area2 .top_photo_text .thumb {display:inline;overflow:hidden;width:75px;}
+.text_area2 .top_photo_text .thumb img {width:75px;height:75px;margin-right:10px;_margin-right:7px;float:left;border:1px solid #d9d9d9;}
+
+.text_area3 {clear:both;zoom:1;overflow:hidden;padding:18px 0 0 14px;position:relative;margin-right:11px;}
+.text_area3 .top_photo_text a strong {width:97px;}
+.text_area3 .top_photo_text .text {width:97px;}
+.text_area3 ul {clear:both;zoom:1;overflow:hidden;margin-top:6px;}
+.text_area3 li {line-height:22px;height:22px;padding-left:8px;background-position:0 8px;}
+.text_area3 .subject {float:left;font-size:11px;width:110px;overflow:hidden;display:inline-block;vertical-align:middle;letter-spacing:-1px;}
+.text_area3 .l_price {float:right;color:#000;font-size:11px;width:62px;overflow:hidden;display:inline-block;vertical-align:top;text-align:right;position:relative;top:-2px;letter-spacing:-1px;}
+.text_area3 .apply_text {font-size:11px;text-align:right;margin-top:3px;color:#abaaab;}
+.text_area3 .apply_text a {color:#abaaab;}
+
+/* ico types */
+.ico_tv {position:relative;top:2px;}
+
+/* btn types */
+.btn_more_view {float:right; font-size:11px;background: url("http://img.danawa.com/new/mediait/img/view_more_bg.gif") no-repeat right 3px transparent; color:#999 !important; padding-right:7px; margin-top:2px; margin-right:1px; display:block; width:35px; height:12px; overflow:hidden; text-align:right; text-decoration:none; cursor:pointer; letter-spacing:-1px;font-family:dotum;margin-top:-24px;margin-right:16px;}
+.btn_more_view:hover {text-decoration:none;}
+
+
+
+/* list_tabs */
+.list_tabs {background:url(http://img.danawa.com/new/campuslife/img/bg_list_tabs.gif) repeat-x left bottom;position:relative;margin-bottom:40px;clear:both;zoom:1;overflow:hidden;width:100%;height:34px;z-index:2;}
+.list_tabs li {background:url(http://img.danawa.com/new/campuslife/img/bg_tabs_off.gif) repeat-x left bottom;height:34px;float:left;width:108px;text-align:center;border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb;margin-right:-1px;}
+.list_tabs li a {color:#666;font-family:dotum,돋움,굴림,gulim,sans-serif;font-size:12px;display:block;padding-top:11px;height:22px;}
+.list_tabs li a:hover {text-decoration:none;}
+.list_tabs li.select {border-left:1px solid #9a9a9a;border-right:1px solid #9a9a9a;background:url(http://img.danawa.com/new/campuslife/img/bg_tabs_on.gif) repeat-x left bottom;position:relative;z-index:9;}
+.list_tabs li.select a {color:#000;font-weight:bold;font-family:dotum,돋움,굴림,gulim,sans-serif;font-size:12px;}
+.path_right {position:absolute;right:0px;top:13px;color:#999;font-family:dotum,돋움,굴림,gulim,sans-serif;font-size:11px;}
+.path_right a {color:#999;font-family:dotum,돋움,굴림,gulim,sans-serif;font-size:11px;}
+.path_right strong {color:#999;font-family:dotum,돋움,굴림,gulim,sans-serif;font-size:11px;}
+
+/* 뉴스 목록 */
+#listcon {float:left; width:100%; padding:0px;}
+#listcon table{border-collapse: collapse;}
+#listcon .propic{float:left; margin-right:10px;  _margin-right:10px; *margin:0 10px 18px 0px;  border:1px solid #D9D9D9; width:75px; height:75px; padding:2px 2px 2px 2px ; background-color:#ffffff; }
+#listcon .procont{float:left; width:459px; margin:2px 0px 0px 0px; padding:0px;}/* 550사이즈 페이지 */
+#listcon .procont730{float:left; width:629px; margin:3px 0px 0px 0px; padding:0px;}/* 730사이즈 페이지_특집서브 */
+#listcon .procont500{float:left; width:400px; margin:4px 0px 0px 0px; padding:0px;}/* 인덱스리스트 */
+#listcon .procont950{float:left; width:750px; margin:3px 0px 0px 0px; padding:0px;}/* 검색결과페이지 */
+
+
+#listcon .upline {width:550px; border-top:1px  solid #E0E0E0; padding-top:18px;}
+#listcon .downline {border-bottom:1px solid #E0E0E0; margin-bottom:18px; float:left;}
+
+#listcon ul {float:left;clear:both; width:100%;	margin:0px;	padding:0px;}
+#listcon .banner_m2{float:left;	clear:both;	width:100%;	margin:0px 0px 15px 0px ; padding:0px;}
+#listcon li {overflow:hidden;	clear:both;	padding :0px 0px 15px 0px;	margin:0px;}
+	
+/* 뉴스 댓글5천개 이상 글 타이틀 */
+#listcon .redpoint {color:#cc0000; font-size: 15px; font-weight: bold; line-height:23px;}
+#listcon a.redpoint{color:#cc0000; font-size: 15px; font-weight: bold; line-height:23px;}
+#listcon a.redpoint:hover{text-decoration: underline;}
+
+/* 뉴스 타이틀 */
+#listcon .b_title {font-size: 15px; font-weight: bold;  color:#000000; line-height:23px;}
+#listcon a.b_title{font-size: 15px; font-weight: bold;  text-decoration: none; color:#000000;line-height:23px;font-family:dotum,돋움,굴림,sans-serif;}
+#listcon a.b_title:hover{text-decoration: underline;}
+
+/* 뉴스 설명글 */
+#listcon .t_text{font-size: 12px; font-weight: normal;  color:#666666; line-height:17px;}
+#listcon a.t_text{font-size: 12px; font-weight: normal;  text-decoration: none; color:#666666;line-height:17px;font-family:dotum,돋움,굴림,sans-serif;}
+#listcon a.t_text:hover{text-decoration: underline;}
+
+/* 인덱스 뉴스리스트 중간 특집기사 박스 */
+#listcon .specialbox{clear:both; float:left; background:url('http://img.danawa.com/new/mediait/img/box_main_special.gif') no-repeat; width:494px; height:140px; *height:120px; _height:140px;}
+#listcon .specialbox p{padding:11px 0px 22px 52px; }
+#listcon .specialbox p a{font-size: 16px; font-weight: bold; color:#cc3333;}
+#listcon .specialbox p a:hover{ text-decoration:none;}
+#listcon .specialbox ul{float:left; width:450px; padding-left:22px; overflow:hidden; font-size:12px; font-weight:bold;}
+#listcon .specialbox li {width:450px; padding:3px 0 3px 0; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+#listcon .specialbox li a{text-decoration:none; color:#333333; }
+#listcon .specialbox li a:hover{ text-decoration:underline;}
+
+
+/* 리스트넘버  */
+.numberStyle01 {clear:both; float:left; position:relative; width:100%; height:40px; background-color:#fafafa; text-align:center; margin-top:20px; margin-bottom:20px;} /* 가격비교에 들어가는 넘버 */
+.pagetext {font-size:11px; color:#666; text-decoration:underline; font-weight:normal;margin-right:25px;}
+a.fNend{font-size:11px; color:#666; text-decoration:underline; font-weight:bold;}
+a.fNend:hover{font-size:11px; color:#666; text-decoration:underline; font-weight:bold;}
+
+ul#numberlist {padding-top:7px; margin:0px;}
+ul#numberlist li{display:inline; text-align:center; vertical-align:middle;}
+ul#numberlist li.first{margin:0 10px 0 0;}
+ul#numberlist li.num strong{position:relative; display:inline-block; height:14px; margin:0 2px; padding:1px 6px 5px 6px; color:#fff; text-decoration:none; border:1px solid #666; background-color:#5d5d5d; line-height:normal; font:13px Verdana;}
+ul#numberlist li.num a{position:relative; display:inline-block; height:14px; margin:0 2px; padding:1px 6px 5px 6px; color:#666666; text-decoration:none; border:1px solid #fafafa; line-height:normal; font:13px Verdana; }
+ul#numberlist li.num a:hover{background:#fff; border:1px solid #bbbbbb; font:13px Verdana; color:#666;}
+
+ul#numberlist li.numBtn a{position:relative; display:inline-block; height:14px; padding:1px 7px 5px 7px; margin:0 3px; border:1px solid #bbbbbb;}
+ul#numberlist li.end{margin:0 0 0 10px;}
+
+.numberStyle01 .btn{position:absolute; right:10px; top:10px;}
+
+/* 검색 영역 */
+#listsearch {float:left; text-align:center; padding:10px 0px 20px 0px; width:100%;}
+#listsearch input {border:solid 1px #cdcec8; width:200px; height:17px; font-size: 12px; color:#000000; line-height:140%;}
+#listsearch select {margin-bottom:1px; border:solid 1px #cdcec8;}
+
+/* 전체 글자 */
+
+/* 리스트 타이틀 글자 */
+.b_title {font-size: 15px; font-weight: bold;  color:#000000; line-height:23px;}
+a.b_title {  font-size: 15px; font-weight: bold;  text-decoration: none; color:#000000;line-height:23px;}
+a.b_title:hover {text-decoration: underline;}
+
+/* 리스트 댓글숫자 글자 */
+.p_text {font-size: 15px; color:#cc0000; line-height:25px; font-weight:bold;}
+
+/* 리스트 섹션표시글 */
+.section {color:#999999; font-weight:bold; font-size:12px;}
+
+/*흐린 작은 회색 글자 11 */
+.g_text {font-size: 11px; font-weight: normal;  color:#999999; line-height:15px; padding-left:3px;font-family:dotum,돋움,굴림,sans-serif;}
+a.g_text {  font-size: 11px; font-weight: normal;  text-decoration: none; color:#999999;line-height:15px;font-family:dotum,돋움,굴림,sans-serif;}
+a.g_text:hover {text-decoration: underline;}
+
+/* 흐린 작은 회색 글자 12 */
+.g2_text {font-size: 12px; font-weight: normal;  color:#999999; line-height:15px;}
+a.g2_text{  font-size: 12px; font-weight: normal;  text-decoration: none; color:#999999;line-height:15px;}
+a.g2_text:hover {text-decoration: underline;}
+
+/* 리스트 설명 글자 */
+.t_text {font-size: 12px; font-weight: normal;  color:#666666; line-height:17px;}
+a.t_text {  font-size: 12px; font-weight: normal;  text-decoration: none; color:#666666;line-height:17px;}
+a.t_text:hover {text-decoration: underline;}
+
+
+/* 뉴스제목 */
+
+.btitbox {float:left; width:100%; margin:0px; padding:0px; background-color:#f4f4f4;}/* 미디어잇활성화 */
+.btit {margin:0px; padding:10px; font-weight:bold; font-size:20px; letter-spacing:-1px; line-height:160%; color:#000000;font-family:dotum,돋움,sans-serif;}/* 미디어잇활성화 */
+
+/* 뉴스본문 */
+#article5 {width:100%; padding:15px 0 15px 0; overflow:hidden;}
+#article5, #article5 table, #article5 table td {font-family:굴림,굴림체,Arial, Helvetica, sans-serif;}
+#article5 .admar {float:right; width:250; margin-left:15px; margin-bottom:15px; }
+#article5 .cons {line-height:150%; color:#666666; padding:0px; word-break:break-all;}
+#article5 .cons p{margin-top:14px; margin-bottom:14px;}
+#article5 td {line-height:150%; color:#666666; margin:0px; padding:0px; word-breack:break-all;}
+#article5 .cons_no {line-height:150%;color:#666666; margin:0px; padding:0px; word-breack:break-all;}
+#article5 a{text-decoration: none;  color:#660000;}
+#article5 a:hover {text-decoration: underline;}
+#article5 .editor {float:right; font-weight:bold; color:#333333;}
+#article5 .editor a{font-weight:bold;color:#333333; text-decoration:none;}
+#article5 .editor a:hover{font-weight:bold; text-decoration:underline;}
+#article5 td.font_cng{}
+
+
+/* 기사태그 */
+#arttag5 {clear:both; float:left; width:100%; margin:0px; padding:0px; color:#333333;}
+#arttag5 dl{width:100%; border-collapse: collapse;margin:0px; padding:0px;}
+#arttag5 dt{padding:10px 0px; margin:0px; vertical-align:top; width:56px; float:left;}
+#arttag5 dd.con{padding:10px 0px 10px 70px; width:; margin:0px; font-size:11px; text-decoration: none; color:#333333; line-height:150%;}
+#arttag5 dd.con a{text-decoration: none;  color:#666666;  line-height:150%;}
+#arttag5 dd.con a:hover{text-decoration:underline;}
+
+.com_mar {margin:15px 0px 0px 0px;clear:both;zoom:1;overflow:hidden;}
+.com_marb {margin:0px 0px 15px 0px;}
+.ie6error {clear:both; font-size:0px; width:30px;}
+
+
+/* 미디어잇활성화 */
+.newsdate{clear:both; width:100%; padding-top:10px; height:45px;}
+.newsdate .date{float:left; font-size:12px; color:#999999; }
+.newsdate .date span{color:#727272;}
+
+.newsico {position:relative; padding:0px; margin-top:15px; float:right;}
+.newsico .line{margin-right:-4px; padding:0;}
+.newsico .pad{margint:0;}
+.newsico .layer {position:absolute; z-index:99; width:98px; height:53px; right:0;}
+
+.newsico_botlef {float:left; width:330px; display:block;}
+.newsico_botlef img{padding-right:2px;}
+.newsico_botri {float:right;}
+.newsico_botri img{padding-left:2px;}
+.snsico {float:left; width:380px; display:block; margin-top:5px;}
+.snsico img{padding-right:2px;}
+
+/* 관련기사 */
+#news_link {clear:both; width:100%; float:left;}
+#news_link *{margin:0px; padding:0px;}
+#news_link dl#link .line{width:100%; _width:98%; float:left; padding:5px 0 5px 10px; line-height:20px; background:url('http://img.danawa.com/new/mediait/img/ico_title.gif') no-repeat 0 11px; text-overflow:ellipsis; overflow:hidden;}
+#news_link dl#link .line a{color:#666666; text-decoration:none;}
+#news_link dl#link .line a:hover{text-decoration:underline;}
+#news_link dl#link .deshline{width:100%; float:left; background:url('http://img.danawa.com/new/mediait/img/back_line_dotted.gif') repeat-x 0;height:1px;font-size:0px; line-height:0px; margin:0px; padding:0px; }
+
+/* 미디어잇활성화_이제품뜰까 */
+#news_vote {float:left; width:100%; padding:0px;}
+#news_vote dl#votearea{clear:both; padding-top:10px; *padding-top:5px;}
+#news_vote .input{margin-bottom:3px;}
+#news_vote .vote {float:left; color:#666666; letter-spacing:-1px; font-size:12px; font-weight:bold; margin:2px 10px 0px 0px; padding:0px;}
+#news_vote .btn {float:left; height:30px; margin:0px 20px 0px 0px; padding:0px; *padding-top:2px; }
+
+#news_vote .grapharea {float:right; font-size:14px; font-weight:bold; margin-top:4px; padding:0px;}
+#news_vote .txtgree {float:left; color:#68a311; padding-bottom:5px;}
+#news_vote .txtgree img{padding:0px 2px 4px 0px;}
+#news_vote .graph { float:left;}
+#news_vote .txtblue {float:left; color:#2d89d0; padding:0px; }
+#news_vote .txtblue img{padding:0px 0px 4px 2px;}
+
+
+
+/* 관련상품 */
+
+table#part {clear:both; width:100%; border-collapse:collapse; font-size:11px; border:0; padding-right:48px;}
+table#part td{padding:0px; height:65px;}
+table#part td.dstyle01{height:1px; border-bottom:1px solid #ececec; font-size:0px; line-height:0px; margin:0px; padding:0px;}
+
+table#part td.pro{width:90px; padding:10px 0 10px 0;}
+
+table#part td.con {color:#999999; height:50px; font-size:11px; padding-right:20px; line-height:150%; text-align:left; text-overflow:ellipsis; word-break:break-all;}
+table#part td.con a{color:#999999; text-decoration:none;}
+table#part td.con a:hover{text-decoration:underline;}
+
+table#part td.con span{font-size:12px; color:#333333;}
+table#part td.con span a{font-size:12px; color:#333333;}
+table#part td.con span a:hover{text-decoration:underline;}
+
+table#part td.con .reply {clear:both; float:left; padding-top:5px; color:#333333; text-overflow:ellipsis;}
+table#part td.con .darkred {float:left; font-size:12px; font-weight:bold; color:#000;}
+table#part td.con a.red{font-weight:bold; color:#cc0000; font-size:12px;}
+table#part td.con a.red:hover{text-decoration:underline;}
+
+table#part td.price {width:135px; font-size:11px; font-weight:bold; color:#666666;}
+table#part td.price .red{color:#cc0000; font-weight:bold;}
+table#part td.price .darkred{font-weight:bold; color:#660000; font-weight:bold;}
+
+/* 관련상품 Text-overflow 처리 */
+/*
+table#part td.con a {display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;width:480px;}
+table#part td.con a.red {display:inline;}
+*/
+/* 공통타이틀 */
+dl#viewtit dl {width:100%;}
+dl#viewtit dd {float:left; font-weight:bold; color:#333333; padding-bottom:1px; overflow:hidden;}
+dl#viewtit dd span{font-weight:bold; color:#670019; padding-right:3px;}
+dl#viewtit dd.more {float:right; margin:0px; padding-top:2px;}
+dl#viewtit dd.line{clear:both; width:100%; height:1px; border-bottom:1px solid #000000; margin:0px;}
+dl#viewtit dd.line2{clear:both; width:100%; height:1px; border-bottom:1px solid #ececec; margin:0px;}/* 미디어잇활성화 */
+.mart30 {margin-top:30px;}
+
+/* list_type3 */
+.list_type3 {border-top:1px solid #eee;padding:12px 0 10px 0;}
+.list_type3 li {vertical-align:top;line-height:24px;height:24px;overflow:hidden;padding-left:14px;background:url(http://img.danawa.com/new/mediait/img/bul_li_dot2.gif) no-repeat 0 9px;}
+.list_type3 li a {color:#000;font-size:14px;font-weight:bold;letter-spacing:-1px;float:left;font-family:dotum,돋움,sans-serif;}
+.list_type3 li .right_type {float:right;color:#a3a3a3;font-family:dotum,돋움,sans-serif;font-size:11px;}
+.list_type3 li .right_type em {color:#666;font-family:dotum,돋움,sans-serif;font-size:11px;font-style:normal;display:inline-block;margin-left:6px;}
+
+.list_first {border-top:none;margin-top:-11px;}
+
+/* 메인배너 추가 */
+.main_banner728 {margin-top:20px;}

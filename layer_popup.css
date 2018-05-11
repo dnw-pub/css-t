@@ -1,0 +1,34 @@
+@charset "euc-kr";
+
+/*
+최종작업일자 : 2012년 09월 25일
+작성자 : P05
+작업내용: layer popup guide
+*/
+
+/* default Selector */
+body,input,button,select,input,txtArea,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,ul,ol,li,legend,hr,em,addres,div,p,strong,fieldset,form{margin:0; padding:0;font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;}
+html,body{width:100%;height:100%;}
+html{overflow-y:scroll}
+body {font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;text-align:left;background-color:#fff;*word-break:break-all;-ms-word-break:break-all;}
+
+/* link */
+a{color:#666;text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+/* Type Selector */
+img, fieldset, button,iframe {border:0 none}
+em,address{font-style:normal}
+hr{display:none}
+legend{*width:0}
+:root legend{margin-top:-1px;font-size:0;line-height:0}
+/* layout */
+
+.wrap_layer {border:3px solid #2d48bb}
+.footer_layer_popup {height:24px; background:#dbdbdb;text-align:right;font-size:11px;font-family:돋움;border-top:1px solid #fff;position:relative;vertical-align:top;}
+.footer_layer_popup a {font-size:11px; font-family:돋움; color:#000; text-decoration: none;}
+.footer_layer_popup a:hover {font-size:11px; font-family:돋움; color:#000; text-decoration:underline;}
+.footer_layer_popup .btn_close_x {margin-bottom:3px;background:url(http://img.danawa.com/new/popup/img/btn_close_x.gif) no-repeat left top;width:12px;height:12px;display:block;position:absolute;right:10px;top:6px;text-indent:-9999em;}
+.footer_layer_popup label {margin-right:24px;display:inline-block;position:relative;top:3px;_top:-2px;}
+.footer_layer_popup input {position:relative;right:5px;top:5px;_top:1px;_right:2px;}
+

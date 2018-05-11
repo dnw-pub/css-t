@@ -1,0 +1,35 @@
+@charset "euc-kr";
+/* CSS Document
+ @ css 초기화용 스타일입니다.
+ @ OA, 포터블, 유아동, 골프, 스포츠, 다나와PC 섹션 적용
+ @  
+*/
+
+/* init */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label,  table,  tbody, tfoot, thead, tr, th, td, button
+{margin: 0; padding: 0;border: 0; font-family: "돋움", "Arial", "Verdana";}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse; border-spacing: 0; font-size:12px;}
+a {text-decoration:none;}
+a img {border:none;}
+legend, caption, hr {visibility:hidden;height:0; width:0; position:absolute; margin:0; padding:0; text-indent:-1000px;line-height:0; font-size:0; }		 /*   */
+button {cursor:pointer; overflow:visible;}
+
+/* utils */
+.posContainer {position:relative;}
+.posRight {position:absolute; right:0;}
+.offscreen {visibility:hidden; height:0; line-height:0; font-size:0; width:0; position:absolute; margin:0; padding:0; text-indent:-1000px;}
+.fullsize {width:100%;}
+.size70 {width:70px;}
+.size300 {width:300px;}
+.size244 {width:244px;}
+.posTop {top:0;}
+.aCenter {text-align:center;}
+.aRight {text-align:right;}
+.searchInput {background:#ededed; border:1px solid #b1b1b1;}

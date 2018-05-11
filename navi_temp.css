@@ -1,0 +1,1051 @@
+@charset "euc-kr";
+/*
+last date : 2012.09
+worker : P05
+work content : navigation templete
+*/
+
+/* navigation */
+.navigation {clear:both;zoom:1;}
+.navigation .one_depth {width:100%;}
+.navigation .one_depth li {float:left;text-align:center;position:relative;vertical-align:top;}
+.navigation .one_depth li .off {font-size:14px;font-weight:bold;color:#535353;display:block;}
+.navigation .one_depth li .on  {font-size:14px;font-weight:bold;color:#004bad;display:block;}
+.navigation .one_depth li a:hover {text-decoration:none;}
+
+.navigation .one_depth li .off .arw {background:url(http://img.danawa.com/new/brandlog/img/icon_type1_arrow.gif) no-repeat;background-position:0 -20px;padding:0 0px 0 0px;display:inline-block;width:11px;height:15px;margin-left:3px;}
+.navigation .one_depth li .on  .arw {background:url(http://img.danawa.com/new/brandlog/img/icon_type1_arrow.gif) no-repeat;background-position:left 4px;padding:0 0px 0 0px;display:inline-block;width:11px;height:15px;margin-left:3px;}
+.navigation .one_depth li.last a{background:url(http://img.danawa.com/new/brandlog/img/bg_nav1.gif) no-repeat;background-position:100% 0;}
+.navigation .one_depth li a{word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+
+.wrap_type1_blue .nave_8_type .one_depth li .off .arw {margin-left:0px;}
+.wrap_type1_blue .nave_8_type .one_depth li .on .arw {margin-left:0px;}
+
+/* wrap_type1_blue */
+.wrap_type1_blue .nave_1_type {background:#fff;}
+
+.wrap_type1_blue .navigation {height:33px;padding-top:67px;}
+.wrap_type1_blue .navigation li {background:url(http://img.danawa.com/new/brandlog/img/bg_blue1_nav.gif) no-repeat;vertical-align:top;padding-top:0px;height:33px;}
+.wrap_type1_blue .navigation li a {display:block;padding:7px 0 2px 0;height:24px;}
+.wrap_type1_blue .navigation .menu1 {background-position:0px -400px;width:188px;}
+.wrap_type1_blue .navigation .menu2 {background-position:-188px -400px;width:189px;}
+.wrap_type1_blue .navigation .menu3 {background-position:-376px -400px;width:188px;}
+.wrap_type1_blue .navigation .menu4 {background-position:-564px -400px;width:188px;}
+.wrap_type1_blue .navigation .menu5 {background-position:-752px -400px;width:187px;}
+.wrap_type1_blue .navigation_flash {position:absolute;top:64px;}
+
+ /* bg_gradation */
+.wrap_type1_blue .bg_gradation {background:url(http://img.danawa.com/new/brandlog/img/bg_blue1_on.png) no-repeat;background-position:50% 0px;width:100%;}
+.wrap_type1_black .bg_gradation {background:url(http://img.danawa.com/new/brandlog/img/bg_black1_on.png) no-repeat;background-position:50% 0px;width:100%;}
+.wrap_type1_green .bg_gradation {background:url(http://img.danawa.com/new/brandlog/img/bg_green1_on.png) no-repeat;background-position:50% 0px;width:100%;}
+.wrap_type1_orange .bg_gradation {background:url(http://img.danawa.com/new/brandlog/img/bg_orange1_on.png) no-repeat;background-position:50% 0px;width:100%;}
+.wrap_type1_red .bg_gradation {background:url(http://img.danawa.com/new/brandlog/img/bg_red1_on.png) no-repeat;background-position:50% 0px;width:100%;}
+.wrap_type1_violet .bg_gradation {background:url(http://img.danawa.com/new/brandlog/img/bg_violet1_on.png) no-repeat;background-position:50% 0px;width:100%;}
+.wrap_type1_blue li.no_gradation .bg_gradation{background:none !important;}
+
+
+.wrap_type1_blue .navigation .one_depth li .two_depth {width:100%;min-height:30px;height:auto !important;_height:30px;background:url(http://img.danawa.com/new/brandlog/img/menu_type1_blue_arw.gif) #004bad no-repeat;background-position:center top;padding:10px 0 4px 0;position:absolute;top:35px;left:0px;z-index:3;}
+.wrap_type1_blue .navigation .one_depth li .two_depth ul {} /* padding-right:10px; */
+.wrap_type1_blue .navigation .one_depth li .two_depth li {clear:both;background:#004bad;width:100%;text-align:left;zoom:1;overflow:hidden;height:22px;}
+.wrap_type1_blue .navigation .one_depth li .two_depth li a {color:#fff;padding:5px 5px 3px 13px;display:block;margin-left:0px !important;}
+.wrap_type1_blue .navigation .one_depth li .two_depth li:hover {background:#e3edf9;}
+.wrap_type1_blue .navigation .one_depth li .two_depth li:hover a {color:#004bad;font-weight:bold;}
+
+.wrap_type1_blue .nave_1_type .menu1 {width:940px;background-position:0 0;}
+.wrap_type1_blue .nave_1_type .one_depth li .two_depth {width:235px;margin-left:358px;}
+.cut_size{overflow:hidden;display:inline-block;text-align:center;}
+:root .cut_size {word-wrap:break-word;}
+.cut_size2{display:inline-block;text-align:left;vertical-align:middle;}
+.cut_size_arrow{overflow:hidden;display:inline-block;text-align:center;}
+
+/* cut_size */
+.wrap_type1_blue .nave_1_type .cut_size{width:900px;height:14px;}
+.wrap_type1_blue .nave_2_type .cut_size{width:440px;height:14px;}
+.wrap_type1_blue .nave_3_type .cut_size{width:290px;height:14px;}
+.wrap_type1_blue .nave_4_type .cut_size{width:220px;height:14px;}
+.wrap_type1_blue .nave_5_type .cut_size{width:170px;height:14px;}
+.wrap_type1_blue .nave_6_type .cut_size{width:144px;height:14px;}
+.wrap_type1_blue .nave_7_type .cut_size{width:120px;height:14px;}
+.wrap_type1_blue .nave_8_type .cut_size{width:100px;height:14px;}
+.wrap_type1_blue .nave_1_type .cut_size_arrow{width:890px;height:14px;}
+.wrap_type1_blue .nave_2_type .cut_size_arrow{width:430px;height:14px;}
+.wrap_type1_blue .nave_3_type .cut_size_arrow{width:280px;height:14px;}
+.wrap_type1_blue .nave_4_type .cut_size_arrow{width:210px;height:14px;}
+.wrap_type1_blue .nave_5_type .cut_size_arrow{width:160px;height:14px;}
+.wrap_type1_blue .nave_6_type .cut_size_arrow{width:134px;height:14px;}
+.wrap_type1_blue .nave_7_type .cut_size_arrow{width:110px;height:14px;}
+.wrap_type1_blue .nave_8_type .cut_size_arrow{width:92px;height:14px;}
+
+.wrap_type2_blue .nave_1_type .cut_size{width:900px;height:14px;}
+.wrap_type2_blue .nave_2_type .cut_size{width:440px;height:14px;}
+.wrap_type2_blue .nave_3_type .cut_size{width:290px;height:14px;}
+.wrap_type2_blue .nave_4_type .cut_size{width:220px;height:14px;}
+.wrap_type2_blue .nave_5_type .cut_size{width:170px;height:14px;}
+.wrap_type2_blue .nave_6_type .cut_size{width:145px;height:14px;}
+.wrap_type2_blue .nave_7_type .cut_size{width:120px;height:14px;}
+.wrap_type2_blue .nave_8_type .cut_size{width:100px;height:14px;}
+.wrap_type2_blue .nave_1_type .cut_size_arrow{width:890px;height:14px;}
+.wrap_type2_blue .nave_2_type .cut_size_arrow{width:410px;height:14px;}
+.wrap_type2_blue .nave_3_type .cut_size_arrow{width:260px;height:14px;}
+.wrap_type2_blue .nave_4_type .cut_size_arrow{width:202px;height:14px;}
+.wrap_type2_blue .nave_5_type .cut_size_arrow{width:140px;height:14px;}
+.wrap_type2_blue .nave_6_type .cut_size_arrow{width:120px;height:14px;}
+.wrap_type2_blue .nave_7_type .cut_size_arrow{width:100px;height:14px;}
+.wrap_type2_blue .nave_8_type .cut_size_arrow{width:92px;height:14px;}
+
+.wrap_type2_blue .nave_1_type .cut_size2{width:820px;}
+.wrap_type2_blue .nave_2_type .cut_size2{width:400px;}
+.wrap_type2_blue .nave_3_type .cut_size2{width:240px;}
+.wrap_type2_blue .nave_4_type .cut_size2{width:170px;}
+.wrap_type2_blue .nave_5_type .cut_size2{width:110px;}
+.wrap_type2_blue .nave_6_type .cut_size2{width:95px;}
+.wrap_type2_blue .nave_7_type .cut_size2{width:78px;}
+.wrap_type2_blue .nave_8_type .cut_size2{width:52px;}
+.wrap_type2_blue .nave_1_type .cut_size2_arrow{width:820px;}
+.wrap_type2_blue .nave_2_type .cut_size2_arrow{width:400px;}
+.wrap_type2_blue .nave_3_type .cut_size2_arrow{width:240px;}
+.wrap_type2_blue .nave_4_type .cut_size2_arrow{width:170px;}
+.wrap_type2_blue .nave_5_type .cut_size2_arrow{width:110px;}
+.wrap_type2_blue .nave_6_type .cut_size2_arrow{width:95px;}
+.wrap_type2_blue .nave_7_type .cut_size2_arrow{width:78px;}
+.wrap_type2_blue .nave_8_type .cut_size2_arrow{width:52px;}
+.wrap_type2_blue .nave_8_type .arw {right:3px !important;}
+
+.wrap_type3_blue .nave_1_type .cut_size{width:880px;height:14px;}
+.wrap_type3_blue .nave_2_type .cut_size{width:430px;height:14px;}
+.wrap_type3_blue .nave_3_type .cut_size{width:280px;height:14px;}
+.wrap_type3_blue .nave_4_type .cut_size{width:216px;height:14px;}
+.wrap_type3_blue .nave_5_type .cut_size{width:170px;height:14px;}
+.wrap_type3_blue .nave_6_type .cut_size{width:135px;height:14px;}
+.wrap_type3_blue .nave_7_type .cut_size{width:108px;height:14px;}
+.wrap_type3_blue .nave_8_type .cut_size{width:96px;height:14px;}
+.wrap_type3_blue .nave_1_type .cut_size_arrow{width:870px;height:14px;}
+.wrap_type3_blue .nave_2_type .cut_size_arrow{width:420px;height:14px;}
+.wrap_type3_blue .nave_3_type .cut_size_arrow{width:266px;height:14px;}
+.wrap_type3_blue .nave_4_type .cut_size_arrow{width:204px;height:14px;}
+.wrap_type3_blue .nave_5_type .cut_size_arrow{width:156px;height:14px;}
+.wrap_type3_blue .nave_6_type .cut_size_arrow{width:125px;height:14px;}
+.wrap_type3_blue .nave_7_type .cut_size_arrow{width:100px;height:14px;}
+.wrap_type3_blue .nave_8_type .cut_size_arrow{width:92px;height:14px;}
+
+.wrap_type4_blue .cut_size{width:162px;height:14px;margin-left:-15px;}
+.wrap_type4_blue .nave_5_type .cut_size{width:160px;height:14px;margin-left:-15px;}
+.wrap_type4_blue .nave_6_type .cut_size{width:140px;height:14px;margin-left:0px;}
+.wrap_type4_blue .nave_7_type .cut_size{width:110px;height:14px;margin-left:0px;}
+.wrap_type4_blue .nave_8_type .cut_size{width:98px;height:14px;margin-left:0px;}
+.wrap_type4_blue .cut_size_arrow{width:150px;height:14px;margin-left:-20px;}
+.wrap_type4_blue .nave_5_type .cut_size_arrow{width:146px;height:14px;margin-left:-15px;}
+.wrap_type4_blue .nave_6_type .cut_size_arrow{width:130px;height:14px;margin-left:-13px;}
+.wrap_type4_blue .nave_7_type .cut_size_arrow{width:105px;height:14px;margin-left:-10px;}
+.wrap_type4_blue .nave_8_type .cut_size_arrow{width:92px;height:14px;margin-left:-8px;}
+
+
+.wrap_type1_blue .nave_2_type .menu1 {width:471px;background-position:0 -100px;margin-right:0px;}
+.wrap_type1_blue .nave_2_type .menu2 {width:469px;background-position:-471px 0;}
+.wrap_type1_blue .nave_2_type .one_depth li .two_depth {width:235px;margin-left:118px;}
+
+.wrap_type1_blue .nave_3_type .menu1 {width:314px;background-position:0px -200px;margin-right:0px;}
+.wrap_type1_blue .nave_3_type .menu2 {width:314px;background-position:-314px -200px;}
+.wrap_type1_blue .nave_3_type .menu3 {width:312px;background-position:-628px -200px;}
+.wrap_type1_blue .nave_3_type .one_depth li .two_depth {width:235px;margin-left:40px;}
+
+.wrap_type1_blue .nave_4_type .menu1 {width:235px;background-position:0px -200px;margin-right:0px;}
+.wrap_type1_blue .nave_4_type .menu2 {width:235px;background-position:-314px -200px;}
+.wrap_type1_blue .nave_4_type .menu3 {width:234px;background-position:-628px -200px;}
+.wrap_type1_blue .nave_4_type .menu4 {width:235px;background-position:-705px -300px;}
+
+.wrap_type1_blue .nave_5_type .menu1 {width:188px;background-position:0px -400px;margin-right:0px;}
+.wrap_type1_blue .nave_5_type .menu2 {width:188px;background-position:-188px -400px;}
+.wrap_type1_blue .nave_5_type .menu3 {width:188px;background-position:-376px -400px;}
+.wrap_type1_blue .nave_5_type .menu4 {width:188px;background-position:-564px -400px;}
+.wrap_type1_blue .nave_5_type .menu5 {width:188px;background-position:-752px -400px;}
+
+.wrap_type1_blue .nave_6_type .menu1 {width:157px;background-position:0px -500px;margin-right:0px;}
+.wrap_type1_blue .nave_6_type .menu2 {width:157px;background-position:-157px -500px;}
+.wrap_type1_blue .nave_6_type .menu3 {width:157px;background-position:-157px -500px;}
+.wrap_type1_blue .nave_6_type .menu4 {width:157px;background-position:-157px -500px;}
+.wrap_type1_blue .nave_6_type .menu5 {width:157px;background-position:-157px -500px;}
+.wrap_type1_blue .nave_6_type .menu6 {width:155px;background-position:-785px -500px;}
+
+.wrap_type1_blue .nave_7_type .menu1 {width:134px;background-position:0px -600px;margin-right:0px;}
+.wrap_type1_blue .nave_7_type .menu2 {width:134px;background-position:-134px -600px;}
+.wrap_type1_blue .nave_7_type .menu3 {width:134px;background-position:-134px -600px;}
+.wrap_type1_blue .nave_7_type .menu4 {width:134px;background-position:-134px -600px;}
+.wrap_type1_blue .nave_7_type .menu5 {width:134px;background-position:-134px -600px;}
+.wrap_type1_blue .nave_7_type .menu6 {width:134px;background-position:-134px -600px;}
+.wrap_type1_blue .nave_7_type .menu7 {width:136px;background-position:-804px -600px;}
+
+.wrap_type1_blue .nave_8_type .menu1 {width:117px;background-position:0px -500px;margin-right:0px;}
+.wrap_type1_blue .nave_8_type .menu2 {width:117px;background-position:-117px -700px;}
+.wrap_type1_blue .nave_8_type .menu3 {width:117px;background-position:-234px -700px;}
+.wrap_type1_blue .nave_8_type .menu4 {width:117px;background-position:-234px -700px;}
+.wrap_type1_blue .nave_8_type .menu5 {width:117px;background-position:-234px -700px;}
+.wrap_type1_blue .nave_8_type .menu6 {width:117px;background-position:-234px -700px;}
+.wrap_type1_blue .nave_8_type .menu7 {width:117px;background-position:-234px -700px;}
+.wrap_type1_blue .nave_8_type .menu8 {width:121px;background-position:-819px -700px;}
+
+.wrap_type5_blue .cut_size{text-align:left;}
+.wrap_type5_blue .cut_size_arrow{text-align:left;}
+
+
+/* type1_black */
+.type1_black .navigation .one_depth li .on  {color:#000;}
+.type1_black .navigation .one_depth li .off {color:#535353;}
+.type1_black .navigation .one_depth li .off .arw {background:url(http://img.danawa.com/new/brandlog/img/icon_type1_arrow.gif) no-repeat;background-position:0 -24px;padding:0px;display:inline-block;width:11px;height:8px;margin-left:9px;}
+.type1_black .navigation .one_depth li .on  .arw {background:url(http://img.danawa.com/new/brandlog/img/icon_type1_arrow.gif) no-repeat;background-position:-60px 0px;padding:0px;display:inline-block;width:11px;height:8px;margin-left:9px;}
+.type1_black .navigation .one_depth li .two_depth li {background:#535353 !important;}
+.type1_black .navigation .one_depth li .two_depth li:hover {background:#eee !important;}
+.type1_black .navigation .one_depth li .two_depth li:hover a {color:#1d1d1d !important;}
+.type1_black .navigation .one_depth li .two_depth {background:url(http://img.danawa.com/new/brandlog/img/menu_type1_black_arw.gif) #535353 no-repeat;background-position:center top;}
+
+/* type1_green */
+.type1_green .navigation .one_depth li .on {color:#006c29;}
+.type1_green .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/icon_type1_arrow.gif) no-repeat;background-position:-40px 0px;padding:0 0px 0 0px;display:inline-block;width:11px;height:8px;margin-left:9px;}
+.type1_green .navigation .one_depth li .two_depth {background:url(http://img.danawa.com/new/brandlog/img/menu_type1_green_arw.gif) #006c29 no-repeat;background-position:center top;}
+.type1_green .navigation .one_depth li .two_depth li {background:#006c29;}
+.type1_green .navigation .one_depth li .two_depth li:hover {background:#dbefe2;}
+.type1_green .navigation .one_depth li .two_depth li:hover a {color:#006c29;}
+
+/* type1_orange */
+.type1_orange .navigation .one_depth li .on {color:#c12900;}
+.type1_orange .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/icon_type1_arrow.gif) no-repeat;background-position:-60px 0px;padding:0 0px 0 0px;display:inline-block;width:11px;height:8px;margin-left:9px;}
+.type1_orange .navigation .one_depth li .two_depth li {background:#ff5930; color:#c12900;}
+.type1_orange .navigation .one_depth li .two_depth li:hover {background:#ffe6e0; color:#c12900;}
+.type1_orange .navigation .one_depth li .two_depth li:hover a {color:#c12900;}
+.type1_orange .navigation .one_depth li .two_depth {background:url(http://img.danawa.com/new/brandlog/img/menu_type1_orange_arw.gif) #ff5930 no-repeat;background-position:center top; color:#c12900;}
+.type1_orange .navigation .one_depth li .two_depth li a {color:#280b00;}
+
+/* type1_red */
+.type1_red .navigation .one_depth li .on {color:#ca0023;}
+.type1_red .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/icon_type1_arrow.gif) no-repeat;background-position:-80px 0px;padding:0 0px 0 0px;display:inline-block;width:11px;height:8px;margin-left:9px;}
+.type1_red .navigation .one_depth li .two_depth li {background:#ca0023;}
+.type1_red .navigation .one_depth li .two_depth li:hover {background:#fbdbe0;}
+.type1_red .navigation .one_depth li .two_depth li:hover a {color:#ca0023;}
+.type1_red .navigation .one_depth li .two_depth {background:url(http://img.danawa.com/new/brandlog/img/menu_type1_red_arw.gif) #ca0023 no-repeat;background-position:center top;}
+
+/* type1_violet */
+.type1_violet .navigation .one_depth li .on {color:#493284;}
+.type1_violet .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/icon_type1_arrow.gif) no-repeat;background-position:-100px 0px;padding:0 0px 0 0px;display:inline-block;width:11px;height:8px;margin-left:9px;}
+.type1_violet .navigation .one_depth li .two_depth li {background:#493284;}
+.type1_violet .navigation .one_depth li .two_depth li:hover {background:#e9e5f2;}
+.type1_violet .navigation .one_depth li .two_depth li:hover a {color:#493284;}
+.type1_violet .navigation .one_depth li .two_depth {background:url(http://img.danawa.com/new/brandlog/img/menu_type1_violet_arw.gif) #493284 no-repeat;background-position:center top;}
+
+/* wrap_type2_blue */
+.wrap_type2_blue .navigation {height:36px;width:940px;padding-top:79px;}
+.wrap_type2_blue .navigation_flash {position:absolute;top:79px;}
+.wrap_type2_blue .navigation li {background:url(http://img.danawa.com/new/brandlog/img/bg_blue2_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_blue2_nav.gif) no-repeat;vertical-align:top;padding-top:0px;height:36px;position:relative;}
+.wrap_type2_blue .navigation li a {display:block;padding:11px 0 0px 0;height:22px;background:none;}
+.wrap_type2_blue .navigation li .arw {display:none;}
+.wrap_type2_blue .navigation li .btm_arw {height:9px;background:#004bad;position:absolute;left:20px;bottom:0px;_bottom:-1px;}
+
+.wrap_type2_blue .navigation .one_depth li .off .arw {background:url(http://img.danawa.com/new/brandlog/img/ico_blue2_arw.gif) no-repeat;background-position:0 0;padding:0 0 0 0;display:inline-block;width:11px;height:8px;position:absolute;right:6px;top:16px;}
+.wrap_type2_blue .navigation .one_depth li .on  .arw {background:url(http://img.danawa.com/new/brandlog/img/ico_blue2_arw.gif) no-repeat;background-position:0 0;padding:0 0 0 0;display:inline-block;width:11px;height:8px;position:absolute;right:6px;top:16px;}
+
+.wrap_type2_blue .navigation .one_depth li {float:left;text-align:center;position:relative;vertical-align:top;}
+.wrap_type2_blue .navigation .one_depth li .off {font-size:14px;font-weight:bold;color:#004bad;display:block;}
+.wrap_type2_blue .navigation .one_depth li .on  {font-size:14px;font-weight:bold;color:#004bad;display:block;}
+.wrap_type2_blue .navigation .one_depth li.last a {background:none;}
+.wrap_type2_blue .navigation .one_depth li .two_depth li.last a {padding-bottom:6px;}
+
+.wrap_type2_blue .navigation .one_depth li .two_depth {width:100%;min-height:30px;height:auto !important;_height:30px;padding:0px 6px 4px 6px;position:absolute;top:36px;left:14px;z-index:3;}
+.wrap_type2_blue .navigation .one_depth li .two_depth li {background:#004bad;clear:both;width:100%;text-align:left;zoom:1;overflow:hidden;height:28px;}
+.wrap_type2_blue .navigation .one_depth li .two_depth li a {color:#fff;padding:5px 0 3px 8px;display:block;position:relative;margin-left:0px !important;}
+.wrap_type2_blue .navigation .one_depth li .two_depth li:hover {background:#a0c1ed;}
+.wrap_type2_blue .navigation .one_depth li .two_depth li:hover a {color:#002b43;font-weight:bold;}
+.wrap_type2_blue .navigation .one_depth li .two_depth .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_arw2.gif) no-repeat;background-position:0 0px;width:4px;height:7px;position:absolute;right:6px;top:6px;display:block;}
+.wrap_type2_blue .navigation .one_depth li .two_depth li:hover .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_arw2.gif) no-repeat;background-position:0 -22px;position:absolute;right:6px;}
+.wrap_type2_blue .navigation .one_depth li .two_depth li.last {padding-bottom:0px;}
+.wrap_type2_blue .navigation .one_depth li.menu5 .two_depth,
+.wrap_type2_blue .navigation .one_depth li.menu5_select .two_depth {left:10px;}
+
+.wrap_type2_blue .navigation .one_depth li .two_depth ul {padding-top:0px;}
+
+.wrap_type2_blue .left_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_blue2_depth2.png) no-repeat;background-position:0 0;width:80px;height:5px;position:absolute;left:0px;top:0px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_blue2_depth2.png', sizingMethod='crop');}
+.wrap_type2_blue .right_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_blue2_depth2.png) no-repeat;background-position:100% 0;width:80px;height:5px;position:absolute;right:0px;top:0px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_blue2_depth2.png', sizingMethod='crop');}
+.wrap_type2_blue .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_blue2_depth2.png) no-repeat;background-position:0 100%;width:80px;height:11px;_height:9px;position:absolute;left:0px;bottom:-2px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_blue2_depth2.png', sizingMethod='crop');}
+.wrap_type2_blue .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_blue2_depth2.png) no-repeat;background-position:100% 100%;width:80px;height:11px;_height:9px;position:absolute;right:0px;bottom:-2px; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_blue2_depth2.png', sizingMethod='crop');}
+
+.wrap_type2_blue .navigation .menu1 {background-position:0px -400px;width:188px;}
+.wrap_type2_blue .navigation .menu2 {background-position:-188px -400px;width:188px;}
+.wrap_type2_blue .navigation .menu3 {background-position:-376px -400px;width:188px;}
+.wrap_type2_blue .navigation .menu4 {background-position:-564px -400px;width:188px;}
+.wrap_type2_blue .navigation .menu5 {background-position:-752px -400px;width:188px;}
+
+.wrap_type2_blue .navigation .menu1_select {background-position:0px -441px;width:188px;}
+.wrap_type2_blue .navigation .menu2_select {background-position:-188px -441px;width:188px;}
+.wrap_type2_blue .navigation .menu3_select {background-position:-376px -441px;width:188px;}
+.wrap_type2_blue .navigation .menu4_select {background-position:-564px -441px;width:188px;}
+.wrap_type2_blue .navigation .menu5_select {background-position:-752px -441px;width:188px;}
+
+.wrap_type2_blue .nave_1_type .menu1 {background-position:0px 0px;width:940px;}
+.wrap_type2_blue .nave_1_type .menu1_select {width:940px;background-position:0px -41px;}
+.wrap_type2_blue .nave_1_type .one_depth li .two_depth {width:898px;}
+.wrap_type2_blue .nave_1_type li .btm_arw {width:850px;}
+
+.wrap_type2_blue .nave_2_type .menu1 {background-position:0px -100px;width:470px;}
+.wrap_type2_blue .nave_2_type .menu2 {background-position:-470px -100px;width:470px;}
+.wrap_type2_blue .nave_2_type .menu1_select {width:470px;background-position:0px -141px;}
+.wrap_type2_blue .nave_2_type .menu2_select {width:470px;background-position:-470px -141px;}
+.wrap_type2_blue .nave_2_type .one_depth li .two_depth {width:430px;}
+.wrap_type2_blue .nave_2_type li .btm_arw {width:350px;}
+
+.wrap_type2_blue .nave_3_type .menu1 {background-position:0px -200px;width:315px;}
+.wrap_type2_blue .nave_3_type .menu2 {background-position:-315px -200px;width:314px;}
+.wrap_type2_blue .nave_3_type .menu3 {background-position:-629px -200px;width:311px;}
+.wrap_type2_blue .nave_3_type .menu1_select {background-position:0px -241px;width:315px;}
+.wrap_type2_blue .nave_3_type .menu2_select {background-position:-315px -241px;width:314px;}
+.wrap_type2_blue .nave_3_type .menu3_select {background-position:-629px -241px;width:311px;}
+.wrap_type2_blue .nave_3_type .one_depth li .two_depth {width:270px;}
+.wrap_type2_blue .nave_3_type li .btm_arw {width:250px;}
+
+.wrap_type2_blue .nave_4_type .menu1 {background-position:0px -300px;width:235px;}
+.wrap_type2_blue .nave_4_type .menu2 {background-position:-235px -300px;width:235px;}
+.wrap_type2_blue .nave_4_type .menu3 {background-position:-470px -300px;width:235px;}
+.wrap_type2_blue .nave_4_type .menu4 {background-position:-705px -300px;width:235px;}
+.wrap_type2_blue .nave_4_type .menu1_select {background-position:0px -341px;width:235px;}
+.wrap_type2_blue .nave_4_type .menu2_select {background-position:-235px -341px;width:235px;}
+.wrap_type2_blue .nave_4_type .menu3_select {background-position:-470px -341px;width:235px;}
+.wrap_type2_blue .nave_4_type .menu4_select {background-position:-705px -341px;width:235px;}
+.wrap_type2_blue .nave_4_type .one_depth li .two_depth {width:190px;}
+.wrap_type2_blue .nave_4_type li .btm_arw {width:150px;}
+
+.wrap_type2_blue .nave_5_type .one_depth li..menu1 {background-position:0px -400px;width:188px;}
+.wrap_type2_blue .nave_5_type .one_depth li..menu2 {background-position:-188px -400px;width:188px;}
+.wrap_type2_blue .nave_5_type .one_depth li..menu3 {background-position:-376px -400px;width:188px;}
+.wrap_type2_blue .nave_5_type .one_depth li..menu4 {background-position:-564px -400px;width:188px;}
+.wrap_type2_blue .nave_5_type .one_depth li..menu5 {background-position:-752px -400px;width:188px;}
+
+.wrap_type2_blue .nave_5_type .one_depth li..menu1_select {background-position:0px -441px;width:188px;}
+.wrap_type2_blue .nave_5_type .one_depth li..menu2_select {background-position:-188px -441px;width:188px;}
+.wrap_type2_blue .nave_5_type .one_depth li..menu3_select {background-position:-376px -441px;width:188px;}
+.wrap_type2_blue .nave_5_type .one_depth li..menu4_select {background-position:-564px -441px;width:188px;}
+.wrap_type2_blue .nave_5_type .one_depth li..menu5_select {background-position:-752px -441px;width:188px;}
+.wrap_type2_blue .nave_5_type .one_depth li .two_depth {width:150px;}
+.wrap_type2_blue .nave_5_type li .btm_arw {width:100px;}
+
+.wrap_type2_blue .nave_6_type .one_depth li.menu1 {background-position:0px -500px;width:158px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu2 {background-position:-158px -500px;width:157px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu3 {background-position:-158px -500px;width:157px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu4 {background-position:-158px -500px;width:157px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu5 {background-position:-158px -500px;width:157px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu6 {background-position:-786px -500px;width:154px;}
+
+.wrap_type2_blue .nave_6_type .one_depth li.menu1_select {background-position:0px -541px;width:158px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu2_select {background-position:-158px -541px;width:157px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu3_select {background-position:-158px -541px;width:157px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu4_select {background-position:-158px -541px;width:157px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu5_select {background-position:-158px -541px;width:157px;}
+.wrap_type2_blue .nave_6_type .one_depth li.menu6_select {background-position:-786px -541px;width:154px;}
+.wrap_type2_blue .nave_6_type .one_depth li .two_depth {width:110px;}
+
+
+.wrap_type2_blue .nave_7_type .one_depth li.menu1 {background-position:0px -600px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu2 {background-position:-134px -600px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu3 {background-position:-134px -600px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu4 {background-position:-134px -600px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu5 {background-position:-134px -600px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu6 {background-position:-134px -600px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu7 {background-position:-804px -600px;width:136px;}
+
+.wrap_type2_blue .nave_7_type .one_depth li.menu1_select {background-position:0px -641px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu2_select {background-position:-134px -641px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu3_select {background-position:-134px -641px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu4_select {background-position:-134px -641px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu5_select {background-position:-134px -641px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu6_select {background-position:-134px -641px;width:134px;}
+.wrap_type2_blue .nave_7_type .one_depth li.menu7_select {background-position:-804px -641px;width:136px;}
+.wrap_type2_blue .nave_7_type .one_depth li .two_depth {width:98px;margin-left:-2px;}
+
+.wrap_type2_blue .nave_8_type .one_depth li.menu1 {background-position:0px -700px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu2 {background-position:-117px -700px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu3 {background-position:-117px -700px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu4 {background-position:-117px -700px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu5 {background-position:-117px -700px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu6 {background-position:-117px -700px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu7 {background-position:-117px -700px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu8 {background-position:-819px -700px;width:121px;}
+
+.wrap_type2_blue .nave_8_type .one_depth li.menu1_select {background-position:0px -741px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu2_select {background-position:-117px -741px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu3_select {background-position:-117px -741px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu4_select {background-position:-117px -741px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu5_select {background-position:-117px -741px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu6_select {background-position:-117px -741px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu7_select {background-position:-117px -741px;width:117px;}
+.wrap_type2_blue .nave_8_type .one_depth li.menu8_select {background-position:-819px -741px;width:121px;}
+.wrap_type2_blue .nave_8_type .one_depth li .two_depth {width:80px;}
+.cut_size {font-size:12px !important;letter-spacing:-1px;}
+.cut_size_arrow {font-size:12px !important;letter-spacing:-1px;}
+
+
+/* type2_black */
+.type2_black .navigation li {background:url(http://img.danawa.com/new/brandlog/img/bg_black2_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_black2_nav.gif) no-repeat; }
+.type2_black .navigation li .btm_arw {background:#535353;}/* 8b8b8b */	 
+.type2_black .navigation .one_depth li .off {color:#000;}
+.type2_black .navigation .one_depth li .on  {color:#000;}
+.type2_black .navigation .one_depth li .two_depth li {background:#535353;}/* 8b8b8b */
+.type2_black .navigation .one_depth li .two_depth li a {color:#fff;}
+.type2_black .navigation .one_depth li .two_depth li:hover {background:#c5c5c5;}
+.type2_black .navigation .one_depth li .two_depth li:hover a {color:#000;}
+.type2_black .navigation .one_depth li .two_depth li:hover .arw2 {background-position:-20px -22px;}
+
+.type2_black .left_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_black2_depth2.png) no-repeat;background-position:0 0; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_black2_depth2.png', sizingMethod='crop');}
+.type2_black .right_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_black2_depth2.png) no-repeat;background-position:100% 0; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_black2_depth2.png', sizingMethod='crop');}
+.type2_black .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_black2_depth2.png) no-repeat;background-position:0 100%; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_black2_depth2.png', sizingMethod='crop');}
+.type2_black .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_black2_depth2.png) no-repeat;background-position:100% 100%; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_black2_depth2.png', sizingMethod='crop');}
+ 
+/* type2_green */
+.type2_green .navigation li {background:url(http://img.danawa.com/new/brandlog/img/bg_green2_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_green2_nav.gif) no-repeat;}
+.type2_green .navigation li .btm_arw {background:#006c29;}
+
+.type2_green .navigation .one_depth li .off {color:#006c29;}
+.type2_green .navigation .one_depth li .on  {color:#006c29;}
+.type2_green .navigation .one_depth li .two_depth li {background:#006c29;}
+.type2_green .navigation .one_depth li .two_depth li a {color:#fff;}
+.type2_green .navigation .one_depth li .two_depth li:hover {background:#86c99f;}
+.type2_green .navigation .one_depth li .two_depth li:hover a {color:#274300;}
+.type2_green .navigation .one_depth li .two_depth li:hover .arw2 {background-position:-40px -22px;}
+
+.type2_green .left_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_green2_depth2.png) no-repeat;background-position:0 0;}
+.type2_green .right_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_green2_depth2.png) no-repeat;background-position:100% 0;}
+.type2_green .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_green2_depth2.png) no-repeat;background-position:0 100%;}
+.type2_green .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_green2_depth2.png) no-repeat;background-position:100% 100%;}
+
+
+/* type2_orange */
+.type2_orange .navigation li {background:url(http://img.danawa.com/new/brandlog/img/bg_orange2_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_orange2_nav.gif) no-repeat;}
+.type2_orange .navigation li .btm_arw {background:#ff6600;}
+
+.type2_orange .navigation .one_depth li .off {color:#c12900;}
+.type2_orange .navigation .one_depth li .on  {color:#c12900;}
+.type2_orange .navigation .one_depth li .two_depth li {background:#ff6600;}
+.type2_orange .navigation .one_depth li .two_depth li a {color:#140400;}
+.type2_orange .navigation .one_depth li .two_depth li:hover {background:#ffd1b3;}
+.type2_orange .navigation .one_depth li .two_depth li:hover a {color:#c12900;}
+.type2_orange .navigation .one_depth li .two_depth li:hover .arw2 {background-position:-60px -23px;}
+
+.type2_orange .left_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_orange2_depth2.gif) no-repeat;background-position:0 0;}
+.type2_orange .right_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_orange2_depth2.gif) no-repeat;background-position:100% 0;}
+.type2_orange .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_orange2_depth2.gif) no-repeat;background-position:0 100%;}
+.type2_orange .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_orange2_depth2.gif) no-repeat;background-position:100% 100%;}
+
+/* type2_red */
+.type2_red .navigation li {background:url(http://img.danawa.com/new/brandlog/img/bg_red2_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_red2_nav.gif) no-repeat;}
+.type2_red .navigation li .btm_arw {background:#ca0023;}
+
+.type2_red .navigation .one_depth li .off {color:#ca0023;}
+.type2_red .navigation .one_depth li .on  {color:#ca0023;}
+.type2_red .navigation .one_depth li .two_depth li {background:#ca0023}
+.type2_red .navigation .one_depth li .two_depth li a {color:#fff;}
+.type2_red .navigation .one_depth li .two_depth li:hover {background:#f08699;}
+.type2_red .navigation .one_depth li .two_depth li:hover a {color:#650000;}
+.type2_red .navigation .one_depth li .two_depth li:hover .arw2 {background-position:-80px -23px;}
+
+.type2_red .left_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_red2_depth2.gif) no-repeat;background-position:0 0;}
+.type2_red .right_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_red2_depth2.gif) no-repeat;background-position:100% 0;}
+.type2_red .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_red2_depth2.gif) no-repeat;background-position:0 100%;}
+.type2_red .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_red2_depth2.gif) no-repeat;background-position:100% 100%;}
+
+/* type2_violet */
+.type2_violet .navigation li {background:url(http://img.danawa.com/new/brandlog/img/bg_violet2_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_violet2_nav.gif) no-repeat;}
+.type2_violet .navigation li .btm_arw {background:#493284;}
+
+.type2_violet .navigation .one_depth li .off {color:#493284;}
+.type2_violet .navigation .one_depth li .on  {color:#493284;}
+.type2_violet .navigation .one_depth li .two_depth li {background:#493284;}
+.type2_violet .navigation .one_depth li .two_depth li a {color:#fff;}
+.type2_violet .navigation .one_depth li .two_depth li:hover {background:#b5a8d5;}
+.type2_violet .navigation .one_depth li .two_depth li:hover a {color:#493284;}
+.type2_violet .navigation .one_depth li .two_depth li:hover .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_arw2.gif) no-repeat;background-position:-100px -22px;}
+
+.type2_violet .left_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_violet2_depth2.gif) no-repeat;background-position:0 0;}
+.type2_violet .right_arw1 {background:url(http://img.danawa.com/new/brandlog/img/bg_violet2_depth2.gif) no-repeat;background-position:100% 0;}
+.type2_violet .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_violet2_depth2.gif) no-repeat;background-position:0 100%;}
+.type2_violet .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_violet2_depth2.gif) no-repeat;background-position:100% 100%;}
+
+
+/* wrap_type3_blue */
+.wrap_type3_blue .navigation {height:33px;padding-top:79px;}
+.wrap_type3_blue .navigation_flash {position:absolute;top:79px;}
+.wrap_type3_blue .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_blue3_nav.gif) no-repeat #004bad;vertical-align:top;padding-top:0px;float:left;text-align:center;position:relative;height:33px;z-index:3;}
+.wrap_type3_blue .navigation .one_depth li a {display:block;padding:10px 0 0px 0;background:none;font-size:14px;font-weight:bold;color:#fff;height:23px;}
+.wrap_type3_blue .navigation .one_depth li .arw {}
+.wrap_type3_blue .navigation .one_depth li .off .arw {background:url(http://img.danawa.com/new/brandlog/img/bg_blue3_arw.gif) no-repeat;background-position:0 8px;padding:0 0px 0 0px;display:inline-block;width:11px;height:20px;position:absolute;right:2px;top:5px;}
+.wrap_type3_blue .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/bg_blue3_arw.gif) no-repeat;background-position:0 -25px;padding:0 0px 0 0px;display:inline-block;width:11px;height:20px;position:absolute;right:2px;top:5px;}
+
+.wrap_type3_blue .navigation .one_depth li.menu1 {background-position:0px -400px;width:188px;}
+.wrap_type3_blue .navigation .one_depth li.menu2 {background-position:-188px -400px;width:188px;}
+.wrap_type3_blue .navigation .one_depth li.menu3 {background-position:-376px -400px;width:188px;}
+.wrap_type3_blue .navigation .one_depth li.menu4 {background-position:-564px -400px;width:188px;}
+.wrap_type3_blue .navigation .one_depth li.menu5 {background-position:-752px -399px;width:188px;}
+
+.wrap_type3_blue .navigation .one_depth li.menu1_select {background-position:0px -438px;width:188px;}
+.wrap_type3_blue .navigation .one_depth li.menu2_select {background-position:0px -438px;width:188px;}
+.wrap_type3_blue .navigation .one_depth li.menu3_select {background-position:0px -438px;width:188px;}
+.wrap_type3_blue .navigation .one_depth li.menu4_select {background-position:0px -438px;width:188px;}
+.wrap_type3_blue .navigation .one_depth li.menu5_select {background-position:0px -438px;width:188px;}
+
+.wrap_type3_blue .navigation .one_depth li .on {font-size:14px;font-weight:bold;color:#054eac;display:block;}
+.wrap_type3_blue .navigation .one_depth li .off {font-size:14px;font-weight:bold;color:#fff;display:block;}
+
+.wrap_type3_blue .navigation .one_depth li .two_depth {width:100%;padding:0px;background:#fff;margin-top:0px;zoom:1;_float:left;}/* min-height:24px;height:auto !important;_height:30px; */
+.wrap_type3_blue .navigation .one_depth li .two_depth ul {padding-top:0px;}
+.wrap_type3_blue .navigation .one_depth li .two_depth li {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) no-repeat 7px 10px;clear:both;width:100%;text-align:left;zoom:1;overflow:hidden;border:none;}	/* height:22px; */
+.wrap_type3_blue .navigation .one_depth li .two_depth li a {color:#505050;padding:5px 5px 3px 14px;display:block;position:relative;font-size:12px;font-weight:normal;margin-left:0px !important;}
+
+.wrap_type3_blue .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #004bad no-repeat 7px -23px;}
+.wrap_type3_blue .navigation .one_depth li .two_depth li:hover a {color:#fff;font-weight:bold;}
+.wrap_type3_blue .navigation .one_depth li .two_depth li:hover .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_blue3_arw.gif) no-repeat;background-position:0 0px;position:absolute;right:11px;}
+.wrap_type3_blue .navigation .one_depth li .two_depth li.last {padding-bottom:0px;}
+.wrap_type3_blue .navigation .one_depth li .two_depth .arw2 {width:4px;height:7px;position:absolute;right:11px;top:6px;display:block;}
+.wrap_type3_blue .navigation .one_depth li .two_depth .bg_white {background:#fff;clear:both;zoom:1;overflow:hidden;border:2px solid #004bad;border-top:none !important;}
+
+
+.wrap_type3_blue .nave_1_type .one_depth li.menu1 {background-position:0px 0px;width:940px;}
+.wrap_type3_blue .nave_1_type .one_depth li.menu1_select {background-position:0px -38px;width:940px; background-color:#fff;}
+
+.wrap_type3_blue .nave_2_type .one_depth li.menu1        {background-position:0px -100px;width:470px;}
+.wrap_type3_blue .nave_2_type .one_depth li.menu2        {background-position:-470px -100px;width:470px;}
+.wrap_type3_blue .nave_2_type .one_depth li.menu1_select {background-position:0px -138px;width:470px; background-color:#fff;}
+.wrap_type3_blue .nave_2_type .one_depth li.menu2_select {background-position:-470px -138px;width:470px; background-color:#fff;}
+
+.wrap_type3_blue .nave_3_type .one_depth li.menu1        {background-position:0px -200px;width:314px;}
+.wrap_type3_blue .nave_3_type .one_depth li.menu2        {background-position:-314px -200px;width:314px;}
+.wrap_type3_blue .nave_3_type .one_depth li.menu3        {background-position:-629px -200px;width:312px;}
+.wrap_type3_blue .nave_3_type .one_depth li.menu1_select {background-position:0px -238px;width:314px; background-color:#fff;}
+.wrap_type3_blue .nave_3_type .one_depth li.menu2_select {background-position:-313px -238px;width:314px; background-color:#fff;}
+.wrap_type3_blue .nave_3_type .one_depth li.menu3_select {background-position:-628px -238px;width:312px; background-color:#fff;}
+
+.wrap_type3_blue .nave_4_type .one_depth li.menu1        {background-position:0px -300px;width:235px;}
+.wrap_type3_blue .nave_4_type .one_depth li.menu2        {background-position:-236px -300px;width:235px;}
+.wrap_type3_blue .nave_4_type .one_depth li.menu3        {background-position:-236px -300px;width:235px;}
+.wrap_type3_blue .nave_4_type .one_depth li.menu4        {background-position:-706px -300px;width:235px;}
+.wrap_type3_blue .nave_4_type .one_depth li.menu1_select {background-position:0px -338px;width:235px; background-color:#fff;}
+.wrap_type3_blue .nave_4_type .one_depth li.menu2_select {background-position:0px -338px;width:235px; background-color:#fff;}
+.wrap_type3_blue .nave_4_type .one_depth li.menu3_select {background-position:0px -338px;width:235px; background-color:#fff;}
+.wrap_type3_blue .nave_4_type .one_depth li.menu4_select {background-position:0px -338px;width:235px; background-color:#fff;}
+
+.wrap_type3_blue .nave_5_type .one_depth li.menu1 {background-position:0px -400px;width:188px;}
+.wrap_type3_blue .nave_5_type .one_depth li.menu2 {background-position:-188px -400px;width:188px;}
+.wrap_type3_blue .nave_5_type .one_depth li.menu3 {background-position:-376px -400px;width:188px;}
+.wrap_type3_blue .nave_5_type .one_depth li.menu4 {background-position:-564px -400px;width:188px;}
+.wrap_type3_blue .nave_5_type .one_depth li.menu5 {background-position:-752px -400px;width:188px;}
+
+.wrap_type3_blue .nave_5_type .one_depth li.menu1_select {background-position:0px -438px;width:188px; background-color:#fff;}
+.wrap_type3_blue .nave_5_type .one_depth li.menu2_select {background-position:0px -438px;width:188px; background-color:#fff;}
+.wrap_type3_blue .nave_5_type .one_depth li.menu3_select {background-position:0px -438px;width:188px; background-color:#fff;}
+.wrap_type3_blue .nave_5_type .one_depth li.menu4_select {background-position:0px -438px;width:188px; background-color:#fff;}
+.wrap_type3_blue .nave_5_type .one_depth li.menu5_select {background-position:0px -438px;width:188px; background-color:#fff;}
+.wrap_type3_blue .nave_5_type .one_depth li.menu5_select .two_depth {padding-right:2px;}
+
+.wrap_type3_blue .nave_6_type .one_depth li.menu1 {background-position:0px -500px;width:157px;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu2 {background-position:-158px -500px;width:157px;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu3 {background-position:-158px -500px;width:157px;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu4 {background-position:-158px -500px;width:157px;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu5 {background-position:-158px -500px;width:157px;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu6 {background-position:-158px -500px;width:155px;}
+
+.wrap_type3_blue .nave_6_type .one_depth li.menu1_select {background-position:0px -538px;width:157px; background-color:#fff;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu2_select {background-position:0px -538px;width:157px; background-color:#fff;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu3_select {background-position:0px -538px;width:157px; background-color:#fff;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu4_select {background-position:0px -538px;width:157px; background-color:#fff;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu5_select {background-position:0px -538px;width:157px; background-color:#fff;}
+.wrap_type3_blue .nave_6_type .one_depth li.menu6_select {background-position:-785px -538px;width:155px; background-color:#fff;}
+
+.wrap_type3_blue .nave_7_type .one_depth li.menu1 {background-position:0px -600px;width:134px;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu2 {background-position:-134px -600px;width:134px;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu3 {background-position:-134px -600px;width:134px;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu4 {background-position:-134px -600px;width:134px;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu5 {background-position:-134px -600px;width:134px;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu6 {background-position:-134px -600px;width:134px;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu7 {background-position:-804px -600px;width:136px;}
+
+.wrap_type3_blue .nave_7_type .one_depth li.menu1_select {background-position:0px -638px;width:134px; background-color:#fff;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu2_select {background-position:0px -638px;width:134px; background-color:#fff;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu3_select {background-position:0px -638px;width:134px; background-color:#fff;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu4_select {background-position:0px -638px;width:134px; background-color:#fff;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu5_select {background-position:0px -638px;width:134px; background-color:#fff;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu6_select {background-position:0px -638px;width:134px; background-color:#fff;}
+.wrap_type3_blue .nave_7_type .one_depth li.menu7_select {background-position:-804px -638px;width:136px; background-color:#fff;}
+
+.wrap_type3_blue .nave_8_type .one_depth li.menu1 {background-position:0px -700px;width:117px;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu2 {background-position:-117px -700px;width:117px;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu3 {background-position:-117px -700px;width:117px;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu4 {background-position:-117px -700px;width:117px;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu5 {background-position:-117px -700px;width:117px;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu6 {background-position:-117px -700px;width:117px;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu7 {background-position:-117px -700px;width:117px;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu8 {background-position:-819px -700px;width:121px;}
+
+.wrap_type3_blue .nave_8_type .one_depth li.menu1_select {background-position:0px -738px;width:117px; background-color:#fff;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu2_select {background-position:0px -738px;width:117px; background-color:#fff;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu3_select {background-position:0px -738px;width:117px; background-color:#fff;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu4_select {background-position:0px -738px;width:117px; background-color:#fff;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu5_select {background-position:0px -738px;width:117px; background-color:#fff;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu6_select {background-position:0px -738px;width:117px; background-color:#fff;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu7_select {background-position:0px -738px;width:117px; background-color:#fff;}
+.wrap_type3_blue .nave_8_type .one_depth li.menu8_select {background-position:-819px -738px;width:121px; background-color:#fff;}	
+
+/* type3_black */
+.type3_black .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_black3_nav.gif) no-repeat #535353;}
+.type3_black .navigation .one_depth li .on {color:#000;}
+.type3_black .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #535353 no-repeat 7px -23px;}
+.type3_black .navigation .one_depth li .two_depth .bg_white {border:2px solid #535353;}
+.type3_black .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/bg_blue3_arw.gif) no-repeat;background-position:-20px -25px;padding:0 0px 0 0px;display:inline-block;width:11px;height:20px;position:absolute;right:8px;top:5px;}
+
+
+/* type3_green */
+.type3_green .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_green3_nav.gif) no-repeat #00702a;}
+.type3_green .navigation .one_depth li .on {color:#00702a;}
+.type3_green .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #00702a no-repeat 7px -23px;}
+.type3_green .navigation .one_depth li .two_depth .bg_white {border:2px solid #00702a;}
+.type3_green .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/bg_blue3_arw.gif) no-repeat;background-position:-40px -25px;padding:0 0px 0 0px;display:inline-block;width:11px;height:20px;position:absolute;right:8px;top:5px;}
+
+
+/* type3_orange */
+.type3_orange .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_orange3_nav.gif) no-repeat;color:#000;}
+.type3_orange .navigation .one_depth li .on {color:#ff6600;}
+.type3_orange .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #ff8533 no-repeat 7px -23px;}
+.type3_orange .navigation .one_depth li .two_depth .bg_white {border:2px solid #ff6600;}
+.type3_orange .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/bg_blue3_arw.gif) no-repeat;background-position:-60px -25px;padding:0 0px 0 0px;display:inline-block;width:11px;height:20px;position:absolute;right:8px;top:5px;}
+.type3_orange .navigation .one_depth li .two_depth li:hover a {color:#280b00;}
+.type3_orange .navigation .one_depth li .off {color:#280b00;}
+.type3_orange .navigation .one_depth li.menu1_select .cut_size_arrow {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu2_select .cut_size_arrow {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu3_select .cut_size_arrow {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu4_select .cut_size_arrow {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu5_select .cut_size_arrow {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu6_select .cut_size_arrow {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu7_select .cut_size_arrow {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu8_select .cut_size_arrow {color:#cc2b00;}
+
+.type3_orange .navigation .one_depth li.menu1_select .cut_size {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu2_select .cut_size {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu3_select .cut_size {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu4_select .cut_size {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu5_select .cut_size {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu6_select .cut_size {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu7_select .cut_size {color:#cc2b00;}
+.type3_orange .navigation .one_depth li.menu8_select .cut_size {color:#cc2b00;}
+
+
+/* type3_red */
+.type3_red .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_red3_nav.gif) no-repeat #ca0023;}
+.type3_red .navigation .one_depth li .on {color:#ca0023;}
+.type3_red .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #ca0023 no-repeat 7px -23px;}
+.type3_red .navigation .one_depth li .two_depth .bg_white {border:2px solid #ca0023;}
+.type3_red .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/bg_blue3_arw.gif) no-repeat;background-position:-80px -25px;padding:0 0px 0 0px;display:inline-block;width:11px;height:20px;position:absolute;right:8px;top:5px;}
+
+
+/* type3_violet */
+.type3_violet .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_violet3_nav.gif) no-repeat #493284;}
+.type3_violet .navigation .one_depth li .on {color:#493284;}
+.type3_violet .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #493284 no-repeat 7px -23px;}
+.type3_violet .navigation .one_depth li .two_depth .bg_white {border:2px solid #493284;}
+.type3_violet .navigation .one_depth li .on .arw {background:url(http://img.danawa.com/new/brandlog/img/bg_blue3_arw.gif) no-repeat;background-position:-100px -25px;padding:0 0px 0 0px;display:inline-block;width:11px;height:20px;position:absolute;right:8px;top:5px;}
+
+
+/* wrap_type4_blue  */
+.wrap_type4_blue .navigation {height:32px;padding-top:80px;background:url(http://img.danawa.com/new/brandlog/img/bg_blue4_nav_line.gif) repeat-x left bottom;}
+.wrap_type4_blue .navigation_flash {position:absolute;top:80px;}
+.wrap_type4_blue .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_blue4_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_blue4_nav.gif) no-repeat;vertical-align:top;padding-top:0px;float:left;text-align:center;position:relative;height:32px;}
+.wrap_type4_blue .navigation .one_depth li a {display:block;padding:9px 0 0px 0;background:none;font-size:14px;font-weight:bold;color:#fff;height:23px;}
+.wrap_type4_blue .navigation .one_depth li .arw {}
+
+.wrap_type4_blue .navigation .one_depth li.menu1 {background-position:-470px 0px;width:188px;z-index:5;margin-right:-6px;}
+.wrap_type4_blue .navigation .one_depth li.menu2 {background-position:-704px 0px;width:193px;z-index:4;margin-right:-6px;}
+.wrap_type4_blue .navigation .one_depth li.menu3 {background-position:-704px 0px;width:193px;z-index:3;margin-right:-5px;}
+.wrap_type4_blue .navigation .one_depth li.menu4 {background-position:-704px 0px;width:193px;z-index:2;margin-right:-5px;}
+.wrap_type4_blue .navigation .one_depth li.menu5 {background-position:-704px 0px;width:193px;z-index:1;margin-right:0px;}
+
+.wrap_type4_blue .navigation .one_depth li.menu1_select {background-position:0 0px;width:188px;z-index:9;margin-right:-6px;}
+.wrap_type4_blue .navigation .one_depth li.menu2_select {background-position:-202px 0px;width:193px;z-index:9;margin-right:-6px;}
+.wrap_type4_blue .navigation .one_depth li.menu3_select {background-position:-202px 0px;width:193px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .navigation .one_depth li.menu4_select {background-position:-202px 0px;width:193px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .navigation .one_depth li.menu5_select {background-position:-202px 0px;width:193px;z-index:9;margin-right:0px;}
+.wrap_type4_blue .nave_5_type .one_depth li.menu5_select .two_depth {width:195px;}
+
+.wrap_type4_blue .navigation .one_depth li .arw {background:url(http://img.danawa.com/new/brandlog/img/bg_blue4_arw.gif) no-repeat;background-position:0 0px;padding:0 0px 0 0px;display:inline-block;width:11px;height:8px;position:absolute;right:17px;top:14px;}
+
+.wrap_type4_blue .navigation .one_depth li.menu1_select a,
+.wrap_type4_blue .navigation .one_depth li.menu2_select a,
+.wrap_type4_blue .navigation .one_depth li.menu3_select a,
+.wrap_type4_blue .navigation .one_depth li.menu4_select a,
+.wrap_type4_blue .navigation .one_depth li.menu5_select a {font-weight:bold;color:#fff;display:block;}
+.wrap_type4_blue .navigation .one_depth li.menu6_select a {font-weight:bold;color:#fff;display:block;}/* font-size:12px; */
+.wrap_type4_blue .navigation .one_depth li.menu7_select a {font-weight:bold;color:#fff;display:block;}/* font-size:12px; */
+.wrap_type4_blue .navigation .one_depth li.menu8_select a {font-weight:bold;color:#fff;display:block;}	/* font-size:12px; */
+
+.wrap_type4_blue .navigation .one_depth li .two_depth {width:100%;padding:0px;min-height:22px;height:auto !important;_height:22px;background:#fff;margin-top:0px;position:absolute;top:32px;*left:0px;_left:0px;}/* min-height:30px;height:auto !important;_height:30px; */
+.wrap_type4_blue .navigation .one_depth li .two_depth ul {padding-top:0px;}
+.wrap_type4_blue .navigation .one_depth li .two_depth li {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) no-repeat 7px 10px;clear:both;width:100%;text-align:left;zoom:1;overflow:hidden;border:none;height:22px;}
+
+.wrap_type4_blue .navigation .one_depth li .two_depth li a {color:#505050;padding:5px 0 3px 19px;display:block;position:relative;font-size:12px;font-weight:normal;margin-left:0px !important;}
+.wrap_type4_blue .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #0b50ab no-repeat 7px -23px;}
+.wrap_type4_blue .navigation .one_depth li .two_depth li:hover a {color:#fff;font-weight:bold;}
+.wrap_type4_blue .navigation .one_depth li .two_depth li:hover .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_blue3_arw.gif) no-repeat;background-position:0 0px;position:absolute;right:11px;}
+.wrap_type4_blue .navigation .one_depth li .two_depth li.last {padding-bottom:2px;}
+.wrap_type4_blue .navigation .one_depth li .two_depth .arw2 {width:4px;height:7px;position:absolute;right:10px;top:7px;display:block;}
+.wrap_type4_blue .navigation .one_depth li .two_depth .bg_white {background:#fff;clear:both;zoom:1;overflow:hidden;border-left:2px solid #0b50ab;border-right:2px solid #2367c0;border-bottom:2px solid #2367c0;}
+.wrap_type4_blue .left_arw2 {display:none;}
+.wrap_type4_blue .right_arw2 {display:none;}
+/*
+.wrap_type4_blue .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_blue4_depth2_btm.gif) no-repeat;background-position:0 100%;width:100px;height:4px;position:absolute;left:0px;bottom:0px;}
+.wrap_type4_blue .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_blue4_depth2_btm.gif) no-repeat;background-position:100% 100%;width:100px;height:4px;position:absolute;right:0px;bottom:0px;}
+ */
+
+.wrap_type4_blue .nave_6_type .one_depth li.menu1 {background-position:-470px -100px;width:157px;z-index:6;margin-right:-5px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu2 {background-position:-704px -100px;width:161px;z-index:5;margin-right:-5px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu3 {background-position:-704px -100px;width:161px;z-index:4;margin-right:-5px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu4 {background-position:-704px -100px;width:161px;z-index:3;margin-right:-4px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu5 {background-position:-704px -100px;width:161px;z-index:2;margin-right:-4px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu6 {background-position:-704px -100px;width:161px;z-index:1;margin-right:0px;}
+.wrap_type4_blue .nave_6_type .one_depth li a {margin-left:-18px;}
+
+.wrap_type4_blue .nave_6_type .one_depth li.menu1_select {background-position:0 -100px;width:157px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu2_select {background-position:-202px -100px;width:161px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu3_select {background-position:-202px -100px;width:161px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu4_select {background-position:-202px -100px;width:161px;z-index:9;margin-right:-4px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu5_select {background-position:-202px -100px;width:161px;z-index:9;margin-right:-4px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu6_select {background-position:-202px -100px;width:161px;z-index:9;margin-right:0px;}
+.wrap_type4_blue .nave_6_type .one_depth li.menu6_select .two_depth {width:161px;}
+
+.wrap_type4_blue .nave_7_type .one_depth li.menu1 {background-position:-470px -201px;width:134px;z-index:6;margin-right:-6px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu2 {background-position:-704px -201px;width:140px;z-index:5;margin-right:-6px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu3 {background-position:-704px -201px;width:140px;z-index:4;margin-right:-6px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu4 {background-position:-704px -201px;width:140px;z-index:3;margin-right:-6px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu5 {background-position:-704px -201px;width:140px;z-index:2;margin-right:-5px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu6 {background-position:-704px -201px;width:140px;z-index:2;margin-right:-5px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu7 {background-position:-704px -201px;width:140px;z-index:1;margin-right:0px;}
+
+
+.wrap_type4_blue .nave_7_type .one_depth li.menu1_select {background-position:0 -201px;width:134px;z-index:9;margin-right:-6px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu2_select {background-position:-202px -201px;width:140px;z-index:9;margin-right:-6px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu3_select {background-position:-202px -201px;width:140px;z-index:9;margin-right:-6px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu4_select {background-position:-202px -201px;width:140px;z-index:9;margin-right:-6px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu5_select {background-position:-202px -201px;width:140px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu6_select {background-position:-202px -201px;width:140px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu7_select {background-position:-202px -201px;width:140px;z-index:9;margin-right:0px;}
+.wrap_type4_blue .nave_7_type .one_depth li.menu7_select .two_depth {width:140px;}
+.wrap_type4_blue .nave_7_type .one_depth li a {font-size:14px;margin-left:-18px;}
+
+.wrap_type4_blue .nave_8_type .one_depth li.menu1 {background-position:-470px -300px;width:117px;z-index:8;margin-right:-6px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu2 {background-position:-704px -300px;width:123px;z-index:7;margin-right:-6px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu3 {background-position:-704px -300px;width:123px;z-index:6;margin-right:-6px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu4 {background-position:-704px -300px;width:123px;z-index:5;margin-right:-5px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu5 {background-position:-704px -300px;width:123px;z-index:4;margin-right:-5px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu6 {background-position:-704px -300px;width:123px;z-index:3;margin-right:-5px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu7 {background-position:-704px -300px;width:123px;z-index:2;margin-right:-5px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu8 {background-position:-704px -300px;width:123px;z-index:1;margin-right:0px;}
+
+.wrap_type4_blue .nave_8_type .one_depth li.menu1_select {background-position:0 -300px;width:117px;z-index:9;margin-right:-6px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu2_select {background-position:-202px -300px;width:123px;z-index:9;margin-right:-6px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu3_select {background-position:-202px -300px;width:123px;z-index:9;margin-right:-6px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu4_select {background-position:-202px -300px;width:123px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu5_select {background-position:-202px -300px;width:123px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu6_select {background-position:-202px -300px;width:123px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu7_select {background-position:-202px -300px;width:123px;z-index:9;margin-right:-5px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu8_select {background-position:-202px -300px;width:123px;z-index:9;margin-right:0px;}
+.wrap_type4_blue .nave_8_type .one_depth li.menu8_select .two_depth {width:123px;}
+.wrap_type4_blue .nave_8_type .one_depth li a {font-size:14px;margin-left:-18px;}
+
+/* type4_black  */
+.type4_black .navigation {background:url(http://img.danawa.com/new/brandlog/img/bg_black4_nav_line.gif) repeat-x left bottom;}
+.type4_black .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_black4_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_black4_nav.gif) no-repeat;}
+
+.type4_black .navigation .one_depth li.menu1_select a,
+.type4_black .navigation .one_depth li.menu2_select a,
+.type4_black .navigation .one_depth li.menu3_select a,
+.type4_black .navigation .one_depth li.menu4_select a,
+.type4_black .navigation .one_depth li.menu5_select a,
+.type4_black .navigation .one_depth li.menu6_select a,
+.type4_black .navigation .one_depth li.menu7_select a,
+.type4_black .navigation .one_depth li.menu8_select a {color:#000;}
+
+.type4_black .navigation .one_depth li .two_depth li {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) no-repeat 7px 10px;}
+.type4_black .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #8b8b8b no-repeat 7px -23px;}
+.type4_black .navigation .one_depth li .two_depth li:hover .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_black3_arw.gif) no-repeat;background-position:0 0px;}
+.type4_black .navigation .one_depth li .two_depth .bg_white {border-left:2px solid #8b8b8b;border-right:2px solid #8b8b8b;border-bottom:2px solid #8b8b8b;}	 
+
+/*
+.type4_black .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_black4_depth2_btm.gif) no-repeat;background-position:0 100%;}
+.type4_black .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_black4_depth2_btm.gif) no-repeat;background-position:100% 100%;}	  
+*/
+
+/* type4_green  */
+.type4_green .navigation {background:url(http://img.danawa.com/new/brandlog/img/bg_green4_nav_line.gif) repeat-x left bottom;}
+.type4_green .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_green4_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_green4_nav.gif) no-repeat;}
+
+.type4_green .navigation .one_depth li .two_depth li {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) no-repeat 7px 10px;}
+.type4_green .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #006c29 no-repeat 7px -23px;}
+.type4_green .navigation .one_depth li .two_depth li:hover .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_green3_arw.gif) no-repeat;background-position:0 0px;}
+.type4_green .navigation .one_depth li .two_depth .bg_white {border-left:2px solid #006c29;border-right:2px solid #006c29;border-bottom:2px solid #006c29;}
+
+/*
+.type4_green .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_green4_depth2_btm.gif) no-repeat;background-position:0 100%;}
+.type4_green .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_green4_depth2_btm.gif) no-repeat;background-position:100% 100%;}
+*/
+/* type4_orange  */
+.type4_orange .navigation {background:url(http://img.danawa.com/new/brandlog/img/bg_orange4_nav_line.gif) repeat-x left bottom;}
+.type4_orange .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_orange4_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_orange4_nav.gif) no-repeat;}
+
+.type4_orange .navigation .one_depth li .two_depth li {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) no-repeat 7px 10px;}
+.type4_orange .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #ff6600 no-repeat 7px -23px;}
+.type4_orange .navigation .one_depth li .two_depth li:hover .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_orange3_arw.gif) no-repeat;background-position:0 0px;}
+.type4_orange .navigation .one_depth li .two_depth .bg_white {border-left:2px solid #ff6600;border-right:2px solid #ff6600;border-bottom:2px solid #ff6600;}
+.type4_orange .navigation .one_depth li .two_depth li:hover a {color:#280b00;}
+.type4_orange .navigation .one_depth li a:hover {color:#280b00;} 
+ /*
+.type4_orange .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_orange4_depth2_btm.gif) no-repeat;background-position:0 100%;}
+.type4_orange .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_orange4_depth2_btm.gif) no-repeat;background-position:100% 100%;}
+ */
+
+
+
+ type4_orange .navigation .one_depth li.menu1_select .cut_size_arrow {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu2_select .cut_size_arrow {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu3_select .cut_size_arrow {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu4_select .cut_size_arrow {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu5_select .cut_size_arrow {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu6_select .cut_size_arrow {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu7_select .cut_size_arrow {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu8_select .cut_size_arrow {color:#280b00;}
+
+.type4_orange .navigation .one_depth li.menu1_select .cut_size {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu2_select .cut_size {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu3_select .cut_size {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu4_select .cut_size {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu5_select .cut_size {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu6_select .cut_size {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu7_select .cut_size {color:#280b00;}
+.type4_orange .navigation .one_depth li.menu8_select .cut_size {color:#280b00;}
+
+/* type4_red  */
+.type4_red .navigation {background:url(http://img.danawa.com/new/brandlog/img/bg_red4_nav_line.gif) repeat-x left bottom;}
+.type4_red .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_red4_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_red4_nav.gif) no-repeat;}
+
+.type4_red .navigation .one_depth li .two_depth li {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) no-repeat 7px 10px;}
+.type4_red .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #ca0023 no-repeat 7px -23px;}
+.type4_red .navigation .one_depth li .two_depth li:hover .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_red3_arw.gif) no-repeat;background-position:0 0px;}
+.type4_red .navigation .one_depth li .two_depth .bg_white {border-left:2px solid #ca0023;border-right:2px solid #ca0023;border-bottom:2px solid #ca0023;}
+/*
+.type4_red .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_red4_depth2_btm.gif) no-repeat;background-position:0 100%;}
+.type4_red .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_red4_depth2_btm.gif) no-repeat;background-position:100% 100%;}
+*/
+/* type4_violet  */
+.type4_violet .navigation {background:url(http://img.danawa.com/new/brandlog/img/bg_violet4_nav_line.gif) repeat-x left bottom;}
+.type4_violet .navigation .one_depth li {background:url(http://img.danawa.com/new/brandlog/img/bg_violet4_nav.png) no-repeat;_background:url(http://img.danawa.com/new/brandlog/img/bg_violet4_nav.gif) no-repeat;}
+
+.type4_violet .navigation .one_depth li .two_depth li {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) no-repeat 7px 10px;}
+.type4_violet .navigation .one_depth li .two_depth li:hover {background:url(http://img.danawa.com/new/brandlog/img/bul_li_dot.gif) #493284 no-repeat 7px -23px;}
+.type4_violet .navigation .one_depth li .two_depth li:hover .arw2 {background:url(http://img.danawa.com/new/brandlog/img/icon_depth2_violet3_arw.gif) no-repeat;background-position:0 0px;}
+.type4_violet .navigation .one_depth li .two_depth .bg_white {border-left:2px solid #6b51aa;border-right:2px solid #493284;border-bottom:2px solid #493284;}
+
+ /*
+.type4_violet .left_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_violet4_depth2_btm.gif) no-repeat;background-position:0 100%;}
+.type4_violet .right_arw2 {background:url(http://img.danawa.com/new/brandlog/img/bg_violet4_depth2_btm.gif) no-repeat;background-position:100% 100%;}
+*/
+/* wrap_type5_blue */
+.navi5 {}
+.wrap_type5_blue .depth1 {margin:0 1px;padding:0;}
+.wrap_type5_blue .depth1 li {list-style:none;background:url(http://img.danawa.com/new/brandlog/img/bg_blue5_line.gif) #f3f3f3 repeat-x left bottom;vertical-align:top;position:relative;}
+.wrap_type5_blue .depth1 li.close a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_oc.gif) no-repeat;background-position:8px 18px;_background-position:8px 14px;color:#004298;font-weight:bold;font-size:14px;padding:16px 0 14px 22px;_padding:12px 0 0px 22px;display:block;letter-spacing:-1px;}
+.wrap_type5_blue .depth1 li a:hover {text-decoration:none;}
+.wrap_type5_blue .depth1 li.first a {padding:19px 0 15px 22px;_padding:19px 0 0px 22px;background-position:8px 20px;}
+.wrap_type5_blue .depth1 li.open {}
+.wrap_type5_blue .depth1 li.open .left_bg {background:#004bad;width:161px;min-height:32px;height:auto !important;_height:32px;margin-left:-11px;position:relative;_margin-top:6px;}
+.wrap_type5_blue .depth1 li.open .left_bg .btm_arw {background:url(http://img.danawa.com/new/brandlog/img/bg_blue5_depth1_arw.gif) no-repeat left bottom;width:10px;height:8px;display:block;position:absolute;left:0px;bottom:-8px;}
+.wrap_type5_blue .depth1 li.open .left_bg a {padding-right:10px;}
+.wrap_type5_blue .depth1 li.close .left_bg a {padding-right:10px;}
+.wrap_type5_blue .depth1 li .cut_size {width:120px;}
+.wrap_type5_blue .depth1 li .depth2 .cut_size {width:104px;}
+
+
+
+.wrap_type5_blue .depth1 li.open a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_oc.gif) #004bad no-repeat;background-position:8px -279px;color:#fff;font-weight:bold;font-size:14px;padding:10px 0 5px 22px;display:block;letter-spacing:-1px;}
+.wrap_type5_blue .depth1 li .depth2 {margin:14px 0 0px 26px;padding-bottom:9px;}
+.wrap_type5_blue .depth1 li .depth2 li {background:none;margin-bottom:5px;_margin-bottom:0px;list-style:none;vertical-align:top;}
+.wrap_type5_blue .depth1 li .depth2 li a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_depth2.gif) no-repeat left top;padding:0 0 0 14px;color:#000;font-weight:normal;font-size:12px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;letter-spacing:0px;}
+.wrap_type5_blue .depth1 li .depth2 li.off a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_depth2.gif) no-repeat left top;padding:0 0 0 14px;color:#000;font-weight:normal;font-size:12px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;width:100px;}
+.wrap_type5_blue .depth1 li .depth2 li.on a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_depth2.gif) no-repeat left top;padding:0 0 0 14px;color:#000 !important;font-weight:bold;font-size:12px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;width:100px;}
+
+/* #0e65bb */
+.wrap_type5_blue .depth1 li.opening {}
+.wrap_type5_blue .depth1 li.opening .left_bg {}
+.wrap_type5_blue .depth1 li.opening .left_bg .btm_arw {}
+.wrap_type5_blue .depth1 li.opening a {background:url(http://img.danawa.com/new/brandlog/img/ico_blue5_minusb.gif) no-repeat;background-position:8px 18px;_background-position:8px 14px;color:#004298;font-weight:bold;font-size:14px;padding:16px 0 14px 22px;_padding:12px 0 0px 22px;display:block;letter-spacing:-1px;}
+.wrap_type5_blue .depth1 li.opening .left_bg a {padding-right:10px;}
+.wrap_type5_blue .depth1 li.opening .depth2 {margin:0px 0 0px 26px;padding-bottom:9px;}
+.wrap_type5_blue .depth1 li.opening .depth2 li {background:none;margin-bottom:5px;_margin-bottom:0px;list-style:none;vertical-align:top;}
+.wrap_type5_blue .depth1 li.opening .depth2 li a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_depth2.gif) no-repeat left top;padding:0 0 0 14px;color:#000;font-weight:normal;font-size:12px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+.wrap_type5_blue .depth1 li.opening .depth2 li.off a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_depth2.gif) no-repeat left top;padding:0 0 0 14px;color:#000;font-weight:normal;font-size:12px;width:100px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+.wrap_type5_blue .depth1 li.opening .depth2 li.on a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_depth2.gif) no-repeat left top;padding:0 0 0 14px;color:#000;font-weight:bold;font-size:12px;width:100px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+.wrap_type5_blue .depth1 li.no_icon a {background:none !important;padding:16px 0 14px 8px;}
+.wrap_type5_blue .depth1 li.no_icon .cut_size {width:140px;}
+.wrap_type5_blue .depth1 li.no_icon .depth2 li  .cut_size	 {width:100px;}
+
+/* type5_black */
+.type5_black .depth1 li.open .left_bg .btm_arw {position:absolute;background:url(http://img.danawa.com/new/brandlog/img/bg_black5_depth1_arw.gif) no-repeat left bottom;}
+.type5_black .depth1 li.open .left_bg {background:#392372;width:161px;min-height:32px;height:auto !important;_height:32px;}
+.type5_black .depth1 li.open a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_oc.gif) #392372 no-repeat;background-position:10px -279px;}
+.type5_black .depth1 li .depth2 li.on a {color:#392372;font-weight:bold;font-size:12px;}
+.type5_black .depth1 li.close a {color:#392372;}
+.type5_black .depth1 li.opening a {color:#392372;}
+.type5_black .depth1 li.opening .depth2 li a:hover {color:#000;}
+
+/* type5_cyan */
+.type5_cyan .depth1 li.open .left_bg .btm_arw {position:absolute;background:url(http://img.danawa.com/new/brandlog/img/bg_cyan5_depth1_arw.gif) no-repeat left bottom;}
+.type5_cyan .depth1 li.open .left_bg {background:#00636f;width:161px;min-height:32px;height:auto !important;_height:32px;}
+.type5_cyan .depth1 li.open a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_oc.gif) #00636f no-repeat;background-position:10px -279px;}
+.type5_cyan .depth1 li .depth2 li.on a {color:#000;font-weight:bold;font-size:12px;}/* color:#33acbb; */
+
+.type5_cyan .depth1 li.close a {color:#00636f;}
+.type5_cyan .depth1 li.opening a {color:#00636f;}
+.type5_cyan .depth1 li.opening .depth2 li a:hover {color:#000;}
+
+/* type5_orange */
+.type5_orange .depth1 li.open .left_bg .btm_arw {position:absolute;background:url(http://img.danawa.com/new/brandlog/img/bg_orange5_depth1_arw.gif) no-repeat left bottom;}
+.type5_orange .depth1 li.open .left_bg {background:#ff6600;width:161px;min-height:32px;height:auto !important;_height:32px;}
+.type5_orange .depth1 li.open a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_oc.gif) #ff6600 no-repeat;background-position:10px -279px;}
+.type5_orange .depth1 li .depth2 li.on a {color:#a72401;font-weight:bold;font-size:12px;}
+.type5_orange .depth1 li.close a {color:#a72401;}
+.type5_orange .depth1 li.opening a {color:#a72401;}
+.type5_orange .depth1 li.opening .depth2 li a:hover {color:#000;}
+.type5_orange .depth1 li.open a:hover {color:#280b00;}	 
+.type5_orange .depth1 li.open .left_bg a span {color:#280b00;}
+
+/* type5_red */
+.type5_red .depth1 li.open .left_bg .btm_arw {position:absolute;background:url(http://img.danawa.com/new/brandlog/img/bg_red5_depth1_arw.gif) no-repeat left bottom;}
+.type5_red .depth1 li.open .left_bg {background:#ca0023;width:161px;min-height:32px;height:auto !important;_height:32px;}
+.type5_red .depth1 li.open a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_oc.gif) #ca0023 no-repeat;background-position:10px -279px;}
+.type5_red .depth1 li .depth2 li.on a {color:#ba0020;font-weight:bold;font-size:12px;}
+.type5_red .depth1 li.close a {color:#ba0020;}
+.type5_red .depth1 li.opening a {color:#ba0020;}
+.type5_red .depth1 li.opening .depth2 li a:hover {color:#000;}
+
+/* type5_pink */
+.type5_pink .depth1 li.open .left_bg .btm_arw {position:absolute;background:url(http://img.danawa.com/new/brandlog/img/bg_pink5_depth1_arw.gif) no-repeat left bottom;}
+.type5_pink .depth1 li.open .left_bg {background:#b0004e;width:161px;min-height:32px;height:auto !important;_height:32px;}
+.type5_pink .depth1 li.open a {background:url(http://img.danawa.com/new/brandlog/img/icon_blue5_oc.gif) #b0004e no-repeat;background-position:10px -279px;}
+.type5_pink .depth1 li .depth2 li.on a {color:#9a0044;font-weight:bold;font-size:12px;}
+.type5_pink .depth1 li.close a {color:#9a0044;}
+.type5_pink .depth1 li.opening a {color:#9a0044;}
+.type5_pink .depth1 li.opening .depth2 li a:hover {color:#000;}
+
+/* wrap_type6_blue */
+.wrap_type6_blue .depth1 {margin:0 1px;padding:0;}
+.wrap_type6_blue .depth1 li {list-style:none;vertical-align:top;position:relative;}
+.wrap_type6_blue .depth1 li.close a {color:#fff;font-weight:bold;font-size:14px;padding:4px 0 4px 8px;_padding:9px 0 0px 8px;display:block;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+.wrap_type6_blue .depth1 li a:hover {text-decoration:none;}
+.wrap_type6_blue .depth1 li.first a {padding:4px 0 4px 8px;_padding:9px 0 0 8px;background-position:10px 20px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+.wrap_type6_blue .depth1 li.open a {color:#ffe66f;font-weight:bold;font-size:14px;padding:4px 0 4px 8px;display:block;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+.wrap_type6_blue .depth1 li .depth2 {margin:0px 17px 0px 15px;padding-bottom:0px;}
+.wrap_type6_blue .depth1 li .depth2 li {background:none;margin-bottom:0px;_margin-bottom:0px;list-style:none;vertical-align:top;}
+.wrap_type6_blue .depth1 li .depth2 li.off a {color:#444;font-weight:normal;font-size:12px;padding:5px 0 4px 0;width:120px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+.wrap_type6_blue .depth1 li .depth2 li.on a {width:120px;font-weight:bold;background:url(http://img.danawa.com/new/brandlog/img/ico_blue6_depth2_arw.gif) no-repeat right 8px;color:#004bad;font-size:12px;padding:5px 5px 4px 0;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}/* font-weight:bold;color:#0e65bb; */
+.wrap_type6_blue .depth1 li .depth2 li.on a:hover {letter-spacing:-1px;}
+.wrap_type6_blue .depth1 li .depth2 li.last a {padding-bottom:0px;width:120px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+.wrap_type6_blue .depth1 li.last.opening {padding-bottom:5px;}
+.wrap_type6_blue .depth1 li.opening a {color:#fff;font-weight:bold;font-size:14px;padding:4px 0 4px 18px;display:block;width:120px;word-wrap:break-word;word-break:break-all;-ms-word-break:break-all;}
+.wrap_type6_blue .depth1 li.opening:hover a {color:#ffe66f;}
+.wrap_type6_blue .depth1 li .arw {background:url(http://img.danawa.com/new/brandlog/img/ico_blue6_arw.gif) no-repeat;background-position:0 3px;width:9px;height:10px;display:inline-block;position:absolute;right:10px;top:6px;}
+.wrap_type6_blue .depth1 li .cut_size {text-align:left;width:140px;}
+.wrap_type6_blue .depth1 li .cut_size_arrow {text-align:left;width:130px;}
+
+.wrap_type6_blue .depth1 li .depth2 .cut_size {text-align:left;width:110px;}
+
+/*
+.wrap_type6_blue .depth1 li.opening .depth2 {margin:0px 17px 0px 15px;padding-bottom:0px;}
+.wrap_type6_blue .depth1 li.opening .depth2 li {margin-bottom:0px;list-style:none;vertical-align:top;}
+.wrap_type6_blue .depth1 li.opening a {color:#fff;font-weight:bold;font-size:14px;padding:9px 0 8px 18px;display:block;width:120px;}
+.wrap_type6_blue .depth1 li.opening .depth2 {margin:0px 17px 0px 15px;padding-bottom:0px;}
+.wrap_type6_blue .depth1 li.opening .depth2 li {background:none;margin-bottom:0px;_margin-bottom:0px;list-style:none;vertical-align:top;}
+.wrap_type6_blue .depth1 li.opening .depth2 li.off a {color:#444;font-weight:normal;font-size:12px;padding:5px 0 4px 0;}
+.wrap_type6_blue .depth1 li.opening .depth2 li.on a {background:url(http://img.danawa.com/new/brandlog/img/ico_blue6_depth2_arw.gif) no-repeat right 9px;color:#0e65bb;font-weight:normal;font-size:12px;padding:5px 0 4px 0;}
+.wrap_type6_blue .depth1 li.opening .depth2 li.last a {padding-bottom:0px;}
+*/
+
+.top_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_blue6_navi_tb.png) no-repeat 0 0;padding-top:10px;width:150px;height:10px;}
+.btm_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_blue6_navi_tb.png) no-repeat 0 100%;padding-bottom:1px;width:150px;height:10px;}
+.bg_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_blue6_navi.gif) repeat-y 0 0;width:150px;}
+
+.bg_navi_depth2 {width:150px;position:relative;left:8px;}
+.top_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_blue6_depth2_tb.gif) no-repeat 0 0;padding-top:0px;width:150px;height:7px;position:relative;top:-2px;}
+.btm_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_blue6_depth2_tb.gif) no-repeat 0 100%;padding-bottom:0px;width:150px;height:7px;position:relative;bottom:-2px;}
+.bg_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_blue6_depth2.gif) repeat-y 0 0;width:150px;margin-bottom:10px;}
+
+/* type6_black */
+.type6_black .bg_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_black6_navi.gif) repeat-y 0 0;}
+.type6_black .top_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_black6_navi_tb.png) no-repeat 0 0; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_black6_navi_tb.png', sizingMethod='crop');}
+.type6_black .btm_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_black6_navi_tb.png) no-repeat 0 100%; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img.danawa.com/new/brandlog/img/bg_black6_navi_tb.png', sizingMethod='crop');}
+
+.type6_black .top_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_black6_depth2_tb.png) no-repeat 0 0;_background:url(http://img.danawa.com/new/brandlog/img/bg_black6_depth2_tb.gif) no-repeat 0 0;}
+.type6_black .btm_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_black6_depth2_tb.png) no-repeat 0 100%;_background:url(http://img.danawa.com/new/brandlog/img/bg_black6_depth2_tb.gif) no-repeat 0 100%;}
+.type6_black .bg_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_black6_depth2.gif) repeat-y 0 0;width:150px;margin-bottom:10px;}
+.type6_black .depth1 li .depth2 li.on a {background:url(http://img.danawa.com/new/brandlog/img/ico_black6_depth2_arw.gif) no-repeat right 8px;color:#7a61b5 !important;}
+.type6_black .depth1 li.opening .depth2 li.on a {color:#7a61b5;font-weight:bold;}
+
+/* type6_cyan */
+.type6_cyan .bg_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_navi.gif) repeat-y 0 0;}
+.type6_cyan .top_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_navi_tb.png) no-repeat 0 0;_background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_navi_tb.gif) no-repeat 0 0;}
+.type6_cyan .btm_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_navi_tb.png) no-repeat 0 100%;_background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_navi_tb.gif) no-repeat 0 100%;}
+
+.type6_cyan .top_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_depth2_tb.png) no-repeat 0 0;_background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_depth2_tb.gif) no-repeat 0 0;}
+.type6_cyan .btm_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_depth2_tb.png) no-repeat 0 100%;_background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_depth2_tb.gif) no-repeat 0 100%;}
+.type6_cyan .bg_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_cyan6_depth2.gif) repeat-y 0 0;width:150px;margin-bottom:10px;}
+.type6_cyan .depth1 li .depth2 li.on a {background:url(http://img.danawa.com/new/brandlog/img/ico_cyan6_depth2_arw.gif) no-repeat right 8px;color:#007482;}
+.type6_cyan .depth1 li.opening .depth2 li.on a {color:#007482;font-weight:bold;}
+
+/* type6_orange */
+.type6_orange .bg_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_navi.gif) repeat-y 0 0;}
+.type6_orange .top_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_navi_tb.png) no-repeat 0 0;_background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_navi_tb.gif) no-repeat 0 0;}
+.type6_orange .btm_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_navi_tb.png) no-repeat 0 100%;_background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_navi_tb.gif) no-repeat 0 100%;}
+
+.type6_orange .top_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_depth2_tb.png) no-repeat 0 0;_background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_depth2_tb.gif) no-repeat 0 0;}
+.type6_orange .btm_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_depth2_tb.png) no-repeat 0 100%;_background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_depth2_tb.gif) no-repeat 0 100%;}
+.type6_orange .bg_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_orange6_depth2.gif) repeat-y 0 0;width:150px;margin-bottom:10px;}
+.type6_orange .depth1 li .depth2 li.on a {background:url(http://img.danawa.com/new/brandlog/img/ico_orange6_depth2_arw.gif) no-repeat right 8px;color:#c12900;}
+.type6_orange .depth1 li.opening .depth2 li.on a {color:#c12900;font-weight:bold;}
+.type6_orange .depth1 li.opening a {color:#280b00;}
+.type6_orange .depth1 li.close a {color:#280b00;}
+
+/* type6_red */
+.type6_red .bg_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_red6_navi.gif) repeat-y 0 0;}
+.type6_red .top_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_red6_navi_tb.png) no-repeat 0 0;_background:url(http://img.danawa.com/new/brandlog/img/bg_red6_navi_tb.gif) no-repeat 0 0;}
+.type6_red .btm_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_red6_navi_tb.png) no-repeat 0 100%;_background:url(http://img.danawa.com/new/brandlog/img/bg_red6_navi_tb.gif) no-repeat 0 100%;}
+
+.type6_red .top_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_red6_depth2_tb.png) no-repeat 0 0;_background:url(http://img.danawa.com/new/brandlog/img/bg_red6_depth2_tb.gif) no-repeat 0 0;}
+.type6_red .btm_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_red6_depth2_tb.png) no-repeat 0 100%;_background:url(http://img.danawa.com/new/brandlog/img/bg_red6_depth2_tb.gif) no-repeat 0 100%;}
+.type6_red .bg_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_red6_depth2.gif) repeat-y 0 0;width:150px;margin-bottom:10px;}
+.type6_red .depth1 li .depth2 li.on a {background:url(http://img.danawa.com/new/brandlog/img/ico_red6_depth2_arw.gif) no-repeat right 8px;color:#DA0000;}
+.type6_red .depth1 li.opening .depth2 li.on a {color:#DA0000;font-weight:bold;}
+
+/* type6_pink */
+.type6_pink .bg_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_navi.gif) repeat-y 0 0;}
+.type6_pink .top_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_navi_tb.png) no-repeat 0 0;_background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_navi_tb.gif) no-repeat 0 0;}
+.type6_pink .btm_navi {background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_navi_tb.png) no-repeat 0 100%;_background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_navi_tb.gif) no-repeat 0 100%;}
+
+.type6_pink .top_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_depth2_tb.png) no-repeat 0 0;_background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_depth2_tb.gif) no-repeat 0 0;}
+.type6_pink .btm_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_depth2_tb.png) no-repeat 0 100%;_background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_depth2_tb.gif) no-repeat 0 100%;}
+.type6_pink .bg_navi_depth2 {background:url(http://img.danawa.com/new/brandlog/img/bg_pink6_depth2.gif) repeat-y 0 0;width:150px;margin-bottom:10px;}
+.type6_pink .depth1 li .depth2 li.on a {background:url(http://img.danawa.com/new/brandlog/img/ico_pink6_depth2_arw.gif) no-repeat right 8px;color:#b1004f;}
+.type6_pink .depth1 li.opening .depth2 li.on a {color:#b1004f;font-weight:bold;}
+
+ /*
+.wrap_type6_blue .bg_navi .depth1 li {overflow:hidden;min-height:35px;height:auto !important;_height:35px;}
+.wrap_type6_blue .bg_navi .depth2 li {height:23px;overflow:visible;width:149px;}
+*/
+
+
+/* opera only */ 
+
+
+x:-o-prefocus, .cut_size {
+ line-height:16px;
+}
+
+
+x:-o-prefocus,  .wrap_type2_blue .navigation .one_depth li .two_depth li.last:hover {
+	margin-bottom:-10px;
+}

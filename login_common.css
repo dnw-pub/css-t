@@ -1,0 +1,243 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2013년 5월 20일
+writer : P05
+cont : 로그인개편
+
+최종작업일자 : 2013년 6월 21일
+writer : P05
+cont : 로그인sns
+
+2013-10-30 / ksy / mediait login layer / add
+2015-08-26 / bhj / login_success_layer / add
+2016-03-02 / bhj / .add sns_login_daum /  add
+2016-05-25 / yjk / .help_auto, save_id / add, edit
+2016-06-07 / yjk / 팝업 로그인 placeholder로 교체에 따른 #wrap_login .login_update .input_bg_box label {z-index} 비활성
+*/
+
+
+/* default Selector */
+#wrap_login *{font-family:dotum,"돋움",gulim,"굴림",AppleGothic,Helvetica,Sans-serif;list-style:none;}
+#wrap_login fieldset {margin:0;padding:0;}
+/* link */
+#wrap_login a{text-decoration:none}
+#wrap_login a:hover,a:active,a:focus{text-decoration:underline}
+#wrap_login a:hover,a:active,a:focus,a:link,a:visited{color:#666}
+
+
+#wrap_login {position:relative;margin:0;padding:0;font-size:12px;font-family:dotum,"돋움",gulim,"굴림",Helvetica,AppleGothic,Sans-serif;}
+#wrap_login .wrap_login_in {position:absolute;width:484px;height:414px;border:3px solid #4266db;background:#fff;}
+#wrap_login .wrap_login_in  h1 a{position:absolute;left:83px;top:66px;background:url(//img.danawa.com/new/newmain/img/bg_h1_logo.gif) no-repeat left top;width:127px;height:28px;overflow:hidden; text-indent: -9999em;}
+#wrap_login .wrap_login_in h2 {position:absolute;left:220px;top:65px;background:url(//img.danawa.com/new/newmain/img/bg_login.gif) no-repeat left top;width:67px;height:28px;text-indent:-9999em;}
+#wrap_login .wrap_login_in .btn_closex {position:absolute;right:27px;top:27px;background:url(//img.danawa.com/new/newmain/img/btn_closex.gif) no-repeat left top;width:29px;height:29px;text-indent:-9999em;overflow:hidden;}
+#wrap_login .wrap_login_in .btn_login {position:absolute;left:230px;top:0px;width:90px;height:90px;text-indent:-9999em;padding:0;}
+#wrap_login .wrap_login_in2 {width:464px;height:308px;}
+#wrap_login .wrap_login_in2  .bg_service_check{background:url(//img.danawa.com/new/login_common/img/bg_service_check.gif) no-repeat 0 0;width:304px;height:55px;position:absolute;top:125px;left:80px;}
+#wrap_login .wrap_login_in2  .service_check_txt{font-size:11px;color:#000;position:absolute;top:40px;left:79px;}
+
+
+/* right:82px;top:142px; */
+
+#wrap_login .login_help {border-top:1px solid #e5e5e5;margin:0 0 0 82px;position:absolute;bottom:70px;*bottom:72px;padding-top:20px;width:320px;}
+#wrap_login .login_help ul {}
+#wrap_login .login_help li {float:left;list-style:none;margin-right:32px;}
+#wrap_login .login_help li.last {margin-right:0px;margin-left:-4px;margin-right:-1px;}
+#wrap_login .login_help li.last a {letter-spacing:0px;}
+#wrap_login .login_help li a {color:#333;font-size:14px;font-weight:bold;background:url(//img.danawa.com/new/newmain/img/ico_arw.gif) no-repeat left 3px;padding:0 0 0 8px;}
+#wrap_login .wrap_login_in fieldset {border:0 none;margin:0;padding:0;position:absolute;left:82px;top:142px;}
+#wrap_login .wrap_login_in legend {display:none;}
+#wrap_login .input_bg_box {position:relative;}
+#wrap_login .input_bg_box label {position:absolute;left:12px;top:12px;color:#757575;font-size:16px;font-weight:bold;}
+#wrap_login .inpbox {background:url(//img.danawa.com/new/newmain/img/bg_login_input.png) no-repeat;background-position:0 0;width:208px;height:24px;*height:29px;line-height:24px;*line-height:17px;border:0 none;color:#000;font-size:16px;font-weight:bold;padding:8px 0 8px 12px;*padding:11px 0 0 12px;font-family:dotum,"돋움",gulim,"굴림",verdana,sans-serif;}
+#wrap_login :root .inpbox {padding-top:3px;height:37px;}
+#wrap_login .wrap_input {display:block;margin-bottom:10px;*margin-bottom:7px;}
+
+#wrap_login .focus .wrap_input {background-position:0 0;}	/* *background:url(//img.danawa.com/new/newmain/img/bg_login_input.png) no-repeat; */
+#wrap_login .focus .inpbox{background-position:0 -50px;} /* *background:url(//img.danawa.com/new/newmain/img/bg_login_input.png) no-repeat 100% -50px */
+
+#wrap_login .btm_id_check .id_sv {position:absolute;left:1px;top:100px;*width:14px;*height:14px;}
+#wrap_login .btm_id_check .lbl_id_save {color:#666;position:absolute;left:21px;top:100px;*top:101px;}
+
+#wrap_login .hidden_focus {position:absolute;left:-10000px;top:-10000px;}
+#wrap_login .wrap_login_in a:focus {background-color: #FF6; }
+#wrap_login input.text:focus {background-color: #7FFF00;color: #000;}
+
+#simplemodal-overlay {background-color:#000;}
+#modal_content{display:none;margin:50 auto;width:484px;height:414px;background:#fff;}
+
+ /* login sns */
+#wrap_login .txt_login_sns {font-size:12px;color:#000;line-height:17px;}
+#wrap_login .wrap_login_in {box-shadow:3px 6px 6px rgba(0,0,0,.5);}
+#wrap_login .wrap_login_in .sns_list_login {clear:both;*zoom:1;overflow:hidden;margin-top:31px;}
+#wrap_login .sns_list_login ul {width:337px;list-style:none;margin:0;padding:0;}
+#wrap_login .sns_list_login li {float:left;list-style:none;margin:0;padding:0;}
+#wrap_login .sns_list_login li a {display:block;background:url(//img.danawa.com/new/newmain/img/bg_login_sns.gif) no-repeat;width:163px;height:70px;text-indent:-9999em;overflow:hidden;}
+#wrap_login .sns_list_login li.sns_danawa a{background-position:0 0;margin-right:11px;margin-bottom:11px;}
+#wrap_login .sns_list_login li.sns_facebook a{background-position:-174px 0}
+#wrap_login .sns_list_login li.sns_twitter a{background-position:0 -81px;margin-right:11px;margin-bottom:11px;}
+#wrap_login .sns_list_login li.sns_me2day a{background-position:-174px -81px}
+#wrap_login .wrap_login_in h1.login_choice_tit {background:url(//img.danawa.com/new/newmain/img/bg_h1_choice.gif) no-repeat 0 0;width:118px;height:23px;position:absolute;left:82px;top:70px;text-indent:-9999em;}
+#wrap_login .wrap_login_in .login_choice_content {	 position:absolute;left:82px;top:132px;}
+#wrap_login .btn_closex {cursor:pointer;}
+#wrap_login #m_close  {cursor:pointer;}
+
+/* mediait login layer */
+#wrap_mediait #wrap_login .wrap_login_in {border:3px solid #d14447;}
+#wrap_mediait #wrap_login .wrap_login_in h1 a {background:url("//img.danawa.com/new/mediait/new_mediait/img/bg_h1_logo.gif") no-repeat scroll left top transparent;height:42px;width:128px;top:56px;}
+#wrap_mediait #wrap_login .inpbox {background:url("//img.danawa.com/new/mediait/new_mediait/img/bg_login_input.png") no-repeat scroll 0 0 transparent;}
+#wrap_mediait #wrap_login .focus .inpbox {background-position:0 -50px;}
+#wrap_mediait #wrap_login .inpbox {padding-top:8px;padding-bottom:8px;height:24px;line-height:24px;}
+#wrap_mediait #wrap_login .login_help li a {background:url("//img.danawa.com/new/mediait/new_mediait/img/ico_arw.gif") no-repeat scroll left 3px transparent;}
+#wrap_mediait #wrap_login .sns_list_login li a {background:url("//img.danawa.com/new/mediait/new_mediait/img/bg_login_sns.gif") no-repeat scroll 0 0 transparent;}
+#wrap_mediait #wrap_login .sns_list_login li.sns_danawa a {background-position:0 0;}
+#wrap_mediait #wrap_login .sns_list_login li.sns_facebook a {background-position:-174px 0;}
+#wrap_mediait #wrap_login .sns_list_login li.sns_twitter a {background-position:0 -81px;}
+#wrap_mediait #wrap_login .sns_list_login li.sns_me2day a {background-position:-174px -81px;}
+#wrap_mediait #wrap_login .wrap_login_in2 {height:404px;width:474px;}
+#wrap_mediait #wrap_login .wrap_login_in2 h1.login_choice_tit {left:72px;}
+#wrap_mediait #wrap_login .wrap_login_in2 .login_choice_content {left:72px;}
+#wrap_mediait #wrap_login #login_bottom_wrap {top:275px;margin:0 0 0 82px;position:absolute;}
+#wrap_mediait #wrap_login #login_bottom_wrap .login_help {position:static;margin:0;margin-top:20px;}
+#wrap_mediait #wrap_login #login_bottom_wrap .login_help ul {overflow:hidden;}
+#wrap_mediait #wrap_login #login_bottom_wrap .notice_wrap {width:320px;display:none;}
+#wrap_mediait #wrap_login #login_bottom_wrap p {color:#666666;line-height:17px;}
+#wrap_mediait #wrap_login #login_bottom_wrap .red_point {color:#e21d14;font-weight:bold;}
+#wrap_mediait #wrap_login #login_bottom_wrap .email {text-decoration:underline;}
+#wrap_mediait #wrap_login #login_bottom_wrap .block {display:block;}
+
+#wrap_login #login_bottom_wrap {top:275px;margin:0 0 0 82px;position:absolute;}
+#wrap_login #login_bottom_wrap .login_help {position:static;margin:0;margin-top:20px;}
+#wrap_login #login_bottom_wrap .login_help ul {overflow:hidden;}
+#wrap_login #login_bottom_wrap .notice_wrap {width:320px;display:none;}
+#wrap_login #login_bottom_wrap p {color:#666666;line-height:17px;}
+#wrap_login #login_bottom_wrap .red_point {color:#e21d14;font-weight:bold;}
+#wrap_login #login_bottom_wrap .email {text-decoration:underline;}
+#wrap_login #login_bottom_wrap .block {display:block;}
+
+#wrap_login #login_wrong_wrap {display:none;}
+#wrap_login .login_wrong fieldset {display:none;}
+#wrap_login .login_wrong #login_bottom_wrap {display:none;}
+#wrap_login .login_wrong #login_wrong_wrap {display:block;margin:0 0 0 82px;position:absolute;top:150px;}
+#wrap_login .login_wrong #login_wrong_wrap h3 {color:#000000;font-size:20px;font-weight:bold;line-height:28px;}
+#wrap_login .login_wrong #login_wrong_wrap p {color:#666666;line-height:18px;margin-top:20px;}
+#wrap_login .login_wrong #login_wrong_wrap .red_point {color:#E31E10;font-weight:bold;font-size:14px;line-height:20px;}
+#wrap_login .login_wrong #login_wrong_wrap .btn {margin:30px 0 0 80px;display:block;width:150px;height:40px;}
+#wrap_login .login_wrong .update .login_wrong_1 {display:block;}
+#wrap_login .login_wrong .update .login_wrong_2 {display:none;}
+#wrap_login .login_wrong .update .login_wrong_3 {display:none;}
+#wrap_login .login_wrong .id_discontinue .login_wrong_1 {display:none;}
+#wrap_login .login_wrong .id_discontinue .login_wrong_2 {display:block;}
+#wrap_login .login_wrong .id_discontinue .login_wrong_3 {display:none;}
+#wrap_login .login_wrong .id_pwd_wrong .login_wrong_1 {display:none;}
+#wrap_login .login_wrong .id_pwd_wrong .login_wrong_2 {display:none;}
+#wrap_login .login_wrong .id_pwd_wrong .login_wrong_3 {display:block;}
+
+.login_update{position:absolute;width:442px;height:364px;border:3px solid #4266db;background:#fff;padding:66px 0 0 82px;box-shadow:3px 6px 6px rgba(0,0,0,.5);}
+.login_update h1 a {position:static;width:118px;height:26px;display:block;background:url(//img.danawa.com/new/login_new/img/logo_login.jpg) 0 0 no-repeat;text-indent:100%;overflow:hidden;white-space:nowrap;}
+.login_update h1 {float:left;margin:0;padding:0;}
+.login_update h2 {background:url(//img.danawa.com/new/login_new/img/txt_login.png) no-repeat;text-indent:100%;overflow:hidden;white-space:nowrap;margin:4px 0 0 9px;background-position: 0 0;width:61px;height:22px;float:left;}
+.login_top {*zoom:1;margin:0 0 50px 0;}
+.login_top:after{content:"";display:block;clear:both;}
+.login_update .login_input_area{clear:both;position:relative;width:360px;}
+.login_update legend {position:absolute;visibility:hidden;top:-10000px;left:-10000px;}
+.login_update .btn_closex {position:absolute;right:27px;top:27px;background:url(//img.danawa.com/new/newmain/img/btn_closex.gif) no-repeat left top;display:block;width:29px;height:29px;text-indent:-9999em;overflow:hidden;cursor:pointer;}
+.login_update .btn_login {display:block;width:90px;height:90px;background:url(//img.danawa.com/new/login_new/img/btn_login.png) 0 -200px no-repeat;position:absolute;top:0;right:0;left:auto;cursor:pointer;text-indent:100%;overflow:hidden;white-space:nowrap;padding:0;}
+#wrap_login .login_update .inpbox {width:246px;height:22px; /*background-position: 0 -150px;*/background:#fff;background-image:none;border:1px solid #b3b3b3;}
+#wrap_login .login_update .focus .inpbox {/*background-position:0 -200px;*/border-color:#4f78e2;}
+#wrap_login .login_update .wrap_input {position:relative;z-index:8;background:#fff;width:260px;height:40px;display:block;}
+#wrap_login .login_update .input_bg_box label {z-index:9;}
+#wrap_login .login_update .inpbox:focus {border-color:#4f78e2;}
+#wrap_login .login_error .inpbox {border-color:#e01c1c;}
+#wrap_login .login_error .inpbox:focus {border-color:#e01c1c;}
+.txt_error_area {margin-bottom:10px;}
+.txt_error_area .txt_error {font-size:12px;color:#e01c1c; letter-spacing:-0.25px;height:12px;line-height:15px;margin:0;padding:0;}
+.login_sns_list {*zoom:1;margin:24px 0 13px 0;padding:0;}
+.login_sns_list:after{content:"";display:block;clear:both;}
+.sns_login_facebook, .sns_login_naver, .sns_login_kakaotalk,.sns_login_daum {float:left;width:177px;height:38px;margin-right:8px;text-indent:-9999px;}
+.login_sns_list li a {display:block;width:177px;height:38px;overflow:hidden;white-space:nowrap;}
+.sns_login_naver {background:url(//img.danawa.com/new/login_new/img/layer_login_naver.jpg) no-repeat;margin-bottom:7px;}
+.sns_login_facebook {background:url(//img.danawa.com/new/login_new/img/layer_login_facebook.jpg) no-repeat;margin-bottom:7px;}
+.sns_login_kakaotalk {background:url(//img.danawa.com/new/login_new/img/layer_login_kakao.jpg) no-repeat;}
+.sns_login_daum {background:url(//img.danawa.com/new/login_new/img/layer_login_daum.jpg) no-repeat;}
+
+.login_sns_list .btn_login_fb {background-position: 0 0; margin-right:8px;}
+.login_sns_list .btn_login_navr {background-position: 0 -48px;}
+.login_sns_list .btn_login_katalk {background-position: 0 -96px;margin-right:8px;}
+.login_help_menu .help_item {padding:0 8px 0 0;margin:0 7px 0 0; font-size:11px;color:#757575;letter-spacing: .25px;background:url(//img.danawa.com/new/danawa_main/v1/img/bg_gnb_mark.png) right -8px no-repeat;}
+.login_help_menu .help_join {background:none;}
+.login_help_menu .save_id {background:none;}
+.help_item a{font-size:11px;color:#757575;letter-spacing: -.25px;}
+.help_auto input {vertical-align:-2px;*vertical-align:text-bottom; margin:0 5px 0 0;}
+.login_help_menu .bar {color:#666;font-size:11px;}
+.save_id {background:none;}
+
+/* login_success_layer */
+#wrap_login {width:100%}
+.login_update img, fieldset, button,iframe {border:0 none}
+.fb_login_success {background:url(//img.danawa.com/new/login_new/img/btn_sns_login.png) 0 0 no-repeat;text-indent:-9999px;width:231px;height:26px;}
+.navr_login_success {background:url(//img.danawa.com/new/login_new/img/btn_sns_login.png) 0 -40px no-repeat;text-indent:-9999px;width:211px;height:26px;}
+.katalk_login_success {background:url(//img.danawa.com/new/login_new/img/btn_sns_login.png) 0 -80px no-repeat;text-indent:-9999px;width:231px;height:26px;}
+.nickname_setbox {margin-bottom:14px;}
+.nick_txt {font-size:14px;color:#333;font-weight:bold;line-height:18px;margin:0;padding:0;}
+.nick_txt2 {font-size:12px;color:#666;font-weight:normal;line-height:18px;margin:0;padding:0;}
+.screen_out {text-indent:-9999px;}
+.nickname_bg_box {float:left;}
+.input_nickname {width:238px;height:30px;border:1px solid #b3b3b3;margin-right:10px;font-size:16px;font-weight:bold;}
+.nickname_input_area .btn_check {background:url(//img.danawa.com/new/login_new/img/btn_login.png) 0 -160px no-repeat;text-indent:-9999px;width:80px;height:32px;float:left;cursor:pointer;}
+.nickname_notice {width:331px;color:#757575;margin-top:30px;}
+.nickname_notice ul {margin:0;padding:0;}
+.nickname_notice li {background:url(//img.danawa.com/new/login_new/img/bullet_nick_notice.gif) 0 6px no-repeat;padding-left:8px;margin-bottom:5px;font-size:11px;letter-spacing:-0.5px;line-height:16px;}
+.link_style {text-decoration:underline;}
+.enter_area {width:331px;}
+.btn_enter {display:inline-block;background:url(//img.danawa.com/new/login_new/img/btn_login.png) -75px -500px no-repeat; width:70px; height: 32px; text-indent:-9999px;margin:22px 0 0 140px;*display:inline;zoom:1;*text-indent:0;*font-size:0}
+.btn_cancel {display:inline-block;background:url(//img.danawa.com/new/login_new/img/btn_login.png) 0 -550px no-repeat; width:70px; height: 32px; text-indent:-9999px;margin-left:14px;*display:inline;zoom:1;*text-indent:0;*font-size:0}
+
+/* change_sns_myinfo */
+.blind{display:block;overflow:hidden;*position:absolute;top:0;left:0;width:0;height:0;border:0;background:none;font-size:0;line-height:0}
+.change_sns_myinfo {padding:70px 82px 63px 82px;width:452px;height:376px;}
+.change_sns_myinfo .login_top {margin:0 0 36px 0}
+.tit_sns_change {text-indent:-9999px;}
+.tit_fb_change {background:url(//img.danawa.com/new/login_new/img/btn_sns_login.png) 0 -120px no-repeat;width:245px;height:26px;}
+.tit_navr_change {background:url(//img.danawa.com/new/login_new/img/btn_sns_login.png) 0 -160px no-repeat;width:245px;height:26px;}
+.tit_katalk_change {background:url(//img.danawa.com/new/login_new/img/btn_sns_login.png) 0 -200px no-repeat;width:245px;height:26px;}
+.tbl_model{position:relative;width:100%;border:0;border-bottom:1px solid #e5e5e5;border-spacing:0;border-collapse:collapse;table-layout:fixed;word-break:keep-all;word-wrap:break-word}
+.tbl_model .first td,.tbl_model .first th{border-top:1px solid #ababab}
+.tbl_model td,.tbl_model th{border:0;border-top:1px solid #e5e5e5;line-height:14px;vertical-align:top;text-align:left;letter-spacing:-1px}
+.tbl_model th{background:#f4f4f4;color:#666;font-size:12px;padding:14px 0 0 11px}
+.tbl_model .last td,.tbl_model .last th{border-bottom:1px solid #ababab}
+.tdcell {padding:7px 0 5px 9px}
+.idcell {padding:11px 0 11px 9px;}
+.contxt_tit {font-size:12px;font-family:dotum,"돋움",gulim,"굴림",sans-serif;}
+.contxt_id {display:inline-block;line-height:16px;*display:inline;zoom:1;vertical-align:top;letter-spacing:0;margin:0;}
+.ico_sns_set {display:inline-block;width:16px;height:16px;text-indent:-9999px;*display:inline;zoom:1}
+.ico_fb {background:url(//img.danawa.com/new/login_new/img/ico_mypage_facebook.gif) no-repeat}
+.ico_navr {background:url(//img.danawa.com/new/login_new/img/ico_mypage_naver.gif) no-repeat}
+.ico_katalk {background:url(//img.danawa.com/new/login_new/img/ico_mypage_kakao.gif) no-repeat}
+.input_nick,.input_email {font-size:11px;padding:7px;border:1px solid #b3b3b3;width:158px;height:11px;}
+.contxt_ntc {font-size:11px;color:#757575;padding:9px 0 0 0;margin:0;}
+.btn_drop_out {position:absolute;right:85px;padding:5px 0 0 0;font-size:11px;color:#757575;}
+a.btn_drop_out:link {text-decoration:none;color:#757575}
+.myicon_left {float:left;margin-right:10px;}
+.input_wrap3 {padding-top:4px;overflow:hidden;}
+.input1 {padding:2px 3px 2px 3px;border:1px solid #b3b3b3;width:170px;height:19px;float:left;font-size:11px;color:#666;}
+.btn_del_myicon {background-color:#fff;border:1px solid #adadad;width:34px;height:18px;font-size:11px;margin:2px 0 2px 5px;cursor:pointer;line-height:20px;display:inline-block;text-align:center;}
+.btn_del_myicon:link {text-decoration:none;cursor:pointer;}
+.myicon_right .contxt_ntc {padding-top:5px}
+.change_error .input_nick,.change_error .input_email {border-color:#e01c1c}
+.txt_notok {color:#e01c1c}
+.btn_myicon {color:#fff;background:#767676;font-size:11px;display:inline-block;margin-right:3px;}
+a.btn_myicon:link {color:#fff;}
+.btn_gray {color:#fff;padding:3px 7px 2px 7px;display:inline-block;*display:inline;zoom:1}
+.login_help_menu label {background:#fff}
+
+/* delete account layer */
+.delete_account_wrap {width:100%}
+.delete_my_account {padding:72px 72px 52px 69px;width:369px;height:245px;}
+.tit_delete {background:url(//img.danawa.com/new/login_new/img/tit_delete_account.gif) no-repeat;width:361px;height:23px;text-indent:-9999px;}
+.change_myinfo_bottom .btn_delete{display:inline-block;background:url(//img.danawa.com/new/login_new/img/btn_sns_login.png) 0 -380px no-repeat;width:70px;height:32px;text-indent:-9999px;margin:22px 0 0 100px;*display:inline;zoom:1;*text-indent:0;*font-size:0}
+.wrap_notice_del ul {margin:0;padding:0;}
+.wrap_notice_del li {font-size:12px;line-height:16px;background:url(//img.danawa.com/new/login_new/img/bul_dot.gif) 0 5px no-repeat;padding:0 0 0 7px;color:#333;margin-bottom:7px;letter-spacing:-1px;list-style:none;}
+
+/* bg_login_layer */
+.bg_login_layer {position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.6);top:0;left:0;z-index:1000;}
+#wrap_login.login_layer_wrap {position:absolute;width:auto;height:auto;background-color:#fff;top:50%;left:50%;margin-left:-265px;margin-top:-220px;}
