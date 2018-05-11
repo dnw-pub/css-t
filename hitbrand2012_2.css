@@ -1,0 +1,153 @@
+/*
+작업일 : 2012-06-22
+작업자 : P10
+작업내용 : 히트브랜드 2012년 상반기
+*/
+
+/* default Selector */
+* {margin:0;}
+
+body {
+	font-family: "돋움", "Arial", "Verdana";
+	font-size: 12px; color:#666666;
+	text-align:left;
+	background-color:#ffffff;
+	margin:0;
+	background:url('//img.danawa.com/new/hitbrand/hit2012_2/img/topbg_hibrand.jpg') no-repeat 50% 0; margin:0;
+	background-color:#202020; 
+ }
+
+a{color:#333; text-decoration:none; cursor:pointer;}
+a:hover {text-decoration:underline; cursor:pointer;}
+.offscreen {display:none;}
+.offscreen {visibility:hidden; height:0; line-height:0; font-size:0; width:0; position:absolute; margin:0; padding:0; text-indent:-1000px;}
+
+
+/* 링크스타일 */
+span.pointPink {color:#F1679B;}
+span.pointPink_B {font-weight:bold; color:#F1679B;}
+
+/* Type Selector */
+img, fieldset, button {border:none;}
+li {list-style:none;}
+textarea {overflow:auto;}
+select   { font-size:12px; font-family: "돋움","Arial","Verdana";  color:#333333; border:1px solid #cccccc;}
+html:first-child select{padding-right:6px; height:20px;} /* Opera 9 & Below Fix */
+option {padding-right:6px;} /* Firefox Fix */
+legend {position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;} /* For Screen Reader */
+.search_sel { height:21px; font-size:12px; font-family: "돋움","Arial","Verdana";  color:#333333; border:1px solid #5f5f5f;}
+.disBlock {display:block;}
+.disInline {display:inline;}
+.gnbmargin {margin:5px 0 10px 0;}
+.comborder {border:1px solid #d9d9d9;}
+.floatLeft {float:left}
+.floatRight {float:right}
+.margin10 {margin-bottom:10px;}
+.margin15 {margin-bottom:15px;}
+.marB30 {margin-bottom:30px;}
+.marT3 {margin-top:3px;}
+.marT5 {margin-top:5px;}
+.marT10 {margin-top:10px;}
+.marL15 {margin-left:15px;}
+.marR20 {margin-right:20px;}
+.marR10 {margin-rifht:10px;}
+.padL10 {padding-left:10px;}
+
+.default_1101 {font-size:11px; letter-spacing:-1px;}
+.clearB {clear:both;}
+
+/* 하반기 히트브랜드 */
+
+.second_wrap {width:925px; margin:0 auto; position:relative;}
+.hit_introduction {width:925px; height:280px; background:url('//img.danawa.com/new/hitbrand/hit2012_2/img/tit_hitbrand.jpg') no-repeat;}
+.hit_introduction span{display:none;}
+
+.topspot {width:925px; height:227px; margin-bottom:46px;}
+.spot_left {width:40px; height:227px; float:left; display:block;}
+.spot_right {width:39px; height:227px; float:right; display:block;}
+
+.spotlist {width:824px; height:205px; background:url('//img.danawa.com/new/hitbrand/hit2012_2/img/bg_toppro.jpg') no-repeat; float:left; display:block; padding:11px;}
+.spotlist dl {width:176px; padding:10px 15px; float:left;}
+.spotlist dl dt,dd{text-align:center; color:#707070; line-height:16px;}
+.spotlist .cate {font-weight:bold; color:#000;}
+.spotlist a{color:#707070;}
+
+.hitpomotion {width:925px; height:224px; background:url('//img.danawa.com/new/hitbrand/hit2012_2/img/bg_mov.jpg') no-repeat; margin-bottom:20px; padding-top:13px;clear:both;zoom:1;overflow:hidden;}
+.hitpomotion .hit_movie {float:left;width:397px; margin-top:20px;}
+.hitpomotion .hit_event {float:left;width:528px;}
+.hitpomotion .hit_event .eventlist {clear:both;zoom:1;overflow:hidden;list-style:none;margin:0;padding:0;}
+.hitpomotion .hit_event li {float:left;list-style:none;padding:0;margin:0;}
+
+.brand_wrap {background-color:#fff; margin-bottom:15px;}
+
+.brand_description {padding:21px 25px;}
+.brand_description h3, .brand_description h4, .brand_description .brand_article {display:none;}
+.brand_description .description_image {margin-bottom:15px;}
+.brand_description .view_aritcle {display:block;width:113px;height:29px;background:url('//img.danawa.com/new/blog_product/img/view_article.png') no-repeat;text-indent:-999em; left:26px; bottom:35px;}
+
+.brand_product {clear:both; zoom:1; overflow:hidden; padding:0 25px 21px 25px;}
+.prolist {width:251px; border-right:1px solid #e6e6e6; float:left; display:inline-block; padding:0 20px;}
+.prolist dt,dd {text-align:center; color:#333; line-height:18px;}
+.prolist dt {padding:10px;}
+.prolist dt img {width:240px; height:240px;}
+.prolist dt,dd strong{color:#4267dc;}
+.prolist .btn {margin-top:10px;}
+.noneb {border-right:0;}
+
+.brand_reply {width:925px;  background-color:#fff; margin-bottom:0px;}	 /* border:1px solid #393939; */
+
+.brand_cate {min-height:73px;height:auto !important;_height:73px;}
+
+.brand_tab {margin:0;overflow:hidden;zoom:1;padding:0;list-style:none;}
+.brand_tab a:hover { text-decoration:none;}
+.brand_tab li {font-size:0; float:left; position:relative; height:39px; position:relative; text-align:center;}
+.brand_tab li em {color:#fff; font-size:14px; font-weight:bold; font-style:normal; display:inline-block; margin:13px 0 0 0 ;}
+.brand_tab li.active em {color:#ff0;}
+
+.IRimg {background:url('//img.danawa.com/new/hitbrand/hit2012_2/img/brand_tab.jpg') no-repeat; background-repeat:no-repeat; height:39px; position:absolute; left:0; top:0;}
+.mSeq1, .mSeq1 .IRimg {width:154px; background-position:0 0;} /* 홈 */
+.mSeq2, .mSeq2 .IRimg {width:154px; background-position:-154px 0;} /* 다나와표준PC */
+.mSeq3, .mSeq3 .IRimg {width:164px; background-position:-308px 0;} /* 조립브랜드PC */
+.mSeq4, .mSeq4 .IRimg {width:145px; background-position:-472px 0;} /* 게임용PC */
+.mSeq5, .mSeq5 .IRimg {width:161px; background-position:-617px 0;} /* PC견적상담 */
+.mSeq6, .mSeq6 .IRimg {width:147px; background-position:-778px 0;} /* 리스렌탈PC방 */
+
+ul>li.active.mSeq1 .IRimg {background-position:0 -39px;}	
+ul>li.active.mSeq2 .IRimg {background-position:-154px -39px;}
+ul>li.active.mSeq3 .IRimg {background-position:-308px -39px;}
+ul>li.active.mSeq4 .IRimg {background-position:-472px -39px;}
+ul>li.active.mSeq5 .IRimg {background-position:-617px -39px;}
+ul>li.active.mSeq6 .IRimg {background-position:-778px -39px;}
+.active .IRimg {background-position-y:-39px;}
+
+.catedepth {min-height:34px;height:auto !important;_height:34px; background-color:#b8993a; padding:0 15px;clear:both;overflow:hidden;zoom:1;}
+.catedepth ul {clear:both;overflow:hidden;zoom:1;}
+.catedepth li {float:left; background:url('//img.danawa.com/new/hitbrand/hit2012_2/img/brand_tab.jpg') no-repeat 0 -77px; padding:12px;}
+.catedepth li.linenone {background:none;}
+
+.footer {width:925px; text-align:center; font-size:11px; font-family:Tahome; color:#7b7778; height:50px; letter-spacing:-1px;}
+
+/* 왼쪽 스크롤영역 */
+#wing_wrap{position:relative;z-index:999;left:0px;top:0px;margin:0 auto;width:925px;}
+#wing_scroll_area {position:absolute;top:33px;left:-98px;z-index:1;}
+#scroll_banner {width:88px;position:relative;z-index:1;background-color:#101010;}
+#scroll_banner h4 {display:none;}
+#wing_wrap .fixed {position:fixed;_position:absolute; _z-index:-1;}
+*html #wing_wrap .fixed {position: fixed;_position: absolute;right:0px; top:expression(documentElement.scrollTop); width:88px;}
+#scroll_banner li {list-style:none;vertical-align:top;margin:0;padding:0;overflow:hidden;clear:both;zoom:1;}
+#scroll_banner li img {float:left;}
+#scroll_banner ul {padding:0;}
+.normal_reply li {text-align:left;}
+.right_name_text dd {text-align:left;}
+.right_name_text dt {text-align:left;}
+.footer {margin-top:30px;clear:both;zoom:1;}
+.board_reply_01 {border-left:none !important;border-right:none !important;margin-bottom:0px !important;}
+
+
+.icon_cm {background:url(//img.danawa.com/new/hitbrand/hit2012_2/img/ico_cm.png) no-repeat scroll 0 0; _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//img.danawa.com/new/hitbrand/hit2012_2/img/ico_cm.png', sizingMethod='crop');cursor:pointer;
+cursor:pointer;font-size:11px;overflow:hidden;width:72px;height:73px;display:block;position:absolute;left:0px;top:0px;}
+
+.prolist dt {position:relative;}
+
+.foot_banner_img ul li {background:#fff;border-right:1px solid #dedede;height:176px !important;margin:15px 0 0 0;}
+.foot_banner_img ul li.last {border-right:none !important;}

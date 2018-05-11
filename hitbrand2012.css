@@ -1,0 +1,116 @@
+/*
+작업일 : 2012-06-22
+작업자 : P10
+작업내용 : 히트브랜드 2012년 상반기
+*/
+
+.hide {display:none !important;}
+
+.hitbrand_head {background:url('http://img.danawa.com/new/blog_product/img/hit2012_1_bg.jpg') no-repeat;height:592px; position:relative;}
+.hitbrand_head h2 , .hitbrand_head .hit_introduction{display:none;}
+.hit_event {position:absolute; bottom:18px; left:22px;}
+.hit_event h3,.hit_event h4 {display:none;}
+.hit_eventlist {overflow:auto;}
+.hit_eventlist li {float:left;width:171px;height:226px;margin-right:6px;position:relative;}
+.hit_eventlist li h3, .hit_eventlist li p {display:none;}
+.hit_eventlist li.event_1 {width:156px; margin-right:8px;background:url('http://img.danawa.com/new/blog_product/img/hit_event1.jpg') no-repeat;}
+.hit_eventlist li.event_2 {width:171px;background:url('http://img.danawa.com/new/blog_product/img/hit_event2.jpg') no-repeat;}
+.hit_eventlist li.event_3 {background:url('http://img.danawa.com/new/blog_product/img/hit_event3.jpg') no-repeat;}
+.hit_eventlist li.no_event_2 {background-image:url('http://img.danawa.com/new/blog_product/img/hit_no_event2.jpg');}
+.hit_eventlist li.no_event_3 {background-image:url('http://img.danawa.com/new/blog_product/img/hit_no_event3.jpg');}
+.hit_eventlist li.no_event_2 *, .hit_eventlist li.no_event_3 * {display:none;}
+.hit_eventlist .go_event {display:block;width:85px;height:24px;position:absolute;right:33px;bottom:0;background:url('http://img.danawa.com/new/blog_product/img/hit_go_event.png') no-repeat; text-indent:-999em;}
+.hit_movie {position:absolute;right:0;bottom:0;width:375px;height:274px;}
+.hit_movie h3 {width:237 px; height:21px;margin:20px 0 0 70px;background:url('http://img.danawa.com/new/blog_product/img/hit_title_movie20121.png') no-repeat; text-indent:-99em;}
+.hit_movie .movie_container {width:325px;height:195px;margin:12px 0 0 25px;}
+
+.hit_table {width:100%; text-align:center; border-collapse:collapse;}
+.hit_table .col1 {width:132px;}
+.hit_table .col2 {width:219px;}
+.hit_table .col3 {width:130px;}
+.hit_table .col4 {width:223px;}
+.hit_table .col5 {width:217px;}
+.hit_table th {height:35px; background:url('http://img.danawa.com/new/blog_product/img/hit_table_th.png') repeat-x; color:white;}
+.hit_table th {border-right:1px solid #8e8e8e;}
+.hit_table td {border-right:1px solid #e1e1e1;}
+.hit_table th span {display:block;height:17px; background:url('http://img.danawa.com/new/blog_product/img/hit_table_span.png') no-repeat; font-size:0px; text-indent:-9999em; margin:0 auto;}
+.hit_table th .th1 {width:62px; background-position:0 0;}
+.hit_table th .th2 {width:72px; background-position:-100px  0;}
+.hit_table th .th3 {width:72px; background-position:-200px 0;}
+.hit_table th .th4 {width:80px; background-position:-300px 0;}
+.hit_table th .th5 {width:38px; background-position:-400px 0;}
+.hit_table td {text-align:left;background:#f5f5f5; vertical-align:top;padding-top:16px; height:181px;}
+.hit_table .ul2 a,.hit_table .td1 a,.hit_table .td3 a {width:50px;}
+.hit_table .td1 {padding-left:46px;}
+.hit_table .td2 {padding-left:32px;}
+.hit_table .td2 .ul1 {margin-right:20px;}
+.hit_table .td3 {padding-left:46px;}
+.hit_table .td4 {padding-left:38px;}
+.hit_table .td4 .ul1 {margin-right:17px;}
+.hit_table .td5 {padding-left:39px;}
+.hit_table .td5 .ul1 {margin-right:7px;}
+.hit_table td ul {float:left;}
+.hit_table td ul li a {display:block; width:95px;height:14px;margin-bottom:6px; background:url('http://img.danawa.com/new/blog_product/img/hit_table_td.png') no-repeat; text-indent:-999em;}
+.hit_table td ul li a:hover, .hit_table td ul li a.selected {background-image:url('http://img.danawa.com/new/blog_product/img/hit_table_tdon.png');}
+
+.hit_table td ul li .td12 {background-position:0 -22px;}
+.hit_table td ul li .td13 {background-position:0 -44px;}
+.hit_table td ul li .td21 {background-position:0 -66px;}
+.hit_table td ul li .td22 {background-position:0 -88px;}
+.hit_table td ul li .td23 {background-position:0 -110px;}
+.hit_table td ul li .td24 {background-position:0 -132px;}
+.hit_table td ul li .td25 {background-position:0 -154px;}
+.hit_table td ul li .td26 {background-position:0 -176px;}
+.hit_table td ul li .td27 {background-position:0 -198px;}
+.hit_table td ul li .td28 {background-position:0 -220px;}
+.hit_table td ul li .td29 {background-position:0 -242px;}
+.hit_table td ul li .td2a {background-position:0 -264px;}
+.hit_table td ul li .td2b {background-position:0 -286px;}
+.hit_table td ul li .td31 {background-position:0 -308px;}
+.hit_table td ul li .td32 {background-position:0 -330px;}
+.hit_table td ul li .td33 {background-position:0 -352px;}
+.hit_table td ul li .td34 {background-position:0 -374px;}
+.hit_table td ul li .td35 {background-position:0 -396px;}
+.hit_table td ul li .td36 {background-position:0 -418px;}
+.hit_table td ul li .td41 {background-position:0 -440px;}
+.hit_table td ul li .td42 {background-position:0 -462px;}
+.hit_table td ul li .td43 {background-position:0 -484px;}
+.hit_table td ul li .td44 {background-position:0 -506px;}
+.hit_table td ul li .td45 {background-position:0 -528px;}
+.hit_table td ul li .td46 {background-position:0 -550px;}
+.hit_table td ul li .td47 {background-position:0 -572px;}
+.hit_table td ul li .td48 {background-position:0 -594px;}
+.hit_table td ul li .td49 {background-position:0 -616px;}
+.hit_table td ul li .td4a {background-position:0 -638px;}
+.hit_table td ul li .td4b {background-position:0 -660px;}
+.hit_table td ul li .td4c {background-position:0 -682px;}
+.hit_table td ul li .td4d {background-position:0 -704px;}
+.hit_table td ul li .td4e {background-position:0 -726px;}
+.hit_table td ul li .td51 {background-position:0 -748px;}
+.hit_table td ul li .td52 {background-position:0 -770px;}
+.hit_table td ul li .td53 {background-position:0 -792px;}
+.hit_table td ul li .td54 {background-position:0 -814px;}
+.hit_table td ul li .td55 {background-position:0 -836px;}
+.hit_table td ul li .td56 {background-position:0 -858px;}
+.hit_table td ul li .td57 {background-position:0 -880px;}
+.hit_table td ul li .td58 {background-position:0 -902px;}
+.hit_table td ul li .td59 {background-position:0 -924px;}
+.hit_table td ul li .td5a {background-position:0 -946px;}
+.hit_table td ul li .td5b {background-position:0 -968px;}
+.hit_table td ul li .td5c {background-position:0 -990px;}
+.hit_table td ul li .td5d {background-position:0 -1012px;}
+.hit_table td ul li .td5e {background-position:0 -1034px;}
+.hit_table td ul li .td41a {background-position:0 -1056px;}
+.hit_table td ul li .td41b {background-position:0 -1078px;}
+.hit_table td ul li .td4ea {background-position:0 -1100px;}
+.hit_table td ul li .td21a {background-position:0 -1123px;}
+.hit_table td ul li .td21b {background-position:0 -1145px;}
+
+
+.brand_description {margin-top:13px; position:relative;}
+.brand_description h3, .brand_description h4, .brand_description .brand_article {display:none;}
+.brand_description .view_aritcle {display:block;width:113px;height:29px;background:url('http://img.danawa.com/new/blog_product/img/view_article.png') no-repeat;text-indent:-999em; position:absolute; left:26px; bottom:35px;}
+
+.hitbrand .hit_brand_goods {margin-bottom:50px;}
+.hit_brand_goods li.last .list_goods_price{letter-spacing:-1px;word-spacing:-2px;}
+

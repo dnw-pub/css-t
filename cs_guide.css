@@ -1,0 +1,35 @@
+/*
+최종작업일자 : 2011년 8월 25일 
+작업자 : P04
+내역 :  사이트 이용가이드 iframe 관련 css 추가함
+*/
+
+/* css initialize */
+html { overflow-x:auto; overflow-y:scroll;}
+body { margin:0; padding:0; }
+img { border:0; margin:0; padding:0;}
+li { list-style:none;}
+
+.loginarea {width:810px; height:35px; margin:0px auto; padding:0;}
+
+.NDNWmn_area {height:80px; background:url(http://img.danawa.com/contents/brand/neodanawa/img/bg_NDNW.jpg) repeat-x;}
+.NDNWmn_area ul{ width:810px; height:80px; margin:0px auto; padding:0;}
+.NDNWmn_area li{ height:80px; display:inline-block; float:left; margin:0; padding:0;}
+.NDNWcontent {width:810px; margin:0 auto; position:relative;}
+.NDNWcontent ul{ width:810px; height:33px; margin:0px auto; padding:0;}
+.NDNWcontent li{ height:33px; display:inline-block; float:left; margin:0; padding:0;}
+.event_area { width:810px; margin:30px auto;}
+
+.NDNWsub_area {width:750px; border:10px solid #e6e6e6; padding:40px 78px 20px 77px; margin:0px auto;}
+
+.comlayer {position:absolute; left:0px; top:92px; width:527px; height:294px; z-index:1;}
+.comlayer_btn {position:absolute;left:0px;top:62px;width:6px;height:0px;z-index:1;}
+
+.cate1Layer {position:absolute; top:306px; _top:314px; *top:314px; left:0;}
+.cate2Layer {position:absolute; top:306px; _top:314px; *top:314px; left:138px;}
+.cate3Layer {position:absolute; top:306px; _top:314px; *top:314px; left:263px;}
+.cate4Layer {position:absolute; top:306px; _top:314px; *top:314px; left:388px;}
+.cate5Layer {position:absolute; top:306px; _top:314px; *top:314px; left:109px;}
+.cate6Layer {position:absolute; top:306px; _top:314px; *top:314px; left:234px;}
+.cate7Layer {position:absolute; top:306px; _top:314px; *top:314px; left:349px;}
+.cate8Layer {position:absolute; top:306px; _top:314px; *top:314px; left:0;}

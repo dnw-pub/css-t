@@ -1,0 +1,428 @@
+@charset "euc-kr";
+/*
+작업일 :2013-06-19
+작업자 :P10
+작업내용 :히트브랜드 2013년 상반기 (기존 12년 하반기 수정)
+2015-12-07 / bhj / Hit Brand 15-2
+2016-04-27 / Hit Brand 16-1 / yjk
+2016-12-22 / hid brand 16-2 / bhj 
+2017-02-16 / add academy_201702 / bhj 
+2017-09-18 / edit gnb size / bhj 
+2017-11-27 / add dpg zone menubar / bhj 
+2017-12-12 / hit brand 17-2 / bhj
+*/
+
+/* default Selector */
+*{margin:0;padding:0;}
+body{font-family:"돋움","Arial","Verdana";font-size:12px;color:#666666;text-align:left;background-color:#ffffff;margin:0;margin:0;}
+
+a{color:#333;text-decoration:none;cursor:pointer;}
+a:hover{text-decoration:underline;cursor:pointer;}
+.offscreen{display:none;}
+.offscreen{visibility:hidden;height:0;line-height:0;font-size:0;width:0;position:absolute;margin:0;padding:0;text-indent:-1000px;}
+.danawa_gnb_center,.danawa_search_center,.footer_top_content,.footer_danawa_address {width:1100px;}
+.search_middle_area {left:130px}
+
+/* 링크스타일 */
+span.pointPink{color:#F1679B;}
+span.pointPink_B{font-weight:bold;color:#F1679B;}
+
+/* Type Selector */
+img,fieldset,button{border:none;}
+li{list-style:none;}
+textarea{overflow:auto;}
+select{font-size:12px;font-family:"돋움","Arial","Verdana";color:#333333;border:1px solid #cccccc;}
+html:first-child select{padding-right:6px;height:20px;} /* Opera 9 & Below Fix */
+option{padding-right:6px;} /* Firefox Fix */
+legend{position:absolute;top:0;left:0;width:0;height:0;overflow:hidden;visibility:hidden;font-size:0;line-height:0;} /* For Screen Reader */
+.search_sel{height:21px;font-size:12px;font-family:"돋움","Arial","Verdana";color:#333333;border:1px solid #5f5f5f;}
+.disBlock{display:block;}
+.disInline{display:inline;}
+.gnbmargin{margin:5px 0 10px 0;}
+.comborder{border:1px solid #d9d9d9;}
+.floatLeft{float:left}
+.floatRight{float:right}
+.margin10{margin-bottom:10px;}
+.margin15{margin-bottom:15px;}
+.marB30{margin-bottom:30px;}
+.marT3{margin-top:3px;}
+.marT5{margin-top:5px;}
+.marT10{margin-top:10px;}
+.marL15{margin-left:15px;}
+.marR20{margin-right:20px;}
+.marR10{margin-right:10px;}
+.padL10{padding-left:10px;}
+
+.default_1101{font-size:11px;letter-spacing:-1px;}
+.clearB{clear:both;}
+
+/* 하반기 히트브랜드 */
+.hit13_pc{background:url(//img.danawa.com/new/hitbrand/hit2013_1/img/bg_repeat.jpg) repeat 50% 0;}
+/*.hit_wrap{background:url(//img.danawa.com/new/hitbrand/hit2013_1/img/topbg_hibrand.jpg) repeat-x 50% 0;}*/
+.second_wrap{width:925px;margin:0 auto;position:relative;}
+.hit_introduction{width:925px;height:280px;}
+.hit_introduction span{display:inline;position:absolute;text-indent:-999em;overflow:hidden;}
+.topspot{width:925px;height:227px;margin-bottom:34px;}
+.spot_left{width:40px;height:227px;float:left;display:block;}
+.spot_left a, .spot_left img{display: block;}
+.spot_right{width:39px;height:227px;float:right;display:block;}
+.spot_right a, .spot_right img{display: block;}
+.spotlist{width:822px;height:205px;background:url(//img.danawa.com/new/hitbrand/hit2013_1/img/bg_toppro.png) no-repeat;float:left;display:block;padding:11px;overflow: hidden;}
+.spotlist dl{width:176px;padding:10px 15px;float:left;text-align: center;}
+.spotlist dl dt{text-align:center;color:#707070;line-height:16px;}
+.spotlist dl dd{line-height: 18px;}
+.spotlist dl dd a{height: 18px;overflow: hidden;display: block;}
+.spotlist .cate{font-weight:bold;color:#000;text-align: center;}
+.spotlist a{color:#707070;}
+.hitpomotion{width:925px;height:261px;margin-bottom:33px;clear:both;zoom:1;overflow:hidden;}
+.hitpomotion .hit_movie{float:left;width:395px;padding-top:42px;}
+.hitpomotion .hit_event{float:left;width:528px;}
+.hitpomotion .hit_event .eventlist{clear:both;zoom:1;overflow:hidden;list-style:none;margin:0;padding:0;}
+.hitpomotion .hit_event li{float:left;list-style:none;padding:0;margin:0;}
+.hitpomotion .hit_event li a{display:block;}
+.hitpomotion .hit_event li img{display:block;}
+.brand_cate_opt {text-align: right;margin-bottom: 10px;}
+.brand_cate_opt .view_all_cate{display: inline-block;vertical-align: top;}
+.brand_cate_opt .view_all_cate img{vertical-align: top;}
+.brand_wrap{overflow: hidden;}
+.brand_description{padding:9px 25px 21px;background:#fff;}
+.brand_description h3,.brand_description h4,.brand_description .brand_article{display:none;}
+.brand_description .description_image{margin-bottom:15px;}
+.brand_description .view_aritcle{display:block;width:113px;height:29px;background:url(//img.danawa.com/new/blog_product/img/view_article.png) no-repeat;text-indent:-999em;left:26px;bottom:35px;}
+.brand_product{clear:both;zoom:1;overflow:hidden;padding:0 25px 21px 25px;background:#fff;}
+.prolist{width:251px;border-right:1px solid #e6e6e6;float:left;display:inline-block;padding:0 20px;}
+.prolist dt,.prolist dd{text-align:center;color:#333;line-height:18px;}
+.prolist dt{padding:10px;}
+.prolist dt img{width:240px;height:240px;}
+.prolist dt,.prolist dd strong{color:#4267dc;}
+.prolist .btn{margin-top:10px;}
+.noneb{border-right:0;}
+.brand_reply{width:925px;background-color:#fff;margin-bottom:0px;} /* border:1px solid #393939;*/
+.brand_cate{min-height:73px;height:auto !important;_height:73px; }
+.brand_tab{margin:0;overflow:hidden;zoom:1;padding:0;list-style:none;}
+.brand_tab a:hover{text-decoration:none;}
+.brand_tab li{font-size:0;float:left;position:relative;height:39px;position:relative;text-align:center;}
+.brand_tab li em{color:#fff;font-size:14px;font-weight:bold;font-style:normal;display:inline-block;margin:13px 0 0 0 ;}
+.brand_tab li.active em{color:#ff0;}
+.IRimg{background:url(//img.danawa.com/new/hitbrand/hit2013_1/img/brand_tab.png) no-repeat;background-repeat:no-repeat;height:39px;position:absolute;left:0;top:0;}
+.mSeq1,.mSeq1 .IRimg{width:154px;background-position:0 0;} /* 홈 */
+.mSeq2,.mSeq2 .IRimg{width:155px;background-position:-154px 0;} /* 다나와표준PC */
+.mSeq3,.mSeq3 .IRimg{width:154px;background-position:-309px 0;} /* 조립브랜드PC */
+.mSeq4,.mSeq4 .IRimg{width:154px;background-position:-463px 0;} /* 게임용PC */
+.mSeq5,.mSeq5 .IRimg{width:154px;background-position:-617px 0;} /* PC견적상담 */
+.mSeq6,.mSeq6 .IRimg{width:154px;background-position:-771px 0;} /* 리스렌탈PC방 */
+ul>li.active.mSeq1 .IRimg{background-position:0 -39px;}
+ul>li.active.mSeq2 .IRimg{background-position:-154px -39px;}
+ul>li.active.mSeq3 .IRimg{background-position:-309px -39px;}
+ul>li.active.mSeq4 .IRimg{background-position:-463px -39px;}
+ul>li.active.mSeq5 .IRimg{background-position:-617px -39px;}
+ul>li.active.mSeq6 .IRimg{background-position:-771px -39px;}
+.active .IRimg{background-position-y:-39px;}
+.catedepth{min-height:34px;height:auto !important;_height:34px;background-color:#136b9f;padding:0 15px;clear:both;overflow:hidden;zoom:1;}
+.catedepth ul{clear:both;overflow:hidden;zoom:1;}
+.catedepth li{float:left;background:url(//img.danawa.com/new/hitbrand/hit2013_1/img/brand_tab.png) no-repeat 0 -77px;padding:12px;}
+.catedepth li.linenone{background:none;}
+
+.footer{width:542px;height:98px;display:block;clear:both;zoom:1;text-indent:-999em;overflow:hidden;margin:0 0 0 182px;background:url(//img.danawa.com/new/hitbrand/hit2013_1/img/bg_footer.png) no-repeat;}
+
+/* 왼쪽 스크롤영역 */
+#wing_wrap{position:relative;z-index:999;left:0px;top:0px;margin:0 auto;width:925px;}
+#wing_scroll_area{position:absolute;top:33px;left:-98px;z-index:1;}
+#scroll_banner{width:88px;position:relative;z-index:1;background-color:#101010;}
+#scroll_banner h4{display:none;}
+#wing_wrap .fixed{position:fixed;_position:absolute;_z-index:-1;}
+*html #wing_wrap .fixed{position:fixed;_position:absolute;right:0px;top:expression(documentElement.scrollTop);width:88px;}
+#scroll_banner li{list-style:none;vertical-align:top;margin:0;padding:0;overflow:hidden;clear:both;zoom:1;}
+#scroll_banner li img{float:left;}
+#scroll_banner ul{padding:0;}
+.normal_reply li{text-align:left;}
+.right_name_text dd{text-align:left;}
+.right_name_text dt{text-align:left;}
+.board_reply_01{border-left:none !important;border-right:none !important;margin-bottom:0px !important;}
+
+.icon_cm{background:url(//img.danawa.com/new/hitbrand/hit2012_2/img/ico_cm.png) no-repeat scroll 0 0;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//img.danawa.com/new/hitbrand/hit2012_2/img/ico_cm.png',sizingMethod='crop');cursor:pointer;cursor:pointer;font-size:11px;overflow:hidden;width:72px;height:73px;display:block;position:absolute;left:0px;top:0px;}
+
+.prolist dt{position:relative;}
+.foot_banner_img{overflow:hidden;width:815px;zoom:1;}
+.foot_banner_img ul{margin:0;padding:0;}
+.foot_banner_img ul li{background:#fff;border-right:1px solid #dedede;height:176px;margin:15px 0 0 0;float:left;width:206px;}
+.foot_banner_img ul li.last{border-right:none !important;}
+.spotlist li dl{padding: 0 15px;}
+.brand_reply .textarea_type_01{width:796px;}
+.brand_reply .textarea_type_02{width:721px;}
+.brand_reply .textarea_type_03{width:664px;}
+.brand_reply .textarea_type_04{width:738px;}
+
+/* Popup all brand */
+.pop_header{background:#126b9f;padding:9px 29px 7px 26px;margin-bottom:28px;zoom:1;}
+.pop_header:after{content:"";display:block;clear:both;height:0;overflow:hidden;}
+.pop_header h1{float:left;padding-top:1px;}
+.pop_header h1 img{vertical-align:top;display:block;}
+.pop_header .cate_select{float:right;height:20px;width:155px;}
+.pop_all_brands .prolist{padding: 0 15px;}
+
+/* Hit Brand 13-2 */
+.hit13_pc2{background:url(//img.danawa.com/new/hitbrand/hit2013_2/img/wrapper_bg.jpg) repeat;}
+.hit13_pc2 .hit_wrap{background:url(//img.danawa.com/new/hitbrand/hit2013_2/img/intro_bg2.jpg) repeat-x;}
+.hit13_pc2 .inner_wrap{background:url(//img.danawa.com/new/hitbrand/hit2013_2/img/intro_bg.jpg) no-repeat 50% 0;}
+.hit13_pc2 .hitpomotion{margin-bottom:12px;}
+.hit13_pc2 .hitpomotion .hit_event .eventlist{padding:1px;}
+.hit13_pc2 .hitpomotion .hit_movie{width:396px;padding-top:44px;}
+.hit13_pc2 .hitpomotion .hit_event{padding-top:16px;}
+.hit13_pc2 .brand_description{padding:14px 25px 21px;}
+.hit13_pc2 .brand_cate_opt{margin-bottom:14px;}
+.hit13_pc2 .footer{background:none;text-indent:0;text-align:center;font-family:Tahoma;font-size:11px;line-height:15px;height:auto;width:auto;margin:0;padding:15px 0 43px;}
+.hit13_pc2 .IRimg{background-image:url(//img.danawa.com/new/hitbrand/hit2013_2/img/brand_tab.png);height:48px;}
+.hit13_pc2 .brand_tab li{height:48px;}
+.hit13_pc2 li.active.mSeq1 .IRimg{background-position:0 -48px;}
+.hit13_pc2 li.active.mSeq2 .IRimg{background-position:-154px -48px;}
+.hit13_pc2 li.active.mSeq3 .IRimg{background-position:-309px -48px;}
+.hit13_pc2 li.active.mSeq4 .IRimg{background-position:-463px -48px;}
+.hit13_pc2 li.active.mSeq5 .IRimg{background-position:-617px -48px;}
+.hit13_pc2 li.active.mSeq6 .IRimg{background-position:-771px -48px;}
+.hit13_pc2 .catedepth{padding:0 6px;}
+.hit13_pc2 .catedepth ul{padding:0;overflow:hidden;}
+.hit13_pc2 .catedepth ul li{margin:0 1px 0 -1px;background-position:0 -75px;}
+
+/* Hit Brand 14-1 */
+.hit14_pc1{background:url(//img.danawa.com/new/hitbrand/hit2013_2/img/wrapper_bg.jpg) repeat;}
+.hit14_pc1 .hit_wrap{background:url(//img.danawa.com/new/hitbrand/hit2013_2/img/intro_bg2.jpg) repeat-x;}
+.hit14_pc1 .inner_wrap{background:url(//img.danawa.com/new/hitbrand/hit2014_1/img/intro_bg.jpg) no-repeat 50% 0;}
+.hit14_pc1 .hitpomotion{margin-bottom:12px;}
+.hit14_pc1 .hitpomotion .hit_event .eventlist{padding:1px;}
+.hit14_pc1 .hitpomotion .hit_movie{width:396px;padding-top:44px;}
+.hit14_pc1 .hitpomotion .hit_event{padding-top:16px;}
+.hit14_pc1 .brand_description{padding:14px 25px 21px;}
+.hit14_pc1 .brand_cate_opt{margin-bottom:14px;}
+.hit14_pc1 .footer{background:none;text-indent:0;text-align:center;font-family:Tahoma;font-size:11px;line-height:15px;height:auto;width:auto;margin:0;padding:15px 0 43px;}
+.hit14_pc1 .IRimg{background-image:url(//img.danawa.com/new/hitbrand/hit2014_1/img/brand_tab.png);height:48px;}
+.hit14_pc1 .brand_tab li{height:48px;}
+.hit14_pc1 li.active.mSeq1 .IRimg{background-position:0 -48px;}
+.hit14_pc1 li.active.mSeq2 .IRimg{background-position:-154px -48px;}
+.hit14_pc1 li.active.mSeq3 .IRimg{background-position:-309px -48px;}
+.hit14_pc1 li.active.mSeq4 .IRimg{background-position:-463px -48px;}
+.hit14_pc1 li.active.mSeq5 .IRimg{background-position:-617px -48px;}
+.hit14_pc1 li.active.mSeq6 .IRimg{background-position:-771px -48px;}
+.hit14_pc1 .catedepth{padding:0 6px;}
+.hit14_pc1 .catedepth ul{padding:0;overflow:hidden;}
+.hit14_pc1 .catedepth ul li{margin:0 1px 0 -1px;background-position:0 -75px;}
+
+/* Hit Brand 14-2 */
+.hit14_pc2{background:#092143;}
+.hit14_pc2 .hit_wrap{background:url(//img.danawa.com/new/hitbrand/hit2014_2/img/intro_bg2.png) repeat-x;}
+.hit14_pc2 .inner_wrap{background:url(//img.danawa.com/new/hitbrand/hit2014_2/img/intro_bg.jpg) no-repeat 50% 0;}
+.hit14_pc2 .hit_introduction{height:388px;}
+.hit14_pc2 .topspot{margin-bottom:18px;}
+.hit14_pc2 .hitpomotion{height:275px;margin-bottom:13px;}
+.hit14_pc2 .hitpomotion .hit_movie{width:335px;padding:61px 0 0 10px;}
+.hit14_pc2 .hitpomotion .hit_event{width:580px;}
+.hit14_pc2 .hit_banner{clear:both;}
+.hit14_pc2 .hit_banner_link{display:block;}
+.hit14_pc2 .hit_banner img{display:block;}
+.hit14_pc2 .catedepth ul{padding:0;}
+.hit14_pc2 .IRimg{background-image:url(//img.danawa.com/new/hitbrand/hit2014_2/img/brand_tab.png);}
+.hit14_pc2 .catedepth{background:#126b9f;}
+.hit14_pc2 .catedepth li{background-image:url(//img.danawa.com/new/hitbrand/hit2014_2/img/brand_tab.png);margin:0 1px 0 -1px;}
+.hit14_pc2 .footer{background:none;text-indent:0;color:#7c7678;text-align:center;font-family:Tahoma;font-size:11px;line-height:15px;height:auto;width:auto;margin:0;padding:20px 0;}
+.textarea_type_01,
+.textarea_type_02,
+.textarea_type_03,
+.textarea_type_04 {
+    resize: vertical;
+}
+
+/* Hit Brand 15-1 */
+.hit15_pc1 {background:#092143;}
+.hit15_pc1 .hit_wrap{background: url(//img.danawa.com/new/hitbrand/hit2015_1/img/intro_bg2.jpg) repeat-x 50% 0;}
+.hit15_pc1 .inner_wrap{background: url(//img.danawa.com/new/hitbrand/hit2015_1/img/intro_bg.jpg) no-repeat 50% 0;}
+.hit15_pc1 .hit_introduction{height:344px;}
+.hit15_pc1 .topspot{margin-bottom:19px;}
+.hit15_pc1 .hitpomotion{height:275px;margin-bottom:13px;}
+.hit15_pc1 .hitpomotion .hit_movie{width:335px;padding:61px 0 0 8px;}
+.hit15_pc1 .hitpomotion .hit_event{width:580px;}
+.hit15_pc1 .hit_banner{clear:both;}
+.hit15_pc1 .hit_banner_link{display:block;}
+.hit15_pc1 .hit_banner img{display:block;}
+.hit15_pc1 .catedepth ul{padding:0;}
+.hit15_pc1 .IRimg{background-image:url(//img.danawa.com/new/hitbrand/hit2014_2/img/brand_tab.png);}
+.hit15_pc1 .catedepth{background:#126b9f;}
+.hit15_pc1 .catedepth li{background-image:url(//img.danawa.com/new/hitbrand/hit2014_2/img/brand_tab.png);margin:0 1px 0 -1px;}
+.hit15_pc1 .footer{background:none;text-indent:0;color:#7c7678;text-align:center;font-family:Tahoma;font-size:11px;line-height:15px;height:auto;width:auto;margin:45px 0 0;padding:20px 0;}
+
+/* Hit Brand 15-2 */
+.hit15_pc2 {background:#230406;}
+.hit15_pc2 .hit_wrap{background: url(//img.danawa.com/new/hitbrand/hit2015_2/img/intro_bg2.jpg) repeat-x 50% 0;}
+.hit15_pc2 .inner_wrap{background: url(//img.danawa.com/new/hitbrand/hit2015_2/img/intro_bg.jpg) no-repeat 50% 0;}
+.hit15_pc2 .hit_introduction{height:572px;}
+.hit15_pc2 .spotlist {background:url(//img.danawa.com/new/hitbrand/hit2015_2/img/bg_toppro.jpg) no-repeat}
+.hit15_pc2 .spotlist dl dt {height:130px;}
+.hit15_pc2 .foot_banner_img ul li {height:182px;}
+.hit15_pc2 .desc {height:34px;}
+.hit15_pc2 .desc a {height:34px;overflow:visible;}
+.hit15_pc2 .hitpomotion {height:261px;margin-bottom:0;}
+.hit15_pc2 .hitpomotion .hit_movie {width:325px;padding:30px 10px 0 24px;}
+.hit15_pc2 .IRimg {background:url(//img.danawa.com/new/hitbrand/hit2015_2/img/brand_tab2.png) no-repeat}
+.hit15_pc2 .catedepth {background-color:#cfa238}
+.hit15_pc2 .catedepth ul {padding:0}
+.hit15_pc2 .catedepth li{background:#cfa238;margin:0 1px 0 -1px;}
+.hit15_pc2 .mSeq1,.hit15_pc2 .mSeq1 .IRimg{width:154px;background-position:0 0;} 
+.hit15_pc2 .mSeq2,.hit15_pc2 .mSeq2 .IRimg{width:155px;background-position:-154px 0;} 
+.hit15_pc2 .mSeq3,.hit15_pc2 .mSeq3 .IRimg{width:154px;background-position:-309px 0;}
+.hit15_pc2 .mSeq4,.hit15_pc2 .mSeq4 .IRimg{width:154px;background-position:-463px 0;} 
+.hit15_pc2 .mSeq5,.hit15_pc2 .mSeq5 .IRimg{width:154px;background-position:-617px 0;} 
+.hit15_pc2 .mSeq6,.hit15_pc2 .mSeq6 .IRimg{width:154px;background-position:-771px 0;} 
+.hit15_pc2 ul>li.active.mSeq1 .IRimg{background-position:0 -49px;}
+.hit15_pc2 ul>li.active.mSeq2 .IRimg{background-position:-154px -49px;}
+.hit15_pc2 ul>li.active.mSeq3 .IRimg{background-position:-309px -49px;}
+.hit15_pc2 ul>li.active.mSeq4 .IRimg{background-position:-463px -49px;}
+.hit15_pc2 ul>li.active.mSeq5 .IRimg{background-position:-617px -49px;}
+.hit15_pc2 ul>li.active.mSeq6 .IRimg{background-position:-771px -49px;}
+.hit15_pc2 .footer{background:none;text-indent:0;color:#7c7678;text-align:center;font-family:Tahoma;font-size:11px;line-height:15px;height:auto;width:auto;margin:45px 0 0;padding:20px 0;}
+.pop_hit15_pc2 .pop_header {background:#cfa238;}
+
+/* Hit Brand 16-1 */
+.hit16_pc1 {background:#3C6DA7; font-family:"맑은 고딕","Malgun Gothic";}
+.second_wrap{width:1100px;margin:0 auto;position:relative;}
+.hit16_pc1 .inner_wrap{background: url(//img.danawa.com/new/hitbrand/hit2016_1/img/bg.jpg) no-repeat center -40px; background-color: #3C6DA7;}
+.hit16_pc1 .hit_introduction{width:1100px; height:500px;}
+.hitpomotion{width:500px;height:400px;clear:both;zoom:1;overflow:hidden; position:absolute;top:90px; right:0; padding:0;}
+.hitpomotion .list_area:after{content: "";display:block; clear:both;}
+.hitpomotion li{float:left; margin-right:10px;}
+.hitpomotion .list_event2{margin:0;}
+.hitpomotion .list_event3{margin-top:7px; float:right;}
+.hitpomotion .list_event4{padding:5px 6px; margin:8px 0 0 0; background-color: #2B78B2;}
+.hitpomotion .list_event5{float:right; margin:10px 0 0;}
+
+.hit_wrap .catedepth, .hit_wrap .brand_description, .hit_wrap .banner_1100, .hit_wrap .cate_1depth{width:1100px;margin:0 auto; padding:0;}
+
+.brand_tab_area{background-color: #1D3D6E;}
+.btn_brand_tab{margin:0 auto;width:1100px; padding:0;}
+.btn_brand_tab:after{content:""; display:block; clear:both;}
+.btn_brand_tab .ul_list{float:left;}
+.btn_brand_tab .ul_list a{display: block; width:160px; text-align: center; padding:21px 10px 16px; letter-spacing: -1px; height:70px; border-right:1px solid rgba(255,255,255,0.15);  }
+.btn_brand_tab .ul_list a:link{text-decoration: none;}
+.btn_brand_tab .ul_list1 a{border-left: 1px solid rgba(255,255,255,0.15);}
+.btn_brand_tab .ul_list2 a{width:163px;}
+.btn_brand_tab .ul_list3 a{width:170px;}
+.btn_brand_tab .ul_list6 a{border-right: 1px solid rgba(255,255,255,0.15);}
+.btn_brand_tab .selected a{font-weight: bold; background: url(//img.danawa.com/new/hitbrand/hit2016_1/img/ico_arrow_up.png) no-repeat; background-color:#0078ff; background-position:center bottom;}
+.btn_brand_tab .txt_header{font-size:16px; color:#fff; margin-top:10px; padding:0 10px;}
+
+/* hit 공통영역 */
+.center_wrap {width:1100px;margin:0 auto;position:relative;}
+.hit_wrap .cate_1depth {background-color:#333;border:1px solid #fff;width:1098px;*padding:6px 0; *zoom:1;}
+.cate_list {padding:18px 10px 16px 20px;*padding:10px 10px 38px 20px;}
+.cate_list:after{content: ""; display:block; clear:both;}
+.list_1depth {float:left;width:160px;padding-bottom:5px;*height:15px; *padding:0; *zoom:1;}
+.txt_1depth {color:#fff;font-size:14px;line-height: 21px;}
+.hit_wrap .depth1_list1, .hit_wrap .depth1_list7, .hit_wrap .depth1_list13{width:172px;}
+.hit_wrap .depth1_list2, .hit_wrap .depth1_list8, .hit_wrap .depth1_list14{width:182px;}
+.hit_wrap .depth1_list3, .hit_wrap .depth1_list9, .hit_wrap .depth1_list15{width:192px;}
+.hit_wrap .depth1_list4, .hit_wrap .depth1_list10, .hit_wrap .depth1_list16{width:180px;}
+.hit_wrap .depth1_list5, .hit_wrap .depth1_list11, .hit_wrap .depth1_list17{width:182px;}
+.cate_1depth .selected .txt_1depth{font-weight:bold;font-size:16px;line-height:20px;}
+.cate_1depth .selected a{text-decoration:underline;}
+.list_1depth{color:#fff;}
+.list_1depth a{color:#fff;}
+.hit_wrap .title_h3{position:relative; display:inline-block; zoom:1; *display:inline; text-align: left; width:980px; margin:45px 50px 24px; border-top:2px solid #dfdfdf; border-bottom:2px solid #dfdfdf; font-size:26px; line-height: 65px; color:#000;height: 70px; *height:76px; padding-left:20px;}
+.hit_wrap .logo_hit{position:absolute; top:-10px; right:15px; background:url(//img.danawa.com/new/hitbrand/hit2016_1/img/logo_hit_hd.png); width:69px; height:75px; line-height: 18px; font-size:13px; color:#eacc88; font-weight: bold; text-indent: 16px; font-family:"Century Gothic";}
+.hit_wrap .logo_wrapper{max-width:100px; height:50px; padding-left:30px; display:inline-block; position:relative; top:-3px;}
+.hit_wrap .logo_wrapper img{vertical-align: middle;width:100%;}
+.hit_wrap .brand_product{width:1000px; margin:0 auto; padding:0 50px; font-size:14px;}
+.hit_wrap .brand_story{margin-bottom:26px; line-height: 21px;}
+.hit_wrap .prolist{width:282px;float:left;display:inline-block;padding:0 50px 0 0; border:none;}
+.hit_wrap .prolist dt{padding:0px; border:1px solid #e6e6e6;}
+.hit_wrap .info{text-align:center;color:#333;line-height:22px;font-size:18px;margin:15px 0;letter-spacing:-0.02em;}
+.hit_wrap .info a{color:#333;}
+.hit_wrap .prolist dt img{width:280px;height:280px;}
+.hit_wrap .won{color:#006fd9; font-size:16px; margin-bottom:7px; *margin-bottom:-20px; zoom:1;}
+.hit_wrap .won strong{color:#006fd9; font-size:24px;}
+.hit_wrap .won a{display: inline-block; background-color:#006fd9;zoom:1; *display:inline;margin-left:10px;color:#fff;font-size:14px;letter-spacing: -1px; padding:2px 10px 4px; vertical-align: 3px; font-weight: bold; *position:relative; *top:3px;}
+.hit_wrap .banner_1100 img{width:1100px;}
+.hit_wrap .footer_area{padding:30px 0 40px; text-align: center; color:#fff;position:relative;width:1100px; margin:0 auto;}
+.hit_wrap .footer_area a{ color:#fff;position:absolute; right:0; top:22px; font-weight: bold; font-size:18px;}
+.hit_wrap .brand_area:last-child .brand_product{padding-bottom:50px;}
+
+.hit_wrap .hit_banner{clear:both;}
+.hit_wrap .hit_banner_link{display:block;}
+.hit_wrap .hit_banner img{width:1100px;}
+.hit_wrap .catedepth ul{padding:0;}
+
+/* top_down_position */
+.top_down_position{position:fixed; right:280px; bottom: 200px; z-index: 5;}
+.top_down_area a{background:url(http://img.danawa.com/new/hitbrand/hit2016_1/img/bg_up_down.png) no-repeat;width:41px;height:35px;position:absolute;display:block;text-indent:-9999em;}
+.top_down_area .btn_layer_up{background-position:0 0;overflow:hidden;}
+.top_down_area .btn_layer_down{background-position:0 -35px;position:absolute;top:35px;overflow:hidden;}
+.top_down_area .btn_layer_up:hover{background-position:0 -80px;}
+.top_down_area .btn_layer_down:hover{background-position:0 -115px;}
+.bg_movie_yellow{height:357px;width:1100px;background-color:#ffc600;margin:0 auto;padding-top:28px;}
+
+/* hit16_pc2 */
+.hit16_pc2 {background:#ce8428;font-family:"맑은 고딕","Malgun Gothic";}
+.hit16_pc2 .inner_wrap {background:url(//img.danawa.com/new/hitbrand/hit2016_2/img/bg.jpg) no-repeat center 0;}
+.hit16_pc2 .hit_introduction {width:1100px;height:520px;}
+.hit16_pc2 .hitpomotion {width:479px;height:199px;top:237px;margin:0;}
+.hit16_pc2 .hitpomotion li {margin:0;}
+.hit16_pc2 .hitpomotion img {vertical-align:top;}
+.hit16_pc2 .list_event3 {float:left;}
+.hit16_pc2 .list_event4 {padding:0;}
+.hit16_pc2 .brand_tab_area {background-color:#5c171e;}
+.hit16_pc2 .btn_brand_tab .selected a{background-color:#ac0000;}
+
+/* academy_201702 */
+.academy_201702 {width:100%;height:1310px;background:#a8ca56;}
+.academy_201702 .center_wrap {width:1100px;margin:0 auto;height:1310px;position:relative;background:url(//img.danawa.com/new/event/img/academy_hit1702.jpg) top center no-repeat;}
+.academy_201702 .link {position:absolute;text-indent:-9999px;display:inline-block;background:url(//img.danawa.com/new/common/bg_blank1.png) repeat;width:160px;height:40px;}
+.academy_201702 .link_01 {left:115px;bottom:237px;}
+.academy_201702 .link_02 {left:470px;bottom:237px;}
+.academy_201702 .link_03 {left:825px;bottom:237px;}
+
+/* dpgzone_wrap */
+.center_wrap img {text-align:center;margin:0 auto;}
+.dpgzone_top {width:100%;height:670px;}
+.dpgz_map {height:151px;text-align:center;margin:0 auto;background-size:cover;}
+
+/* 2018-01-17 : 실서버 적용 후 삭제 */
+.dpgzone_wrap2 .dpgzone_top{width:100%;background:url(//img.danawa.com/new/event/img/dpgz_bg_top2.jpg) top center no-repeat;height:670px;background-size:cover;}
+.dpgzone_wrap2 .dpgz_map {height:151px;background:url(//img.danawa.com/new/event/img/dpgz_bg_bottom2.jpg) top center no-repeat;text-align:center;margin:0 auto;background-size:cover;}
+
+.dpgzone_top .menu_bar {position:absolute;top:16px;right:12px;}
+.dpgzone_top .menu_bar ul:after {content:"";display:block;clear:both;}
+.dpgzone_top .menu_bar li {float:left;width:122px;height:40px;background:url(http://img.danawa.com/new/event/img/dpgz_menu_bar.png) no-repeat;}
+.dpgzone_top .menu_bar a {display:block;text-indent:-9999px;width:100%;height:40px;}
+.dpgzone_top .menu_bar .item01 {background-position:0 0;}
+.dpgzone_top .menu_bar .item02 {width:121px;background-position:-122px 0;}
+.dpgzone_top .menu_bar .item03 {background-position:-244px 0;}
+.dpgzone_top .menu_bar .item01.selected {background-position:0 -40px;}
+.dpgzone_top .menu_bar .item02.selected {background-position:-122px -40px;}
+.dpgzone_top .menu_bar .item03.selected {background-position:-244px -40px;}
+.dpgzone_top .menu_bar .item01:hover {background-position:0 -80px;}
+.dpgzone_top .menu_bar .item02:hover {width:121px;background-position:-122px -80px;}
+.dpgzone_top .menu_bar .item03:hover {background-position:-244px -80px;}
+.dpg_omokgyo .dpgzone_top {background:url(//img.danawa.com/new/event/img/dpgz_bg_top2.jpg) top center no-repeat;background-size:cover;}
+.dpg_omokgyo .dpgz_map {height:151px;background:url(//img.danawa.com/new/event/img/dpgz_bg_bottom2.jpg) top center no-repeat;text-align:center;margin:0 auto;background-size:cover;}
+.dpg_balsan .dpgzone_top {background:url(http://img.danawa.com/new/event/img/dpgz_bg_balsan.jpg) top center no-repeat;background-size:cover;}
+.dpg_balsan .dpgz_map {height:151px;background:url(//img.danawa.com/new/event/img/dpgz_bg_balsan2.jpg) top center no-repeat;text-align:center;margin:0 auto;background-size:cover;}
+.dpg_pangyo .dpgzone_top {background:url(http://img.danawa.com/new/event/img/dpgz_bg_pangyo.jpg) top center no-repeat;background-size:cover;}
+.dpg_pangyo .dpgz_map {height:151px;background:url(//img.danawa.com/new/event/img/dpgz_bg_pangyo2.jpg) top center no-repeat;text-align:center;margin:0 auto;background-size:cover;}
+
+/* hit17_pc1 */
+.hit17_pc1 {width:100%;height:1468px;background:#152d4d url(//img.danawa.com/new/hitbrand/hit2017_1/img/bg_v1.jpg) top center no-repeat;font-family:"맑은 고딕","Malgun Gothic";}
+.hit17_pc1 .center_wrap {width:1100px;}
+.hit17_pc1 .hit_introduction {width:1100px;height:821px;}
+.hit17_pc1 .hitpomotion {width:519px;height:374px;top:390px;left:539px;margin:0;}
+.hit17_pc1 .hitpomotion li {float:none;margin:10px 0 0 0;}
+.hit17_pc1 .hitpomotion li:first-child {margin-top:0;}
+.hit17_pc1 .hitpomotion img {vertical-align:top;}
+.hit17_pc1 .catedepth, .hit17_pc1 .brand_description, .hit17_pc1 .banner_1100, .hit17_pc1 .cate_1depth{width:1100px;margin:0 auto;padding:0;}
+
+/* hit17_pc2 */
+.hit17_pc2 {width:100%;height:917px;background:#79100a url(//img.danawa.com/new/hitbrand/hit2017_2/img/bg.jpg) top center no-repeat;font-family:"맑은 고딕","Malgun Gothic";}
+.hit17_pc2 .center_wrap {width:1100px;}
+.hit17_pc2 .hit_introduction {width:1100px;height:821px;}
+.hit17_pc2 .hitpomotion {width:451px;height:399px;top:467px;left:600px;margin:0;}
+.hit17_pc2 .hitpomotion li {float:none;background:none;}
+.hit17_pc2 .hitpomotion img {vertical-align:top;}
+.hit17_pc2 .catedepth, .hit17_pc1 .brand_description, .hit17_pc1 .banner_1100, .hit17_pc1 .cate_1depth{width:1100px;margin:0 auto;padding:0;}
+.hit17_pc2_v2 {height:1078px;background:#79100a url(//img.danawa.com/new/hitbrand/hit2017_2/img/bg_v2.jpg) top center no-repeat;}
+.hit17_pc2_v2 .hitpomotion {height:550px;}

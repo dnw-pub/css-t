@@ -1,0 +1,231 @@
+img         {border:none}
+SELECT      {background-color : #ffffff;font-family: µ¸¿ò; font-size:9pt; color: #404040; }
+
+body, table, tr, td, textarea {
+            font-family: µ¸¿ò;
+            font-size: 9pt;
+            color: #666666;
+            scrollbar-face-color:#DDDDDD;
+			scrollbar-highlight-color:#DDDDDD;
+			scrollbar-shadow-color:#DDDDDD;
+			scrollbar-3dlight-color:#CCCCCC;
+			scrollbar-arrow-color:#FFFFFF;
+			scrollbar-track-color:#FBFBFB;
+			scrollbar-darkshadow-color:#CCCCCC;
+			scrollbar-base-color:#DDDDDD;
+            }
+
+a:link     {font-family: µ¸¿ò; color: #666666; text-decoration: none}
+a:visited  {font-family: µ¸¿ò; color: #666666; text-decoration: none}
+a:hover    {font-family: µ¸¿ò; color: #666666; text-decoration: underline}
+
+.input {
+	 font-size			: 12px;
+	 font-family		: "µ¸¿ò";
+	 color				: #333333;
+	 height				: 19px;
+	 BACKGROUND-COLOR	: #ffffff;
+	 border-right		: #CBCBCB 1px solid;
+	 border-top			: #CBCBCB 1px solid;
+	 border-left		: #CBCBCB 1px solid;
+	 border-bottom		: #CBCBCB 1px solid;}
+
+.textarea{
+	SCROLLBAR-FACE-COLOR: #F5F5F5;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFF;
+	SCROLLBAR-3DLIGHT-COLOR: #CBCBCB;
+	SCROLLBAR-SHADOW-COLOR: #F5F5F5;
+	SCROLLBAR-DARKSHADOW-COLOR: #CBCBCB;
+	SCROLLBAR-TRACK-COLOR:#E9E9E9;
+	SCROLLBAR-ARROW-COLOR: #C0C0C0;
+	border: solid 1px #CBCBCB;font-family: µ¸¿ò ;font-size:12px;color:#666666; line-height:120%;overflow:auto}
+
+/*   */
+body        {font-family: µ¸¿ò;background-color:;margin:0 0 0 0}
+
+.left_rank          {color:#ffffff;font-family: µ¸¿ò; font-size: 10px;padding:0 10 10 10}
+
+
+/* LEFT AREA ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.left_text  {color:#333333;line-height:160%}/* ??ìÜ ?   ?? */
+           .left_text:link            {color:#333333;line-height:160%}
+           .left_text:visited        {color:#333333;line-height:160%}
+           .left_text:hover         {color:#333333;line-height:160%}
+
+
+/* RIGHT AREA ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.point01         {color:#f9560e} /* ? ?¡À */
+.point02         {color:#1c74c9} /* ? ?¡À */
+.point03         {color:#f9560e;font-family:verdana, arial;font-size: 7pt;} /* ? ?¡À */
+
+.stxt_84         {color:#848484;font-family:verdana, arial;font-size: 7pt;}
+           .stxt_84:link      {color:#848484;}
+           .stxt_84:visited  {color:#848484;}
+           .stxt_84:hover   {color:#848484;}
+
+.txt_84         {color:#848484;font-size: 11px;}
+           .txt_84:link      {color:#848484;}
+           .txt_84:visited  {color:#848484;}
+           .txt_84:hover   {color:#000000; text-decoration: none}
+
+.txt_00  {color:#000000}
+           .txt_00:link      {color:#000000;}
+           .txt_00:visited  {color:#000000;}
+           .txt_00:hover   {color:#000000;}
+
+
+.txt44 {font-family: µ¸¿ò; font-size: 9pt; color: #E9EAEC;}
+.txt_4c {font-family: µ¸¿ò; color: #4c4c4c;}
+.txt_4cb { font-family: µ¸¿ò;color: #4c4c4c; font-weight:bold;}
+.txt_orange {font-family: µ¸¿ò;color: #c92f00; font-weight:bold;}
+
+
+
+
+
+.txt_22  {color:#222222}
+           .txt_22:link      {color:#222222;}
+           .txt_22:visited  {color:#222222;}
+           .txt_22:hover   {color:#222222;}
+
+.txt_666  {color:#666666;line-height:150%;}
+
+.txt_66  {color:#666666;line-height:130%; text-decoration: none}
+           .txt_66:link      {color:#666666;line-height:130%; text-decoration: none}
+           .txt_66:visited  {color:#666666;line-height:130%; text-decoration: none}
+           .txt_66:hover   {color:#222222;line-height:130%; text-decoration: none}
+
+.txt_4b  {color:#4b4b4b;line-height:140%}
+           .txt_4b:link      {color:#4b4b4b;line-height:140%}
+           .txt_4b:visited  {color:#4b4b4b;line-height:140%}
+           .txt_4b:hover   {color:#4b4b4b;line-height:140%}
+
+.txt_99  {color:#999999; line-height:140%}
+           .txt_99:link      {color:#999999;}
+           .txt_99:visited  {color:#999999;}
+           .txt_99:hover   {color:#999999;}
+
+.txt_ff  {color:#ffffff; line-height:140%}
+           .txt_ff:link      {color:#ffffff;}
+           .txt_ff:visited  {color:#ffffff;}
+           .txt_ff:hover   {color:#ffffff;}
+
+.view_sub_title  {color:#222222}
+           .view_sub_title:link      {color:#222222;}
+           .view_sub_title:visited  {color:#222222;}
+           .view_sub_title:hover   {color:#222222;}
+
+.list_option03         {color:#f9560e} /* ? ?¡À */
+
+.list_option01  {color:#999999;}
+
+.text  {color:#666666;line-height:150%;}
+
+.hpoint  {color:#f9560e;text-decoration: none}
+.hpoint:link      {color:#f9560e;text-decoration: none}
+.hpoint:visited  {color:#f9560e; text-decoration: none}
+.hpoint:hover   {color:#f9560e; text-decoration: underline}
+
+
+/* --------------------u  ? -------------------------------- */
+
+/* -----------?: ,?/¡Í,?   ?-------*/
+
+/* u  ? ----(??, ? ¥ë ? ?)*/
+.title_line {width:750px; border:1px solid #c0cac0; background-color:#ffffff; margin-bottom:5px;}
+
+/* ?? ? */
+.txt14_22  {font-size: 14px; color:#222222; font-weight:bold;}
+
+/*  ? , ? */
+.top_table {width:730px;  border:4px solid #d2e9c4; background-color:#fafef7;}
+
+/* ?  */
+.txt_33  {color:#333333}
+           .txt_33:link      {color:#333333;}
+           .txt_33:visited  {color:#333333;}
+           .txt_33:hover   {color:#333333;}
+
+/* , ? */
+.txt_99  {color:#999999; line-height:140%}
+           .txt_99:link      {color:#999999;}
+           .txt_99:visited  {color:#999999;}
+           .txt_99:hover   {color:#999999;}
+
+/*   */
+.point01         {color:#f9560e} /* ? ?¡À */
+
+/* ¡Í, ? */
+.point02         {color:#1c74c9} /* ? ?¡À */
+
+/*  */
+.txt_sub {color:#666666}
+           .txt_sub:link      {color:#666666;}
+           .txt_sub:visited  {color:#666666;}
+           .txt_sub:hover   {color:#666666;}
+
+/*   */
+.number_color {color:#000000}
+
+
+/*   2008.03.26 ? ? */
+.box4 {
+	border-color:#dddddd; background-color:#FFFFFF; border-style:dashed;
+	border-top-width:0px; border-bottom-width:1px; border-left-width:0px; border-right-width:0px;
+	padding: 5px 0 0 5px;
+}
+
+.box3 {
+	border-color:#dddddd; background-color:#FFFFFF; border-style:dashed;
+	border-top-width:0px; border-bottom-width:1px; border-left-width:0px; border-right-width:0px;
+	padding: 0px 0 0 5px;
+}
+
+.txt11 {
+	 color: #767676;
+	 font-size: 11px;
+	 LETTER-SPACING: -1px;
+	 padding:0 3px 5px 0;
+	 font-family: "µ¸¿ò";}
+
+.txt_org {
+	 color: #f85915;
+	 font-size: 11px;
+	 LETTER-SPACING: -1px;
+	 padding:0 0 0 3px;
+	 font-family: "µ¸¿ò";}
+
+.input_point {
+	 font-size			: 12px;
+	 font-weight    : bold;
+	 font-family		: "µ¸¿ò";
+	 padding        : 3px 0 0 5px;
+	 color				: #ee5208;
+	 height				: 19px;
+	 BACKGROUND-COLOR	: #ffffff;
+	 border-right		: #CBCBCB 1px solid;
+	 border-top			: #CBCBCB 1px solid;
+	 border-left		: #CBCBCB 1px solid;
+	 border-bottom		: #CBCBCB 1px solid;}
+
+.txt_event {color: #000000;
+	          font-size: 12px;
+	          line-height:140%;
+	          font-family: "µ¸¿ò";}
+.txt_event:link      {color:#000000;}
+.txt_event:visited  {color:#000000;}
+.txt_event:hover   {color:#000000;}
+
+/* .recommend_goods 2011-09-29 */
+.recommend_goods {width:720px;  background-color:#fafef7; padding:10px 0px 10px 0px;overflow:hidden;}
+.recommend_goods .list_goods{width:700px;clear:both;zoom:1;padding:10px 0px 10px 10px; border-bottom:1px solid #cddfb5;overflow:hidden;}
+.recommend_goods .icon_hot {position:absolute;left:0px;top:0px;z-index:99;background:url(http://img.danawa.com/new/blog_brand/img/icon_hot.gif) no-repeat left top;width:39px;height:21px;display:block;}
+.recommend_goods .list_goods .left_imgs {width:110px; float:left;position:relative;}
+.recommend_goods .list_goods .img_angle {width:89px; height:89px; border:4px solid #e5e5e5;}
+.recommend_goods .detail_goods {width:400px; float:left; text-align:left; padding:0px 15px 0px 0px; word-break:break-all}
+.recommend_goods.list_goods .dot_space {width:1px; height:90px; float:left; background-image:url('http://img.danawa.com/new/blog_brand/img/line_vdot01.gif');}
+.recommend_goods.list_goods .low_price {width:133px; float:left; text-align:left; word-break:break-all; padding:25px 0px 0px 10px}
+.recommend_goods .last {border-bottom:none !important;}
+
+#userProdListBox .recommend_goods {width:720px; border:none !important;}
