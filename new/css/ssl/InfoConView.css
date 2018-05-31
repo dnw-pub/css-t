@@ -1,0 +1,191 @@
+/*
+
+적용페이지 : CMS 요소별 HTML 태그 가이드 / news.css / dc_news.css / proBlog.css (뉴스, 디시인사이드 뉴스, 상품블로그)에 import됨.
+향후 추가 내.외부에 새롭게 생기거나 추가되는 정보컨텐츠 보기 화면에 공통으로 import 예정
+
+최종작업일자 : 2009년 7월31일
+작성자 : P01
+
+*/
+
+/* 내용과 타이틀 */
+#cmGuideContent{padding:15px 15px 15px 15px; width:100%;}
+.cmHeader{width:100%; height:13px; font-size:12px; color:#FFFFFF; font-weight:bold; background:url('//img.danawa.com/new/popup/img/bul_common.gif') no-repeat 14px 12px #393939; padding:10px 25px;}
+
+/* 탭버튼 */
+ul.cmConTab {clear:both; height:29px; background:url('//img.danawa.com/new/popup/img/bg_conTab.gif') repeat; padding-bottom:15px;}
+
+/* 탭버튼_활성화 */
+ul.cmConTab .tabin{float:left; height:29px; background:url('//img.danawa.com/new/popup/img/conTab_on_right.gif') no-repeat top right; }
+.cmConTab a.tabon{float:left; display:block; height:30px; padding:9px 25px 0 12px; background:url('//img.danawa.com/new/popup/img/conTab_on_left.gif') no-repeat; text-decoration:none; font-weight:bold; color:#000000;}
+
+/* 탭버튼_비활성화 */
+ul.cmConTab .tabdis{float:left; height:29px; background:url('//img.danawa.com/new/popup/img/conTab_dis_right.gif') no-repeat top right;}
+ul.cmConTab a.tabout{float:left; display:block; height:30px; padding:9px 12px 0 12px; background:url('//img.danawa.com/new/popup/img/conTab_dis_left.gif') no-repeat; text-decoration:none; font-weight:bold; color:#999999;	}
+
+/* 소스 */
+.sourceCopy {width:100%; padding:10px; margin:0 10px 15px 0; border:1px solid #e5e5e5; background-color:#f5f5f5; font-size:12px; color:#929292; overflow:auto;}
+
+/* 제목 */
+h1.h1Style01 {margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#000000;}
+h1.h1Style02 {margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#2d12b8;}
+h1.h1Style03 {margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#4366ea;}
+h1.h1Style04 {margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#cc156b;}
+h1.h1Style05 {margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#ff4e00;}
+h1.h1Style06 {margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#287b1a;}
+
+/* 제목표기바 */
+h1.BarStyle01 {padding:10px; margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#ffffff; background-color:#000000;}
+h1.BarStyle02 {padding:10px; margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#ffffff; background-color:#7485bc;}
+h1.BarStyle03 {padding:10px; margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#ffffff; background-color:#8080c2;}
+h1.BarStyle04 {padding:10px; margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#13461b; background-color:#9acda2;}
+h1.BarStyle05 {padding:10px; margin:10px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#671a1f; background-color:#e4c8ca;}
+h1.BarStyle06 {padding:10px; margin:12px 0; font-size:16px; font-family:'돋움',Verdana, Geneva, sans-serif; font-weight:bold; color:#49130f; background-color:#eeb9b5;}
+
+/* 본문포인트 글씨 */
+span.txtPoint01 {font-weight:bold; color:#4366ea;}
+span.txtPoint02 {font-weight:bold; color:#4366ea; text-decoration:underline;}
+span.txtPoint03 {font-weight:bold; color:#ff6600;}
+span.txtPoint04 {font-weight:bold; color:#ff6600; text-decoration:underline;}
+span.txtPoint05 {font-weight:bold; color:#ff0033;}
+span.txtPoint06 {font-weight:bold; color:#ff0033; text-decoration:underline;}
+span.txtPoint07 {font-weight:bold; color:#1da130;}
+span.txtPoint08 {font-weight:bold; color:#1da130; text-decoration:underline;}
+
+/* 테이블스타일 */
+table.tableStyle01 {width:100%; border-top:1px solid #000; border-left:1px solid #000; margin:10px 0; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.tableStyle01 th{padding:9px; font-size:12px; font-weight:bold; color:#ffffff; background-color:#000000; text-align:center;}
+table.tableStyle01 td{padding:7px; font-size:12px; color:#3b3b3b; text-align:center; border-right:1px solid #000; border-bottom:1px solid #000;}
+
+table.tableStyle02 {width:100%; border-top:1px solid #b8b8b8; border-left:1px solid #b8b8b8; margin:10px 0; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.tableStyle02 th{padding:9px; font-size:12px; font-weight:bold; color:#454545; background-color:#c0c0c0; text-align:center;}
+table.tableStyle02 td{padding:7px; font-size:12px; color:#3b3b3b; text-align:center; border-right:1px solid #b8b8b8; border-bottom:1px solid #b8b8b8;}
+
+table.tableStyle03 {width:100%; border-top:1px solid #816cc0; border-left:1px solid #816cc0; margin:10px 0; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.tableStyle03 th{padding:9px; font-size:12px; font-weight:bold; color:#ffffff; background-color:#816cc0; text-align:center;}
+table.tableStyle03 td{padding:7px; font-size:12px; color:#3b3b3b; text-align:center; border-right:1px solid #816cc0; border-bottom:1px solid #816cc0;}
+
+table.tableStyle04 {width:100%; border-top:1px solid #6c88c0; border-left:1px solid #6c88c0; margin:10px 0; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.tableStyle04 th{padding:9px; font-size:12px; font-weight:bold; color:#ffffff; background-color:#6c88c0; text-align:center;}
+table.tableStyle04 td{padding:7px; font-size:12px; color:#3b3b3b; text-align:center; border-right:1px solid #6c88c0; border-bottom:1px solid #6c88c0;}
+
+table.tableStyle05 {width:100%; border-top:1px solid #6cadc0; border-left:1px solid #6cadc0; margin:10px 0; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.tableStyle05 th{padding:9px; font-size:12px; font-weight:bold; color:#ffffff; background-color:#6cadc0; text-align:center;}
+table.tableStyle05 td{padding:7px; font-size:12px; color:#3b3b3b; text-align:center; border-right:1px solid #6cadc0; border-bottom:1px solid #6cadc0;}
+
+
+/* 칼라표 */
+table.colorStyle01 {width:100%; margin-bottom:15px; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.colorStyle01 td{padding:7px; text-align:center; width:20%;}
+table.colorStyle01 td.cTd01{background-color:#000; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle01 td.cTd02{background-color:#222; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle01 td.cTd03{background-color:#333; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle01 td.cTd04{background-color:#4c4c4c; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle01 td.cTd05{background-color:#666; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle01 td.cTd06{background-color:#888; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle01 td.cTd07{background-color:#999; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle01 td.cTd08{background-color:#b4b4b4; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle01 td.cTd09{background-color:#cccccc; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle01 td.cTd00{background-color:#dddddd; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+
+table.colorStyle02 {width:100%; margin-bottom:15px; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.colorStyle02 td{padding:7px; text-align:center; width:20%;}
+table.colorStyle02 td.cTd01{background-color:#47318b; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle02 td.cTd02{background-color:#7058b4; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle02 td.cTd03{background-color:#9983d1; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle02 td.cTd04{background-color:#bca5e6; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle02 td.cTd05{background-color:#dfd1f4; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+
+table.colorStyle03 {width:100%; margin-bottom:15px; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.colorStyle03 td{padding:7px; text-align:center;}
+table.colorStyle03 td.cTd01{background-color:#506aab; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle03 td.cTd02{background-color:#6c88c0; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle03 td.cTd03{background-color:#89a6d6; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle03 td.cTd04{background-color:#98b8e5; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle03 td.cTd05{background-color:#aecdf0; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+
+table.colorStyle04 {width:100%; margin-bottom:15px; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.colorStyle04 td{padding:7px; text-align:center; width:20%;}
+table.colorStyle04 td.cTd01{background-color:#347b97; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle04 td.cTd02{background-color:#5194ab; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle04 td.cTd03{background-color:#6cadd0; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle04 td.cTd04{background-color:#96d0dd; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle04 td.cTd05{background-color:#bbecf3; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+
+table.colorStyle05 {width:100%; margin-bottom:15px; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.colorStyle05 td{padding:7px; text-align:center; width:20%;}
+table.colorStyle05 td.cTd01{background-color:#469234; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle05 td.cTd02{background-color:#5fa64b; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle05 td.cTd03{background-color:#79b963; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle05 td.cTd04{background-color:#96d07d; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle05 td.cTd05{background-color:#a9e08f; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+
+table.colorStyle06 {width:100%; margin-bottom:15px; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.colorStyle06 td{padding:7px; text-align:center; width:20%;}
+table.colorStyle06 td.cTd01{background-color:#9a3e66; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle06 td.cTd02{background-color:#b65e55; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle06 td.cTd03{background-color:#c87b71; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle06 td.cTd04{background-color:#e09f94; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle06 td.cTd05{background-color:#eeb3a8; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+
+table.colorStyle07 {width:100%; margin-bottom:15px; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.colorStyle07 td{padding:7px; text-align:center; width:20%;}
+table.colorStyle07 td.cTd01{background-color:#e43646; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle07 td.cTd02{background-color:#ed4e63; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle07 td.cTd03{background-color:#f5677f; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle07 td.cTd04{background-color:#fe7e9b; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle07 td.cTd05{background-color:#ffa0c2; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+
+table.colorStyle08 {width:100%; margin-bottom:15px; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.colorStyle08 td{padding:7px; text-align:center; width:20%;}
+table.colorStyle08 td.cTd01{background-color:#ff3a06; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle08 td.cTd02{background-color:#ff680d; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle08 td.cTd03{background-color:#ff9214; color:#fff; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle08 td.cTd04{background-color:#ffaa17; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle08 td.cTd05{background-color:#ffc91d; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+
+table.colorStyle09 {width:100%; margin-bottom:15px; font-family: '돋움', Dotum, 'Arial', 'Verdana', Dotum,Sans-serif; font-size:12px; border-collapse:collapse;}
+table.colorStyle09 td{padding:7px; text-align:center; width:20%;}
+table.colorStyle09 td.cTd01{background-color:#ffc400; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle09 td.cTd02{background-color:#ffdf0b; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle09 td.cTd03{background-color:#ffe50e; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle09 td.cTd04{background-color:#fff282; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+table.colorStyle09 td.cTd05{background-color:#fffad4; color:#747474; border-right:1px solid #fff; border-bottom:1px solid #fff;}
+
+
+/* 뉴스본분 탑 메뉴_090813_P04 */
+#viewtab_550 {clear:both; width:550px; text-align:center; margin:15px 0 10px 0; overflow:hidden;}
+#viewtab_550 .solo  {float:left;}
+#viewtab_550 .pair  {float:right;}
+
+#viewtab_550 .tabon  {width:268px; height:31px; border:none;  padding:0; margin-bottom:4px;}
+#viewtab_550 .tabon_open{float:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box1_on.gif) no-repeat; width:23px; height:31px; padding:0; margin:0;}
+#viewtab_550 .tabon_text {float:left; text-align:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box2_on.gif) repeat; width:230px; height:22px; font-weight:bold; color:#ffffff; font-size:12px; padding:9px 0 0 0; margin:0;}
+#viewtab_550 .tabon_close{float:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box3_on.gif) no-repeat; width:15px; height:31px; padding:0; margin:0;}
+#viewtab_550 .tabon a{font-weight:bold; color:#ffffff; font-size:12px; text-decoration:none;}
+#viewtab_550 .tabon a:hover{  text-decoration:none; color:#ffffff;}
+
+#viewtab_550 .tabout {width:268px; height:31px; border:none;  padding:0; margin-bottom:4px;}
+#viewtab_550 .tabout_open{float:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box1_out.gif) no-repeat; width:23px; height:31px; padding:0; margin:0;}
+#viewtab_550 .tabout_text {float:left; text-align:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box2_out.gif) repeat; width:230px; height:22px; font-weight:bold; color:#666666; font-size:12px; padding:9px 0 0 0; margin:0;}
+#viewtab_550 .tabout_close{float:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box3_out.gif) no-repeat; width:15px; height:31px; padding:0; margin:0;}
+#viewtab_550 .tabout a{font-weight:bold; color:#666666; font-size:12px; text-decoration:none;}
+#viewtab_550 .tabout a:hover{ text-decoration:underline; color:#000000;}
+
+#viewtab_730 {clear:both; width:730px; text-align:center; margin:15px 0 10px 0; overflow:hidden;}
+#viewtab_730 .solo  {float:left;}
+#viewtab_730 .pair  {float:right;}
+
+#viewtab_730 .tabon  {width:358px; height:31px; border:none;  padding:0; margin-bottom:4px;}
+#viewtab_730 .tabon_open{float:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box1_on.gif) no-repeat; width:23px; height:31px; padding:0; margin:0;}
+#viewtab_730 .tabon_text {float:left; text-align:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box2_on.gif) repeat; width:320px; height:22px; font-weight:bold; color:#ffffff; font-size:12px; padding:9px 0 0 0; margin:0;}
+#viewtab_730 .tabon_close{float:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box3_on.gif) no-repeat; width:15px; height:31px; padding:0; margin:0;}
+#viewtab_730 .tabon a{font-weight:bold; color:#ffffff; font-size:12px; text-decoration:none;}
+#viewtab_730 .tabon a:hover{  text-decoration:none; color:#ffffff;}
+
+#viewtab_730 .tabout {width:358px; height:31px; border:none;  padding:0; margin-bottom:4px;}
+#viewtab_730 .tabout_open{float:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box1_out.gif) no-repeat; width:23px; height:31px; padding:0; margin:0;}
+#viewtab_730 .tabout_text {float:left; text-align:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box2_out.gif) repeat; width:320px; height:22px; font-weight:bold; color:#666666; font-size:12px; padding:9px 0 0 0; margin:0;}
+#viewtab_730 .tabout_close{float:left; background:url(//img.danawa.com/new/d_news/img/newsviewtab_box3_out.gif) no-repeat; width:15px; height:31px; padding:0; margin:0;}
+#viewtab_730 .tabout a{font-weight:bold; color:#666666; font-size:12px; text-decoration:none;}
+#viewtab_730 .tabout a:hover{ text-decoration:underline; color:#000000;}

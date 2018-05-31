@@ -1,0 +1,94 @@
+@charset "utf-8";
+/*
+	Last Date : 2013.08.18
+	writer : P05
+	work : blog widget
+*/
+
+/* common */
+body,input,button,select,input,txtArea,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,ul,ol,li,legend,hr,em,addres,div,p,strong,fieldset,form{margin:0; padding:0;font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;}
+html,body{width:100%;height:100%;}
+html{overflow-y:scroll}
+body {font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;text-align:left;background-color:#fff;*word-break:break-all;-ms-word-break:break-all;}
+img, fieldset, button,iframe {border:0 none}
+em,address{font-style:normal}
+hr{display:none}
+caption{overflow:hidden;width:0.1%;height:0.1%;font-size:0;line-height:0;text-indent:-9999px}
+
+/* link */
+a{color:#666;text-decoration:none;}
+a:hover {text-decoration:underline;}
+input {color:#333;}
+
+/* layout */
+#pop_wrap {width:100%;background:url(b11.gif) no-repeat left top;}
+#pop_header {height:96px;background:#4c74cb;position:relative;}
+#pop_footer {clear:both;overflow:hidden;text-align:center;border-top:1px solid #d8d8d8;margin:0 30px;padding-top:23px;}
+
+/* pop_header */
+#pop_header h1 {background:url(http://www.danawa.com/product_jehu/blogWidget/img/bg_h1.gif) no-repeat left top;width:185px;height:30px;position:absolute;top:33px;left:40px;}
+#pop_header h1 label {display:block;text-indent:-9999em;}
+#pop_header .search_area {position:absolute;top:30px;left:238px;border:4px solid #1b46a4;height:27px;width:212px;background:#fff;
+-moz-box-shadow: 0 0 2px 2px #416cc5;
+-webkit-box-shadow: 0 0 2px 2px#416cc5;
+box-shadow: 0 0 2px 2px #416cc5;
+}
+#pop_header .search_area input {padding:6px 8px 5px 9px;border:none;width:170px;line-height:120%;color:#333}
+#pop_header .btn_pop_close {background:url(http://www.danawa.com/product_jehu/blogWidget/img/btn_pop_close.gif) no-repeat left top;width:30px;height:30px;position:absolute;top:34px;right:30px;text-indent:-9999em;}
+#pop_header .btn_search_icon {background:url(http://www.danawa.com/product_jehu/blogWidget/img/btn_search_icon.gif) no-repeat left top;width:18px;height:18px;position:absolute;top:4px;right:6px;text-indent:-9999em;display:block;cursor:pointer;}
+
+/* search_none */
+.search_none {background:url(http://www.danawa.com/product_jehu/blogWidget/img/bg_no_img.gif) no-repeat center top;width:100%;height:376px;margin-top:174px;}
+.search_none .message {text-align:center;padding-top:160px;font-weight:bold;font-size:16px;color:#000;}
+
+
+/* pop_footer */
+#pop_footer {}
+#pop_footer .logo {background:url(http://www.danawa.com/product_jehu/blogWidget/img/bg_logo.gif) no-repeat left top;width:71px;height:16px;overflow:hidden;display:inline-block;vertical-align:middle;margin-right:8px;line-height:9999px;position:relative;top:-1px;}
+#pop_footer address {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:9px; color:#757575; font-style:normal;text-align:center;display:inline-block;}
+#pop_footer address strong { color:#666; font-size:9px; font-family:Verdana, Arial, Helvetica, sans-serif; }
+
+
+.search_goods_list {padding-top:16px;}
+.list_type {margin:0 30px;}
+.list_type li {list-style:none;border-bottom:1px solid #ebebeb;clear:both;*zoom:1;overflow:hidden;padding:10px 0;}
+
+
+.btn_t1 {background:#737373;color:#fff;display:inline-block;width:93px;text-align:center;}
+.btn_t1 span {height:22px;line-height:22px;display:block;color:#fff;cursor:pointer;}
+.btn_t1:hover,
+.btn_t1 span:hover {text-decoration:none;}
+
+.btn_t2 {background:#fff;color:#333;display:inline-block;width:93px;text-align:center;}
+.btn_t2 span {height:21px;line-height:21px;display:block;color:#333;cursor:pointer;border:1px solid #d9d9d9;}
+.btn_t2:hover,
+.btn_t2 span:hover {text-decoration:none;}
+
+
+.goods_button {padding-top:15px;}
+.goods_button  .btn_t1 {margin-bottom:5px;}
+
+
+.goods_photo {width:80px;margin-right:20px;float:left;}
+.goods_photo img {width:80px;height:80px;overflow:hidden;}
+.goods_name {float:left;width:296px;display: table;height:80px;*padding-top:15px;*height:65px;}
+.goods_name a {font-size:14px;font-weight:bold;color:#333;*word-break:break-all;-ms-word-break:break-all;word-break:break-word;display: table-cell; vertical-align: middle;line-height:18px;}
+.goods_button {float:right;width:93px;}
+
+
+/* paging */
+.paging {background:url(http://www.danawa.com/product_jehu/blogWidget/img/bg_paging.gif) repeat-x left top;height:36px;border-left:1px solid #d8d8d8;border-right:1px solid #d8d8d8;text-align:center; position:relative; zoom:1;padding:0px 0;min-height:36px;margin:-1px 30px -1px 30px;*margin:-3px 30px -1px 30px;}
+.paging a {display:inline-block; height:34px; text-align:center;line-height:20px; vertical-align:middle;margin-right:-1px;margin-top:0px;}
+.paging strong {font-weight:bold; border:1px solid #6f6f6f;color:#fff;height:34px;width:32px;display:inline-block;background:#6f6f6f;vertical-align:middle; line-height:38px;_line-height:34px;}
+
+.paging a {color:#6f6f6f;border:1px solid #dedede;font-family:dotum,돋움,sans-serif; font-size:12px; text-decoration:none; width:32px; line-height:38px;_line-height:34px;}
+.paging a.prev {background:url(http://www.danawa.com/product_jehu/blogWidget/img/bg_paging_arw.gif)  no-repeat 14px -38px; width:32px;height:34px; margin-right:0px;border:none;}
+.paging a.next {background:url(http://www.danawa.com/product_jehu/blogWidget/img/bg_paging_arw.gif)  no-repeat 14px 2px; width:32px;height:34px;margin-left:0px;border:none;overflow:hidden;}
+.paging .arw {text-indent:-9999em;overflow:hidden;height:34px;display:block;}
+
+
+.danawa_search {background:url(http://www.danawa.com/product_jehu/blogWidget/img/bg_blog_search.gif) no-repeat left top;width:170px;height:89px;position:relative;}
+.danawa_search h1 {text-indent:-9999em;}
+.danawa_input_search label {color:#757575;font-size:12px;position:absolute;top:35px;left:15px;}
+.danawa_input_search .input1 {position:absolute;width:110px;height:13px;top:33px;left:14px;background:none;border:0;line-height:100%;padding:2px 0 0 1px;}
+.danawa_input_search .btn_search_icon {background:url(http://www.danawa.com/product_jehu/blogWidget/img/btn_search_icon2.gif) no-repeat left top;width:20px;height:21px;position:absolute;top:32px;right:22px;text-indent:-9999em;display:block;cursor:pointer;}

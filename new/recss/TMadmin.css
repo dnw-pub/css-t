@@ -1,0 +1,225 @@
+/*
+최종작업일자 : 2011년 4월 1일
+작성자 : P01
+내용 : TMadmin 관리자페이지
+
+최종작업일자 : 2011년 5월 19일
+작성자 : P05
+내용 : 레이아웃 가로스크롤 문제 tm_wrap 수정
+
+
+최종작업일자 : 2011년 9월 16일
+작성자 : P05
+내용 : .photo_type_02 a strong (width-400)
+*/
+
+/* default Selector */
+*{margin:0;padding:0}
+html,body{width:100%;height:100%}
+html{overflow-y:scroll}
+body {font-family: "돋움",dotum, "Arial", "Verdana";font-size: 12px; text-align:left;background-color:#fff;}
+
+/* link */
+a{color:#666;text-decoration:none; cursor:pointer;}
+a:hover {text-decoration:underline; cursor:pointer;}
+
+/* Type Selector */
+img, fieldset, button,iframe {border:0 none}
+em,address{font-style:normal}
+li {list-style:none;}
+hr{display:none}
+legend{*width:0}
+legend {position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;}
+:root legend{margin-top:-1px;font-size:0;line-height:0}
+select {font-size:12px; color:#333;}
+table {border-collapse:collapse; }
+
+.inputSty_1 {border:1px solid #cccccc; height:17px;}
+
+/* common */
+.floatL {float:left; margin-bottom:5px;}
+.floatR {float:right;}
+.marginT3 {margin-top:3px;}
+
+
+
+/* layout */
+#tm_wrap {padding:20px;}
+
+/* 버튼스타일 */
+.btnArea {float:right;}
+.btnSt_1 {padding:3px 5px 1px 5px; font-size:12px; color:#666; border:1px solid #acacac; background:url('http://img.danawa.com/new/newmain/TMadmin/img/bg_btn.gif'); float:left; margin: 0 3px;}
+.btnSt_2 {padding:3px 5px 1px 5px; font-size:11px; color:#666; border:1px solid #acacac; background:url('http://img.danawa.com/new/newmain/TMadmin/img/bg_btn.gif'); float:left; margin: 0 3px;}
+
+.btnSt_3 {padding:6px 6px 3px 6px; font-size:12px; color:#666; font-weight:bold; border:1px solid #acacac; background:url('http://img.danawa.com/new/newmain/TMadmin/img/bg_btn.gif'); margin: 0 3px;}
+
+.btnSt_4 {padding:6px 6px 3px 6px; font-size:12px; color:#666; font-weight:bold; border:1px solid #4166db; background:url('http://img.danawa.com/new/newmain/TMadmin/img/bg_btn.gif'); margin: 0 3px;}
+
+.btnSt_5 {padding:6px 6px 3px 6px; font-size:12px; color:#333; font-weight:bold; border:1px solid #acacac; background:url('http://img.danawa.com/new/newmain/TMadmin/img/bg_btn.gif'); margin: 0 3px;display:inline-block;position:relative;top:5px;}
+
+.textBtn {font-size:11px; font-weight:bold; color:#333;}
+.spaceLine {font-size:11px; padding:0 3px; color:#999;}
+
+.tm_Locat {font-size:11px; color:#666; letter-spacing:-1px; border-bottom:1px solid #eaeaea; padding-bottom:5px; margin-bottom:10px;}
+.tm_Tit {padding:4px 0px 0px 20px; font-size:16px; font-weight:bold; color:#03036f; background:url('http://img.danawa.com/new/newmain/TMadmin/img/bg_tit.jpg') no-repeat; margin-bottom:25px;}
+.tm_List {clear:both; width:100%; border-left:1px solid #b0cdf2; border-top:2px solid #b0cdf2;}
+.tm_List th{padding:5px; background-color:#e8f2fe; font-size:11px; font-weight:bold; color:#4166db; letter-spacing:-1px; text-align:center; border-right:1px solid #b0cdf2; border-bottom:1px solid #b0cdf2;}
+.tm_List td{padding:5px; border-right:1px solid #b0cdf2; border-bottom:1px solid #b0cdf2; font-size:11px; color:#333; text-align:center;}
+.tm_List td.tit {font-size:12px; text-align:left; font-weight:bold;}
+
+/* 탭버튼 */
+.tm_tab {clear:both; width:100%; height:31px; padding:0; background:url('http://img.danawa.com/new/newmain/TMadmin/img/tab_bg.gif') repeat; margin-bottom:7px;}
+
+
+/* 탭버튼_활성화 */
+.tm_tab ul .tabin{float:left; height:31px; background:url('http://img.danawa.com/new/newmain/TMadmin/img/tab_r_on.gif') no-repeat top right; }
+.tm_tab ul li{}
+.tm_tab a.tabon {
+	float:left;
+	display:block;
+	height:22px;
+	padding:9px 25px 0 25px;
+	background:url('http://img.danawa.com/new/newmain/TMadmin/img/tab_l_on.gif') no-repeat top left;
+	font-size:12px;
+	font-weight:bold;
+	color:#3366cc;
+	text-decoration:none;
+}
+
+/* 탭버튼_비활성화 */
+.tm_tab ul .tabdis{float:left; display:inline; height:31px; background:url('http://img.danawa.com/new/newmain/TMadmin/img/tab_r.gif') no-repeat top right; }
+.tm_tab a.tabout {
+	float:left;
+	display:block;
+	height:22px;
+	padding:9px 25px 0 25px;
+	background:url('http://img.danawa.com/new/newmain/TMadmin/img/tab_l.gif') no-repeat top left;	
+	font-size:12px;
+	font-weight:bold;
+	color:#999;
+	text-decoration:none;
+}
+
+.optionTop {width:100%; padding:5px 0;}
+.optionTopCenter {clear:both;*zoom:1;width:100%; padding:20px 0 5px 0;*padding:0px 0 5px 0;text-align:center;vertical-align:middle;}
+.optionTopCenter  .right {float:right;*margin:-24px 0 0 0;}
+.bottomStyle {padding:10px 0; border-bottom:1px solid #cccccc;}
+
+.boxSty_1 {clear:both; border:3px solid #dfdfdf; padding:20px;}
+
+.tm_input {width:100%;}
+.tm_input td{padding:5px; border-bottom:1px solid #e8ebec; margin-left:5px;}
+.tm_input td.title {font-size:14px; font-weight:bold; text-align:right; padding-right:15px; background:url('http://img.danawa.com/new/newmain/TMadmin/img/bul_tit.gif') no-repeat right;}
+
+
+/* 관리자 넘버링 */
+
+.bold a {font-weight:bold;}
+.arrange a {font-weight:bold;color:#606060;display:inline-block;}
+.arrange a.on {color:#4765d5;}
+.arrange span.bar {color:#aaabaf;display:inline-block;padding:0 5px 0 5px;}
+
+.offscreen {visibility:hidden; height:0; line-height:0; font-size:0; width:0; position:absolute; margin:0; padding:0; text-indent:-1000px;}
+.indexBorder {text-align:center; position:relative; zoom:1; margin-top:20px;}
+.indexBorder a, .indexBorder span {display:inline-block; height:20px; text-align:center;line-height:20px; vertical-align:middle;}
+.indexBorder a.next {background:url(http://img.danawa.com/new/prod_list/img/ico_next.gif) no-repeat 50% 1px; width:20px;}
+.indexBorder a.prev {background:url(http://img.danawa.com/new/prod_list/img/ico_prev.gif) no-repeat 50% 1px; width:20px; margin-right:4px;}
+.indexBorder .active {font-weight:bold; border:1px solid #7e3bdb; color:#7e3bdb;}
+.indexBorder a, .indexBorder span {color:#6b6b6b; border:1px solid #fff; font-family:Verdana; font-size:11px; text-decoration:none; width:20px; line-height:20px;}
+.indexBorder a:hover {border:#7e3bdb 1px solid;} 
+.indexBorder .next, .indexBorder .prev {border:#d9d9d9 1px solid;}
+
+
+.nums {position:absolute;left:0px;top:0px;width:15px;height:15px;background:#4166db;color:#fff;font-weight:bold;text-align:center;padding-top:2px;display:block*zoom:1;}
+.blue_border {position:relative;border:1px solid #4765d5 !important;}
+
+.input_01 {border:1px solid #ccc;width:222px;height:12px;display:block;padding:2px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_02 {border:1px solid #ccc;width:147px;height:12px;display:block;padding:2px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_03 {border:1px solid #ccc;width:230px;height:12px;display:block;padding:2px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_04 {border:1px solid #ccc;width:410px;height:14px;display:block;padding:2px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_05 {border:1px solid #ccc;width:108px;height:14px;display:block;padding:2px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_06 {border:1px solid #ccc;width:225px;height:12px;display:block;padding:2px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_07 {border:1px solid #ccc;width:76px;height:14px;display:block;padding:0px;font-size:11px;line-height:100%;font-family:dotum,돋움;vertical-align:top;}
+.input_08 {border:1px solid #ccc;width:80px;height:12px;display:block;padding:1px;font-size:11px;line-height:100%;font-family:dotum,돋움;margin-top:-4px;}
+.input_09 {border:1px solid #ccc;width:62px;height:12px;display:inline-block;padding:1px;font-size:11px;line-height:100%;font-family:dotum,돋움;margin-top:-4px;}
+.input_10 {border:1px solid #ccc;width:290px;height:14px;display:block;padding:2px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_11 {border:1px solid #ccc;width:450px;height:14px;display:block;padding:2px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_12 {border:1px solid #ccc;width:180px;height:14px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_13 {border:1px solid #ccc;width:130px;height:15px;display:inline-block;padding:1px;font-size:11px;line-height:100%;font-family:dotum,돋움;float:left;}
+.input_14 {border:1px solid #ccc;width:450px;height:16px;font-size:11px;line-height:100%;font-family:dotum,돋움;}
+.input_15 {border:1px solid #ccc;width:210px;height:13px;display:inline-block;padding:2px;font-size:11px;line-height:100%;font-family:dotum,돋움;vertical-align:top;}
+.input_16 {border:1px solid #ccc;width:80px;height:14px;display:inline-block;padding:1px;font-size:11px;line-height:100%;font-family:dotum,돋움;vertical-align:top;}
+.input_17 {border:1px solid #ccc;width:50px;height:14px;font-size:11px;font-family:dotum,돋움;vertical-align:top;}
+.input_18 {border:1px solid #ccc;width:360px;height:16px;font-family:dotum,돋움;vertical-align:top;}
+.input_19 {border:1px solid #ccc;width:125px;height:15px;padding:1px;font-size:11px;line-height:100%;font-family:dotum,돋움;vertical-align:top;}
+
+.tm_input .tit {font-size:14px;color:#2446b2;font-weight:bold;}
+.tm_input .user_name {font-size:11px;color:#283c7e;font-weight:bold;}
+.tm_input .date {font-size:12px;color:#333;}
+.tm_input .flow {color:#4166db;font-weight:bold;}
+
+.photo_update img {position:absolute;top:30px;left:95px;width:55px !important;height:19px !important;}
+.photo_update2 img {position:absolute;top:50px;left:13px;width:55px !important;height:19px !important;}
+.photo_update3 img {position:absolute;top:34px;left:30px;width:55px !important;height:19px !important;}
+.photo_update4 img {position:absolute;top:60px;left:100px;width:55px !important;height:19px !important;}
+.photo_update5 img {position:absolute;top:30px;left:13px;width:55px !important;height:19px !important;}
+.photo_update6 img {position:absolute;top:15px;left:15px;width:55px !important;height:19px !important;}
+.photo_update7 img {position:absolute;top:20px;left:30px;width:55px !important;height:19px !important;}
+.photo_update8 img {position:absolute;top:90px;left:60px;width:55px !important;height:19px !important;}
+.photo_update9 img {position:absolute;top:30px;left:15px;width:55px !important;height:19px !important;}
+.photo_update10 img {position:absolute;top:45px;left:42px;width:55px !important;height:19px !important;}
+.photo_update11 img {position:absolute;top:80px;left:25px;width:55px !important;height:19px !important;}
+.photo_update12 img {position:absolute;top:80px;left:162px;width:55px !important;height:19px !important;}
+.photo_update13 img {position:absolute;top:55px;left:40px;width:55px !important;height:19px !important;}
+.photo_update14 img {position:absolute;top:34px;left:35px;width:55px !important;height:19px !important;}
+.photo_update15 img {position:absolute;top:30px;left:120px;width:55px !important;height:19px !important;}
+
+
+.goods_01 li,
+.goods_02 li,
+.goods_03 li,
+.goods_04 li,
+.photo_type_01 li,
+.photo_type_05 li,
+.photo_type_06 li {position:relative;}
+
+
+#admin_content {float:left;width:60%;}
+#admin_right {float:left;width:40%;}
+
+.layout_table .td_01 {width:925px;}
+.layout_table .td_02 {width:auto;}
+.th_01 {width:10%;}
+.th_02 {width:10%;}
+.th_03 {width:50%;}
+.th_04 {width:10%;}
+.th_05 {width:10%;}
+.th_06 {width:10%;}
+.th_07 {width:10%;}
+
+
+.photo_type_02 a strong {display:inline-block;margin:13px 0 6px 0px;color:#333;line-height:1.2;font-size:16px;overflow:hidden;height:18px;width:400px;overflow:hidden;}
+
+
+.back_none {background:none !important;}
+
+
+#clear_area {clear:both;overflow:hidden;zoom:1;}
+#clear_area #dnw_wrap {width:700px;}
+#clear_area #dnw_content {width:700px;}
+#clear_area #addedUnitDisplay {width:700px;}
+
+#left_wrap {float:left;width:700px;margin-right:10px;}
+#right_wrap {float:left;width:700px;}
+#right_wrap #contentListResult {float:left;width:700px;}
+
+
+#alert_layer  {position:relative;z-index:999;margin:0 auto;width:238px;}
+#alert_layer .alert_in_area {border:1px solid #696969;background:#fff;position:absolute;z-index:998;top:200px;width:238px;height:142px;}
+.content_layer {background:#fff;height:86px;}
+.content_layer .txt { color:#333;text-align:center;padding-top:30px;font-size:14px;font-weight:bold;}
+.footer_layer {background:#f2f2f2;border-top:1px solid #e6e6e6;height:55px;text-align:center;}
+.footer_layer button {border:0 none;text-align:center;display:inline-block;width:50px;height:20px;border:1px solid #ff0000;background:url(http://img.danawa.com/new/newmain/TMadmin/img/bg_btn.gif) repeat-x left top;margin-top:15px;line-height:20px;}
+
+.shopping_news_list ul li {margin-right:16px !important;}
+.shopping_news_list ul li.last {margin-right:0px !important;}

@@ -1,0 +1,1312 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2012년 5월 10일
+작성자 : P10
+작업내용 : 결과내 검색 추가 .result_search
+
+최종작업일자 : 2012년 6월 14일
+작성자 : P10
+작업내용 : .goods_banner 추가
+
+최종작업일자 : 2012년 10월 31일
+작업자 : P10
+작업내용 : SSL관련 http제거
+
+최종작업일자 : 2013년 3월 27일
+작성자 : P03
+내용 :color:#999 를 color:#757575로 변경
+#new_top_link ul.link_go li a / #new_top_link ul.link_go li a:hover / #dnw_footer .contxt / #dnw_footer address / #dnw_footer .navyBtn / 
+.navigation ul.menu li.left /#new_top_link ul.link_go li.more_view a / .right_link a .customer_center / .right_link a .customer_center2 수정
+
+최종작업일자 : 2013년 3월 28일
+작성자 : P03
+내용 :#new_top_link ul.link_go li.more_view a / .right_link a .customer_center / .right_link a .customer_center2 / #indicate_onlineDigitalContent /
+ #indicate_onlineDigitalContent  table / #indicate_onlineDigitalContent  th / #indicate_onlineDigitalContent  td / #category_all_open h4 a 
+ .section_menu_open .open_layer li.red a / table.category_box th / .width_lnb .highlight 수정
+
+최종작업일자 : 2013년 5월 10일
+작업자 : P05
+작업내용 : 푸터 신규디자인 추가
+
+최종작업일자 : 2013년 6월 19일
+작업자 : P05
+작업내용 : .position_1 ~15 추가
+
+2013-09-06 / add wing_car / yhm
+2013-10-16 / 
+2013-12-16 / edit notebook LNB / yhm
+
+2013-12-17 / add new_fix_area / pjy
+
+2014-02-24 / add recommend category layer / ksy
+
+2014-03-19 / add dealer resizing 1040 / ksy
+
+*/
+
+/* default Selector */
+body,input,button,select,input,txtArea,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,ul,ol,li,legend,hr,em,addres,div,p,strong,fieldset,form{margin:0; padding:0;font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;}
+html,body{width:100%;height:100%;}
+html{overflow-y:scroll}
+body {font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;text-align:left;background-color:#fff;*word-break:break-all;-ms-word-break:break-all;background:url(//img.danawa.com/new/newmain/img/bg_top_line.gif) #fff repeat-x left top}
+
+/* link */
+a{color:#666;text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+/* Type Selector */
+img, fieldset, button,iframe {border:0 none}
+em,address{font-style:normal}
+hr{display:none}
+legend{*width:0}
+:root legend{margin-top:-1px;font-size:0;line-height:0}
+/* layout */
+
+#dnw_wrap {width:925px;margin:0 auto;}
+#dnw_wrap_gallery {width:100%;}
+#dnw_header {width:925px;margin:0 auto;}
+#dnw_content {clear:both;width:925px;margin:0 auto;}
+.dnw_snb {float:left;width:155px;position:relative;z-index:222;}
+.dnw_snb .left_area {width:155px;margin-top:-30px;}
+#content_area {width:760px;float:right;margin-bottom:30px;}
+
+/* solo type */
+.margin_top25 {margin-top:25px !important;}
+.marign-top1 {margin-top:1px}
+.marign-r-5 {margin-right:-5px;}
+.show {display:block !important;}
+.hide {display:none;}
+
+/* dnw_header */
+#new_top_link {height:25px;width:925px;margin:0 auto;position:relative;z-index:998;background:#f3f3f3;}
+#new_top_link .more_view {color:#949393;}
+#new_top_link ul.link_go li.spinoff {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -85px; padding:6px 4px 0 5px;}
+#new_top_link ul.link_go li {padding:5px 12px 0 0px;*padding:7px 12px 0 0px;float:left;height:15px;}
+#new_top_link ul.link_go li a {font-size:11px;font-family:돋움,dotum;display:block;letter-spacing:-1px; color:#4d4d4d;}
+#new_top_link ul.link_go li a:hover {text-decoration:underline; color:#4d4d4d;}
+#new_top_link ul.link_go li img {position:relative;top:-2px;*top:-3px;}
+#new_top_link ul.link_go li.category {background:none;padding:5px 9px 0 0px;*padding:6px 9px 0 0px;}
+#new_top_link ul.link_go li.category a {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat;background-position:right -15px;*background-position:right -16px;padding:0px 15px 0 0px; color:#666; text-decoration:none;cursor:pointer;cursor:hand;_width:43px;_display:inline-block;}
+#new_top_link ul.link_go li.category a:hover {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat;background-position:right -15px;*background-position:right -16px;padding:0px 15px 0 0px; color:#666; text-decoration:underline;}
+#new_top_link ul.link_go li.more_view {background:none;}
+#new_top_link ul.link_go li.more_view a{color:#666;background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat;background-position:right -15px;*background-position:right -16px;padding:0px 17px 0 0px;cursor:pointer;cursor:hand;_display:inline-block;}
+#new_top_link .it {background:url(//img.danawa.com/new/newmain/img/logo_mediait.gif) no-repeat 0 -1px;position:relative;top:-1px;*top:-3px;width:67px;height:17px;overflow:hidden;text-indent:-999em;}
+
+#new_top_link_gall ul.link_go li.spinoff {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -85px; padding:6px 4px 0 5px;}
+#new_top_link_gall .it {background:url(//img.danawa.com/new/newmain/img/logo_mediait_b.gif) no-repeat 0 -1px;position:relative;top:-3px;width:67px;height:17px;overflow:hidden;text-indent:-999em; }
+.MoreMenuBold {font-weight:bold;}
+
+.dnw_lnb .lnb_top_menu dl:hover {background:#e5eeff;}
+
+/* dnw_gnb */
+#dnw_gnb {width:925px;margin:0 auto;}
+#dnw_gnb:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+.search_box {height:52px;position:relative;width:925px;z-index:930;vertical-align:top;}
+.search_box h1 {position:absolute;top:18px;left:10px;z-index:3;margin:0 0 0 0 !important;}
+.search_box h2 {position:absolute;top:19px;left:110px;z-index:3;border-bottom:none !important;background:none !important;margin:0 !important;padding:0 !important;}
+.search_box fieldset {position:absolute;top:14px;left:243px;vertical-align:top;}
+.search_box fieldset input {vertical-align:top;}
+.search_box .blue_box {border:3px solid #2b5cb8;width:280px;height:22px;display:inline-block;vertical-align:top;}
+.search_box .gray_box {border:3px solid #73757a;width:280px;height:22px;display:inline-block;vertical-align:top;}
+.search_box .market_box {border:3px solid #73757a;width:322px;height:22px;_height:19px;display:inline-block;vertical-align:top;}
+.search_box .input_search {width:245px;height:14px;padding:2px 0 0 5px;background:transparent;border:none;margin-top:3px;font-weight:bold;color:#333 !important;}
+.search_box .input_search2 {width:169px;*width:175px;height:14px;padding:2px 0 0 5px;background:transparent;border:none;margin:2px 0 0 0px;*margin:2px 0 0 4px;font-weight:bold;}
+.search_box .search_button {position:relative;top:0px;left:-1px;*left:3px;}
+.search_box .seller {color:#333;margin:4px 3px 0 3px;display:inline-block;background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -116px;padding-right:4px;position:relative;z-index:99;letter-spacing:-1px;height:20px;_height:18px;}
+.search_box .seller #sellerSearchName {width:55px;*width:56px;display:inline-block;}
+.search_box .seller .select_typ1 {margin:0 0 0 4px;}
+.search_box .area {color:#333;margin:4px 1px 0 1px;*margin:4px 1px 0 3px;display:inline-block;background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -116px;padding-right:4px;height:20px;_height:18px;position:relative;z-index:99;}
+.search_box .area #areaSearchName {display:inline-block;width:25px;}
+.btn_auto_arrow {position:absolute;top:8px;left:266px;}
+.btn_auto_arrow2 {position:absolute;top:8px;left:307px;}
+.btn_auto_arrow3 {position:absolute;top:15px;*top:7px;left:279px;}
+
+.search_box .black_box {border:2px solid #141414;display:inline-block;position:relative;top:-1px;*top:0px;width:280px;height:23px;background:#fff;left:1px;vertical-align:top;}
+.search_box .input_search3 {width:250px;height:23px;_height:20px;background:#fff;border:none}
+.search_box .search_button2 {position:relative;top:0px;left:-1px;*left:3px;}
+
+.search_box .result_search {position:relative; top:8px; left:10px;} /* 결과내 검색 추가 */
+.search_box .result_search input {margin-right:6px; *margin-right:3px; *margin-top:-5px; _margin-top:-4px;}
+
+#seller {display:none;background:#fff;position:absolute;left:2px; top:26px;z-index:3;border-left:1px solid #999;border-right:1px solid #999;border-bottom:1px solid #999;width:78px;*width:79px;padding:4px 0 0 0px;_padding:2px 0 0 0px;}
+#seller li {line-height:19px;height:18px;}
+#seller li a{letter-spacing:-1px;color:#333;display:block;padding-left:5px;height:18px;}
+#seller li a:hover{background:#ffffff;text-decoration:none;}
+
+#area {display:none;background:#fff;position:absolute;left:81px; top:26px;z-index:198;border-left:1px solid #999;border-right:1px solid #999;border-bottom:1px solid #999;width:48px;padding:4px 0 0 0px;_padding:2px 0 0 0px;*margin-left:1px;}
+#area li {line-height:19px;height:18px;}
+#area li a{letter-spacing:-1px;color:#333;display:block;padding-left:5px;height:18px;}
+#area li a:hover{background:#ffffff;text-decoration:none;}
+
+.right_link {float:right;margin:4px 0 0 0;*margin:3px 0 0 0;}
+.right_link a {font-size:11px;letter-spacing:-1px;}
+.right_link a .customer_center {color:#666;margin-right:4px;display:inline-block;font-size:11px;}
+.right_link a .customer_center2 {color:#666;margin-right:4px;display:inline-block;font-size:11px;}
+
+.right_link a:hover .customer_center {text-decoration:underline;}
+.right_link a .btn_type1 {color:#757575;border:1px solid #ccc;background:#fff;display:inline-block;height:10px;line-height:11px;padding:4px 3px 0 4px;margin-right:1px;font-size:11px;
+-webkit-padding-before:3px;
+-webkit-padding-end:3px;
+-webkit-padding-after:2px;
+-webkit-padding-start:4px;
+}
+.right_link a .btn_type2 {color:#757575;border:1px solid #ccc;background:#fff;display:inline-block;height:10px;line-height:11px;padding:4px 2px 0 3px;font-size:11px;
+-webkit-padding-before:3px;
+-webkit-padding-end:3px;
+-webkit-padding-after:2px;
+-webkit-padding-start:4px;
+}
+@-moz-document url-prefix() {
+	.right_link a .btn_type1 {padding:2px 3px 2px 4px;}
+	.right_link a .btn_type2 {padding:2px 3px 2px 4px;}
+}
+
+.right_link a:hover {text-decoration:none;}
+
+.right_my_info {float:right;font-size:11px;}
+.right_my_info .id_name {color:#333;font-size:11px;margin-right:11px;}
+.right_my_info .note {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -90px;display:inline-block;padding:0 7px 0 0;margin-right:5px;font-size:11px;}
+.right_my_info .note a {color:#666;font-size:11px;}
+.right_my_info .note a strong {color:#4166db;letter-spacing:-1px;font-size:11px;}
+.right_my_info .note a:hover {text-decoration:underline;color:#4166db;font-size:11px;}
+.right_my_info a.my_blog:hover {text-decoration:underline;}
+.right_my_info a.my_blog {letter-spacing:-1px;color:#666;font-size:11px;}
+.right_my_info p {text-align:right;}
+.right_my_info p a:hover {text-decoration:none;}
+.right_my_info a .btn_type3 {color:#666;border:1px solid #d3d3d3;background:#f1f1f1;display:inline-block;height:12px;*height:11px;_height:11px;line-height:0.875em;padding:4px 3px 0 3px;*padding:3px 2px 2px 3px;font-size:11px;letter-spacing:-1px;margin-top:4px;margin-left:1px;}
+.right_my_info .banner {margin-top:3px;}
+.right_my_info .banner_02 {margin-top:20px;}
+.right_my_info #first_layer {margin-top:11px;}
+.right_my_info #first_layer_main {margin-top:26px;}
+.right_my_info #last_layer_main {margin-top:1px;}
+
+.right_link .id_name {color:#333;font-size:11px;margin-right:5px;letter-spacing:-1px;}
+.right_link .note {display:inline-block;margin-right:3px;font-size:11px;}
+.right_link .note a {color:#666;font-size:11px;}
+.right_link .note a strong {color:#4166db;letter-spacing:-1px;font-size:11px;}
+.right_link .note a:hover {text-decoration:underline;color:#666;font-size:11px;}
+.right_link .select_box {position:relative;top:-11px;width:62px;display:inline-block;padding-bottom:2px;}
+.right_link .select_box ul.over_select_layer{position:absolute;top:0px;right:-1px;background:#fff;border:1px solid #cecece;width:60px;}
+.right_link .select_box ul.over_select_layer .choice {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -282px;padding:3px 4px 0px 4px;margin-right:7px;font-size:11px;}
+.right_link .select_box ul.over_select_layer li {padding:2px 0 0px 4px;color:#757575;font-size:11px;}
+.right_link .select_box ul.over_select_layer li a {color:#757575;font-size:11px;}
+
+.right_link_gallerty .id_name {color:#fff;font-size:11px;margin-right:5px;letter-spacing:-1px;}
+.right_link_gallerty .note {display:inline-block;margin-right:3px;font-size:11px;color:#fff;}
+.right_link_gallerty .note a {color:#fff !important;font-size:11px;}
+.right_link_gallerty .note a strong {color:#fff;letter-spacing:-1px;font-size:11px;}
+
+.right_my_info_gall .id_name {color:#fff !important;font-size:11px;margin-right:11px;}
+.right_my_info_gall .note {color:#fff !important;}
+.right_my_info_gall .note a {color:#fff !important;font-size:11px;}
+.right_my_info_gall .note a strong {color:#fff !important;letter-spacing:-1px;font-size:11px;}
+.right_my_info_gall .note a:hover {text-decoration:underline;color:#fff !important;font-size:11px;}
+.right_my_info_gall a.my_blog {letter-spacing:-1px;color:#fff !important;font-size:11px;}
+
+#dnw_header #category {position:absolute;top:22px;left:0px;z-index:1;display:none;border:2px solid #999;background:#fff;padding:5px 0 0 8px;}
+#dnw_header #category ul {float:left;padding-right:16px;}
+#dnw_header #category ul li {line-height:16px;margin-bottom:3px;}
+#dnw_header #category ul li a {font-size:11px;letter-spacing:-1px;color:#666;}
+#dnw_header #category ul li a:hover {text-decoration:underline;}
+#dnw_header #category ul.last {padding-right:12px;}
+
+#dnw_header_gallery #category {position:absolute;top:22px;left:0px;z-index:1;display:none;border:2px solid #999;background:#fff;padding:5px 0 0 8px;}
+#dnw_header_gallery #category ul {float:left;padding-right:16px;}
+#dnw_header_gallery #category ul li {line-height:16px;margin-bottom:3px;}
+#dnw_header_gallery #category ul li a {font-size:11px;letter-spacing:-1px;color:#666;}
+#dnw_header_gallery #category ul li a:hover {text-decoration:underline;}
+
+#dnw_header_gallery #category ul.last {padding-right:12px;}
+
+#category_price {position:absolute;top:22px;left:0px;z-index:1;display:none;border:2px solid #999;background:#fff;padding:5px 0 0 8px;}
+#category_price ul {float:left;padding-right:16px;}
+#category_price ul li {line-height:16px;margin-bottom:3px;}
+#category_price ul li a {font-size:11px;letter-spacing:-1px;color:#666;}
+#category_price ul li a:hover {text-decoration:underline;}
+#category_price ul.last {padding-right:12px;}
+
+#more_view {display:none;border:2px solid #999;background:#fff;z-index:999;padding:5px 0 0 8px;}
+#more_view ul {float:left;padding-right:16px;background:none;}
+#more_view ul li {line-height:16px;margin-bottom:3px;background:none;}
+#more_view ul li a {font-size:11px;letter-spacing:-1px;color:#666;}
+#more_view ul li a:hover {text-decoration:underline;}
+#more_view ul.last {padding-right:12px;}
+.position_220 {position:absolute;top:22px;left:220px;}
+.position_110 {position:absolute;top:22px;left:110px;}
+
+/* navigation */
+.navigation {clear:both;height:33px;*zoom:1;position:relative;line-height:0;background:url(//img.danawa.com/new/newmain/img/bg_li_left.gif) #597fd0 repeat-x left top;color:#597fd0;}
+.navigation:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+.navigation .bar {margin:0 -2px 0 -2px;}
+.navigation ul.menu li {position:relative;z-index:1;vertical-align:top;*zoom:1;line-height:1em;height:33px;}
+.navigation ul.menu li.left {float:left;height:33px;_font-size:0; color:#000;}
+.navigation ul.menu li.left img{_float:left;}
+.navigation .over_img {padding-bottom:0px;background:#fff;position:relative;z-index:999;}
+
+.first_menu {margin:0px 0 5px 9px;min-height:200px;height:auto !important;height:200px;}
+.first_menu li {line-height:20px; color:#666;font-size:12px;}
+.first_menu li.empty {visibility:hidden;line-height:20px;}
+.first_menu li a{color:#666;font-size:12px;line-height:20px;}
+.first_menu li a:hover {text-decoration:underline;line-height:20px;}
+.first_menu li strong{color:#000;background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -211px;padding-right:12px;}
+.first_menu li a.lock_19{background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -188px;padding-right:16px;}
+.last_menu {margin:0px 6px 0px 9px;}
+.last_menu li a {color:#333;letter-spacing:-1px;font-size:11px;display:inline-block;line-height:17px;}
+.last_menu li a:hover {text-decoration:underline;}
+.last_menu li a.hit {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -166px;display:inline-block;padding: 0 16px 0 0;float: none;}
+.last_menu li a.lock_19 {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -187px;padding-right:16px;display:inline-block;}
+.last_menu li a strong {font-size:11px;}
+.last_menu li {margin:2px 0 0px 0;font-size:11px;}
+
+#menu_over_00 {position:absolute;top:32px;left:0px;z-index:9;padding-bottom:5px;}
+#menu_over_00:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+#menu_over_10 {position:absolute;top:32px;left:252px;border:1px solid #365aa8;z-index:9;padding-bottom:5px;}
+#menu_over_10:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+#menu_00, #menu_02, #menu_04, #menu_06, #menu_08, #menu_10,#menu_12,#menu_11 {height:33px;position:relative;z-index:99;}
+img.hit {vertical-align:middle;margin-left:4px;}
+.menu_over_layer {clear:both;*zoom:1;border-left:1px solid #365aa8;border-right:1px solid #365aa8;border-bottom:1px solid #365aa8;background:#fff;background:#fff;position:absolute;padding-bottom:5px;}
+
+.over_left {float:left;width:141px;min-height:242px;height:auto !important;height:242px;}
+.over_right {float:left;width:225px;min-height:250px;height:auto !important;height:250px;background:#fff;}
+.over_right img {width:205px;height:220px;margin:18px 10px 20px 0px;}
+.over_right iframe {width:205px;height:220px;margin:18px 10px 20px 0px;overflow:hidden;}
+.over_right .left_img img {margin:18px 0px 20px 10px !important;}
+.over_right .left_img iframe {margin:18px 0px 20px 10px !important;}
+.left_margin iframe {margin:18px 0px 20px 10px !important;}
+.over_right_move {display:inline-block;float:left;min-height:254px;height:auto !important;height:254px;background:url(//img.danawa.com/new/newmain/img/bg_gradation.gif) repeat-y left top;padding-left:24px;}
+.border_right {background:url(//img.danawa.com/new/newmain/img/bg_border_right.gif) repeat-y 0 0;margin:10px 0 0px 0;float:left;padding-right:15px;}
+.border_right:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+.border_left {background:url(//img.danawa.com/new/newmain/img/bg_border_left.gif) repeat-y 0 0;margin:10px 0 0px 0;float:left;}
+.border_left:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+
+/* 전체보기  */
+.all_layer {border-left:1px solid #3a5dab;border-right:1px solid #3a5dab;border-bottom:1px solid #3a5dab;background:url(//img.danawa.com/new/newmain/img/bg_menu_all.gif) #fff repeat-y left top;width:923px;_position:relative;_top:-4px;}
+#menu_over_11 {position:absolute;top:33px;right:0px;_right:-1px;z-index:9;width:925px;display:none;}
+#menu_over_11:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+#menu_over_11  ul.last {border-right:none;width:125px;overflow:hidden;}
+#all_up {display:none;}
+.top_menu {clear:both;*zoom:1;background:url(//img.danawa.com/new/newmain/img/bg_menu_all.gif) #fff repeat-y left top;}
+.top_menu ul {float:left;padding:8px 0 2px 8px;}
+.top_menu ul li {line-height:19px; color:#666;font-size:12px;}
+.top_menu ul li:hover {text-decoration:underline;}
+.top_menu ul li a {color:#666;font-size:12px;}
+.top_menu ul li a:hover {text-decoration:underline;}
+.top_menu ul li strong{color:#000;background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -211px;padding-right:12px;}
+
+.bottom_menu {clear:left;background:url(//img.danawa.com/new/newmain/img/bg_menu_bottom.gif) #f7f7f7 repeat-y left top;width:923px;padding:0 0 4px 0;_padding:2px 0 2px 0;}
+.bottom_menu:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+.bottom_menu ul {float:left;padding:5px 0 0 8px;}
+.bottom_menu ul li {line-height:18px;_height:18px;height:18px;overflow:hidden;color:#333;}
+.bottom_menu ul li a {font-size:11px !important;color:#333;letter-spacing:-1px;display:inline-block;}
+.bottom_menu ul li a strong {color:#333;}
+.bottom_menu ul li a:hover {text-decoration:underline;}
+.bottom_menu ul li a.hit {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -165px;padding-right:16px;display:inline-block;font-size:11px;color:#333;}
+.bottom_menu ul li a strong {font-size:11px;}
+
+.width_164 {width:155px;overflow:hidden;}
+.width_145 {width:136px;overflow:hidden;}
+.width_278 {width:278px;position:absolute;top:40px;left:246px;z-index:900;}
+.width_193 {width:193px;position:absolute;top:40px;left:374px;*left:374px;z-index:900;}
+.width_321 {width:331px;position:absolute;top:68px;left:248px;z-index:900;}
+.width_130 {width:122px;overflow:hidden;}
+.width_135 {width:127px;overflow:hidden;}
+.width_125 {width:117px;overflow:hidden;}
+
+/* gnb 전체레이어 규정 */
+.allmenu_unit_0 {width:127px;overflow:hidden;}
+.allmenu_unit_1 {width:117px;overflow:hidden;}
+.allmenu_unit_2 {width:117px;overflow:hidden;}
+.allmenu_unit_3 {width:117px;overflow:hidden;}
+.allmenu_unit_4 {width:117px;overflow:hidden;}
+.allmenu_unit_5 {width:117px;overflow:hidden;}
+.allmenu_unit_5 {width:117px;overflow:hidden;}
+
+/* 자동완성기능 */
+.auto_complete {border-left:1px solid #999;border-right:1px solid #999;border-bottom:1px solid #999;background:#ffff;padding:3px 0px 0 0px;background:#fff;display:none;_height:1%;}
+.auto_complete .auto_text {float:left;padding-left:5px;width:210px;overflow:hidden;}
+.auto_complete .auto_text em {font-style:normal;color:#e31e10;}
+.auto_complete .star {float:right;padding:0px 5px 0 0;}
+.auto_complete li {line-height:14px;padding:3px 0 3px 0;vertical-align:top;cursor:pointer;}
+:root .auto_complete li {line-height:14px;height:14px;}
+.auto_complete li.select {background:#ffffff;line-height:14px;padding:3px 0 3px 0;cursor:pointer;}
+.auto_complete a {color:#333;display:block;}
+.auto_complete a:hover {text-decoration:none;}
+.auto_complete .function {background:#ffffff;height:15px;padding:6px 5px 0 0;font-size:11px;text-align:right;}
+.auto_complete .function a {color:#666 !important;display:block;float:right;width:45px;font-size:11px;}
+
+.width_193 .auto_text {float:left;padding-left:5px;width:115px !important;overflow:hidden;}
+.width_321 .auto_text {float:left;padding-left:5px;width:260px !important;overflow:hidden;}
+
+/* main gnb */
+.search_box_main {height:86px;position:relative;width:925px;z-index:3;vertical-align:top;}
+.search_box_main h1 {position:absolute;top:2px;left:0px;z-index:3;}
+.search_box_main h2 {position:absolute;top:19px;left:110px;z-index:3;}
+.search_box_main fieldset {position:absolute;top:36px;left:245px;vertical-align:top}
+.search_box_main fieldset input {vertical-align:top;}
+.search_box_main .blue_box {border:4px solid #2b5cb8;width:332px;height:27px;display:inline-block;vertical-align:top}
+.search_box_main .input_search {width:302px;height:17px;background:transparent;margin-top:5px;border:none;margin-left:5px;font-size:14px;font-weight:bold;color:#333;}
+.search_box_main .input_search::-ms-clear{display:none;}
+.search_box_main .search_ad{font-size:12px;font-weight:normal;line-height: 17px;}
+.search_box_main .search_button {position:relative;top:0px;left:1px;*left:5px;}
+.btn_auto_arrow3 {position:absolute;top:13px;left:316px;}
+
+.blind {display:none;overflow:hidden;position:absolute;left:0;top:-5000px}
+
+.search_link{overflow:hidden;width:398px;margin-left:19px;position:absolute;top:19px;left:230px;}
+.search_link span{display:inline-block}
+.search_link span.bar{background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -141px;padding-right:11px;margin-right:9px;}
+.search_link span a {font-size:11px;letter-spacing:-1px;}
+
+.section_menu_list {clear:both;text-align:right;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;background:url(//img.danawa.com/new/newmain/img/bg_menu_line.gif) repeat-x left top;height:32px;}
+.section_menu_list a {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -130px;display:inline-block;margin-right:-4px;padding-right:1px;}
+.section_menu_list a img {margin-bottom:0px;vertical-align:middle;*vertical-align:top;_font-size:0;}
+.section_menu_list a.last {background:none;margin-right:-1px;}
+
+
+
+
+/* 장터gnb 변경 */
+
+.gnb_market {font-size:0; overflow:hidden;}
+.gnb_market a:hover {text-decoration:none;}
+.gnb_market li{font-size:0; float:left; position:relative; background:#278805; height:39px; position:relative; text-align:center;}
+.gnb_market .DMimg {background-image:url(//img.danawa.com/new/newmain/img/bg_gnb_market.gif); background-repeat:no-repeat; height:39px; position:absolute; left:0; top:0;}
+.gnb_market li em {color:#fff; font-size:12px; font-style:normal; display:inline-block; margin:13px 0 0 0;}
+.gnb_market li.active em {color:#ff0;}
+.gnb_market .mSeq01, .gnb_market .mSeq01 .DMimg {width:30px; background-position:0 0;}
+.gnb_market .mSeq02, .gnb_market .mSeq02 .DMimg {width:41px; background-position:-30px 0;}
+.gnb_market .mSeq03, .gnb_market .mSeq03 .DMimg {width:41px; background-position:-71px 0;}
+.gnb_market .mSeq04, .gnb_market .mSeq04 .DMimg {width:88px; background-position:-112px 0;}
+.gnb_market .mSeq05, .gnb_market .mSeq05 .DMimg {width:50px; background-position:-200px 0;}
+.gnb_market .mSeq06, .gnb_market .mSeq06 .DMimg {width:32px; background-position:-250px 0;}
+.gnb_market .mSeq07, .gnb_market .mSeq07 .DMimg {width:32px; background-position:-282px 0;}
+.gnb_market .mSeq08, .gnb_market .mSeq08 .DMimg {width:80px; background-position:-314px 0;}
+.gnb_market .mSeq09, .gnb_market .mSeq09 .DMimg {width:38px; background-position:-394px 0;}
+.gnb_market .mSeq10, .gnb_market .mSeq10 .DMimg {width:38px; background-position:-432px 0;}
+
+.gnb_market .mSeq11, .gnb_market .mSeq11 .DMimg {width:35px; background-position:-470px 0;}
+.gnb_market .mSeq12, .gnb_market .mSeq12 .DMimg {width:68px; background-position:-505px 0;}
+.gnb_market .mSeq13, .gnb_market .mSeq13 .DMimg {width:42px; background-position:-573px 0;}
+.gnb_market .mSeq14, .gnb_market .mSeq14 .DMimg {width:62px; background-position:-615px 0;}
+.gnb_market .mSeq15, .gnb_market .mSeq15 .DMimg {width:64px; background-position:-676px 0;}
+.gnb_market .mSeq16, .gnb_market .mSeq16 .DMimg {width:42px; background-position:-741px 0;}
+.gnb_market .mSeq17, .gnb_market .mSeq17 .DMimg {width:70px; background-position:-783px 0;}
+.gnb_market .mSeq18, .gnb_market .mSeq18 .DMimg {width:36px; background-position:-853px 0;}
+.gnb_market .mSeq19, .gnb_market .mSeq19 .DMimg {width:36px; background-position:-889px 0;}
+
+ul.gnb_market>li.active.mSeq01  .DMimg {background-position:0 bottom;}
+ul.gnb_market>li.active.mSeq02  .DMimg {background-position:-30px bottom;}
+ul.gnb_market>li.active.mSeq03  .DMimg {background-position:-71px bottom;}
+ul.gnb_market>li.active.mSeq04  .DMimg {background-position:-112px bottom;}
+ul.gnb_market>li.active.mSeq05  .DMimg {background-position:-200px bottom;}
+ul.gnb_market>li.active.mSeq06  .DMimg {background-position:-250px bottom;}
+ul.gnb_market>li.active.mSeq07  .DMimg {background-position:-282px bottom;}
+ul.gnb_market>li.active.mSeq08  .DMimg {background-position:-314px bottom;}
+ul.gnb_market>li.active.mSeq09  .DMimg {background-position:-394px bottom;}
+ul.gnb_market>li.active.mSeq10  .DMimg {background-position:-432px bottom;}
+                                                                  
+ul.gnb_market>li.active.mSeq11  .DMimg {background-position:-470px bottom;}
+ul.gnb_market>li.active.mSeq12  .DMimg {background-position:-505px bottom;}
+ul.gnb_market>li.active.mSeq13  .DMimg {background-position:-573px bottom;}
+ul.gnb_market>li.active.mSeq14  .DMimg {background-position:-615px bottom;}
+ul.gnb_market>li.active.mSeq15  .DMimg {background-position:-676px bottom;}
+ul.gnb_market>li.active.mSeq16  .DMimg {background-position:-741px bottom;}
+ul.gnb_market>li.active.mSeq17  .DMimg {background-position:-783px bottom;}
+ul.gnb_market>li.active.mSeq18  .DMimg {background-position:-853px bottom;}
+ul.gnb_market>li.active.mSeq19  .DMimg {background-position:-889px bottom;}
+
+.gnb_market .active .DMimg {background-position-y:bottom;}
+
+
+
+/* 장터gnb추가_P04_110420 */
+.menuList_dmall {font-size:0; overflow:hidden;}
+.menuList_dmall a:hover {text-decoration:none;}
+.menuList_dmall li{font-size:0; float:left; position:relative; background:#278805; height:39px; position:relative; text-align:center;}
+.menuList_dmall .DMimg {background-image:url(//img.danawa.com/new/GNB/img/spr_menuBar_dmall.gif); background-repeat:no-repeat; height:39px; position:absolute; left:0; top:0;}
+.menuList_dmall li em {color:#fff; font-size:12px; font-style:normal; display:inline-block; margin:13px 0 0 0 ;}
+.menuList_dmall li.active em {color:#ff0;}
+.menuList_dmall .mSeq01, .mSeq01 .DMimg {width:30px; background-position:0 0;}
+.menuList_dmall .mSeq02, .mSeq02 .DMimg {width:41px; background-position:-30px 0;}
+.menuList_dmall .mSeq03, .mSeq03 .DMimg {width:41px; background-position:-71px 0;}
+.menuList_dmall .mSeq04, .mSeq04 .DMimg {width:80px; background-position:-112px 0;}
+.menuList_dmall .mSeq05, .mSeq05 .DMimg {width:51px; background-position:-192px 0;}
+.menuList_dmall .mSeq06, .mSeq06 .DMimg {width:32px; background-position:-243px 0;}
+.menuList_dmall .mSeq07, .mSeq07 .DMimg {width:32px; background-position:-275px 0;}
+.menuList_dmall .mSeq08, .mSeq08 .DMimg {width:67px; background-position:-307px 0;}
+.menuList_dmall .mSeq09, .mSeq09 .DMimg {width:42px; background-position:-374px 0;}
+.menuList_dmall .mSeq10, .mSeq10 .DMimg {width:30px; background-position:-416px 0;}
+
+.menuList_dmall .mSeq11, .mSeq11 .DMimg {width:42px; background-position:-446px 0;}
+.menuList_dmall .mSeq12, .mSeq12 .DMimg {width:32px; background-position:-488px 0;}
+.menuList_dmall .mSeq13, .mSeq13 .DMimg {width:67px; background-position:-520px 0;}
+.menuList_dmall .mSeq14, .mSeq14 .DMimg {width:42px; background-position:-587px 0;}
+.menuList_dmall .mSeq15, .mSeq15 .DMimg {width:57px; background-position:-629px 0;}
+.menuList_dmall .mSeq16, .mSeq16 .DMimg {width:59px; background-position:-686px 0;}
+.menuList_dmall .mSeq17, .mSeq17 .DMimg {width:42px; background-position:-745px 0;}
+.menuList_dmall .mSeq18, .mSeq18 .DMimg {width:67px; background-position:-787px 0;}
+.menuList_dmall .mSeq19, .mSeq19 .DMimg {width:32px; background-position:-854px 0;}
+.menuList_dmall .mSeq20, .mSeq20 .DMimg {width:39px; background-position:-886px 0;}
+
+ul.menuList_dmall>li.active.mSeq01 .DMimg {background-position:0 bottom;}
+ul.menuList_dmall>li.active.mSeq02 .DMimg {background-position:-30px bottom;}
+ul.menuList_dmall>li.active.mSeq03 .DMimg {background-position:-71px bottom;}
+ul.menuList_dmall>li.active.mSeq04 .DMimg {background-position:-112px bottom;}
+ul.menuList_dmall>li.active.mSeq05 .DMimg {background-position:-192px bottom;}
+ul.menuList_dmall>li.active.mSeq06 .DMimg {background-position:-243px bottom;}
+ul.menuList_dmall>li.active.mSeq07 .DMimg {background-position:-275px bottom;}
+ul.menuList_dmall>li.active.mSeq08 .DMimg {background-position:-307px bottom;}
+ul.menuList_dmall>li.active.mSeq09 .DMimg {background-position:-374px bottom;}
+ul.menuList_dmall>li.active.mSeq10 .DMimg {background-position:-416px bottom;}
+
+ul.menuList_dmall>li.active.mSeq11 .DMimg {background-position:-446px bottom;}
+ul.menuList_dmall>li.active.mSeq12 .DMimg {background-position:-488px bottom;}
+ul.menuList_dmall>li.active.mSeq13 .DMimg {background-position:-520px bottom;}
+ul.menuList_dmall>li.active.mSeq14 .DMimg {background-position:-587px bottom;}
+ul.menuList_dmall>li.active.mSeq15 .DMimg {background-position:-629px bottom;}
+ul.menuList_dmall>li.active.mSeq16 .DMimg {background-position:-686px bottom;}
+ul.menuList_dmall>li.active.mSeq17 .DMimg {background-position:-745px bottom;}
+ul.menuList_dmall>li.active.mSeq18 .DMimg {background-position:-787px bottom;}
+ul.menuList_dmall>li.active.mSeq19 .DMimg {background-position:-854px bottom;}
+ul.menuList_dmall>li.active.mSeq20 .DMimg {background-position:-886px bottom;}
+
+.menuList_dmall .active .DMimg {background-position-y:bottom;}
+
+/* 다알지gnb추가 */
+.menuList_dalgi {font-size:0; overflow:hidden;}
+.menuList_dalgi a:hover {text-decoration:none;}
+.menuList_dalgi li{font-size:0; float:left; position:relative; background:#3456ba; height:39px; position:relative; text-align:center;}
+.menuList_dalgi .IRimg {background-image:url(//img.danawa.com/new/newmain/img/spr_menuBar_dalgi.gif); background-repeat:no-repeat; height:39px; position:absolute; left:0; top:0;}
+.menuList_dalgi li em {color:#fff; font-size:12px; font-style:normal; display:inline-block; margin:13px 0 0 0 ;}
+.menuList_dalgi li.active em {color:#ff0;}
+.menuList_dalgi .mSeq01, .mSeq01 .IRimg {width:103px; background-position:0 0;}
+.menuList_dalgi .mSeq02, .mSeq02 .IRimg {width:154px; background-position:-103px 0;}
+.menuList_dalgi .mSeq03, .mSeq03 .IRimg {width:130px; background-position:-257px 0;}
+.menuList_dalgi .mSeq04, .mSeq04 .IRimg {width:148px; background-position:-387px 0;}
+.menuList_dalgi .mSeq05, .mSeq05 .IRimg {width:122px; background-position:-534px 0;}
+.menuList_dalgi .mSeq06, .mSeq06 .IRimg {width:125px; background-position:-656px 0;}
+.menuList_dalgi .mSeq07, .mSeq07 .IRimg {width:143px; background-position:-780px 0;}
+
+ul.menuList_dalgi>li.active.mSeq01 .IRimg {background-position:0 bottom;}
+ul.menuList_dalgi>li.active.mSeq02 .IRimg {background-position:-103px bottom;}
+ul.menuList_dalgi>li.active.mSeq03 .IRimg {background-position:-257px bottom;}
+ul.menuList_dalgi>li.active.mSeq04 .IRimg {background-position:-387px bottom;}
+ul.menuList_dalgi>li.active.mSeq05 .IRimg {background-position:-534px bottom;}
+ul.menuList_dalgi>li.active.mSeq06 .IRimg {background-position:-656px bottom;}
+ul.menuList_dalgi>li.active.mSeq07 .IRimg {background-position:-780px bottom;}
+
+.menuList_dmall .active .IRimg {background-position-y:bottom;}
+
+/* 정책정보 메뉴 */
+.menuList_Policy {font-size:0; overflow:hidden; background-image:url(//img.danawa.com/new/policy/img/bg_top_menu.gif); background-repeat:repeat;}
+.menuList_Policy a:hover {text-decoration:none;}
+.menuList_Policy li{font-size:0; float:left; position:relative; background:#3a5ddd; height:40px; position:relative; text-align:center;}
+.menuList_Policy .TBimg {background-image:url(//img.danawa.com/new/policy/img/spr_menuBar_policy.gif); background-repeat:no-repeat; height:40px; position:absolute; left:0; top:0;}
+.menuList_Policy li em {color:#fff; font-size:12px; font-style:normal; display:inline-block; margin:13px 0 0 0 ;}
+.menuList_Policy li.active em {color:#ff0;}
+.menuList_Policy .mPeq01, .mPeq01 .TBimg {width:115px; background-position:0 0;}
+.menuList_Policy .mPeq02, .mPeq02 .TBimg {width:150px; background-position:-115px 0;}
+.menuList_Policy .mPeq03, .mPeq03 .TBimg {width:113px; background-position:-265px 0;}
+.menuList_Policy .mPeq04, .mPeq04 .TBimg {width:140px; background-position:-378px 0;}
+.menuList_Policy .mPeq05, .mPeq05 .TBimg {width:125px; background-position:-518px 0;}
+.menuList_Policy .mPeq06, .mPeq06 .TBimg {width:125px; background-position:-643px 0;}
+.menuList_Policy .mPeq07, .mPeq07 .TBimg {width:157px; background-position:-768px 0;}
+
+ul.menuList_Policy>li.active.mPeq01 .TBimg {background-position:0 bottom;}
+ul.menuList_Policy>li.active.mPeq02 .TBimg {background-position:-115px bottom;}
+ul.menuList_Policy>li.active.mPeq03 .TBimg {background-position:-265px bottom;}
+ul.menuList_Policy>li.active.mPeq04 .TBimg {background-position:-378px bottom;}
+ul.menuList_Policy>li.active.mPeq05 .TBimg {background-position:-518px bottom;}
+ul.menuList_Policy>li.active.mPeq06 .TBimg {background-position:-643px bottom;}
+ul.menuList_Policy>li.active.mPeq07 .TBimg {background-position:-768px bottom;}
+
+.menuList_Policy .active .TBimg {background-position-y:bottom;}
+
+/* dnw_lnb */
+.dnw_lnb {width:925px;margin:0 auto;_margin-top:-3px;margin-bottom:10px;}
+.dnw_lnb a {font-size:12px;}
+
+/* location_navigation */
+.local_navigation {height:38px;background:url(//img.danawa.com/new/newmain/img/bg_lnb_line.gif) repeat-x left top;vertical-align:top;position:relative;z-index:888;_margin-top:3px;}
+.location {float:left;background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat 0 5px;padding-left:10px;margin:13px 0 0 11px;_margin:12px 0 0 6px;font-size:12px;font-weight:normal;height:20px;color:#666 !important;}
+.location .note {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:right -24px;padding-right:13px;}
+.location .arrow {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:right -384px;padding:2px 23px 0px 0;cursor:pointer;margin-right:2px;vertical-align:middle;display:inline-block;}
+.location a {font-size:12px;}
+.location a:hover,.location a:focus,.location a:active {color:#666; text-decoration:underline;}
+.select_wrap {display:inline-block; position:relative;top:-4px;*top:-3px;_top:-2px; zoom:1; overflow:visible; background:url(//img.danawa.com/new/newmain/img/bg_select.gif) no-repeat 0 0; font-size:0; margin-right:5px;}
+.select_wrap button {background:url(//img.danawa.com/new/newmain/img/bg_select.gif) no-repeat 100% 0; display:inline-block; padding:0 73px 0px 4px; margin-left:1px; white-space:nowrap; font-size:12px;overflow:visible;line-height:180%;height:20px;vertical-align:middle;color:#666;border:none;cursor:pointer}
+.tab_category {float:right;border-left:1px solid #8badf5;border-top:1px solid #8badf5;border-right:1px solid #8badf5;margin-top:10px;background:#fff;position:relative;z-index:1;}
+.tab_category a {color:#4166db;font-size:12px;display:block; padding:9px 22px 0px 7px;height:18px;_height:auto;_padding:9px 22px 5px 7px;_position:relative;_z-index:999;}
+.tab_category a:hover {color:#4166db;text-decoration:none;}
+.tab_category a.open {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:60% -40px;display:block;font-size:11px;font-weight:bold; color:#4166db}
+.tab_category a.close {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:60% -304px;display:block;font-size:11px;font-weight:bold;display:none; color:#4166db;_margin-top:-1px;}
+
+#menu_detail {position:absolute;top:32px;left:49px;_left:50px;border:2px solid #999;background:#fff;}
+#menu_detail ul {float:left;padding:8px 0 2px 9px;width:117px;}
+#menu_detail ul.last {border-left:1px solid #e6e6e6;}
+#menu_detail ul li {line-height:18px;height:18px;}
+#menu_detail ul a {color:#333;}
+
+.dnw_lnb dl {clear:both;*zoom:1;border-bottom:1px solid #e6e6e6;padding:4px 0 3px 0;}
+.dnw_lnb dl:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+.dnw_lnb dt {float:left;width:146px;margin:2px 0 0 13px;*margin:5px 0 0 13px;_margin-left:7px;color:#333;font-weight:bold;}
+.dnw_lnb dt a {color:#333;font-weight:bold;}
+.dnw_lnb dt a:hover {text-decoration:underline;}
+.dnw_lnb dd {float:left;*word-break:break-all;-ms-word-break:break-all;*margin-top:2px;color:#333;}
+:root .dnw_lnb dd  {width:750px;}
+.dnw_lnb dl li {float:left;background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -75px;padding:0 10px 0 10px;line-height:18px;height:18px;vertical-align:top;white-space:nowrap; }
+.dnw_lnb dl li a{font-weight:normal;display:block;float:left;color:#333;}
+.dnw_lnb dl li a:hover {text-decoration:underline !important;}
+.dnw_lnb dl li.last {background:none;}
+.dnw_lnb dl li a.hit {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -142px;padding-right:18px;margin-right:2px;}
+.dnw_lnb dl li a.new {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -111px;padding-right:18px;margin-right:2px;}
+.dnw_lnb dl li a.lock_19 {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -516px;padding-right:18px;margin-right:2px;}
+.dnw_lnb dl li a.plus {width:15px;height:20px;background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:2px -170px;text-indent: -9999em;display:block;float:left;}
+.dnw_lnb dl.last_none {margin-bottom:10px;border-bottom:none !important;} 
+.dnw_lnb .lnb_top_menu dl.last {border-bottom:none !important;}
+.dnw_lnb .lnb_top_menu_box {border:1px solid #d9d9d9;margin-top:5px;background:#f7f7f7;*zoom:1;}
+.dnw_lnb .lnb_top_menu_box dl {margin:0 10px 0 10px;padding:4px 0 3px 0;}
+.dnw_lnb .lnb_top_menu_box dl.last {border-bottom:none;}
+.dnw_lnb .lnb_top_menu_box dl.brand_log {border-bottom:none;border-top:1px solid #e6e6e6;margin:0 0 0 0 !important;background:#fff;}
+.dnw_lnb .lnb_top_menu_box dl.brand_log dt {margin:1px 0px 0 12px;}
+.dnw_lnb .lnb_top_menu_box dl.brand_log dd strong a {color:#264d9c;}
+.dnw_lnb .lnb_top_menu_box dl.brand_log dd a strong {color:#264d9c;}
+.dnw_lnb .lnb_top_menu_box dt {margin:2px 0 0 2px;*margin:3px 0 0 2px;_margin-left:2px;}
+.dnw_lnb .lnb_top_menu_box dt a.tit_brand_log {background:url(//img.danawa.com/new/newmain/img/tit_brand_log.gif) no-repeat;background-position:0 0;width:73px;height:18px;text-indent: -9999em;display:block;float:left;}
+.dnw_lnb .lnb_top_menu_box dd {width:750px;}
+.dnw_lnb .lnb_top_menu_box dd strong {font-size:11px;font-weight:bold;color:#333;}
+.dnw_lnb .lnb_top_menu_box dd strong a {font-size:11px;font-weight:bold;color:#333;}
+.dnw_lnb .lnb_top_menu_box dd a:hover {text-decoration:underline !important;}
+.dnw_lnb .lnb_top_menu_box a {color:#333;}
+.dnw_lnb .lnb_top_menu_box .center_button{text-align:center;}
+.category_open_button {background:url(//img.danawa.com/new/newmain/img/bg_category_open.gif) repeat-x left top;height:21px;display:inline-block;text-align:center;position:relative;top:-1px;cursor:pointer}
+.category_open_button a.open {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:80% -46px;border-left:1px solid #d2d2d2;border-right:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;display:block;text-align:center;padding:3px 20px 3px 10px;font-size:11px;font-weight:bold;color:#666 !important;cursor:pointer}
+.category_open_button a.close {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:80% -309px;border-left:1px solid #d2d2d2;border-right:1px solid #d2d2d2;border-bottom:1px solid #d2d2d2;display:block;text-align:center;padding:3px 20px 3px 10px;font-size:11px;font-weight:bold;color:#666 !important;cursor:pointer}
+
+
+
+.section_menu_open {font-size:12px;clear:both;position:relative;z-index:1;}
+.section_menu_open h5 {float:left;margin:5px 0 5px 0;}
+.section_menu_open h5 a {color:#fff;border-bottom:1px solid #6188f0;border-right:1px solid #6188f0;display:block;padding:6px 10px 4px 7px;font-size:12px;cursor:pointer;width:137px;}
+.section_menu_open h5 a.open {color:#fff;background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) #799ef3 no-repeat 84% -196px;}
+.section_menu_open h5 a.close {color:#fff;background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) #799ef3 no-repeat 84% -224px;display:none;}
+.section_menu_open h5 a:hover {color:#fff;text-decoration:none;cursor:pointer;}
+.section_menu_open .right {float:right;font-weight:normal;margin:8px 0 5px 0;vertical-align:middle;height:22px;}
+.section_menu_open .right .first_text {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:right -263px;padding-right:10px;*line-height:25px;}
+.section_menu_open .right .first_img { background:url('//img.danawa.com/new/newmain/img/divide_bar.gif') no-repeat right 4px white;*background-position:right 4px; padding-right:5px; margin-right:8px; display:inline-block;}
+.section_menu_open .right .first_text a {color:#4166db;font-weight:bold;display:inline-block;margin:0 5px 0 5px;*margin:0 5px 0 0px; font-size:11px; letter-spacing:-1px;}
+.section_menu_open .right .first_text .line {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:right -263px;padding-right:10px;*background-position:right -258px !important;}
+.section_menu_open .right .first_text img {vertical-align:middle;display:inline-block;}
+.section_menu_open .right .first_text img.mt-6 {margin-top:-6px;}
+.section_menu_open .right .ad_text {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat ;background-position:right -263px; _background-position:right -258px; *background-position:right -258px; padding-right:10px; margin-right:5px;}
+.section_menu_open .right .ad_text img {vertical-align:middle;display:inline-block;position:relative;top:-2px;}
+.section_menu_open .right .second_text {padding-right:0px;padding-left:10px;*padding-left:0px;}
+.section_menu_open .right .second_text a {color:#4166db;font-weight:bold;display:inline-block;margin-top:4px;}
+.section_menu_open .right .last_text {display:inline-block;padding-left:10px;*padding-left:5px;}
+.section_menu_open .right .last_text a {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:right -45px;padding-right:16px;display:inline-block;margin-right:15px;font-size:11px;color:#333;}
+.section_menu_open .right .last_text img {vertical-align:middle;display:inline-block;position:relative;top:-4px;}
+.section_menu_open .open_layer {position:absolute;right:0px;_right:153px;top:2px;border:1px solid #8badf5;background:#fff;vertical-align:middle;padding:5px 0 3px 0;display:none;} /* width:223px; */
+.section_menu_open .open_layer li {line-height:23px;height:23px;overflow:hidden;vertical-align:middle;}
+.section_menu_open .open_layer li img {vertical-align:middle;margin:0 3px 0 3px;}
+.section_menu_open .open_layer li.red a{color:#de2579;}
+.section_menu_open .open_layer li a {color:#333; font-size:11px;}
+.section_menu_open .right .fix_bg1 {*background-position:right -258px !important;}
+
+/* dnw_snb */
+.dnw_snb .side_area {width:153px;border:1px solid #d9d9d9;padding-bottom:5px;position:relative;z-index:3;margin-bottom:40px;*margin-bottom:30px;*zoom:1;clear:both;}
+.dnw_snb .side_area li a {color:#333;font-size:12px;}
+
+.side_navi {margin:11px 12px 0 9px;}
+.side_navi li.title{line-height:21px;border-bottom:1px solid #e5e5e5;padding:0px 0 0px 2px;margin:3px 0 2px 0;clear:both;*zoom:1;position:relative;vertical-align:top;}
+.side_navi li.title_dot {line-height:21px;background:url(//img.danawa.com/new/newmain/img/bg_lnb_dot.gif) repeat-x left bottom;border-bottom:none;margin:4px 0 5px 0;clear:both;*zoom:1;white-space:nowrap;position:relative;vertical-align:top;padding-left:2px;}
+.side_navi li.title_dot strong {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:right -466px;letter-spacing:-1px;color:#e31e10;float:left;padding-right:10px;}
+
+.side_navi li.title a {letter-spacing:-1px;font-weight:bold;color:#333;float:left;}
+.side_navi li.title strong {letter-spacing:-1px;color:#333;}
+.side_navi li.title_dot a {letter-spacing:-1px;font-weight:bold;color:#333;float:left;}
+.side_navi li.title a.new,
+.side_navi li.title_dot a.new {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -109px;padding-right:19px;float:left;}
+.side_navi li.title a.hit,
+.side_navi li.title_dot a.hit {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -140px;padding-right:19px;float:left;}
+.side_navi li.title a.plus,
+.side_navi li.title_dot a.plus {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:2px -168px;text-indent: -9999em;display:block;float:left;width:13px;height:18px;}
+.side_navi li.title a.lock_19,
+.side_navi li.title_dot a.lock_19 {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -514px;padding-right:19px;float:left;}
+
+.side_navi li.title a.tv,
+.side_navi li.title_dot a.tv{background:url(//img.danawa.com/new/newmain/img/icon_tv.gif) no-repeat right 4px;padding-right:20px;float:left;}
+.side_navi li.title_dot strong{letter-spacing:-1px;color:#333;}
+.side_navi li.list a.new {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -110px;padding-right:19px;float:left;height:16px;display:block;font-size:11px;color:#666;}
+.side_navi li.list a.hit {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -141px;padding-right:19px;float:left;height:16px;display:block;font-size:11px;color:#666;}
+.side_navi li.list a.plus {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:0 -171px;text-indent: -9999em;display:block;float:left;margin:2px 0 0 2px;width:11px;height:13px;font-size:11px;color:#666;}
+.side_navi li.list a.lock_19 {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -514px;padding-right:18px;float:left;height:16px;display:block;font-size:11px;color:#666;}
+.side_navi li.list a.tv {background:url(//img.danawa.com/new/newmain/img/icon_tv.gif) no-repeat;background-position: right 4px;padding-right:20px;float:left;height:16px;display:block;font-size:11px;color:#666;}
+
+
+.side_navi li.list {clear:left;line-height:20px;height:20px;position:relative;vertical-align:top;padding-left:2px;white-space:nowrap;}
+.side_navi li.list a {font-weight:normal;float:left;font-size:11px;color:#666;}
+.side_navi li:after {clear:both; content:""; display:block;  visibility:hidden; height:0;}
+.side_navi li.last {border-bottom:1px solid #e5e5e5;padding-bottom:5px;}
+.side_navi li.none {border-bottom:none !important;}
+.side_navi li a:hover,.side_navi li a:focus,.side_navi li a:active {text-decoration:underline;}
+
+
+.dnw_snb h5 {cursor:pointer;position:relative;z-index:888;}
+.dnw_snb h5 a {color:#fff;border-bottom:1px solid #6188f0;border-right:1px solid #6188f0;display:block;padding:6px 10px 4px 7px;font-size:12px;cursor:pointer;_width:137px;}
+.dnw_snb h5 a:hover {text-decoration:none;cursor:pointer;}
+.dnw_snb h5 a.open {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) #8badf5 no-repeat 84% -196px;}
+.dnw_snb h5 a.close {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) #8badf5 no-repeat 84% -224px;display:none;}
+
+#sub_category_layer {position:absolute;left:130px;top:-2px;z-index:777;background:url(//img.danawa.com/new/newmain/img/ico_arrow_02.gif) no-repeat 1px 8px;padding-left:4px;}
+#sub_category_layer ul{padding:5px;border:1px solid #77a8ec;padding:6px 12px 0 7px;background:#fff;position:relative;z-index:11;}
+#sub_category_layer li {background:url(//img.danawa.com/new/newmain/img/icon_bul_01.png) no-repeat 0 -145px;padding-left:7px;white-space: nowrap;line-height:19px;height:19px;overflow:hidden;margin:0 !important;}
+#sub_category_layer li a {font-size:12px;color:#666;float:none !important;}
+
+#sub_category_layer_02 {position:absolute;left:130px;top:38px;z-index:777;background:url(//img.danawa.com/new/newmain/img/ico_arrow_02.gif) no-repeat 1px 8px;padding-left:4px;}
+#sub_category_layer_02 ul{padding:5px;border:1px solid #77a8ec;padding:6px 12px 0 7px;background:#fff;position:relative;z-index:11;}
+#sub_category_layer_02 li {background:url(//img.danawa.com/new/newmain/img/icon_bul_01.png) no-repeat 0 -145px;padding-left:7px;white-space: nowrap;line-height:19px;height:19px;overflow:hidden;margin:0 !important;}
+#sub_category_layer_02 li a {font-size:12px;color:#666;float:none !important;}
+
+/* 가격 */
+.price_text .num0 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 0px;text-indent: -9999em;display:block;width:15px;float:left;}
+.price_text .num1 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 -33px;text-indent: -9999em;display:block;width:15px;float:left;}
+.price_text .num2 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 -66px;text-indent: -9999em;display:block;width:15px;float:left;}
+.price_text .num3 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 -99px;text-indent: -9999em;display:block;width:15px;float:left;}
+.price_text .num4 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 -132px;text-indent: -9999em;display:block;width:15px;float:left;}
+.price_text .num5 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 -165px;text-indent: -9999em;display:block;width:15px;float:left;}
+.price_text .num6 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 -198px;text-indent: -9999em;display:block;width:15px;float:left;}
+.price_text .num7 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 -231px;text-indent: -9999em;display:block;width:15px;float:left;}
+.price_text .num8 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 -264px;text-indent: -9999em;display:block;width:15px;float:left;}
+.price_text .num9 {height:22px;background:url(//img.danawa.com/new/newmain/img/icon_price.png) no-repeat;background-position:0 -297px;text-indent: -9999em;display:block;width:15px;float:left;}
+
+/* 갤러리 gnb 2011-04-13 추가 */
+.bottom_line_gallery {border-bottom:1px solid #434343;}
+#dnw_header_gallery {width:100% important;background:#141414;}
+#new_top_link_gall {background:#141414;height:23px;width:925px;margin:0 auto;position:relative;z-index:998}
+#new_top_link_gall .more_view {color:#949393;}
+#new_top_link_gall ul.link_go li {padding:5px 8px 0 5px;*padding:6px 8px 0 5px;float:left;height:15px;}
+#new_top_link_gall ul.link_go li a {font-size:11px;font-family:돋움,dotum;display:block;letter-spacing:-1px;color:#a2a2a2;}
+#new_top_link_gall ul.link_go li.category {background:none;margin-right:2px;padding:5px 9px 0 0px;*padding:6px 9px 0 0px;}
+#new_top_link_gall ul.link_go li.category a {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat;background-position:right -15px;*background-position:right -16px;padding:0px 15px 0 0px;}
+#new_top_link_gall ul.link_go li.more_view {background:none;}
+#new_top_link_gall ul.link_go li.more_view a{color:#949393;background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat;background-position:right -15px;*background-position:right -16px;padding:0px 17px 0 0px;}
+
+
+/* 다나와 제휴쇼핑몰 */
+.partner_mall {border:1px solid #d9d9d9;padding:7px 0 1px 8px;clear:both;*zoom:1;width:915px;margin:0 auto;margin-top:10px;overflow:hidden;margin-bottom:0px;}
+.partner_mall:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+.partner_mall img{vertical-align:middle;}
+.partner_mall a {vertical-align:middle;display:inline-block;width:100px;text-align:center;margin:0 -4px 3px 0;}
+
+/* service_link */
+.service_link {clear:both;*zoom:1;padding:10px 0 10px 0px;border-top:1px solid #d9d9d9;margin-top:-1px;}
+.service_link:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+.service_link li {float:left;}
+.service_link li a {color:#666;font-size:11px;background:url(//img.danawa.com/new/newmain/img/icon_bul_01.png) no-repeat;background-position:right -40px;*background-position:right -41px;padding:0 0.7em 0 0.7em;*padding:0 10px 0 10px;}
+.service_link li.last {float:left;}
+.service_link li.last a {background:none;padding:0 0px 0 8px;}
+
+.service_link li a strong {font-size:11px;}
+
+
+/* dnw_footer 기존 푸터 사용 */
+#dnw_footer {clear:both;*zoom:1;width:925px;color:#333;margin:0 auto;padding:0px 0 10px 0;}
+#dnw_footer .blind {display:none;}
+#dnw_footer .rBox_contain:after {content:" "; display:block; clear:both; height:0; visibility:hidden;}
+#dnw_footer .rBox_contain {border:1px solid #d9d9d9; width:923px; padding:14px 0 10px 0;text-align:left;*zoom1;}
+#dnw_footer .rBox_contain dl {clear:both;*zoom:1; padding-left:11px;vertical-align:top;}
+#dnw_footer .rBox_contain dt {font-weight:bold; display:inline-block;color:#333;float:left;font-size:11px;}
+#dnw_footer .rBox_contain dd {color:#666; line-height:16px; font-size:11px;}
+#dnw_footer .rBox_contain a {color:#666; font-size:11px;}
+#dnw_footer .rBox_contain .danawacorp {overflow:hidden;margin-bottom:10px;}
+#dnw_footer .rBox_contain .danawacorp:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+#dnw_footer .rBox_contain .danawacorp dt {display:block;margin-right:7px;*margin-left:2px;}
+#dnw_footer .rBox_contain .danawacorp dd {float:left; margin-right:10px; white-space:nowrap;margin-top:0px;}
+#dnw_footer .rBox_contain .danawacorp .clear {clear:both; display:inline-block;}
+#dnw_footer .rBox_contain dd.mail {clear:both; display:inline-block;}
+#dnw_footer .contxt {clear:both; margin:9px 0 0 15px; font-size:11px; color:#757575; line-height:16px; position:relative;text-align:left;}
+#dnw_footer address { margin:5px 0 10px 18px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:9px; color:#757575; font-style:normal;text-align:left;}
+#dnw_footer address strong { color:#666; font-size:9px; font-family:Verdana, Arial, Helvetica, sans-serif; }
+
+#dnw_footer .navyBtn {background:#757575; height:12px;*height:13px; display:inline-block; padding:1px 3px 1px 2px;*padding:0px 3px 1px 2px;font-size:11px;vertical-align:top;position:relative;top:-1px;*top:-2px;}
+#dnw_footer .navyBtn a {color:#fff; font-size:11px; padding:2px 6px 2px 0px;_padding:2px 6px 0px 0px; letter-spacing:-1px; background:url(//img.danawa.com/new/newmain/img/icon_arrow_01.png) no-repeat right -121px;display:inline-block;line-height:0.875em}
+#dnw_footer .navyBtn a:hover {text-decoration:none;}
+#dnw_footer .posRight {position:absolute; right:15px;top:0;}
+#dnw_footer .posRight a:hover {text-decoration:none;}
+
+
+/* 풋터변경 - 온라인디지털 콘텐츠 항목 추가 */
+#dnw_footer dl.cs { margin-bottom: 6px;}
+#dnw_footer dl.cs dd {position: relative;top:-2px;*top:-1px;}
+#dnw_footer dl.cs dt {margin-right:12px;}
+#dnw_footer dl.privateInfo {border-right:1px solid #dedede;}
+#dnw_footer dl.ondicon {position:relative;*zoom:1;border-right:none;}
+#dnw_footer dl.ondicon dt {margin-right: 12px;}
+#dnw_footer dl.ondicon dd {position: relative;top:-1px;*top:-2px;_top:-1px;}
+
+#indicate_onlineDigitalContent {position:absolute; width:547px; right:10px; bottom:5px; background:#5768a5; z-index:99; display:none;}
+#indicate_onlineDigitalContent  h3 {font-size:16px; color:#fff; text-align:center; padding:10px 0;}
+#indicate_onlineDigitalContent  caption {display:none;}
+#indicate_onlineDigitalContent  table {border:3px solid #5768a5; border-collapse:collapse; width:100%;position: relative;z-index:999;}
+#indicate_onlineDigitalContent  th {background:#eaf0fe; color:#333; border:1px solid #5768a5; width:41%; padding:5px 10px; font-weight:normal; text-align:right; vertical-align:top;}
+#indicate_onlineDigitalContent  td {background:#fff; color:#666; border:1px solid #5768a5; width:auto; padding:5px 10px;}
+#indicate_onlineDigitalContent a {color:#344ea2; font-size:11px; text-decoration:underline;}
+#indicate_onlineDigitalContent a:hover {border:0; text-decoration:underline;}
+#indicate_onlineDigitalContent .closePop {position:absolute; right:10px; top:8px;}
+#indicate_onlineDigitalContent .closePop button {background:url(//img.danawa.com/new/main_new/img/btn_ondicon_close_btn.gif) no-repeat center; width:21px; height:21px; overflow:hidden; cursor:pointer;}
+#indicate_onlineDigitalContent .closePop em {display:none;}
+
+#content_guide {margin-bottom:2px;*margin-bottom:0px;_margin-bottom:2px;}
+
+#plus_layer {position:absolute;top:200px;left:550px;display:none;*zoom:1;clear:both;}
+#category_open  table.category_box {*position:absolute;*top:-160px;*left:-350px;}
+table.category_box {border:1px solid #8aacf4;border-collapse:collapse;}
+table.category_box th {background:#dee6fd;color:#333;padding:6px 5px 3px 5px;text-align:center;}
+table.category_box td {background:#fff;border-right:1px solid #dee6fd;vertical-align:top;}
+table.category_box td.last {border-right:none;}
+table.category_box td ul.list {float:left;display:block;padding:4px 7px 4px 5px;}
+table.category_box td ul.list li {background:url(//img.danawa.com/new/newmain/img/icon_bul_01.png) no-repeat 0 -124px;padding-left:5px;line-height:19px;white-space:nowrap;overflow:hidden;}
+table.category_box td ul.list li a.hit {background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -165px;padding-right:16px;display:inline-block;}
+table.category_box td ul.list li a.new {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -113px;padding-right:16px;margin-right:2px;}
+table.category_box td ul.list li a:hover{color:#0066cc;}
+
+#menu_open_layer {display:none;position:absolute;left:0px;_left:-155px;top:30px;width:153px;border:1px solid #d9d9d9;border-top:none;padding-bottom:5px;background:#fff;}
+#menu_open_layer li a {color:#333;font-size:12px;}
+#menu_open_layer li.list a{color:#666;font-size:11px;}
+#menu_open_layer .scroll_area {margin-top:3px;position:relative;}
+/*
+#menu_open_layer .scroll_area {scrollbar-face-color:#fff;scrollbar-highlight-color:#fff;scrollbar-shadow-color:#bbbbbb;scrollbar-3dlight-color:#bbbbbb;scrollbar-darkshadow-color:#ffffff;scrollbar-track-color:#ebebeb;scrollbar-arrow-color:#bbbbbb;}
+*/
+#category_open {position:absolute;top:0;left:0px;z-index:97;background:#fff;width:923px;border:1px solid #8badf5;padding-top:26px;display:none;}
+#category_open dl {clear:both;*zoom:1;border-bottom:1px solid #e6e6e6;padding:4px 0 3px 0;}
+#category_open dl:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+
+#category_open dt {float:left;width:146px;margin:2px 0 0 13px;*margin:3px 0 0 13px;_margin-left:7px;}
+#category_open dt a {color:#333;font-weight:bold;}
+#category_open dd {float:left;width:755px;*word-break:break-all;-ms-word-break:break-all;color:#333;}
+#category_open dl li {float:left;background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -75px;padding:0 10px 0 10px;line-height:18px;height:18px;vertical-align:top;white-space:nowrap; }
+#category_open dl li a{font-weight:normal;display:block;float:left;color:#333;}
+#category_open dl li.last {background:none;}
+#category_open dl li a.hit {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -142px;padding-right:18px;margin-right:2px;}
+#category_open dl li a.new {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -111px;padding-right:18px;margin-right:2px;}
+#category_open dl li a.plus {width:15px;height:20px;background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position:0 -170px;text-indent: -9999em;display:block;float:left;margin-left:2px;}
+.blue_line{position:relative;top:-1px;width:925px;height:1px;border-top:1px solid #8badf5;_font-size:0px;_line-height:0;clear:both;}/* z-index:2; */
+#category_open dl.last{border-bottom:none;}
+#category_open #lnb_top_menu {*zoom:1;}
+
+
+#category_all_open {border:1px solid #8badf5;background:#fff;position:absolute;top:37px;left:0px;width:908px;padding:12px 0px 35px 15px;display:none;*zoom:1;}
+#category_all_open h4 {margin:3px 0 6px 0;}
+#category_all_open h4 a {color:#4266db;}
+#category_all_open ul {margin-bottom:15px;}
+#category_all_open li {background:url(//img.danawa.com/new/newmain/img/icon_arrow_01.png) no-repeat;background-position:0 -290px;padding-left:8px;line-height:17px;height:17px;overflow:hidden;}
+#category_all_open li a.hit {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -144px;padding-right:18px;margin-right:2px;font-weight:bold;line-height:17px;height:17px;}
+#category_all_open li a.new {background:url(//img.danawa.com/new/newmain/img/icon_lnb.gif) no-repeat;background-position: right -113px;padding-right:18px;margin-right:2px;line-height:17px;height:17px;}
+#category_all_open li a {color:#333;}
+#category_all_open li a:hover {text-decoration:underline;}
+#category_all_open .column_with_175 {width:175px;float:left;}
+#category_all_open .scroll_area {height:470px;overflow-y:auto;margin-right:15px;}
+#category_all_open .scroll_area {scrollbar-face-color:#fff;scrollbar-highlight-color:#fff;scrollbar-shadow-color:#bbbbbb;scrollbar-3dlight-color:#bbbbbb;scrollbar-darkshadow-color:#ffffff;scrollbar-track-color:#ebebeb;scrollbar-arrow-color:#bbbbbb;}
+#category_all_open .btn_close {position:absolute;right:14px;bottom:0;cursor:pointer;background:url(//img.danawa.com/new/newmain/img/btn_close.gif) no-repeat;background-position:0 0;width:50px;height:21px;display:inline-block;text-indent: -9999em;margin:0 0 6px 0;float:left;}
+
+
+
+/* 기존 레이어 중앙정렬 */
+#wrap {margin:0 auto;width:925px;}
+#dnw_wrap #container {margin:0 auto !important;width:925px;*zoom:1;}
+#footer {margin:0 auto;width:925px;}
+
+.width_lnb {width:925px;border-bottom:1px solid #e6e6e6;*zoom:1;}
+.width_lnb:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+.width_lnb h4 {text-align:center;color:#333;margin-bottom:7px;}
+.width_lnb .width_type_01 {float:left;border-left:1px solid #e6e6e6;padding:7px 7px 3px 7px;}
+.width_lnb .fix_width {padding:7px 7px 3px; 7px} /* 컴퓨터섹션 GNB수정 */
+.width_lnb .width_type_01 table {border-collapse:collapse;}
+.width_lnb .width_type_01 td {padding-right:9px;padding-bottom:2px;}
+.width_lnb .width_type_02 {float:left;border-left:1px solid #e6e6e6;padding:7px 10px 3px 11px;}
+.width_lnb .width_type_02 table {border-collapse:collapse;}
+.width_lnb .width_type_02 td {padding-right:12px;padding-bottom:2px;}
+.width_lnb .width_type_03 {float:left;border-left:1px solid #e6e6e6;padding:7px 16px 3px 16px;}
+.width_lnb .width_type_03 table {border-collapse:collapse;}
+.width_lnb .width_type_03 td {padding-right:10px;padding-bottom:2px;}
+.width_lnb .width_type_03 td a{letter-spacing:0px;}
+.width_lnb .first {padding:7px 7px 0px 7px;border-left:none;*padding-top:10px;}
+.width_lnb .last {padding-right:0px !important;}
+.width_lnb .highlight {color:#de2579;}
+.width_lnb a {color:#333;letter-spacing:-1px;}
+.width_lnb a:hover,.width_lnb a:focus,.width_lnb a:active {color:#333; text-decoration:underline;}
+.width_lnb .highlight:hover,.width_lnb .highlight:focus,.width_lnb .highlight:active {color:#d04b66; text-decoration:underline;}
+
+.width_lnb .padding_t1 {padding:7px 0 0 0;}
+.width_lnb .menu_fline {padding-left:10px;}
+.width_lnb .menu_laline {padding-right::6px;}
+.width_lnb 	 .menu_bline td {border-bottom:1px solid #dfdfdf;padding-bottom:0px;}
+.width_lnb 	 .menu_2line td {padding-top:2px;}
+/* paging */
+.paging18 {position:absolute;right:3px;top:-1px;width:22px;}
+.prev02 {background:url(//img.danawa.com/new/newmain/img/icon_arrow_01.png) no-repeat;background-position:0 -29px;width:12px;height:12px;overflow:hidden;display:block;cursor:pointer;text-indent:-9999em;position:absolute;top:0;left:0px;}
+.next02 {background:url(//img.danawa.com/new/newmain/img/icon_arrow_01.png) no-repeat;background-position:-11px -29px;width:12px;height:12px;overflow:hidden;display:block;cursor:pointer;text-indent:-9999em;position:absolute;top:0;left:11px;}
+
+
+/* 오른쪽 스크롤영역 */
+#right_wrap{position:relative;z-index:999;left:0px;top:0px;margin:0 auto;width:925px;}
+#right_scroll_area {position:absolute;top:10px;right:-70px;z-index:1;}
+#scroll_banner {width:60px;position:relative;z-index:1;}
+#scroll_banner ul.right_scroll{border:1px solid #d9d9d9;padding:2px 0;background:#fff;width:58px;height:230px;overflow:hidden;}
+#scroll_banner li.li {text-align:center;padding:0;line-height:13px;position:relative;z-index:1;width:58px;float:left; color:#666;}
+#scroll_banner li.li a {font-size:11px;letter-spacing:-1px;display:block;position:relative;width:58px;padding:7px 0 4px 0;line-height:13px; color:#666; text-decoration:none;}
+#scroll_banner li.li a:hover {font-size:11px;letter-spacing:-1px;display:block;position:relative;width:58px;padding:7px 0 4px 0;line-height:13px; color:#666; text-decoration:underline;}
+#scroll_banner li#last_view_goods a,
+#scroll_banner li#last_view_news a {padding-bottom:21px; color:#666; text-decoration:none;}
+#scroll_banner li#last_view_goods a:hover,
+#scroll_banner li#last_view_news a:hover {padding-bottom:21px; color:#666; text-decoration:underline;}
+#scroll_banner li.li strong {color:#333;display:block;vertical-align:top;height:10px;line-height:100%;width:58px;position:absolute;bottom:8px;left:0;text-align:center;}
+#scroll_banner li.li .line {width:42px;height:1px;border-bottom:1px solid #e6e6e6;font-size:0;line-height:0;margin:0 auto;}
+#scroll_banner .top {margin-top:3px;}
+#scroll_banner .event_banner {margin-top:3px;}
+#right_wrap .fixed {position:fixed;_position:absolute; _z-index:-1;}
+*html #right_wrap .fixed {position: fixed;_position: absolute;left:0px; top:expression(documentElement.scrollTop); width:60px;}
+
+
+/* 최근본뉴스 */
+.last_view_news {position:absolute;top:0px;right:58px;z-index:9;border:2px solid #d9d9d9;width:196px;height:215px;background:#fff;text-align:left;display:none;}
+.last_view_news h5 {color:#333;font-size:11px;margin:12px 0 0px 13px;}
+.last_view_news ul {margin:6px 10px 0 12px;}
+.last_view_news li {background:url(//img.danawa.com/new/newmain/img/icon_bul_01.png) no-repeat 0px 6px;padding-left:6px;line-height:120%;height:16px;margin-bottom:2px;overflow:hidden; color:#666;}
+.last_view_news li a {font-size:11px; color:#666; text-decoration:none;}
+.last_view_news li a:hover {font-size:11px; color:#666; text-decoration:underline;}
+
+/* 최근본상품 */
+.last_view_goods {border:2px solid #d9d9d9;width:196px;background:#fff;position:absolute;top:0px;right:58px;z-index:9;display:none;text-align:left;}
+.last_view_goods h5 {color:#333;font-size:11px;margin:12px 0 0px 13px;position:relative;width:174px;}
+.last_view_goods li .thumb {display:inline;overflow:hidden;float:left;width:50px;margin:0px 10px 0 0;_margin:0px 7px 0 0;}
+.last_view_goods li .thumb img {width:50px;height:50px;}
+.last_view_goods ul {margin:7px 0 0 10px;}
+.last_view_goods li {margin-bottom:10px;}
+.last_view_goods li  strong {display:inline-block;margin:3px 0 1px 0px;_margin:3px 0 1px 0px;color:#666;line-height:1.2;width:112px;font-weight:normal;font-size:11px;}
+.last_view_goods li .goods_price {vertical-align:top;font-family:dotum,돋움;font-weight:bold;color:#333;padding-left:60px;}
+.last_view_goods li .goods_price em {font-family:Tahoma,Geneva,sans-serif;padding-right:1px;font-size:11px;}
+.last_view_goods li {display:inline-block;}
+
+/* 내스크랩기사 */
+.my_scrap_news {position:absolute;top:0px;right:58px;z-index:9;border:2px solid #d9d9d9;width:196px;height:215px;background:#fff;text-align:left;display:none;}
+.my_scrap_news h5 {color:#333;font-size:11px;margin:12px 0 0px 13px;position:relative;}
+.my_scrap_news h5 span.news_more_view {position:absolute;right:10px;top:0px;cursor:pointer;font-weight:normal;font-size:11px;color:#757575;background:url(//img.danawa.com/new/newmain/img/icon_arrow_01.png) no-repeat right -248px;padding-right:5px;}
+.my_scrap_news ul {margin:6px 10px 0 12px;}
+.my_scrap_news li {background:url(//img.danawa.com/new/newmain/img/icon_bul_01.png) no-repeat 0px 6px;padding-left:6px;line-height:120%;height:16px;margin-bottom:2px;overflow:hidden;}
+.my_scrap_news li a {font-size:11px; color:#666; text-decoration:none;}
+.my_scrap_news li a:hover {font-size:11px; color:#666; text-decoration:underline;}
+
+
+/* 새창 용 클래스명 */
+.new_target {}
+
+/* banner */
+
+#container,#dnw_content,#content_area {position:relative;}
+
+.ti_banner {}
+.ti_banner .type_01 {position:absolute;left:245px;top:-2279px;*top:-2312px;z-index:996;}
+.ti_banner .type_02 {position:absolute;left:0px;top:147px;z-index:996;}
+.ti_banner .type_03 {position:absolute;left:193px;top:65px;left:194px;z-index:996;}
+.ti_banner .type_04 {position:absolute;left:245px;top:196px;z-index:996;}
+.ti_banner .type_05 {position:absolute;left:245px;top:204px;z-index:996;}
+.ti_banner .type_06 {position:absolute;left:40px;top:132px;z-index:996;}
+
+
+
+.btn_x_close {background:url(//img.danawa.com/new/newmain/img/btn_x_close.gif) no-repeat;background-position:0 0;width:11px;height:11px;overflow:hidden;display:block;cursor:pointer;text-indent:-9999em;position:absolute;top:8px;right:10px;}
+
+/* 상단 로그인 영역 media it */
+.icon_it {background:url(//img.danawa.com/new/newmain/img/tit_media_it.gif) no-repeat;background-position:0 0px;_float:left;position:relative;top:-3px;width:62px;height:16px;text-indent:-9999em;}
+
+.icon_it_gallery {background:url(//img.danawa.com/new/newmain/img/tit_media_it_g.gif) no-repeat;background-position:0 0px;_float:left;position:relative;top:-3px;width:63px;height:16px;text-indent:-9999em;}
+
+
+.dt_title2 {float:left;width:80px !important;}
+.dd_menu1{width:346px;_width:350px;}
+:root .dd_menu1{width:346px !important;}
+:root .dd_menu2{width:310px !important;}
+.bg_none {background:none !important;}
+
+
+#frame_set {}
+/*
+.bg_none2 {background:url(//img.danawa.com/new/newmain/img/bg_top_line.gif) #fff repeat-x left top;}
+
+.bg_top {background:none !important;}
+*/
+.bg_sponsor {background:url(//img.danawa.com/new/newmain/img/bg_header_sponsor.gif) repeat-x left top;}
+.bg_sponsor #sponsor_banner {width:925px;margin:0 auto;}
+.bg_sponsor #sponsor_banner img {width:925px;height:80px;}
+
+
+/* 전체 메뉴*/
+
+#all_over_layer {position:absolute;left:0px;top:33px;}
+.depth1_out {background:#5a80d1;width:145px;padding:0px 3px 3px 3px;}
+.depth1_in {background:#fff;border:1px solid #365aa8;padding-top:7px;padding-bottom:10px;}
+ul.last {border-bottom:none;}
+.depth1 {border-bottom:1px solid #e6e6e6;padding-bottom:4px;padding-top:5px;}
+.depth1 li {line-height:18px;vertical-align:top;position:relative;height:24px;}
+.depth1 li a {font-weight:bold;font-size:12px;color:#595959;display:block;padding-left:23px;vertical-align:middle;padding-top:5px;}
+.depth1 li a:hover {}
+.depth1 li a.select {background:#4566da;color:#fff;text-decoration:none;}
+
+
+.depth2_layer {background:#fff;border:2px solid #4566da;position:absolute;left:123px;top:-10px;padding-top:11px;padding-bottom:13px;display:none;}
+.depth2 {width:94px;float:left;}
+.depth2 li.d2 {vertical-align:top;line-height:11px;}
+.depth2 li.d2 a {font-weight:normal;padding-left:19px;color:#666 !important;padding-top:3px;height:15px;padding-bottom:1px;font-size:11px;}
+.depth2 li.d2 a.space:hover {background:none !important;cursor:default;}
+.depth2 li.d2 a.first {background:none;}
+.depth2 li.d2 a:hover {background:url(//img.danawa.com/new/newmain/img/ico_depth2_arrow.gif) #f3f3f3 no-repeat 88% 6px;}
+.depth2 li.d2 a.first:hover {text-decoration:underline !important;background:none !important;}
+
+.depth2 strong {color:#333;background:url(//img.danawa.com/new/newmain/img/icon_gnb.png) no-repeat right -211px;padding-right:12px;}
+.br_line {border-right:1px solid #e6e6e6;}
+
+.width_200 {width:200px;}
+
+
+#left_wrap {width:925px;margin:0 auto;position:relative;}
+#left_wrap  .fixed {position:fixed;_position:absolute; _z-index:-1;}
+#left_wrap .left_banner {position:absolute;left:-94px;top:10px;}
+/* danawaGnbRootMenu.css ie6 전용 */
+.gnbRootMenuStyle {_height:33px;}
+
+li a.gnbRootSectionSpot {
+	_position:absolute;
+	_display:block;
+	_border:0px solid black;
+	_height:22px;
+	_top:15px;
+}
+li a.gnbRootSectionSpot {color:#000;_line-height:9999px;_overflow:hidden;}
+
+
+.books_market {margin-top:10px;}
+.books_market {height:44px;overflow:hidden;clear:both;background:url(//img.danawa.com/new/newmain/img/bg_bottom.gif) repeat-x left bottom;}
+.books_market ul {overflow:hidden;}
+.books_market li {float:left;cursor:pointer;}
+.books_market li img {float:left;}
+.books_market li.select {background:url(//img.danawa.com/new/newmain/img/logo_arrow.gif) no-repeat center 38px;height:41px;border-bottom:3px solid #e44086;position:relative;}
+.books_market li .bg_white {background:url(//img.danawa.com/new/newmain/img/bg_white.gif) no-repeat left bottom;height:3px;width:1px;position:absolute;right:0px;bottom:-3px;display:block;z-index:999;}
+
+td.game_title {font-size:13px;font-weight:bold;color:#333;padding:10px 0 7px 0;}
+
+/* 회원가입 추가 */
+.mt43 {margin-top:41px;}
+.member_textarea {border:1px solid #c8c8c8;height:164px;width:910px;overflow-x:hidden;overflow-y:scroll;margin-top:7px;font-size:11px; font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif; color:#666;padding:16px 0 0 13px;line-height:18px;}
+
+
+
+/* agree_radio */
+.agree_radio {float:right;margin-right:2px;padding-top:5px;padding-bottom:34px;}
+.agree_radio input {position:relative;top:2px;*top:0px;right:2px;*right:0px;}
+.agree_radio .first_label {margin-right:16px;display:inline-block;}
+
+/* text_member  types */
+.title_member_join {clear:both;overflow:hidden;border-bottom:1px solid #bfbfbf;margin:33px 0 0px 0;padding-bottom:12px;}
+.title_member_join h3 {padding-left:11px;}
+.text_member {padding:19px 0 0 12px;}
+.text_member em {font-style:normal;font-weight:bold;color:#4266db;}
+.text_member .first {margin-bottom:4px;}
+.text_member .last {margin-top:2px;font-size:11px;color:#757575;}
+
+.text_member_2 {position:relative;clear:both;zoom:1;overflow:hidden;}
+.text_member_2  h4 {padding-top:2px;}
+
+.text_member_3 {text-align:center;padding:37px 0 43px 0;background:#f7f7f7;}
+.text_member_3  em {font-style:normal;font-weight:bold;color:#4266db;}
+.text_member_3 input {border:1px solid #d4d4d4;width:137px;height:16px;padding:2px 0 0 2px;}
+.text_member_3 label {font-weight:bold;color:#666;display:inline-block;margin-right:6px;}
+.text_member_3 .first_text {margin-bottom:12px;}
+.text_member_3 .l_label {margin-left:9px;}
+
+.text_member_4 {text-align:center;padding:28px 0 26px 0;background:#f7f7f7;margin-top:44px;line-height:18px;}
+.text_member_4  em {font-style:normal;font-weight:bold;color:#4266db;}
+.text_member_4 input {border:1px solid #d4d4d4;width:137px;height:16px;padding:2px 0 0 2px;}
+.text_member_4 label {font-weight:bold;color:#666;display:inline-block;margin-right:6px;}
+.text_member_4 .first_text {margin-bottom:12px;}
+.text_member_4 .cause {margin-top:2px;font-size:11px;color:#757575;}
+
+/* member  btn */
+.btn_big_view {background:url(//img.danawa.com/new/newmain/img/btn_big_view.gif) no-repeat left top;width:61px;height:20px;display:block;position:absolute;right:0px;top:0px;text-indent:-9999em;}
+.btn_member_center {text-align:center;margin-top:28px; margin-bottom:80px;}
+.btn_member_center img {margin-right:5px;}
+
+/* member_footer */
+.member_footer {text-align:center !important;margin-bottom:100px;padding-top:70px;}
+#dnw_footer .member_footer address {display:inline-block;text-align:center;}
+#dnw_footer .member_footer strong {font-weight:normal;}
+
+/* 자동완성기능 */
+#auto_area {background:#fff;border:1px solid #787a80;width:658px;clear:both;overflow:hidden;}
+#auto_area2 {background:#fff;border:1px solid #787a80;width:603px;clear:both;overflow:hidden;}
+.auto_complete_new {padding:10px 0px 0 0px;height:281px;border-right:1px solid #e6e6e6;position:relative;float:left;}
+.auto_complete_new .auto_text {float:left;padding-left:5px;width:207px;overflow:hidden;}
+.auto_complete_new .auto_text em {font-style:normal;color:#095edf;font-weight:bold;}
+.auto_complete_new .star {float:right;padding-top:5px;margin-right:10px;}
+.auto_complete_new li {line-height:23px;vertical-align:top;cursor:pointer;padding-left:3px;clear:both;overflow:hidden;}
+.auto_complete_new li.select {background:#eaf2ff;line-height:23px;cursor:pointer;}
+.auto_complete_new a {color:#333;display:block;}
+.auto_complete_new a:hover {text-decoration:none;}
+.auto_complete_new .function {background:#ffffff;height:15px;padding:6px 5px 0 0;font-size:11px;text-align:right;}
+.auto_complete_new .function a {color:#666 !important;display:block;float:right;width:45px;font-size:11px;}
+.function_state {position:absolute;bottom:9px;right:9px;color:#333;font-size:11px;background:url(//img.danawa.com/new/newmain/img/ico_close_x.gif) no-repeat 0 1px;padding-left:12px;height:12px;display:block;}
+
+.w_335 {width:335px;}
+.w_282 {width:280px;}
+
+/* auto_right_goods */
+.auto_right_goods {width:310px;float:left;height:280px;}
+.auto_goods_list {margin-top:20px;}
+.auto_goods_list li {clear:both;overflow:hidden;zoom:1;margin:0 0 11px 15px;}
+.auto_goods_list .thumb {display:inline;overflow:hidden;width:80px;height:80px;float:left;margin-right:10px;}
+.auto_goods_list .thumb a {color:#333;}
+.auto_goods_list .thumb img {width:80px;height:80px;margin-right:9px;_margin-right:7px;float:left;}
+.auto_goods_list a strong {color:#333;line-height:1.3;overflow:hidden;font-weight:normal;margin-right:10px;}
+.auto_goods_list .auto_title {margin-top:10px;line-height:14px;margin-right:4px;}
+.auto_goods_list .auto_title a {color:#333;overflow:hidden;font-weight:normal;}
+.auto_goods_list .btm_price {line-height:1.4;height:28px;overflow:hidden;font-weight:bold;margin-top:1px;}
+.auto_goods_list .btm_price em {font-size:11px;/*color:#1a1a1a;*/font-style:normal;font-family:tahoma,돋움,sans-serif; color:#4266db;}
+
+/* search ui */
+.p15 {padding:15px 0 15px 5px;clear:both;overflow:hidden;zoom:1;}
+.ui_1 {border-top:1px solid #e6e6e6;padding-top:7px;padding-bottom:7px;}
+.ui_1 dl {clear:both;overflow:hidden;margin-bottom:3px;height:22px;}
+.ui_1 dt {float:left;color:#526dca;font-size:11px;font-weight:bold;background:url(//img.danawa.com/new/newmain/img/ico_dot_01.gif) no-repeat 10px 11px;padding-left:17px;text-align:left;vertical-align:bottom;height:14px;width:83px;padding-top:8px;}
+.ui_1 dt a {color:#526dca;font-size:11px;font-weight:bold;letter-spacing:-1px;}
+.ui_1 dd {float:left;font-size:12px;color:#666;width:819px;overflow:hidden;padding-top:8px;}
+.ui_1 dd a {font-size:12px;color:#666;}
+.ui_1 .bar {color:#d9d9d9;}
+.ui_1 dd span {display:inline-block;vertical-align:bottom;}
+.ui_1 img {vertical-align:bottom;margin-right:6px;}
+
+.search_goods_list {border-top:1px solid #d9d9d9;padding-top:15px;padding-bottom:33px;}
+.search_goods_list ul {clear:both;zoom:1;overflow:hidden;padding-left:10px;}
+.search_goods_list li {width:130px;margin-right:25px;float:left;}
+.search_goods_list li .goods_title {line-height:15px;margin-top:4px;height:30px;overflow:hidden;}
+.search_goods_list li .goods_title a {color:#333;font-size:12px;height:28px;display:block;padding-top:2px;} /* height:30px;display:block;padding-top:2px; 추가 P11 */
+.search_goods_list li .goods_price {color:#4266db;font-weight:bold;margin-top:3px;}
+.search_goods_list li .goods_price em {font-family:tahoma,돋움,dotum,sans-serif;font-style:normal;color:#4266db;}
+.search_goods_list li.last {margin-right:0px;}
+
+.search_best_list {border-top:1px solid #d9d9d9;padding-top:15px;padding-bottom:37px;clear:both;overflow:hidden;}
+.search_best_list ul {width:100%;}
+.search_best_list li {float:left;width:445px;}
+.search_best_list li.first {margin-right:35px;}
+.search_best_list li .goods_title {color:#333;font-weight:bold;font-size:14px;margin:14px 0px 0 0;line-height:17px;height:32px;overflow:hidden;}
+.search_best_list li .goods_title a {color:#333;font-size:14px;}
+.search_best_list li .goods_spec {margin-top:6px;line-height:15px;height:28px;overflow:hidden;}
+.search_best_list li .goods_price {color:#4266db;font-weight:bold;margin-top:12px;font-size:16px;vertical-align:top;}
+.search_best_list li .goods_price span {display:inline-block;vertical-align:top;color:#4266db;font-size:16px;margin-right:10px;}
+.search_best_list li .goods_price em {font-family:tahoma,돋움,dotum,sans-serif;font-style:normal;color:#4266db;font-size:16px;}
+.search_best_list li .imgs img {float:left;margin-right:21px;}
+.btn_price_compare2 {vertical-align:middle;}
+
+
+.brading_borad {/*padding:38px 0 33px 0;*/clear:both;zoom:1;overflow:hidden;}
+
+.w_925 {padding:23px 0 25px 0;clear:both;overflow:hidden;}
+.w_925 .overList {width:905px !important;}
+.w_925 ul.overList li {width:915px !important;}
+.mt21 {margin-top:22px;overflow:hidden;clear:both;zoom:1;}
+.titleArea_none:after {clear:both; content:""; display:block; visibility:hidden; height:0;}
+
+
+.goods_banner {margin:20px 0 0 23px;width:270px;height:250px;overflow:hidden;}
+#akcLayer {_width:330px !important;}
+
+.tab_category2 {float:right;border-left:1px solid #8badf5;border-top:1px solid #8badf5;margin-top:10px;background:#fff1;position:relative;z-index:1;}
+.tab_category2 a {color:#4166db;font-size:12px;display:block; padding:9px 36px 0px 8px;height:18px;_height:auto;_padding:9px 36px 5px 8px;_position:relative;_z-index:999;letter-spacing:-1px;}
+.tab_category2 a:hover {color:#4166db;text-decoration:none;}
+.tab_category2 a.tip {background:url(//img.danawa.com/new/newmain/img/ico_bubble.gif) no-repeat;background-position:right 5px;display:block;font-size:11px;font-weight:bold; color:#4166db;}
+
+.tab_category2_ver2 {border-top:none;border-left:none;}
+.tab_category2_ver2 a {padding:6px 5px 4px 0;}
+
+.title_member_join2 {clear: both;overflow: hidden;padding-bottom: 12px;}
+.mt0 {margin-top:0px !important;}
+.member_join_new {margin:67px 11px 0 11px;}
+.mt163 {margin-top:40px;}
+.mt160 {margin-top:160px;}
+
+.mt163 .member_textarea {width:750px !important;}
+
+/* Left Wing Navigation */
+.left_wing_wrap{position:relative;width:925px;margin:0 auto;}
+.left_wing{position:fixed;width:80px;margin-left:-90px;_position:absolute;}
+.left_wing .left_nav{border:1px solid #d9d9d9;font-size:11px;margin-bottom:6px;}
+.left_wing .left_nav ul{padding:0 6px;}
+.left_wing .left_nav li{_border-bottom:1px solid #e6e6e6;}
+.left_wing .left_nav li+li{border-top:1px solid #e6e6e6;}
+.left_wing .left_nav a{display:block;text-align:center;font-size:11px;padding:8px 0 8px;*padding:8px 0 4px;line-height:12px;}
+.left_wing .left_nav a:active{background:none;}
+.left_wing .left_nav .icon{display:block;width:32px;height:26px;background:url('//img.danawa.com/new/section_m/danawapc/img/left_wing.png') no-repeat 0 0;margin:0 auto;margin-bottom:6px;}
+.left_wing .left_nav .link_custom_pc .icon{background-position:0 0;height:22px;}
+.left_wing .left_nav .link_estimate .icon{background-position:-50px 0;}
+.left_wing .left_nav .link_used_pc .icon{background-position:-100px 0;}
+.left_wing .left_nav .link_dealer .icon{background-position:-150px 0;;}
+.left_wing .left_nav .link_dcmall .icon{background-position:-200px 0;width: 36px;}
+.left_wing .left_nav .selected a{font-weight:bold;color:#3e68ba;letter-spacing:-1px;}
+.left_wing .left_nav .selected .link_custom_pc .icon{background-position:0 -50px;}
+.left_wing .left_nav .selected .link_estimate .icon{background-position:-50px -50px;}
+.left_wing .left_nav .selected .link_used_pc .icon{background-position:-100px -50px;}
+.left_wing .left_nav .selected .link_dealer .icon{background-position: -150px -50px;}
+.left_wing .left_nav .selected .link_dcmall .icon{background-position: -200px -50px;}
+
+ /* 신규 푸터 */
+#indicate_onlineDigitalContent {background:#fff !important;border:4px solid #949494;width:550px;bottom:3px;right:140px;}
+.footer_layer {padding:20px 0px 0px 0px;background:#fff;}
+.footer_margin {padding:0 25px;}
+#indicate_onlineDigitalContent .tbl_con caption {display:block;font-weight:bold;font-size:14px;color:#333;height:28px;width:200px;line-height:20px;position:static;text-indent:0px !important;text-indent:0em;visibility:visible;}
+#indicate_onlineDigitalContent .tbl_con {border:none;border-collapse:collpase;}
+#indicate_onlineDigitalContent .tbl_con caption {background:url(//img.danawa.com/new/newmain/img/bg_caption.gif) no-repeat left 2px;padding:1px 0 0 5px;*padding:1px 0 0 9px;text-align:left;}
+:root #indicate_onlineDigitalContent .tbl_con caption {letter-spacing:-1px;}
+#indicate_onlineDigitalContent .tbl_con th {background:#f3f3f3;border:1px solid #d9d9d9;color:#1a1a1a;text-align:left;width:38%;padding:9px 10px 8px 15px;*padding:8px 10px 6px 15px;}
+#indicate_onlineDigitalContent .tbl_con td {padding-left:15px;background:#fff;}
+:root #indicate_onlineDigitalContent .tbl_con th {width:40%;}
+:root #indicate_onlineDigitalContent .tbl_con td {padding-left:10px;}
+#indicate_onlineDigitalContent .tbl_con td {border:1px solid #d9d9d9;color:#666;background:none;line-height:17px;}
+.footer_layer .btn_clause_view {background:url(//img.danawa.com/new/newmain/img/btn_clause_view.gif) no-repeat left top;width:74px;height:18px;display:inline-block;line-height:999px;overflow:hidden;vertical-align:middle;margin-left:5px;text-decoration:none;}
+.footer_layer .txt_clause {background:url(//img.danawa.com/new/newmain/img/bg_footer_txt.gif) no-repeat 96% 12px;height:49px;padding-top:23px;}
+.footer_layer  .txt_c1 {font-size:11px;color:#666;line-height:15px;}
+
+#indicate_onlineDigitalContent .footer_close {clear:both;*zoom:1;overflow:hidden;height:25px;background:#f4f4f4;}
+#indicate_onlineDigitalContent .btn_footer_close {background:url(//img.danawa.com/new/newmain/img/btn_footer_closex.gif) no-repeat right 8px;text-decoration:none;float:right;padding-right:14px;color:#323232;padding-top:7px;margin-right:8px;}
+#indicate_onlineDigitalContent .btn_footer_close:hover {text-decoration:none;}
+#indicate_onlineDigitalContent .btn_clause_view:hover {text-decoration:none;}
+.fhidden {position:absolute;left:-10000px;top:-10000px;}
+
+a.position_1 {width:28px; left:8px;}
+a.position_2 {width:28px; left:39px;}
+a.position_3 {width:38px; left:70px;}
+a.position_4 {width:40px; left:8px;}
+a.position_5 {width:53px; left:50px;}
+a.position_6 {width:36px; left:11px;}
+a.position_7 {width:40px; left:53px;}
+a.position_8 {width:52px; left:11px;}
+a.position_9 {width:28px; left:67px;}
+a.position_10 {width:28px; left:10px;}
+a.position_11 {width:40px; left:40px;}
+a.position_12 {width:40px; left:8px;}
+a.position_13 {width:27px; left:51px;}
+a.position_14 {width:30px; left:82px;}
+a.position_15 {width:30px; left:6px;}
+a.position_16 {width:28px; left:39px;}
+a.position_17 {width:30px; left:70px;}
+a.position_18 {width:50px; left:9px;}
+a.position_19 {width:40px; left:62px;}
+a.position_20 {width:80px; left:53px;}
+
+#menuGnbRootAllView {width:59px;height:33px;}
+
+/* Left Car wing banner */
+#left_wrap .wing_car{position:absolute;left:-133px;top:10px;width: 120px;}
+.wing_car .copywrite_thumb{width:120px;}
+.wing_car .copywrite_thumb a{display:block;}
+.wing_car .copywrite_thumb img{display:block;}
+.wing_car .today_price_wrap{background:url(//img.danawa.com/new/newmain/img/bg_wing_car.png) no-repeat 0 bottom;padding-bottom:11px;}
+.wing_car .today_price{margin-bottom:2px;}
+.wing_car .today_price dt{background:url(//img.danawa.com/new/newmain/img/bg_wing_car.png) no-repeat 0 0;display:block;height:47px;text-indent:-999em;overflow:hidden;white-space:nowrap;}
+.wing_car .today_price dd{display:block;background:url(//img.danawa.com/new/newmain/img/bg_wing_car.png) no-repeat 0 -50px;padding:0 13px;}
+.wing_car .today_price .to_car{display:block;border-top:1px solid #eee;padding:8px 0 5px;font-size:11px;line-height:16px;}
+.wing_car .today_price .first_dd .to_car{border-top:none;}
+.wing_car .today_price .to_car strong{font-size:11px;}
+.wing_car .today_price .car_name{display:block;color:#000;font-weight:normal;line-height:16px;}
+.wing_car .today_price .price_info{display:block;overflow:hidden;clear:both;zoom:1;white-space:nowrap;}
+.wing_car .today_price .price_type{color:#666;float:left;margin-top:1px;}
+.wing_car .today_price a:hover span, .wing_car .today_price a:hover strong{text-decoration:underline;}
+.wing_car .today_price .price{float:right;color:#000;text-align:right;padding-top:1px;*padding-top:0;}
+.wing_car .today_price .price_num{font-family:Tahoma;vertical-align:text-top;display:inline-block;margin-top:-2px;line-height:14px;*vertical-align:baseline;*display:inline;}
+.wing_car .link_car{display:block;background:url(//img.danawa.com/new/newmain/img/btn_wing_car.png) no-repeat 0 0;width:104px;height:18px;text-indent:100%;white-space:nowrap;overflow:hidden;margin:0 auto;}
+.wing_car .lent_price .today_price dt{background-position:-120px 0;height:56px;}
+.wing_car .lent_price .today_price .price_type{letter-spacing:-1px;}
+
+.width_lnb .lnb_mod1{padding-right:8px;}
+.width_lnb .lnb_mod1 table{width:262px;}
+
+/* new_fix_area */
+.new_fix_area {border:1px solid #c3cff6;width:118px;max-height:332px;position:fixed;_position:absolute;_float:left;_height:320px;overflow:hidden;}
+.new_fix_area .title_arrow {color:#333;background:url(//img.danawa.com/new/wing/img/ico_arrow_fix.gif) no-repeat 10px 11px;font-size:11px;padding:8px 0 0px 17px;display:block;line-height:16px;height:15px;}
+.new_fix_area .title_arrow  em {color:#4266db;font-weight:bold;font-size:11px;}
+.recently_fix_box {border-bottom: 1px solid #e6e6e6;padding-bottom:6px;position:relative;}
+.recently_fix_box .product_list {max-height:110px;}
+.recently_fix_box ul{margin:0px 0 0 26px;clear:both;}
+.recently_fix_box li {vertical-align:top;padding-bottom:5px;overflow:hidden;}
+.recently_fix_box li img {width:50px;height:50px;overflow:hidden;float:left;}
+.recently_fix_box .paging_fix {bottom:10px;right:11px;position:absolute;_clear:both;}
+.recently_fix_box .prev03 {background:url(//img.danawa.com/new/newmain/img/icon_arrow_01.png) no-repeat;background-position:0 -29px;width:12px;height:12px;overflow:hidden;display:block;cursor:pointer;text-indent:-9999em;float:left;margin-right:-1px;}
+.recently_fix_box .next03 {background:url(//img.danawa.com/new/newmain/img/icon_arrow_01.png) no-repeat;background-position:-11px -29px;width:12px;height:12px;overflow:hidden;display:block;cursor:pointer;text-indent:-9999em;float:left;}
+.recently_fix_box .prev03_n {background:url(//img.danawa.com/new/newmain/img/icon_arrow_01.png) no-repeat;background-position:0 -350px;width:12px;height:12px;overflow:hidden;display:block;cursor:pointer;text-indent:-9999em;float:left;margin-right:-1px;}
+.recently_fix_box .next03_n {background:url(//img.danawa.com/new/newmain/img/icon_arrow_01.png) no-repeat;background-position:-11px -350px;width:12px;height:12px;overflow:hidden;display:block;cursor:pointer;text-indent:-9999em;float:left;}
+
+
+.best_fix_box {border-bottom: 1px solid #e6e6e6;padding-bottom:4px;}
+.best_fix_box ul {margin:0 0 0 10px;}
+.best_fix_box li {background:url(//img.danawa.com/new/wing/img/ico_dot_fix.gif) no-repeat 0 5px;padding-left:8px;line-height:16px;height:16px;overflow:hidden;}
+.best_fix_box li a {font-size:11px;color:#666;}
+
+.title_fix_box {border-bottom: 1px solid #e6e6e6;padding-bottom:4px;_padding-bottom:0px;}
+.title_fix_box ul {margin:7px 0 0 10px;}
+.title_fix_box li {margin-bottom:2px;vertical-align:top;}
+.title_fix_box li a {color:#333;background:url(//img.danawa.com/new/wing/img/ico_arrow_fix.gif) no-repeat 0 3px;font-size:11px;padding:0 0 0 7px;line-height:16px;height:16px;overflow:hidden;display:block;}
+.top_fix_box a {background:url(//img.danawa.com/new/wing/img/bg_top_link.gif) no-repeat center center;height:18px;width:118px;display:block;text-indent:-9999em;}
+
+/* low_price_area */
+.low_price_area {text-align:center;line-height:180%;}
+.low_txt1 {background:#c00936;color:#fff;font-size:11px;display:inline-block;padding:3px 5px 1px 5px;line-height:100%;text-align:center;}
+.low_txt2{font-size:11px;text-align:center;}
+
+/* recommend category layer */
+.bottom_cate_layer {display:none;}
+.recom_cate_layer .bottom_cate_layer {float:left;padding:10px 8px;border-top:1px solid #E6E6E6;background:#f5f5f5;width:632px;position:relative;display:block;}
+.recom_cate_layer .bottom_cate_layer .cate_title {color:#000000;font-size:12px;margin-bottom:5px;display:block;}
+.recom_cate_layer .bottom_cate_layer .cate_text {color:#333333;display:block;line-height:20px;}
+.recom_cate_layer .bottom_cate_layer .cate_text a {color:#333333;}
+.recom_cate_layer .bottom_cate_layer .function_state {bottom:12px;}
+.recom_cate_layer .auto_complete_new .function_state {display:none;}
+.recom_cate_layer .bottom_cate_layer .blue_point {color:#095edf;font-weight:bold;}
+
+/* dealer resizing 1040 */
+#dnw_wrap_1040 {margin:0 auto;width:1040px;}
+#dnw_wrap_1040 #dnw_wrap {margin:0 auto;width:1040px;}
+#dnw_wrap_1040 #dnw_header {margin:0 auto;width:1040px;}
+#dnw_wrap_1040 #new_top_link {width:1040px;}
+#dnw_wrap_1040 #dnw_gnb {width:1040px;}
+#dnw_wrap_1040 #right_wrap {width:1040px;}
+#dnw_wrap_1040 .left_wing_wrap {width:1040px;}
+#dnw_wrap_1040 #dnw_footer {width:1040px;}
+#dnw_wrap_1040 #dnw_footer .rBox_contain {width:1040px;}
+
+/* Right Wing Box v1 */
+.rwing_box_1{overflow:visible;}
+.rwing_box_1 .title_arrow{height:14px;padding-top:6px;background-position:10px 9px;}
+.rwing_box_1 .recently_fix_box{zoom:1;padding-bottom:3px;}
+.rwing_box_1 .recently_fix_box ul{margin:0;}
+.rwing_box_1 .recently_fix_box li{position:relative;overflow:visible;padding:0;zoom:1;border:1px solid #fff;margin:0 0 3px;}
+.rwing_box_1 .recently_fix_box .prod_info{position:absolute;background:#4d4d4d;color:#fff !important;width:102px;left:-120px;top:-1px;display:none;padding:6px 9px 0;height:46px;}
+.rwing_box_1 .recently_fix_box .prod_name{font-size:11px;line-height:14px;height:28px;overflow:hidden;display:block;vertical-align:top;color:#fff !important;}
+.rwing_box_1 .recently_fix_box .price{font-size:11px;line-height:15px;height:15px;display:block;vertical-align:top;margin-top:1px;color:#fff !important;}
+.rwing_box_1 .recently_fix_box .price_num{font-size:11px;color:#fff !important;}
+.rwing_box_1 .link_prod{display:block;text-align:center;margin:0 15px;vertical-align:top;}
+.rwing_box_1 .recently_fix_box li img{float:none;vertical-align:top;}
+.rwing_box_1 .recently_fix_box .btn_del_pord{position:absolute;width:12px;height:12px;padding:0;border:none;overflow:hidden;text-indent:-300px;background:url(//img.danawa.com/new/newmain/img/btn_rwing_del.png) no-repeat #4d4d4d;top:0;right:0;display:none;cursor:pointer;}
+.rwing_box_1 .recently_fix_box .selected{margin:0 -1px 3px;border-color:#4d4d4d;}
+.rwing_box_1 .recently_fix_box .selected .prod_info{display:block;}
+.rwing_box_1 .recently_fix_box .selected .btn_del_pord{display:block;}
+.rwing_box_1 .recently_fix_box .paging_wrap{text-align:right;padding:1px 11px;vertical-align:top;zoom:1;line-height:12px;height:13px;}
+.rwing_box_1 .recently_fix_box .paging_fix{position:static;overflow:hidden;text-align:left;vertical-align:top;display:inline-block;*display:inline;zoom:1;}
+.rwing_box_1 .best_fix_box{padding-bottom:2px;}
+.rwing_box_1 .best_fix_box .title_arrow{padding-top:7px;}
+.rwing_box_1 .best_fix_box ul{margin-top:1px;}
+.rwing_box_1 .title_fix_box{padding-bottom:2px;}
+.rwing_box_1 .title_fix_box ul{margin-top:6px;}
+
+
+
+
+
+

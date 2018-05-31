@@ -1,0 +1,339 @@
+/*
+
+최종작업일자 : 2009년 4월 10일 PM 03시 40분
+작업자 : P01
+작업내용 : usb 인증으로 인한 로그인페이지를 신규생성하면서 .usb_bg / .usb_input / .txt_green / .table_usblogin 추가
+
+
+핵설명 FX: 아무것도 없음
+       ie7 : 속성앞에 *
+	   ie6 : 속성앞에 _
+	   
+*/
+
+body {margin:0;}
+
+td   { font-family: "돋움", "Arial", "Verdana";	font-size: 12px; color:#666666; }
+
+A:link {color: #4B4B4B;	text-decoration: none;}
+A:visited {color:#4B4B4B; text-decoration: none;}
+A:active {color: #4B4B4B; text-decoration: none;}
+A:hover {color : #005BA8; text-decoration: none;}
+
+
+/* form */
+.select01 /* location에 들어가는 다른 섹션으로 이동하는 select box  */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #666666;
+ height				: 18px;
+ background-color	: #ffd376;
+ margin:0 0 -1px 0;
+}
+
+.select02  /* 상단 게시판 sorting select box */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #ffffff;
+ height				: 18px;
+ background-color	: #c6a147;
+ margin:0 0 -1px 0;
+}
+
+select  /* 검색의 select box */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #222222;
+ margin:0 0 -1px 0;
+}
+
+.input_text  /* 기본 텍스트필드 */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #333333;
+ height				: 14px;
+ background-color	: #ffffff;
+ border: #bcbcbc 1px solid;
+}
+
+.input  /* 검색의 텍스트필드 */
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #333333;
+ background-color	: #ffffff;
+ border: #bcbcbc 1px solid;
+ width:150px;
+}
+
+.textarea  /* 댓글달기 */
+{color: #444444; background-color:#ffffff; border:1px solid #bcbcbc;padding:5px 0 0 0 ;
+SCROLLBAR-FACE-color: #f3f3f3;
+SCROLLBAR-HIGHLIGHT-color: #cccccc;
+SCROLLBAR-SHADOW-color: #cccccc;
+SCROLLBAR-3DLIGHT-color: #f3f3f3;
+SCROLLBAR-ARROW-color: #cccccc;
+SCROLLBAR-TRACK-color: #f3f3f3;
+SCROLLBAR-DARKSHADOW-color: #ffffff;
+SCROLLBAR-BASE-color: #f3f3f3;
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #666666;
+ height				: 16px;
+}
+
+
+/* text */
+.text   { font-family: "돋움", "Arial", "Verdana";	font-size: 12px; color:#666666; line-height:18px; }
+
+.text00   { font-family: "돋움", "Arial", "Verdana";	font-size: 12px; color:#666666; line-height:18px; }
+A.text00 {color: #666666;	text-decoration: none;}
+A.text00:hover {color : #005BA8; text-decoration: none;}
+
+.location {color: #ffffff;}
+
+.list_title {color: #222222; line-height:18px; font-weight: bold;}
+a.list_title {   font-size: 12px; font-weight: bold; color: #222222; text-decoration: none;}
+a.list_title:hover {   font-size: 12px; font-weight: bold; color: #005BA8; text-decoration: none;}
+
+.list_title02{color: #ffffff; line-height:18px; font-size:12px; display:inline;}
+a.list_title02{color: #ffffff; text-decoration: none; font-size:12px;}
+a.list_title02:hover {color: #ffffff; text-decoration: underline; font-size:12px;}
+
+.list_title03 {color: #222222; line-height:18px;font-weight: bold;}
+
+.list_title04 {color: #222222; line-height:18px;}
+a.list_title04{   font-size: 12px; color: #222222; text-decoration: none;}
+a.list_title04:hover {   font-size: 12px; color: #005BA8; text-decoration: none;}
+
+.list_title05 { color: #222222; font-size: 14px; line-height:18px; font-weight: bold;}
+
+.list_option01 {color: #9b9b9b; line-height:18px;}
+.list_option02 {color: #1272e9; line-height:18px;}
+a.list_option02{   font-size: 12px; color: #1272e9; text-decoration: none;}
+a.list_option02:hover {   font-size: 12px; color: #000000; text-decoration: none;}
+
+.list_option03 {color: #6db004; line-height:18px;}
+.list_option04 {color: #deff00; line-height:18px;}
+.list_option05 {color: #F36A06; line-height:18px;}
+.list_num { font-size: 11px;color: #6db004; line-height:18px; font-weight: bold;}
+.list_text {color: #666666; line-height:18px;}
+
+.list_adver {color: #e86301; line-height:18px; }
+a.list_adver{   font-size: 12px; color: #e86301; text-decoration: none;}
+a.list_adver:hover {   font-size: 12px; color: #005BA8; text-decoration: none;}
+
+.list_title05 { color: #222222; font-size: 14px; line-height:18px; font-weight: bold;}
+
+.page_on {color: #000000; line-height:18px; font-weight: bold;}
+.page_num {color: #4b4b4b; line-height:18px;}
+a.page_num:link, a.page_num:visited, a.page_num:active	{color:#4b4b4b; line-height:18px;}
+a.page_num:hover	{color:#000000; line-height:18px;}
+
+.price {color: #ff5511; line-height:18px; font-weight: bold;}
+.pname {color: #0066e6; line-height:18px;}
+
+.view_sub_title {color: #222222; }
+a.view_sub_title {   font-size: 12px; color: #222222; text-decoration: none;}
+a.view_sub_title:hover {   font-size: 12px; color: #005BA8; text-decoration: none;}
+
+.reple_title {color: #ffffff; line-height:18px;}
+a.reple_title {color: #ffffff; text-decoration: none;}
+a.reple_title:hover {color: #ffffff; text-decoration: underline;}
+
+.board {color: #222222;} /* 리스트 상단 구분내용 */
+
+
+/* 댓글달기관련 text */
+.text_11px /* 댓글 아이디 옆에 아이피, 날짜 */
+{ color: #999999; font-size: 11px;}
+.con_66_16 /* 댓글 내용 */
+{ color: #666666; line-height:16px;}
+
+ /* 댓글달기 텍스트 버튼 */
+.add_text
+{ color: #388ddc; font-size: 11px; text-decoration: underline}
+a.add_text{   font-size: 11px; font-weight: normal; color: #388ddc; text-decoration: underline;}
+a.add_text:hover {   font-size: 11px; font-weight: normal; color: #f68f09; text-decoration: underline;}
+
+/* table bgcolor */
+.bgcolor01 { background-color	: #eddca4;}  /* list화면에서 이슈의 배경색 */
+.bgcolor02 { background-color	: #fffcee;}   /* list화면에서 추천수 많은 리스트 배경색 */
+.bgcolor03 { background-color	: #f8f0d5;}   /* view화면에서 상단 컨텐츠 이동 버튼의 배경색 */
+.bgcolor04 { background-color	: #b6b6b6;}   /* 컨텐츠 단락 구분시 들어가는 회색 라인컬러 */
+.bgcolor05 { background-color	: #cccccc;}   /* view화면 하단의 가격비교, 관련기사, 관련상품의 타이틀 라인 *//*080821 수정전 칼라 #ccb98a*/
+.bgcolor06 { background-color	: #fbfaf2;}   /* view화면 하단의 가격비교 테이블 배경 컬러 */
+.bgcolor07 { background-color	: #d5d5d5;}   /* view화면 하단의 가격비교 테이블 라인 컬러 */
+.bgcolor08 { background-color	: #eba800;}   /* view화면 하단의 목록보기 버튼 bar 컬러 */
+.bgcolor09 { background-color	: #FFFFFF;}   /* list bg color */
+.bgcolor10 { background-color	: #B08B2F;}   /* 진한색 */
+.bgcolor12 { background-color	: #efb238;}   /* 좌측 메뉴 bgcolor */
+.bgcolor13 { background-color	: #f3b823;}   /* 용어설명 */
+.bgcolor14 { background-color	: #faf7ea;}   /* 용어설명 */
+
+
+/* image border-color */
+.pic_big { border-color:b2b2b2; }  /* 상단의 이슈영역 이미지 */
+.pic_small { border-color:dddddd; } /* 리스트에 들어가는 이미지 */
+
+
+/* image 간격조절 */
+.btn_page { margin:0 0 -2px 0; } /* 하단 페이지 이동 버튼 세로 위치조정 */
+.page_dot { margin:0 0 3px 0; } /* 하단 페이지 이동 숫자 사이에 들어가는 dot 이미지 세로 위치조정 */
+
+/* 게시판 라인 */
+.line_height { height : 29px; }
+
+/*커뮤니티에 들어갈 텍스트 댓글 */
+.footer {margin:0; height:24px; border:#D9D9D9 solid 1px; background:#FFFFFF;padding:7px 4px 0 0;}
+
+.p_word { color:#ffffff; font-family:돋움; font-size:12px; line-height:18px;background-color: #959595;padding:2px 4px 0 4px;}
+.p_blue {  font-family:돋움; font-size: 12px; font-weight: bold; color: #185894;}
+.list_price {color: #f96120; font-weight: bold;}
+.txt_00{ color: #000000; line-height:16px;}
+a.txt_00;{   font-size: 12px; line-height:16px; color: #000000; text-decoration: none;}
+a.txt_00:hover {   font-size: 12px; line-height:16px; color: #005BA8; text-decoration: none;}
+
+
+/* 090107_커뮤니티_좌측메뉴_P04 */
+.menu_com {padding:3px 0px 0px 5px;}
+.menu_board {padding:3px 0px 0px 16px;}
+.menu_blog  {padding:2px 0px 0px 13px;}
+
+/* 090107_커뮤니티_우측리스트_P04 */
+.com_rilist {width:178px; height:14px; overflow:hidden;}
+
+/* 090112_커뮤니티_인기검색어_danawa.css에서 가져옴_P04 */
+.word{ color: #012b54; line-height:18px;}
+a.word{   font-size: 12px; font-weight: normal; color: #012b54; text-decoration: none;}
+a.word:hover {   font-size: 12px; font-weight: normal; color: #012b54; text-decoration: underline;}
+
+/* 090116_커뮤니티_베스트 상품에대한 의견_danawa.css에서 가져옴_P04 */
+.tit_22_b
+{ color: #222222; font-weight : bold; }
+a.tit_22_b{   font-size: 12px; font-weight: bold; color: #222222; text-decoration: none;}
+a.tit_22_b:hover {   font-size: 12px; font-weight: bold; color: #005BA8; text-decoration: none;}
+
+/* 090129_danawa.css에서 가져옴_설문조사/디카 갤러리 추천수 컬러_P04 */
+.dica_gallery_text {color: #4777A2;}
+.dica_gallery_text_1 {color: #9DBBD6;}
+.dica_gallery_text01 {color: #ffffff;}
+.dica_gallery_text02 {color: #ffffff; font-weight : bold;}
+
+
+/* 090129_danawa.css에서 가져옴_공지사항 템플릿_P04 */
+.com_title {color:#333333; font-size :14px; font-weight: bold;}
+
+/* 090129_font.css에서 가져옴_비번찾기링크_P04 */
+.member03 { font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: underline;}
+a.member03 {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: underline;}
+a.member03:hover {   font-size: 12px; font-weight: normal; color: #0077AF; text-decoration: underline;}
+
+/* 090129_danawa.css에서 가져옴_쪽지링크_P04 */
+.p_blue02 {  font-family:돋움; font-size: 12px; color: #185894;}
+a.p_blue02{   font-size: 12px; font-weight: normal; color: #185894; text-decoration: none;}
+a.p_blue02:hover {   font-size: 12px; font-weight: normal; color: #185894; text-decoration: underline;}
+/* 090129_font.css에서 가져옴_사업자로전환 별모양 스타일_P04 */
+.member04 { font-size: 12px; font-weight: normal; color: #80ACB9;}
+
+/* 090129 로그인 서버에서 사용하는 /common/css/top.css를 추가 손정현 */
+.input_login
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #333333;
+ height				: 18px;
+ background-color	: #ffffff;
+ border: #cecec7 1px solid;
+}
+
+/* 대결맞짱 */
+.no_1 { font-family: "돋움"; font-size: 12px; font-style: normal; text-decoration: underline; color: #83b121; font-weight: bold;}
+.no_2 { font-family: "돋움"; font-size: 12px; font-style: normal; text-decoration: underline; color: #006dd3; font-weight: bold;}
+.no_3 { font-family: "돋움"; font-size: 12px; font-style: normal; text-decoration: underline; color: #7b00d3; font-weight: bold;}
+
+
+/* usb 인증으로 인한 신규생성된 로그인페이지 */
+.usb_bg {background:url(/danawa/img/new/login/bg_key.jpg) no-repeat;}
+.usb_input {width:200px; height:19px; background:#96d550; border:0px;}
+.txt_green {color:#45a00a; font-weight:bold;}
+.table_usblogin {margin:10px 0 0 70px;}
+
+/* 090811_ 신고댓글 블라인드 처리 시 문구텍스트*/
+.reply_blind { color: #ff7200; font-family:돋움; font-size: 11px; line-height:20px;}
+
+/* 마이페이지 주문내역 리스트 바로피시css에서 가져옴_100203P04 */
+.table760 {width:760px; border-collapse:collapse; table-layout:fixed;}
+.mar_lr15 {margin:0 15px;}
+.bg_mpmainbox {background:url(/danawa/img/new/baropc/img/bg_mpmainbox.gif) repeat-y;}
+.bg_mpmainbox_top { height:3px; background:url(/danawa/img/new/baropc/img/bg_mpmainbox_top.gif) no-repeat;}
+.bg_mpmainbox_bottom { height:3px; background:url(/danawa/img/new/baropc/img/bg_mpmainbox_bottom.gif) no-repeat;}
+.table730 {width:730px; border-collapse:collapse; table-layout:fixed;}
+.table730_border {width:730px; border-collapse:collapse; table-layout:fixed;}
+.table730_border td{border:1px solid #CCCCCC; padding:4px;}
+.tabletd_grey { height:35px; border-bottom:1px solid #979a92;}
+.tabletd_undergrey2 {border-bottom:2px solid #979a92;}
+.tabletd_upgrey2 {border-top:2px solid #979a92;}
+.txa_center {text-align:center;}
+.txa_right {text-align:right;}
+.txa_left {text-align:left;}
+
+.darkgrey_b {font-weight:bold;  color:#333333; line-height:150%;}
+.darkgrey_b a{font-weight:bold;  color:#333333; line-height:150%;}
+.darkgrey_b a:hover{font-weight:bold;  color:#333333; line-height:150%; text-decoration: underline;}
+.darkgrey {font-weight:normal;  color:#333333; line-height:150%;}
+.darkgrey a{font-weight:normal;  color:#333333; line-height:150%;}
+.darkgrey a:hover{font-weight:normal;  color:#333333; line-height:150%; text-decoration: underline;}
+
+.tabletd { height:35px; border-bottom:1px solid #cccccc;}
+
+/* 게시판 관련 추가 */
+.nbgcolor01 {background-color:#f6f6f6;}
+.nbgcolor02 {background-color:#dbdbdb;}
+.nbgcolor03 {background-color:#f3f6fd;}
+.nbgcolor04 {background-color:#bcbcbc;}
+.nbgcolor05 {background-color:#ececec;}
+.nbgcolor08 {background-color:#989898;}
+
+.titleHead {color:#4b48df;}
+.fBlack {color:#000}
+
+.black {font-weight:bold; color:#000; padding:8px 0; background-color:#f6f6f6;}
+.board {font-weight:bold; color:#000; padding:10px 0;}
+.list_num {margin-left:5px;}
+.padL5 {padding-left:5px;}
+span.black {font-weight:normal; padding:8px 0;}
+.textarea02 {width:550px; border:1px solid #989898; margin-left:6px;}
+.list_title {color:#333; font-weight:normal;}
+
+/* textBtn 설정 */
+.textBtn, .textBtn * {background:url('/danawa/img/new/nEvent/img/btnStyle.gif') no-repeat; border:0; cursor:pointer; display:inline-block; overflow:visiblel; white-space:nowrap;}
+.searchBtn * {color:#000000; font-size:11px; width:36px; height:21px; margin:0px; cursor:pointer;}
+.write { background-position:right -29px;}
+.write * {background-position:0 -29px; margin-right:2px; height:17px;font-size:12px; color:#000; cursor:pointer; padding:6px 10px 0 25px; font-weight:bold;}
+
+.bbsList {border-top:2px solid #989898;}
+.bbsList td{padding:6px;}
+.bbsView {border-top:2px solid #989898; border-bottom:2px solid #989898;}
+.bbsView td{padding:6px;}
+.bbsDList td{padding:0px;}
+
+/* 각 페이지 타이틀 */
+.allViewTitle{margin-left:10px; background:url("/danawa/img/new/nEvent/img/allViewTitle.gif") no-repeat; height:30px; width:731px; margin:10px 0 0 29px;}
+.noticeViewTitle{margin-left:10px; background:url("/danawa/img/new/nEvent/img/noticeViewTitle.gif") no-repeat; height:30px; width:731px; margin:10px 0 0 29px;}
+.interViewTitle{margin-left:10px; background:url("/danawa/img/new/nEvent/img/interViewTitle.gif") no-repeat; height:30px; width:731px; margin:10px 0 0 29px;}
+.userViewTitle{margin-left:10px; background:url("/danawa/img/new/nEvent/img/interViewTitle.gif") no-repeat; height:30px; width:731px; margin:10px 0 0 29px;}
+.epilViewTitle{margin-left:10px; background:url("/danawa/img/new/nEvent/img/interViewTitle.gif") no-repeat; height:30px; width:731px; margin:10px 0 0 29px;}
+.repoViewTitle{margin-left:10px; background:url("/danawa/img/new/nEvent/img/interViewTitle.gif") no-repeat; height:30px; width:731px; margin:10px 0 0 29px;}
+.questViewTitle{position:relative; zoom:1; margin-left:10px; background:url("/danawa/img/new/nEvent/img/interViewTitle.gif") no-repeat; height:30px; width:731px; margin:10px 0 0 29px;}
+.applyViewTitle{position:relative; zoom:1; margin-left:10px; background:url("/danawa/img/new/nEvent/img/interViewTitle.gif") no-repeat; height:30px; width:731px; margin:10px 0 0 29px;}
+.guideViewTitle{position:relative; zoom:1; margin-left:10px; background:url("/danawa/img/new/nEvent/img/interViewTitle.gif") no-repeat; height:30px; width:731px; margin:10px 0 0 29px;}
+
+.titleBtn {position:absolute; right:5px; top:10px;}
+.titleBtn a{margin:0; padding:0;}
+
+.bgcolor5 {background:#dbdbdb;}

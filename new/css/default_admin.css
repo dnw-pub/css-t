@@ -1,0 +1,163 @@
+@charset "euc-kr";
+/*
+CSS Document 
+
+최종작업일자 : 2010년 2월 1일 PM 2시 10분
+작업자 :  
+작업내용 : 관리자페이지 CSS 기본값 설정
+
+최종작업일자 : 2010년 4월 2일 PM 3시 40분
+작업자 :  
+작업내용 : 데이터 없는 경우 추가
+
+*/
+
+/* init css */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label,  table,  tbody, tfoot, thead, tr, th, td, button
+{margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; font-family: "돋움", "Arial", "Verdana";}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse; border-spacing: 0; font-size:12px;}
+a {text-decoration:none;}
+a img {border:none;}
+legend, caption, hr {visibility:hidden;height:0; line-height:0; font-size:0; width:0; position:absolute; margin:0; padding:0; text-indent:-1000px; }
+fieldset, button {border:0;}
+/* lay-out */
+#header {width:100%; margin:0px 0 10px 0; color:#333; padding-top:10px;}
+#container, .title, .menuList {width:950px; margin:0 auto; position:relative;}
+.inputContainer {margin-bottom:30px;}
+
+/* list index */
+.indexBorder {position:relative; text-align:center; margin:15px auto; width:100%;}
+.indexBorder * {display:inline-block; padding:2px 0px 0; height:18px; width:20px;  margin-right:2px; vertical-align:bottom; }
+.indexBorder a.next {background:url(http://img.danawa.com/new/prod_list/img/ico_next.gif) no-repeat 50% 1px; width:20px;}
+.indexBorder a.prev {background:url(http://img.danawa.com/new/prod_list/img/ico_prev.gif) no-repeat 50% 1px; width:20px; margin-right:4px;}
+.indexBorder a.active {font-weight:bold;}
+
+
+.numberStyle01 {position:relative; clear:both; width:100%; height:40px; text-align:center; margin-bottom:10px; background-color:#fafafa;} /* 가격비교에 들어가는 넘버_background-color:#fafafa; 삭제함 */
+.OldView {position:absolute; width:77px; height:18px; top:7px; right:5px;}
+.pagetext {font-size:11px; color:#3366cc; text-decoration:underline; font-weight:normal; }
+a.fNend{font-size:11px; color:#3366cc; text-decoration:underline; font-weight:bold;}
+a.fNend:hover{font-size:11px; color:#3366cc; text-decoration:underline; font-weight:bold;}
+
+ul#numberlist {padding-top:7px;}
+ul#numberlist li{display:inline; text-align:center; vertical-align:middle;}
+ul#numberlist li.first{margin:0 10px 0 0;}
+ul#numberlist li.num{}
+ul#numberlist li.num strong{position:relative; display:inline-block; width:21px; height:19px; margin:0 1px; padding-top:1px; color:#fff; text-decoration:none; border:1px solid #8691C7; background-color:#8691C7; line-height:normal; font:bold 13px Verdana;}
+ul#numberlist li.num a{position:relative; display:inline-block; width:21px; height:19px; margin:0 1px; padding-top:1px;  color:#666666; text-decoration:none; border:1px solid #fafafa; line-height:normal; font:normal 13px Verdana; }
+ul#numberlist li.num a:hover{background:#fff; border:1px solid #C0C5E0; font:bold 13px Verdana; color:#485780;}
+ul#numberlist li.numBtn a{position:relative; display:inline-block; width:21px; height:19px; padding-top:1px;  margin:0 3px; border:1px solid #C0C5E0;}
+ul#numberlist li.end{ margin:0 0 0 10px;}
+
+
+/* 네비게이션 디폴트 */
+.navigation {margin-bottom:30px;}
+.menuList li {position:relative; margin:2px 0 0 0; float:left;}
+.menuList li a {padding:12px 17px 0 21px; display:inline-block; margin-right:4px; height:28px;}
+.menuList li.active {margin-top:6px;}
+.menuList img, .menuList a {vertical-align:top;}
+
+/* commons */
+.offscreen { visibility:hidden; height:0; line-height:0; font-size:0; width:0; position:absolute; margin:0; padding:0; text-indent:-1000px;}
+.admTextInput {border:1px solid #999; background:#f8f8f8; }
+.smalltext {font-size:11px; color:#b70069;}
+.fullsize {width:100%;}
+.size70 {width:70px;}
+.size300 {width:300px;}
+.posTop {top:0;}
+.aCenter {text-align:center;}
+.aRight {text-align:right;}
+.btnContainer {text-align:center; margin:15px 0;}
+.btnContainer .btnType2 {margin-right:5px;}
+.posRight {position:absolute; right:0;}
+
+/* icon_set */
+.icon {font-size:0px; line-height:0; vertical-align:top; background:url(http://img.danawa.com/new/cpa/img/icon_set.gif) no-repeat; width:49px; height:14px; display:inline-block; overflow:hidden;}
+.condition1 {background-position:0 -140px;}
+.condition2 {background-position:0 -160px;}
+.condition3 {background-position:0 -180px;}
+.condition4 {background-position:0 0;}
+.condition5 {background-position:0 -20px;}
+.condition6 {background-position:0 -40px;}
+.condition7 {background-position:0 -60px;}
+.condition8 {background-position:0 -80px;}
+.condition9 {background-position:0 -100px;}
+.condition10 {background-position:0 -120px;}
+.condition11 {background-position:0 -200px;}
+.condition12 {background-position:0 -220px;}
+
+.title {overflow:hidden; position:relative; margin-bottom:12px;}
+.title h1, .title h2 {float:left;}
+.title h2 {margin:6px 0 0 10px;}
+.title h2 a { font-size:18px; font-weight:bold; color:#000;}
+.title .posRight {font-size:11px; top:10px;}
+.container h3 {background:url(http://img.danawa.com/new/cpa/img/bullet.gif) no-repeat left -18px; padding-left:13px; font-size:14px; margin-bottom:15px;}
+
+/* btn set */
+.textBtn {background:url(http://img.danawa.com/new/cpa/img/btnbg_set.gif) no-repeat; display:inline-block; }
+.textBtn * {background:url(http://img.danawa.com/new/cpa/img/btnbg_set.gif) no-repeat; margin-right:1px; display:inline-block; border:none; cursor:pointer; white-space:nowrap; }
+.btnType1 {background-position:right -30px; height:16px;}
+.btnType1 * {background-position:left -30px; color:#666 !important; font-size:11px; padding:2px 4px 0 5px; height:14px; font-weight:normal;}
+.btnType1 *:hover {text-decoration:none !important;}
+.btnType2 {background-position:right 0; height:24px;}
+.btnType2 * {background-position:left 0; vertical-align:top; color:#fff; font-size:12px; font-weight:bold; padding:5px 10px 0 19px; height:19px; }
+.btnType2 button {height:24px; padding:0 10px 0 19px;}
+.btnType3 {background-position:right -60px; height:22px; position:relative;}
+.btnType3 * {background-position:left -60px; color:#000; font-weight:bold; font-size:12px; padding:4px 10px 0 19px; height:18px;}
+.btnType4 {background-position:right -230px; height:16px;}
+.btnType4 * {background-position:left -230px; color:#b70069 !important; font-size:11px; padding:2px 4px 0 5px; height:14px; vertical-align:top;} 
+.btnType5 {background-position:right -150px; height:70px; vertical-align:top;}
+.btnType5 * {background-position:left -150px; color:#000 !important; font-size:12px; padding:30px 10px 0 19px; height:40px; vertical-align:top;} 
+.btnType5 button {height:70px; padding:0 20px 0 24px; vertical-align:top;}
+.btnTypeExcel {background-position:right -90px; height:23px; position:relative;}
+.btnTypeExcel * {background-position:left -90px; color:#000; font-weight:bold; font-size:12px; padding:5px 10px 0 32px; height:19px;}
+
+/* btn set */
+.textBtn {background:url(http://img.danawa.com/new/cpa/img/btnbg_set.gif) no-repeat; display:inline-block; }
+.textBtn * {background:url(http://img.danawa.com/new/cpa/img/btnbg_set.gif) no-repeat; margin-right:1px; display:inline-block; border:none; cursor:pointer; white-space:nowrap; }
+.btnType1 {background-position:right -30px; height:16px;}
+.btnType1 * {background-position:left -30px; color:#666 !important; font-size:11px; padding:2px 4px 0 5px; height:14px;}
+.btnType1 *:hover {text-decoration:none !important;}
+.btnType2 {background-position:right 0; height:24px;}
+.btnType2 * {background-position:left 0; vertical-align:top; color:#fff; font-size:12px; font-weight:bold; padding:5px 10px 0 19px; height:19px; }
+.btnType2 button {height:24px; padding:0 10px 0 19px;}
+.btnType3 {background-position:right -60px; height:22px; position:relative;}
+.btnType3 * {background-position:left -60px; color:#000; font-weight:bold; font-size:12px; padding:4px 10px 0 19px; height:18px;}
+.btnType4 {background-position:right -230px; height:16px;}
+.btnType4 * {background-position:left -230px; color:#b70069 !important; font-size:11px; padding:2px 4px 0 5px; height:14px; vertical-align:top;} 
+.btnType5 {background-position:right -150px; height:70px; vertical-align:top; overflow:visible; line-height:70px;}
+.btnType5 * {background-position:left -150px; color:#000 !important; font-size:12px; padding:30px 10px 0 19px; height:40px; vertical-align:middle; overflow:visible;} 
+.btnType5 button {height:70px; padding:0 20px 0 25px; vertical-align:top;}
+.btnTypeExcel {background-position:right -90px; height:23px; position:relative;}
+.btnTypeExcel * {background-position:left -90px; color:#000; font-weight:bold; font-size:12px; padding:5px 10px 0 32px; height:19px;}
+
+/* 데이타가 없는 경우 */
+#noData {padding:0 20px; border:1px solid #dddddd; margin-bottom:15px;}
+#noData table#noCon {width:100%; height:150px; border-collapse:collapse;}
+#noData table#noCon td.nodataLeft {width:30%; background:url('http://img.danawa.com/new/prod_list/img/bg_nodata.jpg') no-repeat 0 3px;}
+#noData table#noCon td.nodataRight {width:70%; background:url('http://img.danawa.com/new/prod_list/img/bg_nodata.jpg') no-repeat right; font-size:12px; font-weight:bold; line-height:21px;}
+#noData table#noCon td .nodataCon {font-size:14px; color:#5270ce;}
+
+#noDataCom {padding:20px; border:1px solid #dddddd; margin-bottom:15px;}
+#noDataCom table#dataArea {width:100%; border-collapse:collapse;}
+#noDataCom table#dataArea td{ height:130px; background:url('http://img.danawa.com/new/noData/img/bg_data.jpg') no-repeat; vertical-align:top;}
+#noDataCom dl#noDataTxt {margin:27px 0 0 190px}
+#noDataCom dl#noDataTxt dt{height:35px; font-size:14px; font-weight:bold; color:#5270ce;}
+#noDataCom dl#noDataTxt dd{padding-left:7px; margin:0; background:url('http://img.danawa.com/new/noData/img/ico_point.gif') no-repeat 0 6px;; font-size:11px; color:#676767; letter-spacing:-1px; line-height:18px;}
+#noDataCom dl#noDataTxt dd.Btn{background:none; padding-top:5px;}
+#noDataCom a.conLink {padding:5px 10px 5px 0; margin-right:30px; font-size:11px; font-weight:bold; color:#676767; text-decoration:none; background:url('http://img.danawa.com/new/noData/img/ico_arrow.gif') no-repeat 7px right;}
+#noDataCom a.conLink:hover {text-decoration:underline;}
+
+/* clear floating layers */
+#container:after,
+.navigation:after,
+.menuList:after,
+.handleBox .wrapper:after,
+null {content:" "; height:0; clear:both; display:block; visibility:hidden;}

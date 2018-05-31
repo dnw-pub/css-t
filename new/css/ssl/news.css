@@ -1,0 +1,2046 @@
+/*
+최종작업일자 : 2011년 6월 21일
+작업자 : P07
+작업내용 : 뉴스 본문  #divArticleContents1 수정
+
+최종작업일자 : 2011년 5월 31일
+작업자 : P07
+작업내용 : 컴퓨텍스 2011 타이틀 추가
+
+최종작업일자 : 2011년 4월 29일
+작업자 : P01
+작업내용 : 사이트개편 관련 수정
+
+최종작업일자 : 2011년 5월 17일
+작업자 : P03
+작업내용 :#navigation.newsName_60~130 추가
+
+핵설명 FX: 아무것도 없음
+       ie7 : 속성앞에 *
+	   ie6 : 속성앞에 _
+	   
+*/
+
+@import 'InfoConView.css';
+html { overflow-x:auto; overflow-y:scroll;}
+body {margin:0;}
+
+/* 뉴스 GNB 메뉴 */
+#DNA_GNB_NEWS {width:925px; height:31px;  margin:0px; padding:0px; background-color:#CA0132; }
+#DNA_GNB_NEWS table{float:left;  padding:0px; margin:0px; border-collapse: collapse; margin-right:7px; margin-left:7px;}
+#DNA_GNB_NEWS td{padding:0px; margin:0px;}
+#DNA_GNB_NEWS .rss_f a{font-weight:bold;color:#FFFFFF; text-decoration:none; line-height:24px;}
+#DNA_GNB_NEWS .rss_f a:hover{text-decoration:underline;}
+#DNA_GNB_NEWS .rss_f {float:right; margin-right:20px; margin-top:7px;}
+#DNA_GNB_NEWS .rss_f .rss{margin-left:5px; margin-right:5px; margin-bottom:4px;vertical-align:middle;}
+
+/* 최신뉴스메인 */
+#mid_news {width:700px;}
+#mid_news #s_mid700  {width:700px; float:left; margin-bottom:20px;}
+#mid_news .photo {width:127px; background:#f2f2f2; text-align:center; margin-top:20px; margin-left:570px;}
+#mid_news .photo ul {text-align:center; margin:0; padding:10px; list-style:none;}
+#mid_news .photo a{font-size: 12px; font-weight: bold;  text-decoration: none; color:#596C9C; line-height:125%;}
+#mid_news .photo a:hover{ text-decoration: underline;}
+#mid_news .photouser {width:127px; text-align:center; margin:25px 0px 0px 568px; padding:0px; border:1px solid #e0e0e0;}
+#mid_news .photouser ul {text-align:center; margin:0; padding:10px; list-style:none;}
+#mid_news .photouser a{font-size: 1F2px; font-weight: bold;  text-decoration: none; color:#596C9C; line-height:125%;}
+#mid_news .photouser a:hover{ text-decoration: underline;}
+
+/* 최신뉴스메인텝 타이틀 글자 700 */
+#listtab700 {width:702px; padding-bottom:10px; clear:both;}
+#listtab700 .none {background-image:url('//img.danawa.com/new/d_news/img/bg_tab_none.gif');background-repeat:repeat; padding-left:10px; padding-right:10px;}
+#listtab700 .over {background-image:url('//img.danawa.com/new/d_news/img/bg_tab_over.gif');background-repeat:repeat; padding-left:10px; padding-right:10px;}
+#listtab700 .blank {background-image:url('//img.danawa.com/new/d_news/img/bg_tab.gif');background-repeat:repeat; width:130px;}
+#listtab700 a{font-size:12px; color:#000000; line-height:140%;}
+#listtab700 a:hover{text-decoration:underline;}
+
+/* 네비게이션700 */
+#navigation700 {float:right; text-align:right; font-size:11px; color:#666666; line-height:130%; vertical-align:top; padding-bottom:10px; }
+#navigation700 a{font-size:11px; color:#666666; line-height:130%;}
+#navigation700 a:hover{text-decoration:underline;}
+
+/* 네비게이션700_컴퓨텍스로인해잠시추가_090521_P04 */
+#navigation700com {text-align:right; font-size:11px; color:#666666; height:17px; line-height:110%; vertical-align:top; padding-bottom:4px; width:697px; border-bottom:1px solid #E0E0E0;}
+#navigation700com a{font-size:11px; color:#666666; line-height:110%;}
+#navigation700com a:hover{text-decoration:underline;}
+
+/* 셀렉트 박스 700 */
+#sub_select700 {width:700px; text-align:right; font-size:12px; color:#000000; line-height:110%; margin:0px; padding:0px;}
+#sub_select700 #checkbox{  vertical-align:middle; margin:0px 3px 0px 5px; padding:0px;}
+
+/* 뉴스 목록 */
+#listcon_box {width:560px; padding:0px; margin:0px; float:left;}
+#listcon700 {width:560px; padding:0px; margin:0px;}
+#listcon700 table{border-collapse: collapse;}
+#listcon700 .propic{margin:0px 10px 18px 0px; border:1px solid #D9D9D9; width:75px; height:75px; float:left; padding:2px 2px 2px 2px ; background-color:#ffffff;}
+#listcon700 .procont{float:left; width:449px; margin:10px 0px 0px 0px; padding:0px;}
+#listcon700 .upline {border-top:1px  solid #E0E0E0; padding-top:8px;}
+
+/* 텝 타이틀 글자 550 */
+#listcon700 .tab_title { font-size: 12px; font-weight: bold;  color:#b60a46; line-height:140%;}
+#listcon700 a.tab_title{ font-size: 12px; font-weight: bold;  text-decoration: none; color:#b60a46;line-height:140%;}
+#listcon700 a.tab_title:hover { text-decoration: underline; }
+
+/* 뉴스 댓글5천개 이상 글 타이틀 */
+#listcon700 .redpoint {color:#B50945; font-size: 15px; font-weight: bold; line-height:23px;}
+#listcon700 a.redpoint{color:#B50945; font-size: 15px; font-weight: bold; line-height:23px;}
+#listcon700 a.redpoint:hover{text-decoration: underline;}
+
+/* 뉴스 타이틀 */
+#listcon700 .b_title {font-size: 15px; font-weight: bold;  color:#000000; line-height:23px;}
+#listcon700 a.b_title{font-size: 15px; font-weight: bold;  text-decoration: none; color:#000000;line-height:23px;}
+#listcon700 a.b_title:hover{text-decoration: underline;}
+
+/* 뉴스 설명글 */
+#listcon700 .t_text{font-size: 12px; font-weight: normal;  color:#666666; line-height:17px;}
+#listcon700 a.t_text{font-size: 12px; font-weight: normal;  text-decoration: none; color:#666666;line-height:17px;}
+#listcon700 a.t_text:hover{text-decoration: underline;}
+
+#listcon700 ul {
+	float:left;
+	clear:both;
+	width:560px;
+	margin:15px 0px 0px 0px;
+	padding:0px;
+}
+#listcon700 li {
+	clear:both;
+	padding :0px 0px 18px 0px;
+	margin:0px;
+}
+
+/* 검색 영역 */
+#listsearch700 { padding:10px 0px 20px 110px;}
+#listsearch700 input {border:solid 1px #cdcec8; width:200px; height:21px; font-size: 12px; color:#000000; line-height:140%;}
+#listsearch700 select {margin-bottom:1px;}
+
+/* 페이징 영역 550 */
+
+#paging700 {width:560px; font-size:12px; color:#000000; line-height:140%; text-align:center; border-bottom:1px solid #E0E0E0; border-top:1px solid #E0E0E0; padding-top:7px; padding-bottom:7px; clear:both;}
+#paging700 a{font-size:12px; color:#000000; line-height:140%;}
+#paging700 a:hover{text-decoration:underline;}
+#paging700 .bold {font-size: 12px; font-weight: bold;  color:#2d4a90; line-height:140%;}
+
+/* 메인과 서브 공통 */
+* {}
+img {border:0px;}
+ul, li {list-style-type : none;}
+
+.contit_table {width:100%; margin:0px;}
+.contit_table td {padding:7px;}
+.com_mar {margin:15px 0px 0px 0px; }
+.com_marb {margin:0px 0px 15px 0px;}
+.com_letter {letter-spacing:-1px; font-weight:bold; color:#000;}
+
+.10margin {padding-top:5px; padding-bottom:5px;}
+.20margin {padding-top:10px; padding-bottom:10px;}
+.mart20 {margin-top:20px;}
+
+/* 컨텐츠를 감싸는 제일 큰 레이어 */
+#content {width:925px; margin:0px; padding:0px; /* margin:0 auto;중앙정렬 */}
+#content_tv {width:925px; margin:0px; padding:0px;/* margin:0 auto;중앙정렬 */}
+
+#content .con_tit {font-weight:bold; color:#000000;}
+#content .con_tit a{font-weight:bold; color:#000000;}
+#content .more {font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;}
+#content .more a{font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;}
+#content .more img{vertical-align:middle;margin-bottom:3px;}
+
+.m_title { font-size: 12px; font-weight: bold;  color:#333333; line-height:17px;}
+a.m_title{   font-size: 12px; font-weight: bold;  text-decoration: none; color:#333333;line-height:17px;}
+a.m_title:hover {  font-size: 12px; font-weight: bold;  text-decoration: underline; color:#333333;line-height:17px;}
+
+.s_title { font-size: 11px; font-weight: normal;  color:#666666; line-height:15px;}
+a.s_title{   font-size: 11px; font-weight: normal;  text-decoration: none; color:#666666;line-height:15px;}
+a.s_title:hover {  font-size: 11px; font-weight: normal;  text-decoration: underline; color:#666666;line-height:15px;}
+
+.protext { font-size: 12px; font-weight: bold;  color:#596C9C; line-height:17px;padding-top:3px;}
+a.protext{   font-size: 12px; font-weight: bold;  text-decoration: none; color:#596C9C;line-height:17px;padding-top:3px;}
+a.protext:hover {  font-size: 12px; font-weight: bold;  text-decoration: underline; color:#596C9C;line-height:17px;padding-top:3px;}
+
+.infi { font-size: 12px; font-weight: normal;  text-decoration: none; color:#3C63C9;}
+a.infi{ font-size: 12px; font-weight: normal;  text-decoration: none; color:#3C63C9;}
+a.infi:hover {text-decoration: underline;}
+
+/* 게시판 줄광고 */
+.list_adver {color:#2D4A91; font-weight:blod; text-decoration:none;}
+a.list_adver {color:#2D4A91; font-weight:blod; text-decoration:none;}
+a.list_adver:hover {color:#2D4A91; font-weight:blod; text-decoration:underline;}
+
+/* 게시판 공지사항 */
+.list_title {color:#000000; font-weight:blod; text-decoration:none;}
+a.list_title {color:#000000; font-weight:blod; text-decoration:none;}
+a.list_title:hover {color:#000000; font-weight:blod; text-decoration:underline;}
+
+.comline {border-top:1px solid #E0E0E0;	clear:both;}
+#com_under {background: url(//img.danawa.com/new/d_news/img/conbg_l.gif) no-repeat -212px -620px; width:202px; height:41px; text-align:center; border:0;}
+
+/* 메인 */
+/* 메인 레이어 */
+#m_left {width:202px; float:left; margin:0 0 20px 0; padding:0px; }
+#m_mid {width:485px; float:left; margin:0px  15px 20px 15px; padding:0px;}
+/* #m_mid {width:485px; float:left; margin:0px 15px; padding:0px; background:#999999;} */
+#m_right {width:208px; float:right; margin:0 0 20px 0; padding:0px; }
+
+/* 속보 및 키워드 */
+#content_top {width:758px; height:33px;  margin:0px 0px 20px 0px; padding:0px; position:relative; background: #f8f8f8; border:1px solid #ececec;}
+#content_top_tv {width:925px; height:48px; background: url(//img.danawa.com/new/d_news/img/contop_bg.gif) no-repeat; margin:0; padding:0px; position:relative;}
+
+#today {width:150px; float:left; padding: 10px 0px 0px 10px;  margin:0px;}
+#today .text{font-size:11px; font-family:돋움, verdana;}
+
+#quick {width:500px; float:left; margin:10px 0px 0px 15px; padding:0px;}
+#quick strong { color:#e51a5b;}
+#quick .quick_icon{float:left;}
+#quick .quick_icon a{color:#e51a5b;}
+#quick .quick_icon img{vertical-align:top; margin-left:5px; margin-right:5px;}
+#quick .quick_roll{float:left; width:400px;}
+#quick .quick_roll a{font-weight:normal; color:#333333;}
+#quick .quick_roll a:hover {text-decoration: underline; color:#333333;}
+
+#keyword {width:198px; float:right; padding: 20px 0 0 0;}
+#keyword a.word{ font-size: 12px;font-weight: bold; text-decoration: none;color:#1E3F8E; padding:0 4px 0 4px; letter-spacing:-1px;}
+#keyword a.word:hover {text-decoration: underline;}
+
+/* 메인포토 */
+
+#mphoto {margin:0px; background: url(//img.danawa.com/new/d_news/img/top_bg.gif) no-repeat ; width:202px;height:235px;position:relative;}
+#mphoto .bg	{ width:192px; height:51px; position:absolute; left:5px; bottom:0px; background-color:#000;filter:alpha(opacity=60);Opacity:0.7;}
+/* 핵 */ *html #mphoto .bg { width:192px; height:51px; position:absolute; left:5px; bottom:3px;background-color:#000;filter:alpha(opacity=60);Opacity:0.7;}
+#mphoto .pimg  { width:192px; padding-top:5px; padding-left:5px; text-align:center;}
+#mphoto .txt	{ width:179px; position:absolute;top:193px;left:11px;z-index:2;}
+#mphoto .txt	a{font:bold 14px 돋움,Dotum,AppleGothic,serif; color:#fff;letter-spacing:-1px;}
+#mphoto .txt	a:hover {color:#fff !important; text-decoration:underline;}
+#mphoto .page  {position:absolute; right:10px; bottom:7px; z-index:3;}
+#mphoto .page  img{margin:0 2px;}
+/* 핵 */ *html #mphoto .page  img{margin:0 0px;}
+
+/* 메인포토아래 배너 */
+#mad {margin:0;  background: url(//img.danawa.com/new/d_news/img/top_bg.gif) no-repeat 0 -235px; width:202px; height:126px; text-align:center;}
+
+/* 쇼핑뉴스 */
+#snews {background: url(//img.danawa.com/new/d_news/img/conbg_l2.gif) no-repeat ; width:202px; height:260px;}
+#snews .propic{border:1px solid #D9D9D9; width:75px; height:75px;margin-bottom:3px;}
+#snews ul { width:190px; padding:0px 0px 0px 10px; margin: 0  0 8px 0;}
+/* 핵   *html #snews ul {	margin : 0 0 0 5px; padding:0px; width:190px;}*/
+#snews li {
+	width:184px;
+	padding:0px;
+	margin:0px;
+	padding-left:8px;
+	line-height:160%;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%;
+}
+#snews li a{color:#666666;}
+#snews li a:hover {text-decoration: underline; color:#666666;}
+
+/* 뉴스맞짱/설문조사 */
+#vspoll {display:block; background: url(//img.danawa.com/new/d_news/img/conbg_l.gif) no-repeat -212px 0; width:202px;}
+#vspoll .propic{width:75px; height:75px;}
+
+#vspoll ul {
+	margin:0px 0px 0px 10px;
+	padding :5px 0px 5px 0;
+	width:180px;
+	list-style-position:outside;
+}
+/* 핵 */ *html #vspoll ul {
+	margin:0px 0px 0px 10px;
+	width:180px;
+	list-style-position:outside;
+}
+#vspoll li {
+	padding-left : 7px;
+	line-height:150%;
+}
+
+/* 설문리스트 */
+#vspoll dl {width:180px; margin:0px 5px; padding:0px; clear:both;}
+#vspoll dd { display:inline; }
+#vspoll .radbtn {float:left; width:15px; padding:3px; margin:0px; }
+#vspoll .con {float:left; width:145px; padding:7px 3px 3px 3px;  margin:0px; }
+
+/*  #vspoll dl {width:170; margin:3px 11px; padding:0px; clear:both;}
+#vspoll dd { display:inline;}
+#vspoll .radbtn {float:left; width:15px;  padding:0px; margin: 5px 5px 5px 0px;}
+/* 핵 */ /* *html #vspoll .radbtn {float:left; width:15px; padding:0px; margin:0px 2px 0px 0px;}
+#vspoll .con {float:left; width:145px; margin:5px 0px; padding:0px;} */
+
+
+#vspoll .more{margin-left:90px; top:10px;clear:both; font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;}
+/* 핵 */ *html #vspoll .more{top:10px;}
+#vspoll .more img{vertical-align:middle;margin-bottom:3px;}
+
+#vspoll .text_table {width:192px; background-color:#F3E8EA; margin:5px;  padding:0px; border-collapse: collapse;}
+#vspoll .text_table td {color:#000000; padding:5px; margin:0px;}
+#vspoll .under {background: url(//img.danawa.com/new/d_news/img/conbg_l.gif) no-repeat -212px -620px; width:202px; height:41px; text-align:center; border:0;}
+#vspoll .under img{margin:0 2px;}
+
+/* 메인 헤드라인 뉴스 */
+#mheadline {width:485px; margin:0px; padding:0px;}
+#mheadline .tit ul{	width:485px; margin:0px; padding:0px;}
+#mheadline h1 {font-size:25px; color:#B50945; font-weight:bold; letter-spacing:-2px;line-height:140%; margin:0px; padding:0px;}
+#mheadline h2 {font-size :14px; font-weight:normal; line-height:140%; color:#000000; margin:0px; padding:0px;}
+#mheadline .tit a.m_head1{font-size:25px; color:#B50945; font-weight:bold; letter-spacing:-2px;line-height:140%;}
+#mheadline .tit a.m_head1:hover{text-decoration:underline;color:#B50945;}
+
+#mheadline .tit a.m_head2{font-size:25px; color:#000000; font-weight:bold; letter-spacing:-2px;line-height:140%;}
+#mheadline .tit a.m_head2:hover{text-decoration:underline;color:#000000;}
+
+#mheadline .tit a.m_head3{font-size:25px; color:#2854BF; font-weight:bold; letter-spacing:-2px;line-height:140%;}
+#mheadline .tit a.m_head3:hover{text-decoration:underline;color:#2854BF;}
+
+#mheadline .tit a.m_text{font-size :14px; font-weight:normal; line-height:140%; color:#000000;}
+#mheadline .tit a.m_text:hover{text-decoration:underline; color:#000000;}
+
+#mheadline .reply ul {margin:10px 0px 0px 10px; width:441px; padding:0px;}
+#mheadline .reply li {padding-left : 15px; margin:0px; line-height:150%; background : url(//img.danawa.com/new/d_news/img/bul_list2.gif) no-repeat 0 45%;	}
+#mheadline li a{color:#666666;}
+#mheadline li a:hover {text-decoration: underline; color:#666666;}
+
+/* 메인 최신뉴스 위_090522_P04_컴퓨텍트존 추가_서비스완료후 삭제예정 */
+#mlistcom {width:485px; height:208px; padding:0px; margin:10px 0px 0px 0px; background: url(//img.danawa.com/new/d_news/img/back_computex.gif) no-repeat ; border:0 }
+#mlistcom ul {padding:1px 0px; margin:7px 4px 7px 10px ; width:439px; padding-top:33px;}
+#mlistcom li {padding:0px 0px 0px 8px; margin:0px; background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 7px; }
+#mlistcom ul .pointnone {background:none;}
+#mlistcom h3 {font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%; margin:0px; padding:0px; height:26px;}
+#mlistcom li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%;}
+ *html #mlistcom li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%; }
+ #mlistcom li a:hover{text-decoration:underline;color:#000000;}
+#mlistcom ul.stit { margin-top:-5px; margin-bottom:5px; padding:0;}
+#mlistcom .stit li {background : url(//img.danawa.com/new/d_news/img/bul_list2.gif) no-repeat 0 25%; padding:0px 0px 0px 15px; margin:0px;}
+#mlistcom .stit li a{font-size:12px; color:#666666; font-weight:normal;line-height:140%;}
+#mlistcom .stit li a:hover{text-decoration:underline;color:#666666;} 
+
+/* 메인 최신뉴스 위 */
+#mlist {width:485px; min-height:211px; padding:0px; margin:10px 0px 0px 0px; background-color:#F5F5F5; border-top:1px solid #E0E0E0; border-bottom:1px solid #E0E0E0;}
+
+#mlist ul {padding:1px 0px; margin:7px 4px; width:455px;}
+#mlist li {padding:0px 0px 0px 8px; margin:0px; background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 7px; }
+#mlist ul .pointnone {background:none;}
+#mlist h3 {font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%; margin:0px; padding:0px; height:26px;}
+#mlist li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%;}
+/* 핵 */ *html #mlist li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%; }
+#mlist li a:hover{text-decoration:underline;color:#000000;}
+
+#mlist ul.stit { margin-top:-5px; margin-bottom:5px;}
+#mlist .stit li {background : url(//img.danawa.com/new/d_news/img/bul_list2.gif) no-repeat 0 25%; padding:0px 0px 0px 15px; margin:0px;}
+#mlist .stit li a{font-size:12px; color:#666666; font-weight:normal;line-height:140%;}
+#mlist .stit li a:hover{text-decoration:underline;color:#666666;}
+
+/* 메인 최신뉴스 중간 */
+#mlistmid {width:485px; padding:0px; margin:0px; border-top:1px solid #E0E0E0;}
+
+#mlistmid ul {padding:0px; margin:10px 2px 0px 2px; width:455px;}
+#mlistmid li {padding-left:8px; background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 7px; margin:0px 0 5px 0;}
+#mlistmid h4 { font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%; height:20px; margin:0px; padding:0px; }
+#mlistmid li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%; }
+/* 핵  *html #mlistmid li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:160%; height:20px; }*/
+#mlistmid li a:hover{text-decoration:underline;color:#000000;}
+
+#mlistmid .stit ul { padding:0px; margin:0px;}
+#mlistmid .stit li {background : url(//img.danawa.com/new/d_news/img/bul_list2.gif) no-repeat 0 25%; padding-left : 15px;}
+#mlistmid .stit li a{font-size:12px; color:#666666; font-weight:normal;line-height:140%;}
+#mlistmid .stit li a:hover{text-decoration:underline;color:#666666;}
+
+/* 뉴스 템플릿 */
+#infotemp {width:485px; clear:both; margin:12px 0 0 0; padding:0px;}
+#infotemp .gameico {vertical-align:middle; padding-bottom:2px;} /*게임섹션 게임해당 아이콘*/
+
+#infotemp .propic{border:1px solid #D9D9D9; width:75px; height:75px;padding:3px; margin:0 7px 10px 0;}
+#infotemp a.tit{   font-size: 14px; font-weight: bold;  text-decoration: none; color:#000000; letter-spacing:-1px;}
+#infotemp a.tit:hover {text-decoration: underline;}
+#infotemp a.s_tit{font-size:12px; color:#666666; font-weight:normal;line-height:150%;}
+#infotemp a.s_tit:hover {text-decoration:underline;color:#666666;}
+#infotemp .tspace {vertical-align:top; padding-top:6px;}
+
+#infotemp .adimg {border:0px solid #E0E0E0;}
+
+/* 카테고리별 뉴스 */
+#mcate_con {margin:20px 0px 0px 0px; padding:0px;  width:485px;}
+#mcate_con .cate { font-size: 12px; font-weight: normal;  color:#2F4783;}
+#mcate_con a.cate{   font-size: 12px; font-weight: normal;  text-decoration: none; color:#2F4783; padding:0 3px 0 3px;}
+#mcate_con a.cate:hover {text-decoration: underline;}
+#mcate_con .title {color:#000000; font-weight:bold;}
+#mcate_con .spacetxt {color:#BDBDBD;}
+#mcate_con .catetit_table { width:485px;}
+#mcate_con .catetit_table td { padding:0px; margin:0px;}
+#mcate_con p{ padding:0px; margin:0px;}
+#mcate_con .propic{margin:7px 7px 7px 0px; padding:0px; border:1px solid #D9D9D9; width:75px; height:75px; float:left;}
+/*핵*/ *html #mcate_con .propic {margin: 7px 5px 5px 0px; padding:0px; border:1px solid #D9D9D9; width:75px; height:75px; float:left;}
+
+#mcate_con ul {position:position; margin:-4px 0px 0px 88px;  *margin:-4px 0px 0px 0px; padding:0px; width:385px;}
+/* 핵 */ *html #mcate_con ul {position:position; float:left; margin:0px 5px 5px 3px; padding:0px;  width:380px;}
+#mcate_con li {background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%; padding-left : 5px; }
+#mcate_con li a{font-size:12px; color:#666666; font-weight:normal;line-height:140%;}
+#mcate_con li a:hover{text-decoration:underline;color:#666666;}
+#mcate_con .btn {text-align:right; margin:3px 0px 0px 0px; padding:0px;}
+#mcate_con .space {height:9px;}
+
+/* 여인닷컴 */
+#yeoin {width:485px; margin-top:10px; margin-bottom:20px;}
+#yeoin table{width:485px; border:5px solid #E7E7E7; border-collapse: collapse;}
+#yeoin th{font-size:12px; font-color:#000000;}
+#yeoin td{padding:5px;}
+#yeoin a.style1{color:#333333;}
+#yeoin a.style1:hover {text-decoration: underline; color:#333333;}
+
+#yeoin a.style2{color:#333333; font-weight:bold;}
+#yeoin a.style2:hover {text-decoration: underline; color:#333333; font-weight:bold;}
+
+#yeoin a.style3{color:#B50945;}
+#yeoin a.style3:hover {text-decoration: underline; color:#B50945;}
+
+#yeoin a.style4{color:#B50945; font-weight:bold;}
+#yeoin a.style4:hover {text-decoration: underline; color:#B50945; font-weight:bold;}
+
+#yeoin a.style5{color:#2854BF;}
+#yeoin a.style5:hover {text-decoration: underline; color:#2854BF;}
+
+#yeoin a.style6{color:#2854BF; font-weight:bold;}
+#yeoin a.style6:hover {text-decoration: underline; color:#2854BF; font-weight:bold;}
+
+/* 메인 TV */
+#mtv {background: url(//img.danawa.com/new/d_news/img/top_bg.gif) no-repeat -212px 0px ; width:208px; height:365px;  margin: 0 0 15px 0; padding:0px;}
+#mtv a.menu{   font-size: 11px; font-weight: normal;  text-decoration: none; color:#474747; padding:0 2px 0 2px; letter-spacing:-1px;}
+#mtv a.menu:hover {text-decoration: underline;}
+#mtv .spacetxt {color:#BDBDBD;}
+#mtv .btn {text-align:right; margin-top:3px; margin-right:10px; visible:hidden;}
+#mtv a.tvtit{  font-size: 12px; font-weight: bold;  text-decoration: none; color:#596C9C;line-height:100%;}
+#mtv a.tvtit:hover { text-decoration: underline;}
+#mtv table{margin:0 auto;}
+#mtv .mthum td {padding:4px; border-spacing:9px; text-align:center; vertical-align:top; width:50%;}
+#mtv .tvimg {margin-bottom:8px;}
+#mtv .tvimg77 {position:absolute; top:30px; left:30px;}
+.relativebox {position:relative;}
+
+/* 메인 많이 본 뉴스 */
+#mview {background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat ; width:208px; height:255px; margin:0px; padding:0px;border:1px solid #000000;}
+#mview .propic{ float:left; margin:5px 5px 0 9px; padding:0px; border:1px solid #D9D9D9; width:75px; height:75px;}
+/* 핵 */*html #mview .propic {margin: 4px 5px 5px 4px; padding:0px; border:1px solid #D9D9D9; width:75px; height:75px; float:left;}
+#mview .procont{float:left; margin:10px 9px 0 0; padding:0px; width:102px; height:50px;}
+/* 핵 */*html #mview .procont{float:left; margin:10px 5px 0 0; padding:0px; width:110px; height:50px;}
+#mview ul {
+	float:right;
+	margin : 5px 8px 0 8px;
+	padding:0px;
+	padding-left:3px;
+	width:190px;
+
+}
+/* 핵 */*html #mview ul {
+	position:relative;
+	float:left;
+	left:0px; top:0px;
+	margin : 0 0 0 5px;
+	padding:0px;
+	width:190px;
+}
+#mview li {
+	padding-left : 11px;
+	line-height:180%;
+	width:190px;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%;
+}
+
+#mview li a{color:#666666;}
+#mview li a:hover {text-decoration: underline; color:#666666;}
+
+#mview .more{margin-left:90px; top:10px;clear:both; font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;}
+/* 핵 */*html #mview .more{top:10px;}
+#mview .more img{vertical-align:middle;margin-bottom:3px;}
+
+/* 메인 네티즌 광장 */
+#mnetizen {background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat; width:208px; height:162px; margin:0px; padding:0px;}
+#mnetizen ul {
+	float:right;
+	margin : 5px 8px 0 9px;
+	padding:0px;
+	width:190px;
+
+}
+/* 핵 */*html #mnetizen ul {
+	position:relative;
+	float:left;
+	left:0px;
+	top:0px;
+	margin : 0 0 0 4px;
+	width:190px;
+}
+#mnetizen li {
+	padding-left : 8px;
+	line-height:170%;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%;
+	white-space:nowrap; text-overflow:ellipsis; 
+}
+*html #mnetizen li {
+	padding-left : 8px;
+	line-height:180%;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%;
+}
+#mnetizen li a{color:#666666;}
+#mnetizen li a:hover {text-decoration: underline; color:#666666;}
+
+/* 섹션 테마다알지_P04_090720 */
+#sviewDarg{ background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat; width:208px; margin:0px; padding:0px; overflow:hidden;}
+#sviewDarg .propic{float:left; margin:7px 7px 4px 7px; border:1px solid #D9D9D9; width:75px; height:75px;}
+#sviewDarg .propic img{vertical-align:top;}
+/* 핵 */*html #sviewDarg .propic {margin: 4px 5px 5px 4px; border:1px solid #D9D9D9; width:75px; height:75px; float:left;}
+#sviewDarg .procont{float:left; margin:7px 7px 0 0; width:105px; height:50px;}
+/* 핵 */*html #sviewDarg .procont{float:left; margin:10px 5px 0 0; width:110px; height:50px;}
+
+#sviewDarg ul {
+	float:left;
+	margin : 3px 8px 0 8px;
+	padding:0px 0px 3px 0px;
+	width:190px;
+}
+/* 핵*/ *html #sviewDarg ul {
+	position:relative;
+	float:left;
+	left:0px;
+	top:0px;
+	margin : 0 0 0 4px;
+	width:190px;
+}
+/* overflow추가_P04_090420*/
+#sviewDarg li {
+	overflow:hidden;
+	padding:0 0 4px 8px;
+	line-height:125%;
+	width:190px;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 4px;
+}
+*html #sviewDarg li {
+	padding-left : 8px;
+	line-height:180%;
+	width:190px;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%;
+}
+
+#sviewDarg li a{color:#666666;}
+#sviewDarg li a:hover {text-decoration: underline; color:#666666;}
+
+#sviewDarg .more{clear:both; margin-left:90px; top:10px;font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;}
+#sviewDarg .more img{vertical-align:middle;margin-bottom:3px;}
+
+
+
+/* 인기상품_P04_090713 */
+#sviewpro {background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat ; width:208px; height:206px; margin:0px; padding:0px; }
+#sviewpro #bestpro{width:194px; padding:7px; font-size:12px;}
+#sviewpro #bestpro .bestthum{float:left;}
+#sviewpro #bestpro .bestthum img{float:left; padding:0 0 0 4px; margin:0;}
+#sviewpro #bestpro .protxt{float:left; width:122px; color:333333; padding:2px 0 0 8px; height:28px; overflow:hidden;}
+#sviewpro #bestpro .price{float:left; width:122px; font-weight:bold; color:#fd5403; padding:2px 0 0 8px;}
+#sviewpro #bestpro .protxt a{color:#666666;}
+#sviewpro #bestpro .protxt a:hover{text-decoration: underline;}
+#sviewpro #bestpro .price a{color:#fd5403;}
+#sviewpro #bestpro .price a:hover{text-decoration:underline;} 
+
+#sviewpro #bestpro .dashline {clear:both;  _padding:0; _margin:0px; width:190px; height:14px; background:url('//img.danawa.com/new/main_new/img/line_dash.gif') repeat-x 0 7px;}
+
+#sviewpro #bestpro .sboxthum {float:left; width:64px; line-height:115% ; font-size:11px; text-align:center;}
+#sviewpro #bestpro .sboxthum img{padding:0 2px 3px 2px;text-align:center;}
+#sviewpro #bestpro .sboxprice{color:#fd5403; text-align:center;}
+#sviewpro #bestpro .sboxthum a{color:#666666;}
+#sviewpro #bestpro .sboxthum a:hover{text-decoration:underline;}
+#sviewpro #bestpro .sboxprice a{color:#fd5403;}
+#sviewpro #bestpro .sboxprice a:hover{text-decoration:underline;} 
+
+/* 장터상품_P01_090929 */
+#marketPro {background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat ; width:208px; margin:0px; padding:0px; margin-bottom:15px;}
+#marketPro #marPro{width:190px; height:60px; padding:7px; font-size:12px;}
+#marketPro #marPro .bestthum{float:left; margin:0; padding:0;}
+#marketPro #marPro .bestthum img{float:left; padding:0 0 0 4px; margin:0;}
+#marketPro #marPro .protxt{float:left; width:122px; color:333333; margin:0; padding:0; padding:2px 0 0 8px; height:28px; overflow:hidden;}
+#marketPro #marPro .price{float:left; width:122px; font-weight:bold; color:#fd5403; margin:0; padding:0; padding:2px 0 0 8px;}
+#marketPro #marPro .protxt a{color:#666666;}
+#marketPro #marPro .protxt a:hover{text-decoration: underline;}
+#marketPro #marPro .price a{color:#fd5403;}
+#marketPro #marPro .price a:hover{text-decoration:underline;} 
+
+#marketPro #marPro .dashline {clear:both; _padding:0; _margin:0px; width:190px; height:10px; background:url('//img.danawa.com/new/main_new/img/line_dash.gif') repeat-x 0 7px;}
+
+#marketPro ul {float:left; margin:0px 8px 0 9px; _margin:0px 8px 0 4px; padding:0px; width:173px;}
+#marketPro li {padding:0 0 4px 8px; line-height:125%; background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 4px;}
+#marketPro li a{color:#666666;}
+#marketPro li a:hover {text-decoration: underline; color:#666666;}
+
+#marketPro .con_bottom {margin:0; padding:0; background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat bottom; height:5px; font-size:0px; line-height:0px; clear:both;}
+
+/* 쇼핑가이드 */
+#sguide {background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat ; width:208px; height:233px; margin:0px; padding:0px;}
+#sguide .propic{ float:left; margin:7px 7px 4px 7px; border:1px solid #D9D9D9; width:75px; height:75px;}
+/* 핵 */ *html #sguide .propic {margin:0; margin: 4px 5px 5px 4px; border:1px solid #D9D9D9; width:75px; height:75px; float:left;}
+#sguide .procont{float:left; margin:7px 7px 0 0; width:95px; height:50px;}
+/* 핵 */ *html #sguide .procont{float:left; margin:10px 5px 0 0; width:110px; height:50px;}
+
+#sguide ul {
+	float:right;
+	margin : 5px 8px 0 8px;
+	padding:0px 0px 3px 0px;
+	width:190px;
+
+}
+/* 핵*/ *html #sguide ul {
+	position:relative;
+	float:left;
+	left:0px; top:0px;
+	margin : 0 0 0 4px;
+	width:190px;
+}
+#sguide li {
+	padding-left : 8px;
+	line-height:170%;
+	width:190px;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%;
+}
+*html #sguide li {
+	padding-left : 8px;
+	line-height:180%;
+	width:190px;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%;
+}
+#sguide li a{color:#666666;}
+#sguide li a:hover {text-decoration: underline; color:#666666;}
+
+/* 프리미엄 링크 */
+#premium_link {background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat; width:218px; height:162px; margin:0px; padding:0px;}
+#premium_link ul {
+	float:right;
+	padding :0px 8px 0 3px;
+	margin:0px;
+	width:198px;
+	background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat 1px -35px;
+
+}
+/* 핵 */*html ##premium_link ul {
+	position:relative;
+	float:left;
+	left:0px; top:0px;
+	width:198px;
+	background:none;
+}
+#premium_link li {
+	margin : 0 3px 0 7px;
+	padding-left : 7px;
+	line-height:170%;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 6px;
+}
+/* 핵 */ *html #premium_link li {
+	line-height:180%;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 5px;
+}
+
+#premium_link li a{color:#666666;}
+#premium_link li a:hover {text-decoration: underline; color:#666666;}
+
+
+/************************************************************************* 컨텐츠 버튼 ****************************************************************/
+#conbtn {background: url(//img.danawa.com/new/d_news/img/conbtn_bg.gif) no-repeat; width:208px; height:110px; clear:both; margin:0px 0px 15px 0px; padding:0px; }
+#conbtn ul {padding :17px 10px 10px 10px; _padding :11px 10px 10px 10px; *padding :11px 10px 10px 10px; margin:5px; width:178px;}
+#conbtn li {line-height:120%;}
+
+#netibtn {background: url(//img.danawa.com/new/d_news/img/netibtn_bg.gif) no-repeat; width:208px; height:102px; clear:both; text-align:center; margin:0px; padding:0px;}
+#netibtn table { margin:5px 0 0 10px; _margin:0px; *margin:0px; }
+#netibtn table td { padding:5px 0 0 3px; _padding:3px 0 0 0px; *padding:3px 0 0 0px; height:45px; }
+
+
+/* 각 섹션 */
+/* 서브 레이아웃 */
+#s_left {width:137px; float:left;}
+#s_mid {width:550px; float:left; margin-left:0px; margin-right:0px; margin-bottom:20px; position:relative; zoom:1;}
+#s_right {width:208px; float:right; vertical-align:top;}
+
+
+/* 섹션 헤드라인 뉴스 */
+#sheadline {width:550px; border-bottom:1px solid #E0E0E0; padding:10px 0; margin:0px;}
+#sheadline .title {width:550px; padding:6px 0; margin:0px;}
+#sheadline .title h1 {font-size:25px; color:#2854BF; letter-spacing:-2px;line-height:140%; font-weight:bold; margin:0px;}
+#sheadline .title a.head{font-size:25px; color:#2854BF; letter-spacing:-2px;line-height:140%; font-weight:bold;}
+#sheadline .title a.head:hover{text-decoration:underline;}
+#sheadline .propic{width:140px; height:140px; border:1px solid #D9D9D9; margin-right:12px; margin-margin:0 auto;}
+
+/* 09/04/06 추가 영역 추가자 이종범 */
+#sheadline .title h1 {font-size:25px; color:#B50945; font-weight:bold; letter-spacing:-2px;line-height:140%; margin:0px; padding:0px;}
+#sheadline .title h2 {font-size :14px; font-weight:normal; line-height:140%; color:#000000; margin:0px; padding:0px;}
+#sheadline .title a.m_head1{font-size:25px; color:#B50945; font-weight:bold; letter-spacing:-2px;line-height:140%;}
+#sheadline .title a.m_head1:hover{text-decoration:underline;color:#B50945;}
+
+#sheadline .title a.m_head2{font-size:25px; color:#000000; font-weight:bold; letter-spacing:-2px;line-height:140%;}
+#sheadline .title a.m_head2:hover{text-decoration:underline;color:#000000;}
+
+#sheadline .title a.m_head3{font-size:25px; color:#2854BF; font-weight:bold; letter-spacing:-2px;line-height:140%;}
+#sheadline .title a.m_head3:hover{text-decoration:underline;color:#2854BF;}
+/* 09/04/06 추가 영역 추가자 이종범 */
+
+.topheadline {width:550px; border-bottom:1px solid #E0E0E0; margin:-13px 0 10px 0;}
+.topheadline_773 {width:773px; border-bottom:1px solid #E0E0E0; margin:-13px 0 10px 0;}
+
+#sheadline h2 {font-size :14px; font-weight:normal; line-height:140%; color:#000000; margin:0px; margin-bottom:7px;}
+#sheadline a.m_text{font-size :14px; font-weight:normal; line-height:140%; color:#000000;}
+#sheadline a.m_text:hover{text-decoration:underline; color:#000000;}
+
+#sheadline ul {float: left; padding:0px; margin:0px 0px 0px 2px; vertical-align:top;}
+#sheadline li {padding-left : 15px; line-height:150%; background : url(//img.danawa.com/new/d_news/img/bul_list2.gif) no-repeat 0 45%;	}
+#sheadline li a{color:#666666;}
+#sheadline li a:hover {text-decoration: underline;}
+
+#sheadline .tdspace {vertical-align:top; height:142px;}
+
+/* 섹션 TV */
+#stv {background: url(//img.danawa.com/new/d_news/img/top_bg.gif) no-repeat -647px 0px ; width:208px; height:163px; margin-bottom:15px;}
+#stv a.menu{   font-size: 11px; font-weight: normal;  text-decoration: none; color:#474747; padding:0 2px 0 2px; letter-spacing:-1px;}
+#stv a.menu:hover {text-decoration: underline;}
+#stv .spacetxt {color:#BDBDBD;}
+#stv .btn {text-align:right; margin-top:3px; margin-right:10px;}
+#stv a.tvtit{  font-size: 12px; font-weight: bold;  text-decoration: none; color:#596C9C;line-height:120%;}
+#stv a.tvtit:hover { text-decoration: underline;}
+#stv a.stvtit{  font-size: 11px; font-weight: bold;  text-decoration: none; color:#596C9C;line-height:120%;}
+#stv a.stvtit:hover { text-decoration: underline;}
+#stv .mthum {margin-top:6px;}
+#stv .mthum td {padding:4px; border-spacing:9px;  vertical-align:top; }
+#stv .mthum .btn_img{ display:block; margin-top:20px;}
+#stv .tvimg {margin-bottom:8px;}
+#stv table{margin:0 auto;}
+#mtv_mov a.stvtit{  font-size: 11px; font-weight: bold;  text-decoration: none; color:#596C9C;line-height:120%;}
+#mtv_mov a.stvtit:hover { text-decoration: underline;}
+
+/* 섹션 많이 본 뉴스 */
+#sview {background: url(//img.danawa.com/new/d_news/img/conbg_r01.gif) no-repeat ; width:208px; height:254px; margin:0px; padding:0px; }
+#sview .propic{ float:left; margin:7px 7px 4px 7px; border:1px solid #D9D9D9; width:75px; height:75px;}
+/* 핵 */*html #sview .propic {margin: 4px 5px 5px 4px; border:1px solid #D9D9D9; width:75px; height:75px; float:left;}
+#sview .procont a {float:left; margin:7px 7px 0 0; width:105px; position:relative;top:-10px; overflow:hidden;}
+/* 핵 */*html #sview .procont a{float:left; margin:0px 5px 0 0; width:110px; height:64px;position:relative;top:-18px;}
+*:first-child+html #sview .procont a {position:relative;top:-18px;}
+.com_marb tbody tr td{width:208px;}
+#sview ul {
+	float:right;
+	margin : 5px 8px 0 8px;
+	padding:0px 0px 3px 0px;
+	width:190px;
+}
+/* 핵*/ *html #sview ul {
+	position:relative;
+	float:left;
+	left:0px;
+	top:0px;
+	margin : 0 0 0 4px;
+	width:190px;
+}
+/* overflow추가_P04_090420*/
+#sview li {
+	overflow:hidden;
+	padding-left : 8px;
+	line-height:170%;
+	width:190px;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%;
+	white-space:nowrap; text-overflow:ellipsis; 
+}
+*html #sview li {
+	padding-left : 8px;
+	line-height:180%;
+	width:190px;
+	background : url(//img.danawa.com/new/d_news/img/bul_list.gif) no-repeat 0 45%;
+	white-space:nowrap; text-overflow:ellipsis; 
+}
+
+#sview li a{color:#666666;}
+#sview li a:hover {text-decoration: underline; color:#666666;}
+
+#sview .more{margin-left:90px; top:10px;clear:both; font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;}
+/* 핵 */*html #mview .more{top:10px;}
+#sview .more img{vertical-align:middle;margin-bottom:3px;}
+
+
+/* 섹션 최신뉴스 */
+#PnNews {width:550px; margin:15px 0px 0px 0px; padding:0px;}
+#PnNews h3 {font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;}
+#PnNews .Newslist {float:left; margin:0px; padding:0px; width:400px;}
+#PnNews .Newslist img{vertical-align:inherit;}
+/* 핵 */ *html #PnNews .Newslist img{}
+#PnNews .Newslist ul {padding:0 0 12px 0; width:400px; margin:0px 0px 5px 0px;}
+#PnNews .Newslist li{padding-left:8px; margin:0px 0px 1px 0px; background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 50%;}
+/* 핵 */ *html #PnNews .Newslist li{padding-left:8px;  background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 7px;}
+#PnNews .Newslist ul .pointnone {background:none;}
+#PnNews .Newslist li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%;}
+/* 핵 */ *html #PnNews .Newslist li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;line-height:180%; }
+#PnNews .Newslist li a:hover{text-decoration:underline;color:#000000;}
+
+#PnNews .Newslist ul#stit {margin:5px 0px 0px 10px; *margin:2px 0px 0px 2px; padding:0 0 3px 0;}
+/* 핵 */ *html #PnNews .Newslist ul#stit {margin:2px 0px 0px 2px; padding:0 0 3px 0;}
+#PnNews .Newslist ul#stit li {background : url(//img.danawa.com/new/d_news/img/bul_list2.gif) no-repeat 0 50%; padding-left :15px; height:16px;}
+#PnNews .Newslist ul#stit li a{font-size:12px; color:#666666; font-weight:normal; line-height:18px;}
+#PnNews .Newslist ul#stit li a:hover{text-decoration:underline;color:#666666;}
+
+
+/* 게임섹션 최신뉴스 */
+#PnNews .Gamelist {float:left; margin:0px; padding:0px; width:400px;}
+#PnNews .Gamelist img{vertical-align:inherit;}
+/* 핵 */ *html #PnNews .Gamelist img{}
+#PnNews .Gamelist ul{width:400px; padding:0 0 12px 0; margin:0px 0px 5px 0px;}
+#PnNews .Gamelist li{padding-left:2px;  margin:0px 0px 10px 0px;}
+/* 핵 */ *html #PnNews .Gamelist li{ padding-left:2px; margin:0px 0px 11px 0px;}
+#PnNews .Gamelist li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;}
+/* 핵 */ *html #PnNews .Gamelist li a{font-size:14px; color:#000000; font-weight:bold; letter-spacing:-1px;}
+#PnNews .Gamelist li a:hover{text-decoration:underline; color:#000000;}
+
+#PnNews .Gamelist ul#stit {margin:5px 0px 5px 10px; padding:0px;}
+/* 핵 */ *html #PnNews .Gamelist ul#stit {margin:5px 0px 0px 2px; padding:0 0 3px 0;}
+#PnNews .Gamelist ul#stit li {background : url(//img.danawa.com/new/d_news/img/bul_list2.gif) no-repeat 0 20%; padding:0px 0px 0px 15px; margin:0px; }
+#PnNews .Gamelist ul#stit li a{font-size:12px; color:#666666; font-weight:normal; line-height:18px;}
+#PnNews .Gamelist ul#stit li a:hover{text-decoration:underline;color:#666666;}
+
+/* 섹션 포토뉴스 */
+#PnNews .Photolist{float:right; margin:0px 0px 20px 0px; padding:8px; width:111px; background-color:#F2F2F2; text-align:center; }
+#PnNews .Photolist img {border:1px solid #D9D9D9; width:75px; height:75px; padding:2px; margin:0px;}
+#PnNews .Photolist ul {margin:0px; padding:3px 0px 7px 0px; width:111px;}
+#PnNews .Photolist li {padding-bottom:2px; margin:0px;}
+#PnNews .Photolist a{font-size: 12px; font-weight: bold;  text-decoration: none; color:#596C9C; line-height:125%;}
+#PnNews .Photolist a:hover{ text-decoration: underline;}
+
+/* 카테고리 메뉴 */
+#cate_menu { background: url(//img.danawa.com/new/d_news/img/cate_listbg01.gif) repeat ; width:137px;}
+#cate_menu .ta_space {padding-left:5px;}
+#cate_menu a.cate1{ font-size: 12px;font-weight: bold; text-decoration: none;color:#333333; letter-spacing:-2px;}
+#cate_menu a.cate1:hover {text-decoration: underline;}
+#cate_menu a.cate1_on{ font-size: 12px;font-weight: bold; text-decoration: underline;color:#333333; letter-spacing:-2px;}
+#cate_menu a.cate1_on:hover {text-decoration: underline;}
+
+#cate_menu a.cate2{ font-size: 12px;font-weight: normal; text-decoration: none;color:#333333; letter-spacing:-1px;}
+#cate_menu a.cate2:hover {text-decoration: underline;}
+#cate_menu a.cate2_on{ font-size: 12px;font-weight: bold; text-decoration: underline; color:#2C4A93; letter-spacing:-1px;}
+#cate_menu a.cate2_on:hover {text-decoration: underline;}
+
+#cate_menu a.cate3{ font-size: 11px;font-weight: normal; text-decoration: none;color:#666666; letter-spacing:-1px;}
+#cate_menu a.cate3:hover {text-decoration: underline;}
+#cate_menu a.cate3_on{ font-size: 11px;font-weight: bold; text-decoration: underline; color:#2C4A93; letter-spacing:-1px;}
+#cate_menu a.cate3_on:hover {text-decoration: underline;}
+
+/* 동영상 로케이션 */
+#tv_movie_location {background:url(//img.danawa.com/new/d_news/img/tv_movie_list_bar.gif) no-repeat bottom; width:182px; height:30px; margin:0; padding:0; line-height:27px; vertical-align:middle; font-size:11px; color:#b5b5b5;}
+#tv_movie_location a {font-size:11px; color:#b5b5b5;}
+#tv_movie_location .colorWhite {color:#fff;}
+
+/* 인기태그 */
+#hot_tag { background: url(//img.danawa.com/new/d_news/img/tag_bg.gif) repeat ; width:121px; padding:8px; margin:0px;}
+#hot_tag ul{width:121px; margin:0px; padding:0px;}
+#hot_tag li{display:inline;}
+
+/* 태그스타일 */
+/* 기본 */
+#hot_tag .tag01 {  color: #333333; padding:3px 3px 2px 3px; line-height:150%;}
+#hot_tag a.tag01{   font-size: 12px; font-weight: normal; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#hot_tag a.tag01:visited {   font-size: 12px; font-weight: normal; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#hot_tag a.tag01:hover {   font-size: 12px; font-weight: normal; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}
+
+/* 기본볼드 */
+#hot_tag .tag02 {  color: #333333; padding:3px 3px 2px 3px; line-height:150%; font-weight: bold;}
+#hot_tag a.tag02{   font-size: 12px; font-weight: bold; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#hot_tag a.tag02:visited {   font-size: 12px; font-weight: bold; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#hot_tag a.tag02:hover {   font-size: 12px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}
+
+/*14볼드 남색 밑줄*/
+#hot_tag .tag03 {font-size: 14px;  color: #2C4A93; padding:3px 3px 2px 3px; line-height:150%; font-weight: bold;}
+#hot_tag a.tag03{   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: underline; line-height:150%;}
+#hot_tag a.tag03:visited {   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: underline; line-height:150%;}
+#hot_tag a.tag03:hover {   font-size: 14px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}
+
+/* 14볼드 남색 */
+#hot_tag .tag04 {font-size: 14px;  color: #2C4A93; padding:3px 3px 2px 3px; line-height:150%; font-weight: bold;}
+#hot_tag a.tag04{   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#hot_tag a.tag04:visited {   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#hot_tag a.tag04:hover {   font-size: 14px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}
+
+/* 네티즌 랭킹_090629_P04 */
+#ranking_neti {background: url(//img.danawa.com/new/d_news/img/conbg_rankingr01.gif) no-repeat; width:137px; height:275px; margin:0px; padding:0px;}
+*html #ranking_neti {background: url(//img.danawa.com/new/d_news/img/conbg_rankingr01.gif) no-repeat; width:137px; height:225px; margin:0px; padding:0px;}
+#ranking_neti .tit{ font-size: 12px; text-decoration: none; font-weight:bold; color:#000000; letter-spacing:-1px;}
+#ranking_neti #id ul{
+	float:left;
+	margin : 5px 3px 0 5px;
+	padding:0px;
+	width:88px;
+}
+*html #ranking_neti #id ul{
+	position:relative;
+	float:left;
+	left:5px;
+	top:0px;
+	margin :0;
+	width:95px;
+}
+#ranking_neti #id li {
+	padding :3px 0 4px 0;
+}
+*html #ranking_neti #id li {
+	padding :6px 0 1px 0;
+	line-height:184%;
+}
+#ranking_neti #id li a{color:#666666;}
+#ranking_neti #id li a:hover {text-decoration: underline; color:#666666;}
+
+#ranking_neti #number ul{
+	float:right;
+	margin : 5px 5px 0 0;
+	padding:0px;
+	padding-right:2px;
+	width:30px;
+	text-align:right;
+}
+/**html #ranking_neti #number ul{
+	position:relative;
+	float:right;
+	top:0px;
+	margin:0;
+	padding-right:5px;
+	width:40px;
+	text-align:right;	
+}*/
+#ranking_neti #number li {
+	padding :4px 0 4px 0;
+}
+/* *html #ranking_neti #number li {
+	padding :2px 0 2px 0;
+	line-height:120%;
+}*/
+#ranking_neti #number li a{color:#999999;}
+#ranking_neti #number li a:hover {text-decoration: underline; color:#999999;}
+#ranking_neti #comment { float:left; width:135px; text-align:center; padding:3px 1px 0 1px;  font-size:11px; color:#999999; } 
+
+/* 태그스타일 */
+/* 기본 */
+/* .tag01 {  color: #333333; padding:3px 3px 2px 3px; line-height:150%;}
+a.tag01{   font-size: 12px; font-weight: normal; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+a.tag01:visited {   font-size: 12px; font-weight: normal; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+a.tag01:hover {   font-size: 12px; font-weight: normal; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}*/
+
+/* 기본볼드 */
+/* .tag02 {  color: #333333; padding:3px 3px 2px 3px; line-height:150%; font-weight: bold;}
+a.tag02{   font-size: 12px; font-weight: bold; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+a.tag02:visited {   font-size: 12px; font-weight: bold; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+a.tag02:hover {   font-size: 12px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}*/
+
+/*14볼드 남색 밑줄*/
+/* .tag03 {font-size: 14px;  color: #2C4A93; padding:3px 3px 2px 3px; line-height:150%; font-weight: bold;}
+a.tag03{   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: underline; line-height:150%;}
+a.tag03:visited {   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: underline; line-height:150%;}
+a.tag03:hover {   font-size: 14px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}*/
+
+/* 14볼드 남색 */
+/* .tag04 {font-size: 14px;  color: #2C4A93; padding:3px 3px 2px 3px; line-height:150%; font-weight: bold;}
+a.tag04{   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+a.tag04:visited {   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+a.tag04:hover {   font-size: 14px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}*/
+
+/* 컴퓨터 제휴기사 */
+#com_left {float:left;  width:265px; background-color:#F3F3F3; display:block; clear:both; margin:0px; padding:0px; }
+#com_right {float:right;  width:265px; background-color:#F3F3F3; display:block; margin:0px; padding:0px; padding:0px; }
+
+#com_tit {padding:10px 0px; margine:0px; width:265px; height:20px; border-bottom:1px solid #DDDDDD; background:#ffffff; }
+
+#com_thum {float:left; clear:both; padding:10px 0px 10px 10px; margin:0px; width:255px; background:url(//img.danawa.com/new/d_news/img/dashline.gif) repeat-x bottom;}
+/* 핵  *html #com_thum {float:left; clear:both; padding:10px 0px 10px 10px; margin:0px; width:265px; background:url(//img.danawa.com/new/d_news/img/dashline.gif) repeat-x bottom;  }*/
+#com_thum .propic{float:left;width:62px; padding:0px; margin:0px; }
+#com_thum .procont{float:right; width:193px; padding:0px; margin:0px;}
+#com_thum a.s_tit{font-size:12px; color:#666666; font-weight:normal;line-height:120%;}
+#com_thum a.s_tit:hover {text-decoration:underline}
+
+#com_list { clear:both; margin:0px; padding:10px; width:235px;}
+/* 핵 */ *html #com_list { clear:both; margin:0px; padding:10px; width:245px;}
+#com_list ul{width:245px; margin:0px; padding:0px;}
+#com_list li{list-style-type:none; padding-left:8px; background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 40%;}
+#com_list a{font-size:12px; color:#666666; font-weight:normal; line-height:130%;}
+#com_list a:hover{text-decoration:underline;}
+
+/* 노트북 제휴기사 */
+.comuni_tit {padding-bottom:4px; clear:both;}
+
+#comgisa {width:550px; height:73px; padding:0px 0px 10px 0px; margin:0px; background: url(//img.danawa.com/new/d_news/img/comgisa_bg.gif) no-repeat;}
+
+#comgisa_thum {float:left; padding-top:10px; padding-bottom:10px; padding-left:10px; width:255px;}
+#comgisa_thum .propic{float:left;width:62px; margin:0px; padding:0px;}
+#comgisa_thum .procont{float:right; width:183px; padding:0px; margin:0px;}
+#comgisa_thum a.s_tit{font-size:12px; color:#666666; font-weight:normal;line-height:120%;}
+#comgisa_thum a.s_tit:hover {text-decoration:underline}
+
+#comgisa_list {float:right; padding:10px; margin:0px; width:255px;}
+#comgisa_list ul{width:255px; padding:0px; margin:0px;}
+#comgisa_list li{list-style-type:none; padding-left:8px; background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 40%;}
+#comgisa_list a{font-size:12px; color:#666666; font-weight:normal; line-height:130%;}
+#comgisa_list a:hover{text-decoration:underline;}
+
+/* 휴대폰 제휴기사 */
+.phuni_tit { margin:25px 0 0 0; padding:10px 0px 4px 0px; font-weight:bold; color:#000000;}
+
+#phgisa { width:550px; height:137px; background: url(//img.danawa.com/new/d_news/img/phgisa_bg.gif) repeat; margin:0px; padding:0px;}
+
+#phgisa_left {float:left;  width:255px; margin:0px 7px; padding:0px; clear:both;}
+#phgisa_left .brand_name{float:left;  width:210px; font-weight:bold; color:#000000; padding-top:10px; margin:0px;}
+#phgisa_left .more{float:right;width:40px;  font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D; padding:10px 0px 0px 0px; margin:0px; }
+#phgisa_left .more a{font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;}
+#phgisa_left .more img{vertical-align:middle;margin-bottom:3px;}
+#phgisa_left ul{width:250px; clear:both; margin:0px; padding:12px 0px 0px 0px; _padding:8px 0px 0px 0px;}
+#phgisa_left li{ padding-left:8px;  background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 40%;}
+#phgisa_left a{font-size:12px; color:#666666; font-weight:normal; line-height:150%;}
+#phgisa_left a:hover{text-decoration:underline;}
+#phgisa_left p {height:20px; vertical-align:bottom;}
+
+#phgisa_right {float:right;  width:255px; margin:0px 7px; padding:0px;}
+#phgisa_right .brand_name{float:left; clear:both;  width:210px; font-weight:bold; color:#000000; padding-top:10px; margin:0px;}
+#phgisa_right .more{float:right; width:40px;  font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D; padding:10px 0px 0px 0px; margin:0px; }
+#phgisa_right .more a{font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;}
+#phgisa_right .more img{vertical-align:middle;margin-bottom:3px;}
+#phgisa_right ul{width:250px; clear:both; margin:0px; padding:12px 0px 0px 0px;*padding:8px 0px 0px 0px;}
+#phgisa_right li{padding-left:8px;  background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 40%;}
+#phgisa_right a{font-size:12px; color:#666666; font-weight:normal; line-height:150%;}
+#phgisa_right a:hover{text-decoration:underline;}
+#phgisa_right p {height:20px;  vertical-align:bottom;}
+
+/* 게임 제휴기사 */
+#game_tit {padding:10px 0px 0px 0px; margin:0px; width:265px; height:20px; border-bottom:1px solid #DDDDDD; background-color:white;}
+#game_tit .con_name{float:left;  width:225px; font-weight:bold; color:#000000; padding:0px; margin:0px;}
+#game_tit .more{float:left; margin:0; padding:0;  width:40px; font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;/* border:1px solid red; */}
+#game_tit .more a{font-size:11px; letter-spacing:-1px; font-weight:normal;color:#8D8D8D;}
+#game_tit .more img{vertical-align:middle;margin-bottom:3px;}
+
+#gamegisa_left {float:left;  width:265px; background-color:#F3F3F3; margin:0px; padding:0px;}
+#gamegisa_right {float:right;  width:265px; background-color:#F3F3F3; margin:0px; padding:0px;}
+
+#gamegisa_con { background-color:#F3F3F3;}
+#gamegisa_con .topgisa {padding:10px; margin:0px; width:245px; list-style-type:none;}
+#gamegisa_con .thumborder { border:1px solid #D9D9D9;}
+#gamegisa_con a{font-size:12px; color:#666666; font-weight:normal; line-height:150%;}
+#gamegisa_con a:hover{text-decoration:underline;}
+#gamegisa_con .gameico {vertical-align:middle; padding-bottom:3px;} /* 게임섹션 게임해당 아이콘 */
+#gamegisa_con .dashline {padding:0 10px 0 10px; height:10px;background-color:#F3F3F3;}
+
+#game_list {width:245px; margin:0px 10px 10px 10px; padding:0px; clear:both;}
+#game_list .propic {float:left; margin:0px 10px 10px 0px; width:100px; border:1px solid #D9D9D9; }
+/* 핵 */ *html #game_list .propic{float:left; margin:0px; width:100px; border:1px solid #D9D9D9;}
+#game_list .procont{float:right; margin:0px; padding-top:3px; width:130px;}
+
+/*뉴스 목록 및 보기화면 관련 소스*/
+
+/* 네비게이션 */
+#navigation {width:100%; height:27px; margin:0 0 15px 0; padding:3px 0 0 0; text-align:right; background:url(//img.danawa.com/new/d_news/img/bg_newsName.gif) 10px 5px no-repeat;}
+#navigation * { vertical-align:middle; }
+#navigation.newsName_60 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -25px no-repeat;} /* 일반뉴스 */
+#navigation.newsName_64 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -55px no-repeat;} /* 기획뉴스 */
+#navigation.newsName_61 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -85px no-repeat;} /* 신상품뉴스 */
+#navigation.newsName_68 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -115px no-repeat;} /* 쇼핑뉴스 */
+#navigation.newsName_65 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -145px no-repeat;} /* 기자 칼럼 */
+#navigation.newsName_62 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -178px no-repeat;} /* 리뷰 */
+#navigation.newsName_67 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -205px no-repeat;} /* 벤치마킹 */
+#navigation.newsName_66 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -235px no-repeat;} /* Tip & 강좌 */
+#navigation.newsName_63 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -265px no-repeat;} /* 구매가이드 */
+#navigation.newsName_130 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -295px no-repeat;} /* 인기순위 가이드 */
+
+/* 네비게이션_컴퓨텍스 2011 관련추가_110531 P07*/
+#navigation_2011 {width:100%; height:45px; margin:0 0 15px 0; padding:3px 0 0 0; text-align:right; background:url(//img.danawa.com/new/d_news/img/2011_computex_titbg.gif) 0 5px no-repeat;}
+#navigation_2011.newsName_60 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -25px no-repeat;} /* 일반뉴스 */
+#navigation_2011.newsName_64 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -55px no-repeat;} /* 기획뉴스 */
+#navigation_2011.newsName_61 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -85px no-repeat;} /* 신상품뉴스 */
+#navigation_2011.newsName_68 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -115px no-repeat;} /* 쇼핑뉴스 */
+#navigation_2011.newsName_65 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -145px no-repeat;} /* 기자 칼럼 */
+#navigation_2011.newsName_62 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -178px no-repeat;} /* 리뷰 */
+#navigation_2011.newsName_67 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -205px no-repeat;} /* 벤치마킹 */
+#navigation_2011.newsName_66 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -235px no-repeat;} /* Tip & 강좌 */
+#navigation_2011.newsName_63 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -265px no-repeat;} /* 구매가이드 */
+#navigation_2011.newsName_130 {background:url('//img.danawa.com/new/d_news/img/bg_newsName.gif') 10px -295px no-repeat;} /* 인기순위 가이드 */
+
+/* Today&뉴스속보 */
+.todayContents {width:170px; padding:14px; margin:0 0 10px 10px; border:1px solid #e6e6e6; background:#f7f7f7; float:left;}
+.todayDate {margin-bottom:10px; padding-bottom:7px; border-bottom:1px solid #e6e6e6; font-size:11px; color:#666;}
+.todayDate .todaytext {font-family:verdana; font-size:10px; font-weight:bold; padding-right:5px;}
+.fastIcon {width:170px; height:20px; padding:0; margin:0; background:url(//img.danawa.com/new/d_news/img/icon_fast.gif) no-repeat top left;}
+.fastContents_wrap {width:170px; height:27px; overflow:hidden; padding:0; margin:0;  font-size:12px; color:#333;}
+.fastContents_wrap a {font-size:12px; color:#333; text-decoration:none;}
+.fastContents_wrap a:hover {font-size:12px; color:#333; text-decoration:underline;}
+
+/* 셀렉트 박스 */
+#sub_select {width:550px; float:right; text-align:right; font-size:12px; color:#000000; line-height:130%; margin:0px; padding:0px;}
+#sub_select #checkbox{  vertical-align:middle; margin:0px 3px 0px 5px; padding:0px;}
+
+/* 탭 영역 */
+
+/* 탭버튼_활성화 */
+.list_tab {clear:both; height:27px; padding:0; background:url('//img.danawa.com/new/d_news/img/tab_Nbg.gif') repeat; margin-bottom:20px;}
+.list_tab ul .tabin{float:left; height:27px; background:url('//img.danawa.com/new/d_news/img/tab_Nr_on.gif') no-repeat top right; }
+.list_tab a.tabon {
+	float:left;
+	display:block;
+	height:18px;
+	padding:8px 20px 0 20px;
+	background:url('//img.danawa.com/new/d_news/img/tab_Nl_on.gif') no-repeat top left;
+	font-size:12px;
+	font-weight:bold;
+	color:#3f66db;
+	text-decoration:none;
+}
+
+/* 탭버튼_비활성화 */
+.list_tab ul .tabdis{float:left; display:inline; height:27px; background:url('//img.danawa.com/new/d_news/img/tab_Nr.gif') no-repeat top right; }
+.list_tab a.tabout {
+	float:left;
+	display:block;
+	height:18px;
+	padding:8px 20px 0 20px;
+	background:url('//img.danawa.com/new/d_news/img/tab_Nl.gif') no-repeat top left;	
+	font-size:12px;
+	font-weight:normal;
+	color:#000;
+	text-decoration:none;
+}
+
+/* 뉴스 목록 */
+#listcon {width:550px; padding:0px; margin:0px;}
+#listcon table{border-collapse: collapse;}
+#listcon .propic{margin:0px 10px 18px 0px; border:1px solid #D9D9D9; width:75px; height:75px; float:left; padding:2px 2px 2px 2px ; background-color:#ffffff;}
+#listcon .procont{float:left; width:459px; margin:10px 0px 0px 0px; padding:0px;}
+
+#listcon .upline {width:550px; border-top:1px  solid #E0E0E0; padding-top:18px;}
+
+/* 뉴스 댓글5천개 이상 글 타이틀 */
+#listcon .redpoint {color:#B50945; font-size: 15px; font-weight: bold; line-height:23px;}
+#listcon a.redpoint{color:#B50945; font-size: 15px; font-weight: bold; line-height:23px;}
+#listcon a.redpoint:hover{text-decoration: underline;}
+
+/* 뉴스 타이틀 */
+#listcon .b_title {font-size: 15px; font-weight: bold;  color:#000000; line-height:23px;}
+#listcon a.b_title{font-size: 15px; font-weight: bold;  text-decoration: none; color:#000000;line-height:23px;}
+#listcon a.b_title:hover{text-decoration: underline;}
+
+/* 뉴스 설명글 */
+#listcon .t_text{font-size: 12px; font-weight: normal;  color:#666666; line-height:17px;}
+#listcon a.t_text{font-size: 12px; font-weight: normal;  text-decoration: none; color:#666666;line-height:17px;}
+#listcon a.t_text:hover{text-decoration: underline;}
+
+#listcon ul {
+	float:left;
+	clear:both;
+	width:550px;
+	margin:15px 0px 0px 0px;
+	padding:0px;
+}
+#listcon li {
+	clear:both;
+	padding :0px 0px 18px 0px;
+	margin:0px;
+}
+
+/* 페이징 영역 550 */
+
+#paging5 {width:550px; font-size:12px; color:#000000; line-height:140%; text-align:center; border-bottom:1px solid #E0E0E0; border-top:1px solid #E0E0E0; padding-top:7px; padding-bottom:7px; clear:both;}
+#paging5 a{font-size:12px; color:#000000; line-height:140%;}
+#paging5 a:hover{text-decoration:underline;}
+#paging5 .bold {font-size: 12px; font-weight: bold;  color:#2d4a90; line-height:140%;}
+
+/* 페이징 영역 730 */
+#paging7 {margin-left:22px; margin-right:0px; width:730px; font-size:12px; color:#000000; line-height:140%; text-align:center; border-bottom:1px solid #E0E0E0; border-top:1px solid #E0E0E0; padding-top:7px; padding-bottom:7px; clear:both;}
+#paging7 a{font-size:12px; color:#000000; line-height:140%;}
+#paging7 a:hover{text-decoration:underline;}
+#paging7 .bold {font-size: 12px; font-weight: bold;  color:#2d4a90; line-height:140%;}
+
+
+/* 검색 영역 */
+#listsearch {text-align:center; padding:10px 0px 20px 0px;}
+#listsearch input {border:solid 1px #cdcec8; width:200px; height:17px; font-size: 12px; color:#000000; line-height:140%;}
+#listsearch select {margin-bottom:1px; border:solid 1px #cdcec8;}
+
+/* 전체 글자 */
+
+/* 리스트 타이틀 글자 */
+.b_title { font-size: 15px; font-weight: bold;  color:#000000; line-height:23px;}
+a.b_title {   font-size: 15px; font-weight: bold;  text-decoration: none; color:#000000;line-height:23px;}
+a.b_title:hover {text-decoration: underline;}
+
+/* 리스트 댓글숫자 글자 */
+.p_text { font-size: 15px; color:#f02f6e; line-height:25px;}
+
+/*흐린 작은 회색 글자 11 */
+.g_text { font-size: 11px; font-weight: normal;  color:#999999; line-height:15px;}
+a.g_text {   font-size: 11px; font-weight: normal;  text-decoration: none; color:#999999;line-height:15px;}
+a.g_text:hover {text-decoration: underline;}
+
+/* 흐린 작은 회색 글자 12 */
+.g2_text { font-size: 12px; font-weight: normal;  color:#999999; line-height:15px;}
+a.g2_text{   font-size: 12px; font-weight: normal;  text-decoration: none; color:#999999;line-height:15px;}
+a.g2_text:hover {text-decoration: underline;}
+
+/* 리스트 설명 글자 */
+.t_text { font-size: 12px; font-weight: normal;  color:#666666; line-height:17px;}
+a.t_text {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#666666;line-height:17px;}
+a.t_text:hover {text-decoration: underline;}
+
+/* 본문글씨 */
+.pagetext {font-size:14px; color:#333333; line-height:16px; letter-spacing:-1px;}
+
+/* 포인트 칼라 */
+.numpoint {color:#2D4A91;}
+
+.redpoint {color:#B50945; font-size: 15px; font-weight: bold; line-height:23px;}
+a.redpoint{color:#B50945; font-size: 15px; font-weight: bold; line-height:23px;}
+a.redpoint:hover {text-decoration: underline;}
+
+.blackpoint {color:#000000; font-size: 12px; line-height:17px;}
+.blackpoint a{color:#000000; font-size: 12px; line-height:17px;}
+.blackpoint a:hover{text-decoration: underline;}
+
+/* 글보기 공통 */
+/* rss url */
+.rssurl { font-size: 12px; font-weight: normal;  color:#999999; line-height:17px;}
+a.rssurl {   font-size: 12px; font-weight: normal;  text-decoration: none; color:#999999;line-height:17px;}
+a.rssurl:hover {text-decoration: underline;}
+
+#gisaout {text-align:center;}
+
+#repaging {font-size:12px; color:#000000; line-height:17px; text-align:center; padding-top:7px; padding-bottom:7px; clear:both;}
+#repaging a{font-size:12px; color:#000000; line-height:17px; }
+#repaging a:hover{text-decoration:underline;}
+#repaging .bold {font-size: 12px; font-weight: bold;  color:#2d4a90; line-height:17px;}
+
+/*본문광고*/
+.viewad_mid {border:1px solid #D9D9D9;}
+
+.bot_dashline {border-bottom:1px dotted #ACACAC;}
+
+/* 글보기 550 */
+
+/* 뉴스제목 550 */
+#view_btit5 {width:550px; margin:10px 0px 0p 0px; padding:0px; border-bottom:1px solid #f1f1f1;}
+#view_btit5 ul { margin:0px; padding:0px;}
+#view_btit5 li {}
+#view_btit5 img {vertical-align:bottom;}
+#view_btit5 h1.btit {font-weight:bold; font-size:18px; letter-spacing:-1px; line-height:21px; color:#000000; padding:0 0 5px 0; margin:0px;}
+#view_btit5 h1.btit strong{font-size:18px;}
+
+/* 뉴스본문 550 */
+#article5 {width:550px; padding:10px 0 15px 0; font-size:14px;}
+#article5 .admar {float:right; width:250; margin-left:15px; margin-bottom:15px; }
+#article5 .cons {line-height:150%; font-size:14px; color:#666666; margin:0px; padding:0px;}
+#article5 td {line-height:150%; font-size:14px; color:#666666; margin:0px; padding:0px;}
+#article5 .cons_no {line-height:150%; font-size:14px; color:#666666; margin:0px; padding:0px; word-breack:break-all;}
+#article5 #divArticleContents1 p{margin:14px 0;}
+#article5 #divArticleContents1 p span{margin:5px 0;}
+#article5 #divArticleContents1 p img{margin:5px 0;}
+#article5 #divArticleContents1 table{margin:0;}
+#article5 #divArticleContents1 img{margin:0;}
+#article5 #divArticleContents1 h1{margin:10px 0;}
+
+
+#article5 a{text-decoration: none; color:#333399;}
+#article5 a:hover {text-decoration: underline;}
+
+/* 기사태그01 */
+#articletag5 {width:550px; margin:0px; padding:0px;}
+#articletag5 table{width:550px; border-collapse: collapse;}
+#articletag5 td{margin:0px; padding:0px;}
+#articletag5 .tit{padding:10px 10px 10px 5px; margin:0px; vertical-align:top; background:#f3f3f3;}
+#articletag5 .con{padding:10px 10px 10px 0px; margin:0px; vertical-align:top; background:#f3f3f3; font-size: 12px; font-weight: bold;  text-decoration: none; color:#2D4A91; line-height:16px;}
+#articletag5 .con a{font-size: 12px; font-weight: bold;  text-decoration: none; color:#2D4A91; line-height:16px;}
+#articletag5 .con a:hover{text-decoration: underline;}
+
+
+/* 기사태그 550 */
+#arttag5 {width:550px; margin:0px; padding:0px;}
+#arttag5 table{width:550px; border-collapse: collapse;}
+#arttag5 td{margin:0px; padding:0px;}
+#arttag5 .tit{padding:10px 0px; margin:0px; vertical-align:top;}
+#arttag5 .con{padding:10px 0px 10px 10px; margin:0px; vertical-align:top; font-size: 12px; font-weight: bold;  text-decoration: none; color:#000000; line-height:16px;}
+#arttag5 .con a{font-size: 12px; font-weight: bold;  text-decoration: none; color:#000000; line-height:16px;}
+#arttag5 .con a:hover{text-decoration: underline;}
+
+
+/* 스폰서 링크 550 */
+#newspon5 {width:550px; padding-top:3px; background : url(//img.danawa.com/new/d_news/img/spon_bg.gif) no-repeat 0 0;  clear:both;}
+#newspon5 img{margin-right:4px;}
+#newspon5 ul {margin:0 7px 0 7px; padding:4px 0px 7px 0px;}
+#newspon5 li {padding-left:8px; background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 4px; line-height:16px;  margin-top:5px; margin-left:3px;}
+#newspon5 li a.spontit{font-size: 12px; font-weight: bold;  text-decoration: none; color:#2D4A91; line-height:16px;}
+#newspon5 li a.spontit:hover {text-decoration: underline;}
+#newspon5 li a.sponurl {font-size: 11px; font-weight: normal;  text-decoration: none; color:#999999; line-height:16px;}
+#newspon5 li a.sponurl:hover {text-decoration: underline;}
+#newspon5 li a.spontext {font-size: 12px; font-weight: normal;  text-decoration: none; color:#666666; line-height:16px;}
+#newspon5 li a.spontext:hover {text-decoration: underline;}
+#newspon_bot5 {height:1px; background: url(//img.danawa.com/new/d_news/img/spon_bg.gif) no-repeat -209px 0; clear:both;}
+
+
+/* 관련브랜드 블로그_090604_P04 */
+#aNewsBrand a{font-size: 12px; font-weight: bold;  text-decoration: none; color:#2D4A91; line-height:16px;}
+#aNewsBrand a:hover {text-decoration: underline;}
+
+/* 관련상품 550 */
+li.darkred {font-size:12px; font-weight:bold; color:#000;}
+li.darkred a.red{font-weight:bold; color:#eb145b; font-size:12px;}
+li.darkred a.red:hover{text-decoration:underline;}
+
+#unipro5 {margin:0px; padding:10px 0px; width:550px; clear:both; }
+.upline5 {width:550px; border-top:1px solid #E0E0E0; margin:10px 0px 0px 0px;}
+
+#unipro5 .proimg {float:left; width:80px; height:80px; margin:0px; padding:0px; }
+#unipro5 .protext {float:left; width:255px; margin:0px 10px; padding:0px;}/* 미디어잇활성화 */
+#unipro5 .protext ul{ margin:0px; padding:0px;}
+#unipro5 .protext li {}
+#unipro5 .protext li a.probtit {font-size: 12px; font-weight: normal;  text-decoration: none; color:#000000;}
+#unipro5 .protext li a.probtit:hover {text-decoration: underline; color:#2D4A91;}
+#unipro5 .protext li a.prostit {font-size: 11px; font-weight: normal;  text-decoration: none; color:#999999; line-height:100%;}
+#unipro5 .protext li a.prostit:hover {text-decoration: underline;}
+
+#unipro5 .prostext {float:left; width:120px; margin:20px 0px 0px 0px;}
+#unipro5 .prostext ul{ margin:0px; padding:0px;}
+#unipro5 .prostext li {}
+#unipro5 .nortext {font-size:11px; color:#000000;}
+#unipro5 .price {font-size:12px; font-weight:bold; color:#EB145B;}
+#unipro5 .number {font-size:12px; font-weight:bold;  color:#2D4A91;}
+
+#unipro5 .probtn {float:right; width:71px; margin:10px 0px 0px 0px; padding:0px;}
+#unipro5 .probtn img{margin-bottom:3px;}
+/* 관련상품 550_이벤트탭 추가_P04_090414 */
+#pricegraph {margin:0px; padding:10px 0px; width:550px; height:209px; clear:both; background:url(//img.danawa.com/new/d_news/img/back_tv_price.gif) no-repeat; clear:both; }
+#pricegraph .graph {width:460px; text-align:left; padding-left:90px; padding-top:8px;}
+
+/* 댓글정보 */
+#Nreply_info5 {width:550px;  margin:15px 0 0 0; padding:0px; background:url(//img.danawa.com/new/d_news/img/Nreply_bg.gif) no-repeat; clear:both;}
+#Nreply_info5 table{width:540px; margin:0 5px; height:32px; padding:0px; border-collapse: collapse;}
+#Nreply_info5 img{ vertical-align:middle; margin-bottom:1px;}
+#Nreply_info5 .retext{font-size: 12px; font-weight: bold;  text-decoration: none; color:#FFFFFF;}
+#Nreply_info5 a.retext{font-size: 12px; font-weight: bold;  text-decoration: none; color:#FFFFFF;}
+#Nreply_info5 a.retext:hover {text-decoration: underline; vertical-align:baseline;}
+
+/* 댓글로그인 */
+#Nreply_log5 {margin:5px 0px; padding:0px; width:550px; clear:both;}
+#Nreply_log5 table{border-collapse: collapse;}
+#Nreply_log5 td{ padding:0px;}
+#Nreply_log5 .text{padding-right:3px; font-size: 12px; font-weight: normal; color:#000000; padding-top:4px;}
+#Nreply_log5 .log_input {border:solid 1px #cdcec8; width:100px; height:16px; font-size: 12px; color:#000000; margin-right:5px;}
+#Nreply_log5 .reply_input {border:solid 1px #cdcec8; width:474px; height:44px; font-size: 12px; color:#000000;}
+#Nreply_log5 .comment {font-size: 11px; font-weight: normal;width:474px; color:#666666; height:25px}
+
+/* 댓글목록 */
+#Nreply_list5 {margin:0px; padding:0; width:550px; clear:both;}
+#Nreply_list5 table{width:100%; border-collapse: collapse;}
+#Nreply_list5 td{ padding:0px;}
+#Nreply_list5 .10margin {padding-top:10px;}
+#Nreply_list5 .reply_input_r {border:solid 1px #cdcec8; width:473px; height:48px; font-size: 12px; color:#000000;}
+#Nreply_list5 .reply_input_s {border:solid 1px #cdcec8; width:417px; height:48px; font-size: 12px; color:#000000;}
+#Nreply_list5 .userimg {border:1px solid #A0A0A0; margin-right:10px; margin-bottom:10px;}
+#Nreply_list5 .userid { font-size: 12px; font-weight: normal; color:#000000;}
+#Nreply_list5 .userid a{ color:#000000;}
+#Nreply_list5 .userinfo { font-size: 11px; font-weight: normal; color:#999999;}
+#Nreply_list5 .usercon {width:475px; font-size: 12px; font-weight: normal; color:#666666; line-height:17px; padding-bottom:15px; overflow:hidden;}
+#Nreply_list5 .usercon a{width:475px; font-size: 12px; font-weight: normal; color:#2D4A91; line-height:17px; overflow:hidden; display:block;}
+#Nreply_list5 .redepth_bg {background-color:#F3F3F3; padding-top:8px;}
+#Nreply_list5 .btnlist img{margin-left:3px;}
+#Nreply_list5 a.reply_more  {font-size:11px; font-family:'돋움'; color:#B50945; text-decoration:underline;}
+
+/* 뉴스맞짱 */
+#Nvs5 {padding-top:6px; width:550px; background : url(//img.danawa.com/new/d_news/img/Nvs_bg.jpg) no-repeat; clear:both;}
+#Nvs5 table{margin:0 auto;}
+#Nvs5 .Nvs_thum {border:1px solid #BEBEBE; padding:10px; background-color:#FFFFFF; margin-top:19px; margin-bottom:17px;}
+#Nvs5 .icoimg {vertical-align:top; }
+#Nvs5 ul.list,#Nvs5 li.list { display:inline; text-align:top;}
+#Nvs5 .netizt {font-size: 12px; font-weight: bold;  text-decoration: none; color:#EB145B;}
+#Nvs5 a.netizt:link, a.netizt{font-size: 12px; font-weight: bold;  text-decoration: none; color:#EB145B;}
+#Nvs5 a.netizt:hover {text-decoration: underline; color:#EB145B}
+#Nvs5 .under {width:550px; height:35px; text-align:center;}
+#Nvs5 .under img{padding-left:3px;}
+#Nvs5 .vs_quest {width:530px; margin-left:8px; margin-right:8px; }
+#Nvs5 .vs_reply {background-color:#F3F3F3; width:530px; height:33px; margin-left:8px; margin-right:8px; text-align:right; }
+#Nvs5 .re_input {border:solid 1px #cdcec8; width:470px; height:19px; font-size: 12px; color:#000000; line-height:18px; margin-right:8px;}
+
+/* 글보기 730 */
+
+/* 레이아웃 */
+#sv_mid {width:760px; float:right; margin:0px; position:relative; zoom:1; padding:0;  }
+
+
+/* 뉴스제목 770 */
+#view_btit7 {width:730px; margin:10px 0px 0px 22px; padding:0px; clear:both; border-bottom:1px solid #f1f1f1; }
+#view_btit7 ul { margin:0px; padding:0px;}
+#view_btit7 li {}
+#view_btit7 img {vertical-align:bottom;}
+#view_btit7 .btit {font-weight:bold; font-size:18px; letter-spacing:-1px; line-height:21px; color:#000000; padding:0 0 5px 0; margin:0px;}
+#view_btit7 .btit strong {font-size:18px;}
+
+/* 뉴스본문 770 */
+#article7 {width:730px; margin-left:20px; margin-right:0px; padding:10px 0 15px 0; font-size:14px;}
+#article7 .admar {float:right; width:250; margin-left:15px; margin-bottom:15px;}
+#article7 .cons {line-height:1.3; font-size:14px; color:#666666; margin:0px; padding:0px;}
+#article7 .cons_no {line-height:1.3; font-size:14px; color:#666666; margin:0px; padding:0px;}
+#article7 .cons_no td{padding:3px 0 0 0;}
+#article7 a{text-decoration: none; color:#333399;}
+#article7 a:hover {text-decoration: underline;}
+
+#article7 #divArticleContents1 p{font-size:14px;margin:5px 0;}
+#article7 #divArticleContents1 table{margin:10px 0;}
+#article7 #divArticleContents1 img{margin:10px 0;}
+#article7 #divArticleContents1 h1{margin:10px 0;}
+
+/* 기사태그 730*/
+#articletag7 {padding:0px; margin:0px 0px 0px 22px; width:730px;}
+#articletag7 table{border-collapse: collapse;}
+#articletag7 td{ padding:0px; margin:0px;}
+#articletag7 .tit{padding:10px 10px 10px 5px; vertical-align:top; background:#f3f3f3;}
+#articletag7 .con{padding:10px 10px 10px 0px; vertical-align:top; background:#f3f3f3; font-size: 12px; font-weight: bold;  text-decoration: none; color:#2D4A91; line-height:16px;}
+#articletag7 .con a{font-size: 12px; font-weight: bold;  text-decoration: none; color:#2D4A91; line-height:16px;}
+#articletag7 .con a:hover{text-decoration: underline;}
+
+/* 기사태그 730*/
+#arttag7 { padding:0px; margin:0px 0px 0px 22px; width:730px;}
+#arttag7 table{border-collapse: collapse;}
+#arttag7 td{ padding:0px; margin:0px;}
+#arttag7 .tit{padding:10px 0px; vertical-align:top;}
+#arttag7 .con{padding:10px 0px 10px 10px; vertical-align:top; font-size: 12px; font-weight: bold;  text-decoration: none; color:#000000; line-height:16px;}
+#arttag7 .con a{font-size: 12px; font-weight: bold;  text-decoration: none; color:#000000; line-height:16px;}
+#arttag7 .con a:hover{text-decoration: underline;}
+
+/* 스폰서 링크 730 */
+#newspon7 {margin-left:22px; margin-right:0px; padding-top:3px; width:730px; background : url(//img.danawa.com/new/d_news/img/spon_bg.gif) no-repeat 0 -219px;  clear:both; }
+#newspon7 img{margin-right:4px;}
+#newspon7 ul {margin:5px 7px 0 7px;padding:4px 0px 7px 0px;}
+#newspon7 li {padding-left:8px; background : url(//img.danawa.com/new/d_news/img/bul_point.gif) no-repeat 0 4px; line-height:16px;  margin-top:5px; margin-left:3px;}
+#newspon7 li a.spontit {font-size: 12px; font-weight: bold;  text-decoration: none; color:#2D4A91; line-height:16px;}
+#newspon7 li a.spontit:hover {text-decoration: underline;}
+#newspon7 li a.sponurl{font-size: 11px; font-weight: normal;  text-decoration: none; color:#999999; line-height:16px;}
+#newspon7 li a.sponurl:hover {text-decoration: underline;}
+#newspon7 li a.spontext {font-size: 12px; font-weight: normal;  text-decoration: none; color:#666666; line-height:16px;}
+#newspon7 li a.spontext:hover {text-decoration: underline;}
+#newspon_bot7 {margin-left:21px; margin-right:22px; width:730px;}
+.730table {margin-left:22px;}
+
+/* 관련상품 730 */
+#unipro7 {width:730px; clear:both; margin:10px 0px 0px 22px;}
+.upline7 {width:730px; border-top:1px solid #E0E0E0; margin:10px 0px 0px 0px;}
+
+
+#unipro7 .proimg {float:left; width:80px; height:80px; margin:0px; padding:0px;}
+#unipro7 .protext {float:left; width:420px; margin:0px 10px 0px 10px; padding:0px;}
+#unipro7 .protext ul{ margin:0px; padding:0px;}
+#unipro7 .protext li {}
+#unipro7 .protext li a.probtit {font-size: 12px; font-weight: normal;  text-decoration: none; color:#000000;}
+#unipro7 .protext li a.probtit:hover {text-decoration: underline; color:#2D4A91;}
+#unipro7 .protext li a.prostit {font-size: 11px; font-weight: normal;  text-decoration: none; color:#999999;}
+#unipro7 .protext li a.prostit:hover {text-decoration: underline;}
+
+#unipro7 .prostext {float:left; width:120px; margin:20px 10px 0px 0px; padding:0px;}
+#unipro7 .prostext ul{ margin:0px; padding:0px;}
+#unipro7 .prostext li {}
+#unipro7 .nortext {font-size:11px; color:#000000;}
+#unipro7 .price {font-size:12px; font-weight:bold; color:#EB145B;}
+#unipro7 .number {font-size:12px; font-weight:bold;  color:#2D4A91;}
+
+#unipro7 .probtn {float:right; width:71px; margin:10px 0px 0px 0px; padding:0px;}
+#unipro7 .probtn img{margin-bottom:3px;}
+
+/* 댓글정보 */
+#Nreply_info7 {width:730px; margin-left:22px; margin-right:0px; margin-top:15px;  background : url(//img.danawa.com/new/d_news/img/Nreply_bg.gif) no-repeat 0 -32px; clear:both;}
+#Nreply_info7 table{width:710px; margin:0 10px; height:32px;border-collapse: collapse;}
+#Nreply_info7 .retext{font-size: 12px; font-weight: bold;  text-decoration: none; color:#FFFFFF;}
+#Nreply_info7 a.retext{font-size: 12px; font-weight: bold;  text-decoration: none; color:#FFFFFF;}
+#Nreply_info7 a.retext:hover {text-decoration: underline; vertical-align:baseline;}
+
+/* 댓글로그인 */
+#Nreply_log7 {margin:5px; width:730px; margin-left:22px; margin-right:0px; clear:both;}
+#Nreply_log7 table{border-collapse: collapse;}
+#Nreply_log7 td{ padding:0px;}
+#Nreply_log7 .text{padding-right:3px;  font-size: 12px; font-weight: normal; color:#000000; padding-top:4px;}
+#Nreply_log7 .log_input {border:solid 1px #cdcec8; width:100px; height:16px; font-size: 12px; color:#000000; margin-right:5px;}
+#Nreply_log7 .reply_input {border:solid 1px #cdcec8; width:654px; height:45px; font-size: 12px; color:#000000;}
+#Nreply_log7 .comment {font-size: 11px; font-weight: normal; width:654px; color:#666666; height:25px;}
+
+/* 댓글목록 */
+#Nreply_list7 {margin:0px; width:730px; margin-left:22px; margin-right:0px; clear:both;}
+#Nreply_list7 table{width:100%; border-collapse: collapse;}
+#Nreply_list7 td{ padding:0px;}
+#Nreply_list7 .10margin {padding-top:10px;}
+#Nreply_list7 .reply_input_r {border:solid 1px #cdcec8; width:653px; height:45px; font-size: 12px; color:#000000;}
+#Nreply_list7 .reply_input_s {border:solid 1px #cdcec8; width:600px; height:45px; font-size: 12px; color:#000000;}
+#Nreply_list7 .userimg {border:1px solid #A0A0A0; margin-right:10px; margin-bottom:10px;}
+#Nreply_list7 .userid { font-size: 12px; font-weight: normal; color:#000000;}
+#Nreply_list7 .userid a{ color:#000000;}
+#Nreply_list7 .userinfo { font-size: 11px; font-weight: normal; color:#999999;}
+#Nreply_list7 .usercon { font-size: 12px; font-weight: normal; color:#666666; line-height:17px; padding-bottom:15px;}
+#Nreply_list7 .redepth_bg {background-color:#F3F3F3; padding-top:8px;}
+#Nreply_list7 .btnlist img{margin-left:3px;}
+#Nreply_list7 a.reply_more  {font-size:11px; font-family:'돋움'; color:#B50945; text-decoration:underline;}
+
+/* 뉴스목록 */
+#listcon7 {width:730px; padding:0px; margin:0px 0px 0px 21px;}
+#listcon7 table{border-collapse: collapse;}
+#listcon7 td{ padding:0px;}
+#listcon7 .propic{margin:0px 10px 18px 0px; border:1px solid #D9D9D9; width:75px; height:75px; float:left; padding:2px 2px 2px 2px; background-color:#ffffff;}
+#listcon7 .procont{float:left; width:639px; margin-top:10px;}
+/* 핵 */*html #listcon7 .procont{float:left; width:639px; margin-top:10px;}
+
+
+#listcon7 .upline {width:730px; border-top:1px  solid #E0E0E0; padding-top:18px;}
+
+/* 뉴스 타이틀 */
+#listcon7 .b_title {font-size: 15px; font-weight: bold;  color:#000000; line-height:23px;}
+#listcon7 a.b_title{font-size: 15px; font-weight: bold;  text-decoration: none; color:#000000;line-height:23px;}
+#listcon7 a.b_title:hover{text-decoration: underline;}
+
+/* 뉴스 설명글 */
+#listcon7 .t_text{font-size: 12px; font-weight: normal;  color:#666666; line-height:17px;}
+#listcon7 a.t_text{font-size: 12px; font-weight: normal;  text-decoration: none; color:#666666;line-height:17px;}
+#listcon7 a.t_text:hover{text-decoration: underline;}
+
+#listcon7 ul {
+	float:left;
+	clear:both;
+	width:730px;
+	margin:15px 0px 0px 0px;
+	padding:0px;
+}
+#listcon7 li {
+	clear:both;
+	padding :0px 0px 18px 0px;
+	margin:0px;
+}
+
+/* 뉴스맞짱 */
+#Nvs7 {padding-top:6px; width:730px; background : url(//img.danawa.com/new/d_news/img/Nvs_bg.jpg) no-repeat -560px 0; margin-left:22px; margin-right:0px;	clear:both; }
+#Nvs7 table{margin:0 auto;}
+#Nvs7 .Nvs_thum {border:1px solid #BEBEBE; padding:10px; background-color:#FFFFFF;}
+#Nvs7 .icoimg {vertical-align:top; }
+#Nvs7 ul.list,#Nvs7 li.list { display:inline; text-align:top;}
+#Nvs7 .netizt {font-size: 12px; font-weight: bold;  text-decoration: none; color:#EB145B;}
+#Nvs7 a.netizt{font-size: 12px; font-weight: bold;  text-decoration: underline; color:#EB145B;}
+#Nvs7 a.netizt:hover {text-decoration: underline;}
+#Nvs7 .under {width:730px; height:41px; text-align:center;}
+#Nvs7 .under img{padding-left:3px;}
+#Nvs7 .VS_quest {width:710px; margin-left:8px; margin-right:8px; }
+#Nvs7 .VS_reply {background-color:#F3F3F3; width:710px; height:33px; margin-left:8px; margin-right:8px; text-align:right; }
+#Nvs7 .re_input {border:solid 1px #cdcec8; width:650px; height:19px; font-size: 12px; color:#000000; margin-right:8px;}
+
+#ad_align {text-align:center; margin-bottom:15px;}
+
+/* TV섹션 */
+
+.syellow { color:#ffea00;}
+.numbold { color:#ffffff; font-weight:bold;}
+
+/* 디자인 셀렉트박스 */
+.selectbox { behavior: url(//img.danawa.com/new/d_news/selectBox.htc);}
+
+/* TV 상단 */
+#tv_frame {width:925px; background:url(//img.danawa.com/new/d_news/img/bg_tv_frame.gif) repeat;}
+#tv_frame:after {content:" "; display:block; clear:both; height:0; visibility:hidden;}
+
+/* TV 카테고리 */
+#tv_menu {width:118px; float:left; padding:0px 10px 10px 10px; background:#2e2e2e; text-align:left; margin:0px; }
+#tv_menu .tv_logo{text-align:center; margin:0 0 10px 0; }
+
+#tv_menu ul {width:118px; margin:0px; padding:0px;}
+#tv_menu li { height:26px; padding:10px 0 0 0; list-style-type : none; background-image:url(//img.danawa.com/new/d_news/img/tv_bg_mn.gif); font-size: 12px; font-weight: bold;  color:#B3B3B3; }
+#tv_menu img {align:absmiddle;}
+/* 핵 *html  #tv_menu li { height:35px; padding-top:12px; list-style-type : none; background-image:url(//img.danawa.com/new/d_news/img/tv_bg_mn.gif); font-size: 12px; font-weight: bold;  color:#B3B3B3; }*/
+#tv_menu li a{ color:#B3B3B3; font-weight: bold; }
+#tv_menu li a:hover { color:#B3B3B3; text-decoration: underline; font-weight: bold; }
+
+#tv_menu .menu_on {height:26px; _height:26px; background:url(//img.danawa.com/new/d_news/img/tv_bg_mn_on.gif) no-repeat; padding-top:10px; color:#FFEA00; font-weight:bold; font-size:15px;}
+
+
+
+/* TV 플레이어 영역 */
+#tv_movie{width:787px; float:left; color:#ffffff;}
+#tv_movie_400 {width:580px; float:left; background:url(//img.danawa.com/new/d_news/img/tv_bg_400.gif) no-repeat top center; padding-top:20px; padding-bottom:10px; text-align:center;}
+#tv_movie_530 {width:580px; float:left; background:url(//img.danawa.com/new/d_news/img/tv_bg_530.gif) no-repeat top center; padding-top:20px; padding-bottom:10px; text-align:center;}
+#tv_movie_no_movie {width:580px; height:274px; float:left; background:url(//img.danawa.com/new/d_news/img/tv_bg_no_movie.jpg) no-repeat top center; padding-top:140px; padding-bottom:10px; text-align:center;}
+/* 핵 */ *html #tv_movie_no_movie {width:580px; height:412; float:left; background:url(//img.danawa.com/new/d_news/img/tv_bg_no_movie.jpg) no-repeat top center; padding-top:140px; padding-bottom:10px; text-align:center;}
+
+/* TV 플레이어 영역_실버라이트적용_P04_090722 */
+#tv_movie_400_silverlight {width:580px; float:left; background:url(//img.danawa.com/new/d_news/img/tv_bg_400.gif) no-repeat top center; text-align:center; padding-top:10px;}
+#tv_movie_530_silverlight {width:580px; float:left; background:url(//img.danawa.com/new/d_news/img/tv_bg_530.gif) no-repeat top center; text-align:center;padding-top:10px;}
+
+
+#tv_title{width:580px; padding-top:20px; text-align:center;}
+#tv_title table{width:550px; border-collapse: collapse; margin-right:auto; margin-left:auto;  }
+/* TV 플레이어 영역_실버라이트적용_P04_090723 */
+#tv_title_silverlight{width:580px; padding-top:10px; text-align:center;}
+#tv_title_silverlight table{width:550px; border-collapse: collapse; margin-right:auto; margin-left:auto;  }
+
+.wtitle{color:#FFFFFF; font-weight:bold; font-size:12px;}
+
+/* TV 리스트 */
+#tv_list {width:187px; float:left;  color:#FFFFFF; padding:0px 0px 0px 8px; background:#2e2e2e; margin:0px; }
+
+
+#tv_movie_list {width:187px; height:305px; margin:0px; padding:0px 0px 10px 0px; *padding:0px; _padding:0px;}
+/* 검색 있을시
+#tv_movie_list {width:187px; height:305px; overflow:auto; margin-bottom:5px;
+				scrollbar-face-color: #2e2e2e;
+				scrollbar-highlight-color: #666666;
+				scrollbar-3dlight-color: #2e2e2e;
+				scrollbar-shadow-color: #666666;
+				scrollbar-darkshadow-color: #2e2e2e;
+				scrollbar-track-color: #2e2e2e;
+				scrollbar-arrow-color: #666666;}
+*/
+#tv_movie_list  table{width:177px; border-collapse: collapse; padding:0px; margin:0px;}
+#tv_movie_list  td {color:#B3B3B3; }
+#tv_movie_list  td a{height:52px; color:#B3B3B3; }
+#tv_movie_list  td a:hover{color:#B3B3B3; text-decoration: underline; }
+#tv_movie_list .propic {border:1px solid #000000; width:50px; height:50px;}
+#tv_movie_list .propic_b {border:1px solid #FFEA00; width:50px; height:50px;}
+#tv_movie_list .bold {font-weight: bold;  color:#FFEA00;}
+
+/*tv location */
+#tv_movie_list .loc {font-size: 11px;  color: #ffffff; padding:3px 3px 2px 3px; line-height:150%; }
+#tv_movie_list a.loc:hover { font-size: 11px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration:underline; line-height:150%;}
+
+#tv_movie_dum { width:190px; height:5px; margin:0px; padding:0px; line-height:2px;}
+#tv_movie_dum2 { width:190px; height:1px; margin:0px; padding:0px; line-height:2px;}
+
+/* 리스트 마우스 오버시 나타나는 검정 불투명 레이어*/
+#tv_movie_list .best_movie {display:none; position:absolute; width:135px; height:45px; font-size:11px; color:#b3b3b3; background-color:#000;filter:alpha(opacity=80);Opacity:0.7; padding-top:7px; padding-left:8px; margin:6px 0px 0px 53px; text-align:left; *margin:8px 0 0 53px; }
+/* 핵  *html #tv_movie_list .best_movie {display:none; position:absolute; width:135px; height:46px; font-size:11px; color:#b3b3b3; background-color:#000;filter:alpha(opacity=80);Opacity:0.7; padding-top:6px; padding-left:5px; margin:1px 0px 0px 53px; text-align:left;}*/
+
+/*Tv 리스트 페이징*/
+#repaging_s {width:187px; font-size:9px; letter-spacing:-1px; font-family:Verdana; color:#B3B3B3; text-align:center; vertical-align:middle; margin:6px 0px;  *margin:1px 0px;}
+/* #repaging_s {width:187px; height:15px; font-size:9px; letter-spacing:-1; font-family:Verdana; color:#B3B3B3; text-align:center;} */
+#repaging_s img{margin:0 1px;vertical-align:middle;}
+#repaging_s a{color:#B3B3B3;}
+#repaging_s a:hover{text-decoration:underline; color:#B3B3B3;}
+#repaging_s .bold {font-size: 9px; font-weight: bold;  color:#FFFFFF;}
+
+/*Tv 리스트 검색*/
+#tv_search {width:193px; color:#FFFFFF; margin-top:7px; *margin-top:2px;}
+#tv_search * {vertical-align:middle;}
+#tv_search .input {width:86px; height:16px; background-color:#000000; border:1px solid #565656; color:#B3B3B3; font-size:12px; }
+
+/* TV 하단 */
+#tv_contents {width:925px; clear:both; background-image:url(//img.danawa.com/new/d_news/img/bg_tv_contents.gif); padding:20px 0px; margin:0px;}
+#tv_contents:after {content:" "; display:block; clear:both; height:0; visibility:hidden;}
+
+/* TV 하단 왼쪽 영역*/
+#tv_left {width:138px;  float:left; text-align:center;}
+#tv_left .tvnum6{ text-align:left; padding-left:10px; padding-bottom:5px;}
+
+/* title */
+#tv_ltitle {width:118px; color:#000; font-weight:bold; border-bottom:#C9C9C9 1px solid; text-align:left; margin:0px auto 8px auto; padding:0px 0px 6px 0px;}
+#tv_rtitle {width:187px; color:#000; font-weight:bold; border-bottom:#C9C9C9 1px solid; text-align:left; margin:0px auto 8px auto; padding:0px 0px 6px 0px;}
+#tv_rtitle table{border-collapse: collapse; width:187px;}
+#tv_rtitle .black {color:#000; font-weight:bold; font-size:12px;}
+#tv_ctitle {width:550px; color:#000; font-weight:bold; padding-bottom:6px; border-bottom:#C9C9C9 1px solid; margin-bottom:8px;}
+
+/* 인기 동영상 */
+#tv_favorite {width:118px; margin:0px auto; padding:0px;}
+
+#tv_favorite ol {width:98px; list-style-type:decimal; padding-left:20px; margin:0px;}
+#tv_favorite li {width:98px; height:18px; list-style-type:none; color:#676767; text-align:left;}
+#tv_favorite li a:hover { color:#676767; text-decoration: underline; }
+
+#tv_favorite li#item1 { list-style-image:url(//img.danawa.com/new/d_news/img/num_1.gif);}
+#tv_favorite li#item2 { list-style-image:url(//img.danawa.com/new/d_news/img/num_2.gif);}
+#tv_favorite li#item3 { list-style-image:url(//img.danawa.com/new/d_news/img/num_3.gif);}
+#tv_favorite li#item4 { list-style-image:url(//img.danawa.com/new/d_news/img/num_4.gif);}
+#tv_favorite li#item5 { list-style-image:url(//img.danawa.com/new/d_news/img/num_5.gif);}
+#tv_favorite li#item6 { list-style-image:url(//img.danawa.com/new/d_news/img/num_6.gif);}
+#tv_favorite li#item7 { list-style-image:url(//img.danawa.com/new/d_news/img/num_7.gif);}
+#tv_favorite li#item8 { list-style-image:url(//img.danawa.com/new/d_news/img/num_8.gif);}
+#tv_favorite li#item9 { list-style-image:url(//img.danawa.com/new/d_news/img/num_9.gif);}
+#tv_favorite li#item10 { list-style-image:url(//img.danawa.com/new/d_news/img/num_10.gif);}
+
+/* 인기태그 */
+#tv_hot_tag {background: url(//img.danawa.com/new/mediait/img/tv_tag_bg.gif) repeat ; width:171px; padding:8px; margin:0 auto; text-align:left;}
+#tv_hot_tag ul{width:164px; margin:0px; padding:0px;}
+#tv_hot_tag li{display:inline;}
+
+#tv_hot_tag .tag01 {color: #333333; padding:3px 3px 2px 3px; line-height:150%;}
+#tv_hot_tag a.tag01{font-size: 12px; font-weight: normal; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#tv_hot_tag a.tag01:visited {font-size: 12px; font-weight: normal; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#tv_hot_tag a.tag01:hover {font-size: 12px; font-weight: normal; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}
+
+/* 태그스타일 */
+/* 기본볼드 */
+#tv_hot_tag .tag02 {  color: #333333; padding:3px 3px 2px 3px; line-height:150%; font-weight: bold;}
+#tv_hot_tag a.tag02{   font-size: 12px; font-weight: bold; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#tv_hot_tag a.tag02:visited {   font-size: 12px; font-weight: bold; color: #333333; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#tv_hot_tag a.tag02:hover {   font-size: 12px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}
+
+/*14볼드 남색 밑줄*/
+#tv_hot_tag .tag03 {font-size: 14px;  color: #2C4A93; padding:3px 3px 2px 3px; line-height:150%; font-weight: bold;}
+#tv_hot_tag a.tag03{   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: underline; line-height:150%;}
+#tv_hot_tag a.tag03:visited {   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: underline; line-height:150%;}
+#tv_hot_tag a.tag03:hover {   font-size: 14px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}
+
+/* 14볼드 남색 */
+#tv_hot_tag .tag04 {font-size: 14px;  color: #2C4A93; padding:3px 3px 2px 3px; line-height:150%; font-weight: bold;}
+#tv_hot_tag a.tag04{   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#tv_hot_tag a.tag04:visited {   font-size: 14px; font-weight: bold; color: #2C4A93; padding:3px 3px 2px 3px; text-decoration: none; line-height:150%;}
+#tv_hot_tag a.tag04:hover {   font-size: 14px; font-weight: bold; color: #FFFFFF; padding:3px 3px 2px 3px; background-color: #526BA2; text-decoration: none; line-height:150%;}
+
+/* 배너 */
+#tv_banner {width:118px; text-align:center; margin-left:auto; margin-right:auto;}
+
+/* TV 하단 중앙 영역 */
+#tv_center {width:550px; float:left; margin:0px 15px; padding:0px;}
+#tv_article {width:550px; margin:0px; padding:0px; position:relative }/* 090616_P04_position추가_버튼에 레이어 띄움 */
+#tv_article table{margin:0px; padding:0px;  border-collapse:collapse;}
+#tv_article .movie_down {height:17px; text-align:right;}/* 090616_P04_position추가_버튼에 레이어 띄움 */
+#tv_article .movie_layer {position:absolute; z-index:100; width:100px; height:47px; background:url(//img.danawa.com/new/d_news/img/layer_btnback.gif) no-repeat 0 5px ; left:453px; top:14px; padding-top:4px;}
+#tv_article .movie_layer a{font-size:11px; text-decoration: none; color:#333333;letter-spacing:-1px; }
+#tv_article .movie_layer a:hover{font-size:11px; text-decoration:underline; color:#333333;letter-spacing:-1px; }
+
+#tv_tab {width:550px; margin:0 0 15px 0; padding:0px; }
+#tv_tab table{width:550px; height:27px; border-collapse: collapse; background-image:url(//img.danawa.com/new/d_news/img/tv_tab_bg.gif);}
+#tv_tab table .on{height:27px; background : url(//img.danawa.com/new/d_news/img/tv_tab_on.gif) no-repeat; color:#000000; font-weight:bold; text-align:center; padding-top:3px;}
+#tv_tab table .off{height:27px; background : url(//img.danawa.com/new/d_news/img/tv_tab.gif) no-repeat; color:#000000; text-align:center; padding-top:3px;}
+#tv_tab table .off a{color:#000000;}
+#tv_tab table .off a:hover { color:#000000; }
+
+/* TV 하단 오른쪽 */
+#tv_right {width:207px; float:right;  text-align:center }
+
+/* 추천 동영상 *//* 091111*/
+#tv_recommad {width:118px; clear:both; margin-left:auto; margin-right:auto; padding-bottom:10px;}
+#tv_recommad table{width:118px; border-collapse: collapse;}
+#tv_recommad .propic {border:1px solid #D9D9D9; width:115px; height:82px;}
+#tv_recommad table#hitmovie {position:relative; display:block; border-collapse: collapse;}
+#tv_recommad td {padding-bottom:7px; color:#000000; text-align:left; }
+#tv_recommad td a{padding-bottom:7px; color:#000000; }
+#tv_recommad td a:hover{color:#000000; text-decoration: underline; }
+#tv_recommad .bg	{ width:192px; height:51px; position:absolute; left:5px; bottom:0px;background-color:#000;filter:alpha(opacity=60);Opacity:0.7;}
+#tv_recommad .black {color:#000; font-weight:bold; font-size:12px;}
+#tv_recommad .mouseover_layer{cursor:pointer; display:none; position:absolute; width:105px; height:72px; font-size:11px; color:#b3b3b3; background-color:#000;filter:alpha(opacity=60);Opacity:0.7; padding:6px; margin:0px 0px 0px 0px; text-align:left;}
+
+/* 관련 동영상 */
+#tv_relate {width:185px; margin-left:auto; margin-right:auto; text-align:left;}
+#tv_relate table{width:185px; border-collapse: collapse;}
+#tv_relate td {padding-bottom:10px; color:#000000; }
+#tv_relate td a{padding-bottom:10px; color:#000000; }
+#tv_relate td a:hover{color:#000000; text-decoration: underline; }
+#tv_relate .propic {border:1px solid #D9D9D9; width:75px; height:75px;}
+#tv_relate .mouseover_layer{cursor:pointer; display:none; position:absolute; width:65px; height:65px; font-size:11px; color:#b3b3b3; background-color:#000;filter:alpha(opacity=80);Opacity:0.7; padding:6px; margin:0px; text-align:left;}
+/* 핵  *html #tv_relate .mouseover_layer{cursor:pointer; display:none; position:absolute; width:77px; height:77px; font-size:11px; color:#b3b3b3; background-color:#000;filter:alpha(opacity=80);Opacity:0.7; padding:6px; margin:0px; text-align:left;}*/
+
+/* TV_write */
+#tb_sub table{width:550px; border-collapse:collapse;}
+#tb_sub td{padding:8px 0; border-bottom:1px solid #c9c9c9;}
+#tb_sub .input_01{
+	border-top: 1px solid #9D9D9D;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	border-left: 1px solid #9D9D9D;
+	width:400px;
+	height:20px;
+	background-color:#F4F4F4;
+	color:#000000;
+	padding-left:3px;
+	line-height:20px;}
+#tb_sub .input_02{border:solid 1px #cdcec8; width:422px; height:20px; font-size: 12px; color:#000000; line-height:140%;}
+#tv_center .tx_black{font-weight:bold; color:#000; font-size: 12px;}
+#tv_center .tx_gray{font-weight:bold; color:#656565;}
+#tv_center .line_none{border-bottom:1px solid #fff;}
+#tv_center .pd{padding-top:0; padding-bottom:5px;}
+#editer{width:550px; height:370px; margin:10px 0;}
+#blue_tb{ width:550px; background-color:#e8ebf4; margin:10px 0;}
+#blue_tb table{width:550px; padding:0; margin:0;}
+#blue_tb th{padding-top:6px; padding-left:15px; font-size:12px; }
+#blue_tb td{margin:6px 0;}
+#btn{margin:0; padding:10px 0; text-align:center}
+
+/* TV_list */
+#tv_list_tit table{width:550px; border-collapse:collapse;}
+#tv_list_tit td{border-bottom:#C9C9C9 1px solid; padding:3px 0; font-size:11px; color:#000; text-align:center;}
+#tv_ad {width:550px; border-bottom:#C9C9C9 1px solid;}
+#tv_ad dt{background-color:#e8ebf4; padding:5px ; margin:0; color:#000; font-weight:bold; color:#000000;}
+#tv_ad dd{padding:5px; color:#516aa0; font-weight:bold;}
+/*#tv_ad dd a:{ color:#516aa0;}
+#tv_ad dd a:hover{  text-decoration: underline; color:#516aa0;}*/
+#tv_sub { width:550px;}
+#tv_sub table{width:550px; padding:0; margin:0;}
+#tv_sub th{color:#000; padding:6px 0; font-weight:normal; font-size:12px; text-align:left; }
+#tv_sub td{font-size:11px; margin:0; text-align:center;}
+
+/* TV_view */
+#tv_write_top { width:550px;}
+#tv_write_top table{ width:550px;  border-collapse:collapse;}
+
+
+/* 팝업창 */
+/* 팝업창 타이틀 */
+#pop_title {width:590px;  height:24px; background : url(//img.danawa.com/new/d_news/img/pop_titbg.gif) no-repeat; padding-left:10px; padding-top:10px; font-size:14px; font-weight:bold; color:#FFFFFF;}
+/* 핵 */ *html #pop_title {width:590px;  height:34px; background : url(//img.danawa.com/new/d_news/img/pop_titbg.gif) no-repeat; padding-left:10px; padding-top:10px; font-size:14px; font-weight:bold; color:#FFFFFF;}
+
+#pop_body {width:570px; margin:10px;}
+#pop_body .guide_text{line-height:18px; padding:0 8px 8px 8px;}
+
+#pop_body ul{margin:0px; padding:0px; padding-bottom:8px; padding-top:8px;}
+/* 핵 */ *html #pop_body li{height:25px; padding-top:8px;}
+#pop_body .midline {border-bottom:1px solid #D5D5D5; clear:both;}
+#pop_body .input_con {float:left; margin:0px; padding:0px; width:60px; line-height:30px; padding-left:10px; font-weight:bold;}
+/* 핵 */ *html #pop_body .input_con {float:left; margin:0px; padding:5px 0px 0px 10px; width:70px; line-height:30px; font-weight:bold;}
+#pop_body .input_list {float:right; margin:0px;  padding:0px 0px 0px 5px; width:495px; line-height:30px; color:#000000;}
+/* 핵 */ *html #pop_body .input_list {float:right; margin:0px; padding:0px 0px 0px 10px; width:500px; line-height:30px; color:#000000;}
+
+/* 입력창 */
+#pop_body .email_in {
+	border-top: 1px solid #9D9D9D;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	border-left: 1px solid #9D9D9D;
+	width:270px;
+	height:20px;
+	background-color:#F4F4F4;
+	color:#000000;
+	padding-left:3px;
+	line-height:20px;
+	font-size:12px;
+}
+#pop_body .title_in {
+	border-top: 1px solid #9D9D9D;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	border-left: 1px solid #9D9D9D;
+	width:400px;
+	height:20px;
+	background-color:#F4F4F4;
+	color:#000000;
+	padding-left:3px;
+	line-height:20px;
+	font-size:12px;
+}
+#pop_body .con_in {
+	border-top: 1px solid #9D9D9D;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	border-left: 1px solid #9D9D9D;
+	width:480px;
+	height:150px;
+	background-color:#F4F4F4;
+	color:#000000;
+	padding-left:3px;
+	line-height:20px;
+	font-size:12px;
+}
+#pop_body .join {
+	border-top: 1px solid #9D9D9D;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	border-left: 1px solid #9D9D9D;
+	width:550px;
+	height:300px;
+	background-color:#F4F4F4;
+	color:#000000;
+	padding-left:3px;
+	line-height:20px;
+	font-size:12px;
+}
+
+#pop_body .txt11 {font-size:11px; color:#3570DB;}
+#pop_body .pop_btn{text-align:center; margin-top:15px;}
+
+/* 제작진에 바란다 서브메뉴 */
+#pop_sub {width:590px;  height:34px; background-image:url(//img.danawa.com/new/d_news/img/pop_sub_bg.gif);}
+#pop_sub table{width:590px;  height:34px; border-collapse: collapse;}
+#pop_sub td{ text-align:center; color:#000000;}
+#pop_sub td a{ color:#000000;}
+#pop_sub td a:hover{ color:#000000; text-decoration:underline;}
+#pop_sub .conon{ background:url(//img.danawa.com/new/d_news/img/pop_sub_on.gif) no-repeat bottom center; font-weight:bold;}
+
+#pop_tv_body {width:580px; overflow:auto; padding-top:20px; margin-left:10px}
+#pop_tv_body .fin{width:165px; height:150px; background:url(//img.danawa.com/new/d_news/img/pop_question_fin.gif) no-repeat top center; padding-top:185px; padding-left:385px; margin-top:60px;}
+/* 핵 */ *html #pop_tv_body .fin{width:550px; height:335px; background:url(//img.danawa.com/new/d_news/img/pop_question_fin.gif) no-repeat top center; padding-top:185px; padding-left:385px;}
+
+#pop_tv_body ul{margin:0px; padding:0px; padding-bottom:5px; padding-top:5px;}
+#pop_tv_body .midline {border-bottom:1px solid #D5D5D5; clear:both; width:550px;}
+#pop_tv_body .input_con {float:left; width:60px; font-weight:bold;}
+/* 핵 */ *html #pop_tv_body .input_con {float:left; width:60px; font-weight:bold;}
+#pop_tv_body .input_con li{padding:8px 0px; }
+#pop_tv_body .input_list {float:right; margin:0px; width:500px; color:#000000; }
+#pop_tv_body .input_list li{padding:3px 0px; }
+/* 입력창 */
+#pop_tv_body .email_in {
+	border-top: 1px solid #9D9D9D;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	border-left: 1px solid #9D9D9D;
+	width:255px;
+	height:20px;
+	background-color:#F4F4F4;
+	color:#000000;
+	padding-left:3px;
+	line-height:20px;
+}
+#pop_tv_body .title_in {
+	border-top: 1px solid #9D9D9D;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	border-left: 1px solid #9D9D9D;
+	width:400px;
+	height:20px;
+	background-color:#F4F4F4;
+	color:#000000;
+	padding-left:3px;
+	line-height:20px;
+}
+#pop_tv_body .con_in {
+	border-top: 1px solid #9D9D9D;
+	border-right: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	border-left: 1px solid #9D9D9D;
+	width:470px;
+	background-color:#F4F4F4;
+	color:#000000;
+	padding-left:3px;
+	line-height:20px;
+}
+
+#pop_tv_body .txt11 {font-size:11px; color:#3570DB;}
+#pop_tv_body .pop_btn{text-align:center; margin-top:15px;}
+
+#pop_tv_faq {width:550px;}
+#pop_tv_faq ul {width:550px; padding:0px;}
+#pop_tv_faq li{ list-style-type:none; color:#676767; border-bottom:1px solid #E0E0E0; background-color:#FFFFFF; padding-top:10px; height:25px;}
+/* 핵 */ *html #pop_tv_faq li{ list-style-type:none; color:#676767; border-bottom:1px solid #E0E0E0; background-color:#FFFFFF; padding-top:10px; height:35px;}
+#pop_tv_faq li .titon{ color:#526ba2; font-weight:bold;}
+#pop_tv_faq li .exp{ background-color:#e8ebf3; padding:15px;}
+
+#pop_tv_faq li a{ color:#676767;}
+#pop_tv_faq li a:hover{ color:#676767; text-decoration: underline;}
+
+#pop_tv_bottom {width:590px; background-image:url(//img.danawa.com/new/d_news/img/pop_sub_bg.gif); text-align:center; padding-top:5px; padding-bottom:3px;}
+
+/* RSS안내 */
+#rss_con { width:610px; height:525px; background:url(//img.danawa.com/new/d_news/img/rss_bg.jpg) no-repeat top center; padding:40px 0px 0px 220px; margin:0px;}
+/* 핵 */ *html #rss_con { width:830px; height:570px; background:url(//img.danawa.com/new/d_news/img/rss_bg.jpg) no-repeat top center; padding:40px 0px 0px 240px;}
+#rss_con h1{margin-bottom:10px;}
+#rss_con .con{margin-bottom:25px;}
+#rss_con .bortop{border-top:1px solid #dce2fa;}
+
+#rss_con table{width:540px; border-collapse:collapse;}
+#rss_con th{background:#f5f5f5; border-bottom:1px solid #dce2fa; color:#000000; font-size:12px; font-weight:lighter; padding:5px 5px 5px 20px; text-align:left;}
+#rss_con td{border-bottom:1px solid #dce2fa; color:#808080; font-size:11px; font-family:verdana; padding:5px 10px;}
+#rss_footer {width:830px; background-image:url(//img.danawa.com/new/d_news/img/pop_sub_bg.gif); text-align:center; padding-top:4px; padding-bottom:2px;}
+
+/* RSS안내_P01_090930추가 */
+#rss_conadd {width:610px; position:relative; background:url(//img.danawa.com/new/d_news/img/rssadd_bg.jpg) no-repeat; margin:0px; padding:10px 10px 10px 194px; }
+#rss_conadd .marginLeft {margin-left:45px;}
+#rss_conadd .guide {position:absolute; top:69px; left:151px;}
+#rss_conadd ul.contab {margin:7px 0 0 7px; padding:0;}
+#rss_conadd ul.contab li{display:block; float:left; padding-top:7px; _padding-top:0px; *padding-top:0px;}
+#rss_conadd .rss_contents {width:626px; background:url(//img.danawa.com/new/d_news/img/rsscon_bg.gif) no-repeat;}
+#rss_conadd .rss_contents .conbot {background:url(//img.danawa.com/new/d_news/img/rsscon_bg.gif) no-repeat bottom; height:10px;}
+#rss_conadd table{width:540px; border-collapse:collapse;}
+#rss_conadd th{background:#f5f5f5; border-bottom:1px solid #dce2fa; color:#000000; font-size:12px; font-weight:lighter; padding:5px 5px 5px 20px; text-align:left;}
+#rss_conadd td{border-bottom:1px solid #dce2fa; color:#808080; font-size:11px; font-family:verdana; padding:5px 10px;}
+
+/* 풋터 */
+#copylink {width:925px; background: url(//img.danawa.com/new/main/img/nfooter_bg.gif) no-repeat; clear:both; margin:0;}
+#copylink ul {width:910px; height:30px;  padding-top:7px; text-align:center;}
+#copylink li {margin:0px; padding:0px;list-style-type : none; display:inline;}
+#copylink .point_c{color:#FFFFFF; padding:0 5px 0 5px;}
+#copylink .point_c2{color:#2379C8; font-weight:bold;}
+#copylink a{font-size: 12px; font-weight: normal; color: #FFFFFF; text-decoration: none}
+#copylink a:hover {font-size: 12px; font-weight: normal; color: #FFFFFF; text-decoration: underline}
+#d_logo {float:left; width:180px; height:80px; border-right:1px solid #C9C9C9; text-align:center; padding-top:30px;}
+#d_info {float:left; width:700px;}
+#d_info ul {font-family:돋움; font-size: 12px; margin:0px; width:700px; padding:5px 0 5px 15px; text-align:left;}
+#d_info li {margin:0px; padding:0px;list-style-type : none; line-height:140%; display:block;}
+#d_info a{font-size: 12px; font-weight: bold; color: #666666; text-decoration: none}
+#d_info a:hover {font-size: 12px; font-weight: bold; color: #005BA8; text-decoration: none}
+#d_info .small_text {font-family: 돋움; font-size: 11px;line-height:16px; color:#999999;}
+#d_info .copyundertxt {font-family:돋움; font-size: 12px; font-weight:bold; color:#999999;}
+
+
+/* 개발팀 추가 남미경 */
+.nottextline { }
+.textunderline { text-decoration: underline; }
+
+
+/* 인기순위 템플릿 추가 P06 */
+.temp_title{font-weight:bold; color:#000; font-size:14px; padding-left:5px; font-family:'돋움'; letter-spacing:-1px;}
+.temp_title_s{font-weight:bold; color:#000; font-size:12px; padding-left:5px; font-family:'돋움';}
+.temp_date{font-weight:bold; color:#fff; font-size:12px; padding-top:3px; font-family:'돋움';}
+.temp_tit_tx{font-weight:bold; color:#333; font-size:14px; padding-left:15px; font-family:'돋움';}
+#temp_con{width:550px; border-left:1px solid #d8d8d8; border-right:1px solid #d8d8d8; margin: 0 auto; padding: 0;}
+.temp_price{font-weight:bold; color:#e40037; font-size:12px; font-family:'돋움';}
+
+.temp_setting{font-size:12px; font-family:'돋움'; font-weight:bold; color:#666; line-height:19px; padding:15px 0 15px 15px;}
+.temp2_setting{font-size:12px; font-family:'돋움'; font-weight:bold; color:#666; line-height:19px; padding:15px 0 5px 15px;}
+.temp_txt{font-size:12px; font-family:'돋움'; line-height:18px; color:#666; padding:15px 8px 15px 8px;}
+.temp2_txt{font-size:12px; font-family:'돋움'; line-height:18px; color:#666; padding:10px 8px 15px 8px;}
+
+.temp_s{font-size:11px; font-family:'돋움'; color:#7d7d7d; line-height:16px; padding:6px 14px 6px 14px;}
+.temp_b{font-size:12px; font-family:'돋움'; font-weight:bold; color:#444;}
+.temp_black{font-size:12px; font-family:'돋움'; color:#000;}
+.temp_red{font-size:12px; font-family:'돋움'; font-weight:bold; color:#d20c3b;}
+
+.temp_tx_red a {color:#EB145B; font-size:12px; font-family:'돋움'; font-weight:bold; text-decoration:none;}
+.temp_tx_red a:link {color:#EB145B;	font-size:12px; font-family:'돋움';	font-weight:bold; text-decoration:none;}
+.temp_tx_red a:visited  {color:#EB145B;	font-size:12px; font-family:'돋움';	font-weight:bold; text-decoration:none;}
+.temp_tx_red a:hover {color:#eb145b; font-size:12px; font-family:'돋움'; font-weight:bold; text-decoration:underline;}
+.temp_tx_red a:active {color:#eb145b; font-size:12px; font-family:'돋움'; font-weight:bold;	text-decoration:underline;}
+
+.temp_tx_reds a {color:#EB145B; font-size:11px; font-family:'돋움'; font-weight:bold; text-decoration:none;}
+.temp_tx_reds a:link {color:#EB145B; font-size:11px; font-family:'돋움'; font-weight:bold; text-decoration:none;}
+.temp_tx_reds a:visited  {color:#EB145B; font-size:11px; font-family:'돋움'; font-weight:bold; text-decoration:none;}
+.temp_tx_reds a:hover {color:#eb145b; font-size:11px; font-family:'돋움'; font-weight:bold; text-decoration:underline;}
+.temp_tx_reds a:active {color:#eb145b; font-size:11px; font-family:'돋움'; font-weight:bold; text-decoration:underline;}
+
+
+/* 081022 리플_리플달기 추가 */
+a.reply_more  {font-size:11px; font-family:'돋움'; color:#B50945; text-decoration:underline;}
+
+
+/* 중앙정렬 추가 _ 관련기사 부분 */
+.list_title03 {color: #222222; line-height:18px;font-weight: bold;}
+.bgcolor05 { BACKGROUND-COLOR	: #cccccc;}
+
+/* 다나와리서치추가 _ 인기순위기사하단 부분_P07*/
+.d_research a {color:#6666cc; font-size:12px; font-family:'돋움'; font-weight:bold; text-decoration:none;}
+.d_research a:link {color:#6666cc; font-size:12px; font-family:'돋움'; font-weight:bold; text-decoration:none;}
+.d_research a:visited  {color:#6666cc; font-size:12px; font-family:'돋움'; font-weight:bold; text-decoration:none;}
+.d_research a:hover {color:#6666cc; font-size:12px; font-family:'돋움'; font-weight:bold; text-decoration:underline;}
+.d_research a:active {color:#6666cc; font-size:12px; font-family:'돋움'; font-weight:bold; text-decoration:underline;}
+
+/* 네티즌기자 관련기사_090629_P04 */
+.price {color: #333399;line-height:18px;font-weight: bold;}
+
+
+/* 090811_ 신고댓글 블라인드 처리 시 문구텍스트*/
+.reply_blind { color: #ff7200; font-family:돋움; font-size: 11px; line-height:20px; font-size:12px;}
+
+/* 이제품뜰까 */
+#news_vote {clear:both; float:left; width:100%; margin-bottom:15px; *margin-bottom:0px; *margin-bottom:0px;}
+#news_vote dl{float:left; width:100%; padding:10px 0 8px 0;  _padding:10px 0px 0px 0px; border-bottom:1px solid #ececec; margin:0px;}
+#news_vote dd{ padding:0; margin:0;}
+#news_vote .vote {float:left; color:#666666; letter-spacing:-1px; font-size:12px; font-weight:bold; margin:-1px 10px 0px 0px; padding:0px;}
+#news_vote .btn {float:left; height:20px; margin:0px 20px 0px 0px; padding:0px;}
+#news_vote .grapharea {float:right; font-size:14px; font-weight:bold; margin-top:4px; padding:0px;}
+#news_vote .txtgree {float:left; color:#68a311; padding-bottom:5px;}
+#news_vote .txtgree img{padding:0px 2px 4px 0px;}
+#news_vote .graph { float:left;}
+#news_vote .txtblue {float:left; color:#2d89d0; padding:0px; }
+#news_vote .txtblue img{padding:0px 0px 4px 2px;}
+
+/* 뉴스기사관련 아이콘5개_활성화 */
+.newsdate{clear:both; width:100%; padding-top:10px; height:55px;}
+.newsdate .date{float:left; font-size:12px; color:#999999; letter-spacing:0px; padding:0px;}
+.newsdate .date span{color:#727272;}
+
+.newsico {position:relative; padding:0px; margin-top:20px; float:right; width:260px;}
+.newsico .line{margin-right:-4px; padding:0;}
+.newsico .pad{margint:0;}
+
+.newsico_botlef {float:left; width:330px; display:block;}
+.newsico_botlef img{padding-right:2px;}
+.newsico_botri {float:right;}
+.newsico_botri img{padding-left:2px;}
+.newsico .layer {position:absolute; z-index:99; width:98px; height:53px; right:0;}
+.snsico {float:left; width:360px; display:block; margin-top:5px;}
+.snsico img{padding-right:2px;}
+
+.gisaout {margin-top:30px;}
+
+.kisawritead{clear:both;}
+
+/* 110405 기사퍼가기 추가 */
+.copy_d_550{width:550px; height:48px; background-color:#000000; background : url(//img.danawa.com/new/d_news/img/copy_d_550.gif) no-repeat; padding:25px 0 0 234px;} 
+
+/* 뉴스 레이아웃의 빈영역 */
+.blinkArea {width:925px; height:10px;}

@@ -1,0 +1,140 @@
+/*
+ÃÖÁ¾ÀÛ¾÷ÀÏÀÚ : 2008³â 12¿ù 1ÀÏ AM 10½Ã
+ÀÛ¼ºÀÚ : P01
+ÀÛ¾÷³»¿ë : ÀÍ½ºÆ®¸²pc ½ºÅ¸ÀÏ Ãß°¡
+*/
+
+/* HTML */
+BODY	
+{
+background-color:#FFFFFF; color:#666666; font-family:µ¸¿ò; font-size:12px;
+	SCROLLBAR-FACE-COLOR: #f3f3f3;
+	SCROLLBAR-HIGHLIGHT-COLOR: #cccccc;
+	SCROLLBAR-SHADOW-COLOR: #cccccc;
+	SCROLLBAR-3DLIGHT-COLOR: #f3f3f3;
+	SCROLLBAR-ARROW-COLOR: #cccccc;
+	SCROLLBAR-TRACK-COLOR: #f3f3f3;
+	SCROLLBAR-DARKSHADOW-COLOR: #f3f3f3;
+	SCROLLBAR-BASE-COLOR: #f3f3f3;
+}
+
+
+TABLE, TR	{}
+TD, TH	{color:#666666; font-family:µ¸¿ò; font-size:12px; line-height:150%; }
+IMG	{border:0}
+
+.inputProduct
+{
+ font-size			: 12px;
+ font-family		: "µ¸¿ò","Arial","Verdana";
+ color				: #666666;
+ height				: 20px;
+ BACKGROUND-COLOR	: #DCF2FB;
+ border-right		: #B9B9B9 1px solid;
+ border-top			: #B9B9B9 1px solid;
+ border-left		: #B9B9B9 1px solid;
+ border-bottom		: #B9B9B9 1px solid;
+}
+
+/* LINK */
+a:link, a:visited, a:active	{color:#666666; font-family:µ¸¿ò; text-decoration:none;}
+a:hover	{color:#1977C2; font-family:µ¸¿ò; text-decoration:none;}
+
+
+/* TEXT */
+.t_black  { color:#000000; font-family:µ¸¿ò; font-size:12px;}
+a.t_black:link, a.t_black:visited, a.t_black:active	{color:#000000; font-family:µ¸¿ò; text-decoration:none;}
+a.t_black:hover	{color:#f96f00; font-family:µ¸¿ò; text-decoration:none;}
+
+.t_black_1  { color:#000000; font-family:µ¸¿ò; font-size:12px;}
+a.t_black_1:link, a.t_black_1:visited, a.t_black_1:active	{color:#000000; font-family:µ¸¿ò; text-decoration:none;}
+a.t_black_1:hover	{color:#1977C2; font-family:µ¸¿ò; text-decoration:none;}
+
+.t_black_b  { color:#000000; font-family:µ¸¿ò; font-size:12px; font-weight: bold; text-decoration:underline;} 
+a.t_black_b:link, a.t_black_b:visited, a.t_black_b:active	{color:#000000; font-family:µ¸¿ò; font-weight: bold; text-decoration:underline;}
+a.t_black_b:hover	{color:#f96f00; font-family:µ¸¿ò; font-weight: bold; text-decoration:underline;}
+
+.t_black_bb  { color:#000000; font-family:µ¸¿ò; font-size:12px; font-weight: bold; text-decoration:none;} 
+a.t_black_bb:link, a.t_black_bb:visited, a.t_black_bb:active	{color:#000000; font-family:µ¸¿ò; font-weight: bold; text-decoration:none;}
+a.t_black_bb:hover	{color:#f96f00; font-family:µ¸¿ò; font-weight: bold; text-decoration:none;}
+
+.t_black_14  { color:#000000; font-family:µ¸¿ò; font-size:16px; font-weight: bold;}
+a.t_black_14:link, a.t_black_b:visited, a.t_black_b:active	{color:#000000; font-family:µ¸¿ò; text-decoration:underline; font-weight: bold;}
+a.t_black_14:hover	{color:#f96f00; font-family:µ¸¿ò; text-decoration:underline; font-weight: bold;}
+
+.t_newproduct  { color:#0A4D8C; font-family:µ¸¿ò; font-size:12px }
+a.t_newproduct:link, a.t_newproduct:visited, a.t_newproduct:active	{color:#0A4D8C; font-family:µ¸¿ò; text-decoration:none}
+a.t_newproduct:hover	{color:#07A89E; font-family:µ¸¿ò; text-decoration:none }
+
+.tit_cate
+{ color: #ffffff; font-weight : bold; font-size:16px; }
+
+.t_gray_4b  { color:#4b4b4b; font-family:µ¸¿ò; font-size:16px;}
+
+
+.t_blue_b  { color:#33407c; font-family:µ¸¿ò; font-size:12px;; font-weight: bold;}
+.t_blue_14  { color:#33407C; font-family:µ¸¿ò; font-size:14px;; font-weight: bold;}
+.t_green  { color:#52673f; font-family:µ¸¿ò; font-size:12px;}
+.t_white  { color:#ffffff; font-family:µ¸¿ò; font-size:12px;line-height: 16px; }
+.b_orange { color:#FB8133; font-family:µ¸¿ò; font-size:12px;font-weight: bold; }
+
+.orange { color:#FB8133; font-family:µ¸¿ò; font-size:12px; }
+a.orange:link, a.orange:visited, a.orange:active	{color:#FB8133; font-family:µ¸¿ò;}
+a.orange:hover	{color:#666666; font-family:µ¸¿ò;}
+
+.con_11 {font-family : "µ¸¿ò"; font-size : 11px; color: #8B8989; line-height:16px;}
+.con_orange_11 {font-family : "µ¸¿ò"; font-size : 11px; color: #FF8400; line-height:16px;}
+.con_orange {font-family : "µ¸¿ò"; font-size : 12px; color: #FF8400; line-height:16px; font-weight: bold; }
+
+.white { color:#ffffff; font-family:µ¸¿ò; font-size:11px; }
+a.white:link, a.white:visited, a.white:active	{color:#ffffff; font-family:µ¸¿ò; text-decoration:none;}
+a.white:hover	{color:#FFFEB0; font-family:µ¸¿ò; text-decoration:underline;}
+
+
+.white11 { color:#ffffff; font-family:µ¸¿ò; font-size:11px; }
+a.white11:link, a.white:visited, a.white:active	{color:#ffffff; font-family:µ¸¿ò; text-decoration:none;}
+a.white11:hover	{color:#FFFEB0; font-family:µ¸¿ò; text-decoration:underline;}
+
+.white12 { color:#ffffff; font-family:µ¸¿ò; font-size:12px; font-weight: bold; }
+a.white12:link, a.white:visited, a.white:active	{color:#ffffff; font-family:µ¸¿ò; text-decoration:none; font-weight: bold;}
+a.white12:hover	{color:#FFFEB0; font-family:µ¸¿ò; text-decoration:underline; font-weight: bold;}
+
+.tit_22_b14
+{ color: #222222; font-weight : bold; font-size:14px; }
+a.tit_22_b14:link {   font-size: 14px; font-weight: bold; color: #222222; text-decoration: none}
+a.tit_22_b14:visited {   font-size: 14px; font-weight: bold; color: #222222; text-decoration: none}
+a.tit_22_b14:active {   font-size: 14px; font-weight: bold; color: #222222; text-decoration: none}
+a.tit_22_b14:hover {   font-size: 14px; font-weight: bold; color: #005BA8; text-decoration: none}
+
+/* »óÇ°¸ñ·Ï °¡°Ý*/
+.list_price {color: #f96120; font-weight: bold;}
+
+/* ´Ù¾ËÁöÅØ½ºÆ®¹è³Ê */
+.dalgi { color:#0020c0; font-family:µ¸¿ò; font-size:12px; }
+a.dalgi:link, a.dalgi:visited, a.dalgi:active	{color:#0020c0; font-family:µ¸¿ò; text-decoration:none;}
+a.dalgi:hover	{color:#0020c0; font-family:µ¸¿ò; text-decoration:underline;}
+
+
+/*FORM*/
+.input
+{
+ font-size			: 12px;
+ font-family		: "µ¸¿ò","Arial","Verdana";
+ color				: #333333;
+ height				: 18px;
+}
+
+
+/*ICON*/
+.dot {margin:-7 4 0 0}
+
+.plan_txt
+{ color: #4D5776; font-weight : bold; font-size:12px;letter-spacing:-1px; }
+a.plan_txt:link {   font-size: 12px; font-weight: normal; color: #4D5776; text-decoration: none;letter-spacing:-1px;}
+a.plan_txt:visited {   font-size: 12px; font-weight: normal; color: #4D5776; text-decoration: none;letter-spacing:-1px;}
+a.plan_txt:active {   font-size: 12px; font-weight: normal; color: #4D5776; text-decoration: none;letter-spacing:-1px;}
+a.plan_txt:hover {   font-size: 12px; font-weight: normal; color: #4D5776; text-decoration: underline;letter-spacing:-1px;}
+
+/* ÀÍ½ºÆ®¸²PC */
+.ex_11 {font-family : "µ¸¿ò"; font-size : 11px; color: #999999; line-height:13px;}
+.price_space {padding-right:5px;}

@@ -1,0 +1,54 @@
+@charset "euc-kr";
+/*
+최종작업일자 : 2012년 05월 07일
+작성자 : P05
+내용 : 미디어잇 게시판추가
+*/
+
+
+.bbswrite {border-collapse:collapse;}
+.bbswrite caption {font-size: 0;height: 0;line-height: 0;margin: 0;padding: 0;position: absolute; text-indent: -1000px; visibility: hidden;width: 0;}
+.bbsType caption {font-size: 0;height: 0;line-height: 0;margin: 0;padding: 0;position: absolute; text-indent: -1000px; visibility: hidden;width: 0;}
+
+.sub_content_area {width:730px;float:left; border-left:1px solid #dfdfdf;padding-left:20px;}
+.aCenter {text-align:center;}
+.bTitle2 {width:100%; border-bottom:1px solid #dddddd; margin-bottom:5px;overflow:hidden;}
+.bTitle2 *{ vertical-align:middle;}
+.bTitle2 .btnwrap { text-align:right;}
+.bTitle2 h3 {display:block; float:left; width:160px; height:18px; padding-bottom:8px;}
+.itName_01 {background:url('//img.danawa.com/new/mediait/img/title_board.gif') 10px 0px no-repeat; width:113px;}
+.input730 {border:1px solid #BEBEBE;height:15px;padding:3px 5px;width:450px;margin-bottom:10px;}
+
+.posContainer {position:relative;}
+.posRight {position:absolute; right:0;}
+.offscreen {visibility:hidden; height:0; line-height:0; font-size:0; width:0; position:absolute; margin:0; padding:0; text-indent:-1000px;}
+.sub_content_area .listOpt {border:none !important;}
+
+.freeboard_ico {display:inline-block; margin:0 5px 2px 0; vertical-align:middle;float:left;}
+.ico_ie8 input {position:relative;top:3px;*top:0px;}
+.check_ie8 .radio_1 {position:relative;top:2px;*top:1px;}
+.check_ie8 .inputStyle {position:relative;top:1px;*top:0px;}
+.radio_2 {position:relative;top:2px;*top:0px;}
+.radio_3 {position:relative;vertical-align:middle;position:relative;top:-1px;}
+
+.c_black {color:#000 !important;}
+.c_dark_yellow {color:#916d00 !important;}
+.left_total_info {color:#666;}
+
+/* 뉴스 리스트넘버 */
+.numberStyle05 {clear:both; float:left; position:relative; width:100%; height:40px; background-color:#fafafa; text-align:center; margin-top:20px; margin-bottom:20px;} /* 가격비교에 들어가는 넘버 */
+.numberStyle05 .pagetext {font-size:11px; color:#666; text-decoration:underline; font-weight:normal; }
+.numberStyle05 a.fNend{font-size:11px; color:#666; text-decoration:underline; font-weight:bold;}
+.numberStyle05 a.fNend:hover{font-size:11px; color:#666; text-decoration:underline; font-weight:bold;}
+
+.numberStyle05 ul#numberlist {padding-top:7px; margin:0px;}
+.numberStyle05 ul#numberlist li{display:inline; text-align:center; vertical-align:middle;}
+.numberStyle05 ul#numberlist li.first{margin:0 10px 0 0;}
+.numberStyle05 ul#numberlist li.num strong{position:relative; display:inline-block; height:14px; margin:0 2px; padding:1px 6px 5px 6px; color:#fff; text-decoration:none; border:1px solid #666; background-color:#5d5d5d; line-height:normal; font:13px Verdana;}
+.numberStyle05 ul#numberlist li.num a{position:relative; display:inline-block; height:14px; margin:0 2px; padding:1px 6px 5px 6px; color:#666666; text-decoration:none; border:1px solid #fafafa; line-height:normal; font:13px Verdana; }
+.numberStyle05 ul#numberlist li.num a:hover{background:#fff; border:1px solid #bbbbbb; font:13px Verdana; color:#666;}
+
+.numberStyle05 ul#numberlist li.numBtn a{position:relative; display:inline-block; height:14px; padding:1px 7px 5px 7px; margin:0 3px; border:1px solid #bbbbbb;}
+.numberStyle05 ul#numberlist li.end{margin:0 0 0 10px;}
+
+.numberStyle05 .btn{position:absolute; right:10px; top:10px;}

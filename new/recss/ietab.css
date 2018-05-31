@@ -1,0 +1,68 @@
+@charset "euc-kr";
+/*
+2013-09-23/pjy/danawa marketing panel css
+*/
+
+/* default Selector */
+body,input,button,select,input,txtArea,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,ul,ol,li,legend,hr,em,addres,div,p,strong,fieldset,form{margin:0; padding:0;font-size:12px;font-family:"µ¸¿ò",Dotum,"±¼¸²",gulim,AppleGothic,Helvetica,Sans-serif;}
+html,body{width:100%;height:100%;}
+html{overflow-y:scroll}
+body {font-size:12px;font-family:"µ¸¿ò",Dotum,"±¼¸²",gulim,Helvetica,AppleGothic,Sans-serif;text-align:left;background-color:#fff;*word-break:break-all;-ms-word-break:break-all;}
+
+/* link */
+a{color:#666;text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+/* Type Selector */
+img, fieldset, button,iframe {border:0 none}
+hr{display:none}
+
+/* Common */
+.bold {font-weight:bold !important;}
+
+/* layout */
+#pop_wrap {margin:4px 4px 30px 4px;}
+#pop_header {background:url(//img.danawa.com/new/ietab/img/bg_header.gif) #3a3a3a repeat-x left top;height:42px;width:100%;margin:-5px 0 0 -5px;padding-right:10px;clear:both;*zoom:1;overflow:hidden;}
+#pop_footer {padding-bottom:9px;}
+
+/* content_box */
+#content_box{margin-bottom:0px;border:5px solid #ccc}
+#content_box .corner{position:relative;width:100%}
+#content_box .tl{display:block;position:absolute;top:0px;left:0px;width:10px;height:10px;background:url(//img.danawa.com/new/ietab/img/bg_rndbox.gif) no-repeat;font-size:0;}
+#content_box .tr{display:block;position:absolute;top:0px;left:0px;width:10px;height:10px;margin-left:100%;background:url(//img.danawa.com/new/ietab/img/bg_rndbox.gif) 100% 0 no-repeat;font-size:0}
+#content_box .lb{display:block;position:absolute;top:-6px;left:-5px;width:11px;height:11px;background:url(//img.danawa.com/new/ietab/img/bg_rndbox.gif) 0 100% no-repeat;font-size:0}
+#content_box .rb{display:block;position:absolute;top:-6px;left:-6px;width:11px;height:11px;margin-left:100%;background:url(//img.danawa.com/new/ietab/img/bg_rndbox.gif) 100% 100% no-repeat;font-size:0}
+#content_box .cont{position:relative;}
+#content_box .pd1 {padding:48px 0 43px 0;text-align:center;}
+#content_box .pd2 {padding:28px 0 39px 0;text-align:center;}
+#content_box .information {text-align:center;}
+#content_box .btn_tab {margin-top:29px;}
+
+/* button */
+.btn_install_chrome {background:url(//img.danawa.com/new/ietab/img/bg_btn.gif) no-repeat 0 0;width:227px;height:45px;display:inline-block;text-align:center;}
+.btn_install_chrome span {display:block;width:227px;height:45px;text-indent:-9999em;}
+
+.btn_install_firefox {background:url(//img.danawa.com/new/ietab/img/bg_btn.gif) no-repeat 0 -50px;width:281px;height:45px;display:inline-block;text-align:center;margin-top:-3px;}
+.btn_install_firefox span {display:block;width:227px;height:45px;text-indent:-9999em;}
+
+/* pop_header */
+#pop_header  h1 {background:url(//img.danawa.com/new/ietab/img/bg_h1.gif) no-repeat 0 0;text-indent:-9999em;position:absolute;top:15px;left:18px;width:111px;height:17px;color:#fff;}
+#pop_header  h1.main_title {background:url(//img.danawa.com/new/newmain/pop/img/bg_main_title.gif) no-repeat 0 0;width:415px;}
+
+/* pop_footer */
+#pop_footer .btn_close {background:url(//img.danawa.com/new/ietab/img/btn_close.gif) no-repeat 0 0;width:65px;height:15px;display:block;float:right;margin-right:8px;}
+#pop_footer .btn_close span {display:block;text-indent:-9999em;}
+
+/* check_area */
+.check_area {width:150px;float:left;padding:8px 0 0 15px;}
+.check_area input {margin-right:5px;width:12px;height:12px;display:inline-block;vertical-align:middle;color:#333;}
+.check_area  label {color:#666;font-size:11px;display:inline-block;vertical-align:middle;height:10px;}
+
+/* main_pop */
+.img_pop01 {background:url(//img.danawa.com/new/newmain/pop/img/img_pop01.gif) no-repeat 0;text-indent:-9999em;width:491px;margin:0 auto;height:144px;margin-bottom:25px;}
+.img_pop02 {background:url(//img.danawa.com/new/newmain/pop/img/img_pop02.gif) no-repeat 0;width:491px;margin:0 auto;height:58px;position:relative;}
+.img_pop03 {background:url(//img.danawa.com/new/newmain/pop/img/img_pop03.gif) no-repeat 0;text-indent:-9999em;width:491px;margin:0 auto;height:78px;margin-top:28px;}
+.ir_text{text-indent:-9999em;}
+.btn_detail_see{width:73px;height:18px;text-indent:-9999em;}
+.btn_ps1{position:absolute;top:19px;right:0px;}
+.btn_ps2{position:absolute;top:39px;right:68px;}

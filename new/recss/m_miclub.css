@@ -1,0 +1,1680 @@
+@charset "utf-8";
+/*
+2013-10-17 / Create Miclub Mobile / yhm
+2014-01-21 / Create round banner / ksy
+2014-04-03 / Add ad_for_wrap / ksy
+2014-05-13 / Add alliance_notice_wrap / ksy
+2014-06-02 / Add cmpy_name / ksy
+2014-06-18 / Add sub_banner_wrap / ksy
+2014-07-04 / Add btn_center / ksy
+2014-07-30 / add service inspection page / ksy
+2015-02-05 / Add special user icon / ksy
+2015-05-08 / add story6 event  / sya
+2015-07-14 / Add story8 event / bhj
+2015-07-27 / Add id/pw find / bhj
+2015-07-28 / Add event review / bhj
+2015-08-11 / Add story9 event / bhj 
+2015-08-17 / Add review button style / bhj
+2015-11-13 / add story11 event / bhj
+2015-12-08 / add story12 event / bhj
+2015-12-23/ add notice_wrap amazones/pjy
+2016-05-03 / Add social_login, nickname setting, leave / yjk
+2016-05-17/ add insurance board - checkbox01 /pjy
+2016-05-31 / Add event_sns_info / yjk
+2016-08-31 / Add referee / yjk
+2016-09-09 / Add attendance_check / yjk
+2016-11-08 / Add join_request / yjk
+2016-12-06 / add sunyoung love /pjy
+*/
+
+/* Initialize */
+html {-webkit-text-size-adjust: none;}
+h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,button,input,select,textarea,p,fieldset,form{margin:0;padding:0;}
+li{list-style:none;}
+img{border:none;}
+
+/* Default */
+html {-webkit-text-size-adjust: none;}
+body{padding:0;margin:0;color:#000;font-family:"Apple Gothic","Droid Sans",/*"맑은 고딕","Malgun Gothic",*/"돋움",dotum,Helvetica,Arial,Sans-serif;font-size:14px;-webkit-text-size-adjust:none;text-size-adjust:none;}
+fieldset{border:none;}
+button,input,select,textarea{font-family:inherit;}
+input[type="text"],input[type="image"],input[type="date"],input[type="time"],select{-webkit-border-radius:0px;border-radius:0;-webkit-appearance:none;}
+input[type="search"],input[type="date"]{-webkit-appearance:none;box-sizing:content-box;}
+button{-webkit-border-radius:0px;border-radius:0;cursor:pointer;-webkit-appearance:none;}
+legend{position:absolute;display:inline;text-indent:-9999em;overflow:hidden;}
+a{text-decoration:none;color:#000;}
+
+.mt10 {margin-top:10px;}
+.mt25 {margin-top:25px;}
+
+/* Common Module */
+.hide{display:none;}
+.blind{position:absolute;display:inline;text-indent:-9999em;overflow:hidden;height:1px;width:1px;background:none !important;}
+.skip_nav{position:absolute;text-indent:-999em;height:1px;width:1px;overflow:hidden;line-height:30px;font-size:14px;background:#ff5f78;color:#000;font-weight:bold;}
+.skip_nav:focus{display:block;width:100%;height:30px;z-index:100;text-align:center;text-indent:0;}
+.found_mark{background: #cd0069;color: #fff;}
+
+/* Module Style */
+/*	photo List */
+.photo_comp{}
+.photo_comp .thumb{display:block;width:91px;height:60px;margin-bottom:4px;}
+.photo_comp .title{display:block;height:32px;overflow:hidden;text-align:center;}
+.photo_comp .sub_item{overflow:hidden;zoom:1;font-size:13px;line-height:16px;}
+.photo_comp .sub_item li{float:left;width:33.3%;padding:1px 0;*width:33.2%;}
+.photo_comp .sub_item a{display:block;width:92px;margin:0 auto;padding:0 2px;}
+/*	thumb List */
+.thumb_comp{}
+.thumb_comp .thumb{width:64px;height:51px;float:left;margin-right:11px;}
+.thumb_comp .board_info{/*margin-left:75px;*/padding-top:6px;height:45px;}
+.thumb_comp .board_info .title{display:block;font-size:15px;font-weight:normal;line-height:20px;height:20px;overflow:hidden;margin-bottom:3px;}
+.thumb_comp .board_info .desc{display:block;font-size:13px;line-height:17px;color:#666;height:17px;overflow:hidden;}
+.thumb_comp .board_list li{clear:both;border-top:1px solid #e2e2e2;padding:1px 0;}
+.thumb_comp .board_list li:first-child{border:none;}
+.thumb_comp .board_list a{display:block;padding:7px 0;overflow:hidden;}
+/*	dot List */
+.dot_comp{font-size:14px;line-height:18px;}
+.dot_comp .board_list li{padding:1px 0;}
+.dot_comp .board_list a{display:block;height:20px;line-height:20px;overflow:hidden;padding:2px 0 2px 10px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_main_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_main.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:0 -435px;}
+/*	dot paging */
+.dot_paging{text-align:center;line-height:8px;}
+.dot_paging .btn_page{border:none;padding:0;margin:0;*margin:0 3px;background:url(//img.miclub.com/newmiclub/m_miclub/img/dot_paging.png) no-repeat 0 0;background:rgba(185,184,172,.99);width:6px;height:6px;line-height:6px;border-radius:50%;vertical-align:top;}
+.dot_paging .btn_page span{display:block;overflow:hidden;text-indent:-200px;}
+.dot_paging .selected{background-position:0 -30px;background:rgba(216,47,119,.99);}
+/*	app List */
+.app_comp{}
+.app_comp .sub_item{overflow:hidden;zoom:1;}
+.app_comp .sub_item li{float:left;width:25%;text-align:center;padding:1px 0;}
+.app_comp .app03 li {width:33.3%;}
+.app_comp .sub_item a{display:block;width:80px;margin:0 auto;font-size:13px;}
+.app_comp .icon{display:block;height:53px;width:53px;margin:0 auto 4px;}
+.app_comp .app_name{display:block;}
+/*	rolling List */
+.roll_comp{background:#f3f3f3;position:relative;padding:0 3px 0 9px;zoom:1;}
+.roll_comp .title{padding:2px 6px 2px 0;margin:0 5px 0 0;font-size:13px;line-height:22px;font-weight:normal;background:url(//img.miclub.com/newmiclub/m_miclub/img/head_menu_div.png) no-repeat right -113px;float:left;display:block;}
+.roll_comp .btn_cover{border:none;position:absolute;top:0;right:0;width:32px;height:26px;display:block;overflow:hidden;text-indent:-200px;background:url(//img.miclub.com/newmiclub/m_miclub/img/roll_btn_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/roll_btn.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:11px -35px;}
+.roll_comp .rnk{display:inline-block;text-align:center;zoom:1;width:12px;height:12px;color:#fff;background:#6a7176;font-size:11px;line-height:12px;vertical-align:top;margin:4px 5px 0 0;}
+.roll_comp .top_5 .rnk{background-color:#d3207c;}
+.roll_comp .roll_list{font-size:13px;line-height:22px;margin:0 35px 0 0;height:26px;overflow:hidden;position:relative;zoom:1;}
+.roll_comp .roll_list li{padding:1px;}
+.roll_comp .roll_list a{display:block;padding:1px 0;height:22px;overflow:hidden;line-height:20px;}
+.roll_show .title{float:none;background:none;}
+.roll_show .roll_box .btn_cover{background-position:11px 9px;}
+.roll_show .roll_box .roll_list{height:auto;margin:0;font-size:14px;line-height:19px;padding-bottom:6px;}
+.roll_show .roll_box .roll_list a{height:19px;}
+.roll_show .roll_box .rank_list{float:left;width:49.9%;}
+.roll_show .roll_box .rnk{display:inline-block;*display:inline;zoom:1;}
+/*	article options */
+.article_opt{text-align:right;margin:15px 9px;overflow:hidden;}
+.article_opt .nav_link{display:inline-block;*display:inline;zoom:1;color:#484848;border:1px solid #a6a6a5;width:62px;height:21px;line-height:21px;padding-top:1px;font-size:14px;text-align:center;letter-spacing:-1px;}
+.article_opt .nav_top{padding-left:12px;width:50px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_hd.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:4px -126px;float:right;margin-left:10px;}
+.article_opt .nav_recent{width:auto;border-color:#6d84e4;padding:2px 16px 0 4px;color:#151515;font-weight:bold;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_hd.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:right -727px;}
+.article_opt .btn_board{float:left;padding:0 5px;width:auto;}
+/*	select frame */
+.select_frame{padding:0 3px;border:1px solid #c6cacc;background:url(//img.miclub.com/newmiclub/m_baby/img/bg_select_sd.png) #fff no-repeat;background:url(//img.miclub.com/newmiclub/m_baby/img/bg_select_hd.png) no-repeat rgba(255,255,255,1);background-size:27px auto;background-position:right center;}
+.select_frame select{width:100%;background:transparent;border:none;display:block;-webkit-appearance:none;font-size:14px;}
+/*	search form */
+.search_form{overflow:hidden;position: relative;padding-right: 27px;}
+.search_form .input_search{border:2px solid #bababa;width:98%;height:23px;line-height:23px;padding:0 1%;color:#333;font-size:14px;background:#fff;border-right:none;border-radius:0;}
+.search_form .btn_search{display:block;position: absolute;top: 0;right: 0;width:27px;height:27px;}
+/*	basic input */
+.basic_input{border:1px solid #c7c7c7;box-shadow:inset 1px 2px 2px rgba(0,0,0,.15);font-size:14px;color:#696969;text-align:left;display:block;}
+.basic_input input,.basic_input textarea{font-size:14px;color:#696969;text-align:left;height:inherit;background:transparent;width:96%;padding:0 2%;border:none;vertical-align:top;}
+.basic_input input{line-height:inherit;}
+.basic_input textarea{resize:none;}
+/*	image zoom */
+.comment_image{text-align:center;margin:10px 0;}
+.comment_image img{max-width:100%;vertical-align:top;}
+.img_zoom{display:inline-block;position:relative;max-width:100%;vertical-align: top;}
+.img_zoom .comment_thumb{max-height:85px;height:auto;max-width:100%;vertical-align:top;display: block;}
+.img_zoom .btn_zoom{position:absolute;width:30px;height:30px;right:0;bottom:0;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_zoom.png) no-repeat 0 0;border: none;text-indent: -200px;overflow: hidden;text-align: left;}
+.zoomin .comment_thumb{max-height:none;max-width:100%;}
+.zoomin .btn_zoom{background-position:-40px 0px;}
+/*	page index */
+.page_index{text-align:center;}
+.page_index .page_nav{display:inline-block;*display:inline;*zoom:1;}
+.page_index .page_nav img{width:27px;height:27px;vertical-align:top;}
+.page_index .nums{margin-left:7px;}
+.page_index .nums a{vertical-align:top;border:1px solid #c1bfb8;height:23px;width:24px;color:#646464;text-align:center;display:inline-block;zoom:1;line-height:23px;padding-top:1px;font-size:14px;margin-right:7px;}
+.page_index .nums .selected{color:#fff;background:#cd0069;border-color:#ad0059;}
+/*	reply_form */
+.reply_form{border-top:2px solid #a8a8a8;padding:12px 12px 12px 10px;position:relative;}
+.reply_form .input_knick,.reply_form .input_reply{display:block;}
+.reply_form .input_knick{/*height:27px;line-height:27px;*/margin-bottom:6px;zoom:1;width:146px;}
+.reply_form .input_knick input{line-height:27px;height:27px;padding:0 10px;width:126px;}
+.reply_form .input_reply{margin-bottom:7px;padding:0 10px;}
+.reply_form .input_reply textarea{padding:6px 0;width:100%;height:48px;line-height:1.4;resize:none;*width:97.5%;}
+.reply_form .submit_opt{text-align:center;}
+.reply_form .submit,.reply_form .cancel{height:27px;width:96px;background:#7f7f7f;border:none;color:#fff;font-size:14px;line-height:27px;}
+.reply_form .cancel{*margin-left:5px;}
+
+/*	reply List */
+.reply_list{border-top:1px solid #dedede;}
+.reply_list .reply_item{border-bottom:1px solid #dedede;padding:10px 0 0;position:relative;zoom:1;}
+.reply_list .reply_item .comment_image{margin: 10px;}
+.reply_list .head_info{font-size:11px;position:relative;line-height:15px;color:#666;margin:0 10px 5px;}
+.reply_list .head_info .date{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_footer_nav.png) no-repeat 0 0;padding-left:8px;margin-left:7px;}
+.reply_list .head_info .sub_info{position:absolute;top:0;right:0;border:none;color:#666;font-size:11px;background:none;}
+.reply_list .head_info .sub_info a{color: #666;}
+.reply_list .head_info .recom .num{color:#cd0069;}
+.reply_list .head_info .report {margin-left:7px;}
+.reply_list .head_info .ico_best{width:32px;height:15px;vertical-align:text-bottom;}
+.reply_list .reply_text{font-size:14px;line-height:1.3;color:#000;margin:0 10px 8px;}
+.reply_list .reply_text a{display:block;}
+.reply_list .rel_url{margin:6px 10px;}
+.reply_list .rel_url .ico_rel{float:left;height:15px;display:block;margin-right:3px;}
+.reply_list .rel_url a{font-size:12px;color:#cd0069;line-height:16px;display: inline-block;padding: 1px;}
+.reply_list .ico_new{width:7px;height:7px;vertical-align:text-top;margin-top:2px;}
+.reply_list .reply_opt{zoom:1;margin:0 10px 10px;}
+.reply_list .reply_opt:after{content:"";display:block;clear:both;height:0;}
+.reply_list .reply_opt .sub_opt{float: right;}
+.reply_list .origin{font-size:12px;color:#666;margin-left:10px;padding-bottom:10px;}
+.reply_list .origin a{text-decoration:underline;color:#666;}
+.reply_list .writer_opt{float:right;}
+.reply_list .writer_opt li{display:inline-block;padding:0;border-bottom:none;position:static;*display:inline;*zoom:1;}
+.reply_list .writer_opt li + li{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_footer_nav.png) no-repeat 0 2px;padding-left:4px;margin-left:3px;}
+.reply_list .writer_opt button{border:none;font-size:12px;background:#fff;display:inline;line-height:16px;height:16px;vertical-align:top;}
+.reply_list .btn_reply{float:left;border:1px solid #a6a6a6;background:#fff;color:#808080;font-size:12px;width:36px;height:21px;line-height:18px;text-align:center;cursor:pointer;}
+.reply_list .btn_del{border:1px solid #fff;background:#fff;color:#505050;font-size:12px;width:36px;height:21px;line-height:18px;text-align:center;cursor:pointer;}
+.reply_list .ico_sub{height:14px;width:13px;position:absolute;top:7px;left:11px;z-index:10;}
+.reply_list .best_comment{background:#f2f2f2;}
+.reply_list .reply_form{position:relative;padding:12px 10px 12px 30px;border-top:1px solid #dedede;background:#fff;zoom:1;}
+.reply_list .sub_acc{position: absolute;display: block;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_amazones_ie.png) no-repeat;width: 14px;height: 15px;top:6px;left:12px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_amazones.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position: 0 -267px;}
+.reply_list .reply_form .amazones_write {background: none;position: static;border-bottom: none;padding:2px 0 0 0;}
+.reply_list .reply_form .opt_btns{top: 16px;}
+.reply_list .reply_form .amazones_write .btn_cancel{margin-left: 5px;}
+.reply_list .edit_reply{border-top:none;padding:2px 10px 12px 10px;}
+.reply_list .edit_reply .head_info{margin-left:0;}
+.reply_list .sub_reply{padding:10px 0 0 20px;position: relative;border-bottom:1px solid #dedede;}
+.reply_list .view_all{text-align:center;border-bottom:1px solid #dfdfdf;padding:21px 0 20px;}
+.reply_list .view_all .btn_all{display:block;width:182px;height:30px;background:#7f7f7f;line-height:30px;padding-top:1px;color:#fff;font-size:14px;margin:0 auto;}
+.reply_list .view_all .btn_all .num{color:#ffc4cd;}
+.reply_list .view_all .link_article{display:block;width:96px;height:30px;background:#7f7f7f;line-height:30px;padding-top:1px;color:#fff;font-size:14px;margin:0 auto;}
+.reply_empty {height: 103px;padding-top: 78px;border-bottom: 1px solid #dedede;}
+.reply_empty .empty_comment{font-size: 14px;line-height: 18px;text-align: center;}
+/*	board notice wrap */
+.notice_wrap_line{border-bottom:2px solid #ccc;font-size:12px;}
+.notice_wrap_line .notice_list li a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;}
+.notice_wrap{background:#fff;position:relative;font-size:14px;*zoom:1;}
+.notice_wrap .notice_list{line-height:20px;height:36px;overflow:hidden;margin-right:36px;white-space:nowrap;}
+.notice_wrap .notice_list ul{padding:5px 0;*zoom:1;}
+.notice_wrap .notice_list li{padding:1px 2px;}
+.notice_wrap .notice_list a{display:block;padding:3px 7px;}
+.notice_wrap .notice_list .icon{margin-right:4px;}
+.notice_wrap .notice_list .icon img{height:16px;vertical-align:text-top;}
+.notice_wrap .btn_cover{position:absolute;top:1px;right:0;cursor:pointer;width:34px;height:34px;border:none;border-left:1px solid #dedede;text-indent:-999em;overflow:visible;background:url(//img.miclub.com/newmiclub/m_baby/img/btn_cover_notice.png) no-repeat 0 0;}
+.notice_roll .notice_list{height:auto;}
+.notice_roll .btn_cover{background-position:0 -50px;border-bottom:1px solid #dedede;}
+/*	ranked flag */
+.ranked{display:block;padding-right:16px;padding-top:2px;letter-spacing:-1px;width:16px;height:30px;text-align:center;font-size:13px;line-height:17px;font-weight:bold;color:#fff;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_sub24_sd.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_sub24_hd.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:0 -333px;}
+.top_ranked{background-position:0 -266px;}
+
+/* Body Layout */
+.wrap_m{overflow:hidden;width:100%;position:relative;}
+.wrapper .nav_wrap{float:left;width:233px;margin-left:-233px;display:none;_margin-left:-118px;}
+.body_cont{float:left;width:100%;background:#fff;}
+.nav_show{background:url(//img.miclub.com/newmiclub/m_miclub/img/bg_gnb.png) repeat-y;}
+.nav_show .wrapper{padding-left:233px;width:100%;}
+.nav_show .nav_wrap{display:block;}
+
+/* GNB */
+.nav_wrap .to_home{display:block;background:#191b1e;font-size:13px;line-height:18px;color:#c3c9d8;padding:7px 9px;}
+.gnb{border-bottom:1px solid rgba(255,255,255,.15);}
+.gnb .main_cate{border-bottom:1px solid #41454d;box-shadow:inset 0 1px rgba(255,255,255,.15);}
+.gnb .main_cate_link{display:block;font-size:16px;line-height:21px;font-weight:bold;color:#fff;padding:8px 15px 8px 20px;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_gnb_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_gnb.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:10px -75px;}
+.gnb .has_sub{display:block;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_gnb_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_gnb.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:right -171px;}
+.gnb .cate_show .main_cate_link{background-color:#ff5f78;background-position:10px 13px;box-shadow:inset -15px 0 25px -15px rgba(0,0,0,.5);}
+.gnb .cate_show .has_sub{background-position:right -238px;}
+.gnb .sub_cate{background:#3c414a;font-size:14px;line-height:19px;color:#d3d8e4;border-top:1px solid #2f3239;box-shadow:inset 0 1px rgba(255,255,255,.1);}
+.gnb .sub_cate:first-child{border-top:none;}
+.gnb .sub_cate a{color:#d3d8e4;padding:8px 15px 11px 31px;display:block;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_gnb_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_gnb.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:20px -297px;}
+.gnb .sub_cate_list{display:none;}
+.gnb .ico_cate{height:17px;vertical-align:top;margin-top:1px;}
+.gnb .cate_show .sub_cate_list{display:block;}
+
+/* Header */
+.header{position:relative;zoom:1;}
+.header .title_wrap{background:#fff;text-align:center;color:#333;padding:8px 0 9px;border-top:2px solid #ff5f78;}
+.header .title_wrap a{color:#333;}
+.header h1{margin:0;}
+.header h1 a{width:77px;display:block;margin:0 auto;padding:2px;}
+.header h1 img{width:77px;display:block;margin:0 auto;}
+.header .title_wrap .link_gnb,.header .title_wrap .link_write{position:absolute;top:6px;padding:4px;}
+.header .title_wrap .link_gnb img,.header .title_wrap .link_write img{width:26px;height:26px;font-size:11px;vertical-align:top;}
+.header .title_wrap .link_gnb{left:6px;}
+.header .title_wrap .link_write{right:4px;}
+.header .menu_wrap{background:#393e41;color:#fff;overflow:hidden;zoom:1;}
+.header .menu_wrap li{float:left;padding:2px 0 0;text-align:center;font-size:15px;line-height:21px;background:url(//img.miclub.com/newmiclub/m_miclub/img/head_menu_div.png) no-repeat 0 11px;border-bottom:4px solid #393e41;}
+.header .menu_wrap a{color:#fff;display:block;margin:0 1px;padding:4px 2px 4px;}
+.header .menu_wrap .menu_selected a{color: #c2c2c2;}
+.header .menu_wrap li.selected{border-color:#ff5f78;color:#ffc4cd;}
+.header .menu_wrap li.selected a{color:#ffc4cd;}
+.header .menu_wrap .menu_1{width:17%;background:none;}
+.header .menu_wrap .menu_2{width:20%;}
+.header .menu_wrap .menu_3{width:30%;}
+.header .menu_wrap .menu_4{width:33%;*width:32%;}
+.header .menu_wrap .ico_menu{height:15px;vertical-align:top;margin-top:2px;}
+.header .sub_menu_wrap{background:#fff;overflow:hidden;zoom:1;border-bottom:1px solid #b3b9c0;}
+.header .sub_menu_wrap li{float:left;padding:1px 0 1px;text-align:center;font-size:14px;line-height:21px;background:url(//img.miclub.com/newmiclub/m_miclub/img/head_menu_div.png) no-repeat 0 -43px;}
+.header .sub_menu_wrap .sub_2 li{width:50%;*width:49.9%;}
+.header .sub_menu_wrap .sub_3 li{width:33.3%;*width:33.2%;}
+.header .sub_menu_wrap .sub_4 li{width:25%;*width:24.9%;}
+.header .sub_menu_wrap a{display:block;padding:4px 0 3px;margin:0 1px;}
+.header .sub_menu_wrap .selected{color:#cd0069;font-weight:bold;}
+.header .sub_menu_wrap .selected a{color:#cd0069;}
+.header .notice_wrap{box-shadow:0 2px 6px rgba(0,0,0,.4);}
+.header .notice_wrap .acc_bottom{position:absolute;width:100%;height:11px;background:url(//img.miclub.com/newmiclub/m_baby/img/bg_acc_notice.png) repeat-x right 0;bottom:-10px;}
+
+/* Footer */
+.footer{background:#f3f3f3;text-align:center;padding:20px 0;}
+.footer .logo{font-size:12px;color:#727272;margin-bottom:8px;}
+.footer .logo_miclub{width:53px;display:block;margin:0 auto 3px;}
+.footer_nav li{display:inline-block;*display:inline;*zoom:1;font-size:12px;color:#525252;padding-left:8px;line-height:16px;}
+.footer_nav li+li{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_footer_nav.png) no-repeat 0 2px;margin-left:2px;}
+.footer_nav a{color:#525252;}
+
+/* Main Sections */
+.main_sect .blind{left:-100px;}
+.main_sect .sect_head{position:relative;margin-bottom:7px;}
+.main_sect h2{font-size:15px;line-height:22px;margin:0;padding:2px 0 0 21px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_main_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_main.png) no-repeat rgba(255,255,255,0);background-size:32px auto;}
+.main_sect .date_nav{position:absolute;right:0;top:0;width:125px;}
+.main_sect .date_nav .now_date{line-height:21px;margin:0 17px;text-align:center;display:block;font-size:14px;padding-top:1px;}
+.main_sect .date_nav .btn_nav{position:absolute;height:22px;width:15px;top:0;display:block;overflow:hidden;text-indent:-1400px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_main_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_main.png) no-repeat rgba(255,255,255,0);background-size:32px auto;}
+.main_sect .date_nav .nav_prev{background-position:3px -62px;left:0;}
+.main_sect .date_nav .nav_next{background-position:3px -107px;right:0;}
+.main_sect .story_list{border-top:1px solid #dbdbdb;margin:15px 0 17px;}
+.main_sect .story_list li{border-bottom:1px solid #dbdbdb;font-size:15px;line-height:22px;padding:1px 0;}
+.main_sect .story_list a{display:block;padding:3px 7px;height:22px;overflow:hidden;}
+.main_sect .link_more{font-size:13px;line-height:16px;position:absolute;top:3px;right:0;padding:3px 13px 2px 4px;color:#383838;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_main_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_main.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:right 4px;}
+.sect_today{margin:20px 10px 29px;}
+.sect_today .sect_head{margin-bottom:14px;}
+.sect_today h2{background-position:0 -177px;font-size:16px;padding-left:23px;}
+.sect_magazine{position:relative;border-bottom:1px solid #ff5f78;padding-top:28px;margin-bottom:15px;}
+.sect_magazine h3{position:absolute;font-weight:normal;top:0;text-align:center;color:#393e41;font-size:14px;line-height:18px;height:27px;background:#e6e6e6;border:1px solid #e6e6e6;border-bottom:none;}
+.sect_magazine h3 a{display:block;padding:5px 0 4px;}
+.sect_magazine .link_more{display:none;top:4px;right:8px;}
+.sect_magazine .thumb_comp{display:none;padding:0 10px;border-top:1px solid #ff5f78;}
+.sect_magazine .selected h3{border-color:#ff5f78;background:#fff;font-weight:bold;z-index:10;padding-bottom:1px;}
+.sect_magazine .selected h3 a{}
+.sect_magazine .selected .link_more{display:block;}
+.sect_magazine .selected .thumb_comp{display:block;}
+#main_tab_fashion h3{left:10px;width:78px;}
+#main_tab_love h3{left:91px;width:68px;}
+#main_tab_baby h3{left:162px;width:68px;}
+.sect_shopping{margin:0 10px 16px;border-bottom:1px solid #dbdbdb;padding-bottom:19px;}
+.sect_shopping h2{background-position:0 -265px;}
+.sect_shopping .board_list li{border-bottom: none;}
+.sect_cook{margin:0 10px 20px;}
+.sect_cook h2{background-position:0 -354px;}
+.sect_cook .photo_comp{margin-bottom:11px;}
+.sect_app{padding:7px 10px 10px;border-top:1px solid #8b9398;}
+.sect_app .sect_head{margin-bottom:11px;}
+.sect_app h2{background:none;padding-left:0;}
+.keyword_roll_wrap{border-bottom:1px solid #b3b9c0;box-shadow:0 1px 0 #f0f1f2;}
+.keyword_roll_wrap .title{color:#d3207c;}
+.notice_roll_wrap{border-top:1px solid #b3b9c0;border-bottom:1px solid #b3b9c0;}
+.notice_roll_wrap .title{color:#01756e;}
+
+/* Banner */
+.horizon_banner{}
+.horizon_banner a{display:block;text-align:center;}
+.horizon_banner img{vertical-align:top;max-width:100%;/*height:48px;*/}
+.subup_banner{border-bottom:1px solid #cacaca;}
+
+/* Sub Common */
+.sub_header{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_sub_board.png) repeat;border-bottom:1px solid #ff5f78;padding:13px 10px 10px;position:relative;min-height:20px;}
+.sub_header h2{display:inline;font-size:16px;color:#cd0069;font-weight:bold;line-height:20px;letter-spacing:-1px;*margin-right:5px;}
+.sub_header .head_desc{display:inline;font-size:12px;vertical-align:baseline;color:#504f4f;}
+.sub_header .acc{position:absolute;height:8px;width:13px;background:url(//img.miclub.com/newmiclub/m_miclub/img/acc_sub_header.png) no-repeat;bottom:-2px;left:35px;*bottom:0;_display:none;}
+.sub_header .back_list{position:absolute;top:10px;right:10px;}
+.sub_header .back_list img{width:90px;height:24px;}
+.sub_header .board_opt{position:absolute;top:11px;right:10px;}
+.sub_header .to_list{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_from_list.png) no-repeat 0 0;padding-left:10px;height:24px;display:inline-block;font-size:14px;color:#808080;zoom:1;}
+.sub_header .to_list span{display:block;border:1px solid #b3b3b3;border-left:none;height:20px;line-height:20px;padding:2px 7px 0 24px;background:url(//img.miclub.com/newmiclub/m_baby/img/ico_from_list.png) no-repeat 5px 5px #fff;*width:45px;background:url(//img.miclub.com/newmiclub/m_baby/img/ico_from_list_hd.png) no-repeat 5px 5px rgba(255,255,255,1);background-size:14px 12px;}
+.sub_header .btn_reply{background:#fff;display:inline-block;border:1px solid #b6b6b6;height:20px;font-size:14px;line-height:20px;padding:2px 8px 0 9px;text-align:center;zoom:1;}
+.sub_header .btn_reply .qnt{color:#ff5f78;}
+.sub_header .date_nav{bottom:7px;top:auto;}
+.sub_header .date_nav .page_nav{display:inline-block;vertical-align:top;margin-top:-3px;zoom:1;}
+.sub_header .date_nav .page_nav img{width:25px;height:25px;vertical-align:top;}
+.sub_header .date_nav .now_date{font-size:15px;line-height:20px;font-weight:bold;color:#000;margin:0 10px;}
+.sub_header .to_article{}
+.sub_header .to_article img{width:65px;height:24px;vertical-align:top;}
+.sub_header .sort_opt{}
+.sub_header .sort_opt .select_frame{width:83px;}
+.sub_header .sort_opt .select_size01{width:110px;}
+.sub_header .sort_opt select{font-size:12px;height:21px;line-height:20px;}
+.sub_header .cate_list{overflow:hidden;zoom:1;font-size:15px;line-height:18px;_width:200px;}
+.sub_header .cate_list li{float:left;color:#515151;margin-left:7px;}
+.sub_header .cate_list li + li{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_div_sect.png) no-repeat 0 1px;padding-left:9px;}
+.sub_header .cate_list li a{color:#515151;}
+.sub_header .cate_list .selected{color:#000;font-weight:bold;letter-spacing:-1px;}
+.sub_header .cate_list .selected a{color:#000;}
+
+/* Board Category */
+.board_category .cate_wrap{}
+.board_category .cate_wrap h3{border-bottom:1px solid #a7a7a7;font-size:16px;line-height:22px;color:#454545;background:url(//img.miclub.com/newmiclub/m_baby/img/ico_view_message.png) no-repeat right center #e8e8e8;}
+.board_category .cate_wrap h3 a{color:#454545;display:block;padding:7px 25px 7px 8px;}
+.board_category .cate_wrap .no_link{background-image:none;}
+.board_category .cate_wrap .ico_new{width:8px;height:8px;vertical-align:text-top;margin-top:3px;}
+.board_category .cate_wrap .ico_adult{height:19px;vertical-align:text-bottom;}
+.board_category .sub_cate{border-top:1px solid #e4e4e4;}
+.board_category .sub_cate li{border-bottom:1px solid #d7d7d7;background:url(//img.miclub.com/newmiclub/m_baby/img/ico_view_message.png) no-repeat right center;font-size:16px;line-height:22px;}
+.board_category .sub_cate a{display:block;padding:9px 25px 9px 35px;font-weight:bold;background:url(//img.miclub.com/newmiclub/m_baby/img/bg_board_cate_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_baby/img/bg_board_cate.png) no-repeat rgba(255,255,255,0);background-size:18px 18px;background-position:10px 14px;}
+.board_category .sub_cate .name{color:#000;}
+.board_category .sub_cate .nums{color:#cd0069;}
+
+/* Board List */
+.board_wrap .notice_wrap{border-bottom:2px solid #ccc;font-size:12px;}
+.board_wrap .notice_roll{line-height:17px;}
+.board_wrap .notice_roll .notice_list a{padding:1px 7px;}
+.board_list_wrap .board_list li{position:relative;border-bottom:1px solid #e2e2e2;zoom:1;padding:8px 10px;}
+.board_list_wrap .board_list .on {background:none repeat scroll 0 0 #F3F3F3;}
+.board_list_wrap .ranked_list li{padding-left:19px;}
+.board_list_wrap .board_list li:after{content:"";display:block;clear:both;height:0;}
+.board_list_wrap .board_list .ranked{position:absolute;left:0;top:-1px;background-position:0 -339px;padding-top:0;width:13px;}
+.board_list_wrap .board_list .top_ranked{background-position:0 -272px;}
+.board_list_wrap .board_list .list_frame{display:table;width:100%;}
+.board_list_wrap .board_list .thumb{width:64px;overflow:hidden;display:table-cell;padding-right:8px;*display:block;*float:left;}
+.board_list_wrap .board_list .thumb img{display:block;}
+.board_list_wrap .board_list .main_info{display:table-cell;vertical-align:middle;}
+.board_list_wrap .board_list .title{display:block;font-size:15px;line-height:19px;margin-bottom:4px;}
+.board_list_wrap .board_list .title_text{color:#000;}
+.board_list_wrap .board_list .title .comment_num{color:#ff5f78;}
+.board_list_wrap .board_list .title .ico_new{width:8px;height:7px;vertical-align:text-top;margin-top:2px;}
+.board_list_wrap .board_list .sub_info{font-size:11px;color:#666;}
+.board_list_wrap .board_list .sub_info a{text-decoration:underline;color:#666;}
+.board_list_wrap .board_list .sub_info dt,.board_list .sub_info dd{display:inline;}
+.board_list_wrap .board_list .sub_info dd{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_footer_nav.png) no-repeat right 0;padding-right:8px;margin-right:5px;}
+.board_list_wrap .board_list .sub_info .dd_last{padding-right:0;background:none;}
+.board_wrap .page_index{margin:27px 0;}
+.board_wrap .search_form{margin:25px auto 19px;width: 235px;}
+.board_wrap .side_content{margin-top:20px;}
+
+/* Board Article */
+.board_article{}
+.board_article .board_header{border-bottom:1px solid #dedede;padding:10px;position:relative;zoom:1;}
+.board_article .board_header h3{font-size:16px;line-height:1.3;margin-bottom:2px;}
+.board_article .article_info{font-size:12px;color:#666;overflow:hidden;}
+.board_article .article_info dl{margin-bottom:2px;display:block;width:230px;}
+.board_article .article_info dt,.board_header .article_info dd{display:inline-block;*display:inline;zoom:1;}
+.board_article .article_info .blind{height:1px;overflow:hidden;}
+.board_article .article_info .dd_writer{min-width:70px;margin-right:10px;}
+.board_article .article_info .dd_view{width:50px;}
+.board_article .btn_zoom{font-size:12px;position:absolute;bottom:10px;right:10px;border:1px solid #a6a6a5;height:21px;line-height:20px;padding:0 2px 0 15px;text-align:center;overflow:visible;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat #fff;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_hd.png) no-repeat rgba(255,255,255,1);background-size:32px auto;background-position:5px -639px;}
+.board_article .zoom_out{background-position:5px -684px;}
+.board_article .board_text{padding:10px;font-size:15px;line-height:1.4;}
+.board_article .board_text img{max-width:100%;height:auto;margin:8px auto 0;display:block;}
+.board_article .board_opt{text-align:center;padding-bottom:16px;position:relative;}
+.board_article .board_opt .btn_recom{background:#fff;border:1px solid #ff5f78;cursor:pointer;padding:0;width:56px;height:50px;}
+.board_article .board_opt .btn_recom .num{display:block;width:100%;padding-top:27px;font-size:12px;line-height:16px;color:#333;font-weight:bold;text-align:center;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_recom_sd.png) no-repeat center 0;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_recom_hd.png) no-repeat center 0 rgba(255,255,255,0);background-size:19px 26px;}
+.board_article .board_opt .edit_opt{position:absolute;bottom:13px;left:10px;font-size:12px;}
+.board_article .board_opt .edit_opt a{color:#505050;}
+.board_article .board_opt .edit_opt a + a{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_footer_nav.png) 0 1px no-repeat;padding-left:8px;margin-left:8px;display:inline-block;}
+.board_article .board_opt .share_opt{position:absolute;bottom:16px;right:10px;}
+.board_article .board_opt .share_opt a{display:inline-block;vertical-align:top;margin-left:4px;}
+.board_article .board_opt .share_opt img{width:23px;height:21px;vertical-align:top;}
+.board_article .font17{font-size:17px;}
+
+.article_content .headline{box-shadow:0 1px 2px rgba(160,160,160,.3);border-bottom:1px solid #e2e2e2;margin-bottom:9px;padding:7px 5px 6px 31px;color:#000;font-size:17px;line-height:22px;position:relative;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_hd.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:9px -302px;}
+.article_content .headline .acc{position:absolute;display:block;height:7px;width:9px;background:url(//img.miclub.com/newmiclub/m_baby/img/acc_article_headline.png) no-repeat 0 0;margin-left:-5px;bottom:-6px;left:50%;*bottom:-3px;}
+.article_content .sub_ad{border-bottom:1px solid #dfdfe1;margin:0 10px 10px;padding-bottom:12px;}
+.article_content .sub_ad .ad_page{height:100px;overflow:hidden;}
+.article_content .sub_ad .page_list{text-align:center;}
+.article_content .sub_ad .page_list li{padding:4px 0;height:92px;}
+.article_content .sub_ad .banner_thumb{display:block;margin:0 auto 9px;border:1px solid #ebebf1;text-align:center;background:#fbfbfd;}
+.article_content .sub_ad .banner_thumb img{vertical-align:top;height:45px;}
+.article_content .sub_ad .sub_list{font-size:12px;line-height:16px;text-align:left;width:300px;margin:0 auto;color:#666;}
+.article_content .sub_ad .sub_list a{color:#666;}
+.article_content .sub_ad .sub_list li{padding:0 0 0 6px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat 0 6px;margin-bottom:2px;height:auto;}
+.article_content .sub_ad .dot_index{line-height:10px;}
+.article_content .article_wrap{margin:0 10px;border-bottom:1px solid #dedede;padding-bottom:11px;}
+.article_content .section{font-size:15px;line-height:1.35;margin-bottom:7px;}
+.article_content .section h5{font-weight:bold;color:#000;font-size:16px;margin-bottom:2px;}
+.article_content .section .text{margin-bottom:7px;}
+.article_content .section .sect_opt{}
+.article_content .section .fav_opt{text-align:right;}
+.article_content .section .fav_opt li{display:inline-block;height:23px;vertical-align:top;padding-left:10px;margin-left:2px;*display:inline;}
+.article_content .section .fav_opt li + li{border-left:1px solid #dfdfe1;}
+.article_content .section .fav_switch{overflow:hidden;height:21px;width:24px;border:none;text-indent:-999em;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat #fff;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_hd.png) no-repeat rgba(255,255,255,1);background-size:32px auto;background-position:0 -421px;}
+.article_content .section .fav_opt .booked{background-position:0 -377px;}
+.article_content .share_kakao img{width:23px;height:21px;vertical-align:top;}
+.article_content .rel_goods{margin:18px 0 7px;}
+.article_content .rel_goods h5{background:#e8e8e8;color:#000;font-size:12px;line-height:16px;padding:6px 6px 4px;}
+.article_content .rel_goods .goods_list{padding-top:10px;}
+.article_content .rel_goods .goods_list .title{font-size:12px;line-height:16px;height:32px;}
+.article_content .rel_opt{text-align:right;padding-top:2px;}
+
+.article_siblings{font-size:14px;line-height:18px;margin-bottom:18px;}
+.article_siblings li{border-bottom:1px solid #dedede;}
+.article_siblings a{color:#484848;display:block;padding:6px 10px 9px;}
+.article_siblings .btn_nav{color:#706f6f;padding-right:20px;letter-spacing:-1px;margin-right:7px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_hd.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:right -42px;}
+.article_siblings .btn_after{background-position:right -86px;}
+
+/* Board Write */
+.board_write{padding:10px;}
+.board_write .input_frame .basic_input{display:block;margin-bottom:10px;}
+.board_write .input_knick input,.board_write .input_title input{height:32px;line-height:32px;}
+.board_write .input_frame .input_text textarea{height:140px;padding:6px 2%;resize:none;}
+.board_write .btn_add_pic{vertical-align:top;width:99px;height:24px;border:1px solid #a6a6a5;background:url(//img.miclub.com/newmiclub/m_baby/img/add_img_sd.png) no-repeat 0 0 #fff;background:url(//img.miclub.com/newmiclub/m_baby/img/add_img_hd.png) no-repeat 0 0 rgba(255,255,255,1);background-size:97px 22px;}
+.board_write .btn_add_pic span{display:block;overflow:hidden;text-indent:-999em;}
+.board_write .pic_list{overflow:hidden;zoom:1;min-width:300px;margin:5px 0;}
+.board_write .pic_list li{float:left;width:55px;height:44px;background:#e0e0e0;overflow:hidden;position:relative;margin-left:5px;}
+.board_write .pic_list li:first-child{margin-left:0;}
+.board_write .pic_list .thumb{display:block;}
+.board_write .pic_list .pic_del{position:absolute;display:block;width:16px;height:16px;background:url(//img.miclub.com/newmiclub/m_baby/img/btn_del_pic.png) no-repeat 0 0;z-index:10;right:0;bottom:0;border:none;}
+.board_write .pic_list .pic_del span{display:block;overflow:hidden;text-indent:-999em;}
+.board_write .pic_caution{font-size:11px;color:#7c7c7c;letter-spacing:-1px;}
+.board_write .cate_select{border-width:2px;margin:12px 0 20px;}
+.board_write .cate_select select{height:30px;padding:5px 0;}
+.board_write .submit_opt{text-align:center;margin-bottom:20px;}
+.board_write .submit_opt button{width:96px;height:30px;padding-top:1px;border:none;background:#7f7f7f;color:#fff;font-size:14px;line-height:30px;}
+
+
+/* Side Content */
+.side_sect{margin-bottom:19px;}
+.side_sect .sect_head{background:#e8e8e8;font-size:14px;font-weight:bold;color:#000;line-height:20px;}
+.side_sect .sect_head a{color:#000;display:block;padding:3px 10px;background:url(//img.miclub.com/newmiclub/m_baby/img/ico_view_message.png) no-repeat right center;}
+.side_sect .board{}
+.side_sect .board li{border-bottom:1px solid #e6e6e6;font-size:15px;line-height:20px;color:#484848;}
+.side_sect .board li a{display:block;color:#484848;padding:7px 5px 4px 11px;}
+.side_sect .board .qnt{color:#ff5f78;}
+.side_recipe .sect_body{padding-top:14px;}
+.side_recipe .dot_paging{margin-top: 16px;}
+
+/* Finding setting */
+.fav_setting{border-top:2px solid #a8a8a8;}
+.fav_setting .btn_wrap{border-bottom:1px solid #c2c2c2;padding:10px;}
+.fav_setting .btn_fav_set{display:block;background:#cd0069;font-size:14px;color:#fff;line-height:18px;padding:6px 0 5px;text-shadow:1px 1px 1px rgba(0,0,0,.8);font-weight:bold;text-align:center;margin-bottom:4px;}
+.fav_setting .fav_filter{font-size:12px;line-height:18px;letter-spacing:-1px;}
+.fav_setting .fav_filter dt{display:inline;color:#6b6b6b;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat 0 5px;padding-left:6px;}
+.fav_setting .fav_filter dd{display:inline;color:#cd0069;}
+.fav_setting .set_opt{background:#f7f7f7;border-bottom:1px solid #c2c2c2;padding:32px 0 7px;box-shadow:inset 0 10px 10px -10px rgba(50,50,50,.2),inset 0 -10px 10px -10px rgba(50,50,50,.2);position:relative;}
+.fav_setting .refrash{position:absolute;cursor:pointer;overflow:visible;padding-left:16px;font-size:12px;height:18px;line-height:19px;top:6px;right:9px;border:none;letter-spacing:-1px;color:#484848;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_hd.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:0 -510px;}
+.fav_setting .keyword_table_wrap{margin:0 10px 12px;}
+.fav_setting .keyword_table{width:100%;border-collapse:collapse;table-layout:fixed;position:relative;}
+.fav_setting .keyword_table td{border:1px solid #c9cdcf;text-align:center;padding:0;height:auto;font-size:14px;background:#fff;overflow:hidden;padding:1px;}
+.fav_setting .keyword_table input{position:absolute;z-index:-1;top:10px;left:10px;}
+.fav_setting .keyword_table label{display:block;width:100%;height:100%;color:#000;zoom:1;overflow:hidden;}
+.fav_setting .keyword_table label span{display:inline-block;margin:5px 10px 3px;}
+.fav_setting .keyword_table input:focus + label{outline:1px dotted #aaa;outline-color:rgba(100,100,100,.5)}
+.fav_setting .keyword_table .checked{background:#989898;box-shadow:inset 3px 3px 7px rgba(57,62,65,.65);}
+.fav_setting .keyword_table .checked label{color:#fff;font-weight:bold;letter-spacing:-1px;}
+.fav_setting .keyword_table .checked label span{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_filter_check.png) 0 center no-repeat;padding-left:17px;}
+.fav_setting .filter_item{}
+.fav_setting .filter_list{margin:0 7px;zoom:1;}
+.fav_setting .filter_list:after{content:"";display:block;clear:both;}
+.fav_setting .filter_list li{float:left;width:50%;*width:49.9%;margin-bottom:7px;}
+.fav_setting .filter_list .select_frame{margin:0 3px;border:2px solid #c6cacc;}
+.fav_setting .filter_list select{height:22px;line-height:22px;font-size:14px;}
+.fav_setting .submit_opt{text-align:center;margin-top:11px;}
+.fav_setting .save_filter{position:absolute;left:10px;bottom:12px;font-size:12px;color:#393e41;}
+.fav_setting .save_filter input{vertical-align:middle;}
+.fav_setting .confirm{height:27px;width:93px;background:#7f7f7f;line-height:27px;font-weight:bold;color:#fff;border:none;cursor:pointer;font-size:14px;}
+.fav_setting .close_opt{cursor:pointer;position:absolute;bottom:13px;right:7px;font-size:13px;line-height:17px;height:17px;color:#333;border:none;padding-left:10px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_hd.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:0 -551px;}
+.fav_setting .filter_keyword{margin:0 10px;}
+.fav_setting .filter_keyword .basic_input{background:#fff;}
+.fav_setting .filter_keyword .basic_input input{line-height:27px;height:27px;color:#000;}
+
+/* Search Recipe */
+.search_recipe{border-top:none;}
+.search_recipe .set_opt{padding-top:27px;}
+.search_recipe .filter_list{margin-bottom:5px;}
+.recipe_result .result_opt{padding:7px 10px 6px;border-bottom:1px solid #E2E2E2;}
+.recipe_result .result_opt .result_text{color:#6b6b6b;font-size:12px;line-height:16px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat 0 6px;padding-left:6px;}
+
+/* Amazones */
+.amazones_header{padding: 16px 10px 17px;border-bottom: 1px solid #dedede;}
+.amazones_header .head_box{position: relative;zoom:1;}
+.amazones_header .warning{font-size: 13px;line-height: 16px;margin-right: 63px;}
+.amazones_header .ico_adult{height: 15px;vertical-align:top;}
+.amazones_header .head_opt{position: absolute;top: 0;right: 0;}
+.amazones_header .btn_opt{display: block;width: 30px;height: 30px;padding: 0;float: left;border: 1px solid #a6a6a6;border-left-width:0;text-align: left;text-indent: -100px;overflow: hidden;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_amazones_ie.png) no-repeat #fff;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_amazones.png) no-repeat rgba(255,255,255,1);background-size:32px auto;}
+.amazones_header .btn_search{border-left-width: 1px;background-position: 0 -1px;}
+.amazones_header .btn_refresh{background-position: 0 -67px;}
+.amazones_header .search_form{margin:17px 0 0;}
+.amazones_write{background: #f2f2f2;border-bottom: 1px solid #dedede;padding: 10px;position: relative;}
+.amazones_write input[type=text]{height: 28px;line-height: 28px;border: 1px solid #c7c7c7;color: #696969;box-shadow:inset 1px 2px 3px rgba(0,0,0,.1);font-size: 14px;padding: 0 1%;background: #fff;}
+.amazones_write input[type=text]{}
+.amazones_write .input_name{width: 140px;}
+.amazones_write .write_opt{margin-bottom: 6px;}
+.opt_btns{position: absolute;top:12px;right:10px;overflow: hidden;zoom:1;}
+.opt_btns li{float: left;}
+.opt_btns li + li{background:url(//img.miclub.com/newmiclub/m_miclub/img/head_menu_div.png) no-repeat 0 -195px;padding-left: 10px;margin-left: 5px;}
+.opt_btns .opt_btn{display: block;width: 28px;height: 26px;overflow: hidden;text-align: left;text-indent: -100px;border: none;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_amazones_ie.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_amazones.png) no-repeat rgba(255,255,255,0);background-size:32px auto;}
+.opt_btns .btn_link{background-position:0px -133px;}
+.opt_btns .btn_cam{background-position: 0px -200px;}
+.amazones_write .write_body {background: #fff;margin-bottom: 6px;padding: 4px 1%;border: 1px solid #c7c7c7;box-shadow:inset 1px 2px 3px rgba(0,0,0,.1);}
+.amazones_write .comment_image{display: none;}
+.amazones_write .write_body textarea{width:100%;height: 50px;resize:none;font-size: 14px;color: #696969;border: none;}
+.amazones_write .write_link{position: relative;}
+.amazones_write .write_link .input_link{width: 96%;padding-right: 3%;}
+.amazones_write .btn_clear{display: block;width: 35px;height: 30px;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_clear.png) no-repeat 50% 50%;border: none;text-align: left;text-indent: -100px;overflow: hidden;}
+.amazones_write .write_link .btn_clear{position: absolute;top: 0;right: 0;}
+.amazones_write .btn_submit{font-size: 14px;color: #fff;font-weight: bold;width: 96px;height: 27px;background: #7f7f7f;border: none;line-height: 27px;}
+.amazones_write .write_submit{text-align: center;margin: 10px 0 1px;}
+.amazones_board{margin-bottom: 20px;}
+.amazones_board .reply_list{border-top: none;}
+.amazones_board .reply_list .reply_form{border-top: none;border-bottom: 1px solid #dedede;}
+.amazones_content .article_opt{margin-bottom: 20px;}
+
+/* Search No Result */
+.no_result{margin-bottom: 20px;}
+.no_result .result_comment{font-size:18px;color:#393e41;text-align:center;margin:20px 10px 14px;}
+.no_result .result_comment strong{color:#000;}
+.no_result .search_tips{font-size:15px;margin:0 12px 16px;}
+.no_result .search_tips li{padding-left:7px;color:#393e41;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_hd.png) no-repeat rgba(255,255,255,0);background-size:32px auto;background-position:0 -772px;margin-bottom:4px;}
+.no_result .btn_prev{background:#7f7f7f;color:#fff;font-size:14px;text-align:center;font-weight:bold;line-height:18px;padding:7px 5px 6px;width:50px;display:block;margin:0 auto;}
+
+/* Alert */
+.alert_wrap{position:absolute;width:100%;height:120%;background:url("//img.miclub.com/newmiclub/tv_talk/img/blind_bg.png");background:rgba(0,0,0,0.6);top:0;left:0;z-index:100;}
+.alert_wrap .alert_box{position:absolute;background:#393e41;top:45%;left:50%;margin:-145px 0 0 -140px;width:244px;padding:12px 15px 19px;border: 3px solid #393e41;z-index:3;}
+.alert_wrap .alert_box h1{margin:0 auto 13px;font-size:18px;text-align: center;line-height: 24px;color: #fff;}
+.alert_wrap .alert_box .alert_caution{font-size:13px;color:#c4cbd0;line-height:1.4;}
+.alert_wrap .alert_box .select_box{height: 30px;border: 2px solid #c6cacc;position: relative;background: #fff;}
+.alert_wrap .alert_box .select_box .acc{position: absolute;display: block;border-left:1px solid #c6cacc;height: 30px;z-index: 1;top: 0;right: 0;width: 30px;background:url(//img.miclub.com/newmiclub/m_baby/img/btn_cover_notice.png) no-repeat -2px -2px;}
+.alert_wrap .alert_box .select_box select{background:transparent;border: none;width: 98%;height:30px;padding: 5px 1%;position: absolute;top: 0;left: 0;z-index: 10;}
+.alert_wrap .alert_box .user_info{font-size: 12px;color: #c4cbd0;}
+.alert_wrap .alert_box .user_info .nickname{color:#fff;}
+.alert_wrap .alert_box .alert_btns{text-align:center;}
+.alert_wrap .alert_box .alert_btn{display:inline-block;*zoom:1;height:31px;width:96px;background:#7f7f7f;cursor:pointer;margin-left:3px;line-height:31px;color:#fff;font-weight:bold;font-size:14px;border: none;}
+.alert_wrap .alert_box .btn_report{background: #ff5f78;margin-left: 0;}
+.alert_wrap .alert_comment .alert_caution{margin-bottom: 12px;}
+.alert_wrap .alert_comment .select_box{margin-bottom: 12px;}
+.alert_wrap .alert_comment .user_info{margin-bottom: 21px;}
+
+/* Setting */
+.setting_home{padding:20px 10px 32px;}
+.setting_home h2{font-size:16px;color:#000;line-height:20px;padding-left:12px;margin-bottom:6px;}
+.setting_home .ico_new{width:15px;height:13px;vertical-align:text-top;margin-top:2px;}
+.basic_setting{border:1px solid #d1d1d1;border-radius:10px;margin-bottom:28px;}
+.basic_setting .set_link li{border-top:1px solid #d1d1d1;font-size:16px;line-height:20px;background:url(//img.miclub.com/newmiclub/m_baby/img/ico_view_message.png) no-repeat right center;}
+.basic_setting .set_link li.first{border-top:none;}
+.basic_setting .set_link a{display:block;color:#000;padding:15px 30px 15px 11px;}
+.basic_setting .set_link .caution{color:#666;font-size:12px;vertical-align:middle;}
+.basic_setting .set_link .login{color:#6D84E4;float:right;margin-right:10px;*margin-top:-35px;*margin-right:40px;}
+.arlam_setting .set_frame{border:1px solid #d1d1d1;border-radius:10px;}
+.arlam_setting .set_list li{}
+.arlam_setting .set_list label{display:block;overflow:hidden;height:20px;line-height:20px;font-size:16px;color:#666;margin:12px 5px;background:url(//img.miclub.com/newmiclub/m_miclub/img/pack_subv_sd.png) no-repeat 9px 8px;padding:0 13px 0 18px;}
+.arlam_setting .set_list input{float:right;margin-top:3px;*margin-top:-20px;}
+.login_main{min-height:300px;}
+.login_main .login_text_01 {font-size:15px; text-align:center;line-height:1.6em;letter-spacing:-0.5px;margin:35px 0 -35px 0;}
+.h_335 {min-height:335px;}
+.login_main .user_info{text-align:center;padding:25px 0 32px;}
+.login_main .user_info .id{font-size:24px;color:#cd0069;font-weight:bold;line-height:30px;}
+.login_main .user_info .email{font-size:14px;color:#666;}
+.login_main .log_opt{text-align:center;width:300px;margin:0 auto 20px;}
+.login_main .btn_logout{text-align:center;font-size:17px;font-weight:bold;color:#fff;text-shadow:1px 1px 1px rgba(0,0,0,.5);background:#cd0069;display:block;line-height:20px;padding:9px 0;margin-bottom:6px;}
+.login_main .signin_opt{margin:0 30px;}
+.login_main .dual_wrap{overflow:hidden;zoom:1;text-align:center;margin:0 auto 20px;}
+.login_main .dual_wrap .btn_dual{display:block;float:left;background:#7f7f7f;color:#fff;font-size:14px;line-height:18px;font-weight:bold;width:49%;padding:6px 0;}
+.login_main .dual_wrap .btn_dual:first-child{margin-right:2%}
+.login_main .dual_wrap .edit_info{margin-left:0;}
+.login_main .btn_colspan{display:block;background:#7f7f7f;color:#fff;font-size:14px;line-height:18px;padding:6px 0;font-weight:bold;margin:0 0 7px;text-align:center;}
+.login_main .basic_input input{height:32px;line-height:32px;}
+.login_main .email_form{overflow:hidden;zoom:1;position:relative; padding-right:90px;}
+.login_main .email_form .tit_caution{padding-top:42px;font-size:11px;color:#696969;line-height:15px;}
+.login_main .email_form .txt{padding:0; color:#c06;}
+.login_main .email_form .txt2{padding-top:10px; color:#c06;}
+.login_main .email_form .input_email{float:left;width:46%;display:block;}
+.login_main .email_form .basic_input{display:block;padding:0;width:auto;}
+.login_main .email_form .basic_input input{padding:0 4%;width:92%;height:32px;line-height:32px;}
+.login_main .email_form .email_div{display:block;float:left;width:6%;text-align:center;padding-top:9px;}
+.login_main .unique_form{position:relative;padding-right: 74px;}
+.login_main .unique_form .check_unique{position:absolute;top:0;right:0;width:68px;height:34px;background:#fff;border:1px solid #a6a6a5;font-size:14px;line-height:33px;color:#484848;}
+.login_main .input_knick{padding-right:0;}
+.login_main .edit_info_wrap{padding:0 10px;margin-bottom:18px;}
+.login_main .edit_knick{margin-bottom:10px;padding-right:0;}
+.login_main .login_form{margin:18px 30px 18px;}
+.login_main .login_form .miclub_text{text-align:center;font-size:12px;color:#504f4f;margin-bottom:18px;}
+.login_main .login_form .input_set{position:relative;padding-right:80px;margin-bottom:10px;}
+.login_main .login_form .input_set span{display:block;}
+.login_main .login_form .input_set .basic_input input{width:90%;padding:0 5%;}
+.login_main .login_form .input_set .bg{background-image:url(//img.miclub.com/newmiclub/m_baby/img/text_signup.png);background-repeat:no-repeat;background:url(//img.miclub.com/newmiclub/m_baby/img/text_signup_hd.png) no-repeat rgba(255,255,255,0);background-size:160px auto;}
+.login_main .login_form .input_id{margin-bottom:7px;}
+.login_main .login_form .input_id .bg{background-position:10px -291px;}
+.login_main .login_form .input_pw .bg{background-position:10px -341px;}
+.login_main .login_form .btn_login{position:absolute;top:0;right:0;width:72px;height:75px;border:none;background:#cd0069;color:#fff;font-size:16px;font-weight:bold;text-shadow:1px 1px 1px rgba(0,0,0,.5);*height:78px;}
+.login_main .login_form .input_opt{color:#393e41;font-size:14px;}
+.login_main .login_form .input_opt .txt_p{color:#cd0069;font-size:12px; margin-bottom:5px;}
+.login_main .login_form .input_opt input{vertical-align:baseline;}
+.login_main .certi_wrap{text-align:center;padding-top:48px;}
+.login_main .certi_wrap .caution{font-size:12px;color:#504f4f;margin-bottom:43px;}
+.login_main .certi_wrap .btn_certi{display:block;text-align:center;width:147px;height:29px;line-height:29px;padding-top:1px;background:#7f7f7f;color:#fff;font-size:14px;font-weight:bold;margin:0 auto;}
+.login_main .setting_pw{margin:19px 10px 24px;}
+.login_main .setting_pw .bg{background-image:url(//img.miclub.com/newmiclub/m_baby/img/text_signup.png);background-repeat:no-repeat;background:url(//img.miclub.com/newmiclub/m_baby/img/text_signup_hd.png) no-repeat rgba(255,255,255,0);background-size:160px auto;}
+.login_main .setting_pw .input_pw_now{margin-bottom:20px;}
+.login_main .setting_pw .input_pw_now .bg{background-position:2% -491px;}
+.login_main .setting_pw .input_pw_new{margin-bottom:10px;}
+.login_main .setting_pw .input_pw_new .bg{background-position:2% -541px;}
+.login_main .setting_pw .input_pw_confirm{margin-bottom:6px;}
+.login_main .setting_pw .input_pw_confirm .bg{background-position:2% -591px;}
+.login_main .setting_pw .pw_caution{font-size:11px;color:#696969;}
+/*.login_main .find_pw{padding:16px 10px 0;}*/
+.login_main .find_intro{text-align:center;font-size:12px;color:#504f4f;line-height:16px;margin-bottom:19px;}
+.login_main .find_form{margin-bottom:25px;}
+.login_main .find_form .input_id{margin-bottom:10px;}
+.login_main .find_form .input_knick{margin-bottom:10px;}
+.login_main .agree_term{padding:16px 10px 0;margin:0;}
+.agree_term .section{margin-bottom:15px;font-size:14px;}
+.agree_term .view_detail{width:142px;height:29px;background:#7f7f7f;display:block;margin:11px auto 30px;text-align:center;line-height:29px;padding-top:1px;font-weight:bold;color:#fff;font-size:14px;}
+.login_main .agree_opt{width:280px;margin:0 auto;font-size:14px;color:#393e41;line-height:1.4;padding:26px 0;}
+.login_main .agree_opt .agree_task{margin-bottom:12px;clear:both;overflow:hidden;zoom:1;line-height:20px;}
+.login_main .agree_opt input[type="checkbox"]{vertical-align:baseline;width:13px;height:13px;}
+.login_main .agree_opt .dual_wrap{width:280px;margin-top:15px;}
+.login_main .agree_opt .dual_wrap .btn_dual{width:137px;}
+.login_main .agree_opt .dual_wrap .btn_agree{margin-left:0;background:#cd0069;}
+.login_main .signup_form{padding:19px 10px 11px;}
+.login_main .signup_form .bg{background-image:url(//img.miclub.com/newmiclub/m_baby/img/text_signup.png);background-repeat:no-repeat;background:url(//img.miclub.com/newmiclub/m_baby/img/text_signup_hd.png) no-repeat rgba(255,255,255,0);background-size:160px auto;}
+.login_main .signup_form .input_id .bg{background-position:10px 9px;}
+.login_main .signup_form .input_knick .bg{background-position:10px -41px;}
+.login_main .signup_form .input_referee .bg{background-position:10px -680px;}
+.login_main .signup_form .checkbox_form .bg{background-position: 10px 0;}
+.login_main .signup_form .input_pw .bg{background-position:10px -91px;}
+.login_main .signup_form .input_pw_confirm .bg{background-position:10px -141px;}
+.login_main .signup_form .email_id .bg{background-position:10px -191px;}
+.login_main .signup_form .email_host .bg{background-position:10px -241px;}
+.login_main .signup_form .form_caution{font-size:11px;color:#696969;line-height:15px;margin-top:5px;}
+.login_main .signup_form .form_item{margin-bottom:14px;}
+.login_main .signup_form .input_pw{margin-bottom:10px;}
+.login_main .signup_submit{margin:0 35px 28px 35px;}
+.login_main .edit_checkbox_wrap {padding:0 10px;margin-bottom:21px;}
+.login_main .edit_checkbox_wrap span {display:block;margin-bottom:10px;}
+.login_main .edit_checkbox_wrap label {margin-left:8px;font-size:14px;color:#393e41;}
+.login_main .checkbox_form span {display:block;margin-bottom:10px;color:#c06;font-size:12px;line-height: 12px;}
+.login_main .checkbox_form label {margin-left:8px;font-size:14px;color:#393e41;vertical-align:middle;}
+.login_main .checkbox_form .tit_caution{font-size:10px;color:#6b6b6b;font-weight: bold;}
+
+/* Notice Main */
+.notice_main{}
+.notice_main .notice_list li{border-bottom:1px solid #e2e2e2;}
+.notice_main .notice_list a{display:block;padding:10px 30px 6px 10px;background:url(//img.miclub.com/newmiclub/m_baby/img/ico_view_message.png) no-repeat right center;}
+.notice_main .notice_list .title{display:block;font-size:15px;color:#000;line-height:1.3;margin-bottom:2px;}
+.notice_main .notice_list .date{display:block;font-size:12px;color:#666;}
+.notice_main .header{border-bottom:1px solid #e2e2e2;padding:13px 8px 11px;}
+.notice_main .header h2{font-size:16px;color:#000;line-height:1.3;margin-bottom:2px;}
+.notice_main .header .date{font-size:12px;color:#666;}
+.notice_main .notice_text{font-size:15px;color:#000;padding:12px 9px 26px;line-height:1.4;}
+.notice_main .notice_text img{max-width:100%;}
+.notice_main .page_index{margin:27px 0;}
+.notice_main .search_form{margin:25px auto 19px;width:235px;}
+
+/* Agree Term */
+.agreement_wrap{background-color:#FFF;font-size:14px;line-height:1.6;padding:10px 10px 40px;}
+.agreement_wrap h1{font-size:20px;margin-bottom:40px;}
+.agreement_wrap .section{margin-bottom:50px;}
+.agreement_wrap .section h2{font-size:18px;margin-bottom:15px;}
+.agreement_wrap .section h3{font-size:16px;}
+.agreement_wrap .section p + ol,.agreement_wrap .section p + ul{margin-top:20px;}
+.agreement_wrap .section li{margin-bottom:15px;}
+.agreement_wrap .section li ol,.agreement_wrap .section li ul{margin:20px 0 0 20px;}
+.agreement_wrap .section li ul ul{margin:10px 0 0 0;}
+.agreement_wrap .section li ul ul li{margin-bottom:5px;}
+.agreement_wrap .term_list{margin:30px 0 50px;}
+.agreement_wrap .term_list li{margin-bottom:5px;font-weight:bold;}
+.agreement_wrap table{border-collapse:collapse;border:1px solid #999;margin-bottom:10px;}
+.agreement_wrap table th,.agreement_wrap table td{border:1px solid #999;padding:4px;}
+.agreement_wrap table.privacy_manager{max-width:100%;}
+.agreement_wrap table.privacy_manager dt{clear:both;float:left;}
+.agreement_wrap table.privacy_manager dd{float:left;}
+.agreement_wrap .agree_submit{margin-top:30px;text-align:center;}
+.agreement_wrap .btn_agree{background:#7f7f7f;border:none;color:#fff;cursor:pointer;font-size:14px;font-weight:bold;height:27px;line-height:27px;width:93px;display:inline-block;zoom:1;}
+
+/* popup */
+.pop_ad_wrap {position:absolute;text-align:center;top:50%;width:100%;}
+.pop_ad_wrap .ad_frame {display:inline-block;margin-top:-180px;max-width:90%;position:relative;text-align:center;width:300px;z-index:11;}
+.pop_ad_wrap .ad_frame img {display:block;max-width:100%;width:300px;}
+.pop_ad_wrap .ad_frame .btn_event_view {bottom:35px;left:62px;position:absolute;}
+.pop_ad_wrap .ad_frame .btn_event_view img {width:181px;}
+.pop_ad_wrap .ad_frame .btn_close {background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_popup_x.png) no-repeat scroll 0 0 transparent;height:17px;right:10px;top:8px;width:17px;position:absolute;text-indent:-999em;}
+.pop_ad_wrap .ad_frame .btn_no_today {background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_popup_close.png) no-repeat scroll 0 0 transparent;bottom:2px;height:26px;left:2px;right:2px;position:absolute;text-indent:-999em;}
+
+/* reply paging */
+.reply_list .page_index {margin:20px 0 0;}
+
+/* round banner */
+.round_banner {height:85px;position:fixed;right:10px;width:85px;z-index:2;top:180px;}
+.round_banner img {width:85px;height:85px;}
+.round_banner a {z-index:3;}
+.round_banner .close {position:absolute;right:-4px;text-indent:-999em;top:-4px;z-index:5;width:16px;height:16px;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_x_320.png) no-repeat scroll 0 0 transparent;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_x_640.png) no-repeat scroll 0 0 / 16px 16px rgba(255,255,255,0);}
+/* 아마조네스 위치값 */
+.round_banner_1 {top:180px;}
+/* 일반게시판 위치값 */
+.round_banner_2 {top:280px;}
+
+.refresh_add .btn_opt{width: 24px;height: 24px;padding: 0;border: 1px solid #a6a6a6;text-align: left;text-indent: -100px;overflow: hidden;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_refresh_ie.gif) no-repeat #fff;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_refresh.gif) no-repeat rgba(255,255,255,0);background-size:24px;}
+.refresh_add .btn_refresh{float:right;}
+.refresh_add:after {clear:both;content:"";display:block;height:0;}
+
+/* ad layer popup */
+.ad_layer_pop {position:fixed;right:0;top:0;width:235px;z-index:5;height:100%;}
+.ad_layer_pop .close {background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_layerpop_close25.png) no-repeat scroll 0 0 transparent;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_layerpop_close50.png) no-repeat scroll 0 0 / 25px 25px rgba(0,0,0,0);width:25px;height:25px;z-index:6;position:absolute;top:5px;right:5px;text-indent:-999em;}
+.ad_layer_pop .ad_wrap {display:block;width:235px;}
+.ad_layer_pop .ad_wrap img {display:block;width:100%;}
+
+/* fixed ad popup */
+.fixed_ad {bottom:0;left:0;position:fixed;z-index:10;width:100%;background:#FFFFFF;}
+.fixed_ad .close {background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_ad_close_320.gif) no-repeat scroll 0 0 transparent;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_ad_close.gif) no-repeat scroll 0 0 / 15px 15px rgba(0,0,0,0);width:15px;height:15px;position:absolute;top:0;right:0;text-indent:-999em;z-index:11;}
+.fixed_ad img {display:block;margin:0 auto;width:100%;max-width:640px;}
+.fixed_ad .ad_wrap {display:block;text-align:center;width:100%;height:100%;}
+
+/* ad_for_wrap */
+.ad_for_wrap {width:100%;z-index:0;background:none repeat scroll 0 0 #F3F3F3;}
+.ad_for_wrap span {display:block;width:100%;height:100%;}
+.ad_for_wrap img {display:block;width:100%;max-width:640px;}
+
+/* alliance_notice_wrap */
+.alliance_notice_wrap .strong_txt {border-bottom:2px solid #d6dadd;color:#000000;font-size:18px;display:block;text-align:center;line-height:22px;padding:18px 0;}
+.alliance_notice_wrap .strong_txt span {color:#cd0069;}
+.alliance_notice_wrap .notice_content {border-bottom:1px solid #dedede;padding:20px 10px;}
+.alliance_notice_wrap .notice_content h3 {font-size:16px;margin-bottom:10px;}
+.alliance_notice_wrap .notice_content .text {color:#666666;font-size:15px;line-height:17px;}
+.alliance_notice_wrap .notice_content .email {background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_email_320.gif) no-repeat scroll 9px 8px transparent;background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_email_640.gif) no-repeat scroll 9px 9px / 15px 11px rgba(255,255,255,0);border:1px solid #a6a6a5;color:#666666;display:inline-block;font-size:14px;margin-top:13px;padding:5px 8px 5px 31px;}
+.alliance_notice_wrap .bottom_wrap {border-top:1px solid #DEDEDE;padding:19px 10px 10px;}
+.alliance_notice_wrap .bottom_wrap strong {background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_dot_320.gif) no-repeat scroll 0 12px transparent;color:#000000;background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_dot_640.gif) no-repeat scroll 0 13px / 4px 5px rgba(255,255,255,0);font-size:16px;float:left;letter-spacing:-1px;padding:6px 0 0 12px;}
+.alliance_notice_wrap .bottom_wrap .download_btn {background:#7f7f7f;border-top:1px solid #c3c3c3;border-bottom:1px solid #c3c3c3;color:#ffffff;font-weight:bold;float:right;padding:7px 24px 5px;}
+.alliance_notice_wrap .bottom_wrap .list_wrap {overflow:hidden;margin-bottom:9px;}
+
+/* cmpy_name */
+.cmpy_name {font-size:12px;color:#393e41;padding:0 10px;margin-top:5px;}
+.cmpy_name .cmpy_name_txt {color:#CD0069;}
+
+/* login update total */
+.log_opt .btn_gray {background:none repeat scroll 0 0 #7F7F7F;color:#FFFFFF;display:block;font-size:17px;font-weight:bold;line-height:20px;margin-bottom:6px;padding:9px 0;text-align:center;text-shadow:1px 1px 1px rgba(0,0,0,0.5);}
+.withdrawal_txt {color:#666666;font-size:13px;text-decoration:underline;float:right;}
+.log_opt:after {clear:both;content:"";display:block;height:0;}
+.event_add_upt {text-align:center;padding:20px 0 65px;}
+.event_add_upt p {color:#504F4F;font-size:12px;margin-bottom:15px;text-align:center;}
+.event_add_upt .upt_btn {background:#FFFFFF;border:2px solid #d0d0cf;color:#484848;display:inline-block;font-size:13px;font-weight:bold;letter-spacing:-1px;line-height:18px;padding:5px 20px;}
+.login_main .tit_pwd {color:#666666;font-size:16px;margin-bottom:10px;}
+.login_main .edit_info_wrap .setting_pw{margin:19px 0px 24px;}
+
+/* withdrawal layer popup */
+.withdrawal_pop {display:none;width:300px;background:#FFFFFF;position:fixed;left:50%;margin-left:-150px;top:50%;margin-top:-152px;border-radius:4px;padding:0 0 20px 0;}
+.withdrawal_pop h2 {font-size:22px;color:#333333;text-align:center;margin-top:20px;}
+.withdrawal_pop p {color:#666666;font-size:14px;text-align:center;line-height:20px;letter-spacing:-1px;margin-top:15px;}
+.withdrawal_pop .close {background:url(//img.miclub.com/newmiclub/m_baby/img/btn_x_320.png) no-repeat scroll 0 0 transparent;background:url(//img.miclub.com/newmiclub/m_baby/img/btn_x_720.png) no-repeat scroll 0 0 / 21px 20px rgba(255,255,255,0);width:21px;height:20px;text-indent:-999em;position:absolute;top:17px;right:17px;}
+.withdrawal_pop .basic_input {width:200px;margin:20px auto;}
+.withdrawal_pop .basic_input .bg {background:url(//img.miclub.com/newmiclub/m_baby/img/bg_pwd_txt_320.gif) no-repeat scroll center 8px transparent;background:url(//img.miclub.com/newmiclub/m_baby/img/bg_pwd_txt_720.gif) no-repeat scroll center 8px / 66px 12px rgba(255,255,255,0);}
+.withdrawal_pop input {height:28px;line-height:28px;}
+.withdrawal_pop .dual_wrap {margin:0 auto;overflow:hidden;text-align:center;width:270px;}
+.withdrawal_pop .btn_dual {background-color:#7f7f7f;color:#FFFFFF;display:block;float:left;font-size:14px;font-weight:bold;line-height:18px;padding:6px 0;width:130px;}
+.withdrawal_pop .btn_save {margin-right:10px;}
+#maskWrap {width:100%;height:100%;position:fixed;background:#000000;opacity:0.3;top:0;left:0;display:none;}
+
+.withdrawal_pop2 .dual_wrap {margin:20px auto 0;}
+
+.pwd_input_wrap {padding-top:30px;text-align:center;}
+.pwd_input_wrap .txt {color:#504F4F;font-size:12px;margin-bottom:20px;line-height:16px;}
+.login_main .pwd_input_wrap .input_pw_input .bg {background:url(//img.miclub.com/newmiclub/m_baby/img/bg_pwd_txt_320.gif) no-repeat scroll center 9px transparent;background:url(//img.miclub.com/newmiclub/m_baby/img/bg_pwd_txt_720.gif) no-repeat scroll center 9px / 66px 12px rgba(255,255,255,0);}
+.login_main .pwd_input_wrap .input_pw_input {margin-bottom:13px;}
+.login_main .pwd_input_wrap .btn_gray {background:none repeat scroll 0 0 #7F7F7F;color:#FFFFFF;font-size:14px;font-weight:bold;letter-spacing:-1px;line-height:18px;padding:6px 0px;display:inline-block;text-align:center;margin:0 auto;width:147px;}
+
+/* sub_banner_wrap */
+.sub_banner_wrap {background:none repeat scroll 0 0 #FFFFFF;margin-top:-1px;margin-bottom:17px;}
+.sub_banner_wrap img {display:block;margin:0 auto;max-height:80px;max-width:640px;width:100%;}
+
+/* btn_center */
+.btn_center {margin:0 auto;}
+.btn_center .btn_style_01 {background:#cd0069;color:#FFFFFF;display:block;font-size:17px;font-weight:bold;line-height:20px;text-align:center;padding:9px 0; text-shadow: 0 1px rgba(0,0,0,0.5);}
+.btn_center .btn_style_02 {background:#ffffff;border:2px solid #999999;color:#333333;display:block;font-size:17px;font-weight:bold;line-height:20px;text-align:center;padding:7px 0;}
+.btn_center .btn_style_03 {background:#7f7f7f;color:#FFFFFF;display:block;font-size:17px;font-weight:bold;line-height:20px;text-align:center;padding:9px 0;}
+.btn_center .phone_img {background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_phone_320.png) no-repeat scroll 88px 9px #cd0069;background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_phone_720.png) no-repeat scroll 33% 9px / 12px 19px rgba(205,0,105,71);margin:66px 0 20px;padding:9px 0 9px 15px;}
+.btn_center .ipin_img {background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_ipin_320.png) no-repeat scroll 85px 9px #cd0069;background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_ipin_720.png) no-repeat scroll 33% 9px / 18px 18px rgba(205,0,105,71);padding:9px 0 9px 15px;}
+.btn_center .email_img {background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_email_320.png) no-repeat scroll 85px 9px #cd0069;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_email_640.png) no-repeat scroll 33% 9px / 24px 18px rgba(205,0,105,71);padding:9px 0 9px 15px;}
+.confirm_txt {color:#666666;font-size:12px;text-align:center;margin-top:16px;}
+
+.join_info_txt {text-align:center;margin:25px 0 10px;}
+.join_info_txt p {color:#666666;line-height:22px;font-weight:bold;font-size:15px;}
+.join_info_txt span {color:#cd0069;}
+.bak_gray_box {background:#f3f3f3;text-align:left;padding:7px 12px;margin:0 10px;}
+.bak_gray_box p {background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_dot_320.gif) no-repeat scroll left 4px transparent;background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_dot_640.gif) no-repeat scroll left 4px / 4px 5px rgba(0,0,0,0);color:#666666;font-size:12px;padding-left:10px;line-height:16px;}
+.user_join_info {margin:10px 0;text-align:center;}
+.user_join_info strong {display:block;color:#333333;line-height:20px;font-size:15px;}
+
+/* service inspection page */
+.service_inspection {border-top:1px solid #bdc2c8;overflow:hidden;}
+.service_inspection .logo {display:block;height:70px;margin:40px auto 30px;width:235px;}
+.service_inspection .txt_box {background:#f3f3f3;border-radius:5px;margin:0 auto 65px;padding:14px 8px 9px;width:290px;}
+.service_inspection .txt_box p {color:#666666;font-size:13px;line-height:18px;margin:0 0 5px 0;padding-left:10px;}
+.service_inspection .txt_box .dot {background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_dot_320.gif) no-repeat scroll left 5px transparent;background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_dot_640.gif) no-repeat scroll left 5px / 5px 5px rgba(0,0,0,0);}
+
+/* quiescence_id */
+.quiescence_id {overflow:hidden;}
+.quiescence_id .bak_gray_box {text-align:center;padding:18px 0;}
+.quiescence_id .bak_gray_box strong {color:#333333;font-size:15px; font-weight: normal;}
+.quiescence_id .join_info_txt {margin:60px 0 10px; line-height:12px;}
+.quiescence_id .join_info_txt1 {margin:25px 0 10px; }
+.quiescence_id .join_info_txt .tit_p { line-height:22px; color:#333; font-size:16px; letter-spacing: -1px; padding-top:10px; }
+.quiescence_id .join_info_txt .txt { line-height:16px; color:#333; font-size:12px; letter-spacing: -1px; margin:0; font-weight: normal;}
+.quiescence_id .join_info_txt span {color:#333; }
+.quiescence_id .bak_gray_box strong {color:#c06; }
+
+.quiescence_id .join_info_txt img {width:53px;}
+.quiescence_id .btn_center .phone_img {margin:0 0 5px; text-shadow:0px 1px #000; }
+.quiescence_id .quies_area {margin:0 0 5px;}
+.quiescence_id .txt {color:#666666;font-size:14px;line-height:18px;text-align:center;margin:14px 0;}
+.quiescence_id .btn_center { margin:55px 10px 0px;}
+.quiescence_id .quies_area {margin:0 10px; padding-bottom: 30px;}
+.quiescence_id .quies_area .input_style {display:block; width:100%; box-sizing: border-box; padding:9px 0 9px 5px; margin:0 0 5px; }
+.quiescence_id .quies_area input::-webkit-input-placeholder {font-size:14px; color:#333; }
+.quiescence_id .quies_area input::-ms-input-placeholder {font-size:14px; color:#333; }
+.quiescence_id .quies_area input::-moz-input-placeholder {font-size:14px; color:#333; }
+.quiescence_id .form_item .dot {background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_dot_320.gif) no-repeat scroll left 6px transparent;background:url(//img.miclub.com/newmiclub/m_miclub/img/icon_dot_640.gif) no-repeat scroll left 6px / 5px 5px rgba(0,0,0,0);font-size:13px;line-height:18px;margin:0 0 20px;padding-left:10px;}
+.quiescence_id .signup_form .input_pw .bg {background-position:10px -341px;}
+.quiescence_id .signup_form .input_pw_confirm .bg {background-position:10px -636px;}
+.quiescence_id .signup_form .email_id .bg {background-position:10px -441px;}
+
+/* sect_event */
+.sect_event {border-top:1px solid #e9e9e9;margin:0 10px;padding:15px 0 20px;position:relative;}
+.sect_event h2 {background-position:0 -485px;font-size:16px;padding-left:23px;}
+.sect_event .link_more {top:16px;}
+.sect_event .main_event_banner {padding:10px 0 15px;}
+.sect_event .main_event_banner img {width:100%;}
+
+/* scrap landing */
+.main_header{background:#393e41;color:#fff;}
+.main_header .head_main{position:relative;}
+.main_header .headline{text-align:center;padding:7px 50px;}
+.main_header .headline h1{font-size:20px;line-height:30px;letter-spacing:-1px;}
+.event_scrap{padding:20px 0 28px;background:#fff;text-align:center;}
+.event_scrap .event_thumb{display:block;margin:0 auto 26px;}
+.event_scrap .symbol_img{width:240px;display:block;margin:0 auto 23px;}
+.event_scrap .event_text{text-align:center;font-size:14px;line-height:1.5;color:#666;margin-bottom:19px;}
+.event_scrap .copy_text{font-size:17px;color:#333;font-weight:bold;}
+.event_scrap .link_event{display:inline-block;vertical-align:top;background:#cd0069;color:#fff;font-weight:bold;font-size:14px;line-height:23px;padding:1px 6px 0;text-align:center;margin:0 auto;}
+
+.board_list_wrap .evt_status{display:inline-block;font-size:12px;color:#fff;background:#8b9bdf;line-height:16px;padding:2px 5px 1px;vertical-align:top;margin-right:7px;zoom:1;font-weight:bold;}
+.board_list_wrap .evt_off{background:#acacac;}
+.board_list_wrap .evt_info{font-size:12px;line-height:17px;color:#666;overflow:hidden;zoom:1;margin-right:70px;}
+.board_list_wrap .evt_info dt{float:left;clear:both;margin-right:.3em;}
+.board_list_wrap .evt_info dd{height:17px;overflow:hidden;}
+.event_list_wrap .board_list .thumb{width:100px;}
+.event_list_wrap .board_list .thumb img{width:100px;height:92px;}
+.side_event .evt_dday {min-width:54px;text-align:center;padding:1px 4px 0;font-size:18px;line-height:23px;color:#fff;background:#4bc6b4;font-weight:bold;-webkit-border-radius:5px;border-radius:5px;display:inline-block;letter-spacing:-1px;}
+.side_event .board_list .evt_dday {bottom:9px;position:absolute;right:10px;}
+.side_event .evt_dday em {font-style:normal;}
+.side_event .board_list_wrap .board_list li {border-bottom:none;}
+.side_event .board_list_wrap .f_1{background:#bdbdbd;}
+.side_event .board_list_wrap .f_2{background:#63a8dc;}
+
+.event_slider{position:relative;min-height:25px;}
+.event_slider .banner_list a{display:block;}
+.event_slider .banner_list img{width:100%;display:block;}
+.event_slider .dot_nav_comp{position:absolute;background:#999;background:rgba(0,0,0,.5);bottom:0;left:0;padding:9px 0;width:100%;}
+
+.dot_nav_comp{text-align:center;}
+.dot_nav_comp .dot_list{height:7px;line-height:7px;font-size:6px;}
+.dot_nav_comp li{display:inline-block;vertical-align:top;margin:0 1px;*display:inline;zoom:1;}
+.dot_nav_comp li span{display:block;width:6px;height:6px;overflow:hidden;text-indent:-200px;background:#bebebe;-webkit-border-radius:50%;border-radius:50%;}
+.dot_nav_comp .selected span{background:#cd0069;}
+
+.event_content .evt_dday{min-width:54px;text-align:center;padding:1px 4px 0;font-size:18px;line-height:23px;color:#fff;background:#cd0069;font-weight:bold;-webkit-border-radius:5px;border-radius:5px;display:inline-block;letter-spacing:-1px;}
+.event_content .evt_dday em{font-style:normal;}
+.event_content .f_1{background:#bdbdbd;}
+.event_content .f_2{background:#63a8dc;}
+.event_content .board_list .evt_dday{position:absolute;bottom:9px;right:10px;}
+.event_content .reply_count{font-size:12px;line-height:16px;color:#000;padding:11px 8px;background:#fff;}
+.event_content .reply_count em{font-style:normal;}
+.event_content .my_event_txt{color:#666;font-size:12px;line-height:17px;text-align:center;margin:15px 0 0;}
+
+.event_article{overflow:hidden;}
+.event_article .board_header{overflow:hidden;*zoom:1;}
+.event_article .evt_thumb{float:left;width:100px;}
+.event_article .evt_thumb img{vertical-align:top;width:100%;}
+.event_article .event_info{margin-left:110px;}
+.event_article .board_header h3{font-size:15px;line-height:18px;margin-bottom:5px;}
+.event_article .sub_info{font-size:12px;line-height:17px;color:#666;overflow:hidden;zoom:1;}
+.event_article .sub_info dt{float:left;clear:both;margin-right:.3em;}
+.event_article .sub_info dd{}
+.event_article .board_header .evt_dday{position:absolute;bottom:35px;right:10px;}
+.event_article .event_opt_top{margin-top:10px;}
+.event_article .event_opt{margin-bottom:10px;}
+.event_article .submit_opt{text-align:center;}
+.event_article .submit_opt .submit{height:27px;width:96px;background:#cd0069;font-weight:bold;color:#fff;font-size:14px;line-height:27px;border:none;}
+.event_article .event_opt .tip_txt{font-size:12px;color:#67b873;text-align:center;line-height:17px;margin-bottom:10px;}
+
+.share_comp{text-align:center;}
+.share_comp a{margin:0 2px;display:inline-block;vertical-align:top;}
+.share_comp img{height:27px;vertical-align:top;}
+
+.event_apply_form{background:#f2f2f2;border:1px solid #e2e2e2;border-width:1px 0;}
+.event_apply_form .tit_wrap{margin-bottom:10px;display:table;width:100%;}
+.event_apply_form .reply_tit{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_reply_line.gif) no-repeat 100% 50%;font-size:15px;color:#000;padding-right:9px;display:table-cell;vertical-align:middle;width:65px;}
+.event_apply_form .reply_ex{font-size:12px;color:#696969;line-height:16px;display:table-cell;vertical-align:middle;padding-left:10px;}
+.event_apply_form .input_reply{background:#fff;}
+.event_apply_form .submit{background:#cd0069;font-weight:bold;}
+
+.event_entry{background:#fff;overflow:hidden;}
+.event_entry .notice{background:#747a7d;color:#fff;text-align:center;font-size:12px;line-height:18px;padding:6px 0;}
+.entry_sect{padding:0 10px;margin-top:15px;}
+.event_entry h4{font-size:14px;line-height:20px;color:#393e41;margin-bottom:10px;}
+.event_entry .info_edit_wrap{padding-bottom:20px;}
+.info_edit_wrap .input_wrap{overflow:hidden;margin-bottom:16px;zoom:1;}
+.info_edit_wrap .left_tit{float:left;width:30%;font-size:14px;line-height:20px;padding-top:8px;}
+.info_edit_wrap .left_tit label{display:block;}
+.info_edit_wrap .right_input{float:left;width:70%;font-size:14px;}
+.info_edit_wrap .basic_input input{height:32px;line-height:32px;}
+.info_edit_wrap .input_radio .right_input{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_reply_line.gif) no-repeat 0 50%;}
+.info_edit_wrap .radio_btn{line-height:20px;float:left;width:50%;text-align:center;}
+.info_edit_wrap .radio_btn input{margin-left:5px;}
+.info_edit_wrap .select_frame{width:113px;display:inline-block;vertical-align:top;}
+.info_edit_wrap .select_frame select{}
+.info_edit_wrap .input_email{float:left;}
+.info_edit_wrap .email_id{width:38%;}
+.info_edit_wrap .pt0{padding-top:0;}
+.info_edit_wrap .email_host{width:54%;}
+.info_edit_wrap .email_div{float:left;width:8%;text-align:center;line-height:34px;}
+.info_edit_wrap .input_num{float:left;}
+.info_edit_wrap .phone_div{float:left;width:5%;line-height:34px;text-align:center;}
+.info_edit_wrap .num_1{width:24%;}
+.info_edit_wrap .num_2{width:33%;}
+.info_edit_wrap .num_3{width:33%;}
+.info_edit_wrap .add_num_1{width:24%;}
+.info_edit_wrap .add_num_2{width:24%;}
+.info_edit_wrap .address_num{overflow:hidden;}
+.info_edit_wrap .add_btn{width:47%;float:left;text-align:right;}
+.info_edit_wrap .add_btn .btn_gray{background:#7f7f7f;color:#fff;font-weight:bold;letter-spacing:-1px;line-height:18px;padding:6px 0;width:96px;font-size:13px;margin:2px 0 0 10px;text-align:center;display:inline-block;}
+.info_edit_wrap .address_1,.info_edit_wrap .address_2{margin-top:10px;}
+.info_edit_wrap .address_1{line-height: 32px; height:32px;}
+.event_entry .ex_box{margin-bottom:10px;}
+.event_entry textarea{padding:2%;font-size:14px;line-height:18px;height:72px;color:#393e41;}
+.event_entry .check_agree{font-size:14px;color:#393e41;line-height:18px;margin-bottom:15px;}
+.event_entry .submit_opt{text-align:center;padding-bottom:24px;}
+.event_entry .event_join_btn{background:#cd0069;font-size:14px;font-weight:bold;border:none;color:#fff;height:27px;line-height:27px;width:96px;}
+.event_entry .gray_btn{background:#7F7F7F;border:none;font-size:14px;font-weight:bold;color:#fff;}
+.event_entry .dual_btn{width:147px;padding:6px 0;line-height:18px;height:auto;}
+.event_entry .cmpy_name {margin:-5px 0 10px;padding:0;}
+
+.event_fin_text{border-top:1px solid #e2e2e2;margin-top:10px;padding:15px 10px 20px;}
+.event_fin_text h4{font-size:15px;color:#000;line-height:20px;margin-bottom:10px;}
+.event_fin_text .winner_list li{margin-bottom:5px;overflow:hidden;}
+.event_fin_text .winner_list span{color:#666666;float:left;font-size:13px;width:33.33%;text-align:center;}
+.event_fin_text .winner_list span:first-child{text-align:left;}
+.event_fin_text .winner_list span:last-child{text-align:right;}
+.event_fin_text .win_notice{margin-top:15px;}
+.event_fin_text .win_notice strong{font-size:15px;color:#6d84e4;}
+.event_fin_text .win_notice p{font-size:13px;color:#666666;line-height:17px;}
+.event_fin_text .event_detail_notice{margin-top:20px;}
+.event_fin_text .event_detail_notice p{font-size:13px;color:#666666;line-height:17px;}
+.event_fin_text .winner_note{position:relative;margin-top:15px;}
+.event_fin_text .winner_note h4{font-size:15px;color:#000000;border:1px solid #c6cacc;line-height:31px;height:31px;padding-left:9px;margin:0;}
+.event_fin_text .winner_note .detail_view_btn{position:absolute;right:1px;top:1px;width:30px;height:31px;text-indent:-999em;cursor:pointer;border:none;padding:0;}
+.event_fin_text .winner_note .close{background:url(//img.miclub.com/newmiclub/m_baby/img/btn_note_up_320.gif) no-repeat scroll 0 0 transparent;background:url(//img.miclub.com/newmiclub/m_baby/img/btn_note_up.gif) no-repeat scroll 0 0 / 30px 31px rgba(255,255,255,0);}
+.event_fin_text .winner_note .open{background:url(//img.miclub.com/newmiclub/m_baby/img/btn_note_down_320.gif) no-repeat scroll 0 0 transparent;background:url(//img.miclub.com/newmiclub/m_baby/img/btn_note_down.gif) no-repeat scroll 0 0 / 30px 31px rgba(255,255,255,0);}
+.event_fin_text .detail_view{border:1px solid #c6cacc;border-top:none;font-size:13px;color:#666666;padding:15px 11px 5px 11px;}
+.event_fin_text .detail_view ol{padding-left:17px;}
+.event_fin_text .detail_view li{list-style:decimal;margin-bottom:10px;}
+.event_fin_text .winner_note .detail_view span{float:left;}
+.event_fin_text .winner_note .detail_view p{margin:0 0 10px 14px;}
+.event_fin_text .winner_note .none{display:none;}
+.event_fin_text .event_prod_info{overflow:hidden;}
+.event_fin_text .event_prod_info li{font-size:14px;color:#000000;overflow:hidden;line-height:22px;}
+.event_fin_text .event_prod_info strong{float:left;width:35%;}
+.event_fin_text .event_prod_info span{float:left;width:65%;}
+
+.comment_image .image_wrap {display:inline-block;position:relative;max-width:100%;vertical-align:top;}
+.comment_image .image_wrap .btn_delete {position:absolute;width:30px;height:30px;right:0;top:0;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_img_close.png) no-repeat 0 0 transparent;background:url(//img.miclub.com/newmiclub/m_miclub/img/btn_close_hd.png) no-repeat 0 0 / 30px 30px rgba(0,0,0,0);border:none;text-indent:-200px;overflow:hidden;text-align:left;}
+.input_reply .comment_image {margin:10px 0 0;}
+
+.address_update {padding:10px 0 0 ;text-align:center;}
+.address_update p {color:#504f4f;font-size:12px;text-align:center;margin:0 0 10px 0;}
+.address_update .btn_gray {background:#7f7f7f;color:#ffffff;display:inline-block;font-size:14px;font-weight:bold;letter-spacing:-1px;line-height:18px;margin:0 auto;padding:6px;text-align:center;width:147px;}
+
+.board_list_wrap .reple_num {color:#cd0069;}
+.board_list_wrap .reple_num em {font-style:normal;}
+.sp_event .notice_roll_wrap {border-top:none;}
+.sp_event .roll_comp .title {background:none;}
+.sp_event_info {color:#666666;font-size:12px;margin-top:10px;}
+.sp_event_info .line {margin:0 8px;}
+.sp_event .sub_header .acc {background:url(//img.miclub.com/newmiclub/m_miclub/img/acc_sub_header_event.png) no-repeat scroll 0 0 transparent;background:url(//img.miclub.com/newmiclub/m_miclub/img/acc_sub_header_hd.png) no-repeat scroll 0 0 / 13px 8px rgba(0,0,0,0);}
+
+.business_txt_ad {padding:0 0 10px 5px;width:350px;}
+.business_txt_tbl {text-align: left; border:0;display: block;}
+.business_txt_td {height: 25px; display: block;}
+.business_txt_tbl .txt_67 a {text-decoration: underline;color: #696969}
+
+/* special user icon */
+.special_user {line-height:18px;}
+.special_user .icon {background:url(//img.miclub.com/newmiclub/m_baby/img/icon_spuser_sd.gif) no-repeat;background:url(//img.miclub.com/newmiclub/m_baby/img/icon_spuser_hd.gif) no-repeat rgba(255,255,255,0);background-size:14px auto;display:block;float:left;line-height:18px;margin:0 3px 0 0;text-indent:-999em;width:14px;}
+
+/* roulette event reple wrap */
+.board_article .roulette_wrap {margin:20px 0 0;}
+.event_content .reply_form {border-top:2px solid #a8a8a8;}
+.event_content .event_apply_form {border-top:1px solid #e2e2e2;}
+.event_content .reply_list .reply_form {border-top:1px solid #dedede;}
+.event_content .reply_list .edit_reply {border-top:none;}
+.board_article .contents_box {border:1px solid #c0c0c0;position:relative;margin-bottom:10px;}
+.board_article .contents_box h3 {background:url(//img.danawa.com/new/mevent/img/bg_contents_box.png) repeat scroll 0 0 transparent;font-size:14px;padding:6px 11px;cursor:pointer;}
+.board_article .board_text .click_close {cursor:pointer;margin:0;position:absolute;right:11px;top:5px;width:19px;display:none;}
+.board_article .board_text .click_view {cursor:pointer;margin:0;position:absolute;right:11px;top:5px;width:19px;display:none;}
+.board_article .board_text .block {display:block;}
+.board_article .contents_box .event_participation {padding:11px 12px;}
+.board_article .contents_box .event_participation li {padding:0;color:#282828;font-size:14px;letter-spacing:-1px;line-height:20px;}
+.board_article .contents_box .event_participation .notice_list_title {margin-bottom:5px;}
+.board_article .contents_box .event_participation .point_color {color:#6AA222;}
+.board_article .contents_prod_list {color:#282828;font-size:14px;letter-spacing:-1px;padding:11px 12px;overflow:hidden;}
+.board_article .contents_prod_list .prod_img {margin-right:14px;height:60px;}
+.board_article .contents_prod_list .prod_img img {height:60px;width:60px;}
+.board_article .contents_prod_list .prod_title {word-break:break-all;height:40px;font-size:14px;font-weight:bold;display:table-cell;vertical-align:middle;}
+.board_article .contents_prod_list .text_area_1 .prod_title {height:60px;}
+.board_article .contents_prod_list .point {color:#ff5f78;}
+.board_article .b_line {border-bottom:1px solid #c0c0c0;}
+.board_article .board_text .contents_box img {margin:0;}
+.board_article .bg_dot {background:url(//img.danawa.com/new/mevent/img/bg_text_dott.gif) no-repeat scroll 0 8px transparent;padding-left:9px;}
+.score_wrap {background:url(//img.danawa.com/new/mevent/img/bg_score_layer_320.png) repeat scroll 0 0 transparent;background:url("//img.danawa.com/new/mevent/img/bg_score_layer.png") repeat scroll 0 0 / 246px 60px rgba(0, 0, 0, 0);border:2px solid #D8D6B0;height:49px;margin:0 auto 20px;text-align:center;width:246px;color:#BEBEBE;font-size:14px;padding-top:11px;letter-spacing:-1px;}
+.score_wrap .white {color:#FFFFFF;font-size:16px;}
+.score_wrap .yellow_bg {background:url(//img.danawa.com/new/mevent/img/bg_yellow_curcle.png) no-repeat scroll 0 0 transparent;color:#000000;display:inline-block;font-size:18px;font-weight:bold;height:18px;line-height:18px;width:18px;}
+.score_wrap .yellow {color:#ffff33;font-size:14px;}
+
+
+/* 우리딸 힘내 */
+.chbtn_big{height:25px;padding:8px 20px;border:none;margin:0;font-size:16px;line-height:24px;font-weight:bold;-webkit-border-radius:21px;border-radius:21px;display:inline-block;text-align:center;}
+.sub_sect {font-size:13px;}
+.story_detail{border-bottom:1px solid #b17956;padding:9px 0 32px;}
+.story_detail .area_opt{text-align:right;padding:0 9px;margin-bottom:7px;}
+.story_detail .photo_row{overflow:hidden;zoom:1;width:280px;margin-left:24px;}
+.story_detail .story_pic{float:left;width:132px;}
+.story_detail .photo_row .story_pic + .story_pic{margin-left:8px;}
+.story_detail .detail_text{padding:0 10px;letter-spacing:-1px;}
+.story_detail .story_par{margin-top:19px;}
+.story_detail .text_opt{text-align:center;margin-top:21px;}
+.story_detail .btn_detail_link{color:#735d50;border:1px solid #bfbfbf;}
+.story_detail .text_sect{margin-bottom:20px;line-height:18px;}
+.story_detail .pic_copy{clear:both;text-align:right;font-size:10px;color:#737373;}
+.story_event{padding:10px 0 32px;}
+.story_event .letter_num_nav{margin-top:10px;}
+.story_event .post_sect{border:solid #b17956;border-width:1px 0;margin:0;}
+.story_event .event_header{margin-bottom:22px;}
+.story_event .event_header img{width:195px;}
+.story_event .ev_sect{padding-top:2px;}
+.story_event .e_news{margin-top:20px;}
+.story_event .post_sect .chbtn_big{background-color:#a96b44;}
+.event_intro{padding:20px 10px;text-align:center;font-size:13px;color:#737373;line-height:1.4;}
+.event_intro .mark_r{color:#da5669;}
+.event_intro p{margin-top:17px;}
+.event_intro p:first-child{margin-top:0;}
+.event_intro .ev_title{color:#95663a;font-size:20px;margin-bottom:22px;}
+.event_intro .ev_title_img{width:100%;vertical-align:top;}
+.event_intro .mark_blue{color:#5d489f;}
+.event_intro .link_prize{display:block;width:110px;height:26px;line-height:26px;background:#fff;border:1px solid #bfbfbf;color:#735d50;font-weight:bold;margin:7px auto 0;letter-spacing:-1px;-webkit-border-radius:26px;border-radius:26px;}
+.event_intro .result_notice{font-size:12px;color:#737373;margin-top:5px;}
+.event_intro .row_intro_pic{margin-top:20px;}
+.detail_text .photo_row{margin-left:0;}
+.detail_text .focus_txt{color:#735d50;font-weight:bold;}
+.story_detail .focus_txt_r{color:#d74b2f;}
+.event_summary{color:#735d50;list-style-type:disc;text-align:left;padding-left:1em;font-weight:bold;letter-spacing:-1px;}
+.event_summary dt{float:left;min-width:5.2em;}
+.event_summary dd{margin-left:5.2em;}
+.event_summary .sum_item {zoom:1;}
+.event_summary .sum_unit{clear:both;margin:0;}
+.event_pic_wrap .pic_img{max-width:100%;vertical-align:top;}
+.event_pic_wrap .pic_cap{font-size:12px;color:#735d50;}
+.event1_area .ev_title_img{width:100%;vertical-align:top;}
+.event1_area .note_link{display:block;width:110px;height:26px;line-height:26px;background:#fff;border:1px solid #bfbfbf;color:#735d50;font-weight:bold;margin:7px auto 0;letter-spacing:-1px;-webkit-border-radius:26px;border-radius:26px;}
+.event1_area .event_summary{margin:21px 0 0;display:inline-block;vertical-align:top;}
+.event1_area .event_summary + p{margin-top:6px;}
+.event1_area .event_pic_wrap{margin:20px 0 10px;}
+.event1_area .pic_img{width:185px;}
+.event_result .result_txt{display:block;margin-bottom:13px;padding:0 4px;}
+.event_result .result_txt img{vertical-align:top;max-width:100%;}
+.event_result{text-align:center;border-top:1px solid #e8e8e8;margin:0 24px;padding:20px 0 32px;}
+.event_result .result_comment{margin-bottom:12px;}
+.event_result .result_txt_img{vertical-align:top;width:222px;}
+.result_opt .chbtn_mid{color:#735d50;border-color:#bfbfbf;background:#fff;letter-spacing:-1px;margin:0 2px;padding:3px 12px;}
+.box_intro{border:1px solid #db3631;color:#000;padding:8px 11px;}
+.story_detail .text_opt{text-align:center;margin-top:21px;}
+.story_detail .btn_detail_link{color:#735d50;border:1px solid #bfbfbf;}
+
+.sub_section{min-width:320px;margin:0 auto;}
+
+.story_intro .intro_area{position:relative;zoom:1;}
+.story_intro .intro_image{width:100%;display:block;margin:0 auto;max-width: 360px;}
+
+/* Story 5 */
+.story5_intro{background:#463d31;}
+.story5_intro .intro_opt{top:93px;left:35px;}
+.story5_intro .chbtn_mid{background:#ffcb05;border-color:#ffcb05;color:#2f1a0c;}
+.story5_detail .story_pic{width:145px;}
+.story5_detail .photo_row{margin-bottom:15px;width:auto;}
+.story5_detail .pic_copy{width:272px;padding-top:4px;}
+.story5_detail .box_intro{margin:20px 0px 18px 0;}
+.event5_area .event_summary{margin-top:16px;}
+.event5_area .pic_img{width:157px;}
+.cheer_content .event_score {min-width:40px;text-align:right;color:#cc0066; padding:3px 3px; background:#f4f4f4; display:inline-block;}
+.cheer_content .btn_event_winner {overflow:hidden; margin:14px 0;}
+.cheer_content .btn_event_winner li{width:50%; float:left;}
+.cheer_content .btn_event_winner a {width:139px; display:block; margin:0 auto; border:1px solid #bfbfbf;-webkit-border-radius:26px;border-radius:26px; height:34px; line-height: 34px; font-weight:bold; letter-spacing: -1px; color:#735d50;}
+
+
+/* Story 6 */
+.story6_intro{background:#848486;}
+.event6_area .row_intro_txt .mark_r{display:block; margin-bottom:25px;}
+.event6_area .row_intro_txt .mark_list{display:block; color:#282b2c; margin-top:17px;}
+.event6_area .event_summary {margin-top:30px;}
+.event6_area .event_summary li{list-style:disc;letter-spacing: 0;}
+.event6_area .event_summary dd{margin-left:5.8em; letter-spacing: -1px;}
+.event6_area .event_pic_wrap {width:201px;margin:0 auto;}
+
+
+/* Story 7 */
+.story7_intro{background:#feece8;}
+.story7_detail {padding-top:21px;}
+.story7_detail p {font-size:12px;letter-spacing:-0.5px; text-align:left; color:#626262;}
+.story7_detail p + p {margin-top:25px}
+.story7_detail .text_sect {clear:both;}
+.story7_detail .detail_photo {margin-bottom:23px;width:300px;overflow:hidden;clear:both;}
+.story7_detail .detail_photo .story_pic + .story_pic {margin-left:13px;}
+.story7_detail .story_pic {width:143px;}
+.story7_detail .photo_row2 img:nth-child(1) {width:62px;}
+.story7_detail .photo_row2 img:nth-child(2)  {width:222px;}
+.event7_area .ev_title img{width:300px;}
+.event7_area .mark_r {display:block; margin-bottom:25px;}
+.event7_area .event_pic_wrap {width:222px; margin:0 auto;}
+.event7_area .row_intro_txt {letter-spacing:-1px;}
+.event7_area .event_summary li{list-style:disc;letter-spacing: 0;}
+.event7_area .event_intro .row_intro_pic {margin-bottom:10px;}
+
+/* Story 8 */
+.story8_intro{background:#9acadd;}
+.story8_detail {padding-top:21px;}
+.story8_detail p {font-size:12px;letter-spacing:-0.5px; text-align:left; color:#626262;}
+.story8_detail p + p {margin-top:25px}
+.story8_detail .text_sect {clear:both;}
+.story8_detail .detail_photo {margin-bottom:23px;width:300px;overflow:hidden;clear:both;}
+.story8_detail .detail_photo .story_pic + .story_pic {margin-left:13px;}
+.story8_detail .story_pic {width:143px;}
+.story8_detail .photo_row2 .story_pic {width:300px;}
+.story8_detail .event_intro .row_intro_pic {margin-bottom: 10px}
+.event8_area .ev_title img{width:300px;}
+.event8_area .mark_r {display:block; margin-bottom:25px;}
+.event8_area .event_pic_wrap {width:222px; margin:0 auto;}
+.event8_area .row_intro_txt {letter-spacing:-1px;}
+.event8_area .event_summary li{list-style:disc;letter-spacing: 0;}
+.event8_area .event_intro .row_intro_pic {margin-bottom:10px;}
+
+/* Story 9 */
+.story9_intro{background:#e1c8b3;}
+.story_detail .focus_text {font-size:14px;text-align:left;color:#737373;line-height:20px;}
+.story_detail .focus_tit{color:#735d50;font-weight:bold;font-size:14px;line-height:20px;}
+.story_detail .tit_red{color:#c1543e;}
+
+.story_detail .detail_photo2 {overflow:hidden;clear:both;text-align:center;margin:0 auto;margin-bottom:23px;width:340px;}
+.txt_p10{padding:0 10px;}
+
+
+.story_pic4 {width:141px;}
+.story_pic3{width:180px;}
+.story_pic5 {width:160px;}
+.mr15{margin-right:15px}
+.pic_t1{white-space:nowrap;float:left;}
+.pic_img2{width:290px;}
+.event_pic_wrap2 {width:346px;margin:10px auto;}
+@media (max-width:390px){
+ .story_pic4 {width:125px;}
+ .story_pic3{width:160px;}
+ .story_pic5 {width:143px;}
+ .story_detail .detail_photo2{width:304px;}
+ .pic_img2{width:290px;}
+ .event_pic_wrap2 {width:320px;}
+}
+.w320_center{width:310px;margin:0 auto;}
+
+/* Story 10 */
+.story10_intro{background:#d3e6e7;}
+.story10_detail .tit_pop{color:#4935a1;}
+.event10_area .ev_title img{width:300px;}
+.event10_area .mark_r {display:block; margin-bottom:25px;}
+.event10_area .event_pic_wrap {width:222px; margin:0 auto;}
+.event10_area .row_intro_txt {letter-spacing:-1px;}
+.event10_area .event_summary li{letter-spacing: 0;list-style:none;}	/* list-style:disc; */
+.event10_area .event_summary li dt:before{content:"";width:6px;height:6px;background:#735d50;border-radius:50%;display:inline-block;margin:6px 4px 0 -10px;vertical-align:top;}
+.event10_area .event_intro .row_intro_pic {margin-bottom:10px;}
+
+
+/* find id */
+.find_main {padding: 20px 10px 40px 10px;}
+.mgb10 {margin-bottom: 10px}
+.mgb20 {margin-bottom: 20px}
+.find_text {font-size: 14px;text-align: left;color: #504f4f;line-height: 18px;}
+.find_form {margin-top:10px;}
+.find_cs {color: #000000;display: block;font-weight: bold}
+.find_id .phone_img {margin: 10px 0 10px;}
+.btn_form_wrap {margin-top: 20px;}
+.find_id .btn_form {width:100%; height: 38px; background: #cd0069;margin-top:10px;}
+.btn_form_style {color: #fff; display: block; font-size: 17px; font-weight: bold;line-height: 20px; text-align: center;vertical-align: middle;padding: 9px 0;}
+.img_form_style {left: 50%; display: inline-block; height: 18px;margin-right: 5px;}
+.text_form_style {vertical-align: top}
+.find_notice {margin: 40px 0 10px;line-height: 20px;}
+.result_formBox {background: #f3f3f3; width: 92%; height:40px; padding: 20px 4%;font-size: 18px; color:#333333; font-weight: bold;line-height: 18px;}
+.id_clr {color: #cd0069}
+.btn_result {width:49%; height: 31px; background: #7f7f7f; color: #fff; font-weight: bold; text-align: center;display: inline-block; margin-top:20px;line-height: 31px;}
+
+/* find pw */
+.findPW_step {height: 29px; border-bottom: 1px solid #dedede;color: #393e41;font-size: 14px;padding: 8px 0;line-height: 30px;font-weight: bold;letter-spacing: -1px;}
+.step_txt {width:31%;text-align: center;margin: 0 auto; display: inline-block;}
+/*.step1_bl {background: url(//img.miclub.com/newmiclub/m_miclub/img/bg_nextstep.gif) right center no-repeat;}*/
+.step1_off {background: url(//img.miclub.com/newmiclub/m_miclub/img/bg_nextstep.png) 100% center no-repeat;}
+.step1_on {background: url(//img.miclub.com/newmiclub/m_miclub/img/bg_nextstep_on.png) 33% center no-repeat;}
+.step2_off {background: url(//img.miclub.com/newmiclub/m_miclub/img/bg_nextstep.png) 33% center no-repeat;}
+.step2_on {background: url(//img.miclub.com/newmiclub/m_miclub/img/bg_nextstep_on.png) 100% center no-repeat;}
+@media screen and (-webkit-device-pixel-ratio: 2) {
+ .step1_off { background: url("//img.miclub.com/newmiclub/m_miclub/img/bg_nextstepx2.png") 100% center no-repeat;
+  -webkit-background-size: 6px 8px; }
+}
+@media screen and (-webkit-device-pixel-ratio: 2) {
+ .step1_on { background: url("//img.miclub.com/newmiclub/m_miclub/img/bg_nextstep_onx2.png") 33% center no-repeat;
+  -webkit-background-size: 6px 8px; }
+}
+@media screen and (-webkit-device-pixel-ratio: 2) {
+ .step2_off { background: url("//img.miclub.com/newmiclub/m_miclub/img/bg_nextstepx2.png") 33% center no-repeat;
+  -webkit-background-size: 6px 8px; }
+}
+@media screen and (-webkit-device-pixel-ratio: 2) {
+ .step2_on { background: url("//img.miclub.com/newmiclub/m_miclub/img/bg_nextstep_onx2.png") 100% center no-repeat;
+  -webkit-background-size: 6px 8px; }
+}
+
+
+ 
+
+
+.find_form .input_id {height: 35px;}
+.id_search_text {line-height: 21px;margin-bottom: 10px;letter-spacing: -1px;}
+.btn_id_search {width: 99px; height: 15px; border:1px solid #a6a6a6;padding: 4px 7px;color: #808080;font-size: 12px;margin-left: 5px;letter-spacing: -1px;}
+.show_id {font-size: 18px;color: #333333;font-weight: bold}
+.find_form_note {color: #666666; font-size: 11.55px; margin-top:5px;line-height:12px;}
+.hidden {display: block; width: 0; height: 0; text-indent: -9000px; overflow: hidden;}
+
+/* event review */
+.review_info {display: table-cell; vertical-align:top;}
+.reply_nb {color:#cd0069;font-weight: bold;padding-left: 4px;}
+.reveiw_detail_info {overflow: hidden; text-align: left;position: absolute;bottom: 0; left: 110px;line-height: 12px;}
+.reveiw_detail_info .reveiw_detail {float:left;letter-spacing: -1px; vertical-align: bottom;color:#666666;font-size: 12px;background:  url(//img.miclub.com/newmiclub/m_baby/img/bg_div_sect.png) left center no-repeat;}
+.reveiw_detail_info .reviw_info_name {background: none;}
+.board_list_wrap .review_info .reveiw_detail {border: none;padding: 8px;}
+
+/* review button style */
+.btn_center_style{text-align:center;margin:10px 0 20px 0;}
+.btn_type1 {color:#fff;background-color:#cd0069;display:inline-block;height:24px;line-height:24px;font-weight:bold;text-align:center;text-shadow:1px 1px 1px #000;}
+.btn_padding1{padding:5px 15px;}
+
+/* qna_main area */
+.page_margin{margin:20px 0;}
+.btn_ans_del{float:right;}
+.btn_box{font-size:14px;color:#606060;border:1px solid;padding:4px 4px 4px 3px;}
+.btn_ans_del{position:absolute;top:4px;right:0;border-color:#d0d0cf;}
+.ans_type{font-size:14px;padding:5px 10px;color:#fff;font-weight:bold;background-color:#7f7f7f;}
+.qna_title{font-size:15px;margin:30px 0 0;padding:0 10px 10px 10px;border-bottom:1px solid #d1d1d1}
+.qna_title span{color:#666;padding-left:5px}
+.no_prod{font-size:16px;text-align:center;border-bottom:1px solid #d1d1d1;padding:15px 0}
+.ans_check{float:left;margin-top:6px}
+.ans_check:after{clear: both;content: "";display: block;height: 0;}
+.info_myqna{padding:10px;}
+.info_myqna .info_txt{background-color:#f5f5f5;font-size:13px;color:#666;padding:10px;text-align:center;}
+.qna_main{padding:0 10px}
+.qna_list .list_info{position:relative;padding-left:72px;padding-right:50px}
+.qna_main .qna_list li{border-bottom: 1px solid #E2E2E2;padding:8px 10px;}
+.qna_main .qna_list .title{display: block;font-size: 15px;color: #000;line-height: 1.3;margin-bottom: 2px;}
+.qna_main .qna_list .date{display: block;font-size: 12px;color: #666;}
+.ans_area{border-top:1px solid #d1d1d1;padding:10px 10px 0;margin-top:10px;}
+.ans_area .ans_txt{font-size:13px;margin-bottom:10px}
+.ans_area .ans_admin{margin-top:10px;padding-top:10px;border-top:1px solid #D1D1D1}
+.ans_checked .ans_type{background-color:#c40052;padding:5px 4px 5px 3px;}
+.ans_checked .btn_ans_del{right:50px}
+.ans_checked .btn_ans_ok{position:absolute;top:4px;right:0;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_ans_view_show.png) no-repeat 93%;background-size: 9px 5px;-webkit-background-size: 9px 5px;}
+.ans_checked .btn_ans_ok{border:1px solid #c40052;color:#c40052;padding-right:13px;}
+.ans_checked .list_info{padding-right:105px;}
+.ans_checked .btn_ans_show{position:absolute;top:4px;right:0;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_ans_view_hide.png) no-repeat 93%;background-size: 9px 5px;-webkit-background-size: 9px 5px;}
+.ans_checked .btn_ans_show{border:1px solid #c40052;color:#c40052;padding-right:13px;}
+.info_myqna{padding:10px;}
+.info_myqna .info_txt{background-color:#f5f5f5;font-size:13px;color:#666;padding:10px;text-align:center;}
+.btn_post{color:#FFF;font-weight:bold;font-size:16px;height:35px;line-height:35px;display:block;background-color:#32AB96;text-align:center;} 
+.qna_main{padding:0 10px;}
+.qna_main .edit_wrap{padding:20px 0;}
+.qna_main .edit_wrap .input_wrap{padding:0 10px;margin-bottom:16px;}
+.qna_main .edit_wrap .input_wrap .right_input{float:left;width:70%;}
+.qna_main .edit_wrap .input_wrap:after{clear: both;content: "";display: block;height: 0;}
+.qna_main .left_tit{font-size:14px;}
+.qna_main .right_input .user_id,
+.qna_main .right_input .email_address{font-size:13px;}
+.qna_main .edit_wrap .input_wrap .left_tit{float:left;width:30%;padding-top:0;}
+.qna_main .edit_wrap .select_frame{width:auto;padding:6px 3px;margin-bottom:10px;}
+.qna_main .edit_wrap .input_sel{margin-bottom:0}
+.qna_main .board_write{padding:0 10px;}
+.qna_main .board_write:after{clear: both;content: "";display: block;height: 0;}
+.qna_main .board_write .left_tit{float:left;width:30%;}
+.qna_main .board_write .input_frame{float:left;width:70%;}
+.qna_main .btn_wrap{border-bottom: 1px solid #C2C2C2;padding: 10px;}
+.qna_main .btn_post{background-color:#c40052}
+.qna_main .btn_center_type{padding:0 10px;margin:20px 0;text-align:center;}
+.qna_main .label_hidden{display:block;overflow:hidden;position:absolute;top:-10000px;left:-10000px;}
+.qna_info{overflow:hidden;padding:10px 0 10px 10px;position:relative;background:#fff;margin-top:-4px;border-top:1px solid #e6e6e6;}
+.qna_info .ans_check{float:left;margin-top:-2px;}
+.qna_info .ans_check:after{clear: both;content: "";display: block;height: 0;}
+.qna_info .ans_type{font-size:14px;padding:5px;color:#fff;font-weight:bold;background-color:#309c86;}
+.qna_info .list_info{padding-left:50px;padding-right:70px;font-size:16px;background:url(//img.miclub.com/newmiclub/m_baby/img/ico_view_message.png) no-repeat right;}
+.qna_info .btn_ans_more{position:absolute;top:1px;right:18px;font-size:15px;padding:10px 3px 10px 13px;}
+
+.right_number_info{position:absolute;top:0;right:0;border:none;background:none;}
+.head_info .number_info_txt{color:#666;font-size:11px;float:left;}
+.right_number_info .num{color:#d3207c ;}
+.right_number_info  .report_txt .num{color:#000;}
+.right_number_info  .report_txt {margin-left:8px;}
+.right_number_info  .recom_txt{}
+.right_number_info  .report_txt:before{content:"";border-left:1px solid #ddd;height:12px;width:1px;float:left;margin-top:1px;padding:0 0 0 8px;}
+.report_layer{width:300px;margin:0 auto;background-color:#fff;z-index:999;height:272px;position:fixed;top:50%;left:50%;margin:-186px 0 0  -150px;}
+.report_layer_contents{padding:0 0 25px 21px;}
+.layer_title{color:#000;font-size:19px;text-align:left;padding:18px 0 15px 0;}
+.layer_txt{font-size:14px;color:#333;text-align:left;line-height:18px;}
+.report_writer_area{padding:10px 0 0 0;}
+
+
+.select_box_wrap{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_select_small.gif) no-repeat;width:260px;height:30px;margin-top:15px;position:relative;}
+.select_label:after {content:'';background:url(//img.miclub.com/newmiclub/m_baby/img/bg_select_arws.gif) #fff no-repeat;background-position:3px 3px;width:26px;height:27px;display:block;position:absolute;right:1px;top:1px;pointer-events:none;padding:0px 0px 0px 0px;}
+
+.bg_select{background:transparent;border:0 none;width:254px;height:30px;color:#757575;font-size:15px;margin-left:6px;}
+.report_writer_area{padding:20px 0 20px 0;}
+.report_writer_title{color:#757575;font-size:14px;}
+.report_wirter_txt{color:#000;font-size:14px;font-weight:normal;}
+
+.btn_report_com{margin-right:14px;height:38px;line-height:38px;width:125px;color:#fff;font-weight:bold;letter-spacing:-1px;background-color:#848484;display:block;float:left;text-align:center;
+-webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.3);
+-moz-box-shadow:    0px 2px 3px 0px rgba(50, 50, 50, 0.3);
+box-shadow:         0px 2px 3px 0px rgba(50, 50, 50, 0.3);
+}
+.btn_report_t1{background-color:#d3207c;}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:2){
+ .btn_ans_ok{
+     background: background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_ans_view_hide.png) no-repeat center right;
+  -webkit-background-size: 9px 5px;}
+    .ans_show .btn_ans_ok{position:absolute;top:0;right:0;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_ans_view_show.png) no-repeat 93%;-webkit-background-size: 9px 5px;}
+	.select_box_wrap{background:url(//img.miclub.com/newmiclub/m_baby/img/bg_select_big.gif) no-repeat;background-size: 260px auto;-webkit-background-size: 260px auto;background-size: 260px auto;}
+ .select_label:after{content:'';background:url(//img.miclub.com/newmiclub/m_baby/img/bg_select_arwb.gif) #fff no-repeat;background-position:3px 3px;background-size: 20px auto;-webkit-background-size: 20px auto;background-size: 20px auto;}
+
+}
+
+/* story 11 */
+.story11_intro {background:#dfdfdf;}
+.story11_detail .tit_pop{color:#4935a1;}
+.event11_area .ev_title img {max-width:100%;}
+.event11_area .event_pic_wrap2 img {width:70%;}
+
+/* story 12 */
+.story12_intro {background:#eaeff1;}
+.story12_detail .tit_pop{color:#26a7d5;}
+.event12_area .ev_title img {max-width:100%;}
+.event12_area .event_pic_wrap2 img {width:70%;} 
+
+
+.checkbox01{width: 20px;height: 20px;border:0 none;opacity:0;-webkit-appearance: none;}
+.label_t1{font-size:18px;color:#000;height:63px;line-height:63px;cursor:pointer;display:block;}
+.active_state .label_t1{color:#cc0066;font-weight:bold;background:url(http://img.miclub.com/newmiclub/m_miclub/img/icon_check.png) right 20px no-repeat;background-size: 28px auto;}
+.check_box_01{border:3px solid #ff5f78;border-radius:16px;width:300px;margin:0 auto;min-height:388px;position:fixed;z-index:900;background-color:#fff;top:50%;left:50%;margin:-194px 0 0 -150px}
+.check_box_list01{margin:0 16px;}
+.check_box_list01 li{border-bottom:1px solid #d9d9d9;height:63px;}
+.check_box_list01 li a{padding-right:8px;display:block;}
+.check_box_list01 .last{border-bottom:none;}
+.alert_wrap2{height:180%;}
+
+/* social_login */
+.social_login{width:100%; text-align: center; padding-top:15px; border-top:1px solid #dedede;}
+.login_h3{font-size:14px; color:#404040; padding-bottom:8px; text-align: left; margin:0 30px;font-weight: normal;}
+.font_red{font-size:18px; color:#cd0069; font-weight:bold;}
+.btn_social_login{font-size:14px; display:block; margin:0 30px; font-weight: bold;  padding:8px 0;color:#fff;}
+.btn_naver{ background-color: #2db400;}
+.btn_kakao{ background-color: #fae100; margin:10px 30px; color:#493433;}
+.btn_fb{ background-color: #3b5a97; margin-bottom:30px;}
+.sns_login_box .logo_naver{width:19px; position:relative; top:2px;}
+.sns_login_box .logo_kakao{width:21px; position:relative; top:2px;}
+.sns_login_box .logo_facebook{width:10px; position:relative; top:2px;}
+.icon_mb{vertical-align: 3px; margin-left:3px;}
+.ico_login_naver{vertical-align: 3px;}
+.ico_login_kakao{vertical-align: 3px;}
+.ico_login_facebook{vertical-align: 3px;}
+
+/* nickname setting */
+.nick_wrap{width:100%;}
+.title_h3{padding:25px 10px 0; font-size:14px; color:#333;}
+.nick_input_wrap{margin:10px 10px;}
+.input_box{width:70%; padding:5px 0; margin-right: 2%; margin-top:10px; text-indent: 10px; color:#000; font-size:14px; letter-spacing: -1px;box-shadow:inset 1px 2px 2px rgba(0,0,0,.15); -webkit-border-radius:0; -webkit-appearance:none; border:1px solid #d8d8d8; border-radius: 0;}
+/*.nick_input_wrap input:focus{border:1px solid #cd0069; }*/
+.nick_input_wrap input::-webkit-input-placeholder{color:#808080;}
+.nick_input_wrap input::-ms-input-placeholder{color:#808080;}
+.nick_input_wrap input::-moz-input-placeholder{color:#808080;}
+.btn_nick_check{width:23%; display:inline-block; text-align: center; background: #cd0069; color:#fff; padding:5px; font-weight: bold;}
+.btn_nick_check:link{text-decoration: none;}
+.nick_check{letter-spacing: -1px;}
+.nick_wrap .notice{ margin:10px 20px;}
+.notice .txt_p{color:#666; padding-bottom:10px;}
+.notice .txt_p:before{content:'-';position:absolute; left:10px;}
+.box_confirm{margin:18px 10px 145px; text-align: center;}
+.btn_confirm{display:block; padding:7px 0; color:#fff;background-color: #666;}
+
+/* leave */
+.alert_wrap .alert_leave{background-color: #fff; top:33%; padding:12px 10px 19px; border-radius: 5px; border:none; width:260px; position:relative;}
+.alert_wrap .btn_close{position:absolute;top:15px;right:15px; width:22px;}
+.alert_wrap .alert_box .title_h1{color:#000; font-size:22px; margin-top:5px}
+.alert_wrap .alert_box .alert_leave_caution{ padding:0 10px 10px; text-align: center; color:#666;}
+.alert_wrap .box_confirm{margin:0; padding-bottom:5px;}
+.alert_wrap .btn_confirm{display:inline-block; margin-left:5px; margin-top:9px; padding:7px 43px; background-color: #7f7f7f;}
+.screen_out{position:absolute; display:block; width:1px; height:1px; overflow:hidden; text-align: left; text-indent: -9999em;}
+
+/* email_confirm_wrap */
+.title_email_confirm{text-align: center; margin:40px 0 25px;} 
+.title_email_confirm .title_head{font-size:16px; letter-spacing: -1px; line-height: 24px;} 
+.email_confirm_wrap .email_form .email_div{}
+.email_confirm_wrap .email_form .input_email{width:47%;}
+.email_confirm_wrap .email_form .email_host{width:47%;}
+.email_confirm_wrap .email_form select{position:absolute; right:0; padding:7px 20px 7px 5px; letter-spacing: -1px; border:1px solid #8d8d8d; }
+.email_confirm_wrap .icon{background-image:url(//img.miclub.com/newmiclub/m_miclub/img/ico_arrow_down320.png);background-repeat:no-repeat;background:url(//img.miclub.com/newmiclub/m_miclub/img/ico_arrow_down640.png) no-repeat rgba(255,255,255,0);background-size:7px; background-position:90% 50%;}
+.email_confirm_wrap .tit_caution{font-size:12px; letter-spacing: -1px; color:#4b4b4b; margin-bottom:10px;}
+.quies_area{ text-align: center;margin:0 10px 40px;}
+.btn_quies{display:block; background-color:#cd0069; height: 38px; line-height: 38px; font-size:16px; color:#fff; text-shadow: 0 1px rgba(0,0,0,5); margin-bottom:6px;}
+.btn_quies img{vertical-align: -5px; margin-right:10px}
+.btn_quies .img_phone{width:14px;}
+.btn_quies .img_ipin{width:20px; vertical-align: -4px;}
+.btn_quies .img_email{width:21px; vertical-align: -2px;}
+.input_quies{width:100%; box-sizing: border-box; height: 38px; line-height:38px; margin-bottom:6px; font-size:14px; color:#333;}
+
+/* event_sns_info */
+.event_sns_header{background:#ffeff1; text-align: center; padding:15px 0;}
+.event_sns_title{font-size:18px; color:#cd0069; padding-bottom:5px}
+.event_sns_p{font-size:12px; color:#666;}
+.event_sns_input .left_tit{width:15%;}
+.event_sns_input .right_input{width:85%;}
+.notice_p{font-size:11px; color:#666; padding:0 5px; letter-spacing: -1px;}
+.notice_p:before{content:"-"; position:absolute; left:10px;}
+
+.find_id .quies_area{margin:0; margin-top:20px;}
+
+/* referee */
+.login_main .signup_form .input_referee{margin-bottom:5px;}
+
+/* event_invite */
+.event_invite_wrap .top, .event_invite_wrap .mid, .event_invite_wrap .btm{position:relative;}
+.event_invite_wrap .btn_link{position:absolute;top:51%;width:44%; height:10%; left:4%;}
+.event_invite_wrap .top .btn_input_info{left:auto; right:4%;}
+.event_invite_wrap .txt{position:absolute;bottom:9%;width:100%;text-align: center;}
+.event_invite_wrap .txt span{font-size:16px;}
+.event_invite_wrap .btm .btn_link{top:7%;height:23%;left:15%;width:13%;}
+.event_invite_wrap .btm .kakao{left:34%;}
+.event_invite_wrap .btm .kstory{left:52%;width:16%;}
+.event_invite_wrap .btm .url{left:73%;}
+.event_invite_wrap .gift{position:absolute;right:2%;bottom:18.7%;width:48%;text-align: center;font-size:16px;letter-spacing: -.5px; font-weight: bold;overflow: hidden;line-height: 100%;}
+.bold{font-weight: bold;}
+/*
+.event_invite_wrap .gift p{height: 100%;}
+.event_invite_wrap .gift p:before{content:"";display:inline-block;height:100%;vertical-align: middle;}
+*/
+.event_invite_wrap img{width:100%;display:block;}ffff
+.input_referee .tit_caution{line-height: 15px;font-size:11px; color:#696969;}
+
+/* attendance_check */
+.attendance_check .btn_link{top:4%; left:4%;height:3.5%;}
+.attendance_check .btn_input_info{left:auto;right:4%;height:3.5%;}
+.attendance_check .facebook{top:auto;bottom:31%;width:12%;left:15%;height:6%;}
+.attendance_check .kakao{top:auto;bottom:31%;width:12%;left:34.5%;height:6%;}
+.attendance_check .kstory{top:auto;bottom:31%;width:15.5%;left:52%;height:6%;}
+.attendance_check .url{top:auto;bottom:31%;width:12%;left:73.2%;height:6%;}
+.attendance_box_wrap{position:absolute;top:9.1%;height:45.3%;margin:0 2.4%;width:95.2%}
+.attendance_box{float:left;width:100%;height:100%;}
+.attendance_box li{float:left;width:20%;height:16.65%;}
+.attendance_box .stamp{height:100%;background:url(//img.miclub.com/newmiclub/m_miclub/img/m_stamp_attendance.png)no-repeat;background-size:100% auto;background-position:0 -2%;position:relative;}
+.attendance_box .stamp.on{background-position:0 32%}
+.attendance_box .stamp.end{background-position:0 66.5%}
+.attendance_box .stamp.finish{background-position:0 105%}
+.attendance_box_wrap .img_wrap{position:absolute;z-index: 1;top:5%;left:10%;width:80%;height: 15%; text-align: center;}
+.attendance_box_wrap .img_wrap .img_vtc_agn{display:inline-block;height: 100%;vertical-align: middle;}
+.attendance_box_wrap .img_wrap img{vertical-align: middle;}
+
+
+/* join_request */
+.join_request .join_info_txt{margin:40px 0 10px;padding-bottom:35px;border-bottom:1px solid #ededed;}
+.join_request .join_info_txt h3{font-size:18px;letter-spacing: -1px;margin-bottom:5px;}
+.join_request .join_info_txt h3 img{width:20px;}
+.join_request .join_info_txt p{font-size:13px;color:#333;letter-spacing: -1px;margin: 0 10px;line-height: 18px;}
+.join_request .join_help{margin:0 10px;}
+.join_request .join_help h4{margin-top:30px;letter-spacing: -1px;margin-bottom:10px;color:#282828;}
+.join_request .join_help p{font-size:13px;color:#666;margin-bottom:10px;}
+.join_request .join_help input{width:100%;box-sizing: border-box;margin-top:10px;margin-bottom:10px;height:25px;line-height: 25px;}
+.join_request .join_help input::-webkit-input-placeholder{color:#333;}
+.join_request .join_help input::-ms-input-placeholder{color:#333;}
+.join_request .join_help input::-moz-input-placeholder{color:#333;}
+.join_request .input_border{}
+.join_request .input_border input{}
+.join_request button{border:none;background-color: #CD0069; color:#fff;text-shadow: 0 1px rgba(0,0,0,0.5);width:100%;font-size:16px;padding:10px 0;font-weight: bold;}
+.join_request .email_form{margin:0 10px;padding:0;}
+.join_request .btn_style_02{background-color:#7F7F7F; }
+.join_request .btn_area{margin:10px 10px 0;}
+.join_request .email_form .input_email{width:47%}
+
+
+
+/* love_event_area */
+.love_event_area{padding-bottom:20px;}
+.w100p{width:100%;float:left;}
+
+.love_content_01{position:relative;overflow:hidden;clear:both;}
+.love_content_02{position:relative;overflow:hidden;clear:both;position:relative;background:url(//img.miclub.com/newmiclub/love/img/bg_msginput_pattern.png)#ffe2e4 no-repeat center center;background-size:cover;height:217px;}
+.love_content_03{position:relative;background-color:#ffe5e7;padding:30px 18px 38px 18px;}
+.love_content_04{position:relative;background:url(//img.miclub.com/newmiclub/love/img/bg_msg_pattern.png) repeat;height:475px;overflow:hidden;clear:both;}
+.love_content_05{position:relative;background-color:#deefef;overflow:hidden;clear:both;}
+.love_content_06{position:relative;background-color:#deefef;overflow:hidden;clear:both;}
+.love_content_07{position:relative;background-color:#deefef;overflow:hidden;clear:both;padding-bottom:30px;}
+.love_content_08{position:relative;background-color:#deefef;overflow:hidden;clear:both;padding:0 13px 29px 13px;}
+.love_content_09{position:relative;background-color:#deefef;overflow:hidden;clear:both;}
+.bg_form_01{position:relative;background:url(//img.miclub.com/newmiclub/love/img/bg_form_01.png) #fff no-repeat center 12px;background-size:254px auto;width:auto;height:215px;margin:0 auto;border:1px solid #f7cfd3;border-radius:8px;margin-right:20px;margin-left:20px;}
+
+
+.message_01{background:url(//img.miclub.com/newmiclub/love/img/img_flower01.png) no-repeat center 10px;background-size:52px auto;}
+.message_02{background:url(//img.miclub.com/newmiclub/love/img/img_flower02.png) no-repeat center 10px;background-size:74px auto;}
+.message_03{background:url(//img.miclub.com/newmiclub/love/img/img_flower03.png) no-repeat center 10px;background-size:58px auto;}
+.message_04{background:url(//img.miclub.com/newmiclub/love/img/img_flower04.png) no-repeat center 10px;background-size:37px auto;}
+.txt_love_01{background:url(//img.miclub.com/newmiclub/love/img/bg_txt05.png) no-repeat 0 0;background-size:53px auto;width:53px;height:19px;display:block;margin:0 auto;text-indent:-9999em;}
+.txt_love_02{background:url(//img.miclub.com/newmiclub/love/img/bg_txt06.png) no-repeat 0 0;background-size:53px auto;width:53px;height:19px;display:block;margin:0 auto;text-indent:-9999em;}
+
+
+.w50{width:50%;float:left;}
+.repeat_nic_box{text-align:center;border:1px solid #d62735;height:178px;background-color:#fff;border-radius:6px;margin-right:19px;}
+.box_clear{clear:both;overflow:hidden;*zoom:1;margin:20px 0 0px 0;padding:0 2px 0 21px}
+.love_nic{color:#d62735;font-size:12px;display:inline-block;max-height:21px;overflow:hidden;margin-left:-3px;padding:55px 0 6px 0;}
+.nicname_t2{font-weight:bold;font-style:normal;}
+
+
+.love_message{color:#d62735;font-size:15px;margin:2px 0;font-weight:bold;overflow:hidden;height:45px;text-align:center;display:table;width:100%;}
+.love_message_txt{text-align:center;padding-left:9px;padding-right:9px;display:block;display:table-cell;vertical-align:middle;}
+.love_insert_box2{padding:20px 0 12px;background-color:#fff;border:1px solid #a1d2d2}
+.plr_29{padding:0 15px;}
+.b_line{}/* border-bottom:1px solid #a1d2d2;padding-bottom:8px; */
+
+
+.txt_love02{background:url(//img.miclub.com/newmiclub/love/img/bg_txt03.png) no-repeat 0 0;background-size:225px auto;width:225px;height:35px;margin:0 auto;display:block;text-indent:-9999em;margin-bottom:20px;}
+.add_file_area{clear:both;overflow:hidden;padding-bottom:12px;}
+.add_file_imgs{padding:10px 0 0 0;}
+.add_file_imgs2{padding:0 0 2px 0;}
+.wrap_file_img2{position:relative;width:100px;padding:13px 0 0 0;}
+.replay_t2{border-top:1px solid #a1d2d2;}
+
+.add_title{width:77px;float:left;text-align:center;margin-top:8px;color:#4c423d;}
+.wrap_file_img{position:relative;width:100px;float:left;}
+.w120{width:100px;overflow:hidden;float:left;}
+.btn_cx{border:0 none;border-right:1px solid #4c423d;width:33px;height:33px;text-indent:-999em;padding:0;position:absolute;right:0px;bottom:0px;cursor:pointer;}
+.btn_delete_x{background:url(//img.miclub.com/newmiclub/love/img/btn_del_x.png) #4c423d no-repeat center center;background-size:19px auto;}
+.btn_add_plus{background:url(//img.miclub.com/newmiclub/love/img/btn_add_plus.png) #4c423d no-repeat center center;background-size:19px auto;}
+.add_file_name{display:inline-block;color:#4c423d;font-size:12px;width:220px;position:absolute;left:107px;bottom:0px;}
+
+.w43{font-weight:bold;border:0 none;width:100%;height:24px;line-height:24px;}
+.menu_isoi{display:inline-block;margin:0 6px;}
+.txt_isoi{background:url(//img.miclub.com/newmiclub/img/newmain/txt_isoi.png) no-repeat 0 0;width:52px;height:12px;display:block;text-indent:-999em;}
+
+.love_area .ico_notice a,
+.love_area .popular_list a{font-family:dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,Sans-serif}
+
+.btn_love02_go{width:45%;height:5.5%;display:block;text-indent:-9999em;position:absolute;top:27.5%;left:48%;z-index:2;}
+.btn_love01_go{width:43%;height:10%;display:block;text-indent:-9999em;position:absolute;top:8.2%;left:8%;z-index:2;}   
+
+
+.btn_insert{width:64%;height:4%;display:block;text-indent:-9999em;position:absolute;top:76%;left:20%;z-index:2;}
+.btn_insert2{top:16%;left:20%;height:5.6%;}
+.btn_message_insert{width:132px;height:30px;z-index:1;display:block;text-indent:-9999em;position:absolute;top:162px;left:50%;margin-left:-67px;}
+
+.pos_img1{position:relative;z-index:1;}
+.insert_text_wrap{position:absolute;z-index:2;top:84px;left:50%;margin-left:-115px;width:230px;height:24px;text-align:center;display:block;}
+.insert_text_wrap .w43{font-size:16px; color:#d62735; }
+.insert_text_wrap input::-webkit-input-placeholder {font-size:16px; color:#d62735; }
+.cheer_message{font-size:16px;position:absolute;left:0px;top:0px;z-index:1;}
+
+.txt_love01{background:url(//img.miclub.com/newmiclub/love/img/bg_txt01.png) no-repeat 0 0;background-size:234px auto;width:234px;height:34px;margin:0 auto;display:block;text-indent:-9999em;}
+.love_insert_box{border:1px solid #e8aab2;padding:20px 0 12px;background-color:#fff;}
+
+.pd_15{padding:0 15px;}
+
+.sns_link_area{text-align:center;padding:8px 0 12px 0;height:31px;vertical-align:top;}
+.sns_left_area{float:left;}
+.sns_c{display:inline-block;}
+.sns_bc{width:31px;height:31px;display:block;margin-right:5px;text-indent:-9999em;background:url(//img.miclub.com/newmiclub/love/img/bg_love_sns.png) no-repeat 0 0;background-size:167px auto;}
+.sns_f{background-position:0 0;}
+.sns_k{background-position:-45px 0;}
+.sns_n{background-position:-90px 0;}
+.sns_u{background-position:-135px 0;}
+.insert_textarea{border:1px solid #282828;padding:0 16px 0 0;height:54px;margin-top:12px;}
+.btn_submit_t{border:0 none;background:none;display:inline-block;height:31px;vertical-align:top;float:right;}
+.textarea_btn .btn_submit_t{position:absolute;right:0px;top:8px;}
+.btn_carmera_t{border:0 none;background:none;display:block;height:31px;vertical-align:top;}
+.textarea_btn{clear:both;overflow:hidden;position:relative;padding:8px 0 0 0;}
+.ic_submit{background:url(//img.miclub.com/newmiclub/love/img/bg_txt02.png) #654244 no-repeat center center;border:0 none;border-radius:165px;background-size:27px auto;height:31px;text-indent:-999em;padding:0 24px;cursor:pointer;display:block;}
+.ic_carmera{background:url(//img.miclub.com/newmiclub/love/img/bg_txt04.png) #fff no-repeat center center;border:0 none;border-radius:165px;background-size:83px auto;min-width:83px;border:1px solid #573d3e;height:29px;text-indent:-999em;padding:0 24px;cursor:pointer;display:block;}
+.textarea_t {background-color:#f5f5f5;border:none;color:#4c423d;color:#4c423d;font-size:13px;height:38px;width:100%;padding:8px;}
+.insert_textarea2 .textarea_t {width:100%;}
+
+.replay_t1{border-top:1px solid #e8aab2;}
+.li_t1{border-bottom:1px solid #d9d9d9;padding:13px 15px 13px 15px;clear:both;overflow:hidden;}
+
+.nickname_t{color:#d62735;font-size:13px;display:inline-block;margin-right:10px;}
+.date_t{color:#666;font-size:13px;display:inline-block;margin-right:10px;}
+.url_t1{color:#4c423d;font-size:13px;padding-top:5px;display:block;word-break:break-all;}
+.into_t1{position:relative;}
+.btn_right_t{position:absolute;right:0px;top:0px;}
+.bar_l:after{content:"|";color:#999;font-size:13px;padding:0 5px;position:relative;top:0px;display:inline-block;}
+.btn_text{font-weight:bold;font-size:13px;color:#4c423d;}
+
+/* paging_t1 */
+.paging_t1{margin-top:12px;text-align:center;}
+.paging_t2{margin:46px 0 0 0;}
+.pg_center{display:inline-block;vertical-align:top;line-height:24px;*display:inline;*zoom:1;}
+.pg_arw{float:left;width:23px;height:23px;background:url(//img.miclub.com/newmiclub/love/img/bg_pg.png) no-repeat;background-size:10px auto;text-align:left;text-indent:-9999em;overflow:hidden;}
+.btn_pg_prev{background-position:center 6px;}
+.btn_pg_next{background-position:center -25px;}
+.pg_num_wrap{float:left;}
+.pg_num{float:left;font-size:13px;color:#4c423d;min-width:23px;height:23px;padding-top:0px;margin:3px 3px 0 3px;}
+.pg_num:hover{color:#4c423d;}
+.pg_now_num{background-color:#41291e;color:#fff;border-radius:50%;font-weight:bold;}
+.pg_now_num:hover{color:#fff;}
+
+
+.height_fix{height:352px;}
+
+.menu_isoi{}
+.isoi_img{width:52px;height:17px;display:inline-block;vertical-align:middle;margin-left:5px;}
+

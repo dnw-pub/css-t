@@ -1,0 +1,6 @@
+.tab-container {padding-top:30px; position:relative;}
+.tab-container a {color:#666;}
+.tab-container .tab-heading {height:29px; background:#eee;border:1px solid #d9d9d9; position:absolute; top:0; margin:0; line-height:30px; text-indent:0; padding:0 10px; cursor:pointer;}
+.tab-container .activeHeading {background:#fff; padding-bottom:1px; border-bottom:0; }
+.tab-contents {border:1px solid #d9d9d9; padding:10px; display:none;}
+.tab-container .activeLayer {display:block;}

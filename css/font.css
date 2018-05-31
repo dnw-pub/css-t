@@ -1,0 +1,140 @@
+body, table, tr, td	{
+	font-family:µ¸¿ò;font-size:12;color:292929;line-height:1.4;
+
+	scrollbar-3dlight-color:B4B4B4;
+	scrollbar-arrow-color:333333;
+	scrollbar-base-color:EEEEEE;
+	scrollbar-darkshadow-color:FFFFFF;
+	scrollbar-face-color:eeeeee;
+	scrollbar-highlight-color:FFFFFF;
+	scrollbar-shadow-color:B4B4B4;
+}
+
+
+
+td { font-size: 12px }
+a:link {  font-family: 'µ¸¿ò'; font-size: 9pt; font-style: normal; line-height: 16px; color:#292929;  text-decoration: none}
+a:visited {  font-family: 'µ¸¿ò'; font-size: 9pt; font-style: normal; line-height: 16px; color:#292929; text-decoration: none}
+a:active {  font-family: 'µ¸¿ò'; font-size: 9pt; font-style: normal; line-height: 16px; text-decoration: none; color:#292929}
+a:hover {  font-family: 'µ¸¿ò'; font-size: 9pt; font-style: normal; line-height: 16px; color:#5E5E5E;  text-decoration:underline;}
+
+.bor{  color: #000000; font-size: 12px; border: #c1c1c1; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+
+.head {border:solid 1px black;font-size:9pt;color:black;background-color:white;height:19px}
+.textarea {border:solid 1px;font-size:9pt;color:black;background-color:white;}
+.input {border:solid 1px;font-size:9pt;color:black;background-color:white;}
+.submit {border:solid 0px;font-size:9pt;color:white;background-color:black;height:19px}
+
+
+.unnamed1 {  background-color: #FFFFFF; border: 1px #CCCCCC solid}
+.unnamed2 {  background-color: #DDDDDD; border: 1px #CCCCCC solid}
+
+
+
+	.list01		    {color:#220977; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt}		
+	.list01	a:link	    {color:#220977; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt}	
+	.list01	a:visited   {color:#220977; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt}
+	.list01 a:hover     {color:#220977; font-size:12px; font-family:µ¸¿ò; text-decoration:underline; line-height:14pt}
+	
+	
+	.list02{  color: #00009D; font-family:arial; font-size: 12px; line-height:14pt}
+	
+	.list03		    {color:#0066E6; font-size:12px; font-family:arial; text-decoration: none; line-height:14pt}		
+	.list03	a:link	    {color:#0066E6; font-size:12px; font-family:arial; text-decoration: none; line-height:14pt}	
+	.list03	a:visited   {color:#0066E6; font-size:12px; font-family:arial; text-decoration: none; line-height:14pt}
+	.list03 a:hover     {color:#0066E6; font-size:12px; font-family:arial; text-decoration:underline; line-height:14pt}
+	
+	.list04{  color: #FF5511; font-family:µ¸¿ò; font-size: 12px; line-height:14pt; font-weight: bold}
+	.list06{  color: #535CA9; font-family:µ¸¿ò; font-size: 12px; line-height:14pt; font-weight: bold}
+	
+	.list05		    {color:#00009D; font-size:12px; font-family:arial; text-decoration: none; line-height:14pt}		
+	.list05	a:link	    {color:#00009D; font-size:12px; font-family:arial; text-decoration: none; line-height:14pt}	
+	.list05	a:visited   {color:#00009D; font-size:12px; font-family:arial; text-decoration: none; line-height:14pt}
+	.list05 a:hover     {color:#00009D; font-size:12px; font-family:arial; text-decoration:underline; line-height:14pt}
+	
+	.info01{  color: #FFFFFF; font-family:µ¸¿ò; font-size: 14px; line-height:14pt; font-weight: bold}
+	.info02{  color: #00486E; font-family:µ¸¿ò; font-size: 12px; line-height:12pt;}
+
+	.position		    {color:#FFFFFF; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt; font-weight: bold}		
+	.position	a:link	    {color:#FFFFFF; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt; font-weight: bold}	
+	.position	a:visited   {color:#FFFFFF; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt; font-weight: bold}
+	.position 	a:hover     {color:#FFFFFF; font-size:12px; font-family:µ¸¿ò; text-decoration:underline; line-height:14pt; font-weight: bold}	
+	
+
+	.reply_date {font-family: "µ¸¿ò"; font-size: 11px; font-style: normal; font-weight: normal; color: #666666}
+	.reply_nick { font-family:"µ¸¿ò"; font-size:12px; font-weight: bold; color:#4E8EB7;  text-decoration:none; line-height:16px; letter-spacing:-1px;word-spacing: -1px;}
+	.reply_nick a:link     { text-decoration:none; color:#4E8EB7}
+	.reply_nick a:visited  { text-decoration:none; color:#4E8EB7}
+	.reply_nick a:active   { text-decoration:none; color:#4E8EB7} 
+	.reply_nick a:hover    { text-decoration:none; color:#4E8EB7}
+
+	.333		    {color:#4C4C4C; font-size:11px; font-family:µ¸¿ò; text-decoration: none}		
+	.333	a:link	    {color:#4C4C4C; font-size:11px; font-family:µ¸¿ò; text-decoration: none}	
+	.333	a:visited   {color:#4C4C4C; font-size:11px; font-family:µ¸¿ò; text-decoration: none}
+	.333	a:hover     {color:#000000; font-size:11px; font-family:µ¸¿ò; text-decoration:underline}
+	
+	.position1:link, .wposition1:active, .position1:visited	{ color:#603429;text-decoration:underline; }
+	.position1:hover	{ color:#603429;text-decoration:underline; }
+	
+	.map1		    {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt; font-weight: bold}		
+	.map1	a:link	    {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt; font-weight: bold}	
+	.map1	a:visited   {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt; font-weight: bold}
+	.map1 	a:hover     {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration:underline; line-height:14pt; font-weight: bold}
+	
+	.map2		    {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt}		
+	.map2	a:link	    {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt}	
+	.map2	a:visited   {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:14pt}
+	.map2 	a:hover     {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration:underline; line-height:14pt}
+	
+	.hot		    {color:#2D2118; font-size:14px; font-family:µ¸¿ò; text-decoration: underline; line-height:16px; font-weight: bold}		
+	.hot	a:link	    {color:#2D2118; font-size:14px; font-family:µ¸¿ò; text-decoration: underline; line-height:16px; font-weight: bold}	
+	.hot	a:visited   {color:#2D2118; font-size:14px; font-family:µ¸¿ò; text-decoration: underline; line-height:16px; font-weight: bold}
+	.hot 	a:hover     {color:#226FE1; font-size:14px; font-family:µ¸¿ò; text-decoration:underline; line-height:16px; font-weight: bold}	
+
+	.best		    {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:18px}		
+	.best	a:link	    {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:18px}	
+	.best	a:visited   {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:18px}
+	.best 	a:hover     {color:#A10B7E; font-size:12px; font-family:µ¸¿ò; text-decoration:underline; line-height:18px}
+	
+	.best1		    {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:22px}		
+	.best1	a:link	    {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:22px}	
+	.best1	a:visited   {color:#2D2118; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:22px}
+	.best1 	a:hover     {color:#A10B7E; font-size:12px; font-family:µ¸¿ò; text-decoration:underline; line-height:22px}
+	
+	.price{  color: #FF6C04; font-family:µ¸¿ò; font-size: 12px; line-height:14pt}
+
+	.hon		    {color:#2D2118; font-size:9pt; font-family:µ¸¿ò; text-decoration: none}		
+	.hon	a:link	    {color:#2D2118; font-size:9pt; font-family:µ¸¿ò; text-decoration: none}	
+	.hon	a:visited   {color:#2D2118; font-size:9pt; font-family:µ¸¿ò; text-decoration: none}
+	.hon 	a:hover     {color:#A10B7E; font-size:9pt; font-family:µ¸¿ò; text-decoration:underline}
+	
+	.icon {  font-family: µ¸¿ò; font-size: 7px; color: #FFFFFF}
+	
+	.opinion1		    {color:#336699; font-size:12px; font-family:µ¸¿ò; text-decoration: none;  font-weight: bold}		
+	.opinion1	a:link	    {color:#336699; font-size:12px; font-family:µ¸¿ò; text-decoration: none;  font-weight: bold}	
+	.opinion1	a:visited   {color:#336699; font-size:12px; font-family:µ¸¿ò; text-decoration: none;  font-weight: bold}
+	.opinion1	a:hover     {color:#336699; font-size:12px; font-family:µ¸¿ò; text-decoration:underline;  font-weight: bold}
+	
+	.opinion2		    {color:#777777; font-size:11px; font-family:µ¸¿ò; text-decoration: none}	
+	
+	.violet		    {color:#93007A; font-size:12px; font-family:µ¸¿ò; text-decoration: none}		
+	.violet	a:link	    {color:#93007A; font-size:12px; font-family:µ¸¿ò; text-decoration: none}	
+	.violet	a:visited   {color:#93007A; font-size:12px; font-family:µ¸¿ò; text-decoration: none}
+	.violet	a:hover     {color:#93007A; font-size:12px; font-family:µ¸¿ò; text-decoration:underline}
+
+	.season		    {color:#FF6C04; font-size:13px; font-family:tahoma; text-decoration: none;  font-weight: bold}
+	.event1		    {color:#3D70B2; font-size:12px; font-family:tahoma; text-decoration: none;  font-weight: bold}
+	
+	.event2		    {color:#0060B5; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:18px}		
+	.event2	a:link	    {color:#0060B5; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:18px}	
+	.event2	a:visited   {color:#0060B5; font-size:12px; font-family:µ¸¿ò; text-decoration: none; line-height:18px}
+	.event2 a:hover     {color:#0060B5; font-size:12px; font-family:µ¸¿ò; text-decoration:underline; line-height:18px}
+	.s_brown { font-family: "µ¸¿ò"; font-size: 8pt; font-style: normal; text-decoration: none; color: #5c3000; }
+
+
+
+	.top_cate2 {font-family: "µ¸¿ò", "Arial", "Verdana";	font-size: 12px; color:#4B4B4B;line-height:18px;}
+	.top_cate2	A:link {COLOR: #4B4B4B;	TEXT-DECORATION: none;}
+	.top_cate2	A:visited {COLOR:#4B4B4B; TEXT-DECORATION: none;}
+	.top_cate2	A:active {COLOR: #4B4B4B; TEXT-DECORATION: none;}
+	.top_cate2	A:hover {text-decoration: none;color : #005BA8;}

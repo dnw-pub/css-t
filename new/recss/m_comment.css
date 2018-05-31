@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* 
+2018-03-07 / first make mobile comment tmp css / pjy 
+ */
+
+
+.wrap_t01{padding:0px 16px 19px 14px;background-color:#fff;border-bottom:1px solid #f2f2f2;margin-bottom:20px;}
+.textarea_pad{padding:0px 79px 0px 0px;min-height:60px;}
+.textarea_pad02{padding:5px 15px 0px 15px;}
+.textarea_bor{border:1px solid #ccc;font-size:15px;line-height:20px;word-break:break-all}
+.textarea_bor02{border:1px solid #ccc;border-bottom:1px solid #f0f0f0;font-size:15px;line-height:20px;word-break:break-all}
+.textarea_bor03{border:1px solid #ccc;border-top:none;border-right:none;position:relative;}
+.textarea_ins {background-color:#fff; position:relative;border:0 none;}
+.textarea_bas{color:#999;font-size:15px;width:100%;padding:0px 8px 0px 8px;border:0 none;margin-top:9px;background:transparent;}
+.textarea_bas02{color:#999;font-size:15px;width:100%;border:0 none;margin-top:8px;min-height:118px;height:auto !important}
+.txt_limit_area{text-align:right;padding:2px 0 10px 0}
+.txt_limit{font-size:12px;color:#666;}
+.btn_rg_c{clear:both;overflow:hidden;}
+
+.btn_ins_blog02{display:block;width:55px;display:table-cell;vertical-align:middle;height:100%;position:absolute;top:0px;bottom:0;right:1px;z-index:2;white-space:nowrap;background-color:#33383e;border:0 none;}
+.btn_ins_blog02:after{content:'';display:inline-block;height:100%;vertical-align:middle;}
+.btn_ins_blog04{right:55px;border-radius:0 0 0 0;}
+.btn_cancel_blog{background:none;right:1px;border-right:1px solid #ccc;}
+.btn_cancel_blog .bt_reg_txt{color:#333;}
+.btn_pos01{right:-2px;}
+.bt_reg_tx{color:#fff;text-align:center;font-weight:bold;font-size:15px;width:55px;display:inline-block;vertical-align:middle;min-height:20px;display:inline-block;word-wrap:break-word;white-space:normal;margin-top:1px;}
+.f16{font-size:16px;}
+.write_font02{color:#333;}
+
+
+
+
+.blog_reply_line{padding:0 14px 20px 14px;; background-color:#fff;}
+.bor_top_line01 {border-top:1px solid #f2f2f2;padding-top:20px;}
+.bt_line_lr14{border-top:1px solid #f2f2f2;padding-top:20px;}
+
+.bx_offical{background-color:#33383e;color:#fff;font-size:12px;padding:0px 4px;height:20px;line-height:20px;display:inline-block;margin-right:8px;font-weight:normal;}
+
+.icons_vwx02{background:url(//img.danawa.com/new/mdnw/v2/img/icons_vwx02.png) no-repeat;-webkit-background-size:23px auto;background-size:23px auto;}
+
+.icon_reply02{background-position:0 -79px;}
+.icon_recom02{background-position:0 -39px;padding-top:1px;}
+
+.btn_d1{border:1px solid #ccc;height:29px;padding:0 10px;background-color:#fff;float:left;}
+.btn_reply_icon{margin-left:-1px;}
+
+.dpg_view_top{padding:20px 14px 20px 14px;}
+
+.btns_unit{position:relative;clear:both;overflow:hidden;margin-left:-1px;}
+	.btns_unit_lf{margin-left:1px;}
+	.btns_unit_lf .icons_vwx02{color:#282828;font-size:12px;font-weight:normal;padding:0 0 0 18px;display:block;}	
+	.btns_unit_rf{position:absolute;right:0px;}
+	.btns_unit_rf .icons_vwx02{color:#282828;font-size:12px;font-weight:bold;padding:1px 0 0 17px;display:block;}
+
+.left_space .dpg_reply_line{padding:12px 14px 12px 0;}
+.left_space .blog_tinfo_left{padding-left:6px;}
+	.reply_left_posi{position:relative;padding:0 0 0 0;}
+		
+		.top_writer_infos{position:relative;}
+		.btnc_rpos02{position:absolute;right:-10px;top:0px;}
+		.btnc02{border:0 none;background-color:#fff;color:#787878;font-size:12px;cursor:pointer;padding:0 10px;}
+		.btn02_del{position:relative;}
+		.btn02_bar{content:"";width:1px;height:10px;border-left:1px solid #f0f0f0;display:inline-block;padding:0 0 0 0px;margin:0 0 0 0px;position:relative;top:0px;}
+
+
+	.txt_comment01{color:#282828;font-size:15px;line-height:20px;word-break:break-all;margin:0;padding:8px 0 11px 0;}
+	.summary_opinion_area .txt_comment01{padding-bottom:0px;}/* 2018-04-05 하단 삭제영역에따른 공백 최소화 */
+	.reply_lv02{color:#8b38e5;font-size:13px;}
+	.lv_nic2_02{color:#787878;font-size:12px;margin-right:3px;}
+	.lv_datime02{color:#787878;font-size:12px;}
+.btns_unit2{min-height:29px;}
+	.btns_unit2 .btn_d1{min-width:58px;}
+	.btn_reply_dd{color:#333;font-size:12px;}
+	.reply_dd_num{color:#3244c1;margin-left:4px;}
+	.dep_arw02{background:url(//img.danawa.com/new/mdnw/v2/img/icon_reply_arw02.png) no-repeat;-webkit-background-size:16px auto;background-size:16px auto;background-position:3px 0;}
+	.dep_arw02 .img_dpg_user{left:25px;}
+	.dep_arw02_space{padding:0 0 0 20px;}
+	.dep_arw02_space .wrap_t02{padding:0px 0 14px 0;}
+
+	.dpg_reply_more{height:44px;line-height:44px;border-top:1px solid #f0f0f0;}
+		.btn_rmore_dpg{color:#333;font-size:16px;display:block;text-align:center;height:44px;line-height:44px;}
+
+	.btn_cancel_blog{background:none;right:0px;}/* border-right:1px solid #ccc; */
+	.btn_cancel_blog .bt_reg_tx{color:#333;}
+	.left_camera {padding: 0 0 0 12px;}
+	.img_add_camera{padding:9px 0 10px 0;}
+		.btn_add_camera{background:url(//img.danawa.com/new/mdnw/v2/img/icon_blog_camera.png) no-repeat;-webkit-background-size:30px auto;background-size:30px auto;background-position:0 0;padding:3px 0 0 31px;border:0 none;color:#282828;font-size:15px;height:25px;font-weight:bold;cursor:pointer;}
+		.btn_reg_c{background:url(//img.danawa.com/new/mdnw/dpg/img/bg_reg_bline1.png) repeat-y;-webkit-background-size:55px auto;background-size:55px auto;background-position:100% 0;min-height:46px;}
+
+
+/* 이미지첨부 */
+.add_img_mark02{margin-right:69px;padding:2px 0 12px 0;clear:both;display:table;}
+.add_img_mark02:after{content:"";display:block;clear:both;overflow:hidden;}
+.img_mark_fleft02{display:table-cell;}
+.img_mark_url02{word-break:break-all;color:#666;font-size:12px;line-height:14px;margin:0;padding:0;display:table-cell;vertical-align:middle;padding-left:9px;}
+
+.txt_add_img02{color:#666;font-size:12px;}
+.resize37{width:37px;height:37px;border-radius:50%;}
+.resize40{width:40px;height:40px;overflow:hidden;}
+.img_resize40{width:40px;height:40px;overflow:hidden;display:block;float:left;position:relative;}
+
+
+.blog_tinfo_left{margin-bottom:5px;}
+.resize140{width:140px;}
+.resize140_wrap{margin:0 0 11px 0;}
+
+/* .border_tnone */
+.border_tnone{border-top:none;padding-top:0px;}
+
+

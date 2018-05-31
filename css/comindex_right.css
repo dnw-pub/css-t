@@ -1,0 +1,32 @@
+ .text1  {
+   font-family:GulimChe,µ¸¿ò;
+   font-size:11pt;
+   color:black;
+   line-height : 12pt;
+ }
+ .text1  A:link {color: #00ff00; text-decoration: none}
+ .text1  A:visited {color: #ffffff; text-decoration: none}
+ .text1  A:hover {color: yellow; text-decoration: underline}
+
+.lee {  text-decoration: none}
+td {  font-family: 'µ¸¿ò'; font-size: 9pt; font-style: normal; line-height: 12pt; color: #000000; text-decoration: none}
+a:link {  font-family: 'µ¸¿ò'; font-size: 9pt; font-style: normal; line-height: 12pt; color:#206050;  text-decoration: none}
+a:visited {  font-family: 'µ¸¿ò'; font-size: 9pt; font-style: normal; line-height: 12pt; color:#206050; text-decoration: none}
+a:active {  font-family: 'µ¸¿ò'; font-style: normal; line-height: 12pt; text-decoration: none; color: #206050}
+a:hover {  font-family: 'µ¸¿ò'; font-size: 9pt; font-style: normal; line-height: 12pt; color: red;  text-decoration: underline}
+
+.a1     {font-family : "µ¸¿ò"; font-size : 9pt; line-height:16pt;}
+.a2     {font-family : "µ¸¿ò"; font-size : 14pt; line-height:14pt;}
+.a3     {font-family : "µ¸¿ò"; font-size : 9pt; line-height:11pt;}
+.a4     {font-family : "µ¸¿ò"; font-size : 9pt; line-height:14pt;}
+.a5     {font-family : "µ¸¿ò"; font-size : 9pt; line-height:10pt;}
+
+.comrig A:link {font: 9pt ±¼¸²,Arial,seoul; color: #206050; text-decoration: none}
+.comrig A:visited {font:9pt ±¼¸²,Arial,seoul; color: #206050; text-decoration:none}
+.comrig A:hover {font: 9pt ±¼¸²,Arial,seoul; color:#95A7A7; text-decoration:none}
+
+.comtxt {font-family: "µ¸¿ò", "Arial"; font-size: 9pt; color: #666666; line-height: 13pt;}
+
+.con_11 {font-family : "µ¸¿ò"; font-size : 11px; color: #8B8989; line-height:16px;}
+.con_orange_11 {font-family : "µ¸¿ò"; font-size : 11px; color: #FF8400; line-height:16px;}
+.con_orange {font-family : "µ¸¿ò"; font-size : 12px; color: #FF8400; line-height:16px; font-weight: bold; }

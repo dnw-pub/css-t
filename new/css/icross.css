@@ -1,0 +1,38 @@
+/* CSS Document
+최종작업일자 : 2011년 6월 3일 
+작업자 : P07	
+작업내용 :  타이틀변경 및 베스트아이콘추가
+
+최종작업일자 : 2011년 4월 25일 
+작업자 : P07	
+작업내용 : 스타일작성
+
+
+핵설명 FX: 아무것도 없음
+       ie7 : 속성앞에 *
+	   ie6 : 속성앞에 _
+*/	
+
+#shoppingBox{width:457px;padding:0; margin:0;}
+#shoppingBox .titBox{height:30px; padding:0; margin:0;}
+#shoppingBox .prodBox{width:455px; border-bottom:1px #e6e6e6 solid; border-left:1px #e6e6e6 solid; border-right:1px #e6e6e6 solid; }
+
+#shoppingBox .prodBox .subtitle1{margin:0; padding:0;}
+#shoppingBox .prodBox .subtitle2{margin:0; padding:0;}
+
+#shoppingBox .prodBox .box1 {height:145px; width:440px; margin:0;}
+#shoppingBox .prodBox .box1 .bestIco{ position:absolute; padding-top:19px; z-index:1000;}
+#shoppingBox .prodBox .box1 dl{width:200px; padding:5px 0 5px 20px; position:relative; float:left; }
+#shoppingBox .prodBox .box1 dt{display:inline; float:left; padding-right:10px;}
+#shoppingBox .prodBox .box1 dd{display:inline-block; padding-top:12px; width:110px; margin:0;}
+#shoppingBox .prodBox .box1 dd .proTit{color:#808080; font-size:11px; margin:0; padding:0; line-height:11px;}
+#shoppingBox .prodBox .box1 dd .price{font-size:11px; font-weight:bold; color:#333; padding-top:10px; margin:0;}
+
+
+#shoppingBox .prodBox .box2 {clear:both; height:150px;}
+#shoppingBox .prodBox .box2 .bestIco{ position:absolute; padding-top:19px; z-index:1000;}
+#shoppingBox .prodBox .box2 dl{width:90px; float:left; padding:0 10px; margin:0;}
+#shoppingBox .prodBox .box2 dt{text-align:center; width:90px;}
+#shoppingBox .prodBox .box2 .thumb{padding:0; width:65px; height:65px; padding-bottom:2px; display:inline;}
+#shoppingBox .prodBox .box2 .proTit{color:#808080; font-size:11px; margin:0; padding:0; line-height:11px;}
+#shoppingBox .prodBox .box2 .price{font-size:11px; font-weight:bold; color:#333; padding-top:5px; margin:0; text-align:center;}

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* 
+create msetpcgallery.css / lhk / 2018-04-25 
+*/
+.content_wrap{background:#ebebeb}
+.point{color:#e53b38}
+.header_area_content .tit_main{font-size:18px;font-weight:bold;color:#3c3c3c}
+.btn_back_go{padding:0;height:40px}
+.icon_back_arw{margin-top:11px;margin-left:12px}
+.btn_logout{position:absolute;top:0;right:0;display:block;width:80px;height:40px;background:#fff;text-align:center;font-size:14px;color:#3c3c3c}
+.lnk_block{display:block;text-decoration:none}
+.lnk_block:hover{text-decoration:none}
+.setpcgall_comment{padding-bottom:10px;text-align:center;letter-spacing:-0.2px;font-size:13px;color:#33383e}
+.tabs_shopping_list .tabs_list_link{height:30px;font-size:15px}
+.tabs_link_select{background:#e53b38}
+.fil_period{padding-right:114px}
+.btn_search_period{top:0;width:114px;background:#666}
+.v2 .fil_item .prev_year{padding-left:10px;width:88px}
+.v2 .fil_item .text{padding:0 10px;width:calc(100% - 120px);height:32px;}
+.odr_hsty .odr_prds li{border:1px solid #e3e3e3}
+.odr_hsty .grid_top{padding:15px 12px;	border-bottom:0}
+.odr_hsty .tit_status{float:right}
+.odr_hsty .desc_sec{padding-right:61px}
+.odr_hsty [class^='gall_']{position:absolute;top:50%;right:12px;margin-top:-20px;width:40px;height:40px;border-radius:40px;border:1px solid;line-height:40px;text-align:center;letter-spacing:-0.5px;font-size:12px;}
+.odr_hsty .gall_none{border-color:#e3e3e3;color:#919191}
+.odr_hsty .gall_upload{border-color:#e53b38;color:#e53b38}
+.odr_hsty .gall_appr{border-color:#e53b38;background:#e53b38;color:#fff}
+.p_orderer{color:#666}
+.grid_header{padding:10px;border-bottom:1px solid #e6e6e6;}
+.grid_header_text{font-size:15px;color:#333}
+.grid_header_text .sub{font-weight:normal;color:#919191}
+.grid_header + .setpcgall_spec{border-top:0}
+.grid_contents{padding:8px 12px}
+.textarea_wrap{display:block;width:100%}
+.textarea_wrap textarea{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0;border:0;width:100%;line-height:16px;min-height:80px;color:#666;font-size:13px}
+.setpcgall_image:after{content:'';display:block;clear:both;}
+.setpcgall_image .btn_upload{display:block;width:100%;height:40px;border-radius:3px;border:1px solid #bebebe;background:#fff;line-height:40px;text-align:center;cursor:pointer}
+.setpcgall_image .btn_upload .icon{position:relative;top:6px;display:inline-block;margin-right:5px;width:30px;height:25px;vertical-align:top;background:url(//img.danawa.com/new/m_bill/img/icons_setpcgall.png) 0 0 no-repeat;-webkit-background-size:100px auto;background-size:100px auto;}
+.setpcgall_image .btn_upload .text{font-weight:bold;font-size:15px;color:#000}
+.setpcgall_image input[type=file]{position:absolute;overflow:hidden;padding:0;margin:-1px;width:0;height:0;border:0;}
+.setpcgall_image .btn_delimg{position:relative;display:block;float:left;margin-top:10px;margin-left:5px;width:calc(20% - 4px)}
+.setpcgall_image .btn_delimg:first-child{margin-left:0}
+.setpcgall_image .btn_delimg:before{content:'';position:absolute;top;0;left:0;z-index:1;display:block;width:100%;height:100%;background:rgba(0,0,0,0.3)}
+.setpcgall_image .btn_delimg:after{content:'';position:absolute;top:50%;left:50%;z-index:2;display:block;margin-top:-9px;margin-left:-9px;width:18px;height:18px;background:url(//img.danawa.com/new/mdnw/setpcgallery/img/icons_setpcgall.png) -40px 0 no-repeat;-webkit-background-size:100px auto;background-size:100px auto;}
+.setpcgall_action{padding:15px 0;overflow:auto}
+.setpcgall_action [class^='btn_']{display:block;float:left;width:48.5%;height:45px;border-radius:3px;text-align:center;font-size:18px;font-weight:bold;color:#fff}
+.setpcgall_action [class^='btn_'].w100{width:100%}
+.setpcgall_action .btn_cancel{background:#848484}
+.setpcgall_action .btn_submit{float:right;background:#e53b38}

@@ -1,0 +1,158 @@
+	.wrap a:hover{text-decoration:none;color:#fff;}
+	.swrap_area *{font-family:"Malgun Gothic","¸¼Àº °íµñ",dotum,'µ¸¿ò',gulim,'±¼¸²',AppleGothic,Helvetica,Sans-serif;}
+	.wrap{width:100%;max-width:925px;margin:0 auto;font-family:"Malgun Gothic","¸¼Àº °íµñ",dotum,'µ¸¿ò',gulim,'±¼¸²',AppleGothic,Helvetica,Sans-serif;}
+	.main_width{width:100%;margin:0 auto;padding:50px 50px;box-sizing:border-box;position:relative}
+	.main_width2{width:100%;margin:0 auto; padding:50px 0px; box-sizing:border-box;position:relative}
+	.main_width3{width:90%;margin:0 auto; padding:50px 0px; box-sizing:border-box;position:relative}
+	.headerimg{background:url("https://img.danawa.com/new/cmpart/splan/com/145/img/main_back.jpg") no-repeat}
+	.main_width{height:440px}
+	.main_width .wid40{width:50%}
+	.main_width .wid40 .rows{border-top:1px solid #fff;border-bottom:1px solid #fff;padding:10px 10px 10px}
+	.main_width .wid40 span{font-size:16px;color:#fff;display:block;margin:20px 0}
+	.main_width h1{color:#fff;font-size:45px;color:#fff;font-weight:bold;}
+	.main_width img.mainimg{position:absolute;top:25px;right:15px;max-width:420px;width:100%}
+	.main_width img.eventimg{position:absolute;bottom:-20px;left:35px;max-width:417px;width:100%;}
+	
+    ul#menu{display:block;text-align:center; height:40px;clear:both;*zoom:1;}
+    ul#menu:after {clear:both;}
+    ul#menu:before, ul#menu:after {content:"";display:block;height:0;overflow:hidden;}
+
+	ul#menu li{float:left;}
+	ul#menu li:last-child{border-right:0 solid #376aa0}
+	
+	ul#menu a{display:block; letter-spacing:-1px;}
+	ul#menu .tab01 a{background-color:#004185;color:#fff;font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px; }
+	ul#menu .tab01 a:hover{background-color:#67dcdb; color:#004185; font-weight:bold; font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px; }
+	ul#menu .tab02 a{background-color:#004185;color:#fff;font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px;}
+	ul#menu .tab02 a:hover{background-color:#67dcdb; color:#004185; font-weight:bold; font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px;}
+	ul#menu .tab03 a{background-color:#004185;color:#fff;font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px;}
+	ul#menu .tab03 a:hover{background-color:#67dcdb; color:#004185; font-weight:bold; font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px;}
+	ul#menu .tab04 a{background-color:#004185;color:#fff;font-size:15px;height:40px; vertical-align:middle; ;border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px;}
+	ul#menu .tab04 a:hover{background-color:#67dcdb; color:#004185; font-weight:bold; font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px;}
+	ul#menu .tab06 a{background-color:#004185;color:#fff;font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px;}
+	ul#menu .tab06 a:hover{background-color:#67dcdb; color:#004185; font-weight:bold; font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px;}	
+	ul#menu .tab07 a{background-color:#004185;color:#fff;font-size:15px;height:40px; vertical-align:middle; border-right:1px solid #376aa0;box-sizing:border-box;padding-top:10px;}
+    ul#menu .tab07 a:hover{background-color:#67dcdb;color:#004185;font-weight:bold;font-size:15px;height:40px;vertical-align:middle; border-right:1px solid #67dcdb;box-sizing:border-box;padding-top:10px;}	
+
+    ul#menu .tab07 {position:relative;}
+    ul#menu .sec7_sub {position:absolute;width:100%;right:0;z-index:100;}
+    ul#menu .stab_list {list-style:none;padding:0;margin:0;}
+    ul#menu .sub_tab {display:block;list-style:none;}
+    ul#menu .sub_tab {float:none;}
+    ul#menu .sub_tab a {width:100%;display:block;background:#575757;color:#fff;font-size:13px;border:none;border-top:1px solid #727272;}
+    ul#menu .sub_tab .current,  ul#menu .sub_tab a:hover {background:#fff;color:#272626;font-size:13px;font-weight:bold;border:none;}
+	
+	div h2{font-size:22px !important;font-weight:bold}
+	div h2 span{color:#0072bb}
+	#section1{background-color:#f2f2f2;text-align:center}
+	#section1 .main_width .wid33{text-align:center;border:0 solid #000;box-sizing:border-box;padding:20px 0px}
+	#section1 .main_width .wid33 h4{font-size:16px;line-height:30px;margin-top:10px;color:#000 !important}
+	#section1 .main_width .wid33 p{font-size:12px; !important}
+	#section2{text-align:center}
+	#section2 div h2{margin-bottom:20px}
+	#section2 .main_width2 .wid50{text-align:center;border:0 solid #000;box-sizing:border-box;height:170px;color:#fff;margin-bottom:10px}
+	#section2 .main_width2 .textleft{padding:20px 20px}
+	#section2 .main_width2 .wid50 div h4{font-size:15px;margin-bottom:10px;color:#fff !important}
+	#section3{background-color:#f2f2f2;text-align:center}
+	#section3 div h2{margin-bottom:20px}
+	#section3 .main_width2 .wid33{float:left;margin-bottom:20px}
+	#section3 .main_width2 .wid33 div{width:278px;border:1px solid #0171bb;margin:0 auto}
+	#section3 .main_width2 .wid33 div h4{color:#fff;padding:10px 0;font-size:13px}
+	#section4{background:url("https://img.danawa.com/new/cmpart/splan/com/145/img/1206_winpro10pro_bg01.png");background-size:cover;text-align:center}
+	#section4 div h2{color:#fff}#section4 div ul{display:block;width:85%;margin:0 auto}
+	#section4 div ul li{color:#fff;float:left;margin-top:20px;text-align:left;box-sizing:border-box;padding:5px 10px}
+	#section4 div ul li:nth-child(odd){width:29%;background:url("https://img.danawa.com/new/cmpart/splan/com/145/img/arrow_back.png")no-repeat;color:#000;background-position:center right}
+	#section4 div ul li:nth-child(even){width:71%}
+	#section4 ul li a{text-decoration:underline;color:#fff}
+	#section4 ul li a:hover{text-decoration:none;color:#bbd7ea}
+	#section5{background-color:#fff;text-align:center;border:1px red;}
+	#section5 div h2{margin-bottom:20px;color:#000;}
+	#section5 .main_width2 .wid33{float:left;margin-bottom:20px}
+	#section5 .main_width2 .wid33 div{width:278px;border:1px solid #0171bb;margin:0 auto}
+	#section5 .main_width2 .wid33 div{width:278px;border:1px solid #0171bb}
+	#section5 .main_width2 .wid33 div h4{color:#fff;padding:10px 0;font-size:13px}
+	#section6{background-color:#f2f2f2;text-align:center}
+	#section6 div h2{margin-bottom:20px}
+	#section6 .main_width .wid50{height:120px;width:48%;display:table;margin:0% 1%;position:relative}
+	#section6 .main_width .wid50 div{display:table-cell;vertical-align:middle;color:#fff}
+	#section6 .main_width .wid50 div h4{color:#fff !important}
+	#section6 .main_width .wid50 img{position:absolute;right:0;bottom:0}
+	#section6 .main_width .back1{background:url("https://img.danawa.com/new/cmpart/splan/com/145/img/1206_winpro10pro_office01.png")}
+	#section6 .main_width .back2{background:url("https://img.danawa.com/new/cmpart/splan/com/145/img/1206_winpro10pro_office02.png")}
+	
+    .sec7:hover .sec7_sub {display:block;}
+    #section7,	#section8,	#section9,	#section10{background-color:#f2f2f2;text-align:center;padding:50px 0 32px 0;}
+    #section7 .main_width3 .imgb {width:363px;height:180px;}
+	#section8 .main_width3 .imgb, #section9 .main_width3 .imgb, #section10 .main_width3 .imgb {float:left;display:block;text-align:center;width:364px;height:208px;text-align:center;border:0 solid #000;box-sizing:border-box;color:#fff;}
+    #section9 .main_width3 .imgb,#section10 .main_width3 .imgb {float:none;margin:0 auto;}
+    .imgb {padding-bottom:18px;}
+    .sub_logo {margin:0 auto;margin-bottom:26px;}
+	
+	.cols{float:left}
+	.web{display:block;margin:0 auto}
+	.mobile{display:none;margin:0 auto}
+	.wid10{width:10%}
+	.wid20{width:20%}
+	.wid30{width:30%}
+	.wid33{width:33.333333%}
+	.wid40{width:40%}
+	.wid50{width:50%}
+	.wid60{width:60%}
+	.wid70{width:70%}
+	.wid80{width:80%}
+	.wid90{width:90%}
+	.fleft{float:left}
+	.fright{float:right}
+	.clearfix{clear:both}
+	.blueback1{background-color:#0171bb}
+	.blueback2{background-color:#004185}
+	.textleft{text-align:left !important}
+	.yellowfont{color:#fff100 !important}
+    
+    .wtoon {clear:both;padding:24px 0;}
+    .wtoon_wrap {border-top:2px solid #0171bb;margin:0 13px;}
+    .wtoon_wrap .wtoon_tit {font-size:22px;color:#000;font-weight:normal;line-height:58px;}
+    .wtoon_wrap .wtoon_tit strong {color:#0072bb;font-size:22px;font-weight:bold;}
+    .wtoon_wrap img {vertical-align:top;margin-bottom:30px;}
+    .screen_out {display:inline-block;position:absolute;width:1px;height:1px;top:-9999px;left:-99999px;text-indent:-9999px;}
+
+
+	@media only screen and (max-width:1180px){
+	.main_width{width:100%;padding:4% 5%}
+	ul#menu{background-color:#004185}
+	 .main_width img.mainimg{width:40% !important;right:1%;top:5%}
+	 .main_width .wid40{width:60%}
+	#section1 .main_width .wid33 img{width:100%;max-width:250px}
+	#section2 .main_width .wid50 img{width:100%;height:100%}
+	#section3 .main_width2 .wid33 div img{width:100%;max-width:278px}
+	#section3 .main_width2 .wid33 div{width:100%;max-width:278px}
+	#section5 .main_width2 .wid33 div{width:100%;max-width:278px}
+	#section5 .main_width2 .wid33 div img{width:100%;max-width:278px}
+	#section7 .main_width3 .wid50 img{width:100%;height:100%}
+	@media only screen and (min-width:768px) and (max-width:1030px){
+	ul#menu li{height:63px}
+	@media only screen and (min-width:768px) and (max-width:920px){
+	#section3 .main_width2 .wid33 div h4{height:35px}
+	#section4 div ul{display:block;width:95%;margin:0 auto}
+	#section4 div ul li:nth-child(odd){width:35%}
+	#section4 div ul li:nth-child(even){width:65%}
+	 .main_width img.mainimg{top:15%}
+	@media only screen and (max-width:767px){
+	.main_width{height:auto}
+	.main_width h1{font-size:35px}
+	.main_width img.mainimg{position:relative;top:0%;bottom:0% !important;right:0%;max-width:456px;width:70%;border:0 solid #000;margin:0 auto;margin-left:30%}
+	.main_width .wid40{width:100%}
+	ul#menu li{width:100%;height:auto}
+	ul#menu li{border-right:0 solid #376aa0;border-bottom:1px solid #376aa0}
+	ul#menu li:last-child{border-right:0 solid #376aa0;border-bottom:1px solid #376aa0}
+	.wid33{width:100%}
+	.wid50{width:100% !important}
+	#section4 div ul li{color:#fff;float:left;margin-top:0;text-align:left;box-sizing:border-box;padding:5px 10px}
+	#section4 div ul{display:block;width:95%;margin:0 auto}
+	#section4 div ul li:nth-child(odd){width:100%;background:none;color:#fff100;height:auto}
+	#section4 div ul li:nth-child(even){width:100%}
+	#section6 .main_width .wid50{margin:0% 0%;margin-bottom:10px}
+	@media only screen and (max-width:479px){
+	.main_width h1{font-size:30px}
+	.main_width img.mainimg{width:70% !important;margin-left:15%}
+    }

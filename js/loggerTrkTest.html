@@ -1,0 +1,215 @@
+<?
+
+/* 들여쓰기 크기: 4, 탭 크기: 4, 탭 문자: 사용 */
+
+/**
+ * DANAWA R&D Center
+ *
+ * PHP versions 5
+ *
+ * @author: Jae-Kyo Lee <jaekyo.lee@danawa.com>
+ * @copyright: 2000~2006 Danawa corp. All Rights Reserved.
+ * @license:
+ * @version: CVS:
+ */
+
+/**
+ * 위  치: pc.danawa.com:~/new_html/js/loggerTrk.html
+ * 내  용: Logger 스크립트 설정 엔진
+ * 참  고:
+ * 작성자: 이재교
+ * 작성일: 2006-10-26
+ *
+ * 최종 수정일: 2006-10-26
+ */
+
+/**
+ * Logger Parameter Description
+ *
+ * _TRK_CP : 분석리포트 최상위 단위 (슬래쉬, 싱글, 더블쿼테이션 사용금지)
+ * _TRK_IK : 웹사이트 내부검색에서 사용된 검색어 검출
+ * _TRK_PN : 상품명
+ * _TRK_MF : 브랜드명
+ * _TRK_SX : 회원성별
+ *		# value
+ *		M(남성), F(여성), U(중성)
+ * _TRK_AG : 회원 연령대
+ *		# value
+ *		A : 0~9세
+ *		B : 10~19세
+ *		C : 20~29세
+ *		D : 30~39세
+ *		E : 40~49세
+ *		F : 50~59세
+ *		G : 60세이상
+ *
+ * _TRK_PI : 웹페이지의 성격 정의 (Logger 예약어 + 사용자정의설정 추가용)
+ *      # value
+ *		LIF - 로그인화면(Log In Form)
+ *		LIR - 로그인 후 결과화면 (Login In Result)
+ *		RGI - 회원가입안내(약관)화면 (Register Information)
+ *		RGF - 회원가입 양식 화면 (Register Form)
+ *		RGR - 회원가입 결과 화면 (Register Result)
+ *      VST - 방문수 (Visit)
+ *      PLV - 상품리스트 (Product List View)
+ *      PDV - 상품상세보기 (Product Detail View)
+ *      OCV - 장바구니 보기화면 (Order Cart View)
+ *      ODF - 주문정보 입력 화면 (Order Form)
+ *      ODR - 주문완료 화면 (Order Result)
+ *		DNL,EVT,PNF,RFO,SCI,SCO 정리안됨
+ *
+ * # 아래 변수는 3가지가 동시에 사용되어야함 (세미콜론으로 구분해 다중으로 사용가능)
+ * _TRK_OA : 주문상품금액 분석을 위한 변수
+ * _TRK_OP : 주문상품명 분석을 위한 변수
+ * _TRK_OE : 주문수량 분석을 위한 변수
+ *
+ * _TRK_CC : 캠페인 코드 전달 변수
+ */
+
+
+
+/**
+ * 파라미터 처리
+ */
+$sContentPath		= isset($_GET['cp'])?$_GET['cp']:'';								// 분석리포트 최상위 단위
+$sProducIdentity	= isset($_GET['pi'])?$_GET['pi']:'';								// 페이지 성격
+$sProductName		= isset($_GET['pn'])?urldecode(html_entity_decode($_GET['pn'])):'';	// 상품명
+$sManufacture		= isset($_GET['mf'])?urldecode(html_entity_decode($_GET['mf'])):'';	// 제조사
+$sAge				= isset($_GET['ag'])?$_GET['ag']:'';								// 회원 연령대
+$sSex				= isset($_GET['sx'])?$_GET['sx']:'';								// 회원 성별
+
+$sPageUI			= isset($_GET['ui'])?$_GET['ui']:'';								// UI 성격
+
+/**
+ * 분석리포트 최상위 단위
+ */
+$aSiteCodeToName = array(
+	0	=> '/전체메인',
+	1	=> '/피씨',
+	2	=> '/디카',
+	3	=> '/가전',
+	4	=> '/휴대폰',
+	5	=> '/노트북',
+	6	=> '/게임',
+	7	=> '/디스플레이',
+	8	=> '/자동차',
+	9	=> '/제휴섹션',
+	10	=> '/회원',
+	11	=> '/링크',
+	12	=> '/커뮤니티',
+	13	=> '/갤러리',
+	14	=> '/저장내용',
+	15	=> '/개인블로그',
+	16	=> '/상품블로그',
+	17	=> '/오픈마켓',
+	18	=> '/SLRCLUB',
+	19	=> '/MUNCLE'
+);
+
+/**
+ * 페이지 성격
+ */
+$aPageUI = array(
+	'main'	=> '/메인',
+	'list'	=> '/가전 리스트 UI',
+	'glist'	=> '/게임 리스트 UI',
+	'left'	=> '/Left UI',
+	'right'	=> '/Right UI'
+);
+
+
+/**
+ * 게시판 성격 : 섹션
+ */
+
+
+/**
+ * 게시판 성격 : 게시판종류
+
+$aBoardType = array(
+);
+ */
+
+// 변수 설정
+$sScript = '';				// 스크립트 출력용 변수
+$sContentPathValid = '';	// 유효 ContentPath
+
+// 유효성 체크
+// 콤마값이 존재하면 ContentPath 가 다중임
+/*
+if (strpos($sContentPath, ",")) {
+
+	$aContentPath = explode(',', $sContentPath);
+	for ($i=0; $i<count($aContentPath); $i++) {
+		$sContentPathValid .= $aSiteCodeToName[$aContentPath[$i]];
+	}
+
+} else {
+	$sContentPathValid = $aSiteCodeToName[$sContentPath];
+}
+*/
+
+$sContentPathValid = $aSiteCodeToName[$sContentPath];
+
+
+// {{{ Logger Script Setting
+
+// 최상위 카테고리 설정
+if ($sContentPath != '') {
+	$sScript .= '_TRK_CP= "';
+	$sScript .= $sContentPathValid;
+
+	if ($sPageUI != '') {
+		$sScript .= $aPageUI[$sPageUI] ;
+	}
+	$sScript .= '";';
+}
+
+// 페이지 성격
+if ($sProducIdentity != '') {
+	$sScript .= '_TRK_MF= "' . $sProducIdentity . '";';
+}
+
+// 상품명 설정
+if ($sProductName != '') {
+	$sScript .= '_TRK_PN= "' . deleteString($sProductName) . '";';
+}
+
+// 제조사 설정
+if ($sManufacture != '') {
+	$sScript .= '_TRK_MF= "' . deleteString($sManufacture) . '";';
+}
+
+// 회원 성별 설정
+if ($sSex != '') {
+	$sScript .= '_TRK_SX= "' . strtoupper($sSex) . '";';
+}
+
+// 회원 연령대 설정
+if ($sAge != '') {
+	$sScript .= '_TRK_AG= "' . strtoupper($sAge) . '";';
+}
+
+// }}}
+// {{{ 스크립트 출력
+
+echo $sScript;
+
+// }}}
+// {{{ deleteString()
+
+/**
+ * Logger 환경설정 스크립트에서 불필요한 문자를 삭제하는 함수
+ *
+ * @param string 변환할 문자열
+ *
+ * @return string 변환된 문자열
+ */
+function deleteString($sData)
+{
+	return str_replace(array('/', '"', "'"), array('', '', ''), $sData);
+
+}
+
+// }}}
+?>

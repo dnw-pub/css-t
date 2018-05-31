@@ -1,0 +1,202 @@
+body { 
+	font-family: "돋움", "Arial", "Verdana";	
+	font-size: 12px; color:#666666; 
+	text-align:left;
+	SCROLLBAR-FACE-COLOR: #ffffff;
+	SCROLLBAR-HIGHLIGHT-COLOR: #999999;
+	SCROLLBAR-SHADOW-COLOR: #999999;
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff;
+	SCROLLBAR-ARROW-COLOR: #999999;
+	SCROLLBAR-TRACK-COLOR: #eeeeee;
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+	SCROLLBAR-BASE-COLOR: #ffffff;
+ }
+
+td   { font-family: "돋움", "Arial", "Verdana";	font-size: 12px; color:#666666; }
+
+A:link {COLOR: #4B4B4B;	TEXT-DECORATION: none;}
+A:visited {COLOR:#4B4B4B; TEXT-DECORATION: none;}
+A:active {COLOR: #4B4B4B; TEXT-DECORATION: none;}
+A:hover {text-decoration: underline;color : #005BA8;}
+
+
+.input
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #333333;
+ height				: 18px;
+ background-color	: #ffffff;
+ border: #cecec7 1px solid;
+}
+
+.inputGame
+{
+ font-size			: 12px;
+ font-family		: "돋움","Arial","Verdana";
+ color				: #ffffff;
+ height				: 18px;
+ background-color	: #474747;
+ border: #878787 1px solid;
+}
+
+
+/* 체크박스 */
+.inputbox_1
+{
+	color			: #ffffff;
+	font-size		: 12px;
+}
+
+
+/* 메뉴on */
+.game_m_on
+{
+	color			: #1578B4;
+	font-weight		: bold;
+}
+
+/* 메뉴off */
+.game_m_off
+{
+	color			: #151839;
+	font-weight		: bold;
+}
+
+/* 큰메뉴 */
+.menu_tit_1
+{
+	color			: #4B4B4B;
+	font-weight		: bold;
+}
+
+/* 작은메뉴 */
+.menu_tit_2
+{
+	color		: #4B4B4B;
+	font-size	:12px;
+	padding-top	: 2px;	
+}
+
+/* 주목상품 */
+.focus_img_1
+{
+	padding-top		: 3px;
+	padding-bottom	: 8px;
+	padding-right	: 9px;
+}
+
+.focus_img_2
+{
+	padding-top		: 8px;
+	padding-bottom	: 8px;
+	padding-right	: 9px;
+}
+
+.focus_img_3
+{
+	padding-top		: 8px;
+	padding-bottom	: 7px;
+	padding-right	: 9px;
+}
+
+/* 주목상품 text*/
+.focus_text
+{
+	color			: #333333;
+}
+
+
+
+/* 리뷰 text*/
+.tit_game
+{
+	color			: #383B7A;
+	font-weight		: bold;
+}
+
+/* 상품목록 가격*/
+.list_price
+{
+	color			: #F87B00;
+	font-weight		: bold;
+}
+
+/* 메인 공지사항 텍스트*/
+.notice01
+{
+	color			: #ced2d4;
+}
+.notice02
+{
+	color			: #f8f8f8;
+}
+
+/* icon */
+.i_square{ margin:0 5 3 16;}
+
+
+/* text color */
+.tit_ff
+{ color: #ffffff; font-weight : bold; }
+.tit_22
+{ color: #222222;}
+.tit_22_b
+{ color: #222222; font-weight : bold; }
+.con_78
+{ color: #787878; line-height:18px;}
+.date_small
+{ color: #383B7A; font-size:12px; font-family: arial; font-weight : bold; }
+.date_big
+{ color: #383B7A; font-size:32px; font-family: arial; font-weight : bold; }
+
+/* 이미지 border */
+.img_Game5
+{ border-color:E6E6E6 }
+
+.img_2
+{ border-color:E6E6E6 }
+
+.img_blue
+{ border-color:E6E6E6 }
+
+/* icon */
+.icon_margin
+{ margin: 0 4px 4px 0 }
+
+/* 메뉴 클릭시 */
+.menu_click { color:#ffffff; font-family:돋움; font-size:12px; background-color: #7ABA22;padding:2px 0 0 0}
+
+/*게임리뷰 상품설명*/
+.rev_txt { font-size: 11px; font-weight: normal;  color:#7C7C7C; line-height:18px;}
+a.rev_txt {   font-size: 11px; font-weight: normal;  text-decoration: none; color:#7C7C7C;line-height:18px;}
+a.rev_txt:hover {  font-size: 11px; font-weight: normal;  text-decoration: underline; color:#7C7C7C;line-height:18px;}
+
+
+/*상품명검색*/
+.pro_input
+{
+	 font-size			: 12px;
+	 font-family		: "돋움","Arial","Verdana";
+	 color				: #333333;
+	 font-weight		: bold;
+	 width              : 200px;
+	 height				: 18px;
+	 line-height		: 18px;
+	 background-color	: #ffffff;
+	 border: #ffffff 1px solid;
+}
+
+
+/* 인기상품 아이콘 */
+span.icon_hit_rank {
+	width: 45px;
+	line-height: 13px;
+	padding: 0 5px 0 0;
+	text-align: right;
+	background-image: url('http://img.danawa.com/new/common/elec_hit.gif');
+	font-family: helvetica;
+	font-size: 11px;
+	font-weight: bold;
+	color: #F97327;
+}

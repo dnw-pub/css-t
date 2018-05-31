@@ -1,0 +1,12 @@
+/* 2015-01-13 / pjy / media update  ±âÁ¸ ¹Ìµð¾îÀÕ css ¿Å±è */
+
+#contents{width:980px;padding:20px 0 0 0; margin:0 auto;}
+
+.conference_main {}
+.conference_wrap {padding:0 0 40px;}
+
+.button_wrap {width:100%;text-align:center;}
+.button_wrap a {display:inline-block;font-size:14px;font-weight:bold;line-height:16px;text-align:center;text-decoration:none;margin:0 10px;}
+.button_wrap .red_btn {padding:15px 25px 13px;background:#D10B0E;color:#fff;}
+.button_wrap .grey_btn {padding:15px 25px 13px;background:#808080;color:#fff;}
+.button_wrap .input_button {display:inline-block;font-size:14px;font-weight:bold;line-height:16px;text-align:center;text-decoration:none;margin:0 10px;border:0 none;background:#D10B0E;color:#fff;padding:8px 26px 6px;}

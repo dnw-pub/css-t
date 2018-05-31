@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/*
+ * 2014-03-21 / create 연동몰 ssl 관련 공지 페이지 / ksy
+ * 2014-07-11 / add box / ksy
+ */
+
+/* default Selector */
+body,input,button,select,input,txtArea,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,ul,ol,li,legend,hr,em,addres,div,p,strong,fieldset,form{margin:0; padding:0;font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;}
+html,body{width:100%;height:100%;}
+html{overflow-y:scroll}
+body {font-size:12px;font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif;text-align:left;background-color:#fff;*word-break:break-all;-ms-word-break:break-all;}
+ul {list-style:none;}
+
+/* link */
+a{color:#666;text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+/* Type Selector */
+img, fieldset, button,iframe {border:0 none}
+em,address{font-style:normal}
+hr{display:none}
+legend{*width:0}
+:root legend{margin-top:-1px;font-size:0;line-height:0}
+
+
+
+.header_left {border-bottom:3px solid #78c341;position:absolute;left:0;top:85px;width:40%;}
+.header_right {border-bottom:3px solid #636363;position:absolute;right:0;top:85px;width:60%;}
+.header {width:925px;margin:0 auto;position:relative;height:85px;}
+.header h1 {bottom:15px;left:0;position:absolute;}
+.header h1 a {background:url(//img.danawa.com/new/link/img/h1_logo.png) no-repeat scroll 0 0 transparent;width:111px;height:24px;text-indent:-999em;display:block;}
+.header h2 {background:url(//img.danawa.com/new/link/img/h2_logo.png) no-repeat scroll 0 0 transparent;width:204px;height:18px;float:left;text-indent:-999em;position:absolute;bottom:15px;left:125px;}
+.contents {background:url(//img.danawa.com/new/link/img/bg_shdw.gif) repeat-x scroll 0 top transparent;}
+.contents_wrap {background:url(//img.danawa.com/new/link/img/bg_linkmall.png) no-repeat scroll right 20px transparent;width:925px;margin:0 auto;padding-top:52px;overflow:hidden;padding-bottom:50px;}
+.contents_wrap p {font-size:12px;color:#333333;line-height:20px;}
+.contents_wrap .dot {background:url(//img.danawa.com/new/link/img/icon_dot.gif) no-repeat scroll 0 8px transparent;padding-left:11px;margin-bottom:20px;}
+.b_point {color:#4266db;}
+.point_box {background:#F3F3F3;border:1px solid #E5E5E5;float:left;margin-top:25px;padding:20px 22px;}
+.point_box strong {display:block;margin-bottom:12px;}
+.tab_wrap {float:left;width:100%;}
+.tab_header {border-bottom:1px solid #8094E4;overflow:hidden;padding-bottom:15px;cursor:pointer;}
+.tab_wrap h3 {background:url(//img.danawa.com/new/link/img/tit_list.gif) no-repeat scroll 0 0 transparent;height:22px;text-indent:-999em;float:left;}
+.tab_wrap .btn {background:url(//img.danawa.com/new/link/img/btn_arrw_down.gif) no-repeat scroll 0 0 transparent;height:23px;width:23px;text-indent:-999em;cursor:pointer;float:right;}
+.tab_wrap .up {background:url(//img.danawa.com/new/link/img/btn_arrw_up.gif) no-repeat scroll 0 0 transparent;}
+.tab_01 {margin-top:45px;}
+.tab_01 h3 {background-position:0 0;width:210px;}
+.contents_wrap .tab_contents {padding:20px 0 0 57px;display:none;}
+.contents_wrap .tab_contents strong {font-size:14px;display:block;margin-bottom:5px;}
+.contents_wrap .tab_contents p {color:#000000;font-size:12px;line-height:23px;}
+.contents_wrap .tab_contents img {display:block;margin:10px 0 10px 14px;}
+.contents_wrap .tab_contents li {color:#565656;font-size:12px;line-height:20px;padding-left:15px;}
+.contents_wrap .tab_contents li span {color:#000000;display:block;margin-left:15px;}
+.mt40 {margin-top:40px;}
+.mt20 {margin-top:20px;}
+.mt10 {margin-top:10px;}
+.tab_02 {margin-top:45px;}
+.tab_02 h3 {background-position:0 -40px;width:138px;}
+.tab_03 {margin-top:45px;}
+.tab_03 h3 {background-position:0 -80px;width:515px;}
+.link {color:#4266db;text-decoration:underline;display:inline-block;margin-left:15px;}
+.contents_wrap .tab_contents .red {color:#c60000;}
+.red_point {color:#c60000;}
+.tab_03 .link {margin-left:30px;}
+.tab_wrap .block {display:block;}
+
+/* box */
+.box {border:3px solid #e1e1e1;}
+.box_top {background:#f8f5f1;height:31px;}
+.text_1 {background:url(https://login.danawa.com/danawa/img/login/id_search_text4.gif) #f8f5f1 no-repeat -4px 0px;width:480px;height:23px;text-indent:-9999em;overflow:hidden;margin-left:4px;}
+.text_2 {background:url(https://login.danawa.com/danawa/img/login/id_search_text3.gif) #f8f5f1 no-repeat -4px 0px;width:480px;height:23px;text-indent:-9999em;overflow:hidden;margin-left:4px;}
+.text_3 {background:url(https://login.danawa.com/danawa/img/login/password_search_text1.gif) #f8f5f1 no-repeat -4px 0px;width:580px;height:23px;text-indent:-9999em;overflow:hidden;margin-left:4px;}
+.text_4{background:url(https://login.danawa.com/danawa/img/login/id_search_text9.gif) #f8f5f1 no-repeat -4px 0px;width:190px;height:23px;text-indent:-9999em;overflow:hidden;margin-left:4px;}
+.text_5{background:url(https://login.danawa.com/danawa/img/login/id_search_text10.gif) #f8f5f1 no-repeat -4px 0px;width:480px;height:23px;text-indent:-9999em;overflow:hidden;margin-left:4px;}
+.text_6{background:url(https://login.danawa.com/danawa/img/login/id_search_text11.gif) #f8f5f1 no-repeat -4px 0px;width:330px;height:23px;text-indent:-9999em;overflow:hidden;margin-left:4px;}
+.text_7{background:url(https://login.danawa.com/danawa/img/login/id_search_text12.gif) #f8f5f1 no-repeat -4px 0px;width:350px;height:23px;text-indent:-9999em;overflow:hidden;margin-left:4px;}
+.text_8{background:url(https://login.danawa.com/danawa/img/login/id_search_text13.gif) #f8f5f1 no-repeat -4px 0px;width:435px;height:23px;text-indent:-9999em;overflow:hidden;margin-left:4px;}
+.form_type1 {margin:18px 0 15px 5px;vertical-align:middle;}
+.form_type1 label {display:inline-block;vertical-align:middle;padding-left:18px;margin-right:4px;}
+.form_type1 .btn_confirm  {display:inline-block;vertical-align:middle;margin-left:6px;}
+.form_type1 .form_caution{font-size:11px;color:#dc3900;line-height:16px;margin:10px 0 0 17px;}
+.form_type1 .form_caution p, .form_type1 .form_caution strong, .form_type1 .form_caution em {font-size:11px;}
+.form_type1 .form_caution p{margin-bottom:4px;}
+.form_type1 .form_caution em {text-decoration:underline;}
+.row1 {margin-bottom:8px;}
+.row1 label {width:82px;}
+.txt_jumin {font-size:11px;color:#666;margin-left:5px;}
+.txt_jumin strong {font-size:11px;}
+.row2 {margin:0 0 0 110px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

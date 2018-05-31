@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*
+최종작업일자 : 2012-05-22
+작업자 : P10
+작업내용 : 성능차트 팝업 스타일제작
+
+최종작업일자 : 2012-09-21
+작업자 : P10
+작업내용 : 디지털TV 스펙비교
+*/
+
+/* device_pop style */ 
+#wrap_pop h1 {background-color:#4a75c8;}
+.tab ul {width:855px;}
+.tab li {float:left; position:relative; z-index:5;}
+.tab li a {display:block;width:203px; height:38px; border:1px solid #d9d9d9; background-color:#f7f7f7; text-indent:-99em;}
+.tab li.active_tab {z-index:15;}
+.tab li.active_tab a {background-color:white; border:1px solid #333; border-bottom-color:white; cursor:default;}
+.tab a.cpu_intel { background-image: url('http://img.danawa.com/new/prod_list/img/cpu_intel_off.png'); background-repeat:no-repeat; background-position:55px 6px; }
+.tab a.cpu_amd { background-image:url('http://img.danawa.com/new/prod_list/img/cpu_amd_off.png'); background-repeat:no-repeat; background-position:40px 12px; }
+.tab a.vga_nvidia { background-image:url('http://img.danawa.com/new/prod_list/img/vga_nvidia_off.png'); background-repeat:no-repeat; background-position:39px 12px; width:238px; }
+.tab a.vga_amd { background-image:url('http://img.danawa.com/new/prod_list/img/vga_amd_off.png'); background-repeat:no-repeat; background-position:39px 12px; }
+.tab li.active_tab a.cpu_intel { background-image:url('http://img.danawa.com/new/prod_list/img/cpu_intel.png'); }
+.tab li.active_tab a.cpu_amd { background-image:url('http://img.danawa.com/new/prod_list/img/cpu_amd.png'); }
+.tab li.active_tab a.vga_nvidia { background-image:url('http://img.danawa.com/new/prod_list/img/vga_nvidia.png'); }
+.tab li.active_tab a.vga_amd { background-image:url('http://img.danawa.com/new/prod_list/img/vga_amd.png'); }
+.spec {clear:both; width:855px; overflow:hidden; background:white; border-top:1px solid #333; position:relative; z-index:10; top:-1px;padding-top:20px;}
+.spec h2{display:none;}
+.spec .frame {width:853px; height:600px; overflow:auto; /*margin-top:20px;*/}
+.spec #vga_nvidia .frame, .spec #vga_amd .frame {padding-left:15px; width:838px;}
+.spec .frame iframe {width:835px; height:610px; border:none; margin-bottom:10px; }
+.spec .frame iframe.intel_sandy, .spec .frame iframe.amd3 {margin-bottom:0; height:600px;}
+.spec #vga_nvidia iframe, .spec #vga_amd iframe {height:590px; margin-bottom:0;}
+.spec .frame iframe.amd_fm1 {height:630px;}
+
+/* Digital TV Spec */
+.tv_spec .tab a{background-image:url('http://img.danawa.com/new/prod_list/img/tv_spec_tab.png'); background-repeat:no-repeat;}
+.tv_spec .frame .img{}
+.tab li .samsung_tv {width:291px;background-position:0 0;}
+.tab .active_tab .samsung_tv {background-position:0 -40px;}
+.tab li .lg_tv {width:288px;background-position:-300px 0;}
+.tab .active_tab .lg_tv {background-position:-300px -40px;}
+.tab li .half_tv {width:270px;background-position:-600px 0;}
+.tab .active_tab .half_tv {background-position:-600px -40px;}
+.sub_tab {overflow:hidden;border-bottom:2px solid #4266db;width:823px;margin-top:17px;}
+.sub_tab li {float:left;border:1px solid #b3b3b5;border-bottom-color:#999999;border-left-width:0;background:url('http://img.danawa.com/new/prod_list/img/sub_tab.png') repeat-x;text-align:center;}
+.sub_tab li.first {border-left-width:1px;}
+.sub_tab li a{display:block;font-size:12px;font-weight:bold;color:#333;line-height:14px;padding:8px 0 6px;}
+.sub_tab li a span{padding-right:26px;background:url('http://img.danawa.com/new/prod_list/img/sub_tab.png') no-repeat right -90px;}
+.sub_tab li a strong{color:#4266db;}
+.sub_tab li .tab1{width:291px;}
+.sub_tab li .tab2{width:263px;}
+.sub_tab li .tab3{width:265px;}
+.sub_tab .active_tab {background:#4266db;border-color:#4266db;}
+.sub_tab .active_tab a, .sub_tab .active_tab a strong {color:#fff;}
+.sub_tab .active_tab a span {background-position:right -50px;}
+.spec_tables{clear:both;}
+#tv_half_table{border-top:3px solid #999;border-bottom:3px solid #999;margin-top:17px;}
+.tbl_spec1{width:100%;border-bottom:1px solid #999;border-collapse:collapse;clear:both;*border-bottom:4px solid #d1d1d1;}
+.tbl_spec1 th{background:#f4f4f4;color:#666;font-size:12px;vertical-align:middle;border-left:1px solid #e0e0e0;border-right:1px solid #e0e0e0;text-align:center;border-bottom:1px solid #e0e0e0;line-height:18px;}
+.tbl_spec1 td{border-right:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;vertical-align:middle;text-align:center;height:32px;font-size:11px;}
+.tbl_spec1 td a{font-size:11px;color:#666;}
+.tbl_spec1 td.bg_yellow {font-size:12px;color:#666;}
+.tbl_spec1 td.last{border-right:1px solid #999;}
+.tbl_spec1 .half_table_head th{border-bottom:2px solid #d6d6d6;}
+.tbl_spec1 .half_table_head td{font-weight:bold;background:#ebfff8;border-bottom:2px solid #d6d6d6;}
+.tbl_spec1 .half_table_head td a{color:#666;}
+.tr_first{background:#ebfff8;}
+.bg_yellow{background:#f9ffea;}
+.tbl_spec1 tr .line{border-bottom:3px solid #d1d1d1;}
+.tbl_spec1 .last_tr .line{border-bottom:4px solid #d1d1d1;}
+
+
+#wrap_pop h1 {position:relative;}
+#wrap_pop .top_right {font-weight:normal;color:#c6c6c6;position:absolute;top:10px;right:10px;}
+#wrap_pop .top_right a {color:#c6c6c6;margin-left:8px;margin-right:10px;}
+#wrap_pop .top_right a:hover {text-decoration:underline;}
+#wrap_pop .top_right .click {color:#FFFFFF;font-weight:bold;}

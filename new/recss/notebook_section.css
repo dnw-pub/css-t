@@ -1,0 +1,400 @@
+@charset "utf-8";
+/*
+ 2015-04-30 / 기획전, 표준pc동영상 다자인 변경에 따른 수정 / sya
+ 2015-05-07 / 사용기 내 컨텐츠 간격조절, 정렬맞춤, 새로운소식 li 넓이 수정 / sya
+ 2018-01-22 / 아카데미 행사 아이콘 변경 / yjk
+ 	
+ */
+h1,h2,h3,h4,h5,h6,p,dl,dt,dd {margin:0;padding:0;}
+ol,ul {list-style:none;margin:0;padding:0;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+img {border:none;}
+.blind {display:block;left:0;overflow:hidden;position:absolute;top:-1000em;}
+
+.floating_banner {margin-left:-255px;left:50%;position:absolute;top:578px;z-index:999;}
+.floating_banner .banner {height:145px;width:510px;z-index:998;}
+
+/* common */
+.prod_price {color:#000000;font-size:12px;}
+.pnum {font-family:"Century Gothic", Sans-serif, arial, "돋움", Dotum, "굴림", gulim;font-size:14px;font-weight:bold;}
+.btn_price_com {background:url(//img.danawa.com/new/section_notebook/v1/img/btn_price_com.gif) no-repeat scroll 0 0 transparent;display:block;height:18px;text-indent:-999em;margin:10px auto 0;width:54px;}
+.btn_barogagi {background:url(//img.danawa.com/new/section_notebook/v1/img/btn_baro.gif) no-repeat scroll 0 0 transparent;display:block;height:18px;text-indent:-999em;margin:10px auto 0;width:54px;}
+.prev {background:url(//img.danawa.com/new/section_notebook/v1/img/icon_over_arrw.png) no-repeat scroll 0 0 transparent;border:none;cursor:pointer;height:50px;left:0;margin-top:-25px;opacity:0.15;text-indent:-999em;top:50%;position:absolute;width:43px;z-index:10;filter:alpha(opacity=15);}
+.next {background:url(//img.danawa.com/new/section_notebook/v1/img/icon_over_arrw.png) no-repeat scroll -57px 0 transparent;border:none;cursor:pointer;height:50px;margin-top:-25px;opacity:0.15;text-indent:-999em;top:50%;position:absolute;right:0;width:43px;z-index:10;filter:alpha(opacity=15);}
+.prev:hover {opacity:0.4;filter:alpha(opacity=40);}
+.next:hover {opacity:0.4;filter:alpha(opacity=40);}
+
+#danawa_container {width:100%;}
+.danawa_search_center {width:1100px;}
+.danawa_gnb_center {width:1100px;}
+.btn_layer_prev {left:0;}
+.btn_layer_next {right:0;}
+.content_box02 .paging_fix {bottom:10px;}
+.content_box04 .paging_fix {bottom:10px;width:200px;*width:100%;}
+.paging_main .num_page:last-child {margin:0;}
+.footer_top_content {width:1100px;}
+.footer_danawa_address {width:1100px;}
+.auto_arrow_top {*top:0;}
+
+/* top_wrap */
+.main_content {margin:0 auto;width:1100px;}
+.main_content:after {clear:both;content:"";display:block;height:0;}
+.top_wrap .main_content {overflow:hidden;padding:20px 0 40px;position:relative;*padding:20px 0;}
+.cate_wrap {background:#ffffff;float:left;margin:0 14px 0 0;width:886px;*margin:0 13px 0 0;*width:887px;}
+.cate_wrap .cate {float:left;height:429px;}
+.cate_wrap h3 {border-bottom:1px solid #b3b3b3;cursor:pointer;*width:147px;}
+.cate_wrap h3 strong {background:url(//img.danawa.com/new/section_notebook/v1/img/tit_cate.png) no-repeat scroll 0 0 transparent;display:block;text-indent:-999em;margin:0 auto;}
+.cate_wrap h4 {background:#f4f4f4;color:#333333;font-size:12px;height:21px;line-height:19px;padding:5px 0 0 20px;}
+.cate_wrap h4 a {color:#333333;}
+.cate_wrap .on {margin-left:-1px;*margin:0;}
+.cate_wrap .on:first-child {margin-left:0;}
+.cate_wrap .on h4 {background:#cde5fc;}
+.cate_wrap .service_go {background:url(//img.danawa.com/new/section_notebook/v1/img/icon_arrw_base.png) no-repeat 134px 11px #f4f4f4;margin-bottom:1px;}
+.cate_wrap .on .service_go {background:url(//img.danawa.com/new/section_notebook/v1/img/icon_arrw.png) no-repeat scroll 133px 11px #cde5fc;} 
+.cate01,.cate02,.cate03,.cate04 {border-right:1px solid #e5e5e5;overflow:hidden;}
+.cate_wrap .cate01 h3 {height:21px;padding:12px 0 0 0;}
+.cate_wrap .cate02 h3 {height:22px;padding:11px 0 0 0;}
+.cate_wrap .cate03 h3 {height:21px;padding:12px 0 0 0;}
+.cate_wrap .cate04 h3 {height:22px;padding:11px 0 0 0;}
+.cate_wrap .cate01 h3 strong {background-position:0 0;height:11px;width:42px;}
+.cate_wrap .cate02 h3 strong {background-position:0 -40px;height:11px;width:74px;}
+.cate_wrap .cate03 h3 strong {background-position:0 -20px;height:13px;width:64px;}
+.cate_wrap .cate04 h3 strong {background-position:0 -60px;height:13px;width:87px;}
+.cate_wrap .cate_list {float:left;height:395px;width:147px;}
+.cate_wrap .on .cate_list {height:394px;}
+.cate_list ul {padding:2px 0 3px;}
+.cate_list li {line-height:20px;padding:0 0 0 20px;}
+.cate_list li a {color:#666666;}
+.cate_wrap .on .cate01 {border-left:1px solid #0375e0;border-right:1px solid #0375e0;border-bottom:1px solid #0375e0;}
+.cate_wrap .on .cate02 {border-left:1px solid #0375e0;border-right:1px solid #0375e0;border-bottom:1px solid #0375e0;}
+.cate_wrap .on .cate03 {border-left:1px solid #0375e0;border-right:1px solid #0375e0;border-bottom:1px solid #0375e0;}
+.cate_wrap .on .cate04 {border-left:1px solid #0375e0;border-right:1px solid #0375e0;border-bottom:1px solid #0375e0;}
+.cate_wrap .on .cate01 .cate_list {width:146px;*width:147px;}
+.cate_wrap .on .cate01 h4 {padding:5px 0 0 19px;}
+.cate_wrap .on .cate01 .cate_list li {padding:0 0 0 19px;}
+.cate_wrap .on h3 {background:#0275e0;border-bottom:1px solid #0275e0;}
+.cate_wrap .on .cate01 h3 strong {background-position:0 -80px;height:12px;width:45px;}
+.cate_wrap .on .cate02 h3 strong {background-position:0 -120px;height:12px;width:80px;}
+.cate_wrap .on .cate03 h3 strong {background-position:0 -100px;height:14px;width:69px;}
+.cate_wrap .on .cate04 h3 strong {background-position:0 -140px;height:14px;width:94px;}
+.cate_wrap .content {height:429px;overflow:hidden;}
+.cate_content {float:left;padding:13px 10px 14px;_padding:13px 8px 14px;}
+.cate_wrap .on .cate_content {display:block !important;}
+.cate_content .type_banner img {display:block;width:274px;}
+.cate_content .type_product {padding:20px 0 23px;}
+.cate_content .type_product .cate_name {color:#0375e0;font-size:11px;}
+.cate_content .type_product .tit_txt {color:#333333;font-size:11px;font-weight:bold;margin:0 0 0 5px;}
+.cate_content .banner img {display:block;height:125px;width:274px;}
+.type_txt_list {padding:12px 10px;width:254px;}
+.type_txt_list .dot_list li {height:22px;overflow:hidden;}
+.type_txt_list .dot_list li a {line-height:22px;}
+.popular_prod {height:225px;padding:0 10px;}
+.popular_prod ul {margin:30px 0 0 0;overflow:hidden;}
+.popular_prod ul:after {clear:both;content:"";display:block;height:0;}
+.popular_prod li {float:left;margin:0 7px 0 0;width:80px;}
+.popular_prod li a:hover {color:#666666;}
+.popular_prod .last {margin:0;}
+.popular_prod li img {display:block;height:80px;width:80px;}
+.popular_prod li .prod_name {color:#666666;display:block;font-size:11px;height:30px;line-height:15px;margin-top:20px;overflow:hidden;text-align:center;word-break:break-all;}
+.popular_prod .prod_price {display:block;font-weight:normal;text-align:center;margin-top:3px;}
+.popular_prod .prod_price .pnum {letter-spacing:-1px;}
+.dot_list li {background:url(//img.danawa.com/new/section_notebook/v1/img/icon_dot_2x2.gif) no-repeat scroll 0 8px transparent;height:20px;padding-left:9px;}
+.dot_list li a {color:#666666;font-size:12px;line-height:20px;}
+.nav_wrap {float:left;width:200px;}
+.nav_wrap ul:after {clear:both;content:"";display:block;height:0;}
+.nav_wrap li {background:#ffffff;float:left;}
+.nav_wrap .icon {background:url(//img.danawa.com/new/section_notebook/v1/img/icon_nav.gif) no-repeat scroll 0 0 transparent;display:block;text-indent:-999em;margin:0 auto;}
+.nav_wrap .menu_tit {background:#4079ae;color:#ffffff;font-size:11px;line-height:11px;height:20px;padding:10px 0 0px 18px;}
+.nav_wrap .menu01 {border-bottom:1px solid #e5e5e5;border-right:1px solid #e5e5e5;height:67px;width:99px;}
+.nav_wrap .menu02 {border-bottom:1px solid #e5e5e5;height:67px;width:100px;}
+.nav_wrap .menu03 {border-right:1px solid #e5e5e5;height:66px;width:99px;}
+.nav_wrap .menu04 {height:66px;width:100px;}
+.nav_wrap h4 {color:#757575;font-size:11px;font-weight:normal;letter-spacing:-1px;line-height:13px;text-align:center;}
+.nav_wrap  a:hover h4 {font-weight:bold;}
+.nav_wrap a {display:block;height:67px;overflow:hidden;}
+.nav_wrap a:hover {text-decoration:none;}
+.top_nav .menu01 .icon {background-position:0 -120px;height:20px;width:29px;margin:19px auto 8px;}
+.top_nav .menu02 .icon {background-position:0 0px;height:18px;width:27px;margin:20px auto 9px;}
+.top_nav .menu03 .icon {background-position:0 -40px;height:25px;width:27px;margin:13px auto 6px;}
+.top_nav .menu04 .icon {background-position:0 -160px;height:22px;width:32px;margin:15px auto 7px;}
+.top_nav .menu01 a:hover .icon {background-position:-40px -120px;height:20px;width:29px;margin:19px auto 8px;}
+.top_nav .menu02 a:hover .icon {background-position:-40px 0px;height:18px;width:27px;margin:20px auto 9px;}
+.top_nav .menu03 a:hover .icon {background-position:-40px -40px;height:25px;width:27px;margin:13px auto 6px;}
+.top_nav .menu04 a:hover .icon {background-position:-40px -160px;height:22px;width:32px;margin:15px auto 7px;}
+.top_nav .menu_tit strong {margin-top:26px;}
+.main_content .image_banner {height:255px;position:absolute;right:0;bottom:40px;width:200px;*clear:both;}
+.main_content .image_banner img {display:block;height:255px;width:200px;}
+.main_content .text_banner {position:absolute;left:0;bottom:2px;}
+.main_content .text_banner a {color:#333333;display:block;font-weight:bold;margin:10px 0;}
+
+/* bottom_wrap */
+.bottom_wrap .main_content {overflow:hidden;padding:30px 0;}
+.content_box01 {background:#ffffff;border-top:1px solid #757575;border-bottom:1px solid #757575;float:left;height:338px;margin:0 20px 0 0;overflow:hidden;width:820px;}
+.box_tit {background:url(//img.danawa.com/new/section_notebook/v1/img/tit_total.gif) no-repeat scroll 0 0 transparent;text-indent:-999em;}
+.news_nav {border-right:1px solid #757575;float:left;height:278px;padding:30px 0 30px 0px;width:140px;}
+.news_nav .box_tit {background-position:60px -20px;height:14px;margin-bottom:15px;}
+.news_nav ul {text-align:right;}
+.news_nav li {padding:0 20px 0 0;line-height:30px;}
+.news_nav li a {color:#757575;font-weight:bold;}
+.news_nav li a:hover {text-decoration:none;}
+.news_nav li .on {color:#0375e0;}
+.news_content {float:left;padding:10px;height:318px;width:659px;}
+.news_content .left_wrap {float:left;padding:12px 0 0 10px;width:468px;}
+.news_content .left_wrap .thumb_type a:hover {text-decoration:none;}
+.news_content .left_wrap .thumb_type a:hover .summary {color:#666666;text-decoration:underline;}
+.news_content .left_wrap .thumb_type img {display:block;float:left;height:75px;width:75px;}
+.news_content .left_wrap .thumb_type {margin:0 0 20px;overflow:hidden;}
+.news_content .left_wrap .thumb_type .title {color:#333333;display:block;height:22px;line-height:24px;margin:8px 0 0 80px;padding:0 0 0 7px;}
+.news_content .left_wrap .thumb_type a .on {background:#4079ae;color:#ffffff;}
+.news_content .left_wrap .thumb_type .summary {color:#666666;font-size:11px;height:32px;line-height:16px;margin:0 0 0 80px;padding:3px 20px 0 7px;}
+.news_content .left_wrap .dot_list {padding-top:10px;}
+.news_content .left_wrap .dot_list a {float:left;height:20px;line-height:20px;width:332px;}
+.news_content .left_wrap .dot_list li {margin-bottom:2px;padding:0px 20px 0 9px;}
+.news_content .left_wrap .dot_list .board {color:#757575;display:block;float:right;font-size:11px;padding-top:2px;}
+.news_content .right_wrap {background:#f0f5f9;float:left;height:278px;width:141px;padding:20px;}
+.news_content .right_wrap .notice {color:#666769;font-size:11px;display:block;text-align:center;margin:25px 0 0;}
+.news_content .right_wrap .product {margin:0 0 10px;text-align:center;width:141px;}
+.news_content .right_wrap .product a {color:#333333;}
+.news_content .right_wrap .product a img {height:75px;margin:0 auto;width:75px;}
+.news_content .right_wrap .product .prod_name {color:#333333;display:block;font-size:11px;height:30px;line-height:15px;margin-top:5px;overflow:hidden;word-break:break-all;}
+.news_content .right_wrap .product .btn_price_com {display:inline-block;margin:0;position:relative;top:-1px;vertical-align:middle;}
+.news_content .right_wrap .product .prod_summary {color:#898888;font-size:11px;height:96px;line-height:16px;text-align:center;padding:10px 0 0;}
+.video_news {overflow:hidden;padding:12px 9px 0 10px;}
+.video_news:after {clear:both;content:"";display:block;height:0;}
+.video_news li {float:left;padding:0 0 10px 0;width:160px;}
+.video_news a {color:#000000;display:block;margin:0 auto;width:115px;}
+.video_news a img {display:block;height:82px;width:115px;}
+.video_news .title {display:block;height:32px;line-height:16px;text-align:center;margin:10px 0 0;}
+.video_news li .board {color:#666666;display:block;font-size:11px;line-height:18px;text-align:center;margin:0 auto;width:115px;}
+.content_box02 {background:#ffffff;float:left;height:280px;margin:0;padding:30px 0;position:relative;width:260px;_height:280px;_overflow:hidden;}
+.content_box02 .tab {margin:0 30px;overflow:hidden;}
+.content_box02 h3 {border-bottom:1px solid #E5E5E5;text-align:center;padding:0 0 7px 0;width:100px;}
+.content_box02 h3 a {background:url(//img.danawa.com/new/section_pc/v1/img/tit_total.gif) no-repeat scroll 0 0;cursor:pointer;display:block;text-indent:-999em;}
+.content_box02 h3 .tit_plan {background-position:0 -60px;height:14px;width:35px;margin:0 auto;}
+.content_box02 h3 .tit_hit {background-position:0 -100px;height:14px;width:50px;margin:0 auto;}
+.content_box02 .on h3 {border-bottom:1px solid #757575;}
+.content_box02 .on h3 .tit_plan {background-position:0 -40px;}
+.content_box02 .on h3 .tit_hit {background-position:0 -80px;}
+.content_box02 .content {display:none;left:50%;margin-left:-112px;position:absolute;width:225px;_overflow:hidden;}
+.content_box02 .on .content {display:block;}
+.content_box02 .plan_wrap {float:left;text-align:center;width:130px;}
+.content_box02 .plan_wrap h3 {margin: 0 0 0 30px;}
+.content_box02 .plan_wrap img {display:block;height:80px;width:225px;}
+.content_box02 .hit_wrap {float:left;text-align:center;width:130px;}
+.content_box02 .hit_wrap h3 {margin:0 30px 0 0;}
+.content_box02 .hit_wrap .content {padding:22px 0 0;}
+.content_box02 .hit_wrap .product:hover {color:#666666;}
+.content_box02 .hit_wrap .product img {height:160px;width:160px;}
+.content_box02 .btn_opacity_arrow {display:none;}
+.content_box02 .paging_fix {display:none;}
+.content_box02 .on .btn_opacity_arrow {display:block;}
+.content_box02 .on .paging_fix {display:block;left:0;}
+.content_box02 .hit_wrap .prod_name {color:#666666;display:block;height:18px;line-height:18px;margin:14px 0 5px;overflow:hidden;word-break:break-all;}
+.content_box03 {background:#FFFFFF;float:left;height:244px;margin:20px 20px 0 0;padding:30px;position:relative;width:480px;_overflow:hidden;_clear:both;}
+.content_box03 .tab {overflow:hidden;}
+.content_box03 .tab:after {clear:both;content:"";display:block;height:0;}
+.content_box03 h3 {border-bottom:1px solid #E5E5E5;float:left;height:18px;text-align:center;padding:0 0 9px 0;width:240px;}
+.content_box03 h3 span {background:url(//img.danawa.com/new/section_notebook/v1/img/tit_total.gif) no-repeat scroll 0 0;cursor:pointer;display:inline-block;line-height:9999px;overflow:hidden;}
+.content_box03 h3 .tit_estimate {background-position:0 -140px;height:14px;width:53px;margin:0 auto;}
+.content_box03 h3 .tit_cm {background-position:0 -180px;height:14px;width:103px;margin:0 auto;}
+.content_box03 .on h3 {border-bottom:1px solid #757575;}
+.content_box03 .on .tit_estimate {background-position:0 -120px;}
+.content_box03 .on .tit_cm {background-position:0 -160px;}
+.content_box03 .on .dot_list {display:block;*clear:both;}
+.content_box03 .on .qa_wrap {display:block;*clear:both;}
+.more_view {background:url(//img.danawa.com/new/section_pc/v1/img/icon_more_02.gif) no-repeat scroll 0 0 transparent;display:inline-block;height:12px;margin-left:10px;text-indent:-999em;width:12px;*position:relative;*top:7px;}
+.estimate_content {float:left;width:240px;}
+.estimate_content .dot_list {display:none;left:30px;top:63px;position:absolute;width:480px;}
+.estimate_content li {line-height:24px;height:24px;overflow:hidden;padding-left:7px;*height:22px;}
+.estimate_content li:after {clear:both;content:"";display:block;height:0;}
+.estimate_content li span {color:#757575;float:left;font-size:11px;text-align:center;margin-right:12px;}
+.estimate_content li .title {float:left;line-height:24px;text-align:left;width:282px;}
+.estimate_content li .title a {color:#333333;}
+.estimate_content li .price {text-align:right;width:65px;}
+.estimate_content li .state {width:44px;}
+.estimate_content li .date {margin:0;width:57px;}
+.cm_recom_content {float:left;width:240px;}
+.cm_recom_content .qa_wrap {display:none;left:30px;top:58px;position:absolute;width:480px;}
+.cm_recom_content .question {padding:13px 8px 9px 8px;}
+.cm_recom_content .question .id {background:url(//img.danawa.com/new/section_pc/v1/img/icon_q.png) no-repeat scroll 0 0 transparent;height:13px;}
+.cm_recom_content .id {color:#666666;display:block;font-size:11px;line-height:14px;padding:0 0 0 19px;}
+.cm_recom_content .summary {color:#666666;display:block;font-size:11px;letter-spacing:-1px;line-height:16px;margin:5px 0 0;padding:0 0 0 19px;}
+.cm_recom_content .answer {background:#f0f5f9;height:111px;padding:13px 8px;}
+.cm_recom_content .answer .id {background:url(//img.danawa.com/new/section_pc/v1/img/icon_a.png) no-repeat scroll 0 0 transparent;height:13px;}
+.cm_recom_content .answer .product {background:#ffffff;height:34px;line-height:34px;margin:11px 21px 0;padding:0 10px;}
+.cm_recom_content .answer .product .btn_price_com {float:left;margin:8px 0 0 7px;}
+.cm_recom_content .answer .product .prod_name {float:left;width:256px;}
+.cm_recom_content .answer .product .prod_name a {color:#333333;font-weight:bold;}
+.cm_recom_content .answer .product .prod_price {float:left;text-align:right;width:85px;}
+.cm_recom_content .answer .linetwo {height:43px;line-height:42px;margin:7px 21px 0;}
+.cm_recom_content .answer .linetwo .prod_name {line-height:16px;margin:6px 0 0;}
+.cm_recom_content .answer .linetwo .btn_price_com {margin:13px 0 0 7px;}
+.content_box04 {background:#ffffff;float:left;height:244px;margin:20px 20px 0 0;padding:30px;position:relative;width:200px;}
+.content_box04 .box_tit {background-position:80px -200px;text-align:center;height:18px;}
+.content_box04 .box_tit a {display:block;margin:0 auto;width:110px;}
+.event_list li {overflow:hidden;margin:17px 0 0;}
+.event_list li img {float:left;height:80px;width:80px;}
+.event_list li .title {color:#333333;display:block;font-weight:normal;height:32px;line-height:16px;margin:7px 0 0 88px;overflow:hidden;word-break:break-all;}
+.event_list li .date {color:#666666;display:block;font-size:11px;margin:6px 0 0 88px;}
+.event_list li a:hover {text-decoration:none;}
+.event_list li a:hover .title {color:#333;text-decoration:underline;}
+.event_list li a:hover .date,
+.event_list a:hover .event_info,
+.event_list a:hover dt {color:#666;text-decoration:underline;}
+.event_list .event_info{margin:7px 0 0 88px;font-size:11px;line-height:15px;color:#666;}
+.event_list .info_item{overflow:hidden;margin:0;padding:0;zoom:1;}
+.event_list .event_info dt{float:left;min-width:3em;margin-right:4px;}
+.event_list_media li .title{margin-top:7px;}
+.content_box05 {background:#ffffff;float:left;height:244px;margin:20px 0 0;padding:30px;width:200px;_padding:30px 28px;_width:200px;}
+.content_box05 .box_tit {background-position:85px -220px;}
+.info_list {margin:17px 0 0;_margin:0px 0 0;}
+.info_list li {margin:8px 0 0;overflow:hidden;_margin:0;}
+.info_list li a {color:#838383;}
+.info_list .box {border:1px solid #e5e5e5;color:#666666;display:block;float:left;font-size:11px;font-weight:normal;height:36px;letter-spacing:-1px;line-height:16px;text-align:center;padding:8px 0 0;width:58px;}
+.info_list .txt {color:#838383;display:block;font-size:11px;letter-spacing:-1px;line-height:16px;margin:8px 0 0 68px;_margin:0px 0 0 68px;}
+.info_list a:hover {color:#333333;}
+.info_list a:hover .box {border:1px solid #767676;color:#333333;}
+.info_list a:hover .txt {color:#333333;}
+
+/* 개편 20150427 */
+.bottom_wrap .p0 {padding:0 !important;}
+.middle_content {border-bottom:1px solid #b3b3b3;color:#333333;overflow:hidden;_clear:both;}
+.middle_content:after {clear:both;display:block;content:"";height:0;}
+.middle_content .title {background:url(//img.danawa.com/new/section_notebook/v1/img/tit_total.gif) no-repeat;text-indent:-999em;}
+.middle_content .title a {display:block;}
+.middle_content .paging_fix {bottom:auto;right:20px;top:20px;width:auto;}
+.middle_content .paging_main {text-align:right;}
+.middle_content .paging_main .nows_page {cursor: pointer;}
+.new_news_wrap {border-right:1px solid #e5e5e5;float:left;height:193px;padding:20px 0;position:relative;width:806px;}
+.new_news_wrap .title {background-position:0 -240px;height:14px;width:63px;}
+.new_news_wrap .issue_list {margin:15px 0 0;overflow:hidden;}
+.new_news_wrap .issue_list li {float:left;text-align:center;width:16.66%;}
+.new_news_wrap .issue_list img {height:100px;width:100px;}
+.new_news_wrap .issue_list .tit {color:#333333;height:32px;line-height:16px;margin:9px auto 0;overflow:hidden;word-break:break-all;width:110px;}
+.new_news_wrap .issue_list a:hover {color:#333333;}
+.new_news_wrap .sub_info {color:#666666;font-size:11px;margin:10px 0 0;}
+.new_news_wrap .sub_info .bar {color:#d0d0d0;margin:0 5px;}
+.new_news_wrap .sub_info .category {color:#666666;}
+.new_news_wrap .sub_info .category:hover {color:#666666;}
+.new_news_wrap .sub_info em {font-style:normal;}
+.news_search_wrap {float:left;height:233px;width:293px;}
+.search_bar_wrap {background:#f4f4f4;padding:20px 20px 20px 19px;}
+.search_bar {background:#ffffff;height:21px;padding:6px 0 3px 10px;position:relative;}
+.search_bar_wrap select {color:#666666;border:none;font-weight:bold;padding:2px 0 0;width:64px;*position:relative;*top:-6px;}
+.search_bar_wrap input {border:none;color:#767676;font-size:11px;height:20px;line-height:20px;*position:relative;*top:-3px;}
+.btn_search {background:url(//img.danawa.com/new/section_notebook/v1/img/btn_search.gif) 0 0 no-repeat;height:30px;position:absolute;right:0;text-indent:-999em;top:0;width:31px;}
+.btn_search:hover {background-position: 0 -30px;}
+.newest_news {padding:18px 10px 18px 18px; }
+.newest_news .title {background-position:0 -260px;height:14px;width:64px;}
+.newest_news .dot_list {margin:10px 0 0;}
+.newest_news .dot_list a {color:#333333; letter-spacing:-0.3px;}
+.newest_news .dot_list li {background:url(//img.danawa.com/new/section_notebook/v1/img/icon_dot_2x2.gif) no-repeat 0 7px;height:20px;line-height:20px;overflow:hidden;padding:0 0 0 10px;word-break:break-all;}
+.tip_buyguide_wrap {border-right:1px solid #e5e5e5;float:left;height:260px;padding:20px 0 0;position:relative;width:403px;}
+.tip_buyguide_wrap .title {background-position:0 -280px;height:15px;width:126px;}
+.tip_buyguide_wrap .contents {margin:15px 0 0;overflow:hidden;}
+.tip_buyguide_wrap .left_thumb_wrap {border-top:1px solid #b3d5f6;border-right:1px solid #b3d5f6;float:left;height:174px;padding:28px 22px;text-align:center;width:131px;}
+.tip_buyguide_wrap .left_thumb_wrap .section {color:#0375e0;display:inline-block;font-size:11px;margin:4px 0 0;}
+.tip_buyguide_wrap .left_thumb_wrap .date {color:#666666;font-size:11px;}
+.tip_buyguide_wrap .left_thumb_wrap .tit {color:#333333;display:block;height:30px;line-height:16px;margin:4px 0 3px;overflow:hidden;word-break:break-all;}
+.right_list_wrap {background:#f4f4f4;border-top:1px solid #e5e5e5;float:left;height:229px;width:227px;}
+.tip_buyguide_wrap .dot_list {margin:10px 0 0;}
+.tip_buyguide_wrap .dot_list li {background-position:10px 12px;height:18px;line-height:18px;overflow:hidden;padding:4px 10px 4px 18px;}
+.tip_buyguide_wrap .dot_list li a {color:#666666;font-size:11px;}
+.tip_buyguide_wrap .dot_list .select {background:#ffffff;border:1px solid #b3d5f6;border-left:none;margin:0 0 0 -1px;}
+.tip_buyguide_wrap .dot_list .select a {color:#0375e0;font-size:12px;font-weight:bold;}
+.btn_up {background:url(//img.danawa.com/new/section_notebook/v1/img/btn_updown.gif) no-repeat 0 0;border:none;cursor:pointer;height:20px;position:absolute;right:57px;text-indent:-999em;top:17px;width:12px;}
+.btn_down {background:url(//img.danawa.com/new/section_notebook/v1/img/btn_updown.gif) no-repeat -30px 0;border:none;cursor:pointer;height:20px;position:absolute;right:13px;text-indent:-999em;top:17px;width:25px;}
+.review_benchmark_wrap {border-right:1px solid #e5e5e5;float:left;height:240px;padding:20px;position:relative;width:362px;}
+.review_benchmark_wrap .title {background-position:0 -300px;height:14px;width:80px;}
+.middle_content .thumb_type {overflow:hidden;_clear:both;}
+.middle_content .thumb_type .thumb {float:left;}
+.middle_content .thumb_type .tit {display:block;font-weight:normal;line-height:16px; overflow:hidden;max-height:32px;}
+.middle_content .thumb_type a {color:#333333;}
+.middle_content .thumb_type .sub {color:#666666;font-size:11px;line-height:16px;}
+.middle_content .thumb_type a:hover .sub {text-decoration:underline;}
+.middle_content .thumb_type .date {display:block;color:#666666;font-size:11px;margin:0 0 0 110px;}
+.review_benchmark_wrap .tit {margin:0 0 6px 110px;padding:8px 0 0;}
+.review_benchmark_wrap .sub {margin:0 0 6px 110px;}
+.review_benchmark_wrap .contents {margin:15px 0 0;}
+.review_benchmark_wrap .thumb_type {margin:0 0 10px;}
+.section_banner_wrap {float:left; position:relative; width:293px; padding:20px 0 0 0;}
+.section_banner_wrap .title {background-position: 0 -460px; width:36px; height:14px; margin:0 0 0 18px;}
+.section_banner_wrap .contents {margin:10px 0 0 0;background:#f4f4f4; padding:20px 21px 20px 19px; height:196px;}
+.section_banner_wrap .contents li{height:80px; margin:0 0 20px 0; background:#fff; padding:3px 14px 2px 14px;}
+.section_banner_wrap .contents li.last {margin:0;padding:2px 14px 3px 14px;}
+.section_banner_wrap .contents li a{display:block; background: #000;width:100%; height:100%;}
+.section_banner_wrap img {width:225px; height:80px;}
+.use_review_wrap {border-right:1px solid #e5e5e5;float:left;height:240px;padding:20px 20px 20px 0;position:relative;width:383px;}
+.use_review_wrap .title {background-position:0 -320px;height:14px;width:37px;}
+.use_review_wrap .contents {margin:15px 0 0;}
+.middle_content .user .level {color:#5272db;display:inline-block;font-family:"Century Gothic", Sans-serif, arial, "돋움", Dotum, "굴림", gulim;font-size:14px;font-weight:bold;margin:0 5px 0 0;}
+.middle_content .user .name {color:#333333;}
+.middle_content .user .date {color:#646567; margin:0 0 0 5px; display:inline-block;}
+.middle_content .user {color:#666666;font-size:11px;margin:0 0 0 90px;}
+.use_review_wrap .tit_wrap {margin:-5px 0 0 90px; max-height:45px; overflow:hidden;}
+.use_review_wrap .thumb_type {height:94px;}
+.use_review_wrap .thumb_type .tit {display:inline;line-height:18px;}
+.use_review_wrap .thumb_type .date {display:inline;margin:0 0 0 7px;}
+.use_review_wrap .thumb_type .sub {height:32px;margin:3px 0 0 90px;}
+.icon_reporter {position:relative;top:6px;}
+.middle_content .box {background:#edf3f8;margin:8px 0 0;height:75px;padding:15px 15px 16px 12px;position:relative;}
+.middle_content .box .icon_arrw {background:url(//img.danawa.com/new/section_notebook/v1/img/icon_arrw.gif) no-repeat;height:15px;left:10px;position:absolute;top:-15px;width:18px;}
+.middle_content .box .icon {background:url(//img.danawa.com/new/section_notebook/v1/img/icon_usedreview.gif) no-repeat;display:block;height:14px;text-indent:-999em;}
+.middle_content .box .prod_box .icon {background-position:0 0;margin:0 0 5px;width:49px;}
+.prod_box .thumb {position:absolute;right:15px;top:15px;}
+.prod_box .tit {color:#333333;display:block;font-weight:normal;height:14px;overflow:hidden;width:260px;}
+.prod_box a:hover .tit {text-decoration:underline;}
+.prod_box .sub {color:#666666;font-size:11px;margin:7px 0 0;height:12px;line-height:12px;overflow:hidden;width:260px;}
+.prod_box a:hover .sub {text-decoration:underline;}
+.prod_box .btn_price_com {display:block;margin:0px 0 0 10px; float:left;}
+.prod_box .price_wrap {margin:6px 0 0; overflow:hidden;}
+.prod_box .price {color:#000000; display:block; float:left;}
+.prod_opinion_wrap {border-right:1px solid #e5e5e5;float:left;height:240px;padding:20px;position:relative;width:362px;}
+.prod_opinion_wrap .title {background-position:0 -340px;height:14px;width:48px;}
+.prod_opinion_wrap .contents {margin:15px 0 0;}
+.answer_box {overflow:hidden;}
+.box .answer_box .icon {background-position:0 -20px;float:left;margin:0 7px 0 0;width:49px;}
+.answer_box .user {float:left;margin:-2px 0 0;}
+.answer_box .txt_wrap {clear:both;color:#666666;display:block;font-size:11px;height:60px;line-height:15px;padding:5px 0 0;}
+.prod_opinion_wrap .thumb_type {height:94px;}
+.prod_opinion_wrap .thumb_type .tit {height:16px;margin:5px 0 0 90px;overflow:hidden;}
+.prod_opinion_wrap .thumb_type .date {display:inline;margin:0 0 0 7px;}
+.prod_opinion_wrap .thumb_type .sub {margin:3px 0 0 90px;}
+.hit_prod_wrap {float:left;padding:20px;height:240px;position:relative;width:253px;}
+.hit_prod_wrap .title {background-position:0 -360px;height:14px;position:relative;width:48px;}
+.hit_prod_wrap .thumb_type {margin:13px 0 0;}
+.hit_prod_wrap .thumb_type .tit {height:32px;margin:20px 0 0 110px;overflow:hidden;}
+.hit_prod_wrap .price_wrap {margin:5px 0 0 110px;}
+.middle_content_last {border-bottom:none;}
+.event_wrap {border-right:1px solid #e5e5e5;float:left;height:218px;position:relative;padding:20px 20px 0 0;width:383px;}
+.event_wrap .title {background-position:0 -380px;height:14px;width:35px;}
+.event_wrap .contents {margin:15px 0 0;}
+.middle_content .event_wrap .thumb_type .tit {display:block;margin:7px 0 0 90px;overflow:hidden;max-height:32px;}
+.event_wrap .thumb_type {margin:0 0 12px;}
+.detail_info {margin:6px 0 0 90px;}
+.detail_info dl {color:#666666;line-height:16px;font-size:11px;overflow:hidden;}
+.detail_info dt {float:left;}
+.detail_info dd {float:left;}
+.brand_news_wrap {border-right:1px solid #e5e5e5;float:left;height:218px;padding:20px 20px 0 20px;position:relative;width:362px;}
+.brand_news_wrap .title {background-position:0 -400px;height:14px;width:63px;}
+.brand_news_wrap .contents {margin:15px 0 0;}
+.middle_content .brand_news_wrap .thumb_type .tit {margin:7px 0 0 90px; display:block;max-height:32px;overflow:hidden;}
+.brand_news_wrap .sub {margin:4px 0 0 90px;}
+.middle_content .brand_news_wrap .thumb_type .date {margin:3px 0 0 90px;}
+.brand_news_wrap .thumb_type {margin:0 0 12px;}
+.pc_video_wrap {float:left;height:218px;padding:20px 0 0 20px;position:relative;width:293px;}
+.pc_video_wrap .title {background-position:0 -420px;height:14px;width:86px;}
+.notebook_video_wrap {float:left;height:218px;padding:20px 0 0 0px;position:relative;width:293px;}
+.notebook_video_wrap .title {background-position:0 -440px;height:14px;width:103px;margin:0 0 0 20px;}
+.pc_video_wrap .contents {margin:15px 0 0;}
+.notebook_video_wrap .contents {margin:15px 0 0;}
+.video_wrap {background:#f4f4f4;height:153px;padding:27px 22px 10px 21px;overflow:hidden;text-align:center;}
+.video_wrap .col_w2 {float:left;width:115px;margin-right:20px;}
+.video_wrap .last {margin:0;}
+.video_wrap a {color:#333333;font-size:11px; }
+.video_wrap .tit {display:block;font-weight:normal;margin:0 auto;padding:6px 0 3px;line-height:16px; width:115px;overflow:hidden;}
+.video_wrap .count {color:#666666;font-size:11px;}
+.video_wrap .count em {font-style:normal;}
+.video_wrap .col_w2 img {height:82px;width:115px;}
+

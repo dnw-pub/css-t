@@ -1,0 +1,28 @@
+@charset "euc-kr";
+/*
+*	최종작업일자 : 2010년 6월 10일 17시 15분
+*	작업자 : 		P03
+*	내역 : 		신규생성
+*
+*	핵설명 FX: 	아무것도 없음
+*     ie7 : 		속성앞에 *
+*	ie6 : 		속성앞에 _ 
+*/
+
+.ygosu_wrap {width:198px; height:229px; border:1px solid #e0e0e1;}
+.ygosu_pro_wrap {width:178px; margin:8px 10px 0 10px;}
+
+.ygosu_pro1stylePwrap {width:178px; height:80px; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #e0e0e1;}
+.ygosu_pro1stylePwrap .proimg {width:80px; margin-right:8px; float:left;}
+.ygosu_pro1stylePwrap .protit {width:90px; float:left; margin-top:15px; color:#333333; font-weight:bold;}
+.ygosu_pro1stylePwrap .protit a {color:#333333; font-weight:bold; text-decoration:none;}  
+.ygosu_pro1stylePwrap .protit a:hover {color:#333333; font-weight:bold; text-decoration:underline;}  
+.ygosu_pro1stylePwrap .price {width:90px; float:left; font-size:14px; font-family:Tahoma; color:#f2690e; font-weight:bold;}
+
+.ygosu_pro2stylePwrap {width:50px; float:left; margin-right:10px;}
+.ygosu_pro2stylePwrap .proimg {margin-bottom:5px;}
+.ygosu_pro2stylePwrap .protit {font-size:11px; color:#666;}
+.ygosu_pro2stylePwrap .protit a {font-size:11px; color:#666; text-decoration:none;}
+.ygosu_pro2stylePwrap .protit a:hover {font-size:11px; color:#666; text-decoration:underline;}
+
+.marright0 { margin-right:0;}

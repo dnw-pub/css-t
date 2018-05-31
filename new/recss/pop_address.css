@@ -1,0 +1,190 @@
+@charset "utf-8";
+/*
+최종작업일자 : 2012-04-05
+작업자 : P10
+작업내용 : 도로명 주소찾기 팝업 신규제작
+*/
+/* 2017-02-27 / 우편번호검색개선 .pop_adr / bhj  */
+
+/* common */
+body {font-size:12px;font-family:'돋움',Dotum,Helvetica,sans-serif;}
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {margin:0;padding:0;}
+em, address {font-style:normal;}
+img {border:0;vertical-align:top;}
+.blind{overflow:hidden;position:absolute;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px}
+#pop_header {position:relative;}
+#pop_container {margin:0 15px;padding:20px 0 15px 0;}
+
+/* 태그 스타일 */
+html{overflow:hidden;}
+strong {color:#385ad8;}
+input {padding:1px 0 0 5px;vertical-align:bottom;/*IE*/*padding-top:2px;*margin-top:-1px;}
+select {font-family:"돋움", Dotum,"Arial","Verdana",Sans-serif;font-size:12px;}
+
+/* 기본팝업 레이아웃 수정 */
+#wrap_pop {min-width:453px;}
+#wrap_pop h1 {background-color:#393939;}
+
+/* class 양식 */
+.sub_arrow {background:url('//img.danawa.com/new/newmain/img/icon_arrow_01.png') no-repeat 1px -291px transparent;padding-left:8px;}
+
+/*팝업 전체 사이즈*/
+#content_pop {height:535px;}
+
+/* 상단 탭 */
+.tab_bind div {float:left;display:block;border:1px solid #fff;padding:8px 18px;position:relative;}
+.tab_bind div.selected_tab {border:1px solid #4a75c8;border-bottom:1px solid #fff;z-index:11;}
+.tab_bind div.unselected_tab {border:1px solid #d9d9d9;background:#f3f3f3;z-index:9;}
+
+/* 콘텐트 */
+.content_bind {clear:both;border-top:1px solid #4a75c8;background:#fff1;top:-1px;position:relative;padding-top:20px;*padding-top:10px;z-index:10;}
+.content_bind p, .content_bind p b, .content_bind p strong {font-size:11px;}
+
+/* 내부 검색박스*/
+.search_keyword {border:3px solid #eee;padding:17px 21px 14px 21px;margin-bottom:14px;}
+.search_keyword p {margin-bottom:2px;}
+/*.search_keyword .input_container {float:left;}*/
+
+/* 지번 검색박스 */
+.input_dong {padding-right:84px;margin-bottom:3px;}
+.input_dong input {font-weight:bold;height:22px;width:100%;}
+.input_text {border:1px solid #b0b0b0;background-color:#f3f3f3;height:16px;*height:14px;}
+a.btn_search_address {background:#385ad8;cursor:pointer;border:0;color:#fff;padding:6px 10px 5px 10px;font-weight:bold;float:right;overflow:visible;position:relative;top:-28px;*top:-31px;*padding:7px 10px 4px 10px}
+
+/* 도로명 검색박스 */
+#search_keyword_street p, #search_keyword_street p b, #search_keyword_street p strong {letter-spacing:-0.2px;line-height:1.4;}
+#search_keyword_street p {margin-bottom:1px;}
+#search_keyword_street p b {font-weight:normal;color:#385ad8;}
+#street_name_input {clear:both;padding-left:66px;float:none;*zoom:1;_display:block;_padding-top:10px;_height:20px;_margin-top:-20px;_padding-left:255px;}
+#street_name_input div {padding-right:70px;padding-top:8px;}
+#street_name_input div input {font-weight:bold; width:100%;display:block;vertical-align:top;margin:0;*zoom:1;}
+.street_input_forms {border-top:1px solid #e6e6e6;margin-top:11px;padding-top:2px; clear:both;}
+dl.street_options {padding-top:8px; display:block;overflow:hidden;}
+dl.street_options dt {z-index:10; position:relative; }
+dl.street_options select {position:relative;z-index:10;}
+dl.street_options select option {font-size:9pt;padding:2px;}
+dl.street_options #select_do {width:113px;}
+dl.street_options #select_gu {width:130px;}
+dl.street_options dt {float:left;width:66px;padding-top:2px;}
+dl.street_options dd {float:left;_float:none;_display:inline;}
+dl.street_options dd .input_container {height:20px;overflow:hidden;*zoom:1;}
+dl.street_options dd select {float:left;height:19px;display:block;margin-right:5px;border:1px solid #abadb3;}
+.street_input_forms a.btn_search_address {padding:10px 14px 12px 14px;width:27px;height:24px;top:-47px;right:-1px;*padding:11px 14px;/*IE6*/_padding:10px 14px 9px 14px;}
+#building_num input {width:102px;}
+#building_name {/*IE6*/_height:20px;_margin-top:-17px;_margin-left:3px;}
+#building_name div {padding-right:70px;}
+
+/* 검색결과 선택 테이블 */
+.select_address {margin-top:7px;border-top:2px solid #989898;border-bottom:1px solid #989898;}
+.table_head {height:17px;background:#f6f6f6;border-bottom:1px solid #d9d9d9;padding-top:4px;}
+.table_head div, .column_a {text-align:center; }
+.table_head div {font-size:11px; padding-top:1px;}
+.column_a {width:71px;}
+.table_head .column_a {float:left; }
+.table_head .column_b {padding-left:70px;}
+.search_result {height:100px;width:100%;margin:5px 0;overflow-y:scroll;overflow-x:hidden;}
+.search_result .no_result {background:url('//img.danawa.com/new/newmain/img/no_result_bg.gif') no-repeat;width:180px;height:40px;margin:28px auto;}
+
+.search_result table {width:100%;}
+.search_result table tr {cursor:pointer;display:block;height:20px;*height:16px;}
+.search_result table tr td {font-size:8pt;padding-top:4px;}
+.search_result table tr:hover, .search_result table tr:active {background:#eaf2ff;}
+.search_result table tr .column_b{padding-left:10px;}
+
+/* 상세주소 입력 */
+.selected_address {clear:both;height:23px;padding-top:8px;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
+.building_number {height:22px;padding-top:9px;border-bottom:1px solid #e6e6e6;}
+.building_number .input_text {background:white; width:93px;height:17px; margin-top:-4px;}
+.selected_address .column_a, .detail_address .column_a, .building_number .column_a {font-weight:bold;float:left;font-size:8pt;text-align:left;padding-left:6px;padding-top:1px;}
+.detail_address .column_a {padding-top:4px;}
+.selected_address .column_b, .detail_address .column_b {padding-left:77px;padding-right:18px; font-size:11px;}
+.selected_address .column_b {padding-top:1px; font-size:12px;}
+.detail_address {clear:both;height:auto;padding-top:7px;padding-bottom:3px;}
+.detail_address input {height:18px;width:93px;border:1px solid #b0b0b0;}
+.detail_address .input_detail_address {clear:both;display:block;width:100%;margin-top:5px;_margin-left:3px;}
+
+/* 참조주소 입력 */
+#ref_address {height:auto;position:relative;}
+#ref_address div {position:relative;}
+#ref_address .column_b {/*IE6*/_margin-top:-15px;_height:20px;}
+#ref_address .ref_address_left {padding-right:110px;margin-bottom:5px;height:21px;}
+#ref_address .ref_address_left input {width:100%;}
+#ref_address .ref_address_right {position:relative;top:-26px;*top:-25px;width:88px;float:right;}
+
+/* 최종 주소 선택 옵션 */
+.address_option {margin-top:5px;border-top:1px solid #e6e6e6;}
+.address_option div {padding:14px 10px;border-bottom:1px solid #e6e6e6;}
+.address_option div p {margin:5px 0 0 22px;font-weight:bold;font-size:9pt;*margin-left:25px;}
+.address_option div input {margin-right:5px;*margin-top:-5px;}
+.address_option div span {font-size:11px;vertical-align:top;position:relative;top:1px;}
+
+/* 확인,취소 버튼 */
+.confirm_switch {margin:15px auto;width:110px;*margin-bottom:0;}
+.confirm_switch a {display:block;float:left;border:1px solid #999;padding:4px 6px;*padding:5px 6px 3px 6px;}
+.confirm_switch input {display:block;float:left;border:1px solid #999;padding:3px 4px;/*height:23px;*/*padding:4px 1px 2px;cursor:pointer;font-size:12px; background-color:#FFF; color:#333; font-family:"돋움", Dotum, "Arial", "Verdana", Dotum,Sans-serif;_margin-top:1px; }
+.confirm_switch .confirm_button {border-color:#666;background:url('//img.danawa.com/new/newmain/img/btn_check.gif') no-repeat 6px 6px #fff;margin-right:5px;padding-left:23px;font-weight:bold;}
+.confirm_switch input.confirm_button {padding-left:20px; *padding:4px 0 1px 14px; *background-position:5px 5px;}
+
+/* 추가 옵션 CSS Class */
+.w100 {width:100%;}
+.no_scroll {overflow:hidden;}
+.light_font {color:#757575;font-weight:normal;}
+.ex_road_name {background:url('//img.danawa.com/new/newmain/img/ex_road_name.gif') no-repeat 2px 2px #f3f3f3;}
+.ex_building_name {background:url('//img.danawa.com/new/newmain/img/ex_building_name.gif') no-repeat 2px 2px #f3f3f3;}
+.ex_dong_name {background:url('//img.danawa.com/new/newmain/common/img/txt_input_01.gif') no-repeat 10px 5px #f3f3f3;}
+
+.font_12{font-size:12px !important;letter-spacing:0px !important;}
+.txt_t1{margin-top:6px;}
+.txt_t2{color:#666 !important;margin-left:10px;}
+.black_f11{font-size:11px;color:#000 !important;}
+.c333{font-size:11px;color:#333 !important;}
+
+.btn_center_area{text-align:center;margin:5px 0 15px 0;}
+.btn_dgrey_t1{background-color:#707070;font-size:11px;color:#fff !important;display:inline-block;padding:6px 10px 4px 10px;}
+.btn_center_area .btn_dgrey_t1 .font_11{font-size:11px;color:#fff;} 
+.mt15{margin-top:15px !important;}
+
+/* pop_adr */
+.pop_adr .pop_content {min-width:527px;}
+.h_blue {background:#0a74df;height:46px;}
+.h_blue h1 {padding:10px 0 0 26px;color:#fff;font-size:18px;font-weight:bold;font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,Sans-serif;}
+.btn_close {position:absolute;top:11px;right:16px;display:inline-block;width:24px;height:24px;background:url(//img.danawa.com/new/newmain/common/img/btn_ly_close.png) no-repeat;text-indent:-9999px;}
+.notice_sec {margin:3px 0 20px 0;text-align:center;}
+.adr_tip {color:#000;letter-spacing:-0.05em;font-size:16px;font-family:"Malgun Gothic","맑은 고딕",dotum,'돋움',gulim,'굴림',AppleGothic,Helvetica,Sans-serif;}
+.adr_ex {margin-top:8px;color:#666;font-size:11px;font-family:dotum,'돋움';}
+.zip_box {padding:26px 20px 26px 20px;background:#f4f4f4;}
+.zip_box p {margin:0 0 8px 0;color:#666;font-size:12px;}
+.zip_box em {color:#0a74df;}
+.ipt_txt {width:414px;height:19px;padding:8px 10px 5px 20px;border:2px solid #0a74df;background:#fff;color:#000;font-size:14px;font-weight:bold;font-family:dotum,'돋움';}
+.srch {display:inline-block;border:0;width:77px;height:36px;background:url(//img.danawa.com/new/newmain/common/img/btn_srch.gif) no-repeat;text-indent:-9999px;}
+.ipt_inner {width:525px;zoom:1;}
+.ipt_inner:after {content:"";display:block;clear:both;}
+.ipt_inner .ipt_txt {float:left;}
+.ipt_inner .srch {float:left;}
+.result_sec {margin:16px 0 0 0;position:relative;}
+.rst_txt {height:18px;padding:10px 0 0 9px;color:#000}
+.rst_txt strong {color:#000;}
+.rst_txt em {font-weight:bold;color:#0a74df;}
+.slct_t1 {position:absolute;top:0;right:0;width:120px;padding-left:8px;height:27px;border:1px solid #abadb3;color:#333;font-size:12px;font-family:dotum,'돋움';}
+.zip_list {clear:both;margin-top:10px;max-height:349px;overflow-y:auto;border-top:1px solid #b2b2b2;border-bottom:1px solid #b2b2b2;}
+.zip_item {position:relative;border-top:1px solid #e7e7e7;padding:11px 10px 11px 90px;}
+.zip_item:first-child {border-top:0;}
+.zip_item a {display:block;position:relative;cursor:pointer;}
+.zip_item a:hover .zipli {text-decoration:underline;}
+.zip_num {position:absolute;top:50%;left:20px;padding:0;margin-top:-9px;font-size:14px;color:#000;}
+.zipli {position:relative;display:inline-block;padding:0;}
+.zipli em {position:absolute;top:0;left:0;display:inline-block;width:43px;padding:4px 0 1px 0;margin-right:10px;text-align:center;border:1px solid #9e9e9e;color:#666;font-size:11px;}
+.zipli .adr {display:block;height:17px;padding-left:50px;margin:3px 0 0 5px;line-height:16px;}
+.zip_road em {border-color:#0a74df;color:#0a74df;}
+.zip_jibun {color:#666;}
+.zip_road {margin-top:7px;color:#000;}
+.no_result {display:table;width:100%;height:349px;}
+.no_result .text {display:table-cell;width:100%;height:349px;vertical-align:middle;text-align:center;margin:0 auto;}
+
+/* paging_box */
+.paging_box {text-align:center;padding:15px 0;background:#fafafa;}
+.paging_box .gray {margin:5px;}
+.paging_box a {display:inline-block;width:24px;height:24px;line-height:24px;border:1px solid #fafafa;margin-right:2px;color:#6b6b6b;font-size:11px;vertical-align:middle;text-align:center;text-decoration:none;}
+.paging_box img {position:relative;top:3px;vertical-align:top;}
+.paging_box .page_on {display:inline-block;width:24px;height:24px;line-height:24px;border:1px solid #757575;text-align:center;background:#757575;color:#fff;font-weight:bold;}
+.paging_box a:hover, .paging_box .next, .paging_box .prev {border:1px solid #757575}
