@@ -175,7 +175,7 @@ span.is_done {color:#666}
 .td_cr4 input {margin-right:10px}
 .td_cr4 label {margin-left:10px; color:#666; font-size:11px}
 
-.btm_btn {text-align: center; padding-bottom:50px; margin-top:30px}
+.btm_btn {text-align: center; margin-top:30px}
 .btn_cart {background:#0275E0; color:#fff; font-size:20px; letter-spacing: -1px; padding:0 35px; line-height: 40px; cursor:pointer}
 
 .tbl_cate .td_ct {color:#929292; line-height:25px}
@@ -507,6 +507,8 @@ strong.depth3 {color:#333}
 
 a.c0375e0 {border-bottom:1px solid #0375e0;}
 
-.sa_layer {position:absolute; width:150px; border:1px solid #ccc;}
+.sa_layer {position:absolute; width:150px; border:1px solid #ccc; background-color:#fff; z-index:1}
 .sl_link {display:block; height: 23px; line-height: 25px; padding-left:10px; background:#fff; color:#333}
 .sl_link:hover {background:#F1F8FF;}
+
+.sub3.column_main {padding-bottom:50px;}
