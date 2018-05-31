@@ -1549,7 +1549,7 @@ body .top_list_ty1 li a{color:#000;font-size:11px;text-decoration:none;padding:0
 .bbs_table .list_item_selected{background:#fafafa;}
 .bbs_table .list_item_selected .title_link{font-weight:bold;}
 .bbs_table .title_link{color:#000;}
-.bbs_table .head_word {padding:2px 4px 1px;line-height:14px;height:13px;display:inline-block;vertical-align:1px;color:#fff;font-size:11px;font-family:'dotum','돋움';background-color:#8B38E5}
+.bbs_table .head_word {padding:2px 4px 1px;line-height:14px;height:13px;display:inline-block;vertical-align:1px;color:#fff;font-size:11px;font-family:'dotum','돋움';background-color:#8B38E5} 
 .bbs_table .icon_comty{vertical-align:top;margin:2px 0 0 6px;}
 .bbs_table .comment_num{display:inline-block;font-weight:bold;}
 .bbs_table .type_end{color:#999;}
