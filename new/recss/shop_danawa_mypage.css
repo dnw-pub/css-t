@@ -471,4 +471,4 @@ display:inline-block;height: 11px;text-indent: -9999px;width: 12px;}
 /* .link_dmall */
 .link_dmall {position:absolute; top:0; right:0; font-size:11px; border:1px solid #cecece; height:22px; line-height: 22px; padding:0 5px 0 7px; }
 .link_dmall:hover {text-decoration: none;}
-.link_dmall i {background:url(http://timg.danawa.com/new/shop_danawa/img/icon_list_dot_v180604.png) no-repeat -18px -1456px; display:inline-block; width:10px; height:15px; margin-left:2px; vertical-align: top;}
+.link_dmall i {background:url(http://timg.danawa.com/pub/img/shop_danawa/icon_list_dot_v180604.png) no-repeat -18px -1456px; display:inline-block; width:10px; height:15px; margin-left:2px; vertical-align: top;}
