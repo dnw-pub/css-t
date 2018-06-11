@@ -14,14 +14,14 @@ a:hover {text-decoration: none}
 button {background:none; border:none; -webkit-appearance: none;  -webkit-border-radius:0; -webkit-text-size-adjust:none}
 
 /* clear */
-.an_list:after,.as_wrap:after,.area_statebar .ctr:after,.ab_side:after,.selbox_area:after,.sa_btn:after,.td_cr1:after,.td_cr2:after,.total_price:after,.step3:after,.ap_title:after,.tpi_item:after,.tpp_list:after,.step4:after,.ah_tablist:after,.rd_list:after,.container:after,.column_left:after,.cs_md:after,.cs_qna:after,.column_bottom:after,.adi_list:after,.adp_list:after,.adp_list dt:after,.adp_list dd:after{content:""; display:block; clear:both}
+.an_list:after,.as_wrap:after,.area_statebar .ctr:after,.ab_side:after,.selbox_area:after,.sa_btn:after,.td_cr1:after,.td_cr2:after,.total_price:after,.step3:after,.ap_title:after,.tpi_item:after,.tpp_list:after,.step4:after,.ah_tablist:after,.rd_list:after,.container:after,.column_left:after,.cs_md:after,.cs_qna:after,.column_bottom:after,.adi_list:after,.adp_list:after,.adp_list dt:after,.adp_list dd:after,.input_area:after{content:""; display:block; clear:both}
 
 /* float */
 .arr_dbl,.ab_h4,.i_qs,.sa_box,.start_date,.end_date,.ing_date,.inp_chkmall,.inp_textmall,.lab_textmall,.td_cr2 .sa_btn,.tt_right strong {float:left}
 
 /* font */
 .na_item,.ta_col td,.td_cr2 .sa_btn,.tt_right,.ap_stit,.tpi .txt,.tpp_tit,.tpp_price,.tpp_txt,.lbl_ap,.am_paging,.rd_dd a,.tt_right,.la_chodel strong,.adp_tbl td,.adp_list .noti,.adp_noti {font-family:Dotum}
-.awc_wrap,.sa_btn,.btn_cart,.tt_left strong,.la_chopay strong,.la_allpay strong,.ap_h4,.tpp_pay button,.rd_dt,.container,.cs_email span {font-family:Malgun Gothic}
+.awc_wrap,.sa_btn,.btn_cart,.tt_left strong,.la_chopay strong,.la_allpay strong,.ap_h4,.tpp_pay button,.rd_dt,.container,.cs_email span,.ia_btn,.ia_inp {font-family:Malgun Gothic}
 .num,.cs_email {font-family:Century Gothic;color:#0e7be1}
 
 /* ir */
@@ -175,7 +175,7 @@ span.is_done {color:#666}
 .td_cr4 input {margin-right:10px}
 .td_cr4 label {margin-left:10px; color:#666; font-size:11px}
 
-.btm_btn {text-align: center; margin-top:30px}
+.btm_btn {text-align: center; padding-bottom:50px; margin-top:30px}
 .btn_cart {background:#0275E0; color:#fff; font-size:20px; letter-spacing: -1px; padding:0 35px; line-height: 40px; cursor:pointer}
 
 .tbl_cate .td_ct {color:#929292; line-height:25px}
@@ -311,7 +311,8 @@ span.is_done {color:#666}
 .tpp_txtright .won {font-size:16px;float:left; margin-top: 5px}
 .tpp_textarea {position:relative; padding:0 10px; margin-bottom:10px}
 .tpp_span {margin-bottom:5px; display:block}
-.tpp_span label {width:100%; background-position: 0 -413px}
+.tpp_span label {width:100%; background-position: 0 -439px}
+.tpp_span .checked {background-position: 0 -413px}
 .lbl_ap {text-indent: 24px}
 .tpp_textarea textarea {border:1px solid #e2e2e2; height: 48px; padding:10px 15px 10px 10px; width:210px; line-height: 16px}
 .tpp_pay {position:absolute; bottom:0; width:100%; left:0; height: 40px; background:#0275E0; text-align: center}
@@ -507,8 +508,16 @@ strong.depth3 {color:#333}
 
 a.c0375e0 {border-bottom:1px solid #0375e0;}
 
-.sa_layer {position:absolute; width:150px; border:1px solid #ccc; background-color:#fff; z-index:1}
+.sa_layer {position:absolute; width:150px; border:1px solid #ccc;}
 .sl_link {display:block; height: 23px; line-height: 25px; padding-left:10px; background:#fff; color:#333}
 .sl_link:hover {background:#F1F8FF;}
 
-.sub3.column_main {padding-bottom:50px;}
+.sb_box {position:relative;}
+.sb_box .sa_hiddenbox {left:90px; width:206px;}
+.input_area {position:relative;}
+.at_keyword {margin:0 0 0 10px; width:135px;}
+.ia_inp {border:2px solid #ccc; height: 32px; padding-left:10px; width:160px; float:left; font-size:13px;}
+.ia_btn {height:35px; line-height: 32px; margin-left:10px; background:#33383E; width:102px; text-align: center; border:2px solid #33383e; float:left; font-size:13px; color:#fff; cursor:pointer}
+.ia_layer {position:absolute; top:34px; left:0; width:475px; background:#fff; border:1px solid #9E9E9E; z-index: 10}
+.ia_link {display:block;padding-left:20px; height: 28px; line-height:30px;}
+.ia_link:hover,.ia_link:focus {background:#F5F5F5;}
