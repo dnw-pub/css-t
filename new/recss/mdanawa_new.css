@@ -157,9 +157,9 @@ html input[type="button"], input[type="email"], input[type="password"], input[ty
 .btn_side_menu:after {content: "";display: block;}
 .btn_side_menu {top:14px;width: 40px;}
 .btn_side_menu {font-size:0;height: 40px;left: 0;line-height: 0;overflow: hidden;position: absolute;text-indent: -9999px;top: 0;width: 35px;}
-.icon_menu_side {display: block;position: absolute;top:15px;left:11px;width:19px;height: 2px;background-color:#1887f0;border-radius:3px;}
-.icon_menu_side:before {position: absolute;left: 0;width:19px;height: 2px;background-color: #1887f0 ;content: '';top:6px;border-radius:3px;}
-.icon_menu_side:after {position: absolute;left: 0;width: 19px;height: 2px;background-color: #1887f0 ;content: '';top: 12px;border-radius:3px;}
+.icon_menu_side {display: block;position: absolute;top:15px;left:11px;width:19px;height: 1px;background-color:#1887f0;border-radius:3px;}
+.icon_menu_side:before {position: absolute;left: 0;width:19px;height: 1px;background-color: #1887f0 ;content: '';top:6px;border-radius:3px;}
+.icon_menu_side:after {position: absolute;left: 0;width: 19px;height: 1px;background-color: #1887f0 ;content: '';top: 12px;border-radius:3px;}
 .header_area_section	.icon_menu_side{background-color:#fff;height: 2px;}
 .header_area_section	.icon_menu_side:before {background-color: #fff;height: 2px;}
 .header_area_section	.icon_menu_side:after {background-color: #fff;height: 2px;}
