@@ -1135,7 +1135,7 @@ a:hover{color:#333;text-decoration:underline}
 .pop_cls {width:9px;height:9px;background-position:-130px -140px;}
 
 /* pop_compare */
-.pop_header .rgt_opt {position:absolute;top:11px;right:38px;}
+.pop_header .rgt_opt {position:absolute;top:11px;right:40px;}
 .btn_ly_opt {display:inline-block;float:left;margin-left:6px;padding:4px 4px 2px;border:1px solid #919191;color:#333;font-size:11px;line-height:14px;}
 .btn_ly_opt:hover {text-decoration:none;}
 .ico.url {width:10px;height:12px;background-position:-35px -160px;vertical-align:-2px;margin-right:2px;}
