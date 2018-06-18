@@ -422,7 +422,7 @@ body, button, p{font-family:'Malgun Gothic','맑은 고딕','Apple Gothic','Droi
 .img_bim{display:block;position:absolute;left:0px;top:0px;width:100%;height:100%;}
 .img_dp01{display:block;width:100%;position:relative;}
 .btm_bim_txt{height:42px;overflow:hidden;width:100%;text-align:left;position:absolute;bottom:0px;left:0px;}
-.nroom_title{color:#fff;font-size:15px;font-weight:bold;padding:0 13px;margin:0;line-height:42px;}
+.nroom_title{color:#fff;font-size:15px;font-weight:bold;padding:0 13px;margin:0;line-height:42px;text-align:center}
 .newsroom_list{position:relative;overflow:hidden;}
 .newsroom_list .btn_bnr_lp{left:-4px;}
 .newsroom_list .btn_bnr_rp{right:-4px;}
