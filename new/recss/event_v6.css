@@ -1468,3 +1468,6 @@ a.btn_entry:hover {color:#fff;text-decoration:none;}
 /* .empty_area */
 .empty_area {height: 172px; display:table; width:100%;}
 .ea_txt {display:table-cell; text-align: center; vertical-align: middle; color:#333;}
+
+/* link_mobile_go */
+.link_mobile_go{position:fixed;bottom:0;display:block;width:100%;height:44px;line-height:44px;background:rgb(3, 117, 224);background:linear-gradient(124deg, rgba(3, 117, 224, 0.9) 10%, rgba(0, 134, 147, 0.9) 90%);text-align:center;font-size:16px;font-weight:bold;color:#fff}
